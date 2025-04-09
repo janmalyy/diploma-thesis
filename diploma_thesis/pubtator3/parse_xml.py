@@ -1,4 +1,5 @@
 import xml.etree.ElementTree
+from types import NoneType
 
 import requests
 from xml.etree import ElementTree as ET
@@ -44,7 +45,7 @@ def get_pubtator_data(query: str) -> ET.Element | None:
         # verify=False is not recommended, but with True it does not work :/
         search_response = session.get(search_url, headers=headers, verify=False, timeout=10)
 
-        search_response.raise_for_status()      # check for HTTP errors
+        search_response.raise_for_status()  # check for HTTP errors
 
         if "xml" not in search_response.headers.get("Content-Type", "").lower():
             raise ValueError("Received non-XML response from PubTator API")
@@ -55,7 +56,7 @@ def get_pubtator_data(query: str) -> ET.Element | None:
 
     except requests.exceptions.RequestException as e:
         print(f"Error fetching data: {e}")
-        return None
+        raise
 
 
 def write_pretty_xml(root: ET.Element, filename: str) -> None:
@@ -128,7 +129,7 @@ def get_nodes_from_xml(xml_file_path: str) -> list[Node]:
                     identifier = infon.text
                 elif key == "type":
                     ner_type = infon.text
-            if identifier is None:      # there is no id associated with the entity
+            if identifier is None:  # there is no id associated with the entity
                 identifier = f"UNKNOWN:{annotation.get("id")}"
             if identifier in nodes_dict:
                 nodes_dict[identifier].count += 1  # Increase count for existing node
@@ -150,7 +151,7 @@ def get_edges_from_xml(xml_file_path: str) -> list[Edge]:
             if key == "score":
                 score = infon.text
             elif key == "role1":
-                node1 = infon.text.split("|")[1]    # origin looks like "Gene|7157" and we retain only the identifier
+                node1 = infon.text.split("|")[1]  # origin looks like "Gene|7157" and we retain only the identifier
             elif key == "role2":
                 node2 = infon.text.split("|")[1]
             elif key == "type":
@@ -162,13 +163,14 @@ def get_edges_from_xml(xml_file_path: str) -> list[Edge]:
 
 
 if __name__ == "__main__":
-    # result = get_pubtator_data("31830896")  # Example PubMed ID
-    # write_pretty_xml(result, "test.xml")
-    nodes_list = get_nodes_from_xml(PACKAGE_DIR / "pubtator3" / "test.xml")
-    edges_list = get_edges_from_xml(PACKAGE_DIR / "pubtator3" / "test.xml")
-    # for i in range(len(nodes_list)):
-    #     node_pretty_print(nodes_list[i])
-    # print(len(nodes_list))
+    result = get_pubtator_data("23747889")  # Example PubMed ID
+    write_pretty_xml(result, "test2.xml")
+    nodes_list = get_nodes_from_xml(PACKAGE_DIR / "pubtator3" / "test2.xml")
+    edges_list = get_edges_from_xml(PACKAGE_DIR / "pubtator3" / "test2.xml")
+
+    for i in range(len(nodes_list)):
+        node_pretty_print(nodes_list[i])
+    print(len(nodes_list))
 
     for i in range(len(edges_list)):
         edge_pretty_print(edges_list[i])
