@@ -1,4 +1,5 @@
 #
+diploma_thesis/pubtator3/*.xml
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -153,10 +154,10 @@ venv.bak/
 .dmypy.json
 dmypy.json
 
-# Pyre type checker
+# Pyre ner_type checker
 .pyre/
 
-# pytype static type analyzer
+# pytype static ner_type analyzer
 .pytype/
 
 # Cython debug symbols
