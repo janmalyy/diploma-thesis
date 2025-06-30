@@ -5,6 +5,7 @@ import time
 
 import pandas as pd
 
+from diploma_thesis.settings import PACKAGE_DIR, DATA_DIR
 from diploma_thesis.utils.parse_xml import get_document_from_xml, get_nodes_from_xml, write_pretty_xml
 from diploma_thesis.api.pubtator_api import fetch_pubtator_data_by_id
 
@@ -121,9 +122,9 @@ if __name__ == "__main__":
     #     except Exception as e:
     #         continue
 
-    print("Number of articles fetched:", len(os.listdir("../data")))
+    print("Number of articles fetched:", len(os.listdir(DATA_DIR)))
 
-    df = create_df_from_xmls("../data")
+    df = create_df_from_xmls(DATA_DIR)
 
     testset = create_testset(df)
     print(testset.info())
