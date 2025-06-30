@@ -1,1 +1,9 @@
 requests
+numpy
+networkx
+plotly
+dash
+uvicorn
+fastapi
+jinja2
+pandas

@@ -2,26 +2,12 @@ import requests
 from xml.etree import ElementTree as ET
 
 
-def fetch_pubmed_abstracts(query, year, max_results=100):
-    """
-    Fetches PubMed abstracts based on the specified query and publication year.
+def get_pubmed_ids_by_query(query: str, max_results=100) -> list[str]:
+    search_url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
 
-    Args:
-        query (str): The search query.
-        year (int): The publication year.
-        max_results (int): Maximum number of results to fetch.
-
-    Returns:
-        list: A list of dictionaries containing 'title' and 'abstract' for each article.
-    """
-    base_url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
-    search_url = f"{base_url}esearch.fcgi"
-    fetch_url = f"{base_url}efetch.fcgi"
-
-    # Define search parameters
     search_params = {
         "db": "pubmed",
-        "term": f"{query} AND {year}[dp]",
+        "term": f"{query}",
         "retmax": max_results,
         "retmode": "xml"
     }
@@ -30,6 +16,21 @@ def fetch_pubmed_abstracts(query, year, max_results=100):
     search_response = requests.get(search_url, params=search_params)
     search_tree = ET.fromstring(search_response.content)
     id_list = [id_elem.text for id_elem in search_tree.findall(".//Id")]
+
+    return id_list
+
+
+def fetch_pubmed_abstracts(id_list: list[str]) -> list[dict[str, str]]:
+    """
+    Fetches PubMed titles and abstracts based on pubmed IDs.
+
+    Args:
+        id_list: list of pubmed IDs
+
+    Returns:
+        list: A list of dictionaries containing 'title' and 'abstract' for each article.
+    """
+    fetch_url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi"
 
     abstracts = []
 
@@ -55,6 +56,7 @@ def fetch_pubmed_abstracts(query, year, max_results=100):
 
 
 if __name__ == '__main__':
-    breast_cancer_abstracts_2024 = fetch_pubmed_abstracts("Angiosarcoma", 2025)
-    print(f"Retrieved {len(breast_cancer_abstracts_2024)} abstracts.")
-    print(breast_cancer_abstracts_2024[:2])
+    breast_cancer_ids = get_pubmed_ids_by_query("Angiosarcoma AND 2025[dp]")
+    breast_cancer_data = fetch_pubmed_abstracts(breast_cancer_ids)
+    print(f"Retrieved {len(breast_cancer_ids)} abstracts.")
+    print(breast_cancer_data[:2])
