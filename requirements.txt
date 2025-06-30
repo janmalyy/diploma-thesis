@@ -7,3 +7,4 @@ uvicorn
 fastapi
 jinja2
 pandas
+biopython
