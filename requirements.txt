@@ -8,3 +8,6 @@ fastapi
 jinja2
 pandas
 biopython
+sentence-transformers
+nltk
+hf-xet

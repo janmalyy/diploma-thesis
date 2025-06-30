@@ -1,6 +1,5 @@
 import datetime
 import os
-from time import strftime
 
 from dateutil.relativedelta import relativedelta
 import logging
