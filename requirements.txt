@@ -6,3 +6,4 @@ dash
 uvicorn
 fastapi
 jinja2
+pandas

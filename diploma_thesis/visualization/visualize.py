@@ -3,17 +3,17 @@ import plotly.graph_objects as go
 import dash
 from dash import dcc, html, Input, Output
 
-from diploma_thesis.pubtator3.parse_xml import get_edges_from_xml, get_nodes_from_xml, node_pretty_print
+from diploma_thesis.utils.parse_xml import get_edges_from_xml, get_nodes_from_xml, Node, Edge
 from diploma_thesis.settings import PACKAGE_DIR
 
 
-def load_graph_data(xml_path):
+def load_graph_data(xml_path) -> tuple[list[Node], list[Edge]]:
     nodes = get_nodes_from_xml(xml_path)
     edges = get_edges_from_xml(xml_path)
     return nodes, edges
 
 
-def build_graph(nodes, edges):
+def build_graph(nodes, edges) -> nx.Graph:
     G = nx.DiGraph()
     node_map = {node.identifier: node for node in nodes}
 
@@ -30,14 +30,14 @@ def build_graph(nodes, edges):
     return G
 
 
-def compute_node_positions(G):
+def compute_node_positions(G) -> nx.Graph:
     pos = nx.spring_layout(G, seed=42)
     for node in G.nodes:
         G.nodes[node]["pos"] = pos[node]
     return G
 
 
-def create_edge_traces_with_labels(G):
+def create_edge_traces_with_labels(G) -> list[go.Scatter]:
     """
     Create edge line traces and permanent text annotations for each edge.
 
@@ -45,7 +45,7 @@ def create_edge_traces_with_labels(G):
         G (networkx.Graph): Graph with node positions and edge attributes.
 
     Returns:
-        List[go.Scatter]: List containing edge lines and text annotations as Scatter traces.
+        list[go.Scatter]: List containing edge lines and text annotations as Scatter traces.
     """
     edge_lines_x = []
     edge_lines_y = []
@@ -95,7 +95,7 @@ def create_edge_traces_with_labels(G):
     return [edge_trace, label_trace]
 
 
-def create_node_trace(G):
+def create_node_trace(G) -> go.Scatter:
     node_x, node_y, node_text, node_customdata, node_colors = [], [], [], [], []
     color_map = {"Gene": "purple", "Disease": "orange", "Chemical": "green",    # same mapping as in pubtator web app
                  "CellLine": "cyan", "Variant": "red", "Species": "blue"}
@@ -130,7 +130,7 @@ def create_node_trace(G):
     return node_trace
 
 
-def create_figure(edge_trace, node_trace, label_trace):
+def create_figure(edge_trace, node_trace, label_trace) -> go.Figure:
     return go.Figure(
         data=[edge_trace, node_trace, label_trace],
         layout=go.Layout(
@@ -144,7 +144,7 @@ def create_figure(edge_trace, node_trace, label_trace):
     )
 
 
-def create_dash_app(fig):
+def create_dash_app(fig) -> dash.Dash:
     app = dash.Dash(__name__)
     app.layout = html.Div([
         dcc.Graph(id="graph", figure=fig),
@@ -164,8 +164,8 @@ def create_dash_app(fig):
     return app
 
 
-def main():
-    xml_path = PACKAGE_DIR / "pubtator3" / "test.xml"
+def main() -> None:
+    xml_path = PACKAGE_DIR / "api" / "test2.xml"
     nodes, edges = load_graph_data(xml_path)
     G = build_graph(nodes, edges)
     G = compute_node_positions(G)

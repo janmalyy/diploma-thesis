@@ -1,5 +1,4 @@
-#
-diploma_thesis/pubtator3/*.xml
+diploma_thesis/data
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
