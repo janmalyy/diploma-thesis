@@ -6,6 +6,27 @@ from typing import Any
 from diploma_thesis.settings import NEO4J_URI, NEO4J_USERNAME, NEO4J_PASSWORD, DATA_DIR
 
 
+def count_gene_mentions(annotations: list[etree._Element]) -> dict[str, int]:
+    """
+    Count occurrences of each gene mention in the document.
+
+    Args:
+        annotations: List of annotation elements
+
+    Returns:
+        Dictionary mapping gene name to count
+    """
+    counts = {}
+    for ann in annotations:
+        infon_type = ann.find("infon[@key='type']")
+        if infon_type is not None and infon_type.text == "Gene":
+            gene_text = ann.findtext("text")
+            if gene_text:
+                name = gene_text.strip()
+                counts[name] = counts.get(name, 0) + 1
+    return counts
+
+
 def extract_article(xml_file: Path) -> dict[str, Any]:
     tree = etree.parse(str(xml_file))
     root = tree.getroot()
@@ -21,7 +42,9 @@ def extract_article(xml_file: Path) -> dict[str, Any]:
     title = None
     abstract = None
     authors_raw = None
-    genes = set()
+    all_annotations = []
+
+    genes: dict[str, dict] = {}
 
     for passage in passages:
         infons = {infon.attrib["key"]: infon.text for infon in passage.findall("infon")}
@@ -40,12 +63,25 @@ def extract_article(xml_file: Path) -> dict[str, Any]:
         elif passage_type == "abstract":
             abstract = passage.findtext("text")
 
-        for annotation in passage.findall("annotation"):
+        annotations = passage.findall("annotation")
+        all_annotations.extend(annotations)
+
+        for annotation in annotations:
             infon_type = annotation.find("infon[@key='type']")
             if infon_type is not None and infon_type.text == "Gene":
-                gene_text = annotation.findtext("text")
-                if gene_text:
-                    genes.add(gene_text.strip())
+                gene_name = annotation.findtext("text").strip()
+                gene_id = annotation.findtext("infon[@key='identifier']")
+                homologene = annotation.findtext("infon[@key='NCBI Homologene']")
+
+                if gene_name not in genes:
+                    genes[gene_name] = {
+                        "name": gene_name,
+                        "id": gene_id,
+                        "ncbi_homologene": homologene,
+                        "count": 1
+                    }
+                else:
+                    genes[gene_name]["count"] += 1
 
     return {
         "id": doc_id,
@@ -55,7 +91,7 @@ def extract_article(xml_file: Path) -> dict[str, Any]:
         "abstract": abstract,
         "pmcid": pmcid,
         "authors": [a.strip() for a in authors_raw.split(",")] if authors_raw else [],
-        "genes": list(genes)
+        "genes": list(genes.values())  # list of dicts with name, id, ncbi_homologene, count
     }
 
 
@@ -74,8 +110,7 @@ def create_document_graph(tx, data: dict[str, Any]) -> None:
         d.title = $title,
         d.abstract = $abstract,
         d.article_id_pmc = $pmcid,
-        d.authors = $authors,
-        d.genes = $genes
+        d.authors = $authors
 
     WITH d
     UNWIND $authors AS author_name
@@ -83,14 +118,17 @@ def create_document_graph(tx, data: dict[str, Any]) -> None:
         MERGE (a)-[:is_author_of]->(d)
 
     WITH d
-    UNWIND $genes AS gene_name
-        MERGE (g:Gene {name: gene_name})
-        MERGE (g)-[:is_in]->(d)
+    UNWIND $genes AS gene_data
+        MERGE (g:Gene {name: gene_data.name})
+        SET g.id = gene_data.id,
+            g.ncbi_homologene = gene_data.ncbi_homologene
+        MERGE (g)-[r:is_in]->(d)
+        SET r.count = gene_data.count
     """
     tx.run(query, **data)
 
 
 if __name__ == "__main__":
-    article_data = extract_article(DATA_DIR / "test" / "test.xml")
+    article_data = extract_article(DATA_DIR / "test" / "test2.xml")
     push_to_neo4j(article_data)
     print(f"Document {article_data['id']} uploaded to Neo4j.")
