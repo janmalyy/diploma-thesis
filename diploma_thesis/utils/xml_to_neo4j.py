@@ -1,6 +1,6 @@
 from lxml import etree
 from pathlib import Path
-from neo4j import GraphDatabase
+import neo4j
 from typing import Any
 
 from diploma_thesis.settings import NEO4J_URI, NEO4J_USERNAME, NEO4J_PASSWORD, DATA_DIR
@@ -28,6 +28,11 @@ def count_gene_mentions(annotations: list[etree._Element]) -> dict[str, int]:
 
 
 def extract_article(xml_file: Path) -> dict[str, Any]:
+    """
+    Extract article information from an XML file and return it as a dictionary.
+
+    Returns: data ready to be written to neo4j
+    """
     tree = etree.parse(str(xml_file))
     root = tree.getroot()
 
@@ -95,15 +100,45 @@ def extract_article(xml_file: Path) -> dict[str, Any]:
     }
 
 
-def push_to_neo4j(data: dict[str, Any]) -> None:
-    driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USERNAME, NEO4J_PASSWORD))
-    with driver.session() as session:
-        session.execute_write(create_document_graph, data)
-    driver.close()
+class Neo4jConnection:
+
+    def __init__(self, uri, user, pwd):
+        self.__uri = uri
+        self.__user = user
+        self.__pwd = pwd
+        self.__driver = None
+        try:
+            self.__driver = neo4j.GraphDatabase.driver(self.__uri, auth=(self.__user, self.__pwd))
+        except Exception as e:
+            print("Failed to create the driver:", e)
+
+    def close(self):
+        if self.__driver is not None:
+            self.__driver.close()
+
+    def query(self, query, parameters=None, db=None, print_results=False):
+        assert self.__driver is not None, "Driver not initialized!"
+        session = None
+        response = None
+        try:
+            session = self.__driver.session(database=db) if db is not None else self.__driver.session()
+            response = list(session.run(query, parameters))
+            if parameters and "id" in parameters:
+                print(f"Document {parameters['id']} uploaded to Neo4j.")
+            if print_results:
+                for record in response:
+                    print(dict(record))
+
+        except Exception as e:
+            print(f"Query {query[:50]}... failed:", e)
+        finally:
+            if session is not None:
+                session.close()
+        return response
 
 
-def create_document_graph(tx, data: dict[str, Any]) -> None:
-    query = """
+if __name__ == "__main__":
+    push_doc_query = """
     MERGE (d:Document {id: $id})
     SET d.year = $year,
         d.journal = $journal,
@@ -119,16 +154,18 @@ def create_document_graph(tx, data: dict[str, Any]) -> None:
 
     WITH d
     UNWIND $genes AS gene_data
-        MERGE (g:Gene {name: gene_data.name})
-        SET g.id = gene_data.id,
+        MERGE (g:Gene {id: gene_data.id})
+        SET g.name = gene_data.name,
             g.ncbi_homologene = gene_data.ncbi_homologene
         MERGE (g)-[r:is_in]->(d)
         SET r.count = gene_data.count
     """
-    tx.run(query, **data)
 
+    article_data = extract_article(DATA_DIR / "test2" / "article_31888550.xml")
+    conn = Neo4jConnection(NEO4J_URI, NEO4J_USERNAME, NEO4J_PASSWORD)
 
-if __name__ == "__main__":
-    article_data = extract_article(DATA_DIR / "test" / "test2.xml")
-    push_to_neo4j(article_data)
-    print(f"Document {article_data['id']} uploaded to Neo4j.")
+    # conn.query('CREATE CONSTRAINT constraint_document IF NOT EXISTS FOR (d:Document) REQUIRE d.id IS UNIQUE')
+    # conn.query('CREATE CONSTRAINT constraint_author IF NOT EXISTS FOR (a:Author) REQUIRE a.name IS UNIQUE')
+    # conn.query('CREATE CONSTRAINT constraint_gene IF NOT EXISTS FOR (g:Gene) REQUIRE g.id IS UNIQUE')
+    # conn.query("SHOW CONSTRAINTS", print_results=True)
+    conn.query(push_doc_query, article_data)
