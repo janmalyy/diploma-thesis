@@ -36,7 +36,3 @@ if __name__ == '__main__':
                 mean_pooled_embedding = np.mean(np.array(embeddings), axis=0).tolist()
 
                 writer.writerow([row[0], mean_pooled_embedding])
-
-
-
-

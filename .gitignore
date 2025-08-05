@@ -1,5 +1,8 @@
 diploma_thesis/data
 
+# for now
+diploma_thesis/visualization/visualize_interactive.py
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

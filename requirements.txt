@@ -11,3 +11,5 @@ biopython
 sentence-transformers
 nltk
 hf-xet
+neo4j
+python-dotenv
