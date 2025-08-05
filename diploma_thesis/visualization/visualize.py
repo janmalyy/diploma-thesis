@@ -4,7 +4,7 @@ import dash
 from dash import dcc, html, Input, Output
 
 from diploma_thesis.utils.parse_xml import get_edges_from_xml, get_nodes_from_xml, Node, Edge
-from diploma_thesis.settings import PACKAGE_DIR
+from diploma_thesis.settings import PACKAGE_DIR, DATA_DIR
 
 
 def load_graph_data(xml_path) -> tuple[list[Node], list[Edge]]:
@@ -165,7 +165,7 @@ def create_dash_app(fig) -> dash.Dash:
 
 
 def main() -> None:
-    xml_path = PACKAGE_DIR / "api" / "test2.xml"
+    xml_path = DATA_DIR / "test2" / "article_31888550.xml"
     nodes, edges = load_graph_data(xml_path)
     G = build_graph(nodes, edges)
     G = compute_node_positions(G)

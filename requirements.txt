@@ -7,3 +7,9 @@ uvicorn
 fastapi
 jinja2
 pandas
+biopython
+sentence-transformers
+nltk
+hf-xet
+neo4j
+python-dotenv
