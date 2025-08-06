@@ -97,8 +97,8 @@ def extract_article(xml_file: Path) -> dict[str, Any]:
                     genes[gene_name]["count"] += 1
 
     return {
-        "id": doc_id,
-        "year": year,
+        "id": int(doc_id),
+        "year": int(year),
         "journal": journal,
         "title": title,
         "abstract": abstract,
@@ -180,11 +180,11 @@ if __name__ == "__main__":
     batch_upload_articles_query = """
         UNWIND $batch AS data
     MERGE (d:Document {id: data.id})
-    SET d.title = data.title,
-        d.year = data.year,
+    SET d.title = toInteger(data.title),
+        d.year = toInteger(data.year),
         d.journal = data.journal,
         d.abstract = data.abstract,
-        d.article_id_pmc = data.pmcid,
+        d.pmcid = toInteger(data.pmcid),
         d.authors = data.authors
     
     FOREACH (author IN data.authors |
@@ -195,7 +195,8 @@ if __name__ == "__main__":
     FOREACH (gene IN data.genes |
         MERGE (g:Gene {id: gene.id})
         SET g.name = gene.name,
-            g.ncbi_homologene = gene.ncbi_homologene
+            g.ncbi_homologene = toInteger(gene.ncbi_homologene)
+            g.id = toInteger(gene.id)
         MERGE (g)-[r:is_in]->(d)
         SET r.count = gene.count
     )
