@@ -203,7 +203,7 @@ if __name__ == "__main__":
     batch_upload_embeddings_query = """
         UNWIND $batch AS data
         MATCH (d:Document {id: data.id})
-        SET d.embedding = data.embedding
+        SET d.embedding = apoc.convert.fromJsonList(data.embedding)
     """
     batch_size = 500
     conn = Neo4jConnection(NEO4J_URI, NEO4J_USERNAME, NEO4J_PASSWORD)
@@ -241,4 +241,5 @@ if __name__ == "__main__":
         conn.query(batch_upload_embeddings_query, {"batch": batch_chunk})
 
     end = time.time()
+    # time for aura: ~ 60 s; time for desktop ~ 75 min!
     print(f"Total time: {round(end - start, 2)} seconds.")
