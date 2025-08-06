@@ -16,6 +16,8 @@ if __name__ == '__main__':
     #         for file in os.listdir(DATA_DIR / "breast_cancer" / dir):
     #             file_id = file.split("_")[-1].split(".")[0]
     #             text = get_title_with_abstract(DATA_DIR / "breast_cancer" / dir / file)
+    #             if len(text) < 200:     # skip bad xmls without content (e.g. with title '- No Title -')
+    #                 continue
     #             writer.writerow([file_id, text])
     #         print(dir + " done.")
 
