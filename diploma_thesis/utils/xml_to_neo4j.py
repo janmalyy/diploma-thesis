@@ -1,3 +1,7 @@
+"""
+Prerequisites: downloaded articles as xmls; titles+abstracts embedded into vectors and stored as csv
+Result: articles are loaded into neo4j database
+"""
 import csv
 import os
 import time
@@ -173,29 +177,7 @@ def batch(iterable: list, size: int) -> Generator[list, Any, None]:
 
 
 if __name__ == "__main__":
-    push_doc_query = """
-    MERGE (d:Document {id: $id})
-    SET d.year = $year,
-        d.journal = $journal,
-        d.title = $title,
-        d.abstract = $abstract,
-        d.article_id_pmc = $pmcid,
-        d.authors = $authors
-
-    WITH d
-    UNWIND $authors AS author_name
-        MERGE (a:Author {name: author_name})
-        MERGE (a)-[:is_author_of]->(d)
-
-    WITH d
-    UNWIND $genes AS gene_data
-        MERGE (g:Gene {id: gene_data.id})
-        SET g.name = gene_data.name,
-            g.ncbi_homologene = gene_data.ncbi_homologene
-        MERGE (g)-[r:is_in]->(d)
-        SET r.count = gene_data.count
-    """
-    batch_upload_query = """
+    batch_upload_articles_query = """
         UNWIND $batch AS data
     MERGE (d:Document {id: data.id})
     SET d.title = data.title,
@@ -218,22 +200,34 @@ if __name__ == "__main__":
         SET r.count = gene.count
     )
     """
+    batch_upload_embeddings_query = """
+        UNWIND $batch AS data
+        MATCH (d:Document {id: data.id})
+        SET d.embedding = data.embedding
+    """
     batch_size = 500
     conn = Neo4jConnection(NEO4J_URI, NEO4J_USERNAME, NEO4J_PASSWORD)
     # conn.query("MATCH (n) DETACH DELETE n")
+    # conn.query('CREATE CONSTRAINT constraint_document IF NOT EXISTS FOR (d:Document) REQUIRE d.id IS UNIQUE')
+    # conn.query('CREATE CONSTRAINT constraint_author IF NOT EXISTS FOR (a:Author) REQUIRE a.name IS UNIQUE')
+    # conn.query('CREATE CONSTRAINT constraint_gene IF NOT EXISTS FOR (g:Gene) REQUIRE g.id IS UNIQUE')
+    # conn.query("SHOW CONSTRAINTS", print_results=True)
 
     start = time.time()
 
+    # extract data from xmls into list of dictionaries ready to be fed into the db
     article_data_list = []
     for dir in os.listdir(DATA_DIR / "breast_cancer"):
         for file in os.listdir(DATA_DIR / "breast_cancer" / dir):
             article_data_list.append(extract_article(DATA_DIR / "breast_cancer" / dir / file))
         print(dir + " done.")
 
+    # upload articles data
     for i, batch_chunk in enumerate(batch(article_data_list, batch_size)):
         print(f"Pushing batch {i + 1}...")
-        conn.query(batch_upload_query, {"batch": batch_chunk})
+        conn.query(batch_upload_articles_query, {"batch": batch_chunk})
 
+    # read embeddings data from csv
     emb_data_list = []
     with open(DATA_DIR / "breast_cancer_embeddings_2020_2025.csv", "r", encoding="utf-8") as f:
         reader = csv.reader(f, delimiter=",", quotechar='|')
@@ -241,19 +235,10 @@ if __name__ == "__main__":
             emb_data_list.append({"id": row[0], "embedding": row[1]})
         print("All data from csv have been read.")
 
-    emb_query = """
-        UNWIND $batch AS data
-        MATCH (d:Document {id: data.id})
-        SET d.embedding = data.embedding
-        """
+    # upload embeddings data
     for i, batch_chunk in enumerate(batch(emb_data_list, batch_size)):
         print(f"Pushing batch {i + 1}...")
-        conn.query(emb_query, {"batch": batch_chunk})
+        conn.query(batch_upload_embeddings_query, {"batch": batch_chunk})
 
     end = time.time()
     print(f"Total time: {round(end - start, 2)} seconds.")
-
-    # conn.query('CREATE CONSTRAINT constraint_document IF NOT EXISTS FOR (d:Document) REQUIRE d.id IS UNIQUE')
-    # conn.query('CREATE CONSTRAINT constraint_author IF NOT EXISTS FOR (a:Author) REQUIRE a.name IS UNIQUE')
-    # conn.query('CREATE CONSTRAINT constraint_gene IF NOT EXISTS FOR (g:Gene) REQUIRE g.id IS UNIQUE')
-    # conn.query("SHOW CONSTRAINTS", print_results=True)
