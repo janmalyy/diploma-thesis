@@ -13,3 +13,7 @@ nltk
 hf-xet
 neo4j
 python-dotenv
+python-dateutil
+urllib3
+pydantic
+lxml

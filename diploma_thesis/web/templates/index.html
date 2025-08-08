@@ -1,11 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Genes and Diseases Pubtator3 Visualization Tool</title>
+  <title>Neo4j Query Visualizer</title>
+  <script src="https://unpkg.com/cytoscape@3.26.0/dist/cytoscape.min.js"></script>
+  <script defer src="/static/app.js"></script>
+  <style>
+    #cy { width: 100%; height: 600px; border: 1px solid #ccc; margin-top: 20px; }
+    #query-container { margin-bottom: 10px; }
+  </style>
 </head>
 <body>
+  <h2>Neo4j Graph Query</h2>
 
+  <div id="query-container">
+    <input type="text" id="query-input" style="width: 70%;" placeholder="Enter Cypher query">
+    <button id="run-query">Run Query</button>
+  </div>
+
+  <div id="cy"></div>
 </body>
 </html>

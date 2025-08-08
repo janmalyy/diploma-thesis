@@ -1,7 +1,15 @@
+"""
+Prerequisites: downloaded articles as xmls; titles+abstracts embedded into vectors and stored as csv
+Result: articles are loaded into neo4j database
+"""
+import csv
+import os
+import time
+
 from lxml import etree
 from pathlib import Path
 import neo4j
-from typing import Any
+from typing import Any, Generator
 
 from diploma_thesis.settings import NEO4J_URI, NEO4J_USERNAME, NEO4J_PASSWORD, DATA_DIR
 
@@ -74,9 +82,9 @@ def extract_article(xml_file: Path) -> dict[str, Any]:
         for annotation in annotations:
             infon_type = annotation.find("infon[@key='type']")
             if infon_type is not None and infon_type.text == "Gene":
-                gene_name = annotation.findtext("text").strip()
-                gene_id = annotation.findtext("infon[@key='identifier']")
-                homologene = annotation.findtext("infon[@key='NCBI Homologene']")
+                gene_name = annotation.findtext("text", default="notKnownGeneName").strip()
+                gene_id = annotation.findtext("infon[@key='identifier']", default="notKnownGeneID")
+                homologene = annotation.findtext("infon[@key='NCBI Homologene']", default="notKnownHomologene")
 
                 if gene_name not in genes:
                     genes[gene_name] = {
@@ -89,8 +97,8 @@ def extract_article(xml_file: Path) -> dict[str, Any]:
                     genes[gene_name]["count"] += 1
 
     return {
-        "id": doc_id,
-        "year": year,
+        "id": int(doc_id),
+        "year": int(year),
         "journal": journal,
         "title": title,
         "abstract": abstract,
@@ -137,35 +145,102 @@ class Neo4jConnection:
         return response
 
 
-if __name__ == "__main__":
-    push_doc_query = """
-    MERGE (d:Document {id: $id})
-    SET d.year = $year,
-        d.journal = $journal,
-        d.title = $title,
-        d.abstract = $abstract,
-        d.article_id_pmc = $pmcid,
-        d.authors = $authors
-
-    WITH d
-    UNWIND $authors AS author_name
-        MERGE (a:Author {name: author_name})
-        MERGE (a)-[:is_author_of]->(d)
-
-    WITH d
-    UNWIND $genes AS gene_data
-        MERGE (g:Gene {id: gene_data.id})
-        SET g.name = gene_data.name,
-            g.ncbi_homologene = gene_data.ncbi_homologene
-        MERGE (g)-[r:is_in]->(d)
-        SET r.count = gene_data.count
+def batch(iterable: list, size: int) -> Generator[list, Any, None]:
     """
+    Split a list into smaller batches of fixed size.
 
-    article_data = extract_article(DATA_DIR / "test2" / "article_31888550.xml")
+    This generator function yields consecutive slices of the input list,
+    each of length `size`, except possibly the last one if the total number
+    of items is not evenly divisible by the batch size.
+
+    It is particularly useful for processing large collections (e.g., database inserts)
+    in manageable chunks to avoid excessive memory use or transaction overhead.
+
+    Example:
+        >>> list(batch([1, 2, 3, 4, 5, 6, 7], size=3))
+        [[1, 2, 3], [4, 5, 6], [7]]
+
+    Args:
+        iterable (list): The input list to be divided into batches.
+        size (int): The number of elements in each batch.
+
+    Yields:
+        list: A sublist of the input list of length up to `size`.
+
+    Logic:
+        - The function loops over the input list in steps of `size` using `range`.
+        - On each step, it slices a chunk `iterable[i:i + size]` and yields it.
+        - Uses `yield` to avoid creating all chunks at once, improving memory usage.
+    """
+    for i in range(0, len(iterable), size):
+        yield iterable[i:i + size]
+
+
+if __name__ == "__main__":
+    batch_upload_articles_query = """
+        UNWIND $batch AS data
+    MERGE (d:Document {id: data.id})
+    SET d.title = toInteger(data.title),
+        d.year = toInteger(data.year),
+        d.journal = data.journal,
+        d.abstract = data.abstract,
+        d.pmcid = toInteger(data.pmcid),
+        d.authors = data.authors
+    
+    FOREACH (author IN data.authors |
+        MERGE (a:Author {name: author})
+        MERGE (a)-[:is_author_of]->(d)
+    )
+    
+    FOREACH (gene IN data.genes |
+        MERGE (g:Gene {id: gene.id})
+        SET g.name = gene.name,
+            g.ncbi_homologene = toInteger(gene.ncbi_homologene)
+            g.id = toInteger(gene.id)
+        MERGE (g)-[r:is_in]->(d)
+        SET r.count = gene.count
+    )
+    """
+    batch_upload_embeddings_query = """
+        UNWIND $batch AS data
+        MATCH (d:Document {id: data.id})
+        SET d.embedding = apoc.convert.fromJsonList(data.embedding)
+    """
+    batch_size = 500
     conn = Neo4jConnection(NEO4J_URI, NEO4J_USERNAME, NEO4J_PASSWORD)
-
+    # conn.query("MATCH (n) DETACH DELETE n")
     # conn.query('CREATE CONSTRAINT constraint_document IF NOT EXISTS FOR (d:Document) REQUIRE d.id IS UNIQUE')
     # conn.query('CREATE CONSTRAINT constraint_author IF NOT EXISTS FOR (a:Author) REQUIRE a.name IS UNIQUE')
     # conn.query('CREATE CONSTRAINT constraint_gene IF NOT EXISTS FOR (g:Gene) REQUIRE g.id IS UNIQUE')
     # conn.query("SHOW CONSTRAINTS", print_results=True)
-    conn.query(push_doc_query, article_data)
+
+    start = time.time()
+
+    # extract data from xmls into list of dictionaries ready to be fed into the db
+    article_data_list = []
+    for dir in os.listdir(DATA_DIR / "breast_cancer"):
+        for file in os.listdir(DATA_DIR / "breast_cancer" / dir):
+            article_data_list.append(extract_article(DATA_DIR / "breast_cancer" / dir / file))
+        print(dir + " done.")
+
+    # upload articles data
+    for i, batch_chunk in enumerate(batch(article_data_list, batch_size)):
+        print(f"Pushing batch {i + 1}...")
+        conn.query(batch_upload_articles_query, {"batch": batch_chunk})
+
+    # read embeddings data from csv
+    emb_data_list = []
+    with open(DATA_DIR / "breast_cancer_embeddings_2020_2025.csv", "r", encoding="utf-8") as f:
+        reader = csv.reader(f, delimiter=",", quotechar='|')
+        for row in reader:
+            emb_data_list.append({"id": row[0], "embedding": row[1]})
+        print("All data from csv have been read.")
+
+    # upload embeddings data
+    for i, batch_chunk in enumerate(batch(emb_data_list, batch_size)):
+        print(f"Pushing batch {i + 1}...")
+        conn.query(batch_upload_embeddings_query, {"batch": batch_chunk})
+
+    end = time.time()
+    # time for aura: ~ 60 s; time for desktop ~ 75 min!
+    print(f"Total time: {round(end - start, 2)} seconds.")
