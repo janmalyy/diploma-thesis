@@ -1,17 +1,16 @@
-This repo is a base for diploma thesis project. The code and the topic itself is still under development.
-The areas of interest are: biomedical data, gene disease associations, graphs, visualization.
+This repo is a base for diploma thesis project.
+The aim is to develop an interactive, graph-based web app designed to support oncologists in the personalization of cancer treatment.
 
 ### Structure
 - **api**
-  - pubtator_api = access to pubmed articles, too, but with annotations from pubtator
+  - pubtator_api = download articles from pubtator 
 - **utils**
-  - parse_xml = parse XML-structured pubmed article and convert it into nodes (entities) and edges (relations)
-  - create_testset = further process data from xml to create a dataframe and then csv file in special format
-    - the format is: pubmed_id, text and then triplets (gene_entity_from_text, disease_entity_from_text, their relation) 
-- **visualisation**
-  - visualize relations between diseases and genes from one pubmed article
+  - compute_embeddings = compute word embeddings for title+abstract field in articles
+  - xml_to_neo4j = extract the data from articles and save them into neo4j database 
+  - compute_cosine_similarity = compute the similarity of word embeddings of articles and save the info about the most similar articles into neo4j
+  - parse_xml = helper functions to parse XML-structured pubtator articles
 - **web**
-  - NOT WORKING NOW
+  - WIP
 
 
 ---
