@@ -1,11 +1,21 @@
+import logging
 import numpy as np
 import pickle
+import time
 
 from diploma_thesis.settings import NEO4J_URI, NEO4J_USERNAME, NEO4J_PASSWORD, DATA_DIR
-from diploma_thesis.utils.xml_to_neo4j import Neo4jConnection
+from diploma_thesis.utils.xml_to_neo4j import Neo4jConnection, batch
 
 
-def compute_topk_similarities(keys: list, vectors: np.ndarray, k: int = 100, batch_size: int = 500) -> dict:
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[logging.StreamHandler()]
+)
+logger = logging.getLogger(__name__)
+
+
+def compute_topk_similarities(keys: list, vectors: np.ndarray, k: int = 100, batch_size: int = 500) -> dict[str, dict[str, list]]:
     """
     Compute top-k cosine similarities for each vector and return results mapped by keys.
 
@@ -60,13 +70,133 @@ def compute_topk_similarities(keys: list, vectors: np.ndarray, k: int = 100, bat
     return results
 
 
-if __name__ == '__main__':
-    conn = Neo4jConnection(NEO4J_URI, NEO4J_USERNAME, NEO4J_PASSWORD)
+def fetch_and_compute_similarities(conn, k=200, batch_size=500):
+    """
+    Fetch document IDs and embeddings from Neo4j, compute similarities, and return results.
+
+    Args:
+        conn: Neo4j connection object
+        k: Number of top similarities to compute per document
+        batch_size: Batch size for computation
+
+    Returns:
+        Dictionary of top-k similarities
+    """
+    logger.info("Fetching document IDs from Neo4j...")
     keys = [record["id"] for record in conn.query("MATCH (d:Document) RETURN d.id AS id")]
+
+    logger.info(f"Fetched {len(keys)} document IDs")
+    if not keys:
+        logger.error("No documents found in the database.")
+        return None
+
+    logger.info("Fetching document embeddings from Neo4j...")
     vectors = [record["embedding"] for record in conn.query("MATCH (d:Document) RETURN d.embedding AS embedding")]
     vectors = np.asarray(vectors)
 
-    topk_results = compute_topk_similarities(keys, vectors, k=200, batch_size=500)
+    logger.info(f"Computing top-{k} similarities for {len(keys)} documents...")
+    start_time = time.time()
+    topk_results = compute_topk_similarities(keys, vectors, k=k, batch_size=batch_size)
+    elapsed_time = time.time() - start_time
 
-    with open(DATA_DIR / "topk_similarities.pkl", "wb") as f:
+    logger.info(f"Similarity computation completed in {elapsed_time:.2f} seconds.")
+    return topk_results
+
+
+def save_similarities_to_pkl(topk_results, output_path=DATA_DIR / "topk_similarities.pkl"):
+    """
+    Save similarity results to a pickle file.
+
+    Args:
+        topk_results: Dictionary of similarity results
+        output_path: Path to save the pickle file (default: DATA_DIR/topk_similarities.pkl)
+    """
+    with open(output_path, "wb") as f:
         pickle.dump(topk_results, f, protocol=pickle.HIGHEST_PROTOCOL)
+    logger.info("Similarity results saved successfully.")
+
+
+def load_similarities_from_pkl(input_path=DATA_DIR / "topk_similarities.pkl"):
+    """
+    Load similarity results from a pickle file.
+
+    Args:
+        input_path: Path to the pickle file (default: DATA_DIR/topk_similarities.pkl)
+
+    Returns:
+        Dictionary of similarity results
+    """
+    try:
+        with open(input_path, "rb") as f:
+            data = pickle.load(f)
+        logger.info("Similarity results loaded successfully.")
+        return data
+    except FileNotFoundError:
+        logger.error(f"File not found: {input_path}")
+        return None
+    except Exception as e:
+        logger.error(f"Error loading similarity results: {e}")
+        return None
+
+
+def save_similarities_to_neo4j(conn, data, top_n=20, batch_size=500):
+    """
+    Save similarity relationships to Neo4j.
+
+    Args:
+        conn: Neo4j connection object
+        data: Dictionary of similarity results
+        top_n: Number of top similarities to save per document
+        batch_size: Batch size for Neo4j operations
+    """
+    if not data:
+        logger.error("No similarity data to save")
+        return
+
+    batch_create_relationships_query = """
+    UNWIND $batch AS relationship
+    MATCH (a:Document {id: toInteger(relationship.id1)})
+    MATCH (b:Document {id: toInteger(relationship.id2)})
+    MERGE (a)-[r:is_similar_to]-(b)
+    SET r.weight = relationship.similarity
+    """
+
+    # Prepare relationships data
+    relationships = []
+    for article_id, article_data in data.items():
+        top_keys = article_data["top_keys"][:top_n]
+        similarities = article_data["similarities"][:top_n]
+
+        for i, target_id in enumerate(top_keys):
+            similarity = round(similarities[i], 4)
+            relationships.append({
+                "id1": article_id,
+                "id2": target_id,
+                "similarity": similarity
+            })
+
+    total_batches = (len(relationships) + batch_size - 1) // batch_size
+    logger.info(f"Saving {len(relationships)} relationships to Neo4j in {total_batches} batches.")
+
+    # Process in batches
+    start_time = time.time()
+    for i, batch_chunk in enumerate(batch(relationships, batch_size)):
+        logger.info(f"Processing batch {i + 1}/{total_batches}...")
+        conn.query(batch_create_relationships_query, {"batch": batch_chunk})
+
+    elapsed_time = time.time() - start_time
+    logger.info(f"Created {len(relationships)} 'is_similar_to' relationships in {elapsed_time:.2f} seconds.")
+
+
+if __name__ == '__main__':
+    k = 200
+    top_n = 20
+    batch_size = 500
+
+    conn = Neo4jConnection(NEO4J_URI, NEO4J_USERNAME, NEO4J_PASSWORD)
+
+    topk_results = fetch_and_compute_similarities(conn, k, batch_size)
+    save_similarities_to_pkl(topk_results)
+
+    data = load_similarities_from_pkl()
+    save_similarities_to_neo4j(conn, data, top_n, batch_size)
