@@ -3,7 +3,6 @@ The areas of interest are: biomedical data, gene disease associations, graphs, v
 
 ### Structure
 - **api**
-  - pubmed_api = access to pubmed articles
   - pubtator_api = access to pubmed articles, too, but with annotations from pubtator
 - **utils**
   - parse_xml = parse XML-structured pubmed article and convert it into nodes (entities) and edges (relations)

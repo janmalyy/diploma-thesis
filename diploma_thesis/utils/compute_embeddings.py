@@ -6,7 +6,7 @@ from nltk import sent_tokenize
 import numpy as np
 
 from diploma_thesis.settings import DATA_DIR
-from diploma_thesis.utils.create_testset import get_title_with_abstract
+from diploma_thesis.utils.parse_xml import get_title_with_abstract
 
 if __name__ == '__main__':
     # create csv with two columns: id and title+abstract
@@ -23,6 +23,7 @@ if __name__ == '__main__':
 
     # ---------------------------
     # create csv with two columns: id and embeddings from title+abstract
+    # this is much better to run on gpu, e.g. in colab here: https://colab.research.google.com/drive/1NgLvZqrV48XjGKeXftWNP2A2RoEnuRSj#scrollTo=77UOLuLyZnOR
     model = SentenceTransformer("neuml/pubmedbert-base-embeddings")
     with open(DATA_DIR / "breast_cancer_titles_abstracts_2020_2025.csv", "r", encoding="utf-8") as in_file:
         with open(DATA_DIR / "breast_cancer_embeddings_2020_2025.csv", "w", encoding="utf-8", newline="") as out_file:  # without newline="", every second line was blank

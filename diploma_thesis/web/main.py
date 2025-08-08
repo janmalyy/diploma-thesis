@@ -5,6 +5,7 @@ from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from neo4j import GraphDatabase
+from neo4j.graph import Node, Relationship
 import uvicorn
 from pydantic import BaseModel
 
@@ -38,12 +39,20 @@ def get_graph():
         nodes = {}
         edges = []
         for record in result:
-            n = record["n"]
-            m = record["m"]
-            r = record["r"]
-            nodes[n.id] = {"data": {"id": str(n.id), "label": n.get("name", str(n.id))}}
-            nodes[m.id] = {"data": {"id": str(m.id), "label": m.get("name", str(m.id))}}
-            edges.append({"data": {"source": str(n.id), "target": str(m.id), "label": r.type}})
+            for value in record.values():
+                if isinstance(value, Node):
+                    label = value.get("title") or value.get("name") or str(value.id)
+                    nodes[value.id] = {
+                        "data": {"id": str(value.id), "label": label}
+                    }
+                elif isinstance(value, Relationship):
+                    edges.append({
+                        "data": {
+                            "source": str(value.start_node.id),
+                            "target": str(value.end_node.id),
+                            "label": value.type
+                        }
+                    })
         return {"nodes": list(nodes.values()), "edges": edges}
 
 
