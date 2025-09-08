@@ -69,14 +69,6 @@ services:
       bash -c "
                 set -e  # exit immediately on any error
       
-                echo '[INFO] Waiting for Neo4j to be ready...'
-                for i in {1..5}; do
-                    /var/lib/neo4j/bin/cypher-shell -a bolt://neo4j:7687 -u $NEO4J_USERNAME -p $NEO4J_PASSWORD 'RETURN 1;' && break;
-                  echo '[INFO] Neo4j not ready yet, retrying in 5s...';
-                  sleep 5;
-                done
-                echo '[OK] Neo4j is ready.'
-      
                 echo '[INFO] Loading neo4j...'
                 neo4j-admin database load --verbose --overwrite-destination=true neo4j
                 echo '[OK] Load complete.'
@@ -94,6 +86,9 @@ services:
         condition: service_completed_successfully
     volumes:
       - ./diploma_thesis/data:/app/diploma_thesis/data
+      - ./diploma_thesis/web:/app/diploma_thesis/web
+      - ./diploma_thesis/web/static:/app/static
+      - ./diploma_thesis/web/templates:/app/templates
     environment:
       <<: *local_variables
     deploy:
