@@ -10,6 +10,7 @@ import uvicorn
 from pydantic import BaseModel
 
 from diploma_thesis.settings import NEO4J_USERNAME, NEO4J_PASSWORD, NEO4J_URI
+from diploma_thesis.web.utils_for_web import is_safe_query
 
 app = FastAPI()
 driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USERNAME, NEO4J_PASSWORD))
@@ -17,15 +18,9 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
 
 
-def is_safe_query(query: str) -> bool:
-    stripped = re.sub(r"(?m)//.*?$", "", query).strip().upper()
-    return (stripped.startswith(("MATCH", "WITH", "RETURN"))
-            and re.search(r"\bCALL\s+(dbms|apoc)\b", query, re.IGNORECASE))
-
-
 @ app.get("/", response_class=HTMLResponse)
 def get_index(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request})
+    return templates.TemplateResponse(request=request, name="index.html")
 
 
 @app.get("/api/graph")
