@@ -6,7 +6,7 @@ requests
 lxml
 python-dateutil
 jinja2
-fastapi
+fastapi[standard]
 uvicorn
 neo4j
 biopython
