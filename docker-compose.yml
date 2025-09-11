@@ -29,6 +29,7 @@ services:
       NEO4J_server_memory_heap_max__size: 2g
       NEO4J_server_memory_pagecache_size: 512m
     volumes:
+      - ./neo4j/data:/data
       - ./neo4j/conf:/conf
       - ./neo4j/dumps:/var/lib/neo4j/data/dumps
     healthcheck:
