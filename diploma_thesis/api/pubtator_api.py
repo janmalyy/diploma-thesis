@@ -2,9 +2,7 @@ import datetime
 import os
 
 from dateutil.relativedelta import relativedelta
-import logging
 import time
-import warnings
 
 import requests
 from requests.adapters import HTTPAdapter
@@ -12,15 +10,8 @@ from urllib3 import Retry
 from xml.etree import ElementTree as ET
 from Bio import Entrez
 
-from diploma_thesis.settings import DATA_DIR
+from diploma_thesis.settings import DATA_DIR, logger
 from diploma_thesis.utils.parse_xml import write_pretty_xml
-
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
-warnings.filterwarnings(
-    "ignore",
-    message="Unverified HTTPS request"
-)
 
 
 def get_pubmed_ids_by_query_with_pubtator_and_entrez(query: str, email: str,
