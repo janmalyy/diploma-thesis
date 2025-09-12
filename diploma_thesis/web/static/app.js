@@ -11,18 +11,48 @@ document.addEventListener("DOMContentLoaded", function () {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ query: query })
     })
-      .then(res => res.json())
+      .then(res => {
+        if (!res.ok) {
+          return res.json().then(err => {
+            const errorMsg = err.detail || 'Unknown error';
+            throw new Error(`Error: ${errorMsg}`);
+          });
+        }
+        return res.json();
+      })
       .then(data => {
+        // Clear any previous error messages
+        const errorDiv = document.getElementById('error-message');
+        if (errorDiv) errorDiv.remove();
+
+        // Process successful response
         const elements = [...data.nodes, ...data.edges];
         cytoscape({
-          container: document.getElementById("cy"), // where on the page to put the graph (the element with ID "cy")
-          elements: elements, // what to draw (nodes + edges)
+          container: document.getElementById("cy"),
+          elements: elements,
           style: [
             { selector: "node", style: { "label": "data(label)", "background-color": "#0074D9" }},
             { selector: "edge", style: { "label": "data(label)", "line-color": "#ccc", "target-arrow-shape": "triangle" }}
           ],
-          layout: { name: "cose" }  // "cose" makes the nodes spread out in a balanced way.
+          layout: { name: "cose" }
         });
+      })
+      .catch(error => {
+        console.error(error);
+
+        // Display error to user
+        const queryContainer = document.getElementById('query-container');
+        let errorDiv = document.getElementById('error-message');
+
+        if (!errorDiv) {
+          errorDiv = document.createElement('div');
+          errorDiv.id = 'error-message';
+          errorDiv.style.color = 'red';
+          errorDiv.style.marginTop = '10px';
+          queryContainer.after(errorDiv);
+        }
+
+        errorDiv.textContent = error.message;
       });
   });
 });
