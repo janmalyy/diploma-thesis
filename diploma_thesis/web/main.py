@@ -10,7 +10,7 @@ from pydantic import BaseModel
 
 from diploma_thesis.settings import NEO4J_USERNAME, NEO4J_PASSWORD, NEO4J_URI, PACKAGE_DIR, logger
 from diploma_thesis.web.error_handlers import register_error_handlers
-from diploma_thesis.web.exceptions import CypherSyntaxError
+from diploma_thesis.web.exceptions import CypherSyntaxError, NeoNotAvailableError
 from diploma_thesis.web.utils_for_web import is_safe_query
 
 
@@ -63,33 +63,38 @@ def run_query(request: QueryRequest = Body(...)):
     if not is_safe_query(request.query):
         raise HTTPException(status_code=400, detail="Unsafe Cypher query detected.")
 
+    result = None
     with driver.session() as session:
         try:
             result = session.run(request.query)
-            print(result, flush=True)
         except neo4j.exceptions.CypherSyntaxError as e:
             raise CypherSyntaxError(e.message)
-        except Exception as e:
-            logger.error(f"Some error when querying the database with query {request.query}. See the output: {e}")
+        except neo4j.exceptions.ServiceUnavailable:
+            raise NeoNotAvailableError()
 
         nodes = {}
         edges = []
-        for record in result:
-            # Try extracting nodes and relationships
-            for value in record.values():
-                if hasattr(value, "id") and hasattr(value, "labels"):
-                    nodes[value.id] = {
-                        "data": {"id": str(value.id), "label": value.get("name", str(value.id))}
-                    }
-                elif hasattr(value, "start_node") and hasattr(value, "end_node"):
-                    edges.append({
-                        "data": {
-                            "source": str(value.start_node.id),
-                            "target": str(value.end_node.id),
-                            "label": value.type
+        try:
+            for record in result:
+                # Try extracting nodes and relationships
+                for value in record.values():
+                    if hasattr(value, "id") and hasattr(value, "labels"):
+                        nodes[value.id] = {
+                            "data": {"id": str(value.id), "label": value.get("name", str(value.id))}
                         }
-                    })
-        return {"nodes": list(nodes.values()), "edges": edges}
+                    elif hasattr(value, "start_node") and hasattr(value, "end_node"):
+                        edges.append({
+                            "data": {
+                                "source": str(value.start_node.id),
+                                "target": str(value.end_node.id),
+                                "label": value.type
+                            }
+                        })
+            return {"nodes": list(nodes.values()), "edges": edges}
+
+        except Exception as e:
+            logger.error(f"Some error when querying the database with query {request.query}. See the output: {e}")
+            raise HTTPException(status_code=500, detail=str(e))
 
 
 if __name__ == "__main__":
