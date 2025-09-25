@@ -1,18 +1,9 @@
-import logging
 import numpy as np
 import pickle
 import time
 
-from diploma_thesis.settings import NEO4J_URI, NEO4J_USERNAME, NEO4J_PASSWORD, DATA_DIR
+from diploma_thesis.settings import NEO4J_URI, NEO4J_USERNAME, NEO4J_PASSWORD, DATA_DIR, logger
 from diploma_thesis.utils.xml_to_neo4j import Neo4jConnection, batch
-
-
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[logging.StreamHandler()]
-)
-logger = logging.getLogger(__name__)
 
 
 def compute_topk_similarities(keys: list, vectors: np.ndarray, k: int = 100, batch_size: int = 500) -> dict[str, dict[str, list]]:

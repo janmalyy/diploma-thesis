@@ -1,3 +1,4 @@
+import logging
 import os
 from pathlib import Path
 from dotenv import load_dotenv
@@ -13,3 +14,12 @@ AURA_INSTANCENAME = os.getenv("AURA_INSTANCENAME")
 
 PACKAGE_DIR = Path(__file__).parent  # = your/home/directory/diploma_thesis/diploma_thesis
 DATA_DIR = PACKAGE_DIR / "data"
+
+logging.basicConfig(
+ level=logging.INFO,
+ format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+ handlers=[logging.StreamHandler()]
+)
+
+logger = logging.getLogger("diploma_thesis")
+logger.setLevel(logging.INFO)

@@ -1,0 +1,20 @@
+# Exclude large data folders and files
+diploma_thesis/data/*               # exclude everything
+
+# Exclude common build artifacts and caches
+**/__pycache__/
+**/.py[cod]
+**/*.pyc
+**/.pytest_cache/
+.git/
+.venv/
+
+# Exclude development and IDE files
+.idea/
+.gitignore
+.env
+.gitattributes
+
+# Exclude Docker-related files
+Dockerfile
+docker-compose.yml

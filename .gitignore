@@ -1,7 +1,8 @@
 diploma_thesis/data
 
-# for now
-diploma_thesis/visualization/visualize_interactive.py
+neo4j/data
+neo4j/import
+neo4j/logs
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
