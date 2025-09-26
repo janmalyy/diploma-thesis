@@ -1,3 +1,5 @@
+import os
+
 import neo4j.exceptions
 from fastapi import FastAPI, Request, Body, HTTPException
 from fastapi.responses import HTMLResponse
@@ -16,9 +18,10 @@ from diploma_thesis.web.utils_for_web import is_safe_query
 
 app = FastAPI()
 register_error_handlers(app)
-driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USERNAME, NEO4J_PASSWORD))
 app.mount("/static", StaticFiles(directory=PACKAGE_DIR / "web" / "static"), name="static")
 templates = Jinja2Templates(directory=PACKAGE_DIR / "web" / "templates")
+
+driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USERNAME, NEO4J_PASSWORD))
 
 
 @ app.get("/", response_class=HTMLResponse)
