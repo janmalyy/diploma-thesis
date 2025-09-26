@@ -1,5 +1,5 @@
 # Cancer Treatment Personalization Tool
-The work is stilll under the development.
+**The work is stilll under the development.**
 
 
 An interactive, graph-based web application designed to support oncologists in the personalization of cancer treatment. This project is developed as part of a diploma thesis.
@@ -25,7 +25,7 @@ This application processes biomedical articles from PubTator, computes text embe
 - Python 3.12
 - Neo4j Graph Database
 - FastAPI
-- Docker & Docker Compose
+- Docker
 - Natural Language Processing (NLTK, sentence-transformers)
 - BioPython
 
@@ -33,7 +33,7 @@ This application processes biomedical articles from PubTator, computes text embe
 
 ### Prerequisites
 
-- [Docker](https://www.docker.com/get-started) and [Docker Compose](https://docs.docker.com/compose/install/)
+- [Docker](https://www.docker.com/get-started)
 - Git
 
 ### Installation Steps
@@ -45,21 +45,22 @@ This application processes biomedical articles from PubTator, computes text embe
    ```
 
 2. Configure environment variables:
-   - The project includes default values in the `docker-compose.yml` file
-   - You can modify the `.env` file to customize:
-     - Neo4j connection details
-     - Database credentials
-     - Other configuration parameters
+   - You have to ask for `.env` file with credentials and place it into root directory
 
 3. Build and start the services:
    ```
    docker-compose up -d
    ```
 
-4. Access the application on web interface: http://localhost:8000
+4. Access the application on web interface: http://localhost:8000 or acces the database on: http://localhost:7474
 
 
 ## Local Setup (without Docker)
+
+### Prerequisites
+
+- Git
+- [Neo4j Desktop](https://neo4j.com/download/neo4j-desktop/?edition=desktop&flavour=winstall64&release=2.0.3&offline=false) with running database filled in with the data
 
 1. Create and activate a virtual environment:
    ```
@@ -73,15 +74,16 @@ This application processes biomedical articles from PubTator, computes text embe
    pip install -r requirements.txt
    ```
 
-3. Configure environment variables in `.env` file
+3. Configure environment variables:
+   - You have to ask for `.env` file with credentials and place it into root directory
 
 4. Run the application:
    ```
    python -m diploma_thesis.web.main
    ```
-
+5. Access the application on web interface: http://localhost:8000 or acces the database on: http://localhost:7474
 
 ---
 
-- **Author**: Jan Malý
+- **Author**: Jan Malý, 526325@mail.muni.cz
 - **Diploma thesis supervisor**: Vít Nováček
