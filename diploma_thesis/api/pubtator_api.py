@@ -1,5 +1,6 @@
 import datetime
 import os
+from typing import Any
 
 from dateutil.relativedelta import relativedelta
 import time
@@ -14,11 +15,11 @@ from diploma_thesis.settings import DATA_DIR, logger
 from diploma_thesis.utils.parse_xml import write_pretty_xml
 
 
-def get_pubmed_ids_by_query_with_pubtator_and_entrez(query: str, email: str,
-                                                     maxdate: datetime.datetime, mindate: datetime.datetime,
-                                                     limit: int = 20,) -> list[int]:
+def get_pubmed_ids_by_query(query: str, email: str,
+                            maxdate: datetime.datetime, mindate: datetime.datetime, limit: int = float("inf"), ) -> \
+        list[int]:
     """
-    Uses PubTator3 to autocomplete a biomedical entity, and then fetches PubMed IDs using Entrez.
+    Fetches PubMed IDs matching the query using Entrez.
 
     Notes: Entrez.esearch favour more recent articles. However, these are not yet available for download
     (but they can be found at web interface) and when trying to access them, HTTP 400 Error is raised.
@@ -35,36 +36,16 @@ def get_pubmed_ids_by_query_with_pubtator_and_entrez(query: str, email: str,
     Returns:
         list[int]: List of PubMed IDs relevant to the concept.
     """
-    # Step 1: Get top autocomplete suggestion from PubTator3
-    ac_url = "https://www.ncbi.nlm.nih.gov/research/pubtator3-api/entity/autocomplete/"
-    try:
-        resp = requests.get(ac_url, params={"query": query, "limit": 1}, timeout=10)
-        resp.raise_for_status()
-        suggestions = resp.json()
-    except requests.RequestException as e:
-        raise RuntimeError(f"PubTator3 autocomplete failed: {e}")
+    logger.info(f"Searching for IDs matching: '{query}'.")
 
-    if not suggestions:
-        logger.info(f"No suggestions found for {query}.")
-        return []
-
-    label = suggestions[0].get("_id", "").replace("_", " ").strip()
-    if not label:
-        logger.info(f"No label found in {suggestions[0]}.")
-        return []
-
-    logger.info(f"Searching for '{label}' given the free text query: '{query}'.")
-
-    # Step 2: Use label to search in PubMed via Entrez
     Entrez.email = email
-    term = f"{label}[MeSH Terms]"  # e.g., "Breast Neoplasms[MeSH Terms]"
     maximal_accepted_date = datetime.datetime.today() - relativedelta(months=2)
     to_be_used_mindate = mindate if mindate < maximal_accepted_date else maximal_accepted_date - relativedelta(months=1)
     to_be_used_maxdate = maxdate if maxdate < maximal_accepted_date else maximal_accepted_date
 
     try:
         with Entrez.esearch(db="pubmed",
-                            term=term,
+                            term=query,
                             retmax=limit,
                             mindate=to_be_used_mindate.strftime("%Y/%m/%d"),
                             maxdate=to_be_used_maxdate.strftime("%Y/%m/%d"),
@@ -76,18 +57,19 @@ def get_pubmed_ids_by_query_with_pubtator_and_entrez(query: str, email: str,
     return list(map(int, record.get("IdList", [])))
 
 
-def fetch_pubtator_data_by_id(pubmed_id: int) -> ET.Element | None:
+def fetch_pubtator_data_by_ids(pubmed_ids: list[int]) -> ET.Element | None:
     """
     Fetches data from PubTator for given PubMed ID.
 
     Args:
-        pubmed_id (str): The ID of article to retrieve data for.
+        pubmed_ids (list[int]): The IDs of articles to retrieve data for.
 
     Returns:
         xml.etree.ElementTree.Element: Embedded xml structure.
     """
+    pubmed_ids_string = ",".join(map(str, pubmed_ids))
     # note we use direct IP as there are problems with DNS resolution
-    url = f"https://130.14.29.110/research/pubtator3-api/publications/export/biocxml?pmids={pubmed_id}"
+    url = f"https://130.14.29.110/research/pubtator3-api/publications/export/biocxml?pmids={pubmed_ids_string}"
 
     # Fix SSL verification issue by setting 'Host' in headers
     headers = {
@@ -123,20 +105,46 @@ def fetch_pubtator_data_by_id(pubmed_id: int) -> ET.Element | None:
         raise
 
 
+def make_batches(input_list: list[Any], batch_size: int = 100) -> list[Any]:
+    batches = []
+    max_length = len(input_list)
+    end = 0
+    for i in range(max_length // batch_size):
+        start = end
+        end = (i + 1) * batch_size
+        if end <= max_length:
+            batches.append(input_list[start:end])
+        else:
+            batches.append(input_list[start:max_length])
+
+    return batches
+
+
 if __name__ == '__main__':
+    # TIAB = will search within a citation's title, collection title, abstract, other abstract, and author keywords
+    keywords = ['"Breast Neoplasms"[MeSH]', '"breast cancer"[TIAB]', '"breast neoplasms"[TIAB]',
+                '"mammary carcinoma"[TIAB]', '"breast tumor"[TIAB]']
+    query = "(" + " OR ".join(keywords) + ")".lstrip(" OR ")
+
     for year in range(2020, 2025):
-        year_dir = DATA_DIR / str(year)
+        year_dir = DATA_DIR / "2025_11_18" / str(year)
         if not os.path.exists(year_dir):
             os.mkdir(year_dir)
-        pmids = get_pubmed_ids_by_query_with_pubtator_and_entrez("breast cancer", "526325@mail.muni.cz",
-                                                                 mindate=datetime.datetime(year, 1, 1),
-                                                                 maxdate=datetime.datetime(year, 12, 31),
-                                                                 limit=10000)
-        for pmid in pmids:
+        pmids = get_pubmed_ids_by_query(query, "526325@mail.muni.cz",
+                                        mindate=datetime.datetime(year, 1, 1),
+                                        maxdate=datetime.datetime(year, 1, 20),
+                                        limit=10)
+        logger.info(f"Fetched {len(pmids)} matching PubMed IDs for the query.")
+        pmid_batches = make_batches(pmids, 2)
+        for batch in pmid_batches:
             try:
-                result = fetch_pubtator_data_by_id(pmid)
+                result = fetch_pubtator_data_by_ids(batch)
                 time.sleep(0.3)
-                write_pretty_xml(result, year_dir / f"article_{pmid}.xml")
+                # TODO parse mutliple documents
+                write_pretty_xml(result, f"{year_dir}/article_{batch}.xml")
+                break
             except Exception as e:
                 print(f"Error fetching data: {e}.")
                 continue
+        logger.info(f"Downloading finished.")
+        break
