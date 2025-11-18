@@ -1,5 +1,6 @@
 import datetime
 import os
+from pathlib import Path
 from typing import Any
 
 from dateutil.relativedelta import relativedelta
@@ -120,10 +121,16 @@ def make_batches(input_list: list[Any], batch_size: int = 100) -> list[Any]:
     return batches
 
 
+def split_batch_to_separate_articles(root: ET.Element, directory: Path) -> None:
+    for document in root.findall("document"):
+        pubmed_id = document.find("id").text
+        write_pretty_xml(document, directory / f"article_{pubmed_id}.xml")
+
+
 if __name__ == '__main__':
     # TIAB = will search within a citation's title, collection title, abstract, other abstract, and author keywords
-    keywords = ['"Breast Neoplasms"[MeSH]', '"breast cancer"[TIAB]', '"breast neoplasms"[TIAB]',
-                '"mammary carcinoma"[TIAB]', '"breast tumor"[TIAB]']
+    keywords = ['"Breast Neoplasms"[MeSH]', '"breast cancer*"[TIAB]', '"breast neoplasm*"[TIAB]',
+                '"mammary carcinoma"[TIAB]', '"breast tumor*"[TIAB]']
     query = "(" + " OR ".join(keywords) + ")".lstrip(" OR ")
 
     for year in range(2020, 2025):
@@ -140,8 +147,7 @@ if __name__ == '__main__':
             try:
                 result = fetch_pubtator_data_by_ids(batch)
                 time.sleep(0.3)
-                # TODO parse mutliple documents
-                write_pretty_xml(result, f"{year_dir}/article_{batch}.xml")
+                split_batch_to_separate_articles(result, year_dir)
                 break
             except Exception as e:
                 print(f"Error fetching data: {e}.")
