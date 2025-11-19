@@ -1,13 +1,14 @@
-import datetime
 import os
+import time
+import datetime
+import calendar
 from pathlib import Path
 from typing import Any
-
 from dateutil.relativedelta import relativedelta
-import time
 
 import requests
 from requests.adapters import HTTPAdapter
+import urllib3
 from urllib3 import Retry
 from xml.etree import ElementTree as ET
 from Bio import Entrez
@@ -15,9 +16,11 @@ from Bio import Entrez
 from diploma_thesis.settings import DATA_DIR, logger
 from diploma_thesis.utils.parse_xml import write_pretty_xml
 
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
 
 def get_pubmed_ids_by_query(query: str, email: str,
-                            maxdate: datetime.datetime, mindate: datetime.datetime, limit: int = float("inf"), ) -> \
+                            maxdate: datetime.datetime, mindate: datetime.datetime) -> \
         list[int]:
     """
     Fetches PubMed IDs matching the query using Entrez.
@@ -32,13 +35,10 @@ def get_pubmed_ids_by_query(query: str, email: str,
         email (str): Email required by Entrez.
         maxdate (datetime.datetime): The maximal publication date of the articles.
         mindate (datetime.datetime): The minimal publication date of the articles.
-        limit (int): Max number of PubMed IDs to return.
 
     Returns:
         list[int]: List of PubMed IDs relevant to the concept.
     """
-    logger.info(f"Searching for IDs matching: '{query}'.")
-
     Entrez.email = email
     maximal_accepted_date = datetime.datetime.today() - relativedelta(months=2)
     to_be_used_mindate = mindate if mindate < maximal_accepted_date else maximal_accepted_date - relativedelta(months=1)
@@ -47,7 +47,7 @@ def get_pubmed_ids_by_query(query: str, email: str,
     try:
         with Entrez.esearch(db="pubmed",
                             term=query,
-                            retmax=limit,
+                            retmax=10000,
                             mindate=to_be_used_mindate.strftime("%Y/%m/%d"),
                             maxdate=to_be_used_maxdate.strftime("%Y/%m/%d"),
                             ) as handle:
@@ -106,19 +106,17 @@ def fetch_pubtator_data_by_ids(pubmed_ids: list[int]) -> ET.Element | None:
         raise
 
 
-def make_batches(input_list: list[Any], batch_size: int = 100) -> list[Any]:
-    batches = []
-    max_length = len(input_list)
-    end = 0
-    for i in range(max_length // batch_size):
-        start = end
-        end = (i + 1) * batch_size
-        if end <= max_length:
-            batches.append(input_list[start:end])
-        else:
-            batches.append(input_list[start:max_length])
+def make_batches(input_list: list[Any], batch_size: int = 100) -> list[list[Any]]:
+    """Split a list into equally sized batches.
 
-    return batches
+    Args:
+        input_list (list[Any]): Items to split.
+        batch_size (int): Size of each batch.
+
+    Returns:
+        list[list[Any]]: List of batches.
+    """
+    return [input_list[i:i + batch_size] for i in range(0, len(input_list), batch_size)]
 
 
 def split_batch_to_separate_articles(root: ET.Element, directory: Path) -> None:
@@ -128,29 +126,44 @@ def split_batch_to_separate_articles(root: ET.Element, directory: Path) -> None:
 
 
 if __name__ == '__main__':
-    # TIAB = will search within a citation's title, collection title, abstract, other abstract, and author keywords
-    keywords = ['"Breast Neoplasms"[MeSH]', '"breast cancer*"[TIAB]', '"breast neoplasm*"[TIAB]',
-                '"mammary carcinoma"[TIAB]', '"breast tumor*"[TIAB]']
-    query = "(" + " OR ".join(keywords) + ")".lstrip(" OR ")
+    keywords = ['Breast Neoplasms[MeSH]', 'breast neoplas*', 'breast malignant neoplasm*',
+                'breast cancer*', 'cancer of breast', 'cancer of the breast',
+                'breast tumor*', 'breast malignanc*', 'breast malignant tumor*',
+                'mammary cancer*', 'mammary carcinoma*', 'mammary neoplasm*',
+                'lobular carcinoma*', 'lobular neoplas*',
+                'ductal carcinoma*', 'ductal neoplas*'
+                ]
+    query = '("' + '" OR "'.join(keywords) + '")'.lstrip(" OR ")
 
     for year in range(2020, 2025):
-        year_dir = DATA_DIR / "2025_11_18" / str(year)
+        logger.info(f"Starting year: {year}.")
+        logger.info(f"...searching for IDs matching: '{query}'.")
+        year_dir = DATA_DIR / "2025_11_19" / str(year)
         if not os.path.exists(year_dir):
             os.mkdir(year_dir)
-        pmids = get_pubmed_ids_by_query(query, "526325@mail.muni.cz",
-                                        mindate=datetime.datetime(year, 1, 1),
-                                        maxdate=datetime.datetime(year, 1, 20),
-                                        limit=10)
+
+        pmids = []
+        for month in range(1, 13):      # we split it to months because of limits of bulk downloads to 10k
+            days = calendar.monthrange(year, month)[1]
+            this_month_pmids = get_pubmed_ids_by_query(query, "526325@mail.muni.cz",
+                                                       mindate=datetime.datetime(year, month, 1),
+                                                       maxdate=datetime.datetime(year, month, days),
+                                                       )
+            if this_month_pmids:
+                pmids.extend(this_month_pmids)
+
         logger.info(f"Fetched {len(pmids)} matching PubMed IDs for the query.")
-        pmid_batches = make_batches(pmids, 2)
+        pmid_batches = make_batches(pmids, 100)
+        logger.info("...starts downloading the articles by IDs.")
         for batch in pmid_batches:
             try:
                 result = fetch_pubtator_data_by_ids(batch)
-                time.sleep(0.3)
+                time.sleep(0.34)
                 split_batch_to_separate_articles(result, year_dir)
-                break
+
             except Exception as e:
-                print(f"Error fetching data: {e}.")
+                logger.error(f"Error fetching data: {e}.")
                 continue
-        logger.info(f"Downloading finished.")
-        break
+        logger.info(f"Finished downloading the articles.")
+        logger.info(f"Ending year: {year}.")
+    logger.info(f"All downloading completed.")
