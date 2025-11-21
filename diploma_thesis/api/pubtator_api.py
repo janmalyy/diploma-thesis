@@ -20,10 +20,9 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
 def get_pubmed_ids_by_query(query: str, email: str,
-                            maxdate: datetime.datetime, mindate: datetime.datetime) -> \
-        list[int]:
+                            maxdate: datetime.datetime, mindate: datetime.datetime) -> list[int]:
     """
-    Fetches PubMed IDs matching the query using Entrez.
+    Fetches PubMed IDs from PubMed database matching the query using Entrez.
 
     Notes: Entrez.esearch favour more recent articles. However, these are not yet available for download
     (but they can be found at web interface) and when trying to access them, HTTP 400 Error is raised.
@@ -55,7 +54,19 @@ def get_pubmed_ids_by_query(query: str, email: str,
     except Exception as e:
         raise RuntimeError(f"Entrez search failed: {e}")
 
-    return list(map(int, record.get("IdList", [])))
+    pmids = list(map(int, record.get("IdList", [])))
+
+    return pmids
+
+
+def get_pubmed_ids_by_query_from_pmc(query: str, email: str,
+                                     maxdate: datetime.datetime, mindate: datetime.datetime) -> list[int]:
+    """
+    TODO Results from entrez.esearch signficantly differ for pmc and pubmed database. For now, we will use only pubmed,
+    TODO later we can expand for pmc, too.
+    TODO how they differ: https://chatgpt.com/share/692032c4-092c-8009-85d7-59b7cfe4892e
+    """
+    raise NotImplementedError()
 
 
 def fetch_pubtator_data_by_ids(pubmed_ids: list[int]) -> ET.Element | None:
@@ -102,7 +113,7 @@ def fetch_pubtator_data_by_ids(pubmed_ids: list[int]) -> ET.Element | None:
         return root
 
     except requests.exceptions.RequestException as e:
-        print(f"Error fetching data: {e}")
+        logger.error(f"Error fetching data for ids: {pubmed_ids}", e)
         raise
 
 
@@ -125,45 +136,53 @@ def split_batch_to_separate_articles(root: ET.Element, directory: Path) -> None:
         write_pretty_xml(document, directory / f"article_{pubmed_id}.xml")
 
 
+def download_data_per_year(query: str, email: str, year: int, output_dir: Path) -> None:
+    logger.info(f"Starting year: {year}.")
+    logger.info(f"...searching for IDs matching: '{query}'.")
+    if not os.path.exists(output_dir):
+        os.mkdir(output_dir)
+
+    pmids = []
+    for month in range(1, 13):  # we split it to months because of limits of bulk downloads to 10k
+        days = calendar.monthrange(year, month)[1]
+        this_month_pmids = get_pubmed_ids_by_query(query, email,
+                                                   mindate=datetime.datetime(year, month, 1),
+                                                   maxdate=datetime.datetime(year, month, days),
+                                                   )
+        if this_month_pmids:
+            pmids.extend(this_month_pmids)
+
+    logger.info(f"Fetched {len(pmids)} matching PubMed IDs for the query.")
+    logger.info(f"The PubMed IDs start with: {pmids[:10]}.")
+    pmid_batches = make_batches(pmids, 100)
+    logger.info("...starts downloading the articles by IDs.")
+    for batch in pmid_batches:
+        try:
+            result = fetch_pubtator_data_by_ids(batch)
+            time.sleep(0.34)
+            split_batch_to_separate_articles(result, output_dir)
+
+        except Exception as e:
+            logger.error(f"Error fetching data: {e}.")
+            continue
+    logger.info(f"Finished downloading the articles.")
+    logger.info(f"Ending year: {year}.")
+
+
 if __name__ == '__main__':
-    keywords = ['Breast Neoplasms[MeSH]', 'breast neoplas*', 'breast malignant neoplasm*',
+    keywords = ['Breast Neoplasms', 'breast neoplas*', 'breast malignant neoplasm*',
                 'breast cancer*', 'cancer of breast', 'cancer of the breast',
                 'breast tumor*', 'breast malignanc*', 'breast malignant tumor*',
                 'mammary cancer*', 'mammary carcinoma*', 'mammary neoplasm*',
                 'lobular carcinoma*', 'lobular neoplas*',
                 'ductal carcinoma*', 'ductal neoplas*'
                 ]
-    query = '("' + '" OR "'.join(keywords) + '")'.lstrip(" OR ")
+    query = '("' + keywords[0] + '"[MeSH] OR "' + '"[TIAB] OR "'.join(keywords[1:]) + '"[TIAB])'
 
-    for year in range(2020, 2025):
-        logger.info(f"Starting year: {year}.")
-        logger.info(f"...searching for IDs matching: '{query}'.")
-        year_dir = DATA_DIR / "2025_11_19" / str(year)
-        if not os.path.exists(year_dir):
-            os.mkdir(year_dir)
+    email = "526325@mail.muni.cz"
 
-        pmids = []
-        for month in range(1, 13):      # we split it to months because of limits of bulk downloads to 10k
-            days = calendar.monthrange(year, month)[1]
-            this_month_pmids = get_pubmed_ids_by_query(query, "526325@mail.muni.cz",
-                                                       mindate=datetime.datetime(year, month, 1),
-                                                       maxdate=datetime.datetime(year, month, days),
-                                                       )
-            if this_month_pmids:
-                pmids.extend(this_month_pmids)
+    for year in range(2010, 2025):
+        out_dir = DATA_DIR / "2025_11_19" / f"{year}_pubmed"
+        download_data_per_year(query, email, year, output_dir=out_dir)
 
-        logger.info(f"Fetched {len(pmids)} matching PubMed IDs for the query.")
-        pmid_batches = make_batches(pmids, 100)
-        logger.info("...starts downloading the articles by IDs.")
-        for batch in pmid_batches:
-            try:
-                result = fetch_pubtator_data_by_ids(batch)
-                time.sleep(0.34)
-                split_batch_to_separate_articles(result, year_dir)
-
-            except Exception as e:
-                logger.error(f"Error fetching data: {e}.")
-                continue
-        logger.info(f"Finished downloading the articles.")
-        logger.info(f"Ending year: {year}.")
     logger.info(f"All downloading completed.")
