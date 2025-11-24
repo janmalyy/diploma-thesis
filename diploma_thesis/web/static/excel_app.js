@@ -8,28 +8,16 @@ document.addEventListener("DOMContentLoaded", function () {
   const exportXlsxBtn = document.getElementById("export-xlsx");
   const exportCsvBtn = document.getElementById("export-csv");
   const hotContainer = document.getElementById("hot-container");
+  const confirmOverwriteBtn = document.getElementById("confirmOverwrite");
+  const confirmOverwriteModal = new bootstrap.Modal(document.getElementById("confirmOverwriteModal"));
 
   let hot; // Handsontable instance
   let currentData = null;
   let originalFileName = "";
+  let pendingFile = null; // Store the file that's waiting for confirmation
 
-  // Handle file upload
-  uploadForm.addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    const file = fileInput.files[0];
-    if (!file) {
-      showError("Please select a file to upload.");
-      return;
-    }
-
-    // Check file extension
-    const fileExt = file.name.split('.').pop().toLowerCase();
-    if (fileExt !== 'xlsx') {
-      showError("Only .xlsx files are supported.");
-      return;
-    }
-
+  // Function to upload a file
+  function uploadFile(file) {
     const formData = new FormData();
     formData.append("file", file);
 
@@ -66,6 +54,47 @@ document.addEventListener("DOMContentLoaded", function () {
     .catch(error => {
       showError(error.message);
     });
+  }
+
+  // Handle file upload form submission
+  uploadForm.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const file = fileInput.files[0];
+    if (!file) {
+      showError("Please select a file to upload.");
+      return;
+    }
+
+    // Check file extension
+    const fileExt = file.name.split('.').pop().toLowerCase();
+    if (fileExt !== 'xlsx') {
+      showError("Only .xlsx files are supported.");
+      return;
+    }
+
+    // Check if a file is already loaded
+    if (currentData !== null) {
+      // Store the file for later use
+      pendingFile = file;
+      // Show confirmation dialog
+      confirmOverwriteModal.show();
+    } else {
+      // No file loaded yet, proceed with upload
+      uploadFile(file);
+    }
+  });
+
+  // Handle confirmation dialog "Overwrite" button
+  confirmOverwriteBtn.addEventListener("click", function() {
+    // Hide the modal
+    confirmOverwriteModal.hide();
+
+    // Proceed with upload if we have a pending file
+    if (pendingFile) {
+      uploadFile(pendingFile);
+      pendingFile = null; // Clear the pending file
+    }
   });
 
   // Initialize Handsontable
@@ -90,7 +119,18 @@ document.addEventListener("DOMContentLoaded", function () {
       width: '100%',
       filters: true,
       dropdownMenu: true,
-      formulas: true
+      formulas: true,
+      fixedRowsTop: 1,
+
+      // Use the 'cells' function to dynamically apply a CSS class
+      cells(row) {
+         const cellProperties = {};
+         if (row === 0) {
+            // Assign a custom CSS class to every cell in the first row (index 0)
+            cellProperties.className = 'first-row-bold';
+         }
+         return cellProperties;
+      }
     });
   }
 
