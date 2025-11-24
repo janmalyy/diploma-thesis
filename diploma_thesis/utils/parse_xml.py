@@ -19,7 +19,9 @@ def get_document_from_xml(xml_file_path: str) -> ET.Element:
     """
     with open(xml_file_path, "r", encoding="utf-8") as file:
         xml_as_string = file.read()
-        root = ET.fromstring(xml_as_string)  # Root is <collection>
+        root = ET.fromstring(xml_as_string)
+    if root.tag == "document":
+        return root
 
     document = root.find("document")
     if document is None:
