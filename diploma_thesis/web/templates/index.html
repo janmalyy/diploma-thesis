@@ -3,6 +3,7 @@
 <head>
   <title>Neo4j Query Visualizer</title>
   <link rel="icon" type="image/png" sizes="64x64" href="../static/favicon_64x64.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://unpkg.com/cytoscape@3.26.0/dist/cytoscape.min.js"></script>
   <script defer src="/static/app.js"></script>  <!-- defer = the script is downloaded in parallel to parsing the page, and executed after the page has finished parsing. -->
   <style>
@@ -11,13 +12,20 @@
   </style>
 </head>
 <body>
-  <h2>Neo4j Graph Query</h2>
+  <div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h2>Neo4j Graph Query</h2>
+      <a href="/excel" class="btn btn-primary">Excel Viewer & Editor</a>
+    </div>
 
-  <div id="query-container">
-    <input type="text" id="query-input" style="width: 70%;" placeholder="Enter Cypher query">
-    <button id="run-query">Run Query</button>
+    <div id="query-container">
+      <input type="text" id="query-input" style="width: 70%;" placeholder="Enter Cypher query">
+      <button id="run-query" class="btn btn-success">Run Query</button>
+    </div>
+
+    <div id="cy"></div>
   </div>
 
-  <div id="cy"></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

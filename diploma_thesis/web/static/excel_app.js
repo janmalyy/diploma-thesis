@@ -1,0 +1,214 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const uploadForm = document.getElementById("upload-form");
+  const fileInput = document.getElementById("file-input");
+  const errorMessage = document.getElementById("error-message");
+  const successMessage = document.getElementById("success-message");
+  const editorContainer = document.getElementById("editor-container");
+  const currentFileName = document.querySelector("#current-file span");
+  const exportXlsxBtn = document.getElementById("export-xlsx");
+  const exportCsvBtn = document.getElementById("export-csv");
+  const hotContainer = document.getElementById("hot-container");
+
+  let hot; // Handsontable instance
+  let currentData = null;
+  let originalFileName = "";
+
+  // Handle file upload
+  uploadForm.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const file = fileInput.files[0];
+    if (!file) {
+      showError("Please select a file to upload.");
+      return;
+    }
+
+    // Check file extension
+    const fileExt = file.name.split('.').pop().toLowerCase();
+    if (fileExt !== 'xlsx') {
+      showError("Only .xlsx files are supported.");
+      return;
+    }
+
+    const formData = new FormData();
+    formData.append("file", file);
+
+    // Hide previous messages
+    hideMessages();
+
+    // Upload file
+    fetch("/api/excel/upload", {
+      method: "POST",
+      body: formData
+    })
+    .then(response => {
+      if (!response.ok) {
+        return response.json().then(err => {
+          throw new Error(err.detail || "Error uploading file");
+        });
+      }
+      return response.json();
+    })
+    .then(data => {
+      currentData = data.data;
+      originalFileName = data.filename;
+
+      // Show success message
+      showSuccess(`File "${originalFileName}" uploaded successfully.`);
+
+      // Update UI
+      currentFileName.textContent = originalFileName;
+      editorContainer.style.display = "block";
+
+      // Initialize or update Handsontable
+      initializeHandsontable(currentData);
+    })
+    .catch(error => {
+      showError(error.message);
+    });
+  });
+
+  // Initialize Handsontable
+  function initializeHandsontable(data) {
+    if (hot) {
+      hot.destroy();
+    }
+
+    hot = new Handsontable(hotContainer, {
+      data: data,
+      rowHeaders: true,
+      colHeaders: true,
+      contextMenu: true,
+      manualColumnResize: true,
+      manualRowResize: true,
+      licenseKey: 'non-commercial-and-evaluation', // Free license for non-commercial use
+      stretchH: 'all',
+      autoColumnSize: true,
+      minSpareRows: 1,
+      minSpareCols: 1,
+      height: '100%',
+      width: '100%',
+      filters: true,
+      dropdownMenu: true,
+      formulas: true
+    });
+  }
+
+  // Export as XLSX
+  exportXlsxBtn.addEventListener("click", function() {
+    if (!currentData) {
+      showError("No data to export.");
+      return;
+    }
+
+    // The last 'true' parameter ensures the data is returned as raw values, not objects.
+    const data = hot.getData(0, 0, hot.countRows() - 1, hot.countCols() - 1, true);
+
+    fetch("/api/excel/export/xlsx", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        data: data,
+        filename: originalFileName
+      })
+    })
+    .then(response => {
+      if (!response.ok) {
+        return response.json().then(err => {
+          throw new Error(err.detail || "Error exporting file");
+        });
+      }
+      // Explicitly handle as blob with correct content type
+      return response.arrayBuffer().then(buffer => new Blob([buffer], {
+        type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+      }));
+    })
+    .then(blob => {
+      // Create download link
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.style.display = "none";
+      a.href = url;
+      a.download = originalFileName;
+      document.body.appendChild(a);
+      a.click();
+      window.URL.revokeObjectURL(url);
+      document.body.removeChild(a);
+
+      showSuccess("File exported successfully as XLSX.");
+    })
+    .catch(error => {
+      showError(error.message);
+    });
+  });
+
+  // Export as CSV
+  exportCsvBtn.addEventListener("click", function() {
+    if (!currentData) {
+      showError("No data to export.");
+      return;
+    }
+
+    const data = hot.getData(0, 0, hot.countRows() - 1, hot.countCols() - 1, true);
+    const csvFilename = originalFileName.replace('.xlsx', '.csv');
+
+    fetch("/api/excel/export/csv", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        data: data,
+        filename: csvFilename
+      })
+    })
+    .then(response => {
+      if (!response.ok) {
+        return response.json().then(err => {
+          throw new Error(err.detail || "Error exporting file");
+        });
+      }
+      // Explicitly handle as blob with correct content type
+      return response.arrayBuffer().then(buffer => new Blob([buffer], {
+        type: "text/csv"
+      }));
+    })
+    .then(blob => {
+      // Create download link
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.style.display = "none";
+      a.href = url;
+      a.download = csvFilename;
+      document.body.appendChild(a);
+      a.click();
+      window.URL.revokeObjectURL(url);
+      document.body.removeChild(a);
+
+      showSuccess("File exported successfully as CSV.");
+    })
+    .catch(error => {
+      showError(error.message);
+    });
+  });
+
+  // Helper functions for showing/hiding messages
+  function showError(message) {
+    errorMessage.textContent = message;
+    errorMessage.style.display = "block";
+    successMessage.style.display = "none";
+  }
+
+  function showSuccess(message) {
+    successMessage.textContent = message;
+    successMessage.style.display = "block";
+    errorMessage.style.display = "none";
+  }
+
+  function hideMessages() {
+    errorMessage.style.display = "none";
+    successMessage.style.display = "none";
+  }
+});

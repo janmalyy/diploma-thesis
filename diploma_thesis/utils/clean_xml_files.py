@@ -37,5 +37,5 @@ def remove_articles_without_abstract(dir: Path, delete: bool) -> None:
 
 
 if __name__ == '__main__':
-    for directory in (DATA_DIR / "2025_11_19").iterdir():
+    for directory in [DATA_DIR / "2025_11_19" / "2010_pubmed", DATA_DIR / "2025_11_19" / "2011_pubmed"]:
         remove_articles_without_abstract(directory, False)

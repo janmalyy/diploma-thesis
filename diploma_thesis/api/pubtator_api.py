@@ -15,6 +15,7 @@ from Bio import Entrez
 
 from diploma_thesis.settings import DATA_DIR, logger
 from diploma_thesis.utils.parse_xml import write_pretty_xml
+from diploma_thesis.utils.xml_to_neo4j import batch
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -117,19 +118,6 @@ def fetch_pubtator_data_by_ids(pubmed_ids: list[int]) -> ET.Element | None:
         raise
 
 
-def make_batches(input_list: list[Any], batch_size: int = 100) -> list[list[Any]]:
-    """Split a list into equally sized batches.
-
-    Args:
-        input_list (list[Any]): Items to split.
-        batch_size (int): Size of each batch.
-
-    Returns:
-        list[list[Any]]: List of batches.
-    """
-    return [input_list[i:i + batch_size] for i in range(0, len(input_list), batch_size)]
-
-
 def split_batch_to_separate_articles(root: ET.Element, directory: Path) -> None:
     for document in root.findall("document"):
         pubmed_id = document.find("id").text
@@ -154,11 +142,11 @@ def download_data_per_year(query: str, email: str, year: int, output_dir: Path) 
 
     logger.info(f"Fetched {len(pmids)} matching PubMed IDs for the query.")
     logger.info(f"The PubMed IDs start with: {pmids[:10]}.")
-    pmid_batches = make_batches(pmids, 100)
+    logger.info(f"The PubMed IDs end with: {pmids[-10:]}.")
     logger.info("...starts downloading the articles by IDs.")
-    for batch in pmid_batches:
+    for batch_chunk in batch(pmids, 100):
         try:
-            result = fetch_pubtator_data_by_ids(batch)
+            result = fetch_pubtator_data_by_ids(batch_chunk)
             time.sleep(0.34)
             split_batch_to_separate_articles(result, output_dir)
 
@@ -181,7 +169,7 @@ if __name__ == '__main__':
 
     email = "526325@mail.muni.cz"
 
-    for year in range(2010, 2025):
+    for year in range(2010, 2011):
         out_dir = DATA_DIR / "2025_11_19" / f"{year}_pubmed"
         download_data_per_year(query, email, year, output_dir=out_dir)
 
