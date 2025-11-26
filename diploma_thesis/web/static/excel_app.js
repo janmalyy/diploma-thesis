@@ -114,22 +114,13 @@ document.addEventListener("DOMContentLoaded", function () {
     function createCosmicLinks(cosmicValue) {
       if (!cosmicValue) return '';
 
-      // Convert to string in case it's a number or other type
-      const valueStr = String(cosmicValue);
-
       // Split by comma if multiple IDs exist
-      const cosmicIds = valueStr.split(',').map(id => id.trim());
-
-      // Regular expression to match COSMIC IDs (typically starting with COS followed by letters/numbers)
-      const cosmicRegex = /(COS[A-Za-z0-9]+)/g;
+      const cosmicIds = cosmicValue.split(',').map(id => id.trim());
 
       // Convert each ID to a hyperlink
       return cosmicIds.map(id => {
         if (!id) return '';
-
-        // If the ID matches the COSMIC format, convert it to a hyperlink
-        // Otherwise, return it as is
-        return id.replace(cosmicRegex, '<a href="https://cancer.sanger.ac.uk/cosmic/search?q=$1" target="_blank">$1</a>');
+        return `<a href="https://cancer.sanger.ac.uk/cosmic/search?q=${id}" target="_blank">${id}</a>`;
       }).join(', ');
     }
 
@@ -138,6 +129,8 @@ document.addEventListener("DOMContentLoaded", function () {
       rowHeaders: true,
       colHeaders: true,
       contextMenu: true,
+      // TODO calculate custom widths for every column with function
+      colWidths: 120,
       manualColumnResize: true,
       manualRowResize: true,
       licenseKey: 'non-commercial-and-evaluation', // Free license for non-commercial use
