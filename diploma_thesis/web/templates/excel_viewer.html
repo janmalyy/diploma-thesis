@@ -14,6 +14,11 @@
       margin-top: 20px;
       margin-bottom: 20px;
     }
+    #hot-container .first-row-bold {
+      /* Use !important as a last resort to beat high-specificity library styles */
+      font-weight: bold !important;
+      background-color: #e0e0e0 !important;
+    }
     .file-actions {
       margin-bottom: 20px;
     }
@@ -64,6 +69,25 @@
               <div id="hot-container"></div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Confirmation Modal -->
+  <div class="modal fade" id="confirmOverwriteModal" tabindex="-1" aria-labelledby="confirmOverwriteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="confirmOverwriteModalLabel">Confirm File Overwrite</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          A file is already loaded. Do you want to overwrite it with the new file?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary" id="confirmOverwrite">Overwrite</button>
         </div>
       </div>
     </div>

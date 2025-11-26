@@ -8,28 +8,16 @@ document.addEventListener("DOMContentLoaded", function () {
   const exportXlsxBtn = document.getElementById("export-xlsx");
   const exportCsvBtn = document.getElementById("export-csv");
   const hotContainer = document.getElementById("hot-container");
+  const confirmOverwriteBtn = document.getElementById("confirmOverwrite");
+  const confirmOverwriteModal = new bootstrap.Modal(document.getElementById("confirmOverwriteModal"));
 
   let hot; // Handsontable instance
   let currentData = null;
   let originalFileName = "";
+  let pendingFile = null; // Store the file that's waiting for confirmation
 
-  // Handle file upload
-  uploadForm.addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    const file = fileInput.files[0];
-    if (!file) {
-      showError("Please select a file to upload.");
-      return;
-    }
-
-    // Check file extension
-    const fileExt = file.name.split('.').pop().toLowerCase();
-    if (fileExt !== 'xlsx') {
-      showError("Only .xlsx files are supported.");
-      return;
-    }
-
+  // Function to upload a file
+  function uploadFile(file) {
     const formData = new FormData();
     formData.append("file", file);
 
@@ -66,12 +54,83 @@ document.addEventListener("DOMContentLoaded", function () {
     .catch(error => {
       showError(error.message);
     });
+  }
+
+  // Handle file upload form submission
+  uploadForm.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const file = fileInput.files[0];
+    if (!file) {
+      showError("Please select a file to upload.");
+      return;
+    }
+
+    // Check file extension
+    const fileExt = file.name.split('.').pop().toLowerCase();
+    if (fileExt !== 'xlsx') {
+      showError("Only .xlsx files are supported.");
+      return;
+    }
+
+    // Check if a file is already loaded
+    if (currentData !== null) {
+      // Store the file for later use
+      pendingFile = file;
+      // Show confirmation dialog
+      confirmOverwriteModal.show();
+    } else {
+      // No file loaded yet, proceed with upload
+      uploadFile(file);
+    }
+  });
+
+  // Handle confirmation dialog "Overwrite" button
+  confirmOverwriteBtn.addEventListener("click", function() {
+    // Hide the modal
+    confirmOverwriteModal.hide();
+
+    // Proceed with upload if we have a pending file
+    if (pendingFile) {
+      uploadFile(pendingFile);
+      pendingFile = null; // Clear the pending file
+    }
   });
 
   // Initialize Handsontable
   function initializeHandsontable(data) {
     if (hot) {
       hot.destroy();
+    }
+
+    // Find the index of the COSMIC column
+    let cosmicColumnIndex = -1;
+    if (data && data.length > 0) {
+      const headers = data[0];
+      cosmicColumnIndex = headers.findIndex(header => header === "COSMIC");
+    }
+
+    // Function to convert COSMIC IDs to hyperlinks
+    function createCosmicLinks(cosmicValue) {
+      if (!cosmicValue) return '';
+
+      // Convert to string in case it's a number or other type
+      const valueStr = String(cosmicValue);
+
+      // Split by comma if multiple IDs exist
+      const cosmicIds = valueStr.split(',').map(id => id.trim());
+
+      // Regular expression to match COSMIC IDs (typically starting with COS followed by letters/numbers)
+      const cosmicRegex = /(COS[A-Za-z0-9]+)/g;
+
+      // Convert each ID to a hyperlink
+      return cosmicIds.map(id => {
+        if (!id) return '';
+
+        // If the ID matches the COSMIC format, convert it to a hyperlink
+        // Otherwise, return it as is
+        return id.replace(cosmicRegex, '<a href="https://cancer.sanger.ac.uk/cosmic/search?q=$1" target="_blank">$1</a>');
+      }).join(', ');
     }
 
     hot = new Handsontable(hotContainer, {
@@ -90,7 +149,32 @@ document.addEventListener("DOMContentLoaded", function () {
       width: '100%',
       filters: true,
       dropdownMenu: true,
-      formulas: true
+      formulas: true,
+      fixedRowsTop: 1,
+
+      // Use the 'cells' function to dynamically apply CSS class and cell renderer
+      cells(row, col) {
+         const cellProperties = {};
+
+         if (row === 0) {
+            // Assign a custom CSS class to every cell in the first row (index 0)
+            cellProperties.className = 'first-row-bold';
+         }
+
+         // Apply custom renderer for COSMIC column
+         if (cosmicColumnIndex !== -1 && col === cosmicColumnIndex && row > 0) {
+            cellProperties.renderer = function(instance, td, row, col, prop, value, cellProperties) {
+              if (value) {
+                td.innerHTML = createCosmicLinks(value);
+              } else {
+                td.innerHTML = '';
+              }
+              return td;
+            };
+         }
+
+         return cellProperties;
+      }
     });
   }
 
