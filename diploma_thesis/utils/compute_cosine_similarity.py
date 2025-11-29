@@ -3,7 +3,7 @@ import pickle
 import time
 
 from diploma_thesis.settings import NEO4J_URI, NEO4J_USERNAME, NEO4J_PASSWORD, DATA_DIR, logger
-from diploma_thesis.utils.xml_to_neo4j import Neo4jConnection, batch
+from diploma_thesis.utils.xml_to_neo4j import Neo4jConnection, make_batches
 
 
 def compute_topk_similarities(keys: list, vectors: np.ndarray, k: int = 100, batch_size: int = 500) -> dict[str, dict[str, list]]:
@@ -171,7 +171,7 @@ def save_similarities_to_neo4j(conn, data, top_n=20, batch_size=500):
 
     # Process in batches
     start_time = time.time()
-    for i, batch_chunk in enumerate(batch(relationships, batch_size)):
+    for i, batch_chunk in enumerate(make_batches(relationships, batch_size)):
         logger.info(f"Processing batch {i + 1}/{total_batches}...")
         conn.query(batch_create_relationships_query, {"batch": batch_chunk})
 

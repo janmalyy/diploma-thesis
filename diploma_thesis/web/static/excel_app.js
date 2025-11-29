@@ -103,11 +103,13 @@ document.addEventListener("DOMContentLoaded", function () {
       hot.destroy();
     }
 
-    // Find the index of the COSMIC column
+    // Find the index of the COSMIC and PubMed columns
     let cosmicColumnIndex = -1;
+    let pubmedColumnIndex = -1;
     if (data && data.length > 0) {
       const headers = data[0];
       cosmicColumnIndex = headers.findIndex(header => header === "COSMIC");
+      pubmedColumnIndex = headers.findIndex(header => header === "PUBMED");
     }
 
     // Function to convert COSMIC IDs to hyperlinks
@@ -130,7 +132,8 @@ document.addEventListener("DOMContentLoaded", function () {
       colHeaders: true,
       contextMenu: true,
       // TODO calculate custom widths for every column with function
-      colWidths: 120,
+      // see https://handsontable.com/docs/12.0/column-width/#fit-all-columns-equally
+      colWidths: 250,
       manualColumnResize: true,
       manualRowResize: true,
       licenseKey: 'non-commercial-and-evaluation', // Free license for non-commercial use
@@ -166,9 +169,30 @@ document.addEventListener("DOMContentLoaded", function () {
             };
          }
 
+         if (pubmedColumnIndex !== -1 && col === pubmedColumnIndex && row > 0) {
+            // The PUBMED column links are generated server-side (in batchConvertAndApplyPubmedLinks)
+            // and written to the cell as HTML strings. We must set the renderer to 'html'
+            // to make Handsontable render the tags as hyperlinks instead of plain text.
+          cellProperties.renderer = 'html';
+       }
+
          return cellProperties;
       }
     });
+
+    // Process PubMed IDs and convert them to hyperlinks
+    if (pubmedColumnIndex !== -1) {
+      try {
+        batchConvertAndApplyPubmedLinks(hot, pubmedColumnIndex)
+          .catch(error => {
+            console.error("Error converting PubMed IDs:", error);
+            showError("Error converting PubMed IDs: " + error.message);
+          });
+      } catch (error) {
+        console.error("Error processing PubMed IDs:", error);
+        showError("Error processing PubMed IDs: " + error.message);
+      }
+    }
   }
 
   // Export as XLSX

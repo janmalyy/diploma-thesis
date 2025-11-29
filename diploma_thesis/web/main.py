@@ -18,7 +18,7 @@ from diploma_thesis.settings import NEO4J_USERNAME, NEO4J_PASSWORD, NEO4J_URI, P
 from diploma_thesis.web.error_handlers import register_error_handlers
 from diploma_thesis.web.exceptions import CypherSyntaxError, NeoNotAvailableError
 from diploma_thesis.web.utils_for_web import is_safe_query
-
+from diploma_thesis.api.convert_ids import convert_ids, connect_pubmed_ids_with_links
 
 app = FastAPI()
 register_error_handlers(app)
@@ -28,7 +28,7 @@ templates = Jinja2Templates(directory=PACKAGE_DIR / "web" / "templates")
 driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USERNAME, NEO4J_PASSWORD))
 
 
-@ app.get("/", response_class=HTMLResponse)
+@app.get("/", response_class=HTMLResponse)
 def get_index(request: Request):
     return templates.TemplateResponse(request=request, name="index.html")
 
@@ -231,6 +231,24 @@ async def export_excel_csv(request: ExcelExportRequest):
     except Exception as e:
         logger.error(f"Error exporting CSV file: {str(e)}")
         raise HTTPException(status_code=500, detail=f"Error exporting CSV file: {str(e)}")
+
+
+class PubmedIdsRequest(BaseModel):
+    ids: List[str]
+
+
+@app.post("/api/pubmed/convert")
+async def convert_pubmed_ids(request: PubmedIdsRequest):
+    try:
+        converted_ids = convert_ids(request.ids, "pmid")
+
+        result = connect_pubmed_ids_with_links(converted_ids)
+
+        return {"result": dict(result)}
+    except Exception as e:
+        logger.error(f"Error converting PubMed IDs: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Error converting PubMed IDs: {str(e)}")
+
 
 if __name__ == "__main__":
     uvicorn.run("diploma_thesis.web.main:app", host="0.0.0.0", port=8000, reload=True)

@@ -145,7 +145,7 @@ class Neo4jConnection:
         return response
 
 
-def batch(iterable: list, size: int) -> Generator[list, Any, None]:
+def make_batches(iterable: list, size: int) -> Generator[list, Any, None]:
     """
     Split a list into smaller batches of fixed size.
 
@@ -157,7 +157,7 @@ def batch(iterable: list, size: int) -> Generator[list, Any, None]:
     in manageable chunks to avoid excessive memory use or transaction overhead.
 
     Example:
-        >>> list(batch([1, 2, 3, 4, 5, 6, 7], size=3))
+        >>> list(make_batches([1, 2, 3, 4, 5, 6, 7], size=3))
         [[1, 2, 3], [4, 5, 6], [7]]
 
     Args:
@@ -224,7 +224,7 @@ if __name__ == "__main__":
         print(dir + " done.")
 
     # upload articles data
-    for i, batch_chunk in enumerate(batch(article_data_list, batch_size)):
+    for i, batch_chunk in enumerate(make_batches(article_data_list, batch_size)):
         print(f"Pushing batch {i + 1}...")
         conn.query(batch_upload_articles_query, {"batch": batch_chunk})
 
@@ -237,7 +237,7 @@ if __name__ == "__main__":
         print("All data from csv have been read.")
 
     # upload embeddings data
-    for i, batch_chunk in enumerate(batch(emb_data_list, batch_size)):
+    for i, batch_chunk in enumerate(make_batches(emb_data_list, batch_size)):
         print(f"Pushing batch {i + 1}...")
         conn.query(batch_upload_embeddings_query, {"batch": batch_chunk})
 

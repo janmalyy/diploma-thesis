@@ -13,9 +13,9 @@ from urllib3 import Retry
 from xml.etree import ElementTree as ET
 from Bio import Entrez
 
-from diploma_thesis.settings import DATA_DIR, logger
+from diploma_thesis.settings import DATA_DIR, logger, NIH_EMAIL
 from diploma_thesis.utils.parse_xml import write_pretty_xml
-from diploma_thesis.utils.xml_to_neo4j import batch
+from diploma_thesis.utils.xml_to_neo4j import make_batches
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -144,7 +144,7 @@ def download_data_per_year(query: str, email: str, year: int, output_dir: Path) 
     logger.info(f"The PubMed IDs start with: {pmids[:10]}.")
     logger.info(f"The PubMed IDs end with: {pmids[-10:]}.")
     logger.info("...starts downloading the articles by IDs.")
-    for batch_chunk in batch(pmids, 100):
+    for batch_chunk in make_batches(pmids, 100):
         try:
             result = fetch_pubtator_data_by_ids(batch_chunk)
             time.sleep(0.34)
@@ -167,10 +167,8 @@ if __name__ == '__main__':
                 ]
     query = '("' + keywords[0] + '"[MeSH] OR "' + '"[TIAB] OR "'.join(keywords[1:]) + '"[TIAB])'
 
-    email = "526325@mail.muni.cz"
-
     for year in range(2010, 2011):
         out_dir = DATA_DIR / "2025_11_19" / f"{year}_pubmed"
-        download_data_per_year(query, email, year, output_dir=out_dir)
+        download_data_per_year(query, NIH_EMAIL, year, output_dir=out_dir)
 
     logger.info(f"All downloading completed.")
