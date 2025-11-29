@@ -12,3 +12,6 @@ neo4j
 biopython
 nltk
 sentence-transformers
+pandas
+openpyxl
+python-multipart
