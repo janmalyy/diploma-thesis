@@ -1,4 +1,8 @@
-document.addEventListener("DOMContentLoaded", function () {
+import { batchConvertAndApplyPubmedLinks } from "./utils.js";
+import { showError, showSuccess, hideMessages, showModal } from "./dom_helpers.js";
+
+document.addEventListener("DOMContentLoaded", () => {
+  // -------------------- DOM Elements --------------------
   const uploadForm = document.getElementById("upload-form");
   const fileInput = document.getElementById("file-input");
   const errorMessage = document.getElementById("error-message");
@@ -15,42 +19,57 @@ document.addEventListener("DOMContentLoaded", function () {
   const summaryModalBody = document.getElementById("summaryModalBody");
   const summaryModal = new bootstrap.Modal(summaryModalEl);
 
-  let hot; // Handsontable instance
+  // -------------------- State --------------------
+  let hot;
   let currentData = null;
   let originalFileName = "";
-  let pendingFile = null; // Store the file that's waiting for confirmation
+  let pendingFile = null;
 
-  // Function to upload a file
-  function uploadFile(file) {
-    const formData = new FormData();
-    formData.append("file", file);
-    hideMessages();
-
-    fetch("/api/excel/upload", { method: "POST", body: formData })
-      .then(response => {
-        if (!response.ok) {
-          return response.json().then(err => { throw new Error(err.detail || "Error uploading file"); });
-        }
-        return response.json();
-      })
-      .then(data => {
-        currentData = data.data;
-        originalFileName = data.filename;
-        showSuccess(`File "${originalFileName}" uploaded successfully.`);
-        currentFileName.textContent = originalFileName;
-        editorContainer.style.display = "block";
-        initializeHandsontable(currentData);
-      })
-      .catch(error => { showError(error.message); });
+  // -------------------- Helpers --------------------
+  function createCosmicLinks(value) {
+    if (!value) return "";
+    return value
+      .split(",")
+      .map(id => `<a href="https://cancer.sanger.ac.uk/cosmic/search?q=${id.trim()}" target="_blank">${id.trim()}</a>`)
+      .join(", ");
   }
 
-  uploadForm.addEventListener("submit", function(e) {
+  // -------------------- Upload --------------------
+  async function uploadFile(file) {
+    const formData = new FormData();
+    formData.append("file", file);
+    hideMessages(errorMessage, successMessage);
+
+    try {
+      const response = await fetch("/api/excel/upload", { method: "POST", body: formData });
+      if (!response.ok) {
+        const err = await response.json();
+        throw new Error(err.detail || "Error uploading file");
+      }
+
+      const data = await response.json();
+      currentData = data.data;
+      originalFileName = data.filename;
+
+      showSuccess(successMessage, errorMessage, `File "${originalFileName}" uploaded successfully.`);
+      currentFileName.textContent = originalFileName;
+      editorContainer.style.display = "block";
+
+      initializeHandsontable(currentData);
+    } catch (error) {
+      showError(errorMessage, successMessage, error.message);
+    }
+  }
+
+  uploadForm.addEventListener("submit", e => {
     e.preventDefault();
     const file = fileInput.files[0];
-    if (!file) { showError("Please select a file to upload."); return; }
+    if (!file) { showError(errorMessage, successMessage, "Please select a file to upload."); return; }
 
-    const fileExt = file.name.split('.').pop().toLowerCase();
-    if (fileExt !== 'xlsx') { showError("Only .xlsx files are supported."); return; }
+    if (file.name.split(".").pop().toLowerCase() !== "xlsx") {
+      showError(errorMessage, successMessage, "Only .xlsx files are supported.");
+      return;
+    }
 
     if (currentData !== null) {
       pendingFile = file;
@@ -58,44 +77,38 @@ document.addEventListener("DOMContentLoaded", function () {
     } else { uploadFile(file); }
   });
 
-  confirmOverwriteBtn.addEventListener("click", function() {
+  confirmOverwriteBtn.addEventListener("click", () => {
     confirmOverwriteModal.hide();
     if (pendingFile) { uploadFile(pendingFile); pendingFile = null; }
   });
 
+  // -------------------- Handsontable --------------------
   function initializeHandsontable(data) {
     if (hot) hot.destroy();
 
-    let cosmicColumnIndex = -1;
-    let pubmedColumnIndex = -1;
-    if (data && data.length > 0) {
+    let cosmicCol = -1, pubmedCol = -1;
+    if (data?.length) {
       const headers = data[0];
-      cosmicColumnIndex = headers.findIndex(header => header === "COSMIC");
-      pubmedColumnIndex = headers.findIndex(header => header === "PUBMED");
-    }
-
-    function createCosmicLinks(cosmicValue) {
-      if (!cosmicValue) return '';
-      const cosmicIds = cosmicValue.split(',').map(id => id.trim());
-      return cosmicIds.map(id => `<a href="https://cancer.sanger.ac.uk/cosmic/search?q=${id}" target="_blank">${id}</a>`).join(', ');
+      cosmicCol = headers.indexOf("COSMIC");
+      pubmedCol = headers.indexOf("PUBMED");
     }
 
     hot = new Handsontable(hotContainer, {
-      data: data,
+      data,
       rowHeaders: true,
       colHeaders: true,
       contextMenu: {
         items: {
           "generateLLMSummary": {
             name: "Generate LLM summary",
-            callback: function(key, selection) {
+            callback: (_, selection) => {
               const rowIndex = selection[0].start.row;
-              const rowId = hot.getDataAtRow(rowIndex)[0]; // Assuming row ID is in the first column
+              const rowId = hot.getDataAtRow(rowIndex)[0];
               generateLLMSummary(rowId);
             }
           },
           "sep1": "---------",
-	      "copy": {},
+          "copy": {},
           "remove_row": {}
         }
       },
@@ -113,113 +126,82 @@ document.addEventListener("DOMContentLoaded", function () {
       dropdownMenu: true,
       formulas: true,
       fixedRowsTop: 1,
-
-      // Use the 'cells' function to dynamically apply CSS class and cell renderer
-      cells(row, col) {
-         const cellProperties = {};
-         if (row === 0) cellProperties.className = 'first-row-bold';
-         if (cosmicColumnIndex !== -1 && col === cosmicColumnIndex && row > 0) {
-            cellProperties.renderer = function(instance, td, row, col, prop, value) {
-              td.innerHTML = value ? createCosmicLinks(value) : '';
-              return td;
-            };
-         }
-         if (pubmedColumnIndex !== -1 && col === pubmedColumnIndex && row > 0) {
-            cellProperties.renderer = 'html';
-         }
-         return cellProperties;
+      cells: (row, col) => {
+        const cellProps = {};
+        if (row === 0) cellProps.className = 'first-row-bold';
+        if (cosmicCol !== -1 && col === cosmicCol && row > 0) {
+          cellProps.renderer = (_, td, row, col, prop, value) => {
+            td.innerHTML = value ? createCosmicLinks(value) : "";
+            return td;
+          };
+        }
+        if (pubmedCol !== -1 && col === pubmedCol && row > 0) cellProps.renderer = "html";
+        return cellProps;
       }
     });
 
-    if (pubmedColumnIndex !== -1) {
-      try {
-        batchConvertAndApplyPubmedLinks(hot, pubmedColumnIndex)
-          .catch(error => { console.error(error); showError("Error converting PubMed IDs: " + error.message); });
-      } catch (error) { console.error(error); showError("Error processing PubMed IDs: " + error.message); }
+    if (pubmedCol !== -1) {
+      batchConvertAndApplyPubmedLinks(hot, pubmedCol)
+        .catch(error => { console.error(error); showError(errorMessage, successMessage, "Error converting PubMed IDs: " + error.message); });
     }
   }
 
-  function generateLLMSummary(rowId) {
-    fetch("/api/excel/generate-llm-summary", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ row_id: rowId })
-    })
-    .then(response => {
-      if (!response.ok) return response.json().then(err => { throw new Error(err.detail || "Error generating LLM summary"); });
-      return response.json();
-    })
-    .then(data => {
-      showSummaryModal(data.result);
-    })
-    .catch(error => {
-      showSummaryModal("Error: " + error.message);
-    });
+  // -------------------- LLM Summary --------------------
+  async function generateLLMSummary(rowId) {
+    try {
+      const response = await fetch("/api/excel/generate-llm-summary", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ row_id: rowId })
+      });
+
+      if (!response.ok) {
+        const err = await response.json();
+        throw new Error(err.detail || "Error generating LLM summary");
+      }
+
+      const data = await response.json();
+      showModal(summaryModal, summaryModalBody, data.result);
+    } catch (error) {
+      showModal(summaryModal, summaryModalBody, "Error: " + error.message);
+    }
   }
 
-  function showSummaryModal(text) {
-    summaryModalBody.textContent = text;
-    summaryModal.show();
-  }
-
-  // Export as XLSX
-  exportXlsxBtn.addEventListener("click", function() {
-    if (!currentData) { showError("No data to export."); return; }
+  // -------------------- Export --------------------
+  async function exportFile(format) {
+    if (!currentData) { showError(errorMessage, successMessage, "No data to export."); return; }
     const data = hot.getData(0, 0, hot.countRows() - 1, hot.countCols() - 1, true);
-    fetch("/api/excel/export/xlsx", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ data: data, filename: originalFileName })
-    })
-    .then(response => {
-      if (!response.ok) return response.json().then(err => { throw new Error(err.detail || "Error exporting file"); });
-      return response.arrayBuffer().then(buffer => new Blob([buffer], { type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" }));
-    })
-    .then(blob => {
+    const filename = format === "csv" ? originalFileName.replace(".xlsx", ".csv") : originalFileName;
+    const contentType = format === "csv" ? "text/csv" : "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
+
+    try {
+      const response = await fetch(`/api/excel/export/${format}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ data, filename })
+      });
+
+      if (!response.ok) {
+        const err = await response.json();
+        throw new Error(err.detail || "Error exporting file");
+      }
+
+      const blob = new Blob([await response.arrayBuffer()], { type: contentType });
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement("a");
       a.style.display = "none";
       a.href = url;
-      a.download = originalFileName;
+      a.download = filename;
       document.body.appendChild(a);
       a.click();
       window.URL.revokeObjectURL(url);
       document.body.removeChild(a);
-      showSuccess("File exported successfully as XLSX.");
-    })
-    .catch(error => { showError(error.message); });
-  });
+      showSuccess(successMessage, errorMessage, `File exported successfully as ${format.toUpperCase()}.`);
+    } catch (error) {
+      showError(errorMessage, successMessage, error.message);
+    }
+  }
 
-  // Export as CSV
-  exportCsvBtn.addEventListener("click", function() {
-    if (!currentData) { showError("No data to export."); return; }
-    const data = hot.getData(0, 0, hot.countRows() - 1, hot.countCols() - 1, true);
-    const csvFilename = originalFileName.replace('.xlsx', '.csv');
-    fetch("/api/excel/export/csv", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ data: data, filename: csvFilename })
-    })
-    .then(response => {
-      if (!response.ok) return response.json().then(err => { throw new Error(err.detail || "Error exporting file"); });
-      return response.arrayBuffer().then(buffer => new Blob([buffer], { type: "text/csv" }));
-    })
-    .then(blob => {
-      const url = window.URL.createObjectURL(blob);
-      const a = document.createElement("a");
-      a.style.display = "none";
-      a.href = url;
-      a.download = csvFilename;
-      document.body.appendChild(a);
-      a.click();
-      window.URL.revokeObjectURL(url);
-      document.body.removeChild(a);
-      showSuccess("File exported successfully as CSV.");
-    })
-    .catch(error => { showError(error.message); });
-  });
-
-  function showError(message) { errorMessage.textContent = message; errorMessage.style.display = "block"; successMessage.style.display = "none"; }
-  function showSuccess(message) { successMessage.textContent = message; successMessage.style.display = "block"; errorMessage.style.display = "none"; }
-  function hideMessages() { errorMessage.style.display = "none"; successMessage.style.display = "none"; }
+  exportXlsxBtn.addEventListener("click", () => exportFile("xlsx"));
+  exportCsvBtn.addEventListener("click", () => exportFile("csv"));
 });
