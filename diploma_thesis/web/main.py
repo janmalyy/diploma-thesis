@@ -14,6 +14,8 @@ from neo4j.graph import Node, Relationship
 import uvicorn
 from pydantic import BaseModel
 
+from diploma_thesis.utils.build_llm_context import build_context_for_llm
+from diploma_thesis.api.call_llm import run_einfra, build_prompt
 from diploma_thesis.settings import NEO4J_USERNAME, NEO4J_PASSWORD, NEO4J_URI, PACKAGE_DIR, logger
 from diploma_thesis.web.error_handlers import register_error_handlers
 from diploma_thesis.web.exceptions import CypherSyntaxError, NeoNotAvailableError
@@ -258,8 +260,18 @@ class RowIdRequest(BaseModel):
 async def generate_llm_summary(request: RowIdRequest):
     """WIP: just mocks the function logic for now."""
     try:
-        row_id = request.row_id
-        return {"result": f"Generated llm summary for this row_id: {row_id}."}
+        # row_id = request.row_id
+        # return {"result": f"Generated llm summary for this row_id: {row_id}."}
+        # TODO get the true ids_list, this is just a hardcoded example
+        ids_list = [26801900, 24944790, 19104657, 26099996]
+        gene_symbol = "BRCA1"
+        variant = "3_149238596_-/TTAA"
+        converted_ids_dict = convert_ids(ids_list, "pmid")
+        context = build_context_for_llm(converted_ids_dict)
+        prompt = build_prompt(context, gene_symbol, variant)
+        response = await run_einfra(prompt, model_name="gpt-oss-120b")
+        return {"result": response}
+
     except Exception as e:
         logger.error(f"Error generating LLM summary: {str(e)}")
         raise HTTPException(status_code=500, detail=f"Error generating LLM summary: {str(e)}")

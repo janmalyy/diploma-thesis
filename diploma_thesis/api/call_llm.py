@@ -3,7 +3,17 @@ from pydantic_ai import Agent
 from pydantic_ai.models.openai import OpenAIChatModel
 from pydantic_ai.providers.openai import OpenAIProvider
 
-from diploma_thesis.settings import E_INFRA_API_KEY
+from diploma_thesis.settings import E_INFRA_API_KEY, DATA_DIR
+
+
+def build_prompt(context: str, gene_symbol: str, variant: str) -> str:
+    with open(DATA_DIR / "prompts" / "test_prompt.md") as f:
+        prompt = f.read()
+    prompt = prompt.replace("CONTEXT", context)
+    prompt = prompt.replace("GENE_SYMBOL", gene_symbol)
+    prompt = prompt.replace("VARIANT", variant)
+
+    return prompt
 
 
 def fetch_list_of_supported_einfra_models(api_token: str) -> list[dict]:
@@ -19,7 +29,7 @@ def fetch_list_of_supported_einfra_models(api_token: str) -> list[dict]:
     return models_list
 
 
-def run_einfra(prompt: str, model_name: str) -> str:
+async def run_einfra(prompt: str, model_name: str) -> str:
     available_models = ['aya-expanse:32b', 'command-a:latest', 'deepseek-r1', 'eocs-knowledge-base', 'gemma3:27b-it', 'gpt-oss-120b', 'llama-4-scout-17b-16e-instruct', 'llama3.3:latest', 'medgemma:27b-it', 'metacentrum-docs-problemsolver', 'mistral-small3.1:24b-instruct-2503-q8_0', 'mistral-small3.2:24b-instruct-2506-q8_0', 'phi4:14b-q8_0', 'qwen2.5-coder:32b', 'qwen2.5-coder:32b-instruct-q8_0', 'qwen3-coder', 'qwen3-coder-30b', 'qwen3-embedding-4b', 'rsqkit-research-software-quality', 'sec-certs-common-criteria']
 
     if model_name not in available_models:
@@ -33,11 +43,10 @@ def run_einfra(prompt: str, model_name: str) -> str:
         ),
     )
     agent = Agent(model)
-    result = agent.run_sync(prompt)
+    result = await agent.run(prompt)
     return result.output
 
 
-# ids > články > texty > prompt > odpověď
 if __name__ == '__main__':
     prompt = "Return OK if you can hear me."
     model_name = 'gpt-oss-120b'
