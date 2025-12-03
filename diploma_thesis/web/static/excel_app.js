@@ -11,6 +11,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const confirmOverwriteBtn = document.getElementById("confirmOverwrite");
   const confirmOverwriteModal = new bootstrap.Modal(document.getElementById("confirmOverwriteModal"));
 
+  const summaryModalEl = document.getElementById("summaryModal");
+  const summaryModalBody = document.getElementById("summaryModalBody");
+  const summaryModal = new bootstrap.Modal(summaryModalEl);
+
   let hot; // Handsontable instance
   let currentData = null;
   let originalFileName = "";
@@ -20,90 +24,48 @@ document.addEventListener("DOMContentLoaded", function () {
   function uploadFile(file) {
     const formData = new FormData();
     formData.append("file", file);
-
-    // Hide previous messages
     hideMessages();
 
-    // Upload file
-    fetch("/api/excel/upload", {
-      method: "POST",
-      body: formData
-    })
-    .then(response => {
-      if (!response.ok) {
-        return response.json().then(err => {
-          throw new Error(err.detail || "Error uploading file");
-        });
-      }
-      return response.json();
-    })
-    .then(data => {
-      currentData = data.data;
-      originalFileName = data.filename;
-
-      // Show success message
-      showSuccess(`File "${originalFileName}" uploaded successfully.`);
-
-      // Update UI
-      currentFileName.textContent = originalFileName;
-      editorContainer.style.display = "block";
-
-      // Initialize or update Handsontable
-      initializeHandsontable(currentData);
-    })
-    .catch(error => {
-      showError(error.message);
-    });
+    fetch("/api/excel/upload", { method: "POST", body: formData })
+      .then(response => {
+        if (!response.ok) {
+          return response.json().then(err => { throw new Error(err.detail || "Error uploading file"); });
+        }
+        return response.json();
+      })
+      .then(data => {
+        currentData = data.data;
+        originalFileName = data.filename;
+        showSuccess(`File "${originalFileName}" uploaded successfully.`);
+        currentFileName.textContent = originalFileName;
+        editorContainer.style.display = "block";
+        initializeHandsontable(currentData);
+      })
+      .catch(error => { showError(error.message); });
   }
 
-  // Handle file upload form submission
   uploadForm.addEventListener("submit", function(e) {
     e.preventDefault();
-
     const file = fileInput.files[0];
-    if (!file) {
-      showError("Please select a file to upload.");
-      return;
-    }
+    if (!file) { showError("Please select a file to upload."); return; }
 
-    // Check file extension
     const fileExt = file.name.split('.').pop().toLowerCase();
-    if (fileExt !== 'xlsx') {
-      showError("Only .xlsx files are supported.");
-      return;
-    }
+    if (fileExt !== 'xlsx') { showError("Only .xlsx files are supported."); return; }
 
-    // Check if a file is already loaded
     if (currentData !== null) {
-      // Store the file for later use
       pendingFile = file;
-      // Show confirmation dialog
       confirmOverwriteModal.show();
-    } else {
-      // No file loaded yet, proceed with upload
-      uploadFile(file);
-    }
+    } else { uploadFile(file); }
   });
 
-  // Handle confirmation dialog "Overwrite" button
   confirmOverwriteBtn.addEventListener("click", function() {
-    // Hide the modal
     confirmOverwriteModal.hide();
-
-    // Proceed with upload if we have a pending file
-    if (pendingFile) {
-      uploadFile(pendingFile);
-      pendingFile = null; // Clear the pending file
-    }
+    if (pendingFile) { uploadFile(pendingFile); pendingFile = null; }
   });
 
-  // Initialize Handsontable
   function initializeHandsontable(data) {
-    if (hot) {
-      hot.destroy();
-    }
+    if (hot) hot.destroy();
 
-    // Find the index of the COSMIC and PubMed columns
     let cosmicColumnIndex = -1;
     let pubmedColumnIndex = -1;
     if (data && data.length > 0) {
@@ -112,31 +74,35 @@ document.addEventListener("DOMContentLoaded", function () {
       pubmedColumnIndex = headers.findIndex(header => header === "PUBMED");
     }
 
-    // Function to convert COSMIC IDs to hyperlinks
     function createCosmicLinks(cosmicValue) {
       if (!cosmicValue) return '';
-
-      // Split by comma if multiple IDs exist
       const cosmicIds = cosmicValue.split(',').map(id => id.trim());
-
-      // Convert each ID to a hyperlink
-      return cosmicIds.map(id => {
-        if (!id) return '';
-        return `<a href="https://cancer.sanger.ac.uk/cosmic/search?q=${id}" target="_blank">${id}</a>`;
-      }).join(', ');
+      return cosmicIds.map(id => `<a href="https://cancer.sanger.ac.uk/cosmic/search?q=${id}" target="_blank">${id}</a>`).join(', ');
     }
 
     hot = new Handsontable(hotContainer, {
       data: data,
       rowHeaders: true,
       colHeaders: true,
-      contextMenu: true,
-      // TODO calculate custom widths for every column with function
-      // see https://handsontable.com/docs/12.0/column-width/#fit-all-columns-equally
+      contextMenu: {
+        items: {
+          "generateLLMSummary": {
+            name: "Generate LLM summary",
+            callback: function(key, selection) {
+              const rowIndex = selection[0].start.row;
+              const rowId = hot.getDataAtRow(rowIndex)[0]; // Assuming row ID is in the first column
+              generateLLMSummary(rowId);
+            }
+          },
+          "sep1": "---------",
+	      "copy": {},
+          "remove_row": {}
+        }
+      },
       colWidths: 250,
       manualColumnResize: true,
       manualRowResize: true,
-      licenseKey: 'non-commercial-and-evaluation', // Free license for non-commercial use
+      licenseKey: 'non-commercial-and-evaluation',
       stretchH: 'all',
       autoColumnSize: true,
       minSpareRows: 1,
@@ -151,83 +117,65 @@ document.addEventListener("DOMContentLoaded", function () {
       // Use the 'cells' function to dynamically apply CSS class and cell renderer
       cells(row, col) {
          const cellProperties = {};
-
-         if (row === 0) {
-            // Assign a custom CSS class to every cell in the first row (index 0)
-            cellProperties.className = 'first-row-bold';
-         }
-
-         // Apply custom renderer for COSMIC column
+         if (row === 0) cellProperties.className = 'first-row-bold';
          if (cosmicColumnIndex !== -1 && col === cosmicColumnIndex && row > 0) {
-            cellProperties.renderer = function(instance, td, row, col, prop, value, cellProperties) {
-              if (value) {
-                td.innerHTML = createCosmicLinks(value);
-              } else {
-                td.innerHTML = '';
-              }
+            cellProperties.renderer = function(instance, td, row, col, prop, value) {
+              td.innerHTML = value ? createCosmicLinks(value) : '';
               return td;
             };
          }
-
          if (pubmedColumnIndex !== -1 && col === pubmedColumnIndex && row > 0) {
-            // The PUBMED column links are generated server-side (in batchConvertAndApplyPubmedLinks)
-            // and written to the cell as HTML strings. We must set the renderer to 'html'
-            // to make Handsontable render the tags as hyperlinks instead of plain text.
-          cellProperties.renderer = 'html';
-       }
-
+            cellProperties.renderer = 'html';
+         }
          return cellProperties;
       }
     });
 
-    // Process PubMed IDs and convert them to hyperlinks
     if (pubmedColumnIndex !== -1) {
       try {
         batchConvertAndApplyPubmedLinks(hot, pubmedColumnIndex)
-          .catch(error => {
-            console.error("Error converting PubMed IDs:", error);
-            showError("Error converting PubMed IDs: " + error.message);
-          });
-      } catch (error) {
-        console.error("Error processing PubMed IDs:", error);
-        showError("Error processing PubMed IDs: " + error.message);
-      }
+          .catch(error => { console.error(error); showError("Error converting PubMed IDs: " + error.message); });
+      } catch (error) { console.error(error); showError("Error processing PubMed IDs: " + error.message); }
     }
+  }
+
+  function generateLLMSummary(rowId) {
+    fetch("/api/excel/generate-llm-summary", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ row_id: rowId })
+    })
+    .then(response => {
+      if (!response.ok) return response.json().then(err => { throw new Error(err.detail || "Error generating LLM summary"); });
+      return response.json();
+    })
+    .then(data => {
+      showSummaryModal(data.result);
+    })
+    .catch(error => {
+      showSummaryModal("Error: " + error.message);
+    });
+  }
+
+  function showSummaryModal(text) {
+    summaryModalBody.textContent = text;
+    summaryModal.show();
   }
 
   // Export as XLSX
   exportXlsxBtn.addEventListener("click", function() {
-    if (!currentData) {
-      showError("No data to export.");
-      return;
-    }
-
-    // The last 'true' parameter ensures the data is returned as raw values, not objects.
+    if (!currentData) { showError("No data to export."); return; }
     const data = hot.getData(0, 0, hot.countRows() - 1, hot.countCols() - 1, true);
-
     fetch("/api/excel/export/xlsx", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        data: data,
-        filename: originalFileName
-      })
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ data: data, filename: originalFileName })
     })
     .then(response => {
-      if (!response.ok) {
-        return response.json().then(err => {
-          throw new Error(err.detail || "Error exporting file");
-        });
-      }
-      // Explicitly handle as blob with correct content type
-      return response.arrayBuffer().then(buffer => new Blob([buffer], {
-        type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-      }));
+      if (!response.ok) return response.json().then(err => { throw new Error(err.detail || "Error exporting file"); });
+      return response.arrayBuffer().then(buffer => new Blob([buffer], { type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" }));
     })
     .then(blob => {
-      // Create download link
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement("a");
       a.style.display = "none";
@@ -237,47 +185,26 @@ document.addEventListener("DOMContentLoaded", function () {
       a.click();
       window.URL.revokeObjectURL(url);
       document.body.removeChild(a);
-
       showSuccess("File exported successfully as XLSX.");
     })
-    .catch(error => {
-      showError(error.message);
-    });
+    .catch(error => { showError(error.message); });
   });
 
   // Export as CSV
   exportCsvBtn.addEventListener("click", function() {
-    if (!currentData) {
-      showError("No data to export.");
-      return;
-    }
-
+    if (!currentData) { showError("No data to export."); return; }
     const data = hot.getData(0, 0, hot.countRows() - 1, hot.countCols() - 1, true);
     const csvFilename = originalFileName.replace('.xlsx', '.csv');
-
     fetch("/api/excel/export/csv", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        data: data,
-        filename: csvFilename
-      })
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ data: data, filename: csvFilename })
     })
     .then(response => {
-      if (!response.ok) {
-        return response.json().then(err => {
-          throw new Error(err.detail || "Error exporting file");
-        });
-      }
-      // Explicitly handle as blob with correct content type
-      return response.arrayBuffer().then(buffer => new Blob([buffer], {
-        type: "text/csv"
-      }));
+      if (!response.ok) return response.json().then(err => { throw new Error(err.detail || "Error exporting file"); });
+      return response.arrayBuffer().then(buffer => new Blob([buffer], { type: "text/csv" }));
     })
     .then(blob => {
-      // Create download link
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement("a");
       a.style.display = "none";
@@ -287,29 +214,12 @@ document.addEventListener("DOMContentLoaded", function () {
       a.click();
       window.URL.revokeObjectURL(url);
       document.body.removeChild(a);
-
       showSuccess("File exported successfully as CSV.");
     })
-    .catch(error => {
-      showError(error.message);
-    });
+    .catch(error => { showError(error.message); });
   });
 
-  // Helper functions for showing/hiding messages
-  function showError(message) {
-    errorMessage.textContent = message;
-    errorMessage.style.display = "block";
-    successMessage.style.display = "none";
-  }
-
-  function showSuccess(message) {
-    successMessage.textContent = message;
-    successMessage.style.display = "block";
-    errorMessage.style.display = "none";
-  }
-
-  function hideMessages() {
-    errorMessage.style.display = "none";
-    successMessage.style.display = "none";
-  }
+  function showError(message) { errorMessage.textContent = message; errorMessage.style.display = "block"; successMessage.style.display = "none"; }
+  function showSuccess(message) { successMessage.textContent = message; successMessage.style.display = "block"; errorMessage.style.display = "none"; }
+  function hideMessages() { errorMessage.style.display = "none"; successMessage.style.display = "none"; }
 });

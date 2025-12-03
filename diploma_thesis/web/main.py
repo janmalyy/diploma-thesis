@@ -250,5 +250,20 @@ async def convert_pubmed_ids(request: PubmedIdsRequest):
         raise HTTPException(status_code=500, detail=f"Error converting PubMed IDs: {str(e)}")
 
 
+class RowIdRequest(BaseModel):
+    row_id: str
+
+
+@app.post("/api/excel/generate-llm-summary")
+async def generate_llm_summary(request: RowIdRequest):
+    """WIP: just mocks the function logic for now."""
+    try:
+        row_id = request.row_id
+        return {"result": f"Generated llm summary for this row_id: {row_id}."}
+    except Exception as e:
+        logger.error(f"Error generating LLM summary: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Error generating LLM summary: {str(e)}")
+
+
 if __name__ == "__main__":
     uvicorn.run("diploma_thesis.web.main:app", host="0.0.0.0", port=8000, reload=True)

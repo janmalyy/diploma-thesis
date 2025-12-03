@@ -20,7 +20,8 @@ def fetch_list_of_supported_einfra_models(api_token: str) -> list[dict]:
 
 
 def run_einfra(prompt: str, model_name: str) -> str:
-    available_models = ['gpt-oss-120b', 'deepseek-r1', 'qwen3-coder', 'qwen2.5-coder:32b-instruct-q8_0', 'medgemma:27b-it', 'mistral-small3.2:24b-instruct-2506-q8_0', 'phi4:14b-q8_0', 'aya-expanse:32b', 'llama-4-scout-17b-16e-instruct', 'eocs-knowledge-base', 'metacentrum-docs-problemsolver', 'command-a:latest', 'mistral-small3.1:24b-instruct-2503-q8_0', 'llama3.3:latest', 'gemma3:27b-it', 'qwen2.5-coder:32b', 'rsqkit-research-software-quality', 'qwen3-coder-30b', 'qwen3-embedding-4b', 'sec-certs-common-criteria']
+    available_models = ['aya-expanse:32b', 'command-a:latest', 'deepseek-r1', 'eocs-knowledge-base', 'gemma3:27b-it', 'gpt-oss-120b', 'llama-4-scout-17b-16e-instruct', 'llama3.3:latest', 'medgemma:27b-it', 'metacentrum-docs-problemsolver', 'mistral-small3.1:24b-instruct-2503-q8_0', 'mistral-small3.2:24b-instruct-2506-q8_0', 'phi4:14b-q8_0', 'qwen2.5-coder:32b', 'qwen2.5-coder:32b-instruct-q8_0', 'qwen3-coder', 'qwen3-coder-30b', 'qwen3-embedding-4b', 'rsqkit-research-software-quality', 'sec-certs-common-criteria']
+
     if model_name not in available_models:
         raise ValueError(f"Model {model_name} is not supported. Try e.g. 'gpt-oss-120b' instead.")
 
