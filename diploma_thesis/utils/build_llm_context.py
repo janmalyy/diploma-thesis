@@ -178,7 +178,6 @@ def build_context_for_llm(ids_dicts: list[dict]) -> str:
 
     # ---- PMC FULLTEXT ----
     if pmcid_root is not None:
-        write_pretty_xml(pmcid_root, "testing.xml")
         for article in pmcid_root.findall("article"):
             pmcid = article.findtext(".//article-id[@pub-id-type='pmcid']", default="")
 
