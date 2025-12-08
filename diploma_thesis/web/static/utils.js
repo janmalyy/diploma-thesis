@@ -53,7 +53,7 @@ function extractPubmedIds(hotInstance, pubmedColIndex) {
  * @param {int} pubmedColIndex - The index of the column containing PubMed IDs
  * @returns {Promise<void>}
  */
-async function batchConvertAndApplyPubmedLinks(hotInstance, pubmedColIndex) {
+export async function batchConvertAndApplyPubmedLinks(hotInstance, pubmedColIndex) {
   const { uniqueIds, cellMap } = extractPubmedIds(hotInstance, pubmedColIndex);
 
   if (uniqueIds.length === 0) return;
