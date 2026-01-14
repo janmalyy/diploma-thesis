@@ -9,7 +9,6 @@ from urllib3 import Retry
 from xml.etree import ElementTree as ET
 
 from diploma_thesis.settings import logger
-from diploma_thesis.utils.parse_xml import write_pretty_xml
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -56,7 +55,6 @@ def fetch_pubtator_data_by_ids(pmc_ids: list[int]) -> dict:
         for document in root.findall("document"):
             pmc_id = "PMC" + document.find("id").text
             result[pmc_id] = document
-            write_pretty_xml(document, f"{pmc_id}.xml")
         return result
 
     except requests.exceptions.RequestException as e:
@@ -129,7 +127,7 @@ def parse_pubtator_data(document: ET.Element, snippets: list[str]) -> str:
 
         match = False
         for snippet in snippets:
-            if re.search(snippet[:20].strip(), original_text, flags=re.IGNORECASE):     # todo tohle (hledat podle prvních 20 znaků) je takový hodně hrubý zjednodušení
+            if re.search(re.escape(snippet[:20].strip()), original_text, flags=re.IGNORECASE):     # TODO hledat podle prvních 20 znaků je takový hodně hrubý zjednodušení
                 snippets.remove(snippet)
                 match = True
                 break
@@ -170,5 +168,5 @@ def parse_pubtator_data(document: ET.Element, snippets: list[str]) -> str:
             output_passages.append(annotated_text)
     output_passages[0] = "Title: " + output_passages[0]
     output_passages[1] = "Abstract: " + output_passages[1]
-    output_passages[2] = "Snippets which mention the variant:\n" + output_passages[2]
+    # output_passages[2] = "Snippets which mention the variant:\n" + output_passages[2]
     return "\n".join(output_passages)
