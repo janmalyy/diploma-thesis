@@ -5,14 +5,16 @@ numpy
 requests
 lxml
 python-dateutil
-jinja2
-fastapi[standard]
-uvicorn
-neo4j
+# jinja2
+# fastapi[standard]
+# uvicorn
+# neo4j
 biopython
 nltk
 sentence-transformers
-pandas
+# pandas
 openpyxl
 python-multipart
 pydantic-ai
+transformers
+torch
