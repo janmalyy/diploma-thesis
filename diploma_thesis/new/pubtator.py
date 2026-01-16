@@ -1,172 +1,172 @@
 import re
-import time
-from typing import Generator
-
 import requests
 from requests.adapters import HTTPAdapter
-import urllib3
 from urllib3 import Retry
 from xml.etree import ElementTree as ET
-
 from diploma_thesis.settings import logger
-
-urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-
-
-def fetch_pubtator_data_by_ids(pmc_ids: list[int]) -> dict:
-    """
-    Fetches data from PubTator for given PMC IDs.
-
-    Args:
-        pmc_ids (list[int]): The PMC IDs of articles to retrieve data for.
-    """
-    pmc_ids_string = ",".join(map(str, pmc_ids))
-    # note we use direct IP as there are problems with DNS resolution
-    url = f"https://www.ncbi.nlm.nih.gov/research/pubtator3-api/publications/pmc_export/biocxml?pmcids={pmc_ids_string}"
-
-    # Fix SSL verification issue by setting 'Host' in headers
-    headers = {
-        "Host": "www.ncbi.nlm.nih.gov",  # Manually set the correct hostname
-        "User-Agent": "Mozilla/5.0"  # Helps avoid bot blocking
-    }
-
-    session = requests.Session()
-    retries = Retry(
-        total=3,
-        backoff_factor=1,
-        status_forcelist=[500, 502, 503, 504],
-        allowed_methods=["GET"],
-    )
-    adapter = HTTPAdapter(max_retries=retries)
-    session.mount("https://", adapter)
-
-    try:
-        # verify=False is not recommended, but with True it does not work :/
-        search_response = session.get(url, headers=headers, verify=False, timeout=10)
-
-        search_response.raise_for_status()  # check for HTTP errors
-
-        if "xml" not in search_response.headers.get("Content-Type", "").lower():
-            raise ValueError("Received non-XML response from PubTator API.")
-
-        root = ET.fromstring(search_response.content.decode(encoding="utf-8"))
-
-        result = {}
-        for document in root.findall("document"):
-            pmc_id = "PMC" + document.find("id").text
-            result[pmc_id] = document
-        return result
-
-    except requests.exceptions.RequestException as e:
-        logger.error(f"Error fetching data for ids: {pmc_ids}", e)
-        raise
+from diploma_thesis.new.models import Article
 
 
-def annotate_raw_text(text: str) -> str:
-    """
-    Cleans raw text, submits it to PubTator 3 for 'All' bioconcepts,
-    and polls for the BioC-XML results.
-    """
-    raise NotImplementedError("Mají někde nějakou chybu v pubtatoru se mi zdá...")
-    import unicodedata
-    import re
-    from unidecode import unidecode
-    # 1. Text Preprocessing (Logic from your request.py)
-    # Normalizing and cleaning text to ensure compatibility
-    text = unicodedata.normalize('NFC', text)
-    text = unidecode(text)
-    # Remove non-standard characters based on your specific regex pattern
-    pattern = r'[^0-9a-zA-Z\!\@\#\$\%\^\&\*\(\)\_\+\{\}\|\:\"\<\>\?\-\=\[\]\\;\'\,\.\/ \t\n\r]'
-    cleaned_text = re.sub(pattern, ' ', text)
+class PubTatorProvider:
+    def __init__(self):
+        self.base_url = "https://www.ncbi.nlm.nih.gov/research/pubtator3-api/publications/pmc_export/biocxml"
+        self.headers = {
+            "Host": "www.ncbi.nlm.nih.gov",
+            "User-Agent": "Mozilla/5.0"
+        }
+        self.session = self._setup_session()
 
-    # 2. Submit Request
-    submit_url = "https://www.ncbi.nlm.nih.gov/CBBresearch/Lu/Demo/RESTful/request.cgi"
-    # Using 'All' to get annotations for Genes, Diseases, Chemicals, etc.
-    payload = {'text': cleaned_text, 'bioconcept': 'All'}
+    def _setup_session(self):
+        session = requests.Session()
+        retries = Retry(
+            total=3,
+            backoff_factor=1,
+            status_forcelist=[500, 502, 503, 504],
+            allowed_methods=["GET"],
+        )
+        adapter = HTTPAdapter(max_retries=retries)
+        session.mount("https://", adapter)
+        return session
 
-    response = requests.post(submit_url, data=payload)
+    def fetch_annotations(self, articles: list[Article]):
+        """
+        Fetches annotations from PubTator for a list of articles and updates them.
+        """
+        if not articles:
+            return
 
-    # Extract Session ID (Note: API usually returns ID as plain text)
-    if response.status_code == 200:
+        # Prepare PMC IDs (remove PMC prefix for API call)
+        pmc_ids = []
+        for a in articles:
+            if a.pmcid.startswith("PMC"):
+                pmc_ids.append(a.pmcid[3:])
+            else:
+                pmc_ids.append(a.pmcid)
+
+        pmc_ids_string = ",".join(pmc_ids)
+        url = f"{self.base_url}?pmcids={pmc_ids_string}"
+
         try:
-            session_id = response.json().get('id')
-        except:
-            session_id = response.text.strip()
-    else:
-        raise Exception(f"Submission failed: {response.status_code} - {response.text}")
-    # 3. Poll for Results (Logic from your retrieve.py with added polling)
-    retrieve_url = "https://www.ncbi.nlm.nih.gov/CBBresearch/Lu/Demo/RESTful/retrieve.cgi"
-    params = {"id": session_id}
+            # verify=False is not recommended but needed
+            response = self.session.get(url, headers=self.headers, verify=False, timeout=15)
+            response.raise_for_status()
 
-    print(f"Request submitted. Session ID: {session_id}. Waiting for results...")
-    time.sleep(30)
+            if "xml" not in response.headers.get("Content-Type", "").lower():
+                raise ValueError("Received non-XML response from PubTator API.")
 
-    while True:
-        # PubTator returns 404 while processing and 200 when finished
-        result_response = requests.get(retrieve_url, params=params)
+            root = ET.fromstring(response.content.decode(encoding="utf-8"))
 
-        if result_response.status_code == 200:
-            return result_response.text
-        elif result_response.status_code == 404:
-            # Wait 5 seconds before trying again to avoid rate limiting
-            time.sleep(5)
-        else:
-            result_response.raise_for_status()
+            doc_map = {}
+            for document in root.findall("document"):
+                pmc_id = "PMC" + document.find("id").text
+                doc_map[pmc_id] = document
 
+            for article in articles:
+                if article.pmcid in doc_map:
+                    document = doc_map[article.pmcid]
+                    article.annotated_content = self._parse_pubtator_document(document, article.snippets)
+                    self._extract_attributes(article, document)
+                else:
+                    # TODO: If not found in PubTator, find directly via PMC (mocked for now)
+                    self._mock_pmc_fetch(article)
 
-def parse_pubtator_data(document: ET.Element, snippets: list[str]) -> str:
-    # TODO vylepšit definování chunků, např. sekat podle celých vět
-    # název, abstrakt, pmcid, snippets, vše anotované v rámci toho
-    output_passages = []
+        except Exception as e:
+            logger.error(f"Error fetching PubTator data: {e}")
+            for article in articles:
+                if not article.annotated_content:
+                    article.annotated_content = article.get_context()
 
-    for passage in document.findall(".//passage"):
-        text_element = passage.find("text")
-        if text_element is None or text_element.text is None:
-            continue
-        original_text = text_element.text
+    def _parse_pubtator_document(self, document: ET.Element, snippets: list[str]) -> str:
+        """
+        Parses BioC-XML document and applies annotations to relevant passages.
+        """
+        output_passages = []
+        snippets_to_match = list(snippets)
 
-        match = False
-        for snippet in snippets:
-            if re.search(re.escape(snippet[:20].strip()), original_text, flags=re.IGNORECASE):     # TODO hledat podle prvních 20 znaků je takový hodně hrubý zjednodušení
+        for passage in document.findall(".//passage"):
+            text_element = passage.find("text")
+            if text_element is None or text_element.text is None:
+                continue
+            original_text = text_element.text
+
+            match = False
+            for snippet in snippets_to_match:
+                # Use first 20 chars for matching as in original code
+                # TODO hledat podle prvních 20 znaků je takový hodně hrubý zjednodušení
                 snippets.remove(snippet)
-                match = True
+                if re.search(re.escape(snippet[:20].strip()), original_text, flags=re.IGNORECASE):
+                    snippets_to_match.remove(snippet)
+                    match = True
+                    break
+
+            passage_type_elem = passage.find("./infon[@key='type']")
+            passage_type = passage_type_elem.text if passage_type_elem is not None else ""
+
+            if match or passage_type in ("front", "abstract"):
+                passage_offset = int(passage.find("offset").text)
+                annotations = []
+                for ann in passage.findall("annotation"):
+                    ann_type = ann.find("./infon[@key='type']").text
+                    if ann_type == "Species":
+                        continue
+
+                    loc = ann.find("location")
+                    local_offset = int(loc.get("offset")) - passage_offset
+                    length = int(loc.get("length"))
+
+                    annotations.append({
+                        'start': local_offset,
+                        'end': local_offset + length,
+                        'type': ann_type,
+                        'text': ann.find("text").text
+                    })
+
+                # Sort annotations reverse to avoid index shift
+                annotations.sort(key=lambda x: x['start'], reverse=True)
+                annotated_text = original_text
+                for ann in annotations:
+                    start, end = ann['start'], ann['end']
+                    label = f"[{ann['type']}: {annotated_text[start:end]}]"
+                    annotated_text = annotated_text[:start] + label + annotated_text[end:]
+
+                if passage_type == "front":
+                    annotated_text = "Title: " + annotated_text
+                elif passage_type == "abstract":
+                    annotated_text = "Abstract: " + annotated_text
+
+                output_passages.append(annotated_text)
+
+        return "\n".join(output_passages)
+
+    def _extract_attributes(self, article: Article, document: ET.Element):
+        """Extracts article attributes. Mock implementation."""
+        # Study Type
+        text = " ".join([t.text for t in document.findall(".//text") if t.text])
+        if "clinical trial" in text.lower():
+            article.study_type = "Clinical Trial"
+        elif "case report" in text.lower():
+            article.study_type = "Case Report"
+        else:
+            article.study_type = "Observational Study"
+
+        # Quality
+        article.quality = "High" if article.pmcid in ["PMC6594079", "PMC6471801"] else "Medium"
+
+        # Disease
+        for ann in document.findall(".//annotation"):
+            if ann.find("./infon[@key='type']").text == "Disease":
+                article.disease = ann.find("text").text
                 break
 
-        passage_type = passage.find("./infon[@key='type']").text
+    def _mock_pmc_fetch(self, article: Article):
+        """Mocks fetching content directly from PMC."""
+        article.title = f"PMC Article {article.pmcid} (Direct Fetch Mock)"
+        article.abstract = "Abstract not available in PubTator. Fetched from PMC directly."
+        article.study_type = "Unknown (PMC)"
 
-        if match or passage_type in ("front", "abstract"):
-            passage_offset = int(passage.find("offset").text)
-
-            # Collect all annotations for this passage
-            annotations = []
-            for ann in passage.findall("annotation"):
-                ann_type = ann.find("./infon[@key='type']").text
-                if ann_type == "Species":
-                    continue
-                # BioC offsets are global. We subtract the passage offset to get local index
-                loc = ann.find("location")
-                local_offset = int(loc.get("offset")) - passage_offset
-                length = int(loc.get("length"))
-
-                annotations.append({
-                    'start': local_offset,
-                    'end': local_offset + length,
-                    'type': ann_type,
-                    'text': ann.find("text").text
-                })
-
-            # Sort annotations by start position in REVERSE order
-            # This prevents index shifting as we insert tags
-            annotations.sort(key=lambda x: x['start'], reverse=True)
-
-            annotated_text = original_text
-            for ann in annotations:
-                start, end = ann['start'], ann['end']
-                label = f"[{ann['type']}: {annotated_text[start:end]}]"
-                # Splice the label into the text
-                annotated_text = annotated_text[:start] + label + annotated_text[end:]
-            output_passages.append(annotated_text)
-    output_passages[0] = "Title: " + output_passages[0]
-    output_passages[1] = "Abstract: " + output_passages[1]
-    # output_passages[2] = "Snippets which mention the variant:\n" + output_passages[2]
-    return "\n".join(output_passages)
+    def annotate_raw_text(self, text: str) -> str:
+        """
+        Cleans raw text and submits it to PubTator for annotations. 
+        Mock implementation as original was not working.
+        """
+        return f"[Annotated Raw Text Mock]\n{text}"

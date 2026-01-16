@@ -1,51 +1,86 @@
 """
-uživatel by si mohl nastavovat recall precision trade off (jak píšou zde: https://pmc.ncbi.nlm.nih.gov/articles/PMC10066029/)
-variomes mi dá k variantě data a snippety z fultextů
-já si dohledám pmc full texty s anotacemi - pubtator
-přes pubtator si anotuji i raw data z suppl. files - to možná ne, zatím nefunguje
-a pak nasypu do llmka na souhrn - biomistral
+Workflow:
+1. Normalise variant input.
+2. Fetch relevant literature data and snippets from SIBiLS Variomes.
+3. Retrieve full-text annotations from PubTator 3.
+4. Fallback to direct PMC access if PubTator data is missing (mocked).
+5. Intelligently shorten and filter context based on relevance (mocked).
+6. Generate a concise summary using a LLM (BioMistral).
 
-výstupem bude:
-- ke každému článku pár atributů: typ studie, kvalita, zmiňovaná nemoc
-- pak celkový souhrn té varianty vzhledem k literatuře
-
-DATABÁZE VE VARIOMES NENÍ STEJNÁ JAKO V PUBTATORU!!!
-variomes používá open access, pubtator mining subset nebo co
+Output:
+- Article-level attributes: Study type, quality, disease.
+- Comprehensive variant summary.
 """
 import time
+from diploma_thesis.new.models import Variant
+from diploma_thesis.new.variomes import VariomesProvider
+from diploma_thesis.new.pubtator import PubTatorProvider
+from diploma_thesis.new.llm_api import LLMSummarizer
+from diploma_thesis.settings import logger
 
-import xml.etree.ElementTree as ET
 
-from diploma_thesis.new.pubtator import fetch_pubtator_data_by_ids, annotate_raw_text, parse_pubtator_data
-from diploma_thesis.new.sibils import fetch_variomes_data, parse_variomes_data
-from diploma_thesis.utils.parse_xml import get_title_with_abstract
+def main():
+    start_time = time.time()
+    
+    # Configuration / Input
+    variant_input = "NHP2	c.302G>A"
+    logger.info(f"Processing variant: {variant_input}")
+    
+    # 1. Initialize Variant (handles normalisation)
+    variant = Variant(variant_input)
+    
+    # 2. Fetch Data from Variomes
+    logger.info("Fetching data from SIBiLS Variomes...")
+    variomes = VariomesProvider()
+    articles = variomes.fetch_data(variant)
+    
+    if not articles:
+        logger.info("No articles found for this variant.")
+        return
+    logger.info(f"Found {len(articles)} articles. IDs: {[a.pmcid for a in articles]}")
+    
+    # 3 & 4. Fetch Annotations from PubTator (with PMC fallback)
+    logger.info("Fetching annotations from PubTator...")
+    pubtator = PubTatorProvider()
+    pubtator.fetch_annotations(articles)
+    
+    # 5. Shorten and Filter Context
+    logger.info("Processing and shortening context...")
+    for article in articles:
+        article.shorten_context(max_length=200)
+    
+    # 6. Generate Summary
+    print("\n" + "="*50)
+    print("ARTICLE DETAILS")
+    print("="*50)
+    for article in articles:
+        print(f"[{article.pmcid}]")
+        print(f"  Study Type: {article.study_type}")
+        print(f"  Quality:    {article.quality}")
+        print(f"  Disease:    {article.disease}")
+        print("-" * 20)
+
+    print("\n" + "="*50)
+    print("GENERATING LLM SUMMARY")
+    print("="*50)
+    
+    try:
+        summarizer = LLMSummarizer()
+        response_gen = summarizer.summarize(variant, articles, stream=True)
+        
+        print(f"Summary for {variant}:")
+        for chunk in response_gen:
+            if 'content' in chunk['choices'][0]['delta']:
+                token = chunk['choices'][0]['delta']['content']
+                print(token, end="", flush=True)
+        print("\n")
+        
+    except Exception as e:
+        logger.error(f"\nLLM Summarization failed: {e}")
+
+    end_time = time.time()
+    logger.info(f"\nWorkflow completed in {round(end_time - start_time, 2)}s")
+
 
 if __name__ == '__main__':
-    start = time.time()
-    # todo normalizovat varianty zadávané do variomes; nebere rsIDs
-    # variant = "NOP10 c.34G>C" # akorát dat
-    # variant = "XPC c.416T>C"  #skoro žádná data
-    variant = "NHP2	c.302G>A"
-    data = fetch_variomes_data(variant)
-    parsed_variomes_data = parse_variomes_data(data)
-    print("all_pmc_ids_found_in_variomes", parsed_variomes_data["pmc_ids"])
-    print("pmc with snippets", parsed_variomes_data["pmc"])
-    print("pmc len", len(parsed_variomes_data["pmc"]))
-    print("suppl len", len(parsed_variomes_data["suppl"]))
-    pubtator_data = fetch_pubtator_data_by_ids(list(set(parsed_variomes_data["pmc_ids"])))
-    # TODO když nenajdu článek v pubtatoru, najdu si ho přímo přes PMC a použiju ho bez anotací!
-    print("pubtator_data len", len(pubtator_data))
-    print("pubtator_found_ids", pubtator_data.keys())
-    # current_id = "PMC8794197"
-    # print("current PMCID: ", current_id)
-    # print("SNIPPETS", parsed_variomes_data["pmc"][current_id])
-    # print("PUBTATOR PREPARED DATA", parse_pubtator_data(pubtator_data[current_id], parsed_variomes_data["pmc"][current_id]))
-
-    context = ""
-    for pmc_id in parsed_variomes_data["pmc"].keys():
-        if pmc_id not in pubtator_data.keys():
-            print(f"{pmc_id} not found in PubTator.")
-            continue
-        context += f"Article {pmc_id}\n" + parse_pubtator_data(pubtator_data[pmc_id], parsed_variomes_data["pmc"][pmc_id]) + "\n\n"
-    print(context)
-    print("time: ", round(time.time() - start, 2), "s")
+    main()
