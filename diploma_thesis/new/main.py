@@ -14,7 +14,7 @@ Output:
 import time
 from diploma_thesis.new.models import Variant
 from diploma_thesis.new.llm_api import LLMSummarizer
-from diploma_thesis.new.ncbi import update_articles_fulltext
+from diploma_thesis.new.update_article_fulltext import update_articles_fulltext
 from diploma_thesis.new.variomes import fetch_variomes_data
 from diploma_thesis.settings import logger
 
@@ -53,7 +53,6 @@ def main():
     print("ARTICLE DETAILS")
     print("="*50)
     for article in articles:
-        print(f"[{article.pmcid}]")
         # print(f"  Study Type: {article.study_type}")
         # print(f"  Disease:    {article.disease}")
         # print(f"  Relevance:  {round(article.relevance_score, 2)}")
