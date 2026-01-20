@@ -1,59 +1,81 @@
-import re
-from typing import Any
-
 import requests
 from requests.adapters import HTTPAdapter
 import urllib3
 from urllib3 import Retry
-from xml.etree import ElementTree as ET
+from lxml import etree
 from diploma_thesis.new.models import Article
 from diploma_thesis.utils.parse_xml import write_pretty_xml
 
 urllib3.disable_warnings()
 
 
-def _parse_pubtator_document(article: Article, document: ET.Element) -> None:
+def stringify_children(node: etree._Element) -> str:
+    """Joins all string parts excluding empty parts using lxml's itertext."""
+    return "".join(text.strip() for text in node.itertext() if text)
+
+
+def is_text_relevant(text: str, snippets: list[str]) -> bool:
     """
-    Parses BioC-XML Pubtator document, applies annotations to relevant passages,
-    and sets title, abstract, and paragraphs to the article.
+    Checks if a piece of text contains any of the provided snippets.
+    Uses normalization to handle whitespace/newline inconsistencies.
+    """
+    if not text:
+        return False
+
+    normalized_text = " ".join(text.split()).lower()
+
+    for snippet in snippets:
+        if len(snippet) < 5:
+            continue
+
+        normalized_snippet = " ".join(snippet.split()).lower()
+
+        search_term = normalized_snippet[:50]
+        if search_term in normalized_text:
+            return True
+    return False
+
+
+def _parse_pubtator_document(article: Article, document: etree._Element) -> None:
+    """
+    Parses BioC-XML Pubtator document, applies annotations to relevant passages.
     """
     annotated_paragraphs = []
 
-    for passage in document.findall(".//passage"):
+    for passage in document.xpath(".//passage"):
         text_element = passage.find("text")
         if text_element is None or text_element.text is None:
             continue
         original_text = text_element.text
 
-        # TODO možná hledat líp než jako prvních 20 znaků
-        is_relevant = any(
-            re.search(re.escape(snippet[:20].strip()), original_text, flags=re.IGNORECASE)
-            for snippet in article.snippets if len(snippet) >= 5
-        )
+        passage_type_elem = passage.xpath("./infon[@key='type']")
+        passage_type = passage_type_elem[0].text if passage_type_elem else ""
 
-        passage_type_elem = passage.find("./infon[@key='type']")
-        passage_type = passage_type_elem.text if passage_type_elem is not None else ""
+        if passage_type in ("front", "abstract") or is_text_relevant(original_text, article.snippets):
+            offset_elem = passage.find("offset")
+            passage_offset = int(offset_elem.text) if offset_elem is not None else 0
 
-        if is_relevant or passage_type in ("front", "abstract"):
-            passage_offset = int(passage.find("offset").text)
             annotations = []
-            for ann in passage.findall("annotation"):
-                ann_type = ann.find("./infon[@key='type']").text
+            for ann in passage.xpath("annotation"):
+                ann_type_elem = ann.xpath("./infon[@key='type']")
+                ann_type = ann_type_elem[0].text if ann_type_elem else ""
+
                 if ann_type == "Species":
                     continue
 
                 loc = ann.find("location")
-                local_offset = int(loc.get("offset")) - passage_offset
-                length = int(loc.get("length"))
+                if loc is not None:
+                    local_offset = int(loc.get("offset")) - passage_offset
+                    length = int(loc.get("length"))
 
-                annotations.append({
-                    'start': local_offset,
-                    'end': local_offset + length,
-                    'type': ann_type,
-                    'text': ann.find("text").text
-                })
+                    ann_text_elem = ann.find("text")
+                    annotations.append({
+                        'start': local_offset,
+                        'end': local_offset + length,
+                        'type': ann_type,
+                        'text': ann_text_elem.text if ann_text_elem is not None else ""
+                    })
 
-            # Sort annotations reverse to avoid index shift
             annotations.sort(key=lambda x: x['start'], reverse=True)
             annotated_text = original_text
             for ann in annotations:
@@ -71,77 +93,67 @@ def _parse_pubtator_document(article: Article, document: ET.Element) -> None:
     article.paragraphs = "\n".join(annotated_paragraphs)
 
 
-def _get_clean_text(element: ET.Element) -> str:
+def _parse_pmc_document(article: Article, article_root: etree._Element) -> None:
     """
-    Recursively extracts all text from an element and its children,
-    handling nested tags like <italic> or <xref> gracefully.
+    Parses PMC XML, retaining abstract subparagraph titles and fixing snippet finding.
     """
-    if element is None:
-        return ""
-    text = "".join(element.itertext())
-    return " ".join(text.split()).strip()
+    title_elems = article_root.xpath(".//front//article-title")
+    if title_elems:
+        article.title = stringify_children(title_elems[0])
 
+    abstract_nodes = article_root.xpath(".//front//abstract//*[self::p or self::title]")
+    if abstract_nodes:
+        abstract_parts = []
+        for node in abstract_nodes:
+            node_text = stringify_children(node)
+            if node.tag == "title":
+                abstract_parts.append(f"{node_text}: " if node_text else "")
+            else:
+                abstract_parts.append(node_text)
+        article.abstract = " ".join(filter(None, abstract_parts))
 
-def _parse_pmc_document(article: Article, article_root: ET.Element) -> None:
-    """
-    Parses PMC XML using tag filtering to handle complex body structures.
-    """
-    # 1. Extract Title
-    title_elem = article_root.find(".//front//article-title")
-    if title_elem is not None:
-        article.title = _get_clean_text(title_elem)
-
-    # 2. Extract Abstract
-    abstract_paras = article_root.findall(".//front//abstract//p")
-    if abstract_paras:
-        article.abstract = " ".join(_get_clean_text(p) for p in abstract_paras)
-
-    # 3. Extract Body & Back (Handling tables, lists, and sections)
     found_content = []
     seen_texts = set()
-
-    # Tags we want to extract text from
     target_tags = {'p', 'title', 'td', 'li'}
 
     for section_name in ['body', 'back']:
-        section = article_root.find(f".//{section_name}")
-        if section is None:
+        sections = article_root.xpath(f".//{section_name}")
+        if not sections:
             continue
 
-        for node in section.iter():
+        for node in sections[0].iter():
             if node.tag in target_tags:
-                original_text = _get_clean_text(node)
+                original_text = stringify_children(node)
 
                 if not original_text or original_text in seen_texts:
                     continue
 
-                is_relevant = any(
-                    re.search(re.escape(snippet[:20].strip()), original_text, flags=re.IGNORECASE)
-                    for snippet in article.snippets if len(snippet) >= 5
-                )
-
-                if is_relevant:
+                if is_text_relevant(original_text, article.snippets):
                     found_content.append(original_text)
                     seen_texts.add(original_text)
 
     article.paragraphs = "\n".join(found_content)
 
 
-def _extract_attributes(article: Article, document: ET.Element):
-    """Extracts article attributes. Mock implementation."""
+def _extract_attributes(article: Article, document: etree._Element):
+    """Extracts article attributes. Mock implementation."""  # TODO
     # Study Type
-    text = " ".join([t.text for t in document.findall(".//text") if t.text])
-    if "clinical trial" in text.lower():
+    text_nodes = document.xpath(".//text")
+    combined_text = " ".join([t.text for t in text_nodes if t.text])
+
+    if "clinical trial" in combined_text.lower():
         article.study_type = "Clinical Trial"
-    elif "case report" in text.lower():
+    elif "case report" in combined_text.lower():
         article.study_type = "Case Report"
     else:
         article.study_type = "Observational Study"
 
     # Disease
-    for ann in document.findall(".//annotation"):
-        if ann.find("./infon[@key='type']").text == "Disease":
-            article.disease = ann.find("text").text
+    for ann in document.xpath(".//annotation"):
+        ann_type_elem = ann.xpath("./infon[@key='type']")
+        if ann_type_elem and ann_type_elem[0].text == "Disease":
+            text_elem = ann.find("text")
+            article.disease = text_elem.text if text_elem is not None else ""
             break
 
 
@@ -150,7 +162,7 @@ def annotate_raw_text(text: str) -> str:
     Cleans raw text and submits it to PubTator for annotations.
     Mock implementation as original was not working.
     """
-    return f"[Annotated Raw Text Mock]\n{text}"
+    return f"[Annotated Raw Text Mock]\n{text}"  # TODO
 
 
 # Constants
@@ -172,40 +184,42 @@ def get_session() -> requests.Session:
     return session
 
 
-def map_pubtator_xml(root: ET.Element) -> dict[str, ET.Element] | None:
+def map_pubtator_xml(root: etree._Element) -> dict[str, etree._Element]:
     """Parses XML content and maps IDs to their respective document elements."""
-    return {
-        f"PMC{doc.find('id').text}": doc
-        for doc in root.findall("document")
-        if doc.find("id") is not None
-    }
+    article_map = {}
+    for doc in root.xpath("document"):
+        id_elem = doc.find("id")
+        if id_elem is not None and id_elem.text:
+            article_map[f"PMC{id_elem.text}"] = doc
+    return article_map
 
 
-def map_pmc_xml(root: ET.Element) -> dict[str, ET.Element] | None:
+def map_pmc_xml(root: etree._Element) -> dict[str, etree._Element]:
     """Parses XML content and maps IDs to their respective document elements."""
     id_xpath = ".//article-meta/article-id[@pub-id-type='pmcid']"
 
     article_map = {}
-    for article in root.findall("article"):
-        id_element = article.find(id_xpath)
-
-        if id_element is not None and id_element.text:
-            pmc_id = id_element.text.strip()
+    for article in root.xpath("article"):
+        id_elements = article.xpath(id_xpath)
+        if id_elements and id_elements[0].text:
+            pmc_id = id_elements[0].text.strip()
             article_map[pmc_id] = article
 
     return article_map
 
 
-def fetch_resource(session: requests.Session, url: str, params: dict) -> dict[str, ET.Element]:
-    """Generic fetcher that returns a mapped dictionary of XML elements."""
+def fetch_resource(session: requests.Session, url: str, params: dict) -> dict[str, etree._Element]:
+    """Generic fetcher that returns a mapped dictionary of lxml elements."""
     try:
-        # verify=False is not recommended but needed
         response = session.get(url, params=params, verify=False, timeout=15)
         response.raise_for_status()
     except requests.RequestException as e:
-        print(e)
+        print(f"Request failed: {e}")
+        return {}
 
-    root = root = ET.fromstring(response.content.decode("utf-8"))
+    # lxml.etree.fromstring handles bytes directly and is more robust
+    root = etree.fromstring(response.content)
+    write_pretty_xml(root, f"xml_response{pmcid}.xml")
     if "pubtator" in url:
         return map_pubtator_xml(root)
     elif "eutils" in url:
@@ -222,19 +236,18 @@ def update_articles_fulltext(articles: list[Article]):
         return
 
     session = get_session()
-
     pmcid_to_article = {a.pmcid: a for a in articles}
-    raw_ids = [a.pmcid for a in articles]
-    ids_query = ",".join(raw_ids)
+    ids_query = ",".join([a.pmcid for a in articles])
 
     pubtator_results = fetch_resource(session, PUBTATOR_URL, {"pmcids": ids_query})
 
     for pmcid, doc in pubtator_results.items():
-        if pmcid in pmcid_to_article.keys():
+        if pmcid in pmcid_to_article:
             article = pmcid_to_article[pmcid]
             _parse_pubtator_document(article, doc)
+            article.source = "pubtator"
 
-    missing_ids = [pmcid for pmcid in pmcid_to_article.keys() if pmcid not in pubtator_results.keys()]
+    missing_ids = [pmcid for pmcid in pmcid_to_article if pmcid not in pubtator_results]
     if missing_ids:
         ncbi_params = {
             "db": "pmc",
@@ -244,21 +257,34 @@ def update_articles_fulltext(articles: list[Article]):
         }
         ncbi_results = fetch_resource(session, EUTILS_URL, ncbi_params)
         for pmcid in missing_ids:
-            article = pmcid_to_article[pmcid]
-            _parse_pmc_document(article, ncbi_results[pmcid])
-
-    # _extract_attributes(article, ncbi_results[pmcid])
+            if pmcid in ncbi_results:
+                article = pmcid_to_article[pmcid]
+                _parse_pmc_document(article, ncbi_results[pmcid])
+                article.source = "pmc"
 
 
 if __name__ == '__main__':
-    pmcid = "PMC4925265"
-    # pmcid = "PMC9516015"
-    article = Article(pmcid=pmcid, snippets=["es with concern for predisposit"])
-    results = fetch_resource(get_session(), EUTILS_URL, params={
+    pmcid = "PMC8794197"    # pmc
+    # test_article = Article(pmcid=pmcid, snippets=["Approximately 500 patients with AML and 350 with MDS were referred to the Department of Leukemia at UTMDACC during this same time period. "])
+    test_article = Article(pmcid=pmcid, snippets=[
+        "We selected 5 families with at least 2 cases of cutaneous melanoma among first-degree relatives, for a total of 10 individuals for WES."])
+    res = fetch_resource(get_session(), EUTILS_URL, params={
         "db": "pmc",
-        "id": "PMC4925265",
+        "id": pmcid,
         "rettype": "full",
         "retmode": "xml"
     })
-    _parse_pmc_document(article, results[pmcid])
-    print(article.get_context())
+
+    if pmcid in res:
+        print(_parse_pmc_document(test_article, res[pmcid]))
+        print(test_article.get_context())
+
+    pmcid = "PMC8794197"  # pubtator
+    test_article = Article(pmcid=pmcid, snippets=[
+        "We selected 5 families with at least 2 cases of cutaneous melanoma among first-degree relatives, for a total of 10 individuals for WES."])
+    res = fetch_resource(get_session(), PUBTATOR_URL, params={
+        "pmcids": pmcid,
+    })
+    if pmcid in res:
+        _parse_pubtator_document(test_article, res[pmcid])
+        print(test_article.get_context())

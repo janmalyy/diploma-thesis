@@ -3,7 +3,6 @@ import time
 import datetime
 import calendar
 from pathlib import Path
-from typing import Any
 from dateutil.relativedelta import relativedelta
 
 import requests

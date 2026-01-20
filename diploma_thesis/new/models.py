@@ -25,6 +25,7 @@ class Article:
         self.abstract: str = ""
         self.paragraphs: str = ""
 
+        self.source: str = ""
         self.study_type: str = "Unknown"
         self.disease: str = "Unknown"
         self.relevance_score: float = 0.0

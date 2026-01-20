@@ -3,7 +3,7 @@ Workflow:
 1. Normalise variant input.
 2. Fetch relevant literature data and snippets from SIBiLS Variomes.
 3. Retrieve full-text annotations from PubTator 3.
-4. Fallback to direct PMC access if PubTator data is missing (mocked).
+4. Fallback to direct PMC access if PubTator data is missing.
 5. Intelligently shorten and filter context based on relevance (mocked).
 6. Generate a concise summary using a LLM (BioMistral).
 
@@ -54,13 +54,13 @@ def main():
     print("="*50)
     for article in articles:
         print(f"[{article.pmcid}]")
-        print(f"  Study Type: {article.study_type}")
-        print(f"  Disease:    {article.disease}")
-        print(f"  Relevance:  {round(article.relevance_score, 2)}")
-        print("-" * 20)
+        # print(f"  Study Type: {article.study_type}")
+        # print(f"  Disease:    {article.disease}")
+        # print(f"  Relevance:  {round(article.relevance_score, 2)}")
+        # print("-" * 20)
 
         print(article.get_context())
-        print("\n\n\n")
+        print("\n\n")
     # print("\n" + "="*50)
     # print("GENERATING LLM SUMMARY")
     # print("="*50)
