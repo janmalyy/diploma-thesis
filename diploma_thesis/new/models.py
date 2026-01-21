@@ -23,7 +23,8 @@ class Article:
 
         self.title: str = ""
         self.abstract: str = ""
-        self.paragraphs: str = ""
+        self.paragraphs: list[str] = []       # if variant found in the article
+        self.suppl_info: str = ""       # if variant found in the supplementary data
 
         self.source: str = ""
         self.study_type: str = "Unknown"
@@ -37,11 +38,18 @@ class Article:
         if self.abstract:
             context += f"Abstract: {self.abstract}\n"
         if self.paragraphs:
-            context += "Relevant paragraphs:\n" + self.paragraphs + "\n"
+            context += "Relevant paragraphs:\n" + "\n".join(self.paragraphs) + "\n"
+        # if self.suppl_info:
+        #     context += "Supplementary information:\n" + self.suppl_info + "\n"
         return context
 
     def shorten_context(self, max_length: int = 2000):
-        """Intelligently shortens the context. Mock implementation."""
-        if len(self.paragraphs) > max_length:
-            # In a real implementation, we would keep the most relevant paragraphs
-            self.paragraphs = self.paragraphs[:max_length] + "... [shortened]"
+        """Intelligently shortens the context. Mock implementation."""  # TODO
+        shortened = []
+        for p in self.paragraphs:
+            if len(p) > max_length:
+                shortened.append(p[:max_length] + "...")
+            else:
+                shortened.append(p)
+        self.paragraphs = shortened
+

@@ -1,9 +1,9 @@
 """
 Workflow:
-1. Normalise variant input.
+1. Normalise variant input. - nějak použít jejich synvar, umí to: https://sibils.org/synvar/
 2. Fetch relevant literature data and snippets from SIBiLS Variomes.
 3. Retrieve full-text annotations from PubTator 3.
-4. Fallback to direct PMC access if PubTator data is missing.
+4. Fallback to BiodiversityPMC access if PubTator data is missing.
 5. Intelligently shorten and filter context based on relevance (mocked).
 6. Generate a concise summary using a LLM (BioMistral).
 

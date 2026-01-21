@@ -1,12 +1,16 @@
 import re
 import requests
 from diploma_thesis.new.models import Variant, Article
+from diploma_thesis.settings import logger
 
 
 def _process_suppl_data(data: dict, pattern: re.Pattern) -> str:
     """
     Extracts snippets from supplementary data based on variant terms.
     """
+    # TODO je potřeba nějak inteligentně hledat tu variantu v raw suppl data; když použiju expandované hledání přes všechny termy, tak mám strašně moc nálezů - k ničemu
+    # TODO nevím, jak to zvýrazňují a hledají ve webovém rozhraní; vypadá to, že v jsonu z variomes je jen daná ta suppl. file a žádná anotace
+    # TODO nápad: parsovat a hledat to různě vzhledem k příponě?
     title = data.get("title", "No Title")
     fulltext = data.get("text", "")
     snippets = []
@@ -26,6 +30,8 @@ def fetch_variomes_data(variant: Variant) -> list[Article]:
         r = requests.get(url=f"https://variomes.sibils.org/api/rankLit?genvars={variant.variant_string}")
         r.raise_for_status()
         data = r.json()
+        # with open("variomes_data.json", "w") as f:
+        #     f.write(json.dumps(data, indent=4))
     except Exception as e:
         print(f"Error fetching Variomes data: {e}")
         return []
@@ -45,7 +51,6 @@ def fetch_variomes_data(variant: Variant) -> list[Article]:
         pmc_id = pub.get("pmcid")
         evidences = pub.get("evidences", [])
         # TODO vymazat z těch snippets ty span znaky
-        # Clean snippets (remove span tags if any, though original code just TODO'd it)
         snippets = [ev.get("text") for ev in evidences if ev.get("text")]
         articles.append(Article(pmcid=pmc_id, snippets=snippets))
 
@@ -63,4 +68,5 @@ def fetch_variomes_data(variant: Variant) -> list[Article]:
 
             article.suppl_info = _process_suppl_data(supp, pattern)
 
+    logger.info(f"Found {len(articles)} articles for variant {variant.variant_string}.")
     return articles

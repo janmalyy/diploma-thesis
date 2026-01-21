@@ -4,6 +4,7 @@ import urllib3
 from urllib3 import Retry
 from lxml import etree
 from diploma_thesis.new.models import Article
+from diploma_thesis.settings import logger
 from diploma_thesis.utils.parse_xml import write_pretty_xml
 
 urllib3.disable_warnings()
@@ -25,7 +26,7 @@ def is_text_relevant(text: str, snippets: list[str]) -> bool:
 
         normalized_snippet = " ".join(snippet.split()).lower()
 
-        search_term = normalized_snippet[:50]
+        search_term = normalized_snippet[5:50]
         if search_term in normalized_text:
             return True
     return False
@@ -81,11 +82,11 @@ def _parse_pubtator_document(article: Article, document: etree._Element) -> None
             if passage_type == "front":
                 article.title = annotated_text
             elif passage_type == "abstract":
-                article.abstract = annotated_text
+                article.abstract += annotated_text
             else:
                 annotated_paragraphs.append(annotated_text)
 
-    article.paragraphs = "\n".join(annotated_paragraphs)
+    article.paragraphs = annotated_paragraphs
 
 
 def _parse_biodiversity_pmc_document(article: Article, article_data: dict) -> None:
@@ -222,7 +223,7 @@ def _parse_biodiversity_pmc_document(article: Article, article_data: dict) -> No
             relevant_paragraphs.append(" ".join(annotated_sentences))
 
     if relevant_paragraphs:
-        article.paragraphs = "\n".join(relevant_paragraphs)
+        article.paragraphs = relevant_paragraphs
 
 
 def _extract_attributes(article: Article, document: etree._Element):
@@ -285,13 +286,13 @@ def map_pubtator_xml(root: etree._Element) -> dict[str, etree._Element]:
 
 def map_biodiversity_pmc_json(article_set: dict) -> dict[str, dict]:
     """
-    Maps a SIBiLS JSON article set to a dictionary keyed by PMCID.
+    Maps a SIBiLS JSON article set to a to_be_json keyed by PMCID.
 
     Args:
         article_set: The full JSON response containing the 'sibils_article_set' list.
 
     Returns:
-        A dictionary mapping PMCID strings to their respective article data dictionaries.
+        A to_be_json mapping PMCID strings to their respective article data dictionaries.
     """
     return {
         article.get("_id"): article
@@ -315,10 +316,10 @@ def fetch_pubtator(session: requests.Session, params: dict) -> dict[str, etree._
 def fetch_biodiversity_pmc(session: requests.Session, params: dict) -> dict[str, dict]:
     """
     Args:
-        session: The active requests session.
-        params: Parameters dictionary containing 'ids' (comma-separated PMCIDs) and 'col' (collection).
+        session: The active requests' session.
+        params: Parameters to_be_json containing 'ids' (comma-separated PMCIDs) and 'col' (collection).
     Returns:
-        A dictionary mapping PMCID strings to their article data dictionaries.
+        A to_be_json mapping PMCID strings to their article data dictionaries.
     """
     try:
         response = session.post(BIODIVERSITY_PMC_URL, data=params, timeout=15)
@@ -339,9 +340,12 @@ def update_articles_fulltext(articles: list[Article]):
 
     session = get_session()
     pmcid_to_article = {a.pmcid: a for a in articles}
-    ids_query = ",".join([a.pmcid for a in articles])
-
-    pubtator_results = fetch_pubtator(session, {"pmcids": ids_query})
+    pubtator_results: dict[str, etree._Element] = {}
+    for i in range(0, len(articles), 100):
+        batch = articles[i: i + 100]
+        ids_query = ",".join([a.pmcid for a in batch if a.pmcid])
+        results = fetch_pubtator(session, {"pmcids": ids_query})
+        pubtator_results.update(results)
 
     for pmcid, doc in pubtator_results.items():
         if pmcid in pmcid_to_article:
@@ -364,23 +368,23 @@ def update_articles_fulltext(articles: list[Article]):
 
 
 if __name__ == '__main__':
-    pmcid = "PMC8794197"      # in both
-    test_article = Article(pmcid=pmcid, snippets=["We selected 5 families with at least 2 cases of cutaneous melanoma among first-degree relatives, for a total of 10 individuals for WES."])
+    # pmcid = "PMC8794197"      # in both
+    # test_article = Article(pmcid=pmcid, snippets=["We selected 5 families with at least 2 cases of cutaneous melanoma among first-degree relatives, for a total of 10 individuals for WES."])
 
-    # pmcid = "PMC4925265"        # only in BiodiversityPMC
-    # test_article = Article(pmcid=pmcid, snippets=["with one or more first-degree relatives, or ≥2 second-degree relatives, with hematologic malignancies."])
+    pmcid = "PMC3725882"
+    test_article = Article(pmcid=pmcid, snippets=["shkenazi AB47 Br (33) Br-male"])
+    #
+    # # biodiversitypmc
+    # res = fetch_biodiversity_pmc(get_session(), params={
+    #     "ids": pmcid,
+    #     "col": "pmc",
+    # })
+    # if pmcid in res:
+    #     _parse_biodiversity_pmc_document(test_article, res[pmcid])
+    #     print("--- BiodiversityPMC ---")
+    #     print(test_article.get_context())
 
-    # biodiversitypmc
-    res = fetch_biodiversity_pmc(get_session(), params={
-        "ids": pmcid,
-        "col": "pmc",
-    })
-    if pmcid in res:
-        _parse_biodiversity_pmc_document(test_article, res[pmcid])
-        print("--- BiodiversityPMC ---")
-        print(test_article.get_context())
-
-    #pubtator
+    # pubtator
     res = fetch_pubtator(get_session(), params={
         "pmcids": pmcid,
     })
