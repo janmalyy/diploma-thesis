@@ -1,14 +1,16 @@
 """
 Workflow:
 1. Normalise variant input. - nějak použít jejich synvar, umí to: https://sibils.org/synvar/
-2. Fetch relevant literature data and snippets from SIBiLS Variomes.
+2. Fetch relevant literature data and snippets from SIBiLS Variomes.        TODO IS_RELEVANT
+    - if snippet not found, it is added to paragraphs as is
+        # todo možná není problém v is-relevant, ale v anotaci, možná kvůli anotaci se tam nepřidávají ty nalezené paragrafy
 3. Retrieve full-text annotations from PubTator 3.
 4. Fallback to BiodiversityPMC access if PubTator data is missing.
-5. Intelligently shorten and filter context based on relevance (mocked).
-6. Generate a concise summary using a LLM (BioMistral).
+5. Intelligently shorten and filter context based on relevance (mocked).    TODO
+6. Generate a concise summary using a LLM (BioMistral).                     TODO
 
 Output:
-- Article-level attributes: Study type, quality, disease.
+- Article-level attributes: Study type, quality, disease.                   TODO
 - Comprehensive variant summary.
 """
 import time

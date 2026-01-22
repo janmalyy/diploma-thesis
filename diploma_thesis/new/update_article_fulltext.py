@@ -1,3 +1,5 @@
+import json
+
 import requests
 from requests.adapters import HTTPAdapter
 import urllib3
@@ -10,14 +12,15 @@ from diploma_thesis.utils.parse_xml import write_pretty_xml
 urllib3.disable_warnings()
 
 
-def is_text_relevant(text: str, snippets: list[str]) -> bool:
+def check_text_for_snippets(text: str, snippets: list[str]) -> tuple[bool, list[str]]:
     """
     Checks if a piece of text contains any of the provided snippets.
     Uses normalization to handle whitespace/newline inconsistencies.
     """
-    if not text:
-        return False
-
+    if not text or not snippets:
+        return False, []
+    match = False
+    matched_snippets = []
     normalized_text = " ".join(text.split()).lower()
 
     for snippet in snippets:
@@ -28,8 +31,10 @@ def is_text_relevant(text: str, snippets: list[str]) -> bool:
 
         search_term = normalized_snippet[5:50]
         if search_term in normalized_text:
-            return True
-    return False
+            match = True
+            matched_snippets.append(snippet)
+
+    return match, matched_snippets
 
 
 def _parse_pubtator_document(article: Article, document: etree._Element) -> None:
@@ -47,7 +52,10 @@ def _parse_pubtator_document(article: Article, document: etree._Element) -> None
         passage_type_elem = passage.xpath("./infon[@key='type']")
         passage_type = passage_type_elem[0].text if passage_type_elem else ""
 
-        if passage_type in ("front", "abstract") or is_text_relevant(original_text, article.snippets):
+        match, matched_snippets = check_text_for_snippets(original_text, article.snippets)
+        [article.snippets.remove(s) for s in matched_snippets]
+
+        if passage_type in ("front", "abstract") or match:
             offset_elem = passage.find("offset")
             passage_offset = int(offset_elem.text) if offset_elem is not None else 0
 
@@ -87,6 +95,7 @@ def _parse_pubtator_document(article: Article, document: etree._Element) -> None
                 annotated_paragraphs.append(annotated_text)
 
     article.paragraphs = annotated_paragraphs
+    article.paragraphs += article.snippets      # todo není anotované! protože nevím offset, nedokážu to v dokumentu najít...
 
 
 def _parse_biodiversity_pmc_document(article: Article, article_data: dict) -> None:
@@ -104,7 +113,7 @@ def _parse_biodiversity_pmc_document(article: Article, article_data: dict) -> No
         if ann.get("concept_source") in ("uniprot_swissprot", "nextprot")
     ]
 
-    def apply_annotations(text: str, field: str, sentence_num: int) -> str:
+    def apply_annotations(text: str, sentence_num: int) -> str:
         """
         There is magic happening inside because we must somehow resolve overlapping annotations.
         """
@@ -113,8 +122,7 @@ def _parse_biodiversity_pmc_document(article: Article, article_data: dict) -> No
 
         relevant = [
             ann for ann in annotations
-            if ann.get("field") == field
-            and ann.get("sentence_number") == sentence_num
+            if ann.get("sentence_number") == sentence_num
             and ann.get("start_index") is not None
             and ann.get("end_index") is not None
             and ann.get("type")
@@ -160,19 +168,16 @@ def _parse_biodiversity_pmc_document(article: Article, article_data: dict) -> No
 
         return annotated
 
+    # -------- Title and Abstract --------
     title = document.get("title", "")
     if title:
-        article.title = apply_annotations(title, "title", 1)
+        article.title = apply_annotations(title, 1)
 
-    abstract_sentences = [
-        s for s in sentences if s.get("field") == "abstract"
-    ]
-
+    abstract_sentences = [s for s in sentences if s.get("field") == "abstract"]
     abstract_parts: list[str] = []
     for s in abstract_sentences:
         annotated = apply_annotations(
             s.get("sentence", ""),
-            "abstract",
             s.get("sentence_number"),
         )
         if annotated:
@@ -207,16 +212,13 @@ def _parse_biodiversity_pmc_document(article: Article, article_data: dict) -> No
             if not raw:
                 continue
 
-            if not is_text_relevant(raw, article.snippets):
-                annotated_sentences.append(raw)
-                continue
+            match, matched_snippets = check_text_for_snippets(raw, article.snippets)
+            [article.snippets.remove(s) for s in matched_snippets]
 
-            paragraph_is_relevant = True
-            annotated = apply_annotations(
-                raw,
-                "text",
-                s["sentence_number"],
-            )
+            if match:
+                paragraph_is_relevant = True
+
+            annotated = apply_annotations(raw, s["sentence_number"])
             annotated_sentences.append(annotated)
 
         if paragraph_is_relevant:
@@ -224,6 +226,11 @@ def _parse_biodiversity_pmc_document(article: Article, article_data: dict) -> No
 
     if relevant_paragraphs:
         article.paragraphs = relevant_paragraphs
+
+    if relevant_paragraphs:
+        article.paragraphs = relevant_paragraphs
+
+    article.paragraphs += article.snippets
 
 
 def _extract_attributes(article: Article, document: etree._Element):
@@ -319,7 +326,7 @@ def fetch_biodiversity_pmc(session: requests.Session, params: dict) -> dict[str,
         session: The active requests' session.
         params: Parameters to_be_json containing 'ids' (comma-separated PMCIDs) and 'col' (collection).
     Returns:
-        A to_be_json mapping PMCID strings to their article data dictionaries.
+        A dictionary mapping PMCID strings to their article data dictionaries.
     """
     try:
         response = session.post(BIODIVERSITY_PMC_URL, data=params, timeout=15)
@@ -385,10 +392,16 @@ if __name__ == '__main__':
     #     print(test_article.get_context())
 
     # pubtator
-    res = fetch_pubtator(get_session(), params={
-        "pmcids": pmcid,
-    })
-    if pmcid in res:
-        _parse_pubtator_document(test_article, res[pmcid])
-        print("--- Pubtator ---")
-        print(test_article.get_context())
+    # res = fetch_pubtator(get_session(), params={
+    #     "pmcids": pmcid,
+    # })
+    # if pmcid in res:
+    #     _parse_pubtator_document(test_article, res[pmcid])
+    #     print("--- Pubtator ---")
+    #     print(test_article.get_context())
+
+    with open("test.json", "w") as f:
+        json.dump(fetch_biodiversity_pmc(get_session(), params={
+            "ids": "PMC4925265",
+            "col": "pmc",
+        }), f, indent=4)

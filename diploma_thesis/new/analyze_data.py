@@ -74,7 +74,7 @@ for i, variant in enumerate(variants):
     # 3 & 4. Fetch Data from PubTator or BiodiversityPMC
     update_articles_fulltext(articles)
 
-    full_articles = [a for a in articles if a.snippets]
+    full_articles = [a for a in articles if a.snippets or a.paragraphs]
     supp_articles = [a for a in articles if not a.snippets]
     variant_info = {
         "variant": variant.variant_string,
@@ -87,8 +87,8 @@ for i, variant in enumerate(variants):
                     "source_of_annotation": a.source,
                     "title_length": len(a.title),
                     "abstract_length": len(a.abstract),
-                    "number_of_snippets": len(a.snippets),
-                    "number_of_found_paragraphs": len(a.paragraphs),
+                    "number_of_unmatched_snippets": len(a.snippets),
+                    "number_of_paragraphs": len(a.paragraphs),
                     "paragraphs_lengths": [len(p) for p in a.paragraphs]
                 }
                 for a in full_articles
@@ -109,5 +109,5 @@ for i, variant in enumerate(variants):
     if i % 10 == 0:
         logger.info(f"progress: {i / len(variants) * 100:.2f}%, time elapsed: {end(start):.2f} s.")
 
-with open("results_updated_pubtator_abstract_and_is_relevant_to_5_50.json", "w", encoding="utf-8") as f:
+with open("results_updated_ver4.json", "w", encoding="utf-8") as f:
     json.dump(to_be_json, f, indent=4)
