@@ -1,3 +1,6 @@
+from diploma_thesis.new.helpers import to_machine_comparable, to_human_readable
+
+
 class Variant:
     def __init__(self, input_variant: str):
         self.variant_string = self._normalize(input_variant)
@@ -22,8 +25,8 @@ class TextBlock:
         self.human_readable, self.machine_comparable = self.build_text_block()
 
     def build_text_block(self):
-        human_readable = self.raw_text.strip()
-        machine_comparable = human_readable.lower().replace("\n", " ").replace("  ", " ")
+        human_readable = to_human_readable(self.raw_text)
+        machine_comparable = to_machine_comparable(human_readable)
         return human_readable, machine_comparable
 
     def __str__(self):

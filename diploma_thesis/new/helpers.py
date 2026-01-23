@@ -1,48 +1,45 @@
+import html
 import re
+import string
+from pathlib import Path
+from xml.dom.minidom import parseString
 
-from diploma_thesis.new.models import TextBlock
+from lxml import etree
 
+# TODO Budu chtít nějak zachovat tu pozici, abych ji tam pak mohl zvýrazněnou vrátit do závěrečného kontextu
+#  If you need to extract those IDs later, you can use: re.findall(r'concept_id=\"(.*?)\"', text)
+# [^">] matches anything not a quote or a closing bracket
+# "[^"]*" matches a full quoted string (allowing > inside)
+# The combination ensures we only stop at a > that is NOT inside quotes
 
-def clean_variant_tags(text: str) -> str:
-    """Cleans span tags that contain angle brackets within their attributes.
-
-    Args:
-        text: Raw text string with potentially complex HTML attributes.
-
-    Returns:
-        The text with span tags removed but content preserved.
-    """
-    # [^">] matches anything not a quote or a closing bracket
-    # "[^"]*" matches a full quoted string (allowing > inside)
-    # The combination ensures we only stop at a > that is NOT inside quotes
-    pattern = r'<span(?:[^">]|"[^"]*")*>(.*?)</span>'
-
-    return re.sub(pattern, r"\1", text)
-
-    # TODO Budu chtít nějak zachovat tu pozici, abych ji tam pak mohl zvýrazněnou vrátit do závěrečného kontextu
-    #  If you need to extract those IDs later, you can use: re.findall(r'concept_id=\"(.*?)\"', text)
-
-
+span_pattern = r'<span(?:[^">]|"[^"]*")*>(.*?)</span>'
 all_spaces_pattern = r"(?:&nbsp;?|&#160;|[  \s])+"
 
 
-def normalize_text(text: str) -> str:
+def to_human_readable(text: str) -> str:
+    text = re.sub(span_pattern, r"\1", text)
+    text = html.unescape(text)
     text = re.sub(all_spaces_pattern, " ", text.strip())
+    return text
+
+
+def to_machine_comparable(text: str) -> str:
+    text = re.sub("→", ">", text)
+    punctuation_map = str.maketrans(string.punctuation, " " * len(string.punctuation))
+    text = text.translate(punctuation_map)
     return " ".join(text.split()).lower()
 
 
-def check_text_for_snippets(text: TextBlock, snippets: list[TextBlock]) -> tuple[bool, list[TextBlock]]:
-    """
-    Checks if a piece of text contains any of the provided snippets.
-    Uses normalization to handle whitespace/newline inconsistencies.
-    """
-    if not text or not snippets:
-        return False, []
-    matched_snippets = []
-    for snippet in snippets:
-        if len(snippet) < 5:
+def write_xml(root, filename: str | Path) -> None:
+    """Writes an XML element tree to a file with pretty formatting with indents."""
+    for passage in root.xpath(".//passage"):
+        text_element = passage.find("text")
+        if text_element is None or text_element.text is None:
             continue
-        if snippet.machine_comparable in text.machine_comparable:
-            matched_snippets.append(snippet)
+        text_element.text = to_machine_comparable(text_element.text)
 
-    return len(matched_snippets) > 0, matched_snippets
+    xml_str = etree.tostring(root, encoding="utf-8")
+    parsed_xml = parseString(xml_str).toprettyxml(indent="  ")
+
+    with open(filename, "w", encoding="utf-8") as f:
+        f.write(parsed_xml)

@@ -1,15 +1,37 @@
 import requests
+from rapidfuzz import fuzz
 from requests.adapters import HTTPAdapter
 import urllib3
 from urllib3 import Retry
 from lxml import etree
 
-from diploma_thesis.new.helpers import check_text_for_snippets
-from diploma_thesis.new.json_structure import write_pretty_json
+from diploma_thesis.new.json_structure import write_json
 from diploma_thesis.new.models import Article, TextBlock
-from diploma_thesis.utils.parse_xml import write_pretty_xml
+from diploma_thesis.new.helpers import write_xml
 
 urllib3.disable_warnings()
+
+
+def check_text_for_snippets(text: TextBlock, snippets: list[TextBlock]) -> tuple[bool, list[TextBlock]]:
+    """
+    Checks if a piece of text contains any of the provided snippets.
+    Uses normalization to handle whitespace/newline inconsistencies.
+    """
+    if not text or not snippets:
+        return False, []
+    matched_snippets = []
+    for snippet in snippets:
+        if len(snippet) < 5:
+            continue
+        score = fuzz.partial_ratio(snippet.machine_comparable, text.machine_comparable)
+        if score > 90 and score != 100:
+            print("score", round(score, 2))
+            print("snippet", snippet.machine_comparable)
+            print("text", text.machine_comparable)
+        if score > 92:                          # this is an important threshold!
+            matched_snippets.append(snippet)
+
+    return len(matched_snippets) > 0, matched_snippets
 
 
 def _parse_pubtator_document(article: Article, document: etree._Element) -> None:
@@ -69,13 +91,13 @@ def _parse_pubtator_document(article: Article, document: etree._Element) -> None
             elif passage_type == "abstract":
                 article.abstract += annotated_text
             else:
-                annotated_paragraphs.append(text)
+                annotated_paragraphs.append(text.human_readable)
 
     article.paragraphs = annotated_paragraphs
 
     if article.snippets:
         article.paragraphs += [s.human_readable for s in article.snippets]  # todo není anotované! protože nevím offset, nedokážu to v dokumentu najít...
-        write_pretty_xml(document, f"nomatch_{article.pmcid}.xml")
+        write_xml(document, f"nomatch_{article.pmcid}.xml")
 
 
 def _parse_biodiversity_pmc_document(article: Article, article_data: dict) -> None:
@@ -219,7 +241,7 @@ def _parse_biodiversity_pmc_document(article: Article, article_data: dict) -> No
 
     if article.snippets:
         article.paragraphs += [s.human_readable for s in article.snippets]
-        write_pretty_json(article_data, f"nomatch_{article.pmcid}.json")
+        write_json(article_data, f"nomatch_{article.pmcid}.json")
 
 
 def _extract_attributes(article: Article, document: etree._Element):
@@ -395,5 +417,5 @@ if __name__ == '__main__':
     #         "col": "pmc",
     #     }), f, indent=4)
     #
-    write_pretty_xml(fetch_pubtator(get_session(), params={
+    write_xml(fetch_pubtator(get_session(), params={
         "pmcids": "PMC8794197"})["PMC8794197"], "test.xml")

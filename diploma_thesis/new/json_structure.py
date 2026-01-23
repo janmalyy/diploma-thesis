@@ -1,7 +1,7 @@
 import json
 
 
-def write_pretty_json(data: dict, filepath: str) -> None:
+def write_json(data: dict, filepath: str) -> None:
     with open(filepath, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=4)
 

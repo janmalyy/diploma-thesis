@@ -89,7 +89,7 @@ for i, variant in enumerate(variants):
                     "title_length": len(a.title),
                     "abstract_length": len(a.abstract),
                     "number_of_unmatched_snippets": len(a.snippets),
-                    "unmatched_snippets": a.snippets,
+                    "unmatched_snippets": [s.machine_comparable for s in a.snippets],
                     "number_of_paragraphs": len(a.paragraphs),
                     "paragraphs_lengths": [len(p) for p in a.paragraphs]
                 }
@@ -111,5 +111,5 @@ for i, variant in enumerate(variants):
     if i % 10 == 0:
         logger.info(f"progress: {i / len(variants) * 100:.2f}%, time elapsed: {end(start):.2f} s.")
 
-with open("results_updated_ver13.json", "w", encoding="utf-8") as f:
+with open("results_updated_ver15.json", "w", encoding="utf-8") as f:
     json.dump(to_be_json, f, indent=4)

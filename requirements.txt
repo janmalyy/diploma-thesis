@@ -19,3 +19,4 @@ pydantic-ai
 transformers
 torch
 llama-cpp-python
+rapidfuzz
