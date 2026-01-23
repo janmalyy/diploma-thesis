@@ -1,6 +1,11 @@
 import json
 
 
+def write_pretty_json(data: dict, filepath: str) -> None:
+    with open(filepath, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=4)
+
+
 def get_json_structure(data, text_threshold: int = 50) -> dict | list | str:
     """
     Recursively analyzes JSON to find unique categorical values and free-text.
@@ -101,7 +106,8 @@ def print_structure(data,
 def get_all_values_for_key(data: dict | list, target_key: str) -> list:
     """
     Recursively searches for a key in a JSON-like structure and returns all unique values.
-
+    Important: It merges all values found into a single list.
+    It does not distinguish the nested structure level, it can happen that the same target_key is used multiple times in different contexts.
     Args:
         data: The dictionary or list to search through.
         target_key: The specific key to find values for.
