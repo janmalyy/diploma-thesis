@@ -5,7 +5,7 @@ import time
 from xml.etree import ElementTree as ET
 
 from diploma_thesis.api.convert_ids import convert_ids
-from diploma_thesis.utils.parse_xml import write_pretty_xml
+from diploma_thesis.new.helpers import write_xml
 
 
 def _clean_text(text: str | None) -> str:

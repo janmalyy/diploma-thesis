@@ -1,17 +1,4 @@
-from pathlib import Path
 from xml.etree import ElementTree as ET
-from xml.dom.minidom import parseString
-
-from lxml import etree
-
-
-def write_pretty_xml(root, filename: str | Path) -> None:
-    """Writes an XML element tree to a file with pretty formatting with indents."""
-    xml_str = etree.tostring(root, encoding="utf-8")
-    parsed_xml = parseString(xml_str).toprettyxml(indent="  ")
-
-    with open(filename, "w", encoding="utf-8") as f:
-        f.write(parsed_xml)
 
 
 def get_document_from_xml(xml_file_path: str) -> ET.Element:

@@ -13,7 +13,7 @@ from xml.etree import ElementTree as ET
 from Bio import Entrez
 
 from diploma_thesis.settings import DATA_DIR, logger, NIH_EMAIL
-from diploma_thesis.utils.parse_xml import write_pretty_xml
+from diploma_thesis.new.helpers import write_xml
 from diploma_thesis.utils.xml_to_neo4j import make_batches
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -120,7 +120,7 @@ def fetch_pubtator_data_by_ids(pubmed_ids: list[int]) -> ET.Element | None:
 def split_batch_to_separate_articles(root: ET.Element, directory: Path) -> None:
     for document in root.findall("document"):
         pubmed_id = document.find("id").text
-        write_pretty_xml(document, directory / f"article_{pubmed_id}.xml")
+        write_xml(document, directory / f"article_{pubmed_id}.xml")
 
 
 def download_data_per_year(query: str, email: str, year: int, output_dir: Path) -> None:
