@@ -31,7 +31,7 @@ def _process_suppl_data(data: dict, pattern: re.Pattern) -> str:
     """
     # TODO je potřeba nějak inteligentně hledat tu variantu v raw suppl data; když použiju expandované hledání přes všechny termy, tak mám strašně moc nálezů - k ničemu
     # TODO nevím, jak to zvýrazňují a hledají ve webovém rozhraní; vypadá to, že v jsonu z variomes je jen daná ta suppl. file a žádná anotace
-    # TODO nápad: parsovat a hledat to různě vzhledem k příponě?
+    # TODO nápad: parsovat a hledat to různě vzhledem k příponě článku/suppl. file?
     title = data.get("title", "No Title")
     fulltext = data.get("text", "")
     snippets = []
@@ -46,16 +46,33 @@ def _process_suppl_data(data: dict, pattern: re.Pattern) -> str:
 def fetch_variomes_data(variant: Variant) -> list[Article]:
     """
     Fetches data from Variomes API for a given variant and returns a list of Article objects.
+    For faster development, if the file is already downloaded, it is loaded from disk.
     """
-    try:
-        r = requests.get(url=f"https://variomes.sibils.org/api/rankLit?genvars={variant.variant_string}")
-        r.raise_for_status()
-        data = r.json()
-        # with open("variomes_data.json", "w") as f:
-        #     f.write(json.dumps(data, indent=4))
-    except Exception as e:
-        print(f"Error fetching Variomes data: {e}")
-        return []
+    variant_string = variant.variant_string
+    variomes_dir = DATA_DIR / "variomes"
+    filename = re.sub(r'[<>:"/\\|?*]', "_", variant_string)
+    cache_path = variomes_dir / f"{filename}.json"
+    if cache_path.exists():
+        try:
+            with open(cache_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+        except json.JSONDecodeError as e:
+            raise RuntimeError(f"Corrupted Variomes cache file: {cache_path}") from e
+    else:
+        try:
+            r = requests.get(url=f"https://variomes.sibils.org/api/rankLit?genvars={variant.variant_string}")
+            r.raise_for_status()
+            data = r.json()
+        except requests.RequestException as e:
+            raise RuntimeError(f"Variomes API request failed for {variant_string}") from e
+        except json.JSONDecodeError as e:
+            raise RuntimeError(f"Invalid JSON returned by Variomes for {variant_string}") from e
+
+        tmp_path = cache_path.with_suffix(".tmp")
+        with open(tmp_path, "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+
+        tmp_path.replace(cache_path)
 
     # Populate terms in variant for later use in snippet matching
     try:
