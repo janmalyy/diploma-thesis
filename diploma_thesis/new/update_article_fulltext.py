@@ -1,40 +1,15 @@
-import json
-
 import requests
 from requests.adapters import HTTPAdapter
 import urllib3
 from urllib3 import Retry
 from lxml import etree
-from diploma_thesis.new.models import Article
-from diploma_thesis.settings import logger
+
+from diploma_thesis.new.helpers import check_text_for_snippets
+from diploma_thesis.new.json_structure import write_pretty_json
+from diploma_thesis.new.models import Article, TextBlock
 from diploma_thesis.utils.parse_xml import write_pretty_xml
 
 urllib3.disable_warnings()
-
-
-def check_text_for_snippets(text: str, snippets: list[str]) -> tuple[bool, list[str]]:
-    """
-    Checks if a piece of text contains any of the provided snippets.
-    Uses normalization to handle whitespace/newline inconsistencies.
-    """
-    if not text or not snippets:
-        return False, []
-    match = False
-    matched_snippets = []
-    normalized_text = " ".join(text.split()).lower()
-
-    for snippet in snippets:
-        if len(snippet) < 5:
-            continue
-
-        normalized_snippet = " ".join(snippet.split()).lower()
-
-        search_term = normalized_snippet[5:50]
-        if search_term in normalized_text:
-            match = True
-            matched_snippets.append(snippet)
-
-    return match, matched_snippets
 
 
 def _parse_pubtator_document(article: Article, document: etree._Element) -> None:
@@ -47,12 +22,12 @@ def _parse_pubtator_document(article: Article, document: etree._Element) -> None
         text_element = passage.find("text")
         if text_element is None or text_element.text is None:
             continue
-        original_text = text_element.text
+        text = TextBlock(text_element.text)
 
         passage_type_elem = passage.xpath("./infon[@key='type']")
         passage_type = passage_type_elem[0].text if passage_type_elem else ""
 
-        match, matched_snippets = check_text_for_snippets(original_text, article.snippets)
+        match, matched_snippets = check_text_for_snippets(text, article.snippets)
         [article.snippets.remove(s) for s in matched_snippets]
 
         if passage_type in ("front", "abstract") or match:
@@ -81,21 +56,26 @@ def _parse_pubtator_document(article: Article, document: etree._Element) -> None
                     })
 
             annotations.sort(key=lambda x: x['start'], reverse=True)
-            annotated_text = original_text
+            annotated_text = text.human_readable
             for ann in annotations:
                 start, end = ann['start'], ann['end']
                 label = f"[{ann['type']}: {annotated_text[start:end]}]"
                 annotated_text = annotated_text[:start] + label + annotated_text[end:]
 
+            text.human_readable = annotated_text
+
             if passage_type == "front":
-                article.title = annotated_text
+                article.title = text.human_readable
             elif passage_type == "abstract":
                 article.abstract += annotated_text
             else:
-                annotated_paragraphs.append(annotated_text)
+                annotated_paragraphs.append(text)
 
     article.paragraphs = annotated_paragraphs
-    article.paragraphs += article.snippets      # todo není anotované! protože nevím offset, nedokážu to v dokumentu najít...
+
+    if article.snippets:
+        article.paragraphs += [s.human_readable for s in article.snippets]  # todo není anotované! protože nevím offset, nedokážu to v dokumentu najít...
+        write_pretty_xml(document, f"nomatch_{article.pmcid}.xml")
 
 
 def _parse_biodiversity_pmc_document(article: Article, article_data: dict) -> None:
@@ -161,9 +141,9 @@ def _parse_biodiversity_pmc_document(article: Article, article_data: dict) -> No
         for start, end, label in final_spans:
             entity = annotated[start:end]
             annotated = (
-                annotated[:start]
-                + f"[{label}: {entity}]"
-                + annotated[end:]
+                    annotated[:start]
+                    + f"[{label}: {entity}]"
+                    + annotated[end:]
             )
 
         return annotated
@@ -188,7 +168,8 @@ def _parse_biodiversity_pmc_document(article: Article, article_data: dict) -> No
 
     # -------- Body text (PARAGRAPH-AWARE) --------
     body_sentences = [
-        s for s in sentences if s.get("field") == "text"
+        s for s in sentences if s.get("field") == "text" or s.get("tag") == "table"
+        # IMPORTANT: the snippet can be both in text and in table (todo - hotovo, todo je zde jen pro zvýraznění informace)
     ]
 
     paragraphs: dict[str, list[dict]] = {}
@@ -200,37 +181,45 @@ def _parse_biodiversity_pmc_document(article: Article, article_data: dict) -> No
         paragraphs.setdefault(content_id, []).append(s)
 
     relevant_paragraphs: list[str] = []
+    all_contents = {}
+    for section_key in ["body_sections", "back_sections", "float_sections"]:
+        for section in document.get(section_key):
+            for content in section.get("contents"):
+                if content.get("id"):
+                    all_contents[content.get("id")] = content.get("text")
 
     for para_sentences in paragraphs.values():
+        p_id = para_sentences[0].get("content_id")
+        p_paragraph = all_contents.get(p_id, "")
+
+        if not p_paragraph:
+            continue
+        else:
+            p_paragraph = TextBlock(p_paragraph)
+
+        match, matched_snippets = check_text_for_snippets(p_paragraph, article.snippets)
+        if not match:  # we skip paragraphs that do not contain any of the snippets
+            continue
+        [article.snippets.remove(s) for s in matched_snippets]
+
         para_sentences.sort(key=lambda x: x["sentence_number"])
-
         annotated_sentences: list[str] = []
-        paragraph_is_relevant = False
-
-        for s in para_sentences:
-            raw = s.get("sentence", "")
+        for i, s in enumerate(para_sentences):
+            raw = s.get("sentence")
             if not raw:
                 continue
-
-            match, matched_snippets = check_text_for_snippets(raw, article.snippets)
-            [article.snippets.remove(s) for s in matched_snippets]
-
-            if match:
-                paragraph_is_relevant = True
 
             annotated = apply_annotations(raw, s["sentence_number"])
             annotated_sentences.append(annotated)
 
-        if paragraph_is_relevant:
-            relevant_paragraphs.append(" ".join(annotated_sentences))
+        relevant_paragraphs.append(" ".join(annotated_sentences))
 
     if relevant_paragraphs:
         article.paragraphs = relevant_paragraphs
 
-    if relevant_paragraphs:
-        article.paragraphs = relevant_paragraphs
-
-    article.paragraphs += article.snippets
+    if article.snippets:
+        article.paragraphs += [s.human_readable for s in article.snippets]
+        write_pretty_json(article_data, f"nomatch_{article.pmcid}.json")
 
 
 def _extract_attributes(article: Article, document: etree._Element):
@@ -379,7 +368,7 @@ if __name__ == '__main__':
     # test_article = Article(pmcid=pmcid, snippets=["We selected 5 families with at least 2 cases of cutaneous melanoma among first-degree relatives, for a total of 10 individuals for WES."])
 
     pmcid = "PMC3725882"
-    test_article = Article(pmcid=pmcid, snippets=["shkenazi AB47 Br (33) Br-male"])
+    test_article = Article(pmcid=pmcid, snippets=[TextBlock("shkenazi AB47 Br (33) Br-male")])
     #
     # # biodiversitypmc
     # res = fetch_biodiversity_pmc(get_session(), params={
@@ -400,8 +389,11 @@ if __name__ == '__main__':
     #     print("--- Pubtator ---")
     #     print(test_article.get_context())
 
-    with open("test.json", "w") as f:
-        json.dump(fetch_biodiversity_pmc(get_session(), params={
-            "ids": "PMC4925265",
-            "col": "pmc",
-        }), f, indent=4)
+    # with open("test.json", "w") as f:
+    #     json.dump(fetch_biodiversity_pmc(get_session(), params={
+    #         "ids": "PMC4925265",
+    #         "col": "pmc",
+    #     }), f, indent=4)
+    #
+    write_pretty_xml(fetch_pubtator(get_session(), params={
+        "pmcids": "PMC8794197"})["PMC8794197"], "test.xml")

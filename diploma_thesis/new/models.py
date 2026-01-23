@@ -16,10 +16,27 @@ class Variant:
         return f"Variant {self.variant_string}"
 
 
+class TextBlock:
+    def __init__(self, raw_text: str):
+        self.raw_text = raw_text
+        self.human_readable, self.machine_comparable = self.build_text_block()
+
+    def build_text_block(self):
+        human_readable = self.raw_text.strip()
+        machine_comparable = human_readable.lower().replace("\n", " ").replace("  ", " ")
+        return human_readable, machine_comparable
+
+    def __str__(self):
+        return self.human_readable
+
+    def __len__(self):
+        return len(self.human_readable)
+
+
 class Article:
-    def __init__(self, pmcid: str, snippets: list[str] = None):
-        self.pmcid = pmcid
-        self.snippets = snippets or []
+    def __init__(self, pmcid: str, snippets: list[TextBlock] = None):
+        self.pmcid: str = pmcid
+        self.snippets: list[TextBlock] = snippets or []
 
         self.title: str = ""
         self.abstract: str = ""

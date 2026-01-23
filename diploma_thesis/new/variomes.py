@@ -1,28 +1,8 @@
 import json
 import re
 import requests
-from diploma_thesis.new.models import Variant, Article
-from diploma_thesis.settings import logger
-
-
-def clean_variant_tags(text: str) -> str:
-    """Cleans span tags that contain angle brackets within their attributes.
-
-    Args:
-        text: Raw text string with potentially complex HTML attributes.
-
-    Returns:
-        The text with span tags removed but content preserved.
-    """
-    # [^">] matches anything not a quote or a closing bracket
-    # "[^"]*" matches a full quoted string (allowing > inside)
-    # The combination ensures we only stop at a > that is NOT inside quotes
-    pattern = r'<span(?:[^">]|"[^"]*")*>(.*?)</span>'
-
-    return re.sub(pattern, r"\1", text)
-
-    # TODO Budu chtít nějak zachovat tu pozici, abych ji tam pak mohl zvýrazněnou vrátit do závěrečného kontextu
-    #  If you need to extract those IDs later, you can use: re.findall(r'concept_id=\"(.*?)\"', text)
+from diploma_thesis.new.models import Variant, Article, TextBlock
+from diploma_thesis.settings import logger, DATA_DIR
 
 
 def _process_suppl_data(data: dict, pattern: re.Pattern) -> str:
@@ -89,7 +69,7 @@ def fetch_variomes_data(variant: Variant) -> list[Article]:
         pmc_id = pub.get("pmcid")
         evidences = pub.get("evidences", [])
         snippets = [
-            clean_variant_tags(ev.get("text"))
+            TextBlock(ev.get("text"))
             for ev in evidences
             if ev.get("text")
         ]
