@@ -19,15 +19,16 @@ def check_text_for_snippets(text: TextBlock, snippets: list[TextBlock]) -> tuple
     """
     if not text or not snippets:
         return False, []
+
     matched_snippets = []
     for snippet in snippets:
-        if len(snippet) < 5:
+        if len(snippet) < 5 or len(snippet) > len(text):        # že je text delší než snippet se může stát, když sem jdou jako text data z tabulky a to má nebezpečně vysoké skóre, i když je společné třeba jen jedno slovo
             continue
         score = fuzz.partial_ratio(snippet.machine_comparable, text.machine_comparable)
-        if score > 90 and score != 100:
-            print("score", round(score, 2))
-            print("snippet", snippet.machine_comparable)
-            print("text", text.machine_comparable)
+        if 85 < score < 92:
+            print("score:", round(score, 2))
+            print("snippet:", snippet.machine_comparable)
+            print("text:", text.machine_comparable)
         if score > 92:                          # this is an important threshold!
             matched_snippets.append(snippet)
 
@@ -211,18 +212,27 @@ def _parse_biodiversity_pmc_document(article: Article, article_data: dict) -> No
                     all_contents[content.get("id")] = content.get("text")
 
     for para_sentences in paragraphs.values():
-        p_id = para_sentences[0].get("content_id")
-        p_paragraph = all_contents.get(p_id, "")
-
-        if not p_paragraph:
-            continue
+        if para_sentences[0].get("tag") == "table":         # because table "sentences" do not have their respective full paragraph in contents, we compare each "sentence" alone and store as paragraph only this sentence
+            # TODO když je match, tak pak jako paragraph dát nějak intelignetně tu tabulku, ne jen tu nalezenou "sentence", např najít caption a sloupce
+            #   podobně když je nalezen paragraph, tak ho nedávat celý, ale třeba jen začátek, dvě věty okolo a konec
+            for i, para_sent in enumerate(para_sentences):
+                match, matched_snippets = check_text_for_snippets(TextBlock(para_sent.get("sentence")), article.snippets)
+                if match:  # we found a matching table_part and we continue to the annotation with these para_sentences
+                    [article.snippets.remove(s) for s in matched_snippets]
+                    continue
         else:
-            p_paragraph = TextBlock(p_paragraph)
+            p_id = para_sentences[0].get("content_id")
+            p_paragraph = all_contents.get(p_id, "")
 
-        match, matched_snippets = check_text_for_snippets(p_paragraph, article.snippets)
-        if not match:  # we skip paragraphs that do not contain any of the snippets
-            continue
-        [article.snippets.remove(s) for s in matched_snippets]
+            if not p_paragraph:
+                continue
+            else:
+                p_paragraph = TextBlock(p_paragraph)
+
+            match, matched_snippets = check_text_for_snippets(p_paragraph, article.snippets)
+            if not match:  # we skip paragraphs that do not contain any of the snippets
+                continue
+            [article.snippets.remove(s) for s in matched_snippets]
 
         para_sentences.sort(key=lambda x: x["sentence_number"])
         annotated_sentences: list[str] = []
