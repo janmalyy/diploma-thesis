@@ -34,6 +34,23 @@ document.addEventListener("DOMContentLoaded", () => {
       .join(", ");
   }
 
+  const bgColorRenderer = (instance, td, row, col, prop, value, cellProperties) => {
+    Handsontable.renderers.TextRenderer(instance, td, row, col, prop, value, cellProperties);
+
+    if (value === 'Benign') {
+     td.style.background = 'rgba(86,177,68,0.85)';
+    } else if (value === 'Benign/Likely_benign') {
+        td.style.background = 'rgba(181,234,169,0.85)';
+      } else if (value === 'Likely_benign') {
+        td.style.background = 'rgba(255,233,195,0.85)';
+      } else if (value === 'Conflicting_classifications_of_pathogenicity') {
+        td.style.background = 'rgba(255,193,87,0.85)';
+      }
+  };
+
+  // maps function to a lookup string
+  Handsontable.renderers.registerRenderer('bgColorRenderer', bgColorRenderer);
+
   // -------------------- Upload --------------------
   async function uploadFile(file) {
     const formData = new FormData();
@@ -86,11 +103,12 @@ document.addEventListener("DOMContentLoaded", () => {
   function initializeHandsontable(data) {
     if (hot) hot.destroy();
 
-    let cosmicCol = -1, pubmedCol = -1;
+    let cosmicCol = -1, pubmedCol = -1, clinvarSignCol = -1;
     if (data?.length) {
       const headers = data[0];
       cosmicCol = headers.indexOf("COSMIC");
       pubmedCol = headers.indexOf("PUBMED");
+      clinvarSignCol = headers.indexOf("clinvar_sig");
     }
 
     hot = new Handsontable(hotContainer, {
@@ -136,6 +154,7 @@ document.addEventListener("DOMContentLoaded", () => {
           };
         }
         if (pubmedCol !== -1 && col === pubmedCol && row > 0) cellProps.renderer = "html";
+        if (clinvarSignCol !== -1 && col === clinvarSignCol && row > 0) cellProps.renderer = "bgColorRenderer";
         return cellProps;
       }
     });
