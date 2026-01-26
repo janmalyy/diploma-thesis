@@ -1,0 +1,83 @@
+import urllib3
+from lxml import etree
+
+from diploma_thesis.utils.json_structure import write_json
+from diploma_thesis.core.models import Article, TextBlock
+from diploma_thesis.utils.helpers import write_xml
+
+from diploma_thesis.api.annotations import get_session, fetch_pubtator, fetch_biodiversity_pmc
+from diploma_thesis.core.document_parsers import parse_pubtator_document, parse_biodiversity_pmc_document
+
+urllib3.disable_warnings()
+
+
+def update_articles_fulltext(articles: list[Article]):
+    """
+    Orchestrates the data fetching pipeline.
+    """
+    if not articles:
+        return
+
+    session = get_session()
+    pmcid_to_article = {a.pmcid: a for a in articles}
+    pubtator_results: dict[str, etree._Element] = {}
+    for i in range(0, len(articles), 100):
+        batch = articles[i: i + 100]
+        ids_query = ",".join([a.pmcid for a in batch if a.pmcid])
+        results = fetch_pubtator(session, {"pmcids": ids_query})
+        pubtator_results.update(results)
+
+    for pmcid, doc in pubtator_results.items():
+        if pmcid in pmcid_to_article:
+            article = pmcid_to_article[pmcid]
+            parse_pubtator_document(article, doc)
+            article.source = "pubtator"
+
+    missing_ids = [pmcid for pmcid in pmcid_to_article if pmcid not in pubtator_results]
+    if missing_ids:
+        biodiversity_pmc_params = {
+            "col": "pmc",
+            "ids": ",".join(missing_ids),
+        }
+        biodiversity_pmc_data = fetch_biodiversity_pmc(session, biodiversity_pmc_params)
+        for pmcid in missing_ids:
+            if pmcid in biodiversity_pmc_data:
+                article = pmcid_to_article[pmcid]
+                parse_biodiversity_pmc_document(article, biodiversity_pmc_data[pmcid])
+                article.source = "pmc"
+
+
+if __name__ == '__main__':
+    # pmcid = "PMC8794197"      # in both
+    # test_article = Article(pmcid=pmcid, snippets=["We selected 5 families with at least 2 cases of cutaneous melanoma among first-degree relatives, for a total of 10 individuals for WES."])
+
+    pmcid = "PMC3725882"
+    test_article = Article(pmcid=pmcid, snippets=[TextBlock("shkenazi AB47 Br (33) Br-male")])
+    #
+    # # biodiversitypmc
+    # res = fetch_biodiversity_pmc(get_session(), params={
+    #     "ids": pmcid,
+    #     "col": "pmc",
+    # })
+    # if pmcid in res:
+    #     _parse_biodiversity_pmc_document(test_article, res[pmcid])
+    #     print("--- BiodiversityPMC ---")
+    #     print(test_article.get_context())
+
+    # pubtator
+    # res = fetch_pubtator(get_session(), params={
+    #     "pmcids": pmcid,
+    # })
+    # if pmcid in res:
+    #     _parse_pubtator_document(test_article, res[pmcid])
+    #     print("--- Pubtator ---")
+    #     print(test_article.get_context())
+
+    # with open("test.json", "w") as f:
+    #     json.dump(fetch_biodiversity_pmc(get_session(), params={
+    #         "ids": "PMC4925265",
+    #         "col": "pmc",
+    #     }), f, indent=4)
+    #
+    write_xml(fetch_pubtator(get_session(), params={
+        "pmcids": "PMC8794197"})["PMC8794197"], "test.xml")

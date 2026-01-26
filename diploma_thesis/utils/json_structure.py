@@ -151,5 +151,5 @@ if __name__ == '__main__':
         data = json.load(f)
     structure = get_json_structure(data)
     # print(structure)
-    # print_structure(structure, indent=2, list_threshold=20)
-    print(get_all_values_for_key(structure, "tag"))
+    print_structure(structure, indent=2, list_threshold=20)
+    # print(get_all_values_for_key(structure, "tag"))

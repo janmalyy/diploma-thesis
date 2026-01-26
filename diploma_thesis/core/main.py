@@ -14,10 +14,10 @@ Output:
 - Comprehensive variant summary.
 """
 import time
-from diploma_thesis.new.models import Variant
-from diploma_thesis.new.llm_api import LLMSummarizer
-from diploma_thesis.new.update_article_fulltext import update_articles_fulltext
-from diploma_thesis.new.variomes import fetch_variomes_data
+from diploma_thesis.core.models import Variant
+from diploma_thesis.api.local_llm import LLMSummarizer
+from diploma_thesis.core.update_article_fulltext import update_articles_fulltext
+from diploma_thesis.api.variomes import fetch_variomes_data
 from diploma_thesis.settings import logger
 
 

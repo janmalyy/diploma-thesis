@@ -2,6 +2,7 @@ import html
 import re
 import string
 from pathlib import Path
+from typing import Generator, Any
 from xml.dom.minidom import parseString
 
 from lxml import etree
@@ -14,6 +15,17 @@ from lxml import etree
 
 span_pattern = r'<span(?:[^">]|"[^"]*")*>(.*?)</span>'
 all_spaces_pattern = r"(?:&nbsp;?|&#160;|[  \s])+"
+
+
+def make_batches(iterable: list, size: int) -> Generator[list, Any, None]:
+    """
+    Split a list into smaller batches of fixed size.
+    Example:
+        >>> list(make_batches([1, 2, 3, 4, 5, 6, 7], size=3))
+        [[1, 2, 3], [4, 5, 6], [7]]
+    """
+    for i in range(0, len(iterable), size):
+        yield iterable[i:i + size]
 
 
 def to_human_readable(text: str) -> str:

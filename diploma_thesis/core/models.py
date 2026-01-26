@@ -1,4 +1,4 @@
-from diploma_thesis.new.helpers import to_machine_comparable, to_human_readable
+from diploma_thesis.utils.helpers import to_machine_comparable, to_human_readable
 
 
 class Variant:

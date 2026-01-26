@@ -5,7 +5,7 @@ import csv
 import requests
 
 from diploma_thesis.settings import logger
-from diploma_thesis.utils.xml_to_neo4j import make_batches
+from diploma_thesis.utils.helpers import make_batches
 
 
 def convert_ids(ids_to_convert: list[str], convert_from: str) -> list[dict]:
@@ -26,15 +26,13 @@ def convert_ids(ids_to_convert: list[str], convert_from: str) -> list[dict]:
     service_root_url = "https://pmc.ncbi.nlm.nih.gov/tools/idconv/api/v1/articles/"
     logger.info(f"Going to convert {len(ids_to_convert)} ids starting with: {ids_to_convert[:3]}, ending with: {ids_to_convert[-3:]}...")
 
-    batches = make_batches(ids_to_convert, 200)
-
     params = {
         "idtype": convert_from,
         "versions": "no",
         "format": "csv"
     }
     decoded = []
-    for batch in batches:
+    for batch in make_batches(ids_to_convert, 200):
         params["ids"] = ",".join(str(x) for x in batch)
 
         response = requests.get(service_root_url, params=params, timeout=30)

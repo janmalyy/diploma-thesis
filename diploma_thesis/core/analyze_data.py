@@ -12,12 +12,12 @@ vyberu si nějaké geny, k nim si stáhnu (a uložím) všechna data a chci zjis
 import json
 import time
 
-from diploma_thesis.new.models import Variant
-from diploma_thesis.new.update_article_fulltext import update_articles_fulltext
-from diploma_thesis.new.variomes import fetch_variomes_data
-from diploma_thesis.settings import logger
+from diploma_thesis.core.models import Variant
+from diploma_thesis.core.update_article_fulltext import update_articles_fulltext
+from diploma_thesis.api.variomes import fetch_variomes_data
+from diploma_thesis.settings import logger, DATA_DIR
 
-with open("brca_variants.txt", "r", encoding="utf-8") as f:
+with open(DATA_DIR / "brca_variants.txt", "r", encoding="utf-8") as f:
     text = f.read()
 variants = text.split("\n")
 
@@ -49,11 +49,9 @@ def end(start):
     return round(time.time() - start, 2)
 
 
-for i, variant in enumerate(variants):
+for i, variant in enumerate(variants[2:6]):
     start = time.time()
     variant_info = {}
-    if i == 3:
-        break
 
     # 1. Initialize Variant (handles normalisation)
     variant = Variant(variant)
@@ -111,5 +109,5 @@ for i, variant in enumerate(variants):
     if i % 10 == 0:
         logger.info(f"progress: {i / len(variants) * 100:.2f}%, time elapsed: {end(start):.2f} s.")
 
-with open("results_updated_ver15.json", "w", encoding="utf-8") as f:
+with open(DATA_DIR / "results_updated_ver17.json", "w", encoding="utf-8") as f:
     json.dump(to_be_json, f, indent=4)

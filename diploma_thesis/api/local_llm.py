@@ -1,6 +1,6 @@
 from llama_cpp import Llama
 from diploma_thesis.settings import DATA_DIR
-from diploma_thesis.new.models import Variant, Article
+from diploma_thesis.core.models import Variant, Article
 
 
 class LLMSummarizer:

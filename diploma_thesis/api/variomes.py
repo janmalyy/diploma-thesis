@@ -1,7 +1,7 @@
 import json
 import re
 import requests
-from diploma_thesis.new.models import Variant, Article, TextBlock
+from diploma_thesis.core.models import Variant, Article, TextBlock
 from diploma_thesis.settings import logger, DATA_DIR
 
 
@@ -89,5 +89,5 @@ def fetch_variomes_data(variant: Variant) -> list[Article]:
 
             article.suppl_info = _process_suppl_data(supp, pattern)
 
-    logger.info(f"Found {len(articles)} articles for variant {variant.variant_string}.")
+    logger.info(f"Found {len([a for a in articles if a.snippets])} articles and {len([a for a in articles if not a.snippets])} suppl. files for variant {variant.variant_string}.")
     return articles

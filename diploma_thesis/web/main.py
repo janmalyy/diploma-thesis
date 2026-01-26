@@ -3,107 +3,27 @@ import io
 import tempfile
 from typing import List, Optional, Any
 
-import neo4j.exceptions
 import pandas as pd
-from fastapi import FastAPI, Request, Body, HTTPException, UploadFile, File
+from fastapi import FastAPI, Request, HTTPException, UploadFile, File
 from fastapi.responses import HTMLResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
-from neo4j import GraphDatabase
-from neo4j.graph import Node, Relationship
 import uvicorn
 from pydantic import BaseModel
+from starlette.responses import RedirectResponse
 
-from diploma_thesis.utils.build_llm_context import build_context_for_llm
 from diploma_thesis.api.call_llm import run_einfra, build_prompt
-from diploma_thesis.settings import NEO4J_USERNAME, NEO4J_PASSWORD, NEO4J_URI, PACKAGE_DIR, logger
-from diploma_thesis.web.error_handlers import register_error_handlers
-from diploma_thesis.web.exceptions import CypherSyntaxError, NeoNotAvailableError
-from diploma_thesis.web.utils_for_web import is_safe_query
+from diploma_thesis.settings import PACKAGE_DIR, logger
 from diploma_thesis.api.convert_ids import convert_ids, connect_pubmed_ids_with_links
 
 app = FastAPI()
-register_error_handlers(app)
 app.mount("/static", StaticFiles(directory=PACKAGE_DIR / "web" / "static"), name="static")
 templates = Jinja2Templates(directory=PACKAGE_DIR / "web" / "templates")
 
-driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USERNAME, NEO4J_PASSWORD))
 
-
-@app.get("/", response_class=HTMLResponse)
-def get_index(request: Request):
-    return templates.TemplateResponse(request=request, name="index.html")
-
-
-@app.get("/api/graph")
-def get_graph():
-    with driver.session() as session:
-        result = session.run("""
-            MATCH (n)-[r]->(m)
-            RETURN n, r, m
-            LIMIT 100
-        """)
-        nodes = {}
-        edges = []
-        for record in result:
-            for value in record.values():
-                if isinstance(value, Node):
-                    label = value.get("title") or value.get("name") or str(value.id)
-                    nodes[value.id] = {
-                        "data": {"id": str(value.id), "label": label}
-                    }
-                elif isinstance(value, Relationship):
-                    edges.append({
-                        "data": {
-                            "source": str(value.start_node.id),
-                            "target": str(value.end_node.id),
-                            "label": value.type
-                        }
-                    })
-        return {"nodes": list(nodes.values()), "edges": edges}
-
-
-class QueryRequest(BaseModel):
-    query: str
-
-
-@app.post("/api/query")
-def run_query(request: QueryRequest = Body(...)):
-    if not is_safe_query(request.query):
-        raise HTTPException(status_code=400, detail="Unsafe Cypher query detected.")
-
-    result = None
-    with driver.session() as session:
-        try:
-            result = session.run(request.query)
-        except neo4j.exceptions.CypherSyntaxError as e:
-            raise CypherSyntaxError(e.message)
-        except neo4j.exceptions.ServiceUnavailable:
-            raise NeoNotAvailableError()
-
-        nodes = {}
-        edges = []
-        try:
-            for record in result:
-                # Try extracting nodes and relationships
-                for value in record.values():
-                    if hasattr(value, "id") and hasattr(value, "labels"):
-                        nodes[value.id] = {
-                            "data": {"id": str(value.id), "label": value.get("name", str(value.id))}
-                        }
-                    elif hasattr(value, "start_node") and hasattr(value, "end_node"):
-                        edges.append({
-                            "data": {
-                                "source": str(value.start_node.id),
-                                "target": str(value.end_node.id),
-                                "label": value.type
-                            }
-                        })
-            return {"nodes": list(nodes.values()), "edges": edges}
-
-        except Exception as e:
-            logger.error(f"Some error when querying the database with query {request.query}. See the output: {e}")
-            raise HTTPException(status_code=500, detail=str(e))
+@app.get("/")
+def root():
+    return RedirectResponse(url="/excel", status_code=302)
 
 
 @app.get("/excel", response_class=HTMLResponse)
@@ -267,7 +187,7 @@ async def generate_llm_summary(request: RowIdRequest):
         gene_symbol = "BRCA1"
         variant = "3_149238596_-/TTAA"
         converted_ids_dict = convert_ids(ids_list, "pmid")
-        context = build_context_for_llm(converted_ids_dict)
+        context = """this is mocked context. Please return: 'WIP, add context'."""
         prompt = build_prompt(context, gene_symbol, variant)
         response = await run_einfra(prompt, model_name="gpt-oss-120b")
         return {"result": response}
