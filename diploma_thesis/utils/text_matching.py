@@ -20,7 +20,7 @@ def check_text_for_snippets(text: TextBlock, snippets: list[TextBlock]) -> tuple
             print("score:", round(score, 2))
             print("snippet:", snippet.machine_comparable)
             print("text:", text.machine_comparable)
-        if score > 92:                          # this is an important threshold!
+        if score > 90:                          # this is an important threshold!
             matched_snippets.append(snippet)
 
     return len(matched_snippets) > 0, matched_snippets

@@ -12,102 +12,123 @@ vyberu si nějaké geny, k nim si stáhnu (a uložím) všechna data a chci zjis
 import json
 import time
 
+import numpy as np
 from diploma_thesis.core.models import Variant
 from diploma_thesis.core.update_article_fulltext import update_articles_fulltext
 from diploma_thesis.api.variomes import fetch_variomes_data
 from diploma_thesis.settings import logger, DATA_DIR
-
-with open(DATA_DIR / "brca_variants.txt", "r", encoding="utf-8") as f:
-    text = f.read()
-variants = text.split("\n")
-
-to_be_json = []
-example = {
-    "time_to_fetch_data": 0,
-    "context_length": 0,        # nemám tam teď suppl data vůbec
-    "variant": "",
-    "articles": {
-        "pmcid": "",
-        "source_of_annotation": "",
-        "title_length": 0,
-        "abstract_length": 0,
-        "number_of_snippets": 0,
-        "unmatched_snippets": [],
-        "number_of_found_paragraphs": 0,
-        "paragraphs_lengths": []
-    },
-    "supplementary_files": {
-        "pmcid": "",
-        "source_of_annotation": "",
-        "title_length": 0,
-        "abstract_length": 0,
-    },
-}
 
 
 def end(start):
     return round(time.time() - start, 2)
 
 
-for i, variant in enumerate(variants[2:6]):
-    start = time.time()
-    variant_info = {}
+def get_data_for_analysis():
+    with open(DATA_DIR / "brca_variants.txt", "r", encoding="utf-8") as f:
+        text = f.read()
+    variants = text.split("\n")
 
-    # 1. Initialize Variant (handles normalisation)
-    variant = Variant(variant)
+    to_be_json = []
 
-    # 2. Fetch Data from Variomes
-    articles = fetch_variomes_data(variant)
+    for i, variant in enumerate(variants[:100]):
+        start = time.time()
+        variant_info = {}
 
-    if not articles:
-        logger.info(f"No articles found for this variant {variant.variant_string}.")
+        # 1. Initialize Variant (handles normalisation)
+        variant = Variant(variant)
+
+        # 2. Fetch Data from Variomes
+        articles = fetch_variomes_data(variant)
+
+        if not articles:
+            logger.info(f"No articles found for this variant {variant.variant_string}.")
+            variant_info = {
+                "variant": variant.variant_string,
+                "time_to_fetch_data": end(start),
+                "context_length": 0,
+                "articles": [],
+                "supplementary_files": [],
+            }
+            continue
+
+        # 3 & 4. Fetch Data from PubTator or BiodiversityPMC
+        update_articles_fulltext(articles)
+
+        full_articles = [a for a in articles if a.snippets or a.paragraphs]
+        supp_articles = [a for a in articles if not a.snippets]
         variant_info = {
             "variant": variant.variant_string,
             "time_to_fetch_data": end(start),
-            "context_length": 0,
-            "articles": [],
-            "supplementary_files": [],
+            "context_length": len("\n".join(article.get_context() for article in articles)),
+            "articles":
+                [
+                    {
+                        "pmcid": a.pmcid,
+                        "source_of_annotation": a.source,
+                        "title_length": len(a.title),
+                        "abstract_length": len(a.abstract),
+                        "number_of_unmatched_snippets": len(a.snippets),
+                        "unmatched_snippets": [s.machine_comparable for s in a.snippets],
+                        "number_of_paragraphs": len(a.paragraphs),
+                        "paragraphs_lengths": [len(p) for p in a.paragraphs]
+                    }
+                    for a in full_articles
+                ],
+            "supplementary_files":
+                [
+                    {
+                        "pmcid": a.pmcid,
+                        "source_of_annotation": a.source,
+                        "title_length": len(a.title),
+                        "abstract_length": len(a.abstract),
+                    }
+                    for a in supp_articles
+                ],
         }
-        continue
+        to_be_json.append(variant_info)
 
-    # 3 & 4. Fetch Data from PubTator or BiodiversityPMC
-    update_articles_fulltext(articles)
+        if i % 10 == 0:
+            logger.info(f"progress: {i / len(variants) * 100:.2f}%")
 
-    full_articles = [a for a in articles if a.snippets or a.paragraphs]
-    supp_articles = [a for a in articles if not a.snippets]
-    variant_info = {
-        "variant": variant.variant_string,
-        "time_to_fetch_data": end(start),
-        "context_length": len("\n".join(article.get_context() for article in articles)),
-        "articles":
-            [
-                {
-                    "pmcid": a.pmcid,
-                    "source_of_annotation": a.source,
-                    "title_length": len(a.title),
-                    "abstract_length": len(a.abstract),
-                    "number_of_unmatched_snippets": len(a.snippets),
-                    "unmatched_snippets": [s.machine_comparable for s in a.snippets],
-                    "number_of_paragraphs": len(a.paragraphs),
-                    "paragraphs_lengths": [len(p) for p in a.paragraphs]
-                }
-                for a in full_articles
-            ],
-        "supplementary_files":
-            [
-                {
-                    "pmcid": a.pmcid,
-                    "source_of_annotation": a.source,
-                    "title_length": len(a.title),
-                    "abstract_length": len(a.abstract),
-                }
-                for a in supp_articles
-            ],
-    }
-    to_be_json.append(variant_info)
+    with open(DATA_DIR / "results_updated_ver1.json", "w", encoding="utf-8") as f:
+        json.dump(to_be_json, f, indent=4)
 
-    if i % 10 == 0:
-        logger.info(f"progress: {i / len(variants) * 100:.2f}%, time elapsed: {end(start):.2f} s.")
 
-with open(DATA_DIR / "results_updated_ver17.json", "w", encoding="utf-8") as f:
-    json.dump(to_be_json, f, indent=4)
+def compute_and_print_stats(value: str, value_data: list, unit: str):
+    print(f"------ {value} ------ in {unit} ------")
+    print(f"min: {min(value_data)}")
+    print(f"max: {max(value_data)}")
+    print(f"mean: {round(np.mean(value_data), 2)}")
+    print(f"median: {round(np.median(value_data), 2)}")
+    print(f"std: {round(np.std(value_data), 2)}")
+    print(f"values_in_total: {len(value_data)}")
+    print()
+
+
+def analyze_data(filename: str):
+    with open(DATA_DIR / filename, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    # data → variant → articles → paragraphs
+    metrics = [
+        ("articles_per_variant", [len(variant.get("articles")) for variant in data], "just_number"),
+        ("supplementary_files_per_variant", [len(variant.get("supplementary_files")) for variant in data], "just_number"),
+        ("time_to_fetch", [variant.get("time_to_fetch_data") for variant in data], "seconds"),
+        ("context_length", [variant.get("context_length") for variant in data], "characters"),
+        ("title_length", [article.get("title_length") for variant in data for article in variant.get("articles")+variant.get("supplementary_files")], "characters"),
+        ("abstract_length", [article.get("abstract_length") for variant in data for article in variant.get("articles")+variant.get("supplementary_files")], "characters"),
+        ("number_of_unmatched_snippets", [article.get("number_of_unmatched_snippets") for variant in data for article in variant.get("articles")], "just_number"),
+        ("number_of_paragraphs", [article.get("number_of_paragraphs") for variant in data for article in variant.get("articles")], "just_number"),
+        ("paragraph_lengths", [paragraph_length
+                               for variant in data
+                               for article in (variant.get("articles"))
+                               for paragraph_length in (article.get("paragraphs_lengths"))
+                               ], "characters")
+    ]
+
+    for value, value_data, unit in metrics:
+        compute_and_print_stats(value, value_data, unit)
+
+
+if __name__ == '__main__':
+    # get_data_for_analysis()
+    analyze_data("results_updated_ver1.json")

@@ -29,7 +29,7 @@ def fetch_variomes_data(variant: Variant) -> list[Article]:
     For faster development, if the file is already downloaded, it is loaded from disk.
     """
     variant_string = variant.variant_string
-    variomes_dir = DATA_DIR / "variomes"
+    variomes_dir = DATA_DIR / "variomes_cache"
     filename = re.sub(r'[<>:"/\\|?*]', "_", variant_string)
     cache_path = variomes_dir / f"{filename}.json"
     if cache_path.exists():

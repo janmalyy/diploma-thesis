@@ -1,6 +1,7 @@
 from lxml import etree
 
 from diploma_thesis.core.models import Article, TextBlock
+from diploma_thesis.settings import DATA_DIR
 from diploma_thesis.utils.helpers import write_xml
 from diploma_thesis.utils.json_structure import write_json
 from diploma_thesis.utils.text_matching import check_text_for_snippets
@@ -126,7 +127,7 @@ def parse_pubtator_document(article: Article, document: etree._Element) -> None:
     if article.snippets:
         article.paragraphs += [s.human_readable for s in
                                article.snippets]  # todo není anotované! protože nevím offset, nedokážu to v dokumentu najít...
-        write_xml(document, f"nomatch_{article.pmcid}.xml")
+        # write_xml(document, DATA_DIR / f"nomatch_{article.pmcid}.xml")
 
 
 def parse_biodiversity_pmc_document(article: Article, article_data: dict) -> None:
@@ -230,7 +231,7 @@ def parse_biodiversity_pmc_document(article: Article, article_data: dict) -> Non
 
     if article.snippets:
         article.paragraphs += [s.human_readable for s in article.snippets]
-        write_json(article_data, f"nomatch_{article.pmcid}.json")
+        # write_json(article_data, DATA_DIR / f"nomatch_{article.pmcid}.json")
 
 
 def extract_attributes(article: Article, document: etree._Element):
