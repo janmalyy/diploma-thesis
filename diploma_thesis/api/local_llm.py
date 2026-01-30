@@ -41,7 +41,7 @@ class LLMSummarizer:
         """
         context = ""
         for article in articles:
-            # Use annotated content if available, otherwise fallback to snippets
+            # Use annotated content if available, otherwise fallback to fulltext_snippets
             context += f"Article {article.pmcid}\n"
             context += article.get_context() + "\n\n"
 

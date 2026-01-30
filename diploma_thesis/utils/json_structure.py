@@ -1,9 +1,10 @@
 import json
+from pathlib import Path
 
 
-def write_json(data: dict, filepath: str) -> None:
+def write_json(filepath: Path | str, data: dict) -> None:
     with open(filepath, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=4)
+        json.dump(data, f, ensure_ascii=False, indent=4)
 
 
 def get_json_structure(data, text_threshold: int = 50) -> dict | list | str:

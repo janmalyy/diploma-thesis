@@ -12,7 +12,7 @@ import uvicorn
 from pydantic import BaseModel
 from starlette.responses import RedirectResponse
 
-from diploma_thesis.api.call_llm import run_einfra, build_prompt
+from diploma_thesis.api.einfra import run_einfra, build_prompt
 from diploma_thesis.settings import PACKAGE_DIR, logger
 from diploma_thesis.api.convert_ids import convert_ids, connect_pubmed_ids_with_links
 
