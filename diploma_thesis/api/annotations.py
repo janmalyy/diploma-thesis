@@ -50,7 +50,8 @@ def map_pubtator_xml(
         mapping[pmcid] = doc
 
         cache_path = cache_dir / f"{pmcid}.xml"
-        doc.getroottree().write(cache_path, encoding="utf-8", xml_declaration=True)
+        doc_tree = etree.ElementTree(doc)
+        doc_tree.write(cache_path, encoding="utf-8", xml_declaration=True)
 
     return mapping
 
