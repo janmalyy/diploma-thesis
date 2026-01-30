@@ -5,27 +5,9 @@ from diploma_thesis.core.models import Variant, Article, TextBlock
 from diploma_thesis.settings import logger, DATA_DIR
 
 
-def _process_suppl_data(data: dict, pattern: re.Pattern) -> str:
+def fetch_variomes_data(variant: Variant) -> dict:
     """
-    Extracts snippets from supplementary data based on variant terms.
-    """
-    # TODO je potřeba nějak inteligentně hledat tu variantu v raw suppl data; když použiju expandované hledání přes všechny termy, tak mám strašně moc nálezů - k ničemu
-    # TODO nevím, jak to zvýrazňují a hledají ve webovém rozhraní; vypadá to, že v jsonu z variomes je jen daná ta suppl. file a žádná anotace
-    # TODO nápad: parsovat a hledat to různě vzhledem k příponě článku/suppl. file?
-    title = data.get("title", "No Title")
-    fulltext = data.get("text", "")
-    snippets = []
-    for match in re.finditer(pattern, fulltext):
-        start = max(0, match.start() - 100)
-        end = min(len(fulltext), match.end() + 100)
-        snippets.append(fulltext[start:end])
-
-    return f"title: {title}\n beginning: {fulltext[:200]}\nsnippets: {('\n'.join(snippets))}"
-
-
-def fetch_variomes_data(variant: Variant) -> list[Article]:
-    """
-    Fetches data from Variomes API for a given variant and returns a list of Article objects.
+    Fetches data from Variomes API for a given variant.
     For faster development, if the file is already downloaded, it is loaded from disk.
     """
     variant_string = variant.variant_string
@@ -54,40 +36,73 @@ def fetch_variomes_data(variant: Variant) -> list[Article]:
 
         tmp_path.replace(cache_path)
 
-    # Populate terms in variant for later use in snippet matching
+    return data
+
+
+def parse_variomes_data(data: dict, variant: Variant) -> list[Article]:
+    """
+    Args:
+        data: JSON object returned by Variomes API
+        variant: Variant object for which the data is being parsed
+    Returns:
+        list of Articles with fulltext_snippets for fulltext annotations
+                         and with raw supplemental data string
+    """
+    # Populate terms and gene in variant for later use in matching
     try:
-        variant.terms = data.get("normalized_query", {}).get("variants", [{}])[0].get("terms", [])
+        norm_q = data.get("normalized_query")
+        variant.terms = norm_q.get("variants")[0].get("terms")
+        if not variant.gene:
+            variant.gene = norm_q.get("genes")[0].get("preferred_term")
     except (IndexError, KeyError):
-        variant.terms = []
+        pass
 
     articles = []
-    publications = data.get("publications", {})
+    publications = data.get("publications")
+
+    # Process Medline articles - the variant is always mentioned in the title or abstract, so we don't need to care about snippets
+    medline_list = publications.get("medline")
+    for pub in medline_list:
+        pm_id = pub.get("pmid")
+        articles.append(Article(pmid=pm_id))
 
     # Process PMC articles
-    pmc_list = publications.get("pmc", [])
+    pmc_list = publications.get("pmc")
     for pub in pmc_list:
         pmc_id = pub.get("pmcid")
-        evidences = pub.get("evidences", [])
+        evidences = pub.get("evidences")
         snippets = [
             TextBlock(ev.get("text"))
             for ev in evidences
             if ev.get("text")
         ]
-        articles.append(Article(pmcid=pmc_id, snippets=snippets))
+        if snippets:                # TODO we skip articles without evidences=fulltext_snippets for now
+            article = next((a for a in articles if a.pmcid == pmc_id), None)
+            if article is None:
+                articles.append(Article(pmcid=pmc_id, fulltext_snippets=snippets))
+            else:
+                article.fulltext_snippets = snippets
 
     # Process Supplemental data
-    supp_list = publications.get("supp", [])
-    if supp_list and variant.terms:
-        pattern = re.compile(("|".join(variant.terms)))
-        for supp in supp_list:
-            pmc_id = supp.get("id")
-            # Check if article already exists in the list
+    supp_list = publications.get("supp")
+    for pub in supp_list:
+        pmc_id = pub.get("pmcid")
+        evidences = pub.get("evidences")
+
+        snippets = [
+            TextBlock(ev.get("text"))
+            for ev in evidences
+            if ev.get("text")
+        ]
+        if snippets:  # TODO we skip suppl. files without evidences=suppl_snippets for now (that means skipping more than 90 % of them)
             article = next((a for a in articles if a.pmcid == pmc_id), None)
-            if not article:
-                article = Article(pmcid=pmc_id)
+
+            if article is None:
+                article = Article(pmcid=pmc_id, suppl_snippets=snippets)
                 articles.append(article)
+            else:
+                article.suppl_snippets = snippets
+                article.raw_suppl_data = pub.get("text")
 
-            article.suppl_info = _process_suppl_data(supp, pattern)
-
-    logger.info(f"Found {len([a for a in articles if a.snippets])} articles and {len([a for a in articles if not a.snippets])} suppl. files for variant {variant.variant_string}.")
+    logger.info(f"Found {len(medline_list)} medline articles, {len([a for a in articles if a.fulltext_snippets])} articles with fulltext snippets and {len([a for a in articles if a.suppl_snippets])} articles with suppl. snippets for variant {variant.variant_string}.")
     return articles
