@@ -7,6 +7,33 @@ from diploma_thesis.utils.json_structure import write_json
 from diploma_thesis.utils.text_matching import check_text_for_snippets
 
 
+def assign_snippets_to_blocks(
+    blocks: list[tuple[TextBlock, object]],
+    snippets: list[TextBlock],
+) -> dict[TextBlock, object]:
+    """
+    Assigns each snippet to at most one block (best match wins).
+
+    Args:
+        blocks: list of (TextBlock, payload) where payload is parser-specific
+        snippets: remaining fulltext snippets
+
+    Returns:
+        mapping: snippet -> payload
+    """
+    snippet_best: dict[TextBlock, tuple[int, object]] = {}
+
+    for text_block, payload in blocks:
+        _, matches = check_text_for_snippets(text_block, snippets)
+
+        for snippet, score in matches.items():
+            best = snippet_best.get(snippet)
+            if best is None or score > best[0]:
+                snippet_best[snippet] = (score, payload)
+
+    return {snippet: payload for snippet, (_, payload) in snippet_best.items()}
+
+
 def apply_annotations(text: str, sentence_num: int, annotations: list[dict]) -> str:
     """
     There is magic happening inside because we must somehow resolve overlapping annotations.
@@ -65,173 +92,204 @@ def apply_annotations(text: str, sentence_num: int, annotations: list[dict]) -> 
 
 def parse_pubtator_document(article: Article, document: etree._Element) -> None:
     """
-    Parses BioC-XML Pubtator document, applies annotations to relevant passages.
+    Parses BioC-XML PubTator document using competitive snippet assignment.
     """
-    annotated_paragraphs = []
+    blocks: list[tuple[TextBlock, etree._Element]] = []
+    passage_meta: dict[etree._Element, dict] = {}
 
     for passage in document.xpath(".//passage"):
-        text_element = passage.find("text")
-        if text_element is None or text_element.text is None:
+        text_elem = passage.find("text")
+        if text_elem is None or not text_elem.text:
             continue
-        text = TextBlock(text_element.text)
+
+        text = TextBlock(text_elem.text)
 
         passage_type_elem = passage.xpath("./infon[@key='type']")
         passage_type = passage_type_elem[0].text if passage_type_elem else ""
 
-        match, matched_snippets = check_text_for_snippets(text, article.snippets)
-        [article.snippets.remove(s) for s in matched_snippets]
+        offset_elem = passage.find("offset")
+        passage_offset = int(offset_elem.text) if offset_elem is not None else 0
 
-        if passage_type in ("front", "abstract") or match:
-            offset_elem = passage.find("offset")
-            passage_offset = int(offset_elem.text) if offset_elem is not None else 0
+        blocks.append((text, passage))
+        passage_meta[passage] = {
+            "type": passage_type,
+            "offset": passage_offset,
+            "text": text,
+        }
 
-            annotations = []
-            for ann in passage.xpath("annotation"):
-                ann_type_elem = ann.xpath("./infon[@key='type']")
-                ann_type = ann_type_elem[0].text if ann_type_elem else ""
+    # -------- Competitive assignment --------
+    assignments = assign_snippets_to_blocks(
+        blocks,
+        article.fulltext_snippets,
+    )
 
-                if ann_type == "Species":
-                    continue
+    annotated_paragraphs: list[str] = []
 
-                loc = ann.find("location")
-                if loc is not None:
-                    local_offset = int(loc.get("offset")) - passage_offset
-                    length = int(loc.get("length"))
+    for passage, meta in passage_meta.items():
+        passage_type = meta["type"]
+        text = meta["text"]
 
-                    ann_text_elem = ann.find("text")
-                    annotations.append({
-                        'start': local_offset,
-                        'end': local_offset + length,
-                        'type': ann_type,
-                        'text': ann_text_elem.text if ann_text_elem is not None else ""
-                    })
+        if passage_type not in ("front", "abstract") and passage not in assignments.values():
+            continue
 
-            annotations.sort(key=lambda x: x['start'], reverse=True)
-            annotated_text = text.human_readable
-            for ann in annotations:
-                start, end = ann['start'], ann['end']
-                label = f"[{ann['type']}: {annotated_text[start:end]}]"
-                annotated_text = annotated_text[:start] + label + annotated_text[end:]
+        annotations = []
+        for ann in passage.xpath("annotation"):
+            ann_type_elem = ann.xpath("./infon[@key='type']")
+            ann_type = ann_type_elem[0].text if ann_type_elem else ""
+            if ann_type == "Species":
+                continue
 
-            text.human_readable = annotated_text
+            loc = ann.find("location")
+            if loc is None:
+                continue
 
-            if passage_type == "front":
-                article.title = text.human_readable
-            elif passage_type == "abstract":
-                article.abstract += annotated_text
-            else:
-                annotated_paragraphs.append(text.human_readable)
+            local_offset = int(loc.get("offset")) - meta["offset"]
+            length = int(loc.get("length"))
+
+            ann_text_elem = ann.find("text")
+            annotations.append({
+                "start": local_offset,
+                "end": local_offset + length,
+                "type": ann_type,
+                "text": ann_text_elem.text if ann_text_elem is not None else "",
+            })
+
+        annotations.sort(key=lambda x: x["start"], reverse=True)
+        annotated_text = text.human_readable
+
+        for ann in annotations:
+            start, end = ann["start"], ann["end"]
+            label = f"[{ann['type']}: {annotated_text[start:end]}]"
+            annotated_text = annotated_text[:start] + label + annotated_text[end:]
+
+        if passage_type == "front":
+            article.title = annotated_text
+        elif passage_type == "abstract":
+            article.abstract += annotated_text
+        else:
+            annotated_paragraphs.append(annotated_text)
 
     article.paragraphs = annotated_paragraphs
 
-    if article.snippets:
-        article.paragraphs += [s.human_readable for s in
-                               article.snippets]  # todo není anotované! protože nevím offset, nedokážu to v dokumentu najít...
-        # write_xml(document, DATA_DIR / f"nomatch_{article.pmcid}.xml")
+    for snippet in assignments:
+        article.fulltext_snippets.remove(snippet)
+
+    if article.fulltext_snippets:
+        article.paragraphs += [
+            s.human_readable for s in article.fulltext_snippets
+        ]
 
 
 def parse_biodiversity_pmc_document(article: Article, article_data: dict) -> None:
     """
-    Parses a SIBiLS JSON PMC article and updates the Article object
-    with annotated title, abstract, and body paragraphs.
-    We annotate only based on these sources: "uniprot_swissprot", "nextprot".   # TODO CHOOSE RELEVANT SOURCES
+    Parses SIBiLS JSON PMC article using competitive snippet assignment.
     """
     document = article_data.get("document", {})
     sentences = article_data.get("sentences", [])
-    annotations = article_data.get("annotations", [])
-
     annotations = [
-        ann for ann in annotations
+        ann for ann in article_data.get("annotations", [])
         if ann.get("concept_source") in ("uniprot_swissprot", "nextprot")
     ]
 
-    # -------- Title and Abstract --------
-    title = document.get("title", "")
+    # -------- Title --------
+    title = document.get("title")
     if title:
         article.title = apply_annotations(title, 1, annotations)
 
-    abstract_sentences = [s for s in sentences if s.get("field") == "abstract"]
+    # -------- Abstract --------
     abstract_parts: list[str] = []
-    for s in abstract_sentences:
+    for s in sentences:
+        if s.get("field") != "abstract":
+            continue
         annotated = apply_annotations(
             s.get("sentence", ""),
             s.get("sentence_number"),
-            annotations
-            )
+            annotations,
+        )
         if annotated:
             abstract_parts.append(annotated)
 
     if abstract_parts:
         article.abstract = " ".join(abstract_parts)
 
-    # -------- Body text (PARAGRAPH-AWARE) --------
+    # -------- Collect paragraph sentences --------
     body_sentences = [
-        s for s in sentences if s.get("field") == "text" or s.get("tag") == "table"
-        # IMPORTANT: the snippet can be both in text and in table (todo - hotovo, todo je zde jen pro zvýraznění informace)
+        s for s in sentences
+        if s.get("field") == "text" or s.get("tag") == "table"
     ]
 
     paragraphs: dict[str, list[dict]] = {}
-
     for s in body_sentences:
-        content_id = s.get("content_id")
-        if not content_id:
-            continue
-        paragraphs.setdefault(content_id, []).append(s)
+        cid = s.get("content_id")
+        if cid:
+            paragraphs.setdefault(cid, []).append(s)
 
-    relevant_paragraphs: list[str] = []
-    all_contents = {}
-    for section_key in ["body_sections", "back_sections", "float_sections"]:
-        for section in document.get(section_key):
-            for content in section.get("contents"):
+    # -------- Full paragraph texts --------
+    all_contents: dict[str, str] = {}
+    for section_key in ("body_sections", "back_sections", "float_sections"):
+        for section in document.get(section_key, []):
+            for content in section.get("contents", []):
                 if content.get("id"):
-                    all_contents[content.get("id")] = content.get("text")
+                    all_contents[content["id"]] = content.get("text", "")
+
+    # -------- Build matchable blocks --------
+    blocks: list[tuple[TextBlock, list[dict]]] = []
 
     for para_sentences in paragraphs.values():
-        if para_sentences[0].get(
-                "tag") == "table":  # because table "sentences" do not have their respective full paragraph in contents, we compare each "sentence" alone and store as paragraph only this sentence
-            # TODO když je match, tak pak jako paragraph dát nějak intelignetně tu tabulku, ne jen tu nalezenou "sentence", např najít caption a sloupce
-            #   podobně když je nalezen paragraph, tak ho nedávat celý, ale třeba jen začátek, dvě věty okolo a konec
-            for i, para_sent in enumerate(para_sentences):
-                match, matched_snippets = check_text_for_snippets(TextBlock(para_sent.get("sentence")),
-                                                                  article.snippets)
-                if match:  # we found a matching table_part, and we continue to the annotation with these para_sentences
-                    [article.snippets.remove(s) for s in matched_snippets]
-                    continue
+        is_table = para_sentences[0].get("tag") == "table"
+
+        if is_table:
+            for s in para_sentences:
+                if s.get("sentence"):
+                    blocks.append((TextBlock(s["sentence"]), para_sentences))
         else:
-            p_id = para_sentences[0].get("content_id")
-            p_paragraph = all_contents.get(p_id, "")
+            pid = para_sentences[0].get("content_id")
+            text = all_contents.get(pid)
+            if text:
+                blocks.append((TextBlock(text), para_sentences))
 
-            if not p_paragraph:
-                continue
-            else:
-                p_paragraph = TextBlock(p_paragraph)
+    # -------- Competitive assignment --------
+    assignments = assign_snippets_to_blocks(
+        blocks,
+        article.fulltext_snippets,
+    )
 
-            match, matched_snippets = check_text_for_snippets(p_paragraph, article.snippets)
-            if not match:  # we skip paragraphs that do not contain any of the snippets
-                continue
-            [article.snippets.remove(s) for s in matched_snippets]
+    used_paragraphs: set[int] = set()
+    relevant_paragraphs: list[str] = []
 
-        para_sentences.sort(key=lambda x: x["sentence_number"])
+    for snippet, para_sentences in assignments.items():
+        pid = id(para_sentences)
+        if pid in used_paragraphs:
+            continue
+        used_paragraphs.add(pid)
+
+        para_sentences.sort(key=lambda x: x.get("sentence_number", 0))
         annotated_sentences: list[str] = []
-        for i, s in enumerate(para_sentences):
+
+        for s in para_sentences:
             raw = s.get("sentence")
             if not raw:
                 continue
-
-            annotated = apply_annotations(raw,
-                                          s["sentence_number"],
-                                          annotations
-                                          )
+            annotated = apply_annotations(
+                raw,
+                s.get("sentence_number"),
+                annotations,
+            )
             annotated_sentences.append(annotated)
 
-        relevant_paragraphs.append(" ".join(annotated_sentences))
+        if annotated_sentences:
+            relevant_paragraphs.append(" ".join(annotated_sentences))
 
-    if relevant_paragraphs:
-        article.paragraphs = relevant_paragraphs
+    # -------- Finalize --------
+    article.paragraphs = relevant_paragraphs
 
-    if article.snippets:
-        article.paragraphs += [s.human_readable for s in article.snippets]
-        # write_json(article_data, DATA_DIR / f"nomatch_{article.pmcid}.json")
+    for snippet in assignments:
+        article.fulltext_snippets.remove(snippet)
+
+    if article.fulltext_snippets:
+        article.paragraphs += [
+            s.human_readable for s in article.fulltext_snippets
+        ]
 
 
 def extract_attributes(article: Article, document: etree._Element):
