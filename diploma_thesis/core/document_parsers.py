@@ -34,7 +34,102 @@ def assign_snippets_to_blocks(
     return {snippet: payload for snippet, (_, payload) in snippet_best.items()}
 
 
-def apply_annotations(text: str, sentence_num: int, annotations: list[dict]) -> str:
+def apply_annotations_pubtator(passage: etree._Element, meta: dict) -> str:
+    annotations = []
+    text = meta["text"]
+
+    for ann in passage.xpath("annotation"):
+        ann_type_elem = ann.xpath("./infon[@key='type']")
+        ann_type = ann_type_elem[0].text if ann_type_elem else ""
+        if ann_type == "Species":
+            continue
+
+        loc = ann.find("location")
+        if loc is None:
+            continue
+
+        local_offset = int(loc.get("offset")) - meta["offset"]
+        length = int(loc.get("length"))
+
+        ann_text_elem = ann.find("text")
+        annotations.append({
+            "start": local_offset,
+            "end": local_offset + length,
+            "type": ann_type,
+            "text": ann_text_elem.text if ann_text_elem is not None else "",
+        })
+
+    annotations.sort(key=lambda x: x["start"], reverse=True)
+    annotated_text = text.human_readable
+
+    for ann in annotations:
+        start, end = ann["start"], ann["end"]
+        label = f"[{ann['type']}: {annotated_text[start:end]}]"
+        annotated_text = annotated_text[:start] + label + annotated_text[end:]
+
+    return annotated_text
+
+
+def parse_pubtator_document(article: Article, document: etree._Element) -> None:
+    """
+    Parses BioC-XML PubTator document using competitive snippet assignment.
+    """
+    blocks: list[tuple[TextBlock, etree._Element]] = []
+    passage_meta: dict[etree._Element, dict] = {}
+
+    for passage in document.xpath(".//passage"):
+        text_elem = passage.find("text")
+        if text_elem is None or not text_elem.text:
+            continue
+
+        text = TextBlock(text_elem.text)
+
+        passage_type_elem = passage.xpath("./infon[@key='type']")
+        passage_type = passage_type_elem[0].text if passage_type_elem else ""
+
+        offset_elem = passage.find("offset")
+        passage_offset = int(offset_elem.text) if offset_elem is not None else 0
+
+        blocks.append((text, passage))
+        passage_meta[passage] = {
+            "type": passage_type,
+            "offset": passage_offset,
+            "text": text,
+        }
+
+    # -------- Competitive assignment --------
+    assignments = assign_snippets_to_blocks(
+        blocks,
+        article.fulltext_snippets,
+    )
+
+    annotated_paragraphs: list[str] = []
+
+    for passage, meta in passage_meta.items():
+        passage_type = meta["type"]
+
+        if passage_type in ("front", "abstract") or passage in assignments.values():
+            annotated_text = apply_annotations_pubtator(passage, meta)
+
+            if passage_type == "front":
+                article.title = annotated_text
+            elif passage_type == "abstract":
+                article.abstract += annotated_text
+            else:
+                annotated_paragraphs.append(annotated_text)
+
+    article.paragraphs = annotated_paragraphs
+
+    for snippet in assignments:
+        article.fulltext_snippets.remove(snippet)
+
+    if article.fulltext_snippets:
+        article.paragraphs += [
+            s.human_readable for s in article.fulltext_snippets
+        ]
+
+
+def apply_annotations_biodiversity_pmc(text: str, sentence_num: int, annotations: list[dict]) -> str:
     """
     There is magic happening inside because we must somehow resolve overlapping annotations.
     """
@@ -90,96 +185,6 @@ def apply_annotations(text: str, sentence_num: int, annotations: list[dict]) -> 
     return annotated
 
 
-def parse_pubtator_document(article: Article, document: etree._Element) -> None:
-    """
-    Parses BioC-XML PubTator document using competitive snippet assignment.
-    """
-    blocks: list[tuple[TextBlock, etree._Element]] = []
-    passage_meta: dict[etree._Element, dict] = {}
-
-    for passage in document.xpath(".//passage"):
-        text_elem = passage.find("text")
-        if text_elem is None or not text_elem.text:
-            continue
-
-        text = TextBlock(text_elem.text)
-
-        passage_type_elem = passage.xpath("./infon[@key='type']")
-        passage_type = passage_type_elem[0].text if passage_type_elem else ""
-
-        offset_elem = passage.find("offset")
-        passage_offset = int(offset_elem.text) if offset_elem is not None else 0
-
-        blocks.append((text, passage))
-        passage_meta[passage] = {
-            "type": passage_type,
-            "offset": passage_offset,
-            "text": text,
-        }
-
-    # -------- Competitive assignment --------
-    assignments = assign_snippets_to_blocks(
-        blocks,
-        article.fulltext_snippets,
-    )
-
-    annotated_paragraphs: list[str] = []
-
-    for passage, meta in passage_meta.items():
-        passage_type = meta["type"]
-        text = meta["text"]
-
-        if passage_type not in ("front", "abstract") and passage not in assignments.values():
-            continue
-
-        annotations = []
-        for ann in passage.xpath("annotation"):
-            ann_type_elem = ann.xpath("./infon[@key='type']")
-            ann_type = ann_type_elem[0].text if ann_type_elem else ""
-            if ann_type == "Species":
-                continue
-
-            loc = ann.find("location")
-            if loc is None:
-                continue
-
-            local_offset = int(loc.get("offset")) - meta["offset"]
-            length = int(loc.get("length"))
-
-            ann_text_elem = ann.find("text")
-            annotations.append({
-                "start": local_offset,
-                "end": local_offset + length,
-                "type": ann_type,
-                "text": ann_text_elem.text if ann_text_elem is not None else "",
-            })
-
-        annotations.sort(key=lambda x: x["start"], reverse=True)
-        annotated_text = text.human_readable
-
-        for ann in annotations:
-            start, end = ann["start"], ann["end"]
-            label = f"[{ann['type']}: {annotated_text[start:end]}]"
-            annotated_text = annotated_text[:start] + label + annotated_text[end:]
-
-        if passage_type == "front":
-            article.title = annotated_text
-        elif passage_type == "abstract":
-            article.abstract += annotated_text
-        else:
-            annotated_paragraphs.append(annotated_text)
-
-    article.paragraphs = annotated_paragraphs
-
-    for snippet in assignments:
-        article.fulltext_snippets.remove(snippet)
-
-    if article.fulltext_snippets:
-        article.paragraphs += [
-            s.human_readable for s in article.fulltext_snippets
-        ]
-
-
 def parse_biodiversity_pmc_document(article: Article, article_data: dict) -> None:
     """
     Parses SIBiLS JSON PMC article using competitive snippet assignment.
@@ -194,14 +199,14 @@ def parse_biodiversity_pmc_document(article: Article, article_data: dict) -> Non
     # -------- Title --------
     title = document.get("title")
     if title:
-        article.title = apply_annotations(title, 1, annotations)
+        article.title = apply_annotations_biodiversity_pmc(title, 1, annotations)
 
     # -------- Abstract --------
     abstract_parts: list[str] = []
     for s in sentences:
         if s.get("field") != "abstract":
             continue
-        annotated = apply_annotations(
+        annotated = apply_annotations_biodiversity_pmc(
             s.get("sentence", ""),
             s.get("sentence_number"),
             annotations,
@@ -270,7 +275,7 @@ def parse_biodiversity_pmc_document(article: Article, article_data: dict) -> Non
             raw = s.get("sentence")
             if not raw:
                 continue
-            annotated = apply_annotations(
+            annotated = apply_annotations_biodiversity_pmc(
                 raw,
                 s.get("sentence_number"),
                 annotations,
