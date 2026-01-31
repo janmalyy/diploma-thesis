@@ -42,13 +42,14 @@ def to_machine_comparable(text: str) -> str:
     return " ".join(text.split()).lower()
 
 
-def write_xml(root, filename: str | Path) -> None:
+def write_xml(root, filename: str | Path, make_machine_comparable: bool = False) -> None:
     """Writes an XML element tree to a file with pretty formatting with indents."""
-    for passage in root.xpath(".//passage"):
-        text_element = passage.find("text")
-        if text_element is None or text_element.text is None:
-            continue
-        text_element.text = to_machine_comparable(text_element.text)
+    if make_machine_comparable:
+        for passage in root.xpath(".//passage"):
+            text_element = passage.find("text")
+            if text_element is None or text_element.text is None:
+                continue
+            text_element.text = to_machine_comparable(text_element.text)
 
     xml_str = etree.tostring(root, encoding="utf-8")
     parsed_xml = parseString(xml_str).toprettyxml(indent="  ")

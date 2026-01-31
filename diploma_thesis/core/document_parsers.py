@@ -1,37 +1,7 @@
 from lxml import etree
 
 from diploma_thesis.core.models import Article, TextBlock
-from diploma_thesis.settings import DATA_DIR
-from diploma_thesis.utils.helpers import write_xml
-from diploma_thesis.utils.json_structure import write_json
-from diploma_thesis.utils.text_matching import check_text_for_snippets
-
-
-def assign_snippets_to_blocks(
-    blocks: list[tuple[TextBlock, object]],
-    snippets: list[TextBlock],
-) -> dict[TextBlock, object]:
-    """
-    Assigns each snippet to at most one block (best match wins).
-
-    Args:
-        blocks: list of (TextBlock, payload) where payload is parser-specific
-        snippets: remaining fulltext snippets
-
-    Returns:
-        mapping: snippet -> payload
-    """
-    snippet_best: dict[TextBlock, tuple[int, object]] = {}
-
-    for text_block, payload in blocks:
-        _, matches = check_text_for_snippets(text_block, snippets)
-
-        for snippet, score in matches.items():
-            best = snippet_best.get(snippet)
-            if best is None or score > best[0]:
-                snippet_best[snippet] = (score, payload)
-
-    return {snippet: payload for snippet, (_, payload) in snippet_best.items()}
+from diploma_thesis.utils.text_matching import assign_snippets_to_blocks
 
 
 def apply_annotations_pubtator(passage: etree._Element, meta: dict) -> str:
@@ -97,21 +67,24 @@ def parse_pubtator_document(article: Article, document: etree._Element) -> None:
             "text": text,
         }
 
-    # -------- Competitive assignment --------
-    assignments = assign_snippets_to_blocks(
-        blocks,
-        article.fulltext_snippets,
-    )
+    # -------- Competitive assignment -------- only for not-medline articles
+    assignments = {}
+    if article.fulltext_snippets:
+        assignments = assign_snippets_to_blocks(
+            blocks,
+            article.fulltext_snippets,
+        )
 
     annotated_paragraphs: list[str] = []
 
     for passage, meta in passage_meta.items():
         passage_type = meta["type"]
 
-        if passage_type in ("front", "abstract") or passage in assignments.values():
+        # front for pmc articles, title for medline/pubmed articles
+        if passage_type in ("front", "title", "abstract") or passage in assignments.values():
             annotated_text = apply_annotations_pubtator(passage, meta)
 
-            if passage_type == "front":
+            if passage_type in ("front", "title"):
                 article.title = annotated_text
             elif passage_type == "abstract":
                 article.abstract += annotated_text

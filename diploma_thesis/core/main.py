@@ -54,7 +54,7 @@ def main():
         if not articles:
             logger.info("No articles found for this variant.")
             return
-        logger.info(f"Found {len(articles)} articles. IDs: {[a.pmcid for a in articles]}")
+        logger.info(f"Found {len(articles)} articles. IDs: {[a.pmcid if a.pmcid != "" else a.pmid for a in articles]}")
 
         # 3 & 4. Fetch Data from PubTator (with PMC fallback)
         logger.info("Fetching data from PubTator and PMC...")
@@ -76,7 +76,7 @@ def main():
             # print("-" * 20)
 
             print(article.get_context())
-            print("\n\n")
+            print("\n")
         # print("\n" + "="*50)
         # print("GENERATING LLM SUMMARY")
         # print("="*50)

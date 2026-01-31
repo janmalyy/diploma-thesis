@@ -56,7 +56,7 @@ class TextBlock:
 
 class Article:
     def __init__(self, pmid: str = "", pmcid: str = "", fulltext_snippets: list[TextBlock] = None, suppl_snippets: list[TextBlock] = None):
-        self.pmid: str = pmid or ""
+        self.pmid: str = pmid or ""     # for medline articles only
         self.pmcid: str = pmcid or ""
         self.fulltext_snippets: list[TextBlock] = fulltext_snippets or []
         self.suppl_snippets: list[TextBlock] = suppl_snippets or []
@@ -73,13 +73,13 @@ class Article:
         self.relevance_score: float = 0.0
 
     def get_context(self) -> str:
-        context = f"Article {self.pmcid}\n"
+        context = f"Article {self.pmcid if self.pmcid else self.pmid}\n"
         if self.title:
             context += f"Title: {self.title}\n"
         if self.abstract:
             context += f"Abstract: {self.abstract}\n"
         if self.paragraphs:
-            context += "Relevant paragraphs:\n" + "\n".join(self.paragraphs) + "\n"
+            context += "Relevant paragraphs:\n" + "\n".join(self.paragraphs)
         if self.suppl_info:# and self.suppl_info.get("records"):
             context += "Supplementary evidence records:\n"
             context += self.raw_suppl_data[:200]

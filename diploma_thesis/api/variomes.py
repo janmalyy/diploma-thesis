@@ -63,7 +63,7 @@ def parse_variomes_data(data: dict, variant: Variant) -> list[Article]:
     # Process Medline articles - the variant is always mentioned in the title or abstract, so we don't need to care about snippets
     medline_list = publications.get("medline")
     for pub in medline_list:
-        pm_id = pub.get("pmid")
+        pm_id = pub.get("id")
         articles.append(Article(pmid=pm_id))
 
     # Process PMC articles

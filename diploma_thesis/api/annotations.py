@@ -7,9 +7,10 @@ from requests.adapters import HTTPAdapter
 from urllib3 import Retry
 
 from diploma_thesis.settings import DATA_DIR
+from diploma_thesis.utils.helpers import write_xml
 from diploma_thesis.utils.json_structure import write_json
 
-PUBTATOR_URL = "https://www.ncbi.nlm.nih.gov/research/pubtator3-api/publications/pmc_export/biocxml"
+PUBTATOR_BASE_URL = "https://www.ncbi.nlm.nih.gov/research/pubtator3-api/publications"
 BIODIVERSITY_PMC_URL = "https://biodiversitypmc.sibils.org/api/fetch"
 
 
@@ -29,29 +30,36 @@ def get_session() -> requests.Session:
 def map_pubtator_xml(
     root: etree._Element,
     cache_dir: Path,
+    database: str,
 ) -> dict[str, etree._Element]:
-    """Map PubTator XML documents by PMC ID and persist them to cache.
+    """Map PubTator XML documents by PMC or Pubmed ID and persist them to cache.
 
     Args:
         root: Root XML element returned by PubTator.
         cache_dir: Directory where individual article XML files are cached.
+        database: "pubmed" or "pmc"
 
     Returns:
-        Mapping from PMC ID to XML document element.
+        Mapping from PMC or Pubmed ID to XML document element.
     """
     mapping: dict[str, etree._Element] = {}
+
+    prefix = ""
+    if database == "pmc":
+        prefix = "PMC"
 
     for doc in root.xpath("document"):
         id_element = doc.find("id")
         if id_element is None or not id_element.text:
             continue
 
-        pmcid = f"PMC{id_element.text}"
-        mapping[pmcid] = doc
+        article_id = f"{prefix}{id_element.text}"
+        mapping[article_id] = doc
 
-        cache_path = cache_dir / f"{pmcid}.xml"
+        cache_path = cache_dir / f"{article_id}.xml"
         doc_tree = etree.ElementTree(doc)
-        doc_tree.write(cache_path, encoding="utf-8", xml_declaration=True)
+        write_xml(doc_tree.getroot(), cache_path)
+        # doc_tree.write(cache_path, encoding="utf-8", xml_declaration=True)
 
     return mapping
 
@@ -59,6 +67,7 @@ def map_pubtator_xml(
 def fetch_pubtator(
     session: requests.Session,
     ids_list: list[str],
+    database: str,
 ) -> dict[str, etree._Element]:
     """Fetch PubTator XML documents with filesystem caching.
 
@@ -67,38 +76,48 @@ def fetch_pubtator(
 
     Args:
         session: Requests session to use for HTTP calls.
-        ids_list: List of PMC IDs (e.g. ["PMC12345"]).
+        ids_list: List of PMC IDs (e.g. ["PMC12345"]) or Pubmed IDS (e.g.[32050665]).
+        database: "pubmed" or "pmc"
 
     Returns:
         Mapping from PMC ID to XML document element.
     """
+    if database not in ("pubmed", "pmc"):
+        raise ValueError("Choose one of these: pubmed or pmc.")
+
     cache_dir = DATA_DIR / "pubtator_cache"
 
     mapping: dict[str, etree._Element] = {}
 
-    for pmcid in ids_list:
-        cache_path = cache_dir / f"{pmcid}.xml"
+    for article_id in ids_list:
+        cache_path = cache_dir / f"{article_id}.xml"
         if cache_path.exists():
             try:
-                mapping[pmcid] = etree.parse(cache_path).getroot()
+                mapping[article_id] = etree.parse(cache_path).getroot()
             except Exception as e:
                 raise RuntimeError(f"Corrupted PubTator cache file: {cache_path}") from e
 
-    not_cached_ids = [pmcid for pmcid in ids_list if pmcid not in mapping]
+    not_cached_ids = [article_id for article_id in ids_list if article_id not in mapping]
     if not not_cached_ids:
         return mapping
 
+    if database == "pmc":
+        url = "/pmc_export/biocxml"
+        ids_type = "pmcids"
+    else:
+        url = "/export/biocxml"
+        ids_type = "pmids"
     try:
         response = session.get(
-            PUBTATOR_URL,
-            params={"pmcids": ",".join(not_cached_ids)},
+            PUBTATOR_BASE_URL + url,
+            params={ids_type: ",".join(not_cached_ids)},
             verify=False,
             timeout=15,
         )
         response.raise_for_status()
 
         root = etree.fromstring(response.content)
-        mapping.update(map_pubtator_xml(root, cache_dir))
+        mapping.update(map_pubtator_xml(root, cache_dir, database))
 
     except requests.RequestException as e:
         # TODO přidat negativní caching článků, které vím, že v PubTatoru NEJSOU - abych se je vždycky nesnažil stáhnout, i když bych mohl vědět, že neexistují

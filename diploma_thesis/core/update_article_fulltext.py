@@ -1,7 +1,7 @@
 import urllib3
 from lxml import etree
 
-from diploma_thesis.settings import DATA_DIR
+from diploma_thesis.settings import logger, DATA_DIR
 from diploma_thesis.utils.json_structure import write_json
 from diploma_thesis.core.models import Article, TextBlock
 from diploma_thesis.utils.helpers import write_xml
@@ -15,20 +15,24 @@ urllib3.disable_warnings()
 def update_articles_fulltext(articles: list[Article]):
     """
     Orchestrates the data fetching pipeline.
-    Gets articles from Variomes and fetches fulltexts from Pubtator or BiodiversityPMC, depending on availability,
+    Gets articles from Variomes and fetches fulltexts (or only abstract ofr medline articles)
+    from Pubtator or BiodiversityPMC, depending on availability,
     and applies annotations to the articles.
     """
     if not articles:
+        logger.warning("No articles were sent to be processed.")
         return
 
     session = get_session()
-    pmcid_to_article = {a.pmcid: a for a in articles}
+    pmcid_to_article = {a.pmcid: a for a in articles if a.pmcid}
+
+    # try to get data from pubtator for all pmcids
     pubtator_results: dict[str, etree._Element] = {}
     for i in range(0, len(articles), 100):
         batch = articles[i: i + 100]
         ids_list = [a.pmcid for a in batch if a.pmcid]
         if ids_list is not None:
-            results = fetch_pubtator(session, ids_list)
+            results = fetch_pubtator(session, ids_list, "pmc")
             pubtator_results.update(results)
 
     for pmcid, doc in pubtator_results.items():
@@ -37,6 +41,7 @@ def update_articles_fulltext(articles: list[Article]):
             parse_pubtator_document(article, doc)
             article.source = "pubtator"
 
+    # get data for fulltext articles not present in pubtator from biodiversity_pmc
     missing_ids = [pmcid for pmcid in pmcid_to_article if pmcid not in pubtator_results]
     if missing_ids:
         biodiversity_pmc_data = fetch_biodiversity_pmc(session, missing_ids)
@@ -45,6 +50,17 @@ def update_articles_fulltext(articles: list[Article]):
                 article = pmcid_to_article[pmcid]
                 parse_biodiversity_pmc_document(article, biodiversity_pmc_data[pmcid])
                 article.source = "pmc"
+
+    # get data for medline articles from pubtator
+    pmid_to_article = {a.pmid: a for a in articles if a.pmid}
+    if pmid_to_article:
+        medline_results = fetch_pubtator(session, list(pmid_to_article.keys()), "pubmed")
+
+        for pmid, doc in medline_results.items():
+            if pmid in pmid_to_article:
+                article = pmid_to_article[pmid]
+                parse_pubtator_document(article, doc)
+                article.source = "pubtator"
 
 
 if __name__ == '__main__':
@@ -79,5 +95,4 @@ if __name__ == '__main__':
     #         "col": "pmc",
     #     }), f, indent=4)
     #
-    write_xml(fetch_pubtator(get_session(), params={
-        "pmcids": "PMC8794197"})["PMC8794197"], "test.xml")
+    write_xml(fetch_pubtator(get_session(), ["PMC8794197", "PMC8794197"], "pmc"), "test.xml")
