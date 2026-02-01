@@ -64,7 +64,7 @@ def parse_variomes_data(data: dict, variant: Variant) -> list[Article]:
     medline_list = publications.get("medline")
     for pub in medline_list:
         pm_id = pub.get("id")
-        articles.append(Article(pmid=pm_id))
+        articles.append(Article(data_source="medline", pmid=pm_id))
 
     # Process PMC articles
     pmc_list = publications.get("pmc")
@@ -79,7 +79,7 @@ def parse_variomes_data(data: dict, variant: Variant) -> list[Article]:
         if snippets:                # TODO we skip articles without evidences=fulltext_snippets for now
             article = next((a for a in articles if a.pmcid == pmc_id), None)
             if article is None:
-                articles.append(Article(pmcid=pmc_id, fulltext_snippets=snippets))
+                articles.append(Article(data_source="pmc", pmcid=pmc_id, fulltext_snippets=snippets))
             else:
                 article.fulltext_snippets = snippets
 
@@ -98,7 +98,7 @@ def parse_variomes_data(data: dict, variant: Variant) -> list[Article]:
             article = next((a for a in articles if a.pmcid == pmc_id), None)
 
             if article is None:
-                article = Article(pmcid=pmc_id, suppl_snippets=snippets)
+                article = Article(data_source="supp", pmcid=pmc_id, suppl_snippets=snippets)
                 articles.append(article)
             else:
                 article.suppl_snippets = snippets

@@ -1,6 +1,5 @@
 """
 todo ve variomes mají advanced filtry, ty bych taky asi mohl využít...
-todo proč neberu data i z medline, když tam jsou!!!!!!
 
 Workflow:
 1. Normalise variant input. - nějak použít jejich synvar, umí to: https://sibils.org/synvar/

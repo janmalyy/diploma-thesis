@@ -1,6 +1,7 @@
 from lxml import etree
 
 from diploma_thesis.core.models import Article, TextBlock
+from diploma_thesis.utils.helpers import to_human_readable
 from diploma_thesis.utils.text_matching import assign_snippets_to_blocks
 
 
@@ -30,14 +31,14 @@ def apply_annotations_pubtator(passage: etree._Element, meta: dict) -> str:
         })
 
     annotations.sort(key=lambda x: x["start"], reverse=True)
-    annotated_text = text.human_readable
+    annotated_text = text.raw_text
 
     for ann in annotations:
         start, end = ann["start"], ann["end"]
         label = f"[{ann['type']}: {annotated_text[start:end]}]"
         annotated_text = annotated_text[:start] + label + annotated_text[end:]
 
-    return annotated_text
+    return to_human_readable(annotated_text)
 
 
 def parse_pubtator_document(article: Article, document: etree._Element) -> None:
@@ -67,24 +68,28 @@ def parse_pubtator_document(article: Article, document: etree._Element) -> None:
             "text": text,
         }
 
-    # -------- Competitive assignment -------- only for not-medline articles
-    assignments = {}
-    if article.fulltext_snippets:
+    # -------- Competitive assignment --------
+    if article.data_source == "pmc":
         assignments = assign_snippets_to_blocks(
             blocks,
             article.fulltext_snippets,
         )
+        title_tag_name = "front"
+    elif article.data_source == "medline":
+        assignments = {}
+        title_tag_name = "title"
+    else:
+        raise ValueError(f"Unsupported data source: {article.data_source}")
 
     annotated_paragraphs: list[str] = []
 
     for passage, meta in passage_meta.items():
         passage_type = meta["type"]
 
-        # front for pmc articles, title for medline/pubmed articles
-        if passage_type in ("front", "title", "abstract") or passage in assignments.values():
+        if passage_type in (title_tag_name, "abstract") or passage in assignments.values():
             annotated_text = apply_annotations_pubtator(passage, meta)
 
-            if passage_type in ("front", "title"):
+            if passage_type in title_tag_name:
                 article.title = annotated_text
             elif passage_type == "abstract":
                 article.abstract += annotated_text

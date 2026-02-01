@@ -1,5 +1,3 @@
-from enum import Enum
-
 from diploma_thesis.utils.helpers import to_machine_comparable, to_human_readable
 
 
@@ -55,9 +53,10 @@ class TextBlock:
 
 
 class Article:
-    def __init__(self, pmid: str = "", pmcid: str = "", fulltext_snippets: list[TextBlock] = None, suppl_snippets: list[TextBlock] = None):
+    def __init__(self, data_source: str, pmid: str = "", pmcid: str = "", fulltext_snippets: list[TextBlock] = None, suppl_snippets: list[TextBlock] = None):
         self.pmid: str = pmid or ""     # for medline articles only
         self.pmcid: str = pmcid or ""
+        self.data_source: str = data_source     # medline or pmc or supp
         self.fulltext_snippets: list[TextBlock] = fulltext_snippets or []
         self.suppl_snippets: list[TextBlock] = suppl_snippets or []
 
@@ -67,7 +66,7 @@ class Article:
         self.raw_suppl_data: str = ""
         self.suppl_info: dict = {}       # if variant found in the supplementary data
 
-        self.source: str = ""
+        self.annotation_source: str = ""
         self.study_type: str = "Unknown"
         self.disease: str = "Unknown"
         self.relevance_score: float = 0.0
