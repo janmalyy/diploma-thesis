@@ -1,7 +1,7 @@
 import json
 import re
 import requests
-from diploma_thesis.core.models import Variant, Article, TextBlock
+from diploma_thesis.core.models import Variant, Article, TextBlock, SupplData
 from diploma_thesis.settings import logger, DATA_DIR
 
 
@@ -76,33 +76,39 @@ def parse_variomes_data(data: dict, variant: Variant) -> list[Article]:
             for ev in evidences
             if ev.get("text")
         ]
-        if snippets:                # TODO we skip articles without evidences=fulltext_snippets for now
+        if snippets:  # TODO we skip articles without evidences=fulltext_snippets for now
             article = next((a for a in articles if a.pmcid == pmc_id), None)
             if article is None:
                 articles.append(Article(data_source="pmc", pmcid=pmc_id, fulltext_snippets=snippets))
             else:
+                article.data_sources.add("pmc")
                 article.fulltext_snippets = snippets
 
     # Process Supplemental data
     supp_list = publications.get("supp")
     for pub in supp_list:
         pmc_id = pub.get("pmcid")
-        evidences = pub.get("evidences")
 
+        article = next((a for a in articles if a.pmcid == pmc_id), None)
+        if article is None:
+            article = Article(data_source="supp", pmcid=pmc_id)
+            articles.append(article)
+
+        article.data_sources.add("supp")
+        evidences = pub.get("evidences")
         snippets = [
-            TextBlock(ev.get("text"))
+            ev.get("text")
             for ev in evidences
             if ev.get("text")
         ]
-        if snippets:  # TODO we skip suppl. files without evidences=suppl_snippets for now (that means skipping more than 90 % of them)
-            article = next((a for a in articles if a.pmcid == pmc_id), None)
 
-            if article is None:
-                article = Article(data_source="supp", pmcid=pmc_id, suppl_snippets=snippets)
-                articles.append(article)
-            else:
-                article.suppl_snippets = snippets
-                article.raw_suppl_data = pub.get("text")
+        article.suppl_data_list.append(
+            SupplData(
+                raw_text=pub.get("text"),
+                score=pub.get("score"),
+                snippets=snippets,
+            ))
 
-    logger.info(f"Found {len(medline_list)} medline articles, {len([a for a in articles if a.fulltext_snippets])} articles with fulltext snippets and {len([a for a in articles if a.suppl_snippets])} articles with suppl. snippets for variant {variant.variant_string}.")
+    logger.info(
+        f"Found {len(medline_list)} medline articles, {len([a for a in articles if a.fulltext_snippets])} articles with fulltext snippets and {len([a for a in articles if len(a.suppl_data_list) > 0])} articles with suppl. snippets for variant {variant.variant_string}.")
     return articles

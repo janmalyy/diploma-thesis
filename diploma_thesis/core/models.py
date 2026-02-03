@@ -52,19 +52,29 @@ class TextBlock:
         return len(self.human_readable)
 
 
+class SupplData:
+    def __init__(self, raw_text: str, score: float, snippets: list[str] = None):
+        self.raw_text = raw_text
+        self.score = score
+        self.snippets = snippets or []
+
+        self.paragraphs: list[str] = []
+
+
 class Article:
-    def __init__(self, data_source: str, pmid: str = "", pmcid: str = "", fulltext_snippets: list[TextBlock] = None, suppl_snippets: list[TextBlock] = None):
-        self.pmid: str = pmid or ""     # for medline articles only
+    def __init__(self, data_source: str, pmid: str = "", pmcid: str = "", fulltext_snippets: list[TextBlock] = None):
+        self.pmid: str = pmid or ""  # for medline articles only
         self.pmcid: str = pmcid or ""
-        self.data_source: str = data_source     # medline or pmc or supp
-        self.fulltext_snippets: list[TextBlock] = fulltext_snippets or []
-        self.suppl_snippets: list[TextBlock] = suppl_snippets or []
+        self.data_sources: set[str] = set()   # possible combinations: (medline), (pmc), (supp), (medline, pmc, supp), (pmc, supp)
+        self.data_sources.add(data_source)
 
         self.title: str = ""
         self.abstract: str = ""
-        self.paragraphs: list[str] = []       # if variant found in the article
-        self.raw_suppl_data: str = ""
-        self.suppl_info: dict = {}       # if variant found in the supplementary data
+
+        self.fulltext_snippets: list[TextBlock] = fulltext_snippets or []
+        self.paragraphs: list[str] = []  # if variant found in the article
+
+        self.suppl_data_list: list[SupplData] = []
 
         self.annotation_source: str = ""
         self.study_type: str = "Unknown"
@@ -79,12 +89,11 @@ class Article:
             context += f"Abstract: {self.abstract}\n"
         if self.paragraphs:
             context += "Relevant paragraphs:\n" + "\n".join(self.paragraphs)
-        if self.suppl_info:# and self.suppl_info.get("records"):
-            context += "Supplementary evidence records:\n"
-            context += self.raw_suppl_data[:200]
-            # for rec in self.suppl_info["records"]:
-            #     scores_str = ", ".join([f"{k}: {v}" for k, v in rec['functional_scores'].items()])
-            #     context += f"- {rec['variant']} in {rec['gene']}: {rec['disease']}, classification: {rec['classification']}, scores: [{scores_str}]\n"
+        if len(self.suppl_data_list) > 0:
+            context += "\nSupplementary evidence records:\n"
+            for sd in self.suppl_data_list:
+                context += f"(relevancy score {sd.score:.2f}):\n" + "\n".join(sd.paragraphs)
+                context += "\n"
         return context
 
     def shorten_context(self, max_length: int = 2000):
@@ -96,4 +105,3 @@ class Article:
             else:
                 shortened.append(p)
         self.paragraphs = shortened
-

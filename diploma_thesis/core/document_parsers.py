@@ -69,17 +69,20 @@ def parse_pubtator_document(article: Article, document: etree._Element) -> None:
         }
 
     # -------- Competitive assignment --------
-    if article.data_source == "pmc":
+    if "pmc" in article.data_sources:
         assignments = assign_snippets_to_blocks(
             blocks,
             article.fulltext_snippets,
         )
         title_tag_name = "front"
-    elif article.data_source == "medline":
+    elif article.data_sources == {"medline"}:
         assignments = {}
         title_tag_name = "title"
+    elif article.data_sources == {"supp"}:
+        assignments = {}
+        title_tag_name = "front"
     else:
-        raise ValueError(f"Unsupported data source: {article.data_source}")
+        raise ValueError(f"Unsupported data source: {article.data_sources}")
 
     annotated_paragraphs: list[str] = []
 
@@ -194,6 +197,9 @@ def parse_biodiversity_pmc_document(article: Article, article_data: dict) -> Non
 
     if abstract_parts:
         article.abstract = " ".join(abstract_parts)
+
+    if "pmc" not in article.data_sources:
+        return
 
     # -------- Collect paragraph sentences --------
     body_sentences = [
