@@ -30,7 +30,7 @@ def main():
 
     to_be_json = []
 
-    for i, variant in enumerate(variants[200:201]):
+    for i, variant in enumerate(variants[9:10]):
         start_time = time.time()
 
         # variant_input = "NHP2	c.302G>A"
