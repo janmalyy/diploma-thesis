@@ -7,16 +7,6 @@ from pydantic_ai.providers.openai import OpenAIProvider
 from diploma_thesis.settings import E_INFRA_API_KEY, DATA_DIR
 
 
-def build_prompt(context: str, gene_symbol: str, variant: str) -> str:
-    with open(DATA_DIR / "prompts" / "test_prompt.md") as f:
-        prompt = f.read()
-    prompt = prompt.replace("CONTEXT", context)
-    prompt = prompt.replace("GENE_SYMBOL", gene_symbol)
-    prompt = prompt.replace("VARIANT", variant)
-
-    return prompt
-
-
 def fetch_list_of_supported_einfra_models(api_token: str) -> list[dict]:
     url = "https://chat.ai.e-infra.cz/api/models"
     headers = {"Authorization": f"Bearer {api_token}"}

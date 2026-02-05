@@ -12,7 +12,7 @@ import uvicorn
 from pydantic import BaseModel
 from starlette.responses import RedirectResponse
 
-from diploma_thesis.api.einfra import run_einfra, build_prompt
+from diploma_thesis.api.einfra import run_einfra
 from diploma_thesis.settings import PACKAGE_DIR, logger
 from diploma_thesis.api.convert_ids import convert_ids, connect_pubmed_ids_with_links
 
@@ -188,7 +188,7 @@ async def generate_llm_summary(request: RowIdRequest):
         variant = "3_149238596_-/TTAA"
         converted_ids_dict = convert_ids(ids_list, "pmid")
         context = """this is mocked context. Please return: 'WIP, add context'."""
-        prompt = build_prompt(context, gene_symbol, variant)
+        prompt = """this is mocked prompt. Please return: 'WIP, add prompt'."""
         response = await run_einfra(prompt, model_name="gpt-oss-120b")
         return {"result": response}
 

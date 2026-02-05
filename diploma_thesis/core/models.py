@@ -76,6 +76,15 @@ class Article:
                 context += "\n"
         return context
 
+    def get_structured_context(self) -> dict:
+        return {
+            "ARTICLE_ID": self.pmcid if self.pmcid else self.pmid,
+            "TITLE": self.title,
+            "ABSTRACT": self.abstract,
+            "FULLTEXT_MENTIONS": self.paragraphs,
+            "SUPPLEMENTARY_DATA_MENTIONS": [p for sd in self.suppl_data_list for p in sd.paragraphs]
+        }
+
     def shorten_context(self, max_length: int = 2000):
         """Intelligently shortens the context. Mock implementation."""  # TODO
         shortened = []
