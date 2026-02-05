@@ -56,3 +56,52 @@ def write_xml(root, filename: str | Path, make_machine_comparable: bool = False)
 
     with open(filename, "w", encoding="utf-8") as f:
         f.write(parsed_xml)
+
+
+THREE_TO_ONE = {
+    "ala": "a",
+    "arg": "r",
+    "asn": "n",
+    "asp": "d",
+    "asx": "b",
+    "cys": "c",
+    "gln": "q",
+    "glu": "e",
+    "glx": "z",
+    "gly": "g",
+    "his": "h",
+    "ile": "i",
+    "leu": "l",
+    "lys": "k",
+    "met": "m",
+    "phe": "f",
+    "pro": "p",
+    "ser": "s",
+    "thr": "t",
+    "trp": "w",
+    "tyr": "y",
+    "val": "v",
+}
+THREE_TO_ONE_PATTERN = re.compile("|".join(THREE_TO_ONE.keys()))
+
+
+def uniq(values: list[str]) -> list[str]:
+    """Remove duplicates from a list while preserving order."""
+    seen: set[str] = set()
+    out: list[str] = []
+    for v in values:
+        if v not in seen:
+            seen.add(v)
+            out.append(v)
+    return out
+
+
+def normalize_variant(v: str) -> str:
+    # todo vylepšit, nějak neumím regexpy
+    v = v.lower()
+    v = re.sub(r"\s+", "", v)
+    v = re.sub(r"[^\w]", "", v)
+    v = re.sub(r"[->/.]", "", v)
+    v = re.sub(r"\bto\b", "", v)
+    v = THREE_TO_ONE_PATTERN.sub(lambda m: THREE_TO_ONE[m.group()], v)
+    return v

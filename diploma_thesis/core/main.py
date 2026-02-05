@@ -17,7 +17,7 @@ Output:
 import time
 from diploma_thesis.core.models import Variant
 from diploma_thesis.api.local_llm import LLMSummarizer
-from diploma_thesis.core.suppl_data_parser import update_suppl_data
+from diploma_thesis.core.update_suppl_data import update_suppl_data
 from diploma_thesis.core.update_article_fulltext import update_articles_fulltext
 from diploma_thesis.api.variomes import fetch_variomes_data, parse_variomes_data
 from diploma_thesis.settings import logger, DATA_DIR
@@ -30,13 +30,13 @@ def main():
 
     to_be_json = []
 
-    for i, variant in enumerate(variants[9:10]):
+    for i, variant in enumerate(variants[:1]):
         start_time = time.time()
 
-        # variant_input = "NHP2	c.302G>A"
-
+        # variant_input = "NC_000017.10:g.41246584C>G"
+        variant_input = "BRCA1 A322P"
         # 1. Initialize Variant (handles normalisation)
-        variant = Variant(variant)
+        variant = Variant(variant_input)
         logger.info(f"Processing variant: {variant}")
 
         # 2. Fetch Data from Variomes

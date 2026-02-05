@@ -3,33 +3,14 @@ from diploma_thesis.utils.helpers import to_machine_comparable, to_human_readabl
 
 class Variant:
     def __init__(self, input_variant: str):
-        self.gene: str = ""
-        self.change: str = ""
+        self.gene = ""
         self.terms: list[str] = []
-        self.variant_string = self._normalize(input_variant)
+        self.canonical_dict: dict = self.create_canonical_dict()
+        self.variant_string = self.canonical_dict.get("", "") or input_variant
 
-    def _normalize(self, input_variant: str) -> str:
-        """
-        Normalizes variant string. 
-        Handles basic HGVS-like formats.
-        """
-        if not input_variant:
-            return ""
-        v = input_variant.strip()
-        # Extract gene if present (e.g. "BRCA1 C24R")
-        parts = v.split()
-        if len(parts) == 2:
-            self.gene = parts[0]
-            self.change = parts[1]
-        elif len(parts) == 1:
-            # Check if it's like BRCA1:c.70T>C
-            if ":" in v:
-                g, c = v.split(":", 1)
-                self.gene = g
-                self.change = c
-            else:
-                self.change = v
-        return v
+    def create_canonical_dict(self):
+
+        return {}
 
     def __str__(self):
         return f"Variant {self.variant_string}"
@@ -62,9 +43,10 @@ class SupplData:
 
 
 class Article:
-    def __init__(self, data_source: str, pmid: str = "", pmcid: str = "", fulltext_snippets: list[TextBlock] = None):
+    def __init__(self, data_source: str, relevance_score: float, pmid: str = "", pmcid: str = "", fulltext_snippets: list[TextBlock] = None):
         self.pmid: str = pmid or ""  # for medline articles only
         self.pmcid: str = pmcid or ""
+        self.relevance_score: float = round(relevance_score, 2)
         self.data_sources: set[str] = set()   # possible combinations: (medline), (pmc), (supp), (medline, pmc, supp), (pmc, supp)
         self.data_sources.add(data_source)
 
@@ -79,10 +61,10 @@ class Article:
         self.annotation_source: str = ""
         self.study_type: str = "Unknown"
         self.disease: str = "Unknown"
-        self.relevance_score: float = 0.0
 
     def get_context(self) -> str:
         context = f"Article {self.pmcid if self.pmcid else self.pmid}\n"
+        context += f"Relevance score: {self.relevance_score}\n"
         if self.title:
             context += f"Title: {self.title}\n"
         if self.abstract:
@@ -92,7 +74,7 @@ class Article:
         if len(self.suppl_data_list) > 0:
             context += "\nSupplementary evidence records:\n"
             for sd in self.suppl_data_list:
-                context += f"(relevancy score {sd.score:.2f}):\n" + "\n".join(sd.paragraphs)
+                context += "\n".join(sd.paragraphs)
                 context += "\n"
         return context
 

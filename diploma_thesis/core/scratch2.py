@@ -8,7 +8,7 @@ if __name__ == '__main__':
         text = f.read()
     variants = text.split("\n")
 
-    for i, variant in enumerate(variants[20:25]):
+    for i, variant in enumerate(variants[10:15]):
 
         variant = Variant(variant)
         logger.info(f"Processing variant: {variant}")
