@@ -28,15 +28,11 @@ def main():
         text = f.read()
     variants = text.split("\n")
 
-    to_be_json = []
-
     for i, variant in enumerate(variants[:1]):
         start_time = time.time()
 
-        # variant_input = "NC_000017.10:g.41246584C>G"
-        variant_input = "BRCA1 A322P"
         # 1. Initialize Variant (handles normalisation)
-        variant = Variant(variant_input)
+        variant = Variant("BRCA1", "A322P", "protein")
         logger.info(f"Processing variant: {variant}")
 
         # 2. Fetch Data from Variomes

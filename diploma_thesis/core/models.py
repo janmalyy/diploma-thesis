@@ -1,16 +1,14 @@
+from diploma_thesis.api.synvar import fetch_synvar, parse_synvar
 from diploma_thesis.utils.helpers import to_machine_comparable, to_human_readable
 
 
 class Variant:
-    def __init__(self, input_variant: str):
-        self.gene = ""
+    def __init__(self, gene: str, variant: str, level: str):
+        self.gene: str = gene
+        self.variant_string = f"{gene}:{variant}"
+
         self.terms: list[str] = []
-        self.canonical_dict: dict = self.create_canonical_dict()
-        self.variant_string = self.canonical_dict.get("", "") or input_variant
-
-    def create_canonical_dict(self):
-
-        return {}
+        self.variant_dict = parse_synvar(fetch_synvar(gene, variant, level))
 
     def __str__(self):
         return f"Variant {self.variant_string}"
