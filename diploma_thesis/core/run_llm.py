@@ -1,16 +1,11 @@
-import asyncio
 import json
 import re
-import time
 
 from pydantic_ai import Agent
 from pydantic_ai.models.openai import OpenAIChatModel
 from pydantic_ai.providers.openai import OpenAIProvider
 
-from diploma_thesis.api.variomes import parse_variomes_data, fetch_variomes_data
-from diploma_thesis.core.update_article_fulltext import update_articles_fulltext
-from diploma_thesis.core.update_suppl_data import update_suppl_data
-from diploma_thesis.settings import E_INFRA_API_KEY, DATA_DIR, logger
+from diploma_thesis.settings import E_INFRA_API_KEY, DATA_DIR
 
 from diploma_thesis.core.models import Article, Variant
 
@@ -107,9 +102,7 @@ async def extract_evidences(variant: Variant, articles: list[Article]) -> list[d
     prompt = get_prompt("user_extract_evidence.txt")
 
     for article in articles:
-        replacements = {
-            "VARIANT_INFO": variant.variant_dict,
-        }
+        replacements = {"VARIANT_INFO": variant.variant_dict}
         replacements.update(article.get_structured_context())
 
         ready_prompt = build_prompt(replacements, prompt)
@@ -152,27 +145,4 @@ async def aggregate_evidences(variant: Variant, evidences: list[dict]) -> dict:
         raise RuntimeError(f"Error aggregating for variant {variant}: {e}")
 
 
-async def main() -> None:
-    start = time.time()
-    variant = Variant("BRCA2", "M3181R", "protein")
-    logger.info(f"Processing variant: {variant}")
 
-    logger.info("Fetching data from SIBiLS Variomes...")
-    data = fetch_variomes_data(variant)
-
-    articles = parse_variomes_data(data, variant)
-
-    logger.info(f"Found {len(articles)} articles. IDs: {[a.pmcid if a.pmcid != "" else a.pmid for a in articles]}")
-
-    logger.info("Fetching data from PubTator and PMC...")
-    update_articles_fulltext(articles)
-
-    update_suppl_data(articles, variant)
-
-    relevant_articles = await relevance_check(variant, articles)
-    evidences = await extract_evidences(variant, relevant_articles)
-    aggregated_evidence = await aggregate_evidences(variant, evidences)
-    print(time.time() - start)
-
-if __name__ == "__main__":
-    asyncio.run(main())

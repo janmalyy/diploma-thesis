@@ -150,7 +150,7 @@ def map_biodiversity_pmc_json(article_set: dict, cache_dir: Path) -> dict[str, d
         mapping[pmcid] = article
 
         cache_path = cache_dir / f"{pmcid}.json"
-        write_json(cache_path, article)
+        write_json(article, cache_path)
 
     return mapping
 
