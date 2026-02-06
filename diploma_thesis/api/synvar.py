@@ -13,6 +13,8 @@ def fetch_synvar(gene: str | None, variant: str, level: str) -> etree._Element |
     We use map=true: Output syntactic variations even if the variant could not be mapped on genome.
     We use iso=true: Validate on and generate synonyms for isoforms.
     Gene can be None if the level is dbsnp or cosmic.
+    Use caching for faster development.
+    # todo improve caching cause now we search only for exactly same filename so there can be more files for the same variant with different naming
     """
     logger.info(f"Fetching data from SynVar for {gene}:{variant}, level {level}...")
 
@@ -27,10 +29,14 @@ def fetch_synvar(gene: str | None, variant: str, level: str) -> etree._Element |
     cache_path = synvar_dir / f"{filename}.xml"
     if cache_path.exists():
         try:
-            with open(cache_path, "r", encoding="utf-8") as f:
-                return etree.parse(cache_path).getroot()
-        except Exception as e:
+            root = etree.parse(cache_path).getroot()
+        except (OSError, etree.XMLSyntaxError) as e:
             raise RuntimeError(f"Corrupted SynVar cache file: {cache_path}") from e
+
+        if root.xpath(".//variant[@valid='false']"):
+            raise ValueError(f"SynVar could not find valid variant for: {gene}, {variant}")
+
+        return root
 
     else:
         try:
@@ -43,11 +49,14 @@ def fetch_synvar(gene: str | None, variant: str, level: str) -> etree._Element |
         except etree.XMLSyntaxError as e:
             raise RuntimeError(f"Invalid XML returned by SynVar for: {gene}, {variant}") from e
 
-        if root.xpath("//error"):
-            logger.warning(f"SynVar returned error for: {gene}, {variant}")
-            return None
+        write_xml(root, cache_path)     # todo improve caching to store a list of invalid variants - možná(?)
 
-        write_xml(root, cache_path)
+        if root.xpath("//error"):
+            raise ValueError(f"SynVar returned error for: {gene}, {variant}")
+
+        if root.xpath("//variant[@valid='false']"):
+            raise ValueError(f"SynVar could not find valid variant for: {gene}, {variant}")
+
         return root
 
 
@@ -57,8 +66,7 @@ def parse_synvar(root: etree._Element) -> dict:
     storing both GRCh37 and GRCh38 and collapsing syntactic noise.
     """
     if root is None:
-        logger.warning("Nothing to parse, root is None, returning empty dict.")
-        return {}
+        raise ValueError("Nothing to parse, root is None.")
     raw: list[str] = []
     for e in root.xpath(".//synonym[not(ancestor::gene-synonym-list)] | .//hgvs | .//syntactic-variation | .//rsid | .//caid"):
         if e.text:

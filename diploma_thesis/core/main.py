@@ -5,6 +5,7 @@ Workflow:
 1. Normalise variant input. - nějak použít jejich synvar, umí to: https://sibils.org/synvar/
 2. Fetch relevant literature data and fulltext_snippets from SIBiLS Variomes.        TODO improve check text for fulltext_snippets
     - if snippet not found, it is added to paragraphs as is
+# TODO brát pmc ids aji z litvar2, ne jen z variomes
 3. Retrieve full-text annotations from PubTator 3.
 4. Fallback to BiodiversityPMC access if PubTator data is missing.
 5. Intelligently shorten and filter context based on relevance (mocked).    TODO

@@ -20,8 +20,7 @@ def update_articles_fulltext(articles: list[Article]):
     and applies annotations to the articles.
     """
     if not articles:
-        logger.warning("No articles were sent to be processed.")
-        return
+        raise ValueError("No articles were sent to be processed.")
 
     session = get_session()
     pmcid_to_article = {a.pmcid: a for a in articles if a.pmcid}

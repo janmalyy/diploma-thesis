@@ -1,6 +1,7 @@
 import asyncio
 import json
 import re
+import time
 
 from pydantic_ai import Agent
 from pydantic_ai.models.openai import OpenAIChatModel
@@ -70,6 +71,8 @@ aggregator_agent = Agent(model, system_prompt=get_prompt("system_aggregate.txt")
 
 
 async def relevance_check(variant: Variant, articles: list[Article]) -> list[Article]:
+    if not articles:
+        raise ValueError("No articles were given to process for the variant.")
     relevant_articles = []
     prompt = get_prompt("user_check_relevance.txt")
 
@@ -96,16 +99,62 @@ async def relevance_check(variant: Variant, articles: list[Article]) -> list[Art
     return relevant_articles
 
 
-async def extract_evidences(articles: list[Article]) -> dict:
-    pass
+async def extract_evidences(variant: Variant, articles: list[Article]) -> list[dict]:
+    if not articles:
+        raise ValueError("No articles were given to process for the variant.")
+
+    evidences = []
+    prompt = get_prompt("user_extract_evidence.txt")
+
+    for article in articles:
+        replacements = {
+            "VARIANT_INFO": variant.variant_dict,
+        }
+        replacements.update(article.get_structured_context())
+
+        ready_prompt = build_prompt(replacements, prompt)
+        result = await extractor_agent.run(ready_prompt)
+        print("ARTICLE_ID", article.pmcid if article.pmcid else article.pmid)
+        print("PROMPT", ready_prompt)
+        print("OUTPUT", result.output)
+        try:
+            data = parse_llm_json(result.output)
+            evidences.append(data)
+        except json.JSONDecodeError:
+            raise ValueError(f"Invalid JSON returned by LLM: {result.output}")
+        except Exception as e:
+            raise RuntimeError(f"Error checking relevance of article {article.pmcid if article.pmcid else article.pmid}: {e}")
+
+    return evidences
 
 
-async def aggregate_evidences(evidence: dict) -> dict:
-    pass
+async def aggregate_evidences(variant: Variant, evidences: list[dict]) -> dict:
+    if not evidences:
+        raise ValueError("No evidences were given to process for the variant.")
+
+    prompt = get_prompt("user_aggregate.txt")
+
+    replacements = {
+        "VARIANT_INFO": variant.variant_dict,
+        "STRUCTURED_EVIDENCE_LIST": json.dumps(evidences)
+    }
+
+    ready_prompt = build_prompt(replacements, prompt)
+    result = await extractor_agent.run(ready_prompt)
+    print("PROMPT", ready_prompt)
+    print("OUTPUT", result.output)
+    try:
+        data = parse_llm_json(result.output)
+        return data
+    except json.JSONDecodeError:
+        raise ValueError(f"Invalid JSON returned by LLM: {result.output}")
+    except Exception as e:
+        raise RuntimeError(f"Error aggregating for variant {variant}: {e}")
 
 
 async def main() -> None:
-    variant = Variant("BRCA1", "A322P", "protein")
+    start = time.time()
+    variant = Variant("BRCA2", "M3181R", "protein")
     logger.info(f"Processing variant: {variant}")
 
     logger.info("Fetching data from SIBiLS Variomes...")
@@ -121,7 +170,9 @@ async def main() -> None:
     update_suppl_data(articles, variant)
 
     relevant_articles = await relevance_check(variant, articles)
-
+    evidences = await extract_evidences(variant, relevant_articles)
+    aggregated_evidence = await aggregate_evidences(variant, evidences)
+    print(time.time() - start)
 
 if __name__ == "__main__":
     asyncio.run(main())
