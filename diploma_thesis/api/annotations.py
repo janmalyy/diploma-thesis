@@ -59,7 +59,6 @@ def map_pubtator_xml(
         cache_path = cache_dir / f"{article_id}.xml"
         doc_tree = etree.ElementTree(doc)
         write_xml(doc_tree.getroot(), cache_path)
-        # doc_tree.write(cache_path, encoding="utf-8", xml_declaration=True)
 
     return mapping
 

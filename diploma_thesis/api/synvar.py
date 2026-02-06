@@ -1,8 +1,10 @@
+import re
+
 import requests
 from lxml import etree
 
-from diploma_thesis.settings import logger
-from diploma_thesis.utils.helpers import uniq, normalize_variant
+from diploma_thesis.settings import logger, DATA_DIR
+from diploma_thesis.utils.helpers import uniq, normalize_variant, write_xml
 
 
 def fetch_synvar(gene: str | None, variant: str, level: str) -> etree._Element | None:
@@ -20,22 +22,33 @@ def fetch_synvar(gene: str | None, variant: str, level: str) -> etree._Element |
     if level not in ("dbsnp", "cosmic") and gene is None:
         raise ValueError(f"Gene is required for level {level}")
 
-    try:
-        r = requests.get(
-            url=f"https://synvar.sibils.org/generate/literature/fromMutation?ref={gene}&variant={variant}&level={level}&map=true&iso=true")
-        r.raise_for_status()
-        root = etree.fromstring(r.content)
-    except requests.RequestException as e:
-        raise RuntimeError(f"SynVar API request failed for: {gene}, {variant}") from e
-    except etree.XMLSyntaxError as e:
-        raise RuntimeError(f"Invalid XML returned by SynVar for: {gene}, {variant}") from e
+    synvar_dir = DATA_DIR / "synvar_cache"
+    filename = re.sub(r'[<>:"/\\|?*]', "_", gene + "_" + variant + "_" + level)
+    cache_path = synvar_dir / f"{filename}.xml"
+    if cache_path.exists():
+        try:
+            with open(cache_path, "r", encoding="utf-8") as f:
+                return etree.parse(cache_path).getroot()
+        except Exception as e:
+            raise RuntimeError(f"Corrupted SynVar cache file: {cache_path}") from e
 
-    if root.xpath("//error"):
-        logger.warning(f"SynVar returned error for: {gene}, {variant}")
-        return None
+    else:
+        try:
+            r = requests.get(
+                url=f"https://synvar.sibils.org/generate/literature/fromMutation?ref={gene}&variant={variant}&level={level}&map=true&iso=true")
+            r.raise_for_status()
+            root = etree.fromstring(r.content)
+        except requests.RequestException as e:
+            raise RuntimeError(f"SynVar API request failed for: {gene}, {variant}") from e
+        except etree.XMLSyntaxError as e:
+            raise RuntimeError(f"Invalid XML returned by SynVar for: {gene}, {variant}") from e
 
-    # write_xml(root, f"{gene}_{variant}_{level}.xml")
-    return root
+        if root.xpath("//error"):
+            logger.warning(f"SynVar returned error for: {gene}, {variant}")
+            return None
+
+        write_xml(root, cache_path)
+        return root
 
 
 def parse_synvar(root: etree._Element) -> dict:
@@ -96,3 +109,7 @@ def parse_synvar(root: etree._Element) -> dict:
         "hgvs_p": hgvs_p,
         "aliases": list(alias_map.values()),
     }
+
+
+if __name__ == '__main__':
+    fetch_synvar("BRCA1", "p.Cys61Gly", "protein")

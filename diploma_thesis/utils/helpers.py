@@ -53,9 +53,9 @@ def write_xml(root, filename: str | Path, make_machine_comparable: bool = False)
 
     xml_str = etree.tostring(root, encoding="utf-8")
     parsed_xml = parseString(xml_str).toprettyxml(indent="  ")
-
+    lines = [line for line in parsed_xml.splitlines() if line.strip()]
     with open(filename, "w", encoding="utf-8") as f:
-        f.write(parsed_xml)
+        f.write("\n".join(lines))
 
 
 THREE_TO_ONE = {
