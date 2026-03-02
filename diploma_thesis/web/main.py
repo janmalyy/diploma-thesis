@@ -13,6 +13,11 @@ from pydantic import BaseModel
 from starlette.responses import RedirectResponse
 
 from diploma_thesis.api.einfra import run_einfra
+from diploma_thesis.api.variomes import fetch_variomes_data, parse_variomes_data
+from diploma_thesis.core.models import Variant
+from diploma_thesis.core.run_llm import relevance_check, extract_evidences, aggregate_evidences
+from diploma_thesis.core.update_article_fulltext import update_articles_fulltext
+from diploma_thesis.core.update_suppl_data import update_suppl_data
 from diploma_thesis.settings import PACKAGE_DIR, logger
 from diploma_thesis.api.convert_ids import convert_ids, connect_pubmed_ids_with_links
 
@@ -29,6 +34,11 @@ def root():
 @app.get("/excel", response_class=HTMLResponse)
 def get_excel_viewer(request: Request):
     return templates.TemplateResponse(request=request, name="excel_viewer.html")
+
+
+@app.get("/variant", response_class=HTMLResponse)
+def get_variant_summary(request: Request):
+    return templates.TemplateResponse(request=request, name="variant_summary.html")
 
 
 class ExcelExportRequest(BaseModel):
@@ -172,15 +182,62 @@ async def convert_pubmed_ids(request: PubmedIdsRequest):
         raise HTTPException(status_code=500, detail=f"Error converting PubMed IDs: {str(e)}")
 
 
-@app.post("/api/excel/generate-llm-summary")
-async def generate_llm_summary(request: str):
-    """WIP: just mocks the function logic for now."""
+class VariantRequest(BaseModel):
+    gene: str
+    change: str
+    level: str
+
+
+@app.post("/api/generate-llm-summary")
+async def generate_llm_summary(request: VariantRequest):
     try:
-        return {"result": "just trying"}
+        variant = Variant(request.gene, request.change, request.level)
+        logger.info(f"Processing variant: {variant}")
+
+        logger.info("Fetching data from SIBiLS Variomes...")
+        data = fetch_variomes_data(variant)
+
+        articles = parse_variomes_data(data, variant)
+
+        if not articles:
+            return {"result": "No articles found for this variant in SIBiLS Variomes."}
+
+        logger.info(f"Found {len(articles)} articles. IDs: {[a.pmcid if a.pmcid != '' else a.pmid for a in articles]}")
+
+        logger.info("Fetching data from PubTator and BiodiversityPMC...")
+        try:
+            update_articles_fulltext(articles)
+        except Exception as e:
+            logger.error(f"Error updating fulltext: {e}")
+
+        try:
+            update_suppl_data(articles, variant)
+        except Exception as e:
+            logger.error(f"Error updating supplementary data: {e}")
+
+        relevant_articles = await relevance_check(variant, articles)
+        if not relevant_articles:
+            return {"result": f"None of the {len(articles)} articles found were identified as relevant by the LLM."}
+            
+        evidences = await extract_evidences(variant, relevant_articles)
+        if not evidences:
+            return {"result": f"Failed to extract any structured evidence from the {len(relevant_articles)} relevant articles."}
+            
+        aggregated_evidence = await aggregate_evidences(variant, evidences)
+
+        # Handle different return types from aggregate_evidences
+        if isinstance(aggregated_evidence, dict):
+            summary = aggregated_evidence.get("narrative_summary", "")
+            if not summary:
+                # Fallback if narrative_summary is missing but we have some result
+                summary = str(aggregated_evidence)
+            return {"result": summary}
+        else:
+            return {"result": str(aggregated_evidence)}
 
     except Exception as e:
-        logger.error(f"Error generating LLM summary: {str(e)}")
-        raise HTTPException(status_code=500, detail=f"Error generating LLM summary: {str(e)}")
+        logger.error(f"Error generating LLM summary: {str(e)}", exc_info=True)
+        raise HTTPException(status_code=500, detail=f"An unexpected error occurred: {str(e)}")
 
 
 if __name__ == "__main__":

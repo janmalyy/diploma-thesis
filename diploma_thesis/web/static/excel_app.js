@@ -168,7 +168,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // -------------------- LLM Summary --------------------
   async function generateLLMSummary(rowId) {
     try {
-      const response = await fetch("/api/excel/generate-llm-summary", {
+      const response = await fetch("/api/generate-llm-summary", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ row_id: rowId })
