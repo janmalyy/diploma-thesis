@@ -3,13 +3,18 @@ from diploma_thesis.utils.helpers import to_machine_comparable, to_human_readabl
 
 
 class Variant:
-    def __init__(self, gene: str, variant: str, level: str):
+    def __init__(self, gene: str, variant: str, level: str, fetch_data: bool = True):
         self.gene: str = gene.upper()
         self.variant: str = variant.upper()
         self.variant_string = f"{self.gene} {self.variant}"
 
         self.terms: list[str] = []
-        self.variant_dict = parse_synvar(fetch_synvar(gene, variant, level))
+        self.variant_dict = {}
+        if fetch_data:
+            self.fetch_synvar_data(level)
+
+    def fetch_synvar_data(self, level: str):
+        self.variant_dict = parse_synvar(fetch_synvar(self.gene, self.variant, level))
 
     def __str__(self):
         return f"Variant {self.variant_string}"

@@ -48,6 +48,7 @@
     .spinner-border {
       width: 3rem;
       height: 3rem;
+      animation-duration: 1.5s;
     }
     #loading-overlay {
       display: none;
@@ -123,8 +124,17 @@
           <div class="spinner-border text-primary mb-3" role="status">
             <span class="visually-hidden">Loading...</span>
           </div>
-          <h5 class="text-primary">Fetching data and generating summary...</h5>
-          <p class="text-muted">This may take a minute.</p>
+          <h5 class="text-primary" id="loading-status">Fetching data and generating summary...</h5>
+          <div id="time-estimate" class="text-muted mb-2" style="display: none;">
+            Estimated time: <span id="eta-value">0</span> seconds
+          </div>
+          <div class="progress w-50 mb-3" style="height: 10px; display: none;" id="relevance-progress-container">
+            <div id="relevance-progress-bar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%"></div>
+          </div>
+          <p class="text-muted" id="loading-subtext">This may take a minute.</p>
+          <button type="button" class="btn btn-outline-danger mt-3" id="stop-btn">
+            Stop Generation
+          </button>
         </div>
 
         <div id="result-container">

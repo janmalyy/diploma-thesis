@@ -70,14 +70,18 @@ extractor_agent = Agent(model, system_prompt=get_prompt("system_extract_evidence
 aggregator_agent = Agent(model, system_prompt=get_prompt("system_aggregate.txt"))
 
 
-async def relevance_check(variant: Variant, articles: list[Article]) -> list[Article]:
+async def relevance_check(variant: Variant, articles: list[Article], progress_callback=None) -> list[Article]:
     if not articles:
         return []
     relevant_articles = []
     prompt = get_prompt("user_check_relevance.txt")
 
-    for article in articles:
+    total = len(articles)
+    for i, article in enumerate(articles):
         try:
+            if progress_callback:
+                await progress_callback(i + 1, "Relevance check")
+            
             replacements = {
                 "_GENE_": variant.gene,
                 "_VARIANT_": variant.variant,
@@ -100,15 +104,17 @@ async def relevance_check(variant: Variant, articles: list[Article]) -> list[Art
     return relevant_articles
 
 
-async def extract_evidences(variant: Variant, articles: list[Article]) -> list[dict]:
+async def extract_evidences(variant: Variant, articles: list[Article], progress_callback=None) -> list[dict]:
     if not articles:
         return []
 
     evidences = []
     prompt = get_prompt("user_extract_evidence.txt")
 
-    for article in articles:
+    for i, article in enumerate(articles):
         try:
+            if progress_callback:
+                await progress_callback(i + 1, "Evidence extraction")
             replacements = {
                 "_GENE_": variant.gene,
                 "_VARIANT_": variant.variant,

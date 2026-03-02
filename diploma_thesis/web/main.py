@@ -1,6 +1,8 @@
 import os
 import io
 import tempfile
+import asyncio
+import json
 from typing import Optional, Any
 
 import pandas as pd
@@ -190,50 +192,116 @@ class VariantRequest(BaseModel):
 
 @app.post("/api/generate-llm-summary")
 async def generate_llm_summary(request: VariantRequest):
-    try:
-        variant = Variant(request.gene, request.change, request.level)
-        logger.info(f"Processing variant: {variant}")
-
-        logger.info("Fetching data from SIBiLS Variomes...")
-        data = fetch_variomes_data(variant)
-
-        articles = parse_variomes_data(data, variant)
-
-        if not articles:
-            return {"result": "No articles found for this variant in SIBiLS Variomes."}
-
-        logger.info(f"Found {len(articles)} articles. IDs: {[a.pmcid if a.pmcid != '' else a.pmid for a in articles]}")
-
-        logger.info("Fetching data from PubTator and BiodiversityPMC...")
+    async def event_generator():
         try:
-            update_articles_fulltext(articles)
-        except Exception as e:
-            logger.error(f"Error updating fulltext: {e}")
+            yield f"data: {json.dumps({'status': 'SynVar fetch'})}\n\n"
+            variant = Variant(request.gene, request.change, request.level, fetch_data=False)
+            variant.fetch_synvar_data(request.level)
+            logger.info(f"Processing variant: {variant}")
 
-        try:
-            update_suppl_data(articles, variant)
-        except Exception as e:
-            logger.error(f"Error updating supplementary data: {e}")
+            yield f"data: {json.dumps({'status': 'SIBiLS fetch'})}\n\n"
+            data = fetch_variomes_data(variant)
+            articles = parse_variomes_data(data, variant)
 
-        relevant_articles = await relevance_check(variant, articles)
-        if not relevant_articles:
-            return {"result": f"None of the {len(articles)} articles found were identified as relevant by the LLM."}
+            if not articles:
+                yield f"data: {json.dumps({'result': 'No articles found for this variant in SIBiLS Variomes.'})}\n\n"
+                return
+
+            yield f"data: {json.dumps({'status': 'Annotation', 'article_count': len(articles)})}\n\n"
+            logger.info(f"Found {len(articles)} articles. IDs: {[a.pmcid if a.pmcid != '' else a.pmid for a in articles]}")
+
+            # Total LLM calls estimate:
+            # - relevance_check: len(articles)
+            # - extract_evidences: roughly len(articles)/2 (guess) + 1 for aggregation
+            # We will update total_calls as we know more.
+            total_llm_calls = len(articles) + 1 # Initial estimate
+            yield f"data: {json.dumps({'total_calls': total_llm_calls})}\n\n"
+
+            logger.info("Fetching data from PubTator and BiodiversityPMC...")
+            try:
+                update_articles_fulltext(articles)
+            except Exception as e:
+                logger.error(f"Error updating fulltext: {e}")
+
+            try:
+                update_suppl_data(articles, variant)
+            except Exception as e:
+                logger.error(f"Error updating supplementary data: {e}")
+
+            queue = asyncio.Queue()
+
+            async def progress_callback_queue(current, phase):
+                await queue.put({"current": current, "phase": phase})
+
+            # Start relevance check in a task
+            task = asyncio.create_task(relevance_check(variant, articles, progress_callback_queue))
             
-        evidences = await extract_evidences(variant, relevant_articles)
-        if not evidences:
-            return {"result": f"Failed to extract any structured evidence from the {len(relevant_articles)} relevant articles."}
+            completed_calls = 0
+            while not task.done():
+                try:
+                    # Wait for a progress message with timeout to keep the loop alive
+                    msg = await asyncio.wait_for(queue.get(), timeout=0.1)
+                    completed_calls = msg["current"]
+                    yield f"data: {json.dumps({'status': f'{msg['phase']}: {msg['current']}/{len(articles)}', 'completed_calls': completed_calls})}\n\n"
+                except asyncio.TimeoutError:
+                    continue
+
+            # Process any remaining messages in the queue
+            while not queue.empty():
+                msg = await queue.get()
+                completed_calls = msg["current"]
+                yield f"data: {json.dumps({'status': f'{msg['phase']}: {msg['current']}/{len(articles)}', 'completed_calls': completed_calls})}\n\n"
+
+            relevant_articles = await task
             
-        aggregated_evidence = await aggregate_evidences(variant, evidences)
+            if not relevant_articles:
+                yield f"data: {json.dumps({'result': f'None of the {len(articles)} articles found were identified as relevant by the LLM.'})}\n\n"
+                return
+                
+            # Now we know how many relevant articles there are, update total_calls
+            relevance_calls = len(articles)
+            extraction_calls = len(relevant_articles)
+            aggregation_calls = 1
+            total_llm_calls = relevance_calls + extraction_calls + aggregation_calls
+            yield f"data: {json.dumps({'total_calls': total_llm_calls, 'completed_calls': relevance_calls})}\n\n"
 
-        # Return the full aggregated evidence dictionary
-        if isinstance(aggregated_evidence, dict):
-            return {"result": aggregated_evidence}
-        else:
-            return {"result": {"narrative_summary": str(aggregated_evidence), "structured_summary": None}}
+            # Evidence extraction
+            task = asyncio.create_task(extract_evidences(variant, relevant_articles, progress_callback_queue))
+            yield f"data: {json.dumps({'article_count': len(relevant_articles), 'phase': 'relevant articles'})}\n\n"
+            
+            while not task.done():
+                try:
+                    msg = await asyncio.wait_for(queue.get(), timeout=0.1)
+                    completed_calls = relevance_calls + msg["current"]
+                    yield f"data: {json.dumps({'status': f'{msg['phase']}: {msg['current']}/{len(relevant_articles)}', 'completed_calls': completed_calls})}\n\n"
+                except asyncio.TimeoutError:
+                    continue
+            
+            while not queue.empty():
+                msg = await queue.get()
+                completed_calls = relevance_calls + msg["current"]
+                yield f"data: {json.dumps({'status': f'{msg['phase']}: {msg['current']}/{len(relevant_articles)}', 'completed_calls': completed_calls})}\n\n"
 
-    except Exception as e:
-        logger.error(f"Error generating LLM summary: {str(e)}", exc_info=True)
-        raise HTTPException(status_code=500, detail=f"An unexpected error occurred: {str(e)}")
+            evidences = await task
+            if not evidences:
+                yield f"data: {json.dumps({'result': f'Failed to extract any structured evidence from the {len(relevant_articles)} relevant articles.'})}\n\n"
+                return
+                
+            yield f"data: {json.dumps({'status': 'Aggregation', 'completed_calls': relevance_calls + extraction_calls, 'article_count': 0})}\n\n"
+            aggregated_evidence = await aggregate_evidences(variant, evidences)
+            yield f"data: {json.dumps({'completed_calls': total_llm_calls})}\n\n"
+
+            # Return the full aggregated evidence dictionary
+            if isinstance(aggregated_evidence, dict):
+                yield f"data: {json.dumps({'result': aggregated_evidence})}\n\n"
+            else:
+                yield f"data: {json.dumps({'result': {'narrative_summary': str(aggregated_evidence), 'structured_summary': None}})}\n\n"
+
+        except Exception as e:
+            logger.error(f"Error generating LLM summary: {str(e)}", exc_info=True)
+            yield f"data: {json.dumps({'error': str(e)})}\n\n"
+
+    return StreamingResponse(event_generator(), media_type="text/event-stream")
 
 
 if __name__ == "__main__":
