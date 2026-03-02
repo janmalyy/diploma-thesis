@@ -293,9 +293,10 @@ async def generate_llm_summary(request: VariantRequest):
 
             # Return the full aggregated evidence dictionary
             if isinstance(aggregated_evidence, dict):
+                aggregated_evidence["article_evidences"] = evidences
                 yield f"data: {json.dumps({'result': aggregated_evidence})}\n\n"
             else:
-                yield f"data: {json.dumps({'result': {'narrative_summary': str(aggregated_evidence), 'structured_summary': None}})}\n\n"
+                yield f"data: {json.dumps({'result': {'narrative_summary': str(aggregated_evidence), 'structured_summary': None, 'article_evidences': evidences}})}\n\n"
 
         except Exception as e:
             logger.error(f"Error generating LLM summary: {str(e)}", exc_info=True)

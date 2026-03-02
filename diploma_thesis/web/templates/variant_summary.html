@@ -44,6 +44,44 @@
       font-size: 0.9rem;
       margin-right: 5px;
       margin-bottom: 5px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .evidence-badge:hover {
+      transform: scale(1.05);
+      background-color: #0dcaf0 !important;
+    }
+    .dropdown-toggle::after {
+      vertical-align: 0.125em;
+    }
+    .evidence-badge.dropdown-toggle {
+      display: inline-flex;
+      align-items: center;
+      padding-right: 0.8em;
+    }
+    .evidence-badge.dropdown-toggle::after {
+      margin-left: 0.5em;
+    }
+    .dropdown-item {
+      cursor: pointer;
+    }
+    .ref-link {
+      color: #0d6efd;
+      text-decoration: none;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    .ref-link:hover {
+      text-decoration: underline;
+    }
+    .evidence-item {
+      border-left: 4px solid #0d6efd;
+      padding-left: 15px;
+      margin-bottom: 20px;
+    }
+    .evidence-type-badge {
+      font-size: 0.75rem;
+      text-transform: uppercase;
     }
     .spinner-border {
       width: 3rem;
@@ -65,6 +103,44 @@
     }
     .nav-tabs {
       margin-bottom: 20px;
+    }
+
+    /* Tabs and Evidence Navigation */
+    .modal-header .nav-tabs {
+        margin-bottom: -1px;
+        border-bottom: none;
+    }
+    .modal-header .nav-link {
+        color: rgba(255, 255, 255, 0.7);
+        border: none;
+        padding: 0.5rem 1rem;
+    }
+    .modal-header .nav-link:hover {
+        color: white;
+        background: rgba(255, 255, 255, 0.1);
+    }
+    .modal-header .nav-link.active {
+        color: white;
+        background: rgba(255, 255, 255, 0.2);
+        font-weight: bold;
+        border-radius: 4px 4px 0 0;
+    }
+    .modal-footer .btn-nav {
+        min-width: 100px;
+    }
+    
+    .article-card {
+        transition: transform 0.2s, box-shadow 0.2s;
+        cursor: pointer;
+    }
+    .article-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .article-card:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.5);
+        border-color: #0d6efd;
     }
   </style>
 </head>
@@ -175,10 +251,58 @@
               </div>
             </div>
           </div>
+          
+          <div id="grouped-evidence-container" style="display: none;" class="mt-4">
+            <div class="card">
+              <div class="card-header bg-dark text-white">
+                <h5 class="mb-0">Detailed Evidence by Article</h5>
+              </div>
+              <div class="card-body p-0" id="grouped-evidence-body">
+                <!-- Grouped evidence cards go here -->
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="alert alert-danger mt-4" id="error-alert" style="display: none;">
           <strong>Error!</strong> <span id="error-message"></span>
+        </div>
+
+        <div class="mt-5 mb-4 text-center">
+          <p class="text-muted small mb-2">Development & Testing</p>
+          <button type="button" class="btn btn-sm btn-outline-secondary" id="test-ui-btn">
+            Test UI with Mock Data
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Article Evidence Modal -->
+  <div class="modal fade" id="articleEvidenceModal" tabindex="-1" aria-labelledby="articleEvidenceModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white flex-column align-items-stretch">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <h5 class="modal-title" id="articleEvidenceModalLabel">Extracted Evidence</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <ul class="nav nav-tabs" id="modal-evidence-tabs" style="display: none;">
+            <!-- Tabs will be dynamically added here -->
+          </ul>
+        </div>
+        <div class="modal-body" id="article-evidence-body">
+          <!-- Evidence content goes here -->
+        </div>
+        <div class="modal-footer d-flex justify-content-between">
+          <div>
+            <button type="button" class="btn btn-outline-secondary btn-nav me-2" id="prev-evidence-btn" style="display: none;">&larr; Previous</button>
+            <button type="button" class="btn btn-outline-secondary btn-nav" id="next-evidence-btn" style="display: none;">Next &rarr;</button>
+          </div>
+          <div>
+            <button type="button" class="btn btn-outline-primary me-2" id="copy-evidence-btn">Copy Evidence</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
         </div>
       </div>
     </div>
