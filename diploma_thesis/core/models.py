@@ -4,9 +4,9 @@ from diploma_thesis.utils.helpers import to_machine_comparable, to_human_readabl
 
 class Variant:
     def __init__(self, gene: str, variant: str, level: str):
-        self.gene: str = gene
-        self.variant: str = variant
-        self.variant_string = f"{gene}:{variant}"
+        self.gene: str = gene.upper()
+        self.variant: str = variant.upper()
+        self.variant_string = f"{self.gene} {self.variant}"
 
         self.terms: list[str] = []
         self.variant_dict = parse_synvar(fetch_synvar(gene, variant, level))

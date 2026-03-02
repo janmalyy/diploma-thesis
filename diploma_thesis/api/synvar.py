@@ -17,7 +17,7 @@ def fetch_synvar(gene: str | None, variant: str, level: str) -> etree._Element |
     Use caching for faster development.
     # todo improve caching cause now we search only for exactly same filename so there can be more files for the same variant with different naming
     """
-    logger.info(f"Fetching data from SynVar for {gene}:{variant}, level {level}...")
+    logger.info(f"Fetching data from SynVar for {gene} {variant}, level {level}...")
 
     if level not in ("protein", "transcript", "genome", "dbsnp", "cosmic"):
         raise ValueError(f"Invalid synvar level: {level}")
@@ -26,7 +26,7 @@ def fetch_synvar(gene: str | None, variant: str, level: str) -> etree._Element |
         raise ValueError(f"Gene is required for level {level}")
 
     synvar_dir = DATA_DIR / "synvar_cache"
-    filename = re.sub(r'[<>:"/\\|?*]', "_", gene + "_" + variant + "_" + level)
+    filename = re.sub(r'[<>:"/\\|?*]', "_", gene + "_" + variant + "_" + level).upper()
     cache_path = synvar_dir / f"{filename}.xml"
     if cache_path.exists():
         try:

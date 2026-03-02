@@ -13,7 +13,7 @@ def fetch_variomes_data(variant: Variant) -> dict:
     """
     variant_string = variant.variant_string
     variomes_dir = DATA_DIR / "variomes_cache"
-    filename = re.sub(r'[<>:"/\\|?*]', "_", variant_string)
+    filename = re.sub(r'[<>:"/\\|?*]', "_", variant_string).upper()
     cache_path = variomes_dir / f"{filename}.json"
     if cache_path.exists():
         try:
