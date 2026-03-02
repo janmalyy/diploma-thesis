@@ -225,15 +225,11 @@ async def generate_llm_summary(request: VariantRequest):
             
         aggregated_evidence = await aggregate_evidences(variant, evidences)
 
-        # Handle different return types from aggregate_evidences
+        # Return the full aggregated evidence dictionary
         if isinstance(aggregated_evidence, dict):
-            summary = aggregated_evidence.get("narrative_summary", "")
-            if not summary:
-                # Fallback if narrative_summary is missing but we have some result
-                summary = str(aggregated_evidence)
-            return {"result": summary}
+            return {"result": aggregated_evidence}
         else:
-            return {"result": str(aggregated_evidence)}
+            return {"result": {"narrative_summary": str(aggregated_evidence), "structured_summary": None}}
 
     except Exception as e:
         logger.error(f"Error generating LLM summary: {str(e)}", exc_info=True)
