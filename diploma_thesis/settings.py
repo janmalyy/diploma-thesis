@@ -21,6 +21,8 @@ E_INFRA_API_KEY = os.getenv("E_INFRA_API_KEY")
 PACKAGE_DIR = Path(__file__).parent  # = your/home/directory/diploma_thesis/diploma_thesis
 DATA_DIR = PACKAGE_DIR / "data"
 
+EINFRA_URL = "https://llm.ai.e-infra.cz/v1/"
+
 logging.basicConfig(
  level=logging.INFO,
  format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',

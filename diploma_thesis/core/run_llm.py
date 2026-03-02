@@ -5,15 +5,13 @@ from pydantic_ai import Agent
 from pydantic_ai.models.openai import OpenAIChatModel
 from pydantic_ai.providers.openai import OpenAIProvider
 
-from diploma_thesis.settings import E_INFRA_API_KEY, DATA_DIR
+from diploma_thesis.settings import E_INFRA_API_KEY, DATA_DIR, PACKAGE_DIR, EINFRA_URL, logger
 
 from diploma_thesis.core.models import Article, Variant
 
-EINFRA_URL = "https://chat.ai.e-infra.cz/api"
-
 
 def get_prompt(path: str) -> str:
-    with open(DATA_DIR / "prompts" / path) as f:
+    with open(PACKAGE_DIR / "prompts" / path) as f:
         return f.read()
 
 

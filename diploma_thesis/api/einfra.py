@@ -4,11 +4,11 @@ from pydantic_ai import Agent
 from pydantic_ai.models.openai import OpenAIChatModel
 from pydantic_ai.providers.openai import OpenAIProvider
 
-from diploma_thesis.settings import E_INFRA_API_KEY, DATA_DIR
+from diploma_thesis.settings import E_INFRA_API_KEY, DATA_DIR, EINFRA_URL
 
 
 def fetch_list_of_supported_einfra_models(api_token: str) -> list[dict]:
-    url = "https://chat.ai.e-infra.cz/api/models"
+    url = EINFRA_URL + "models"
     headers = {"Authorization": f"Bearer {api_token}"}
 
     response = requests.get(url, headers=headers, timeout=30)
@@ -29,7 +29,7 @@ async def run_einfra(prompt: str, model_name: str) -> str:
     model = OpenAIChatModel(
         model_name=model_name,
         provider=OpenAIProvider(
-            base_url='https://chat.ai.e-infra.cz/api',
+            base_url=EINFRA_URL,
             api_key=E_INFRA_API_KEY,
         ),
     )
@@ -47,4 +47,5 @@ async def main() -> None:
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    # asyncio.run(main())
+    print(fetch_list_of_supported_einfra_models(E_INFRA_API_KEY))
