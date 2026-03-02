@@ -5,6 +5,7 @@ from diploma_thesis.utils.helpers import to_machine_comparable, to_human_readabl
 class Variant:
     def __init__(self, gene: str, variant: str, level: str):
         self.gene: str = gene
+        self.variant: str = variant
         self.variant_string = f"{gene}:{variant}"
 
         self.terms: list[str] = []

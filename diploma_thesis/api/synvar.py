@@ -10,8 +10,9 @@ from diploma_thesis.utils.helpers import uniq, normalize_variant, write_xml
 def fetch_synvar(gene: str | None, variant: str, level: str) -> etree._Element | None:
     """
     Description: https://sibils.org/api/synvar/
-    We use map=true: Output syntactic variations even if the variant could not be mapped on genome.
+    We use map=false: Output syntactic variations even if the variant could not be mapped on genome. (That is we don't check whether this variant exists on the genome.)
     We use iso=true: Validate on and generate synonyms for isoforms.
+    more about map and iso here: https://gemini.google.com/share/75130b9596be
     Gene can be None if the level is dbsnp or cosmic.
     Use caching for faster development.
     # todo improve caching cause now we search only for exactly same filename so there can be more files for the same variant with different naming
@@ -41,7 +42,7 @@ def fetch_synvar(gene: str | None, variant: str, level: str) -> etree._Element |
     else:
         try:
             r = requests.get(
-                url=f"https://synvar.sibils.org/generate/literature/fromMutation?ref={gene}&variant={variant}&level={level}&map=true&iso=true")
+                url=f"https://synvar.sibils.org/generate/literature/fromMutation?ref={gene}&variant={variant}&level={level}&map=false&iso=true")
             r.raise_for_status()
             root = etree.fromstring(r.content)
         except requests.RequestException as e:
@@ -49,13 +50,19 @@ def fetch_synvar(gene: str | None, variant: str, level: str) -> etree._Element |
         except etree.XMLSyntaxError as e:
             raise RuntimeError(f"Invalid XML returned by SynVar for: {gene}, {variant}") from e
 
-        write_xml(root, cache_path)     # todo improve caching to store a list of invalid variants - možná(?)
-
         if root.xpath("//error"):
+            write_xml(root, cache_path, only_print=True)
             raise ValueError(f"SynVar returned error for: {gene}, {variant}")
 
         if root.xpath("//variant[@valid='false']"):
-            raise ValueError(f"SynVar could not find valid variant for: {gene}, {variant}")
+            write_xml(root, cache_path, only_print=True)
+            raise ValueError(f"SynVar returned this to be a false variant: {gene}, {variant}")
+
+        if not root.xpath("//variant"):
+            write_xml(root, cache_path, only_print=True)
+            raise ValueError(f"SynVar returned no data for variant: {gene}, {variant}.")
+
+        write_xml(root, cache_path)     # todo improve caching to store a list of invalid variants - možná(?)
 
         return root
 
@@ -120,4 +127,7 @@ def parse_synvar(root: etree._Element) -> dict:
 
 
 if __name__ == '__main__':
-    fetch_synvar("BRCA1", "p.Cys61Gly", "protein")
+    fetch = fetch_synvar("IVD", "p.L106fs", "protein")
+    # fetch = fetch_synvar("EGFR", "E746_A750del", "protein")
+    parsed = parse_synvar(fetch)
+    print(parsed)

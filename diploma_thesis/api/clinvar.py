@@ -1,12 +1,10 @@
-import re
-import time
 
 import requests
 from lxml import etree
 from rapidfuzz import fuzz
 
 from diploma_thesis.settings import DATA_DIR
-from diploma_thesis.utils.helpers import write_xml, make_batches, THREE_TO_ONE_PATTERN, THREE_TO_ONE
+from diploma_thesis.utils.helpers import write_xml, extend_variant_name
 
 ENTREZ_BASE_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
 CLINVAR_DB = "clinvar"
@@ -121,14 +119,8 @@ def parse_clinical_significance(query: str, efetch: etree._Element) -> dict:
 if __name__ == "__main__":
     with open(DATA_DIR / "brca_variants.txt", "r", encoding="utf-8") as f:
         lines = [line.strip() for line in f.readlines()]
-    ONE_TO_THREE = {v: k for k, v in THREE_TO_ONE.items()}
-    ONE_TO_THREE_PATTERN = re.compile("|".join(ONE_TO_THREE.keys()))
-    print(ONE_TO_THREE_PATTERN)
     for variant in lines[:10]:
-        gene, change = variant.split()
-        change = change.lower()
-        change = ONE_TO_THREE_PATTERN.sub(lambda m: ONE_TO_THREE[m.group()], change)
-        query_str = gene + f" p.{change}"
+        query_str = extend_variant_name(variant)
         ids = clinvar_esearch_variant_ids(query_str)
         print(f"{query_str}: {ids}")
 

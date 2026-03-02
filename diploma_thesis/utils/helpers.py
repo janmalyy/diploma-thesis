@@ -42,7 +42,7 @@ def to_machine_comparable(text: str) -> str:
     return " ".join(text.split()).lower()
 
 
-def write_xml(root, filename: str | Path, make_machine_comparable: bool = False) -> None:
+def write_xml(root, filename: str | Path, make_machine_comparable: bool = False, only_print: bool = False) -> None:
     """Writes an XML element tree to a file with pretty formatting with indents."""
     if make_machine_comparable:
         for passage in root.xpath(".//passage"):
@@ -54,8 +54,15 @@ def write_xml(root, filename: str | Path, make_machine_comparable: bool = False)
     xml_str = etree.tostring(root, encoding="utf-8")
     parsed_xml = parseString(xml_str).toprettyxml(indent="  ")
     lines = [line for line in parsed_xml.splitlines() if line.strip()]
-    with open(filename, "w", encoding="utf-8") as f:
-        f.write("\n".join(lines))
+
+    if only_print:
+        print("Printing XML to console:")
+        for line in lines:
+            print(line)
+        print("End of XML.")
+    else:
+        with open(filename, "w", encoding="utf-8") as f:
+            f.write("\n".join(lines))
 
 
 THREE_TO_ONE = {
@@ -84,6 +91,9 @@ THREE_TO_ONE = {
 }
 THREE_TO_ONE_PATTERN = re.compile("|".join(THREE_TO_ONE.keys()))
 
+ONE_TO_THREE = {v: k for k, v in THREE_TO_ONE.items()}
+ONE_TO_THREE_PATTERN = re.compile("|".join(ONE_TO_THREE.keys()))
+
 
 def uniq(values: list[str]) -> list[str]:
     """Remove duplicates from a list while preserving order."""
@@ -105,3 +115,15 @@ def normalize_variant(v: str) -> str:
     v = re.sub(r"\bto\b", "", v)
     v = THREE_TO_ONE_PATTERN.sub(lambda m: THREE_TO_ONE[m.group()], v)
     return v
+
+
+def extend_variant_name(variant: str) -> str:
+    """
+    Example:
+        input: BRCA1 A7C
+        output: BRCA1 p.arg7cys
+    """
+    gene, change = variant.split()
+    change = change.lower()
+    change = ONE_TO_THREE_PATTERN.sub(lambda m: ONE_TO_THREE[m.group()], change)
+    return gene + f" p.{change}"

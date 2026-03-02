@@ -1,7 +1,7 @@
 import os
 import io
 import tempfile
-from typing import List, Optional, Any
+from typing import Optional, Any
 
 import pandas as pd
 from fastapi import FastAPI, Request, HTTPException, UploadFile, File
@@ -32,7 +32,7 @@ def get_excel_viewer(request: Request):
 
 
 class ExcelExportRequest(BaseModel):
-    data: List[List[Optional[Any]]]
+    data: list[list[Optional[Any]]]
     filename: str
 
 
@@ -156,7 +156,7 @@ async def export_excel_csv(request: ExcelExportRequest):
 
 
 class PubmedIdsRequest(BaseModel):
-    ids: List[str]
+    ids: list[str]
 
 
 @app.post("/api/pubmed/convert")
@@ -172,25 +172,11 @@ async def convert_pubmed_ids(request: PubmedIdsRequest):
         raise HTTPException(status_code=500, detail=f"Error converting PubMed IDs: {str(e)}")
 
 
-class RowIdRequest(BaseModel):
-    row_id: str
-
-
 @app.post("/api/excel/generate-llm-summary")
-async def generate_llm_summary(request: RowIdRequest):
+async def generate_llm_summary(request: str):
     """WIP: just mocks the function logic for now."""
     try:
-        # row_id = request.row_id
-        # return {"result": f"Generated llm summary for this row_id: {row_id}."}
-        # TODO get the true ids_list, this is just a hardcoded example
-        ids_list = [26801900, 24944790, 19104657, 26099996]
-        gene_symbol = "BRCA1"
-        variant = "3_149238596_-/TTAA"
-        converted_ids_dict = convert_ids(ids_list, "pmid")
-        context = """this is mocked context. Please return: 'WIP, add context'."""
-        prompt = """this is mocked prompt. Please return: 'WIP, add prompt'."""
-        response = await run_einfra(prompt, model_name="gpt-oss-120b")
-        return {"result": response}
+        return {"result": "just trying"}
 
     except Exception as e:
         logger.error(f"Error generating LLM summary: {str(e)}")

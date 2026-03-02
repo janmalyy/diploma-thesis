@@ -73,6 +73,8 @@ async def relevance_check(variant: Variant, articles: list[Article]) -> list[Art
 
     for article in articles:
         replacements = {
+            "_GENE_": variant.gene,
+            "_VARIANT_": variant.variant,
             "VARIANT_INFO": variant.variant_dict,
         }
         replacements.update(article.get_structured_context())
@@ -102,7 +104,10 @@ async def extract_evidences(variant: Variant, articles: list[Article]) -> list[d
     prompt = get_prompt("user_extract_evidence.txt")
 
     for article in articles:
-        replacements = {"VARIANT_INFO": variant.variant_dict}
+        replacements = {
+            "_GENE_": variant.gene,
+            "_VARIANT_": variant.variant,
+            "VARIANT_INFO": variant.variant_dict}
         replacements.update(article.get_structured_context())
 
         ready_prompt = build_prompt(replacements, prompt)
@@ -128,6 +133,8 @@ async def aggregate_evidences(variant: Variant, evidences: list[dict]) -> dict:
     prompt = get_prompt("user_aggregate.txt")
 
     replacements = {
+        "_GENE_": variant.gene,
+        "_VARIANT_": variant.variant,
         "VARIANT_INFO": variant.variant_dict,
         "STRUCTURED_EVIDENCE_LIST": json.dumps(evidences)
     }
