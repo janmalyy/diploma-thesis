@@ -1,0 +1,311 @@
+from lxml import etree
+
+from diploma_thesis.core.models import Article, TextBlock
+from diploma_thesis.utils.helpers import to_human_readable
+from diploma_thesis.utils.text_matching import assign_snippets_to_blocks
+
+
+def apply_annotations_pubtator(passage: etree._Element, meta: dict) -> str:
+    annotations = []
+    text = meta["text"]
+
+    for ann in passage.xpath("annotation"):
+        ann_type_elem = ann.xpath("./infon[@key='type']")
+        ann_type = ann_type_elem[0].text if ann_type_elem else ""
+        if ann_type == "Species":
+            continue
+
+        loc = ann.find("location")
+        if loc is None:
+            continue
+
+        local_offset = int(loc.get("offset")) - meta["offset"]
+        length = int(loc.get("length"))
+
+        ann_text_elem = ann.find("text")
+        annotations.append({
+            "start": local_offset,
+            "end": local_offset + length,
+            "type": ann_type,
+            "text": ann_text_elem.text if ann_text_elem is not None else "",
+        })
+
+    annotations.sort(key=lambda x: x["start"], reverse=True)
+    annotated_text = text.raw_text
+
+    for ann in annotations:
+        start, end = ann["start"], ann["end"]
+        label = f"[{ann['type']}: {annotated_text[start:end]}]"
+        annotated_text = annotated_text[:start] + label + annotated_text[end:]
+
+    return to_human_readable(annotated_text)
+
+
+def parse_pubtator_document(article: Article, document: etree._Element) -> None:
+    """
+    Parses BioC-XML PubTator document using competitive snippet assignment.
+    """
+    blocks: list[tuple[TextBlock, etree._Element]] = []
+    passage_meta: dict[etree._Element, dict] = {}
+
+    for passage in document.xpath(".//passage"):
+        text_elem = passage.find("text")
+        if text_elem is None or not text_elem.text:
+            continue
+
+        text = TextBlock(text_elem.text)
+
+        passage_type_elem = passage.xpath("./infon[@key='type']")
+        passage_type = passage_type_elem[0].text if passage_type_elem else ""
+
+        offset_elem = passage.find("offset")
+        passage_offset = int(offset_elem.text) if offset_elem is not None else 0
+
+        blocks.append((text, passage))
+        passage_meta[passage] = {
+            "type": passage_type,
+            "offset": passage_offset,
+            "text": text,
+        }
+
+    # -------- Competitive assignment --------
+    if "pmc" in article.data_sources:
+        assignments = assign_snippets_to_blocks(
+            blocks,
+            article.fulltext_snippets,
+        )
+        title_tag_name = "front"
+    elif article.data_sources == {"medline"}:
+        assignments = {}
+        title_tag_name = "title"
+    elif article.data_sources == {"supp"}:
+        assignments = {}
+        title_tag_name = "front"
+    else:
+        raise ValueError(f"Unsupported data source: {article.data_sources}")
+
+    annotated_paragraphs: list[str] = []
+
+    for passage, meta in passage_meta.items():
+        passage_type = meta["type"]
+
+        if passage_type in (title_tag_name, "abstract") or passage in assignments.values():
+            annotated_text = apply_annotations_pubtator(passage, meta)
+
+            if passage_type in title_tag_name:
+                article.title = annotated_text
+            elif passage_type == "abstract":
+                article.abstract += annotated_text
+            else:
+                annotated_paragraphs.append(annotated_text)
+
+    article.paragraphs = annotated_paragraphs
+
+    for snippet in assignments:
+        article.fulltext_snippets.remove(snippet)
+
+    if article.fulltext_snippets:
+        article.paragraphs += [
+            s.human_readable for s in article.fulltext_snippets
+        ]
+
+
+def apply_annotations_biodiversity_pmc(text: str, sentence_num: int, annotations: list[dict]) -> str:
+    """
+    There is magic happening inside because we must somehow resolve overlapping annotations.
+    """
+    if not text:
+        return ""
+
+    relevant = [
+        ann for ann in annotations
+        if ann.get("sentence_number") == sentence_num
+            and ann.get("start_index") is not None
+            and ann.get("end_index") is not None
+            and ann.get("type")
+    ]
+
+    span_map: dict[tuple[int, int], set[str]] = {}
+    for ann in relevant:
+        span = (ann["start_index"], ann["end_index"])
+        span_map.setdefault(span, set()).add(ann["type"])
+
+    sorted_spans = sorted(
+        span_map.items(),
+        key=lambda x: (x[0][1] - x[0][0]),
+        reverse=True,
+    )
+
+    occupied = [False] * len(text)
+    final_spans: list[tuple[int, int, str]] = []
+
+    for (start, end), types in sorted_spans:
+        if start < 0 or end > len(text):
+            continue
+        if any(occupied[start:end]):
+            continue
+
+        for i in range(start, end):
+            occupied[i] = True
+
+        final_spans.append(
+            (start, end, "/".join(sorted(types)))
+        )
+
+    final_spans.sort(key=lambda x: x[0], reverse=True)
+
+    annotated = text
+    for start, end, label in final_spans:
+        entity = annotated[start:end]
+        annotated = (
+                annotated[:start]
+                + f"[{label}: {entity}]"
+                + annotated[end:]
+        )
+
+    return annotated
+
+
+def parse_biodiversity_pmc_document(article: Article, article_data: dict) -> None:
+    """
+    Parses SIBiLS JSON PMC article using competitive snippet assignment.
+    """
+    document = article_data.get("document", {})
+    sentences = article_data.get("sentences", [])
+    annotations = [
+        ann for ann in article_data.get("annotations", [])
+        if ann.get("concept_source") in ("uniprot_swissprot", "nextprot")
+    ]
+
+    # -------- Title --------
+    title = document.get("title")
+    if title:
+        article.title = apply_annotations_biodiversity_pmc(title, 1, annotations)
+
+    # -------- Abstract --------
+    abstract_parts: list[str] = []
+    for s in sentences:
+        if s.get("field") != "abstract":
+            continue
+        annotated = apply_annotations_biodiversity_pmc(
+            s.get("sentence", ""),
+            s.get("sentence_number"),
+            annotations,
+        )
+        if annotated:
+            abstract_parts.append(annotated)
+
+    if abstract_parts:
+        article.abstract = " ".join(abstract_parts)
+
+    if "pmc" not in article.data_sources:
+        return
+
+    # -------- Collect paragraph sentences --------
+    body_sentences = [
+        s for s in sentences
+        if s.get("field") == "text" or s.get("tag") == "table"
+    ]
+
+    paragraphs: dict[str, list[dict]] = {}
+    for s in body_sentences:
+        cid = s.get("content_id")
+        if cid:
+            paragraphs.setdefault(cid, []).append(s)
+
+    # -------- Full paragraph texts --------
+    all_contents: dict[str, str] = {}
+    for section_key in ("body_sections", "back_sections", "float_sections"):
+        for section in document.get(section_key, []):
+            for content in section.get("contents", []):
+                if content.get("id"):
+                    all_contents[content["id"]] = content.get("text", "")
+
+    # -------- Build matchable blocks --------
+    blocks: list[tuple[TextBlock, list[dict]]] = []
+
+    for para_sentences in paragraphs.values():
+        is_table = para_sentences[0].get("tag") == "table"
+
+        if is_table:
+            for s in para_sentences:
+                if s.get("sentence"):
+                    blocks.append((TextBlock(s["sentence"]), para_sentences))
+        else:
+            pid = para_sentences[0].get("content_id")
+            text = all_contents.get(pid)
+            if text:
+                blocks.append((TextBlock(text), para_sentences))
+
+    # -------- Competitive assignment --------
+    assignments = assign_snippets_to_blocks(
+        blocks,
+        article.fulltext_snippets,
+    )
+
+    used_paragraphs: set[int] = set()
+    relevant_paragraphs: list[str] = []
+
+    for snippet, para_sentences in assignments.items():
+        pid = id(para_sentences)
+        if pid in used_paragraphs:
+            continue
+        used_paragraphs.add(pid)
+
+        para_sentences.sort(key=lambda x: x.get("sentence_number", 0))
+        annotated_sentences: list[str] = []
+
+        for s in para_sentences:
+            raw = s.get("sentence")
+            if not raw:
+                continue
+            annotated = apply_annotations_biodiversity_pmc(
+                raw,
+                s.get("sentence_number"),
+                annotations,
+            )
+            annotated_sentences.append(annotated)
+
+        if annotated_sentences:
+            relevant_paragraphs.append(" ".join(annotated_sentences))
+
+    # -------- Finalize --------
+    article.paragraphs = relevant_paragraphs
+
+    for snippet in assignments:
+        article.fulltext_snippets.remove(snippet)
+
+    if article.fulltext_snippets:
+        article.paragraphs += [
+            s.human_readable for s in article.fulltext_snippets
+        ]
+
+
+def extract_attributes(article: Article, document: etree._Element):
+    """Extracts article attributes. Mock implementation."""  # TODO
+    # Study Type
+    text_nodes = document.xpath(".//text")
+    combined_text = " ".join([t.text for t in text_nodes if t.text])
+
+    if "clinical trial" in combined_text.lower():
+        article.study_type = "Clinical Trial"
+    elif "case report" in combined_text.lower():
+        article.study_type = "Case Report"
+    else:
+        article.study_type = "Observational Study"
+
+    # Disease
+    for ann in document.xpath(".//annotation"):
+        ann_type_elem = ann.xpath("./infon[@key='type']")
+        if ann_type_elem and ann_type_elem[0].text == "Disease":
+            text_elem = ann.find("text")
+            article.disease = text_elem.text if text_elem is not None else ""
+            break
+
+
+def annotate_raw_text(text: str) -> str:
+    """
+    Cleans raw text and submits it to PubTator for annotations.
+    Mock implementation as original was not working.
+    """
+    return f"[Annotated Raw Text Mock]\n{text}"  # TODO

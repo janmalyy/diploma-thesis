@@ -1,0 +1,43 @@
+Genetic variant:
+Gene: _GENE_, Variant: _VARIANT_
+VARIANT_INFO
+
+Article data:
+Article ID: ARTICLE_ID
+Title: TITLE
+
+Abstract:
+ABSTRACT
+
+Extracted mentions from text:
+FULLTEXT_MENTIONS
+
+Extracted mentions from supplementary data:
+SUPPLEMENTARY_DATA_MENTIONS
+
+Task:
+Extract all explicit evidence in this article related to the specified variant.
+
+Guidelines:
+- Only include evidence explicitly stated in the text.
+- Do not upgrade or reinterpret pathogenicity claims.
+- Distinguish evidence types (functional, clinical, population, computational).
+- If the variant is only mentioned without interpretation, state so.
+
+Output JSON only, using this schema:
+{
+  "article_id": string,
+  "variant_confirmed": boolean,
+  "evidence": [
+    {
+      "evidence_type": "functional | clinical | population | computational | other",
+      "claim": "supports pathogenicity | supports benignity | conflicting | unclear | no claim",
+      "description": string,
+      "study_context": string,
+      "strength": "low | moderate | high | unclear",
+      "quoted_text": string
+    }
+  ],
+  "overall_article_conclusion": string,
+  "uncertainties_or_limitations": string
+}

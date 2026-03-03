@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LLM Variant Summary Generator</title>
+  <link rel="icon" type="image/png" sizes="64x64" href="/static/favicon_64x64.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .card {
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .card-header {
+      background-color: #0d6efd;
+      color: white;
+      border-radius: 12px 12px 0 0 !important;
+      font-weight: 600;
+    }
+    .btn-primary {
+      padding: 10px 25px;
+      font-weight: 500;
+    }
+    #result-container {
+      display: none;
+      margin-top: 25px;
+    }
+    .summary-box {
+      background-color: white;
+      padding: 20px;
+      white-space: pre-wrap;
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+    .structured-summary-box {
+      background-color: #f1f8ff;
+      padding: 20px;
+      border-top: 1px solid #dee2e6;
+    }
+    .evidence-badge {
+      font-size: 0.9rem;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .evidence-badge:hover {
+      transform: scale(1.05);
+      background-color: #0dcaf0 !important;
+    }
+    .dropdown-toggle::after {
+      vertical-align: 0.125em;
+    }
+    .evidence-badge.dropdown-toggle {
+      display: inline-flex;
+      align-items: center;
+      padding-right: 0.8em;
+    }
+    .evidence-badge.dropdown-toggle::after {
+      margin-left: 0.5em;
+    }
+    .dropdown-item {
+      cursor: pointer;
+    }
+    .ref-link {
+      color: #0d6efd;
+      text-decoration: none;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    .ref-link:hover {
+      text-decoration: underline;
+    }
+    .evidence-item {
+      border-left: 4px solid #0d6efd;
+      padding-left: 15px;
+      margin-bottom: 20px;
+    }
+    .evidence-type-badge {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+    }
+    .spinner-border {
+      width: 3rem;
+      height: 3rem;
+      animation-duration: 1.5s;
+    }
+    #loading-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.8);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .nav-tabs {
+      margin-bottom: 20px;
+    }
+
+    /* Tabs and Evidence Navigation */
+    .modal-header .nav-tabs {
+        margin-bottom: -1px;
+        border-bottom: none;
+    }
+    .modal-header .nav-link {
+        color: rgba(255, 255, 255, 0.7);
+        border: none;
+        padding: 0.5rem 1rem;
+    }
+    .modal-header .nav-link:hover {
+        color: white;
+        background: rgba(255, 255, 255, 0.1);
+    }
+    .modal-header .nav-link.active {
+        color: white;
+        background: rgba(255, 255, 255, 0.2);
+        font-weight: bold;
+        border-radius: 4px 4px 0 0;
+    }
+    .modal-footer .btn-nav {
+        min-width: 100px;
+    }
+
+    .article-card {
+        transition: transform 0.2s, box-shadow 0.2s;
+        cursor: pointer;
+    }
+    .article-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .article-card:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.5);
+        border-color: #0d6efd;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-4">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link" href="/excel">Excel Viewer</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="/variant">Variant Summary</a>
+      </li>
+    </ul>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="card">
+          <div class="card-header text-center py-3">
+            <h3 class="mb-0">Generate Variant Summary</h3>
+          </div>
+          <div class="card-body p-4">
+            <p class="text-muted mb-4 text-center">Enter variant details below to generate an AI-powered summary from scientific literature.</p>
+
+            <form id="summary-form">
+              <div class="row g-3">
+                <div class="col-md-4">
+                  <label for="gene" class="form-label">Gene</label>
+                  <input type="text" class="form-control" id="gene" name="gene" placeholder="e.g. BRAF" required>
+                </div>
+                <div class="col-md-4">
+                  <label for="change" class="form-label">Change</label>
+                  <input type="text" class="form-control" id="change" name="change" placeholder="e.g. V600E" required>
+                </div>
+                <div class="col-md-4">
+                  <label for="level" class="form-label">Level</label>
+                  <select class="form-select" id="level" name="level" required>
+                    <option value="" selected disabled>Choose level...</option>
+                    <option value="protein">protein</option>
+                    <option value="transcript">transcript</option>
+                    <option value="genome">genome</option>
+                    <option value="dbsnp">dbSNP</option>
+                    <option value="cosmic">COSMIC</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="d-grid mt-4">
+                <button type="submit" class="btn btn-primary btn-lg" id="submit-btn">
+                  Generate LLM Summary
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div id="loading-overlay" class="flex-column">
+          <div class="spinner-border text-primary mb-3" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <h5 class="text-primary" id="loading-status">Fetching data and generating summary...</h5>
+          <div id="time-estimate" class="text-muted mb-2" style="display: none;">
+            Estimated time: <span id="eta-value">0</span> seconds
+          </div>
+          <div class="progress w-50 mb-3" style="height: 10px; display: none;" id="relevance-progress-container">
+            <div id="relevance-progress-bar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%"></div>
+          </div>
+          <p class="text-muted" id="loading-subtext">This may take a minute.</p>
+          <button type="button" class="btn btn-outline-danger mt-3" id="stop-btn">
+            Stop Generation
+          </button>
+        </div>
+
+        <div id="result-container">
+          <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+              <span>Result Summary</span>
+              <button class="btn btn-sm btn-outline-light" id="copy-btn">Copy Narrative</button>
+            </div>
+            <div class="card-body p-0">
+              <div class="p-3 border-bottom bg-light">
+                <h5 class="mb-0">Narrative Summary</h5>
+              </div>
+              <div class="summary-box" id="summary-content"></div>
+
+              <div id="structured-summary-container" style="display: none;">
+                <div class="p-3 border-top border-bottom bg-light">
+                  <h5 class="mb-0">Structured Evidence Summary</h5>
+                </div>
+                <div class="structured-summary-box">
+                  <div class="row mb-3">
+                    <div class="col-md-6">
+                      <strong>Overall Pathogenicity:</strong>
+                      <span id="pathogenicity-value" class="badge bg-secondary text-capitalize"></span>
+                    </div>
+                    <div class="col-md-6">
+                      <strong>Confidence:</strong>
+                      <span id="confidence-value" class="badge bg-secondary text-capitalize"></span>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <strong>Evidence Counts:</strong>
+                    <div id="evidence-counts" class="mt-2"></div>
+                  </div>
+                  <div id="conflicting-evidence-warning" class="alert alert-warning py-2 px-3" style="display: none;">
+                    <strong>Notice:</strong> Conflicting evidence was identified for this variant.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="grouped-evidence-container" style="display: none;" class="mt-4">
+            <div class="card">
+              <div class="card-header bg-dark text-white">
+                <h5 class="mb-0">Detailed Evidence by Article</h5>
+              </div>
+              <div class="card-body p-0" id="grouped-evidence-body">
+                <!-- Grouped evidence cards go here -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="alert alert-danger mt-4" id="error-alert" style="display: none;">
+          <strong>Error!</strong> <span id="error-message"></span>
+        </div>
+
+        <div class="mt-5 mb-4 text-center">
+          <p class="text-muted small mb-2">Development & Testing</p>
+          <button type="button" class="btn btn-sm btn-outline-secondary" id="test-ui-btn">
+            Test UI with Mock Data
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Article Evidence Modal -->
+  <div class="modal fade" id="articleEvidenceModal" tabindex="-1" aria-labelledby="articleEvidenceModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white flex-column align-items-stretch">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <h5 class="modal-title" id="articleEvidenceModalLabel">Extracted Evidence</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <ul class="nav nav-tabs" id="modal-evidence-tabs" style="display: none;">
+            <!-- Tabs will be dynamically added here -->
+          </ul>
+        </div>
+        <div class="modal-body" id="article-evidence-body">
+          <!-- Evidence content goes here -->
+        </div>
+        <div class="modal-footer d-flex justify-content-between">
+          <div>
+            <button type="button" class="btn btn-outline-secondary btn-nav me-2" id="prev-evidence-btn" style="display: none;">&larr; Previous</button>
+            <button type="button" class="btn btn-outline-secondary btn-nav" id="next-evidence-btn" style="display: none;">Next &rarr;</button>
+          </div>
+          <div>
+            <button type="button" class="btn btn-outline-primary me-2" id="copy-evidence-btn">Copy Evidence</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="/static/variant_summary.js"></script>
+</body>
+</html>
