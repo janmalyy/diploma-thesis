@@ -31,6 +31,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const nextEvidenceBtn = document.getElementById("next-evidence-btn");
     const groupedEvidenceContainer = document.getElementById("grouped-evidence-container");
     const groupedEvidenceBody = document.getElementById("grouped-evidence-body");
+    const levelSelect = document.getElementById("level");
+    const geneContainer = document.getElementById("gene-container");
+    const geneInput = document.getElementById("gene");
+    const changeLabel = document.getElementById("change-label");
+    const changeInput = document.getElementById("change");
 
     let abortController = null;
     let currentArticleEvidences = [];
@@ -48,14 +53,58 @@ document.addEventListener("DOMContentLoaded", () => {
             const savedForm = sessionStorage.getItem("variant_summary_form");
             if (savedForm) {
                 const formData = JSON.parse(savedForm);
-                document.getElementById("gene").value = formData.gene || "";
-                document.getElementById("change").value = formData.change || "";
-                document.getElementById("level").value = formData.level || "";
+                geneInput.value = formData.gene || "";
+                changeInput.value = formData.change || "";
+                levelSelect.value = formData.level || "";
+                updateFieldsBasedOnLevel(formData.level);
             }
         } catch (e) {
             console.error("Failed to load saved result:", e);
         }
     }
+
+    function updateFieldsBasedOnLevel(level) {
+        if (!level) return;
+
+        if (level === "dbsnp" || level === "cosmic") {
+            geneContainer.style.display = "none";
+            geneInput.required = false;
+            changeLabel.textContent = "Reference ID";
+        } else {
+            geneContainer.style.display = "block";
+            geneInput.required = true;
+            changeLabel.textContent = "Change";
+        }
+
+        // Update placeholders
+        switch (level) {
+            case "protein":
+                geneInput.placeholder = "e.g. NOP10";
+                changeInput.placeholder = "e.g. D12H";
+                break;
+            case "transcript":
+                geneInput.placeholder = "e.g. NOP10";
+                changeInput.placeholder = "e.g. c.34G>C";
+                break;
+            case "genome":
+                geneInput.placeholder = "e.g. NOP10";
+                changeInput.placeholder = "e.g. g.34343040C>G";
+                break;
+            case "cosmic":
+                changeInput.placeholder = "e.g. COSM3754273";
+                break;
+            case "dbsnp":
+                changeInput.placeholder = "e.g. rs113488022";
+                break;
+            default:
+                geneInput.placeholder = "e.g. BRCA1";
+                changeInput.placeholder = "e.g. Q804H";
+        }
+    }
+
+    levelSelect.addEventListener("change", (e) => {
+        updateFieldsBasedOnLevel(e.target.value);
+    });
 
     function stopGeneration() {
         if (abortController) {
@@ -136,9 +185,9 @@ document.addEventListener("DOMContentLoaded", () => {
         relevanceProgressBar.style.width = "0%";
 
         const formData = {
-            gene: document.getElementById("gene").value.trim(),
-            change: document.getElementById("change").value.trim(),
-            level: document.getElementById("level").value
+            gene: geneInput.value.trim(),
+            change: changeInput.value.trim(),
+            level: levelSelect.value
         };
 
         sessionStorage.setItem("variant_summary_form", JSON.stringify(formData));
@@ -339,9 +388,10 @@ document.addEventListener("DOMContentLoaded", () => {
         testUiBtn.addEventListener("click", async () => {
             if (loadingOverlay.style.display === "flex") return;
 
-            document.getElementById("gene").value = "BRAF";
-            document.getElementById("change").value = "V600E";
-            document.getElementById("level").value = "protein";
+            geneInput.value = "BRAF";
+            changeInput.value = "V600E";
+            levelSelect.value = "protein";
+            updateFieldsBasedOnLevel("protein");
 
             errorAlert.style.display = "none";
             resultContainer.style.display = "none";

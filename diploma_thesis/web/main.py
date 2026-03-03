@@ -189,7 +189,7 @@ async def convert_pubmed_ids(request: PubmedIdsRequest):
 
 
 class VariantRequest(BaseModel):
-    gene: str
+    gene: Optional[str] = None
     change: str
     level: str
 

@@ -167,14 +167,6 @@
             <form id="summary-form">
               <div class="row g-3">
                 <div class="col-md-4">
-                  <label for="gene" class="form-label">Gene</label>
-                  <input type="text" class="form-control" id="gene" name="gene" placeholder="e.g. BRAF" required>
-                </div>
-                <div class="col-md-4">
-                  <label for="change" class="form-label">Change</label>
-                  <input type="text" class="form-control" id="change" name="change" placeholder="e.g. V600E" required>
-                </div>
-                <div class="col-md-4">
                   <label for="level" class="form-label">Level</label>
                   <select class="form-select" id="level" name="level" required>
                     <option value="" selected disabled>Choose level...</option>
@@ -184,6 +176,14 @@
                     <option value="dbsnp">dbSNP</option>
                     <option value="cosmic">COSMIC</option>
                   </select>
+                </div>
+                <div class="col-md-4" id="gene-container">
+                  <label for="gene" class="form-label">Gene</label>
+                  <input type="text" class="form-control" id="gene" name="gene" placeholder="e.g. NOP10" required>
+                </div>
+                <div class="col-md-4">
+                  <label for="change" class="form-label" id="change-label">Change</label>
+                  <input type="text" class="form-control" id="change" name="change" placeholder="e.g. D12H" required>
                 </div>
               </div>
 

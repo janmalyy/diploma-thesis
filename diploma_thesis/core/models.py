@@ -5,8 +5,8 @@ from diploma_thesis.utils.helpers import (to_human_readable,
 
 class Variant:
     def __init__(self, gene: str, variant: str, level: str, fetch_data: bool = True):
-        self.gene: str = gene.upper()
-        self.variant: str = variant.upper()
+        self.gene: str = gene.upper() if gene else ""
+        self.variant: str = variant.upper() if variant else ""
         self.variant_string = f"{self.gene} {self.variant}"
 
         self.terms: list[str] = []
