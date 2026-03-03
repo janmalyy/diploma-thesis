@@ -14,10 +14,13 @@ import time
 from pathlib import Path
 
 import numpy as np
+
+from diploma_thesis.api.variomes import (fetch_variomes_data,
+                                         parse_variomes_data)
 from diploma_thesis.core.models import Variant
-from diploma_thesis.core.update_article_fulltext import update_articles_fulltext
-from diploma_thesis.api.variomes import fetch_variomes_data, parse_variomes_data
-from diploma_thesis.settings import logger, DATA_DIR
+from diploma_thesis.core.update_article_fulltext import \
+    update_articles_fulltext
+from diploma_thesis.settings import DATA_DIR, logger
 
 
 def end(start):

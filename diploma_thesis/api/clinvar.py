@@ -4,7 +4,7 @@ from lxml import etree
 from rapidfuzz import fuzz
 
 from diploma_thesis.settings import DATA_DIR
-from diploma_thesis.utils.helpers import write_xml, extend_variant_name
+from diploma_thesis.utils.helpers import extend_variant_name
 
 ENTREZ_BASE_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
 CLINVAR_DB = "clinvar"

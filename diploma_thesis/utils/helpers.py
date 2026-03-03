@@ -2,7 +2,7 @@ import html
 import re
 import string
 from pathlib import Path
-from typing import Generator, Any
+from typing import Any, Generator
 from xml.dom.minidom import parseString
 
 from lxml import etree

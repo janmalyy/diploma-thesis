@@ -1,4 +1,5 @@
-from diploma_thesis.api.variomes import fetch_variomes_data, parse_variomes_data
+from diploma_thesis.api.variomes import (fetch_variomes_data,
+                                         parse_variomes_data)
 from diploma_thesis.core.models import Variant
 from diploma_thesis.core.update_suppl_data import update_suppl_data
 from diploma_thesis.settings import DATA_DIR, logger

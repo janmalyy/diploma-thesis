@@ -3,8 +3,8 @@ import re
 import requests
 from lxml import etree
 
-from diploma_thesis.settings import logger, DATA_DIR
-from diploma_thesis.utils.helpers import uniq, normalize_variant, write_xml
+from diploma_thesis.settings import DATA_DIR, logger
+from diploma_thesis.utils.helpers import normalize_variant, uniq, write_xml
 
 
 def fetch_synvar(gene: str | None, variant: str, level: str) -> etree._Element | None:

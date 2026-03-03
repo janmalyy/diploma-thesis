@@ -1,10 +1,11 @@
 import asyncio
+
 import requests
 from pydantic_ai import Agent
 from pydantic_ai.models.openai import OpenAIChatModel
 from pydantic_ai.providers.openai import OpenAIProvider
 
-from diploma_thesis.settings import E_INFRA_API_KEY, DATA_DIR, EINFRA_URL
+from diploma_thesis.settings import E_INFRA_API_KEY, EINFRA_URL
 
 
 def fetch_list_of_supported_einfra_models(api_token: str) -> list[dict]:

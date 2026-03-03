@@ -1,13 +1,14 @@
 import urllib3
 from lxml import etree
 
-from diploma_thesis.settings import logger, DATA_DIR
-from diploma_thesis.utils.json_structure import write_json
+from diploma_thesis.api.annotations import (fetch_biodiversity_pmc,
+                                            fetch_pubtator, get_session)
+from diploma_thesis.core.document_parsers import (
+    parse_biodiversity_pmc_document, parse_pubtator_document)
 from diploma_thesis.core.models import Article, TextBlock
+from diploma_thesis.settings import DATA_DIR, logger
 from diploma_thesis.utils.helpers import write_xml
-
-from diploma_thesis.api.annotations import get_session, fetch_pubtator, fetch_biodiversity_pmc
-from diploma_thesis.core.document_parsers import parse_pubtator_document, parse_biodiversity_pmc_document
+from diploma_thesis.utils.json_structure import write_json
 
 urllib3.disable_warnings()
 

@@ -48,7 +48,7 @@ function extractPubmedIds(hotInstance, pubmedColIndex) {
 /**
  * Converts PubMed IDs to hyperlinks by fetching URLs from the API
  * and updating the cells in the Handsontable instance.
- * 
+ *
  * @param {Handsontable} hotInstance - The Handsontable instance
  * @param {int} pubmedColIndex - The index of the column containing PubMed IDs
  * @returns {Promise<void>}

@@ -1,27 +1,31 @@
-import os
-import io
-import tempfile
 import asyncio
+import io
 import json
-from typing import Optional, Any
+import os
+import tempfile
+from typing import Any, Optional
 
 import pandas as pd
-from fastapi import FastAPI, Request, HTTPException, UploadFile, File
+import uvicorn
+from fastapi import FastAPI, File, HTTPException, Request, UploadFile
 from fastapi.responses import HTMLResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
-import uvicorn
 from pydantic import BaseModel
 from starlette.responses import RedirectResponse
 
+from diploma_thesis.api.convert_ids import (connect_pubmed_ids_with_links,
+                                            convert_ids)
 from diploma_thesis.api.einfra import run_einfra
-from diploma_thesis.api.variomes import fetch_variomes_data, parse_variomes_data
+from diploma_thesis.api.variomes import (fetch_variomes_data,
+                                         parse_variomes_data)
 from diploma_thesis.core.models import Variant
-from diploma_thesis.core.run_llm import relevance_check, extract_evidences, aggregate_evidences
-from diploma_thesis.core.update_article_fulltext import update_articles_fulltext
+from diploma_thesis.core.run_llm import (aggregate_evidences,
+                                         extract_evidences, relevance_check)
+from diploma_thesis.core.update_article_fulltext import \
+    update_articles_fulltext
 from diploma_thesis.core.update_suppl_data import update_suppl_data
 from diploma_thesis.settings import PACKAGE_DIR, logger
-from diploma_thesis.api.convert_ids import convert_ids, connect_pubmed_ids_with_links
 
 app = FastAPI()
 app.mount("/static", StaticFiles(directory=PACKAGE_DIR / "web" / "static"), name="static")
@@ -235,7 +239,7 @@ async def generate_llm_summary(request: VariantRequest):
 
             # Start relevance check in a task
             task = asyncio.create_task(relevance_check(variant, articles, progress_callback_queue))
-            
+
             completed_calls = 0
             while not task.done():
                 try:
@@ -253,11 +257,11 @@ async def generate_llm_summary(request: VariantRequest):
                 yield f"data: {json.dumps({'status': f'{msg['phase']}: {msg['current']}/{len(articles)}', 'completed_calls': completed_calls})}\n\n"
 
             relevant_articles = await task
-            
+
             if not relevant_articles:
                 yield f"data: {json.dumps({'result': f'None of the {len(articles)} articles found were identified as relevant by the LLM.'})}\n\n"
                 return
-                
+
             # Now we know how many relevant articles there are, update total_calls
             relevance_calls = len(articles)
             extraction_calls = len(relevant_articles)
@@ -268,7 +272,7 @@ async def generate_llm_summary(request: VariantRequest):
             # Evidence extraction
             task = asyncio.create_task(extract_evidences(variant, relevant_articles, progress_callback_queue))
             yield f"data: {json.dumps({'article_count': len(relevant_articles), 'phase': 'relevant articles'})}\n\n"
-            
+
             while not task.done():
                 try:
                     msg = await asyncio.wait_for(queue.get(), timeout=0.1)
@@ -276,7 +280,7 @@ async def generate_llm_summary(request: VariantRequest):
                     yield f"data: {json.dumps({'status': f'{msg['phase']}: {msg['current']}/{len(relevant_articles)}', 'completed_calls': completed_calls})}\n\n"
                 except asyncio.TimeoutError:
                     continue
-            
+
             while not queue.empty():
                 msg = await queue.get()
                 completed_calls = relevance_calls + msg["current"]
@@ -286,7 +290,7 @@ async def generate_llm_summary(request: VariantRequest):
             if not evidences:
                 yield f"data: {json.dumps({'result': f'Failed to extract any structured evidence from the {len(relevant_articles)} relevant articles.'})}\n\n"
                 return
-                
+
             yield f"data: {json.dumps({'status': 'Aggregation', 'completed_calls': relevance_calls + extraction_calls, 'article_count': 0})}\n\n"
             aggregated_evidence = await aggregate_evidences(variant, evidences)
             yield f"data: {json.dumps({'completed_calls': total_llm_calls})}\n\n"

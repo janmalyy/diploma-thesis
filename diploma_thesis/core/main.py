@@ -17,12 +17,16 @@ Output:
 """
 import asyncio
 import time
+
+from diploma_thesis.api.variomes import (fetch_variomes_data,
+                                         parse_variomes_data)
 from diploma_thesis.core.models import Variant
-from diploma_thesis.core.run_llm import relevance_check, extract_evidences, aggregate_evidences
+from diploma_thesis.core.run_llm import (aggregate_evidences,
+                                         extract_evidences, relevance_check)
+from diploma_thesis.core.update_article_fulltext import \
+    update_articles_fulltext
 from diploma_thesis.core.update_suppl_data import update_suppl_data
-from diploma_thesis.core.update_article_fulltext import update_articles_fulltext
-from diploma_thesis.api.variomes import fetch_variomes_data, parse_variomes_data
-from diploma_thesis.settings import logger, DATA_DIR
+from diploma_thesis.settings import DATA_DIR, logger
 
 
 async def main():

@@ -1,18 +1,10 @@
 import logging
 import os
 from pathlib import Path
+
 from dotenv import load_dotenv
 
 load_dotenv()
-
-if os.environ.get("RUNNING_IN_DOCKER") == "1":
-    NEO4J_URI = "neo4j://neo4j-db:7687"
-else:
-    NEO4J_URI = "neo4j://127.0.0.1:7687"
-
-NEO4J_USERNAME = os.getenv("NEO4J_USERNAME")
-NEO4J_PASSWORD = os.getenv("NEO4J_PASSWORD")
-NEO4J_DATABASE = os.getenv("NEO4J_DATABASE")
 
 NIH_EMAIL = os.getenv("NIH_EMAIL")
 

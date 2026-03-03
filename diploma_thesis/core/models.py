@@ -1,5 +1,6 @@
 from diploma_thesis.api.synvar import fetch_synvar, parse_synvar
-from diploma_thesis.utils.helpers import to_machine_comparable, to_human_readable
+from diploma_thesis.utils.helpers import (to_human_readable,
+                                          to_machine_comparable)
 
 
 class Variant:

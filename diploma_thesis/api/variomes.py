@@ -1,9 +1,10 @@
 import json
 import re
+
 import requests
 
-from diploma_thesis.core.models import Variant, Article, TextBlock, SupplData
-from diploma_thesis.settings import logger, DATA_DIR
+from diploma_thesis.core.models import Article, SupplData, TextBlock, Variant
+from diploma_thesis.settings import DATA_DIR, logger
 
 
 def fetch_variomes_data(variant: Variant) -> dict:

@@ -29,6 +29,6 @@ but still relevant.
 Output JSON only, using this schema:
 {
   "reason": string,     # 1 sentence explaining why the article is relevant or not
-  "relevance_confidence": number between 0 and 1,
+  "relevance_confidence": float between 0 and 1 (e.g., 0.7),
   "is_relevant": boolean,
 }

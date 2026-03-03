@@ -5,9 +5,9 @@ from pydantic_ai import Agent
 from pydantic_ai.models.openai import OpenAIChatModel
 from pydantic_ai.providers.openai import OpenAIProvider
 
-from diploma_thesis.settings import E_INFRA_API_KEY, DATA_DIR, PACKAGE_DIR, EINFRA_URL, logger
-
 from diploma_thesis.core.models import Article, Variant
+from diploma_thesis.settings import (DATA_DIR, E_INFRA_API_KEY, EINFRA_URL,
+                                     PACKAGE_DIR, logger)
 
 
 def get_prompt(path: str) -> str:
@@ -81,7 +81,7 @@ async def relevance_check(variant: Variant, articles: list[Article], progress_ca
         try:
             if progress_callback:
                 await progress_callback(i + 1, "Relevance check")
-            
+
             replacements = {
                 "_GENE_": variant.gene,
                 "_VARIANT_": variant.variant,
@@ -93,7 +93,7 @@ async def relevance_check(variant: Variant, articles: list[Article], progress_ca
             result = await checker_agent.run(ready_prompt)
             logger.debug(f"ARTICLE_ID: {article.pmcid if article.pmcid else article.pmid}")
             logger.debug(f"OUTPUT: {result.output}")
-            
+
             data = parse_llm_json(result.output)
             if data.get("is_relevant"):
                 relevant_articles.append(article)
@@ -125,7 +125,7 @@ async def extract_evidences(variant: Variant, articles: list[Article], progress_
             result = await extractor_agent.run(ready_prompt)
             logger.debug(f"ARTICLE_ID: {article.pmcid if article.pmcid else article.pmid}")
             logger.debug(f"OUTPUT: {result.output}")
-            
+
             data = parse_llm_json(result.output)
             # Add article ID to data for reference in aggregation
             data["article_id"] = article.pmcid if article.pmcid else article.pmid
@@ -176,11 +176,8 @@ async def aggregate_evidences(variant: Variant, evidences: list[dict]) -> dict:
                 }
         except:
             pass
-            
+
         return {
             "narrative_summary": f"Error during summary aggregation: {str(e)}",
             "structured_summary": None
         }
-
-
-
