@@ -127,3 +127,15 @@ def extend_variant_name(variant: str) -> str:
     change = change.lower()
     change = ONE_TO_THREE_PATTERN.sub(lambda m: ONE_TO_THREE[m.group()], change)
     return gene + f" p.{change}"
+
+
+def compile_variant_pattern(input_list: list[str]) -> re.Pattern:
+    """Compile a regex pattern for variant terms."""
+    # logger.info(f"Compiling variant pattern for {len(input_list)} terms")
+    # Sort by length descending to match longer terms first
+    input_list = sorted(input_list, key=len, reverse=True)
+    # Prefix with a non-alphanumeric character (except some symbols) to avoid partial matches
+    escaped = [r"[^\d\*\+a-zA-Z-]" + re.escape(v) for v in input_list]
+    pattern = re.compile("|".join(escaped))
+    # logger.info("Variant pattern compiled successfully")
+    return pattern

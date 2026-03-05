@@ -23,7 +23,14 @@ def build_prompt(replacements: dict[str, str], prompt: str) -> str:
     return prompt
 
 
-def parse_llm_json(raw_text: str) -> dict:
+def parse_llm_json(raw_text: str) -> dict | ValueError:
+    """
+    Tries to parse the output of the LLM as JSON.
+    Args:
+        raw_text: output of the LLM
+    Returns:
+        the parsed JSON object or a ValueError if parsing fails
+    """
     text = raw_text.strip()
     if text.startswith("```"):
         text = re.sub(r"^```[a-zA-Z0-9_-]*\s*", "", text)

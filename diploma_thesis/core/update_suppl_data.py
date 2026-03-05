@@ -1,36 +1,9 @@
 import re
 
-from rapidfuzz import fuzz
-
 from diploma_thesis.core.build_paragraph import build_paragraph
 from diploma_thesis.core.models import Article, Variant
-from diploma_thesis.settings import logger
-
-
-def compile_variant_pattern(input_list: list[str]) -> re.Pattern:
-    """Compile a regex pattern for variant terms."""
-    # logger.info(f"Compiling variant pattern for {len(input_list)} terms")
-    # Sort by length descending to match longer terms first
-    input_list = sorted(input_list, key=len, reverse=True)
-    # Prefix with a non-alphanumeric character (except some symbols) to avoid partial matches
-    escaped = [r"[^\d\*\+a-zA-Z-]" + re.escape(v) for v in input_list]
-    pattern = re.compile("|".join(escaped))
-    # logger.info("Variant pattern compiled successfully")
-    return pattern
-
-
-def is_new_paragraph(paragraph: str, existing_paragraphs: list[str], threshold: int) -> bool:
-    """Determine whether a paragraph is sufficiently different from existing ones."""
-    # logger.info("Checking if paragraph is new")
-    for p in existing_paragraphs:
-        if p == paragraph:
-            # logger.info("Exact match found, paragraph is not new")
-            return False
-        if fuzz.partial_ratio(p, paragraph) > threshold:
-            # logger.info(f"High similarity ({fuzz.partial_ratio(p, paragraph)}%) with existing paragraph, not new")
-            return False
-    # logger.info("Paragraph is considered new")
-    return True
+from diploma_thesis.utils.helpers import compile_variant_pattern
+from diploma_thesis.utils.text_matching import is_new_paragraph
 
 
 def remove_articles_with_no_match(articles: list[Article]) -> list[Article]:

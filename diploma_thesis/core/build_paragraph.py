@@ -194,7 +194,7 @@ def reconstruct_csv_like_table(text: str, delimiter: str) -> list[list[str]]:
 
 
 def get_title_header_and_context_from_table(table: list[list[str]], match_val: str):
-    # TODO vylepšit, aby se header a context párovali k sobě jako dictionary
+    # TODO vylepšit, aby se header a context párovali k sobě jako dictionary - teď se totiž asi header uloží vícekrát pro víc nálezů v jedné tabulce
     row, title, context = "", "", ""
     best_score = 0
     header_index = -1

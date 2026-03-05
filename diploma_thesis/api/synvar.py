@@ -112,7 +112,7 @@ def parse_synvar(root: etree._Element) -> dict:
         if v in canonical_values:
             continue
         norm = normalize_variant(v)
-        if norm not in alias_map:       # todo add fuzz.partial_ratio
+        if norm not in alias_map:       # todo add fuzz.partial_ratio - teď je těch aliasů totiž pořád strašně moc stejných
             alias_map[norm] = v
 
     return {

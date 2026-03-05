@@ -2,7 +2,7 @@
 todo ve variomes mají advanced filtry, ty bych taky asi mohl využít...
 
 Workflow:
-1. Normalise variant input. - nějak použít jejich synvar, umí to: https://sibils.org/synvar/
+1. Normalise variant input. - SynVar
 2. Fetch relevant literature data and fulltext_snippets from SIBiLS Variomes.        TODO improve check text for fulltext_snippets
     - if snippet not found, it is added to paragraphs as is
 # TODO brát pmc ids aji z litvar2, ne jen z variomes
@@ -12,7 +12,7 @@ Workflow:
 6. Generate a concise summary using a LLM.
 
 Output:
-- Article-level attributes: Study type, quality, disease.                   TODO
+- Article-level attributes: Study type, quality, disease.
 - Comprehensive variant summary.
 """
 import asyncio
@@ -55,7 +55,7 @@ async def main():
 
         # 3. Fetch and Parse Data from PubTator and BiodiversityPMC
         logger.info("Fetching data from PubTator and BiodiversityPMC...")
-        update_articles_fulltext(articles)
+        update_articles_fulltext(articles, variant)
 
         # 4. Parse Suppl. Data
         update_suppl_data(articles, variant)

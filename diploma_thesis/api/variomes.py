@@ -78,14 +78,14 @@ def parse_variomes_data(data: dict, variant: Variant) -> list[Article]:
             for ev in evidences
             if ev.get("text")
         ]
-        if snippets:  # TODO we skip articles without evidences=fulltext_snippets for now
-            article = next((a for a in articles if a.pmcid == pmc_id), None)
-            if article is None:
-                articles.append(Article(data_source="pmc", pmcid=pmc_id, relevance_score=pub.get("score"),
-                                        fulltext_snippets=snippets))
-            else:
-                article.data_sources.add("pmc")
-                article.fulltext_snippets = snippets
+        # it can happen that there are no evidences, so None is in fulltext_snippets; we handle it later
+        article = next((a for a in articles if a.pmcid == pmc_id), None)
+        if article is None:
+            articles.append(Article(data_source="pmc", pmcid=pmc_id, relevance_score=pub.get("score"),
+                                    fulltext_snippets=snippets))
+        else:
+            article.data_sources.add("pmc")
+            article.fulltext_snippets = snippets
 
     # Process Supplemental data
     supp_list = publications.get("supp")
@@ -96,8 +96,9 @@ def parse_variomes_data(data: dict, variant: Variant) -> list[Article]:
         if article is None:
             article = Article(data_source="supp", pmcid=pmc_id, relevance_score=pub.get("score"))
             articles.append(article)
+        else:
+            article.data_sources.add("supp")
 
-        article.data_sources.add("supp")
         evidences = pub.get("evidences")
         snippets = [
             ev.get("text")

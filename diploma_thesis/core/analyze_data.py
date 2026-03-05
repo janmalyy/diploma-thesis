@@ -56,7 +56,7 @@ def get_data_for_analysis(results_path: Path | str):
             continue
 
         # 3 & 4. Fetch Data from PubTator or BiodiversityPMC
-        update_articles_fulltext(articles)
+        update_articles_fulltext(articles, variant)
 
         full_articles = [a for a in articles if a.fulltext_snippets or a.paragraphs]
         supp_articles = [a for a in articles if not a.fulltext_snippets]
@@ -68,7 +68,7 @@ def get_data_for_analysis(results_path: Path | str):
                 [
                     {
                         "pmcid": a.pmcid,
-                        "source_of_annotation": a.source,
+                        "source_of_annotation": a.annotation_source,
                         "title_length": len(a.title),
                         "abstract_length": len(a.abstract),
                         "number_of_unmatched_snippets": len(a.fulltext_snippets),
@@ -82,7 +82,7 @@ def get_data_for_analysis(results_path: Path | str):
                 [
                     {
                         "pmcid": a.pmcid,
-                        "source_of_annotation": a.source,
+                        "source_of_annotation": a.annotation_source,
                         "title_length": len(a.title),
                         "abstract_length": len(a.abstract),
                     }

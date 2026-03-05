@@ -223,7 +223,7 @@ async def generate_llm_summary(request: VariantRequest):
 
             logger.info("Fetching data from PubTator and BiodiversityPMC...")
             try:
-                update_articles_fulltext(articles)
+                update_articles_fulltext(articles, variant)
             except Exception as e:
                 logger.error(f"Error updating fulltext: {e}")
 

@@ -1,33 +1,9 @@
+import re
+
 from rapidfuzz import fuzz
 
 from diploma_thesis.core.models import TextBlock
-
-
-def assign_snippets_to_blocks(
-    blocks: list[tuple[TextBlock, object]],
-    snippets: list[TextBlock],
-) -> dict[TextBlock, object]:
-    """
-    Assigns each snippet to at most one block (best match wins).
-
-    Args:
-        blocks: list of (TextBlock, payload) where payload is parser-specific
-        snippets: remaining fulltext snippets
-
-    Returns:
-        mapping: snippet -> payload
-    """
-    snippet_best: dict[TextBlock, tuple[float, object]] = {}
-
-    for text_block, payload in blocks:
-        matches = get_snippet_scores_for_text(text_block, snippets)
-
-        for snippet, score in matches.items():
-            best = snippet_best.get(snippet)
-            if best is None or score > best[0]:
-                snippet_best[snippet] = (score, payload)
-
-    return {snippet: payload for snippet, (_, payload) in snippet_best.items()}
+from diploma_thesis.utils.helpers import compile_variant_pattern
 
 
 def get_snippet_scores_for_text(
@@ -38,10 +14,6 @@ def get_snippet_scores_for_text(
 ) -> dict[TextBlock, float]:
     """
     Finds the best-scoring snippets for a given text block.
-
-    Matching is two-stage:
-    1) permissive candidate detection via partial_ratio
-    2) strict validation via token coverage + final score
 
     Returns:
         {snippet: final_score}
@@ -63,3 +35,71 @@ def get_snippet_scores_for_text(
             matched[snippet] = score
 
     return matched
+
+
+def find_relevant_paragraphs_with_snippets(
+    snippets: list[TextBlock],
+    blocks: list[tuple[TextBlock, object]],
+) -> tuple[list[TextBlock], list[object]]:
+    """
+    For each snippet, try to find one best-scoring text block.
+    Args:
+        blocks: list of (TextBlock, payload) where payload is parser-specific. Payload is the raw content of the block.
+        We have to care about the payload because it is then used for annotation.
+        snippets: remaining fulltext snippets
+
+    Returns:
+        list of snippets with match; list of payloads - raw paragraphs, where the snippets were found, to be annotated
+    """
+    snippet_best: dict[TextBlock, tuple[float, object]] = {}
+
+    for text_block, payload in blocks:
+        matches = get_snippet_scores_for_text(text_block, snippets)
+
+        for snippet, score in matches.items():
+            best = snippet_best.get(snippet)
+            if best is None or score > best[0]:
+                snippet_best[snippet] = (score, payload)
+
+    return list(snippet_best.keys()), [payload for (score, payload) in snippet_best.values()]
+
+
+def find_relevant_paragraphs_without_snippets(
+    terms: list[str],
+    blocks: list[tuple[TextBlock, object]]
+) -> list[object]:
+    """
+    This function is used when there are no evidences from variomes for PMC fulltext articles.
+    Args:
+        blocks: list of (TextBlock, payload) where payload is parser-specific. Payload is the raw content of the block.
+        We have to care about the payload because it is then used for annotation.
+        terms: a list of possible notations of the searched variant
+
+    Returns: list of payloads - raw paragraphs, where some variant term was found, to be annotated
+
+    """
+    pattern = compile_variant_pattern(terms)
+    relevant_texts = []
+    relevant_payloads = []
+    for text_block, payload in blocks:
+        text = text_block.raw_text
+        if re.search(pattern, text):
+            if is_new_paragraph(text, relevant_texts, 90):
+                relevant_texts.append(text)
+                relevant_payloads.append(payload)
+
+    return relevant_payloads
+
+
+def is_new_paragraph(paragraph: str, existing_paragraphs: list[str], threshold: int) -> bool:
+    """Determine whether a paragraph is sufficiently different from existing ones."""
+    # logger.info("Checking if paragraph is new")
+    for p in existing_paragraphs:
+        if p == paragraph:
+            # logger.info("Exact match found, paragraph is not new")
+            return False
+        if fuzz.partial_ratio(p, paragraph) > threshold:
+            # logger.info(f"High similarity ({fuzz.partial_ratio(p, paragraph)}%) with existing paragraph, not new")
+            return False
+    # logger.info("Paragraph is considered new")
+    return True
