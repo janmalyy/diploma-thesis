@@ -16,10 +16,10 @@ from starlette.responses import RedirectResponse
 
 from diploma_thesis.api.convert_ids import (connect_pubmed_ids_with_links,
                                             convert_ids)
-from diploma_thesis.api.einfra import run_einfra
 from diploma_thesis.api.variomes import (fetch_variomes_data,
                                          parse_variomes_data)
-from diploma_thesis.core.models import Variant
+from diploma_thesis.core.models import (Variant, prune_articles,
+                                        remove_articles_with_no_match)
 from diploma_thesis.core.run_llm import (aggregate_evidences,
                                          extract_evidences, relevance_check)
 from diploma_thesis.core.update_article_fulltext import \
@@ -199,9 +199,14 @@ async def generate_llm_summary(request: VariantRequest):
     async def event_generator():
         try:
             yield f"data: {json.dumps({'status': 'SynVar fetch'})}\n\n"
-            variant = Variant(request.gene, request.change, request.level, fetch_data=False)
-            variant.fetch_synvar_data(request.level)
-            logger.info(f"Processing variant: {variant}")
+            try:
+                variant = Variant(request.gene, request.change, request.level, fetch_data=False)
+                variant.fetch_synvar_data(request.level)
+                logger.info(f"Processing variant: {variant}")
+            except Exception as e:
+                logger.error(f"SynVar error for {request.gene} {request.change}: {e}")
+                yield f"data: {json.dumps({'error': str(e)})}\n\n"
+                return
 
             yield f"data: {json.dumps({'status': 'SIBiLS fetch'})}\n\n"
             data = fetch_variomes_data(variant)
@@ -210,7 +215,7 @@ async def generate_llm_summary(request: VariantRequest):
             if not articles:
                 yield f"data: {json.dumps({'result': 'No articles found for this variant in SIBiLS Variomes.'})}\n\n"
                 return
-
+            articles = prune_articles(articles)
             yield f"data: {json.dumps({'status': 'Annotation', 'article_count': len(articles)})}\n\n"
             logger.info(f"Found {len(articles)} articles. IDs: {[a.pmcid if a.pmcid != '' else a.pmid for a in articles]}")
 
@@ -231,6 +236,8 @@ async def generate_llm_summary(request: VariantRequest):
                 update_suppl_data(articles, variant)
             except Exception as e:
                 logger.error(f"Error updating supplementary data: {e}")
+
+            articles = remove_articles_with_no_match(articles)
 
             queue = asyncio.Queue()
 

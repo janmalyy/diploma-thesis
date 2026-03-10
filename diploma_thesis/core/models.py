@@ -1,4 +1,5 @@
 from diploma_thesis.api.synvar import fetch_synvar, parse_synvar
+from diploma_thesis.settings import logger
 from diploma_thesis.utils.helpers import (to_human_readable,
                                           to_machine_comparable)
 
@@ -44,7 +45,7 @@ class SupplData:
         self.score = score
         self.snippets = snippets or []
 
-        self.paragraphs: list[str] = []
+        self.paragraphs: list[dict] = []
 
 
 class Article:
@@ -79,17 +80,23 @@ class Article:
         if len(self.suppl_data_list) > 0:
             context += "\nSupplementary evidence records:\n"
             for sd in self.suppl_data_list:
-                context += "\n".join(sd.paragraphs)
+                context += "\n".join([f"{key}: {value}" for p in sd.paragraphs for key, value in p.items()])
                 context += "\n"
         return context
 
     def get_structured_context(self) -> dict:
+        supp_data_mentions = []
+        for sd in self.suppl_data_list:
+            for i, p in enumerate(sd.paragraphs):
+                supp_data_mentions.append({
+                    f"supp{i}": p
+                })
         return {
             "ARTICLE_ID": self.pmcid if self.pmcid else self.pmid,
             "TITLE": self.title,
             "ABSTRACT": self.abstract,
             "FULLTEXT_MENTIONS": self.paragraphs,
-            "SUPPLEMENTARY_DATA_MENTIONS": [p for sd in self.suppl_data_list for p in sd.paragraphs]
+            "SUPPLEMENTARY_DATA_MENTIONS": supp_data_mentions
         }
 
     def shorten_context(self, max_length: int = 2000):
@@ -101,3 +108,35 @@ class Article:
             else:
                 shortened.append(p)
         self.paragraphs = shortened
+
+
+def prune_articles(articles: list[Article], max_articles: int = 100) -> list[Article]:
+    """Prune the list of articles to the maximum number of articles."""
+    if len(articles) < max_articles:
+        return articles
+    sorted_articles = sorted(articles, key=lambda a: a.relevance_score, reverse=True)
+    return sorted_articles[:max_articles]
+
+
+def remove_articles_with_no_match(articles: list[Article]) -> list[Article]:
+    """Remove articles that have no match and that are not presumably relevant then."""
+    # logger.info(f"Filtering {len(articles)} articles for matches")
+    to_remove = []
+    for article in articles:
+        if article.relevance_score < 0.5:
+            if article.data_sources == {"supp"}:
+                if all((len(sd.paragraphs) == 0) or sd.paragraphs == [""] for sd in article.suppl_data_list):
+                    to_remove.append(article)
+
+            if article.data_sources == {"pmc"}:
+                if not article.paragraphs or article.paragraphs == [""]:
+                    to_remove.append(article)
+
+            if article.data_sources == {"pmc", "supp"}:
+                if ((all((len(sd.paragraphs) == 0) or sd.paragraphs == [""] for sd in article.suppl_data_list)) and
+                        (not article.paragraphs or article.paragraphs == [""])):
+                    to_remove.append(article)
+    for a in to_remove:
+        articles.remove(a)
+    logger.info(f"Removed {len(to_remove)} articles with no matches")
+    return articles

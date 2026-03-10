@@ -3,8 +3,11 @@ import re
 import requests
 from lxml import etree
 
+from diploma_thesis.api.annotations import get_session
 from diploma_thesis.settings import DATA_DIR, logger
 from diploma_thesis.utils.helpers import normalize_variant, uniq, write_xml
+
+session = get_session()
 
 
 def fetch_synvar(gene: str | None, variant: str, level: str) -> etree._Element | None:
@@ -41,8 +44,9 @@ def fetch_synvar(gene: str | None, variant: str, level: str) -> etree._Element |
 
     else:
         try:
-            r = requests.get(
-                url=f"https://synvar.sibils.org/generate/literature/fromMutation?ref={gene}&variant={variant}&level={level}&map=false&iso=true")
+            r = session.get(
+                url=f"https://synvar.sibils.org/generate/literature/fromMutation?ref={gene}&variant={variant}&level={level}&map=false&iso=true",
+                timeout=10)
             r.raise_for_status()
             root = etree.fromstring(r.content)
         except requests.RequestException as e:

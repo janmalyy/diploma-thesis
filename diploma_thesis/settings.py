@@ -1,5 +1,6 @@
 import logging
 import os
+import time
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -15,10 +16,17 @@ DATA_DIR = PACKAGE_DIR / "data"
 
 EINFRA_URL = "https://llm.ai.e-infra.cz/v1/"
 
+# logging.basicConfig(
+#  level=logging.INFO,
+#  format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+#  handlers=[logging.StreamHandler()]
+# )
+
 logging.basicConfig(
+ filename=DATA_DIR / f"diploma_thesis_{round(time.time())}.log",
+ filemode="w",
  level=logging.INFO,
- format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
- handlers=[logging.StreamHandler()]
+ format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
 
 logger = logging.getLogger("diploma_thesis")

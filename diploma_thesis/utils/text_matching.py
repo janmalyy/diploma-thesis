@@ -1,4 +1,5 @@
 import re
+from typing import Any
 
 from rapidfuzz import fuzz
 
@@ -7,10 +8,10 @@ from diploma_thesis.utils.helpers import compile_variant_pattern
 
 
 def get_snippet_scores_for_text(
-    text: TextBlock,
-    snippets: list[TextBlock],
-    *,
-    min_partial_score: int = 90,
+        text: TextBlock,
+        snippets: list[TextBlock],
+        *,
+        min_partial_score: int = 90,
 ) -> dict[TextBlock, float]:
     """
     Finds the best-scoring snippets for a given text block.
@@ -19,7 +20,7 @@ def get_snippet_scores_for_text(
         {snippet: final_score}
     """
     if not text or not snippets:
-        return False, {}
+        return {}
 
     text_mc = text.machine_comparable
     matched: dict[TextBlock, float] = {}
@@ -38,8 +39,8 @@ def get_snippet_scores_for_text(
 
 
 def find_relevant_paragraphs_with_snippets(
-    snippets: list[TextBlock],
-    blocks: list[tuple[TextBlock, object]],
+        snippets: list[TextBlock],
+        blocks: list[tuple[TextBlock, object]],
 ) -> tuple[list[TextBlock], list[object]]:
     """
     For each snippet, try to find one best-scoring text block.
@@ -65,8 +66,8 @@ def find_relevant_paragraphs_with_snippets(
 
 
 def find_relevant_paragraphs_without_snippets(
-    terms: list[str],
-    blocks: list[tuple[TextBlock, object]]
+        terms: list[str],
+        blocks: list[tuple[TextBlock, object]]
 ) -> list[object]:
     """
     This function is used when there are no evidences from variomes for PMC fulltext articles.
@@ -92,7 +93,7 @@ def find_relevant_paragraphs_without_snippets(
 
 
 def is_new_paragraph(paragraph: str, existing_paragraphs: list[str], threshold: int) -> bool:
-    """Determine whether a paragraph is sufficiently different from existing ones."""
+    """Determine whether a paragraph is different enough from existing ones."""
     # logger.info("Checking if paragraph is new")
     for p in existing_paragraphs:
         if p == paragraph:
@@ -103,3 +104,37 @@ def is_new_paragraph(paragraph: str, existing_paragraphs: list[str], threshold: 
             return False
     # logger.info("Paragraph is considered new")
     return True
+
+
+def incorporate_new_paragraph_or_not(
+        paragraph: dict[str, list | str],
+        existing_paragraphs: list[dict[str, list | str]],
+        threshold: int = 90
+) -> list[dict[str, list]]:
+    """
+    Decide whether to incorporate a new paragraph or not, and if so, incorporate it.
+    Paragraphs with the same header are grouped together.
+    Returns:
+        potentially refreshed list of paragraphs
+    """
+    if len(existing_paragraphs) == 0:
+        return [paragraph]
+
+    for existing_p in existing_paragraphs:
+        if existing_p == paragraph:
+            # same paragraph > skip
+            return existing_paragraphs
+
+        score = fuzz.partial_ratio(existing_p["context"], paragraph["context"])
+        if score > threshold:
+            # same context > skip
+            return existing_paragraphs
+
+        if paragraph.get("header", "default value 1").strip() == existing_p.get("header", "different default value").strip():
+            # same header and new context > incorporate
+            existing_p["context"].extend(paragraph["context"])
+            return existing_paragraphs
+
+    # new header and new context > append new paragraph
+    existing_paragraphs.append(paragraph)
+    return existing_paragraphs

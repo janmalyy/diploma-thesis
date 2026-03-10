@@ -114,5 +114,9 @@ def parse_variomes_data(data: dict, variant: Variant) -> list[Article]:
             ))
 
     logger.info(
-        f"Found {len(medline_list)} medline articles, {len([a for a in articles if a.fulltext_snippets])} articles with fulltext snippets and {len([a for a in articles if len(a.suppl_data_list) > 0])} articles with suppl. snippets for variant {variant.variant_string}.")
+        f"Found {len(medline_list)} medline articles, "
+        f"{len([a for a in articles if a.fulltext_snippets])} articles with fulltext snippets, "
+        f"{len([a for a in articles if a.data_sources == {"pmc"} and not a.fulltext_snippets])} PMC articles without fulltext snippets, "
+        f"and {len([a for a in articles if len(a.suppl_data_list) > 0])} articles with suppl. snippets "
+        f"for variant {variant.variant_string}.")
     return articles
