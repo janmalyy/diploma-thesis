@@ -1,0 +1,41 @@
+Context:
+Genetic variant:
+Gene: GENE, Variant: VARIANT
+VARIANT_INFO
+
+Article data:
+Article ID: ARTICLE_ID
+Title:
+TITLE
+
+Abstract:
+ABSTRACT
+
+Extracted mentions from text:
+FULLTEXT_MENTIONS
+
+Extracted mentions from supplementary data:
+SUPPLEMENTARY_DATA_MENTIONS
+---
+Task:
+1. Evaluate relevance
+Evaluate whether this article contains information relevant to the interpretation of the specified variant.
+
+An article is considered relevant if it does at least one of the following:
+- discusses functional effects of the variant
+- reports clinical observations, cases, or segregation
+- provides pathogenicity interpretation or classification
+- reports experimental, computational, or population evidence specifically for this variant
+
+Provide reasoning in the reason field and the decision in the is_relevant field.
+
+2a. If is_relevant is true, continue and extract all explicit evidence.
+Extract all explicit evidence in this article related to the specified variant.
+
+Guidelines:
+- Only include evidence explicitly stated in the text.
+- Do not upgrade or reinterpret pathogenicity claims.
+- Distinguish evidence types (functional, clinical, population, computational).
+- If the variant is only mentioned without interpretation, state so.
+
+2b. If is_relevant is false, end. Leave evidence, overall_article_conclusion, and uncertainties_or_limitations fields empty.

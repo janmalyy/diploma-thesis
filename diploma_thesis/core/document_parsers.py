@@ -12,8 +12,13 @@ def apply_annotations_pubtator(passage: etree._Element, meta: dict) -> str:
     text = meta["text"]
 
     for ann in passage.xpath("annotation"):
+        ann_text_elem = ann.find("text")
+        ann_text = ann_text_elem.text if ann_text_elem is not None else ""
         ann_type_elem = ann.xpath("./infon[@key='type']")
         ann_type = ann_type_elem[0].text if ann_type_elem else ""
+        # we don't want to annotate neoplasm-related terms because they are too common
+        if any(word in ann_text.lower() for word in ["cancer", "tumor", "tumour", "neoplasm", "malignancy"]):
+            continue
         if ann_type == "Species":
             continue
 
@@ -24,12 +29,11 @@ def apply_annotations_pubtator(passage: etree._Element, meta: dict) -> str:
         local_offset = int(loc.get("offset")) - meta["offset"]
         length = int(loc.get("length"))
 
-        ann_text_elem = ann.find("text")
         annotations.append({
             "start": local_offset,
             "end": local_offset + length,
             "type": ann_type,
-            "text": ann_text_elem.text if ann_text_elem is not None else "",
+            "text": ann_text,
         })
 
     annotations.sort(key=lambda x: x["start"], reverse=True)
@@ -274,6 +278,10 @@ def parse_biodiversity_pmc_document(article: Article, article_data: dict, varian
             raw = s.get("sentence")
             if not raw:
                 continue
+            is_table = para_sentences[0].get("tag") == "table"
+            if is_table:        # we don't want to annotate tables because they have too many entities
+                continue
+
             annotated = apply_annotations_biodiversity_pmc(
                 raw,
                 s.get("sentence_number"),

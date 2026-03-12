@@ -7,6 +7,8 @@ from xml.dom.minidom import parseString
 
 from lxml import etree
 
+from diploma_thesis.settings import PACKAGE_DIR
+
 # TODO Budu chtít nějak zachovat tu pozici, abych ji tam pak mohl zvýrazněnou vrátit do závěrečného kontextu
 #  If you need to extract those IDs later, you can use: re.findall(r'concept_id=\"(.*?)\"', text)
 # [^">] matches anything not a quote or a closing bracket
@@ -139,3 +141,16 @@ def compile_variant_pattern(input_list: list[str]) -> re.Pattern:
     pattern = re.compile("|".join(escaped))
     # logger.info("Variant pattern compiled successfully")
     return pattern
+
+
+def get_prompt(path: str) -> str:
+    with open(PACKAGE_DIR / "prompts" / path) as f:
+        return f.read()
+
+
+def build_prompt(replacements: dict[str, str], prompt: str) -> str:
+    # keys not present in the prompt are ignored
+    for key, value in replacements.items():
+        prompt = prompt.replace(key, str(value))
+
+    return prompt

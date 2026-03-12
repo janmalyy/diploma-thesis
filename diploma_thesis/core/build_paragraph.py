@@ -19,30 +19,30 @@ UNNAMED_RE = re.compile(r"(?:^|\|)Unnamed:\s*\d+", flags=re.IGNORECASE)
 
 def find_line_bounds(raw_text: str, pos: int) -> tuple[int, int]:
     """Find the start and end indices of the line containing the given position."""
-    logger.info(f"Finding line bounds for position {pos}")
+    # logger.info(f"Finding line bounds for position {pos}")
     line_start = raw_text.rfind("\n", 0, pos) + 1
     line_end = raw_text.find("\n", pos)
     if line_end == -1:
         line_end = len(raw_text)
-    logger.info(f"Line bounds found: {line_start} to {line_end}")
+    # logger.info(f"Line bounds found: {line_start} to {line_end}")
     return line_start, line_end
 
 
 def split_columns(line: str) -> list[str]:
     """Split a line into columns using various delimiters."""
-    logger.info("Splitting line into columns")
+    # logger.info("Splitting line into columns")
     for d in DELIMITERS:
         if line.count(d) >= 2:
-            logger.info(f"Split using delimiter '{d}'")
+            # logger.info(f"Split using delimiter '{d}'")
             return [c.strip() for c in line.split(d)]
     # Fallback to multiple spaces
-    logger.info("Split using multiple spaces fallback")
+    # logger.info("Split using multiple spaces fallback")
     return re.split(r"\s{2,}", line)
 
 
 def header_score(columns: list[str]) -> float:
     """Score how likely a list of columns is a header row."""
-    logger.info(f"Scoring header candidates for columns: {columns[:5]}...")
+    # logger.info(f"Scoring header candidates for columns: {columns[:5]}...")
     if len(columns) < 2:
         return 0.0
     score = 0.0
@@ -56,7 +56,7 @@ def header_score(columns: list[str]) -> float:
             score += 0.5
         if re.search(r"\d", c):
             score -= 0.5
-    logger.info(f"Final header score: {score}")
+    # logger.info(f"Final header score: {score}")
     return score
 
 
@@ -65,7 +65,7 @@ def is_cell_coordinate_table(text: str) -> tuple[bool, int]:
     Detect if text is in cell-coordinate format (row col value).
     Return also the number of columns.
     """
-    logger.info("Checking for cell-coordinate table format")
+    # logger.info("Checking for cell-coordinate table format")
     lines = [l.strip() for l in text.splitlines() if l.strip()]
     min_lines = min(20, len(lines))
 
@@ -94,7 +94,7 @@ def is_cell_coordinate_table(text: str) -> tuple[bool, int]:
 
 def reconstruct_coordinate_table(text: str) -> list[list[str]]:
     """Convert cell-coordinate format to a 2D list of rows."""
-    logger.info("Reconstructing cell-coordinate table")
+    # logger.info("Reconstructing cell-coordinate table")
     cells = []
     max_col = 0
     for line in text.splitlines():
@@ -117,7 +117,7 @@ def reconstruct_coordinate_table(text: str) -> list[list[str]]:
             rows_dict[r][c] = v
 
     table = [rows_dict[r] for r in sorted(rows_dict.keys())]
-    logger.info(f"Reconstructed table with {len(table)} rows and {max(len(r) for r in table)} columns.")
+    # logger.info(f"Reconstructed table with {len(table)} rows and {max(len(r) for r in table)} columns.")
     return table
 
 
@@ -187,7 +187,7 @@ def reconstruct_csv_like_table(text: str, delimiter: str) -> list[list[str]]:
         return list(reader)
 
     except Exception:
-        logger.warning("Failed to reconstruct CSV-like table. Fallback to split lines manually.")
+        # logger.warning("Failed to reconstruct CSV-like table. Fallback to split lines manually.")
         return list(
             map(lambda line: line.split(delimiter), text.splitlines())
         )
@@ -271,30 +271,30 @@ def get_context_from_raw_text(match: re.Match, raw_text: str, window: int = 250)
 def build_paragraph(match: re.Match, raw_text: str) -> dict[str, list[str]]:
     """Construct a contextual paragraph around a regex match."""
     match_val = str(match.group()[1:].strip())
-    logger.info(f"Building paragraph for match '{match_val}'")
+    # # logger.info(f"Building paragraph for match '{match_val}'")
 
     is_cell_table, number_of_cols = is_cell_coordinate_table(raw_text)
     if is_cell_table:
         if number_of_cols <= 1:
-            logger.info("Too little columns in table. Skipping.")
+            # logger.info("Too little columns in table. Skipping.")
             return {}
         else:
-            logger.info("Processing as cell-coordinate table")
+            # # logger.info("Processing as cell-coordinate table")
             table = reconstruct_coordinate_table(raw_text)
             title, header, context = get_title_header_and_context_from_table(table, match_val)
 
     else:
         is_csv_table, delimiter = is_csv_like_table(raw_text)
         if is_csv_table:
-            logger.info("Processing as csv-like table")
+            # # logger.info("Processing as csv-like table")
             table = reconstruct_csv_like_table(raw_text, delimiter)
             title, header, context = get_title_header_and_context_from_table(table, match_val)
 
         else:
-            logger.info("Did not match either as cell-coordinate table or csv-like table")
-            logger.info("HERE start ---")
-            logger.info(raw_text)
-            logger.info("HERE end ---")
+            # # logger.info("Did not match either as cell-coordinate table or csv-like table")
+            # # logger.info("HERE start ---")
+            # # logger.info(raw_text)
+            # # logger.info("HERE end ---")
             header, context = get_context_from_raw_text(match, raw_text)
             title = ""
 
@@ -310,5 +310,5 @@ def build_paragraph(match: re.Match, raw_text: str) -> dict[str, list[str]]:
         result["context"] = [to_human_readable(context)]
     else:
         return {}
-    logger.info(f"Paragraph built: {result["context"][:100]}...")
+    # # logger.info(f"Paragraph built: {result["context"][:100]}...")
     return result

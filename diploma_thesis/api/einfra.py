@@ -22,7 +22,7 @@ def fetch_list_of_supported_einfra_models(api_token: str) -> list[dict]:
 
 
 async def run_einfra(prompt: str, model_name: str) -> str:
-    available_models = ['aya-expanse:32b', 'command-a:latest', 'deepseek-r1', 'eocs-knowledge-base', 'gemma3:27b-it', 'gpt-oss-120b', 'llama-4-scout-17b-16e-instruct', 'llama3.3:latest', 'medgemma:27b-it', 'metacentrum-docs-problemsolver', 'mistral-small3.1:24b-instruct-2503-q8_0', 'mistral-small3.2:24b-instruct-2506-q8_0', 'phi4:14b-q8_0', 'qwen2.5-coder:32b', 'qwen2.5-coder:32b-instruct-q8_0', 'qwen3-coder', 'qwen3-coder-30b', 'qwen3-embedding-4b', 'rsqkit-research-software-quality', 'sec-certs-common-criteria']
+    available_models = ['mini', 'coder', 'agentic', 'thinker', 'qwen3-reranker-4b', 'qwen3-embedding-4b', 'llama-4-scout-17b-16e-instruct', 'mxbai-embed-large:latest', 'multilingual-e5-large-instruct', 'nomic-embed-text-v2-moe', 'nomic-embed-text-v1.5', 'qwen3-coder', 'mistral-large', 'qwen3-coder-next', 'qwen3-coder-30b', 'kimi-k2.5', 'gpt-oss-120b', 'deepseek-v3.2-thinking', 'glm-4.7', 'deepseek-v3.2', 'qwen3.5']
 
     if model_name not in available_models:
         raise ValueError(f"Model {model_name} is not supported. Try e.g. 'gpt-oss-120b' instead.")

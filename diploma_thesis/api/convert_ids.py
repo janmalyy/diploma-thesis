@@ -58,10 +58,10 @@ def convert_ids(ids_to_convert: list[str], convert_from: str) -> list[dict]:
 
 def connect_pubmed_ids_with_links(ids_list: list[dict]) -> list[tuple[str, str]]:
     """
-    For given pubmed ids, return a link to PMC article, if available, or to PubMed article.
+    For given pubmed ids, return a link to the PMC article, if available, or to PubMed article.
     Removes all invalid ids.
     Args:
-        ids_list: list of ids as a dictionary with ids for pubmed, pmc and doi.
+        ids_list: list of ids as a dictionary with ids for pubmed, pmc, and doi.
     Returns: list of tuples of a pubmed id and a link to the corresponding article.
 
     """
