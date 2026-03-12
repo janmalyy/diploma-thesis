@@ -4,7 +4,7 @@ from diploma_thesis.core.build_paragraph import build_paragraph
 from diploma_thesis.core.models import Article, Variant
 from diploma_thesis.utils.helpers import compile_variant_pattern
 from diploma_thesis.utils.text_matching import (
-    incorporate_new_paragraph_or_not, is_new_paragraph)
+    incorporate_new_paragraph_or_not, is_new_text)
 
 
 def get_preview(raw_text: str, match: re.Match, window: int = 50) -> str:
@@ -33,10 +33,8 @@ def update_suppl_data(articles: list[Article], variant: Variant) -> list[Article
                 preview = get_preview(sd.raw_text, m)
                 contexts = []
                 for p in sd.paragraphs:
-                    ctx = p.get("context")
-                    if ctx:
-                        contexts.extend(ctx)
-                if not is_new_paragraph(preview, contexts, 90):
+                    contexts.extend(p.context)
+                if not is_new_text(preview, contexts, 90):
                     # logger.info("Skipping reconstruction — preview too similar to existing paragraph")
                     continue
 

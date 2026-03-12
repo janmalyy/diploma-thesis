@@ -1,3 +1,5 @@
+from pydantic import BaseModel
+
 from diploma_thesis.api.synvar import fetch_synvar, parse_synvar
 from diploma_thesis.settings import logger
 from diploma_thesis.utils.helpers import (to_human_readable,
@@ -39,13 +41,17 @@ class TextBlock:
         return len(self.human_readable)
 
 
-class SupplData:
-    def __init__(self, raw_text: str, score: float, snippets: list[str] = None):
-        self.raw_text = raw_text
-        self.score = score
-        self.snippets = snippets or []
+class SuppParagraph(BaseModel):
+    title: str = ""
+    header: str = ""
+    context: list[str] = []
 
-        self.paragraphs: list[dict] = []
+
+class SupplData(BaseModel):
+    raw_text: str
+    score: float
+    snippets: list[str] = []
+    paragraphs: list[SuppParagraph] = []
 
 
 class Article:
@@ -80,7 +86,7 @@ class Article:
         if len(self.suppl_data_list) > 0:
             context += "\nSupplementary evidence records:\n"
             for sd in self.suppl_data_list:
-                context += "\n".join([f"{key}: {value}" for p in sd.paragraphs for key, value in p.items()])
+                context += "\n".join([f"{key}: {value}" for p in sd.paragraphs for key, value in p.model_dump().items()])
                 context += "\n"
         return context
 

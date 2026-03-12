@@ -3,6 +3,7 @@ import io
 import re
 import statistics
 
+from diploma_thesis.core.models import SuppParagraph
 from diploma_thesis.settings import logger
 from diploma_thesis.utils.helpers import to_human_readable
 
@@ -268,7 +269,7 @@ def get_context_from_raw_text(match: re.Match, raw_text: str, window: int = 250)
     return header, context
 
 
-def build_paragraph(match: re.Match, raw_text: str) -> dict[str, list[str]]:
+def build_paragraph(match: re.Match, raw_text: str) -> SuppParagraph:
     """Construct a contextual paragraph around a regex match."""
     match_val = str(match.group()[1:].strip())
     # # logger.info(f"Building paragraph for match '{match_val}'")
@@ -277,7 +278,7 @@ def build_paragraph(match: re.Match, raw_text: str) -> dict[str, list[str]]:
     if is_cell_table:
         if number_of_cols <= 1:
             # logger.info("Too little columns in table. Skipping.")
-            return {}
+            return SuppParagraph()
         else:
             # # logger.info("Processing as cell-coordinate table")
             table = reconstruct_coordinate_table(raw_text)
@@ -298,17 +299,15 @@ def build_paragraph(match: re.Match, raw_text: str) -> dict[str, list[str]]:
             header, context = get_context_from_raw_text(match, raw_text)
             title = ""
 
-    result = {}
+    result = SuppParagraph()
     if header and context:
         if title:
-            result["title"] = to_human_readable(title)
-        result["header"] = to_human_readable(header)
-        result["context"] = [to_human_readable(context)]
+            result.title = to_human_readable(title)
+        result.header = to_human_readable(header)
+        result.context = [to_human_readable(context)]
     elif context:
         if title:
-            result["title"] = to_human_readable(title)
-        result["context"] = [to_human_readable(context)]
-    else:
-        return {}
+            result.title = to_human_readable(title)
+        result.context = [to_human_readable(context)]
     # # logger.info(f"Paragraph built: {result["context"][:100]}...")
     return result
