@@ -22,8 +22,7 @@ from diploma_thesis.api.variomes import (fetch_variomes_data,
                                          parse_variomes_data)
 from diploma_thesis.core.models import (Variant, prune_articles,
                                         remove_articles_with_no_match)
-from diploma_thesis.core.run_llm import (aggregate_evidences,
-                                         extract_evidences, relevance_check)
+from diploma_thesis.core.run_llm import run_pipeline
 from diploma_thesis.core.update_article_fulltext import \
     update_articles_fulltext
 from diploma_thesis.core.update_suppl_data import update_suppl_data
@@ -35,12 +34,12 @@ async def main():
         text = f.read()
     variants = text.split("\n")
 
-    for i, variant in enumerate(variants[32:40]):
+    for i, variant in enumerate(variants[:1]):
         start_time = time.time()
 
         # 1. Initialize Variant (handles normalisation)
-        # variant = Variant("BRCA1", "V11A", "protein")
-        variant = Variant(variant.split(" ")[0], variant.split(" ")[1], "protein")
+        variant = Variant("BRCA1", "V11A", "protein")
+        # variant = Variant(variant.split(" ")[0], variant.split(" ")[1], "protein")
         logger.info(f"Processing variant: {variant}")
 
         # 2. Fetch Data from Variomes
@@ -74,12 +73,12 @@ async def main():
         print("="*50)
         for article in articles:
             print(article.get_context())
+            print("Annotation source:", article.annotation_source)
             print("\n")
 
         # 6. Generate Summary
-        # relevant_articles = await relevance_check(variant, articles)
-        # evidences = await extract_evidences(variant, relevant_articles)
-        # aggregated_evidence = await aggregate_evidences(variant, evidences)
+        final_result = await run_pipeline(variant, articles)
+        print(final_result)
 
         end_time = time.time()
         logger.info(f"\nWorkflow completed in {round(end_time - start_time, 2)}s")

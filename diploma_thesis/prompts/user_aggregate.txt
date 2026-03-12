@@ -1,30 +1,14 @@
 Genetic variant:
-Gene: _GENE_, Variant: _VARIANT_
+Gene: GENE, Variant: VARIANT
 VARIANT_INFO
 
 Extracted evidence from individual articles:
 STRUCTURED_EVIDENCE_LIST
 
 Task:
-1) Write a concise, human-readable summary of the evidence regarding this variant.
-   - Mention key findings.
-   - Cite articles in the form [PMC ID or PubMed ID].
-   - Note conflicting evidence if present.
+1) Write a concise, human-readable summary of the evidence regarding this variant. - Narrative summary
+ - Mention key findings.
+ - Cite articles in the form [PMC ID or PubMed ID].
+ - Note conflicting evidence if present.
 
-2) Provide a structured summary suitable for downstream analysis.
-
-Output JSON only, using this schema:
-{
-  "narrative_summary": string,
-  "structured_summary": {
-    "overall_pathogenicity": "pathogenic | likely pathogenic | benign | likely benign | uncertain",
-    "evidence_counts": {
-      "functional": number,
-      "clinical": number,
-      "population": number,
-      "computational": number
-    },
-    "conflicting_evidence": boolean,
-    "overall_confidence": "low | moderate | high"
-  }
-}
+2) Provide a structured summary suitable for downstream analysis. - Structured summary
