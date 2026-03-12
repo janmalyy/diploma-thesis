@@ -198,108 +198,77 @@ async def generate_llm_summary(request: VariantRequest):
     async def event_generator():
         try:
             # 1. Initialization and SynVar Fetch
-            yield f"data: {json.dumps({'status': 'SynVar fetch'})}\n\n"
+            yield f"data: {json.dumps({'status': 'Recognizing the variant (SynVar)'})}\n\n"
             try:
                 variant = Variant(request.gene, request.change, request.level, fetch_data=False)
                 variant.fetch_synvar_data(request.level)
-                logger.info(f"Processing variant: {variant}")
             except Exception as e:
-                logger.error(f"SynVar error for {request.gene} {request.change}: {e}")
+                logger.error(f"SynVar error: {e}")
                 yield f"data: {json.dumps({'error': str(e)})}\n\n"
                 return
 
-            # 2. Article Retrieval (Variomes)
-            yield f"data: {json.dumps({'status': 'Variomes fetch'})}\n\n"
+            # 2. Article Retrieval
+            yield f"data: {json.dumps({'status': 'Fetching literature mentions'})}\n\n"
             data = fetch_variomes_data(variant)
             articles = parse_variomes_data(data, variant)
-
             if not articles:
-                yield f"data: {json.dumps({'result': 'No articles found for this variant.'})}\n\n"
+                yield f"data: {json.dumps({'result': 'No articles found.'})}\n\n"
                 return
 
             articles = prune_articles(articles)
 
-            # 3. Fulltext and Supplementary Data Retrieval
+            # 3. Content Update
             yield f"data: {json.dumps({'status': 'Updating Fulltext & Suppl Data'})}\n\n"
-            try:
-                # Use asyncio.gather and to_thread to avoid blocking and potentially save time
-                await asyncio.gather(
-                    asyncio.to_thread(update_articles_fulltext, articles, variant),
-                    asyncio.to_thread(update_suppl_data, articles, variant)
-                )
-            except Exception as e:
-                logger.error(f"Error updating content: {e}")
+            await asyncio.gather(
+                asyncio.to_thread(update_articles_fulltext, articles, variant),
+                asyncio.to_thread(update_suppl_data, articles, variant)
+            )
 
-            # Filter out non-matching articles based on relevance_score and content
             articles = remove_articles_with_no_match(articles)
             n_articles = len(articles)
-
             if n_articles == 0:
-                yield f"data: {json.dumps({'result': 'No articles remained after filtering.'})}\n\n"
+                yield f"data: {json.dumps({'result': 'No articles matched filtering.'})}\n\n"
                 return
 
-            # 4. LLM Pipeline
+            # 4. LLM Pipeline with Monotonic Counter
             total_llm_calls = n_articles + 1
             yield f"data: {json.dumps({
                 'status': 'Analysis and Extraction',
                 'article_count': n_articles,
-                'total_calls': total_llm_calls
+                'total_calls': total_llm_calls,
+                'completed_calls': 0
             })}\n\n"
 
             queue = asyncio.Queue()
+            completed_count = 0
 
-            async def progress_callback_queue(index, phase):
-                await queue.put({"index": index, "phase": phase})
+            async def progress_callback_queue(phase):
+                await queue.put(phase)
 
             pipeline_task = asyncio.create_task(run_pipeline(variant, articles, progress_callback_queue))
 
-            active_count = 0
-            completed_count = 0
-
             while not pipeline_task.done() or not queue.empty():
                 try:
-                    # Monitor the queue for progress in article processing
-                    msg = await asyncio.wait_for(queue.get(), timeout=0.1)
-                    phase = msg["phase"]
-
-                    if phase == "Processing":
-                        active_count += 1
-                    elif phase == "Done" or phase == "Error":
-                        active_count -= 1
-                        completed_count += 1
-                    elif phase == "Aggregating":
-                        completed_count = n_articles  # All analysis done
-
-                    status = f"Analysis: {active_count} active, {completed_count}/{n_articles} completed"
-                    if phase == "Aggregating":
-                        status = "Aggregating results..."
+                    phase = await asyncio.wait_for(queue.get(), timeout=0.2)
+                    completed_count += 1
 
                     yield f"data: {json.dumps({
-                        'status': status,
+                        'status': f'{phase}: {completed_count}/{total_llm_calls}',
                         'completed_calls': completed_count,
-                        'total_calls': total_llm_calls
+                        'total_calls': total_llm_calls,
+                        'phase': phase
                     })}\n\n"
-
                 except asyncio.TimeoutError:
                     continue
 
             final_result = await pipeline_task
-
-            # 5. Finalize Progress and Return Result
-            yield f"data: {json.dumps({
-                'status': 'Complete',
-                'completed_calls': total_llm_calls,
-                'total_calls': total_llm_calls
-            })}\n\n"
-
             yield f"data: {json.dumps({'result': final_result})}\n\n"
 
         except Exception as e:
-            logger.error(f"Error generating LLM summary: {str(e)}", exc_info=True)
+            logger.error(f"Pipeline error: {str(e)}", exc_info=True)
             yield f"data: {json.dumps({'error': str(e)})}\n\n"
 
     return StreamingResponse(event_generator(), media_type="text/event-stream")
-
 
 if __name__ == "__main__":
     uvicorn.run("diploma_thesis.web.main:app", host="0.0.0.0", port=8000, reload=True)

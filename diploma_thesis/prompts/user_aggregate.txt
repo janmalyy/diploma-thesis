@@ -9,6 +9,8 @@ Task:
 1) Write a concise, human-readable summary of the evidence regarding this variant. - Narrative summary
  - Mention key findings.
  - Cite articles in the form [PMC ID or PubMed ID].
+        - E.g. "A saturation‑genome‑editing study classified V11A as functional with high confidence [PMC6181777; 36775657]".
+        - E.g. "It appears in an OncoKB drug‑prescription supplement without a specific clinical interpretation [PMC9763624]."
  - Note conflicting evidence if present.
 
 2) Provide a structured summary suitable for downstream analysis. - Structured summary

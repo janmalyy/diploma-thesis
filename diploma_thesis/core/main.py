@@ -40,7 +40,7 @@ async def main():
         # 1. Initialize Variant (handles normalisation)
         variant = Variant("BRCA1", "V11A", "protein")
         # variant = Variant(variant.split(" ")[0], variant.split(" ")[1], "protein")
-        logger.info(f"Processing variant: {variant}")
+        # logger.info(f"Processing variant: {variant}")
 
         # 2. Fetch Data from Variomes
         logger.info("Fetching data from SIBiLS Variomes...")
@@ -51,21 +51,18 @@ async def main():
         if not articles:
             logger.info("No articles found for this variant.")
             return
-        logger.info(f"Found {len(articles)} articles. IDs: {[a.pmcid if a.pmcid != "" else a.pmid for a in articles]}")
+        # logger.info(f"Found {len(articles)} articles. IDs: {[a.pmcid if a.pmcid != "" else a.pmid for a in articles]}")
 
         articles = prune_articles(articles)
 
         # 3. Fetch and Parse Data from PubTator and BiodiversityPMC
-        logger.info("Fetching data from PubTator and BiodiversityPMC...")
+        # logger.info("Fetching data from PubTator and BiodiversityPMC...")
         update_articles_fulltext(articles, variant)
 
         # 4. Parse Suppl. Data
         update_suppl_data(articles, variant)
 
-        # 5. Shorten and Filter Context
-        # logger.info("Processing and shortening context...")
-        # for article in articles:
-        #     article.shorten_context(max_length=200)
+        # 5. Remove Articles with no match
         articles = remove_articles_with_no_match(articles)
 
         print("\n" + "="*50)

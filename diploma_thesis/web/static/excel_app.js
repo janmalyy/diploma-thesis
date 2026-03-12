@@ -19,9 +19,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const summaryModalBody = document.getElementById("summaryModalBody");
   const summaryModal = new bootstrap.Modal(summaryModalEl);
 
+  const sheetSelector = document.getElementById("sheet-selector");
+
   // -------------------- State --------------------
   let hot;
-  let currentData = null;
+  let allSheetsData = [];
+  let currentSheetName = null;
   let originalFileName = "";
   let pendingFile = null;
 
@@ -48,8 +51,49 @@ document.addEventListener("DOMContentLoaded", () => {
       }
   };
 
-  // maps function to a lookup string
   Handsontable.renderers.registerRenderer('bgColorRenderer', bgColorRenderer);
+
+  function switchSheet(name) {
+    const sheet = allSheetsData.find(s => s.name === name);
+    if (!sheet) return;
+
+    // Reset button styles
+    Array.from(sheetSelector.children).forEach(btn => {
+      btn.classList.remove('btn-primary');
+      btn.classList.add('btn-secondary');
+    });
+
+    // Highlight the active button
+    const activeBtn = sheetSelector.querySelector(`button[data-sheet-name="${name}"]`);
+    if (activeBtn) {
+      activeBtn.classList.remove('btn-secondary');
+      activeBtn.classList.add('btn-primary');
+    }
+
+    currentSheetName = name;
+
+    initializeHandsontable(sheet.data);
+  }
+
+  function renderSheetSelector(sheetsData) {
+    sheetSelector.innerHTML = '';
+
+    if (sheetsData.length <= 1) return; // No need for a selector if only one sheet
+
+    sheetsData.forEach((sheet, index) => {
+      const button = document.createElement('button');
+      button.className = index === 0 ? 'btn btn-sm btn-primary' : 'btn btn-sm btn-secondary';
+      button.textContent = sheet.name;
+      button.setAttribute('data-sheet-name', sheet.name);
+
+      button.addEventListener('click', () => {
+        if (sheet.name !== currentSheetName) {
+          switchSheet(sheet.name);
+        }
+      });
+      sheetSelector.appendChild(button);
+    });
+  }
 
   // -------------------- Upload --------------------
   async function uploadFile(file) {
@@ -65,16 +109,27 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       const data = await response.json();
-      currentData = data.data;
+      allSheetsData = data.sheets;
       originalFileName = data.filename;
+
+      if (allSheetsData.length === 0) {
+        throw new Error("The uploaded file contains no data sheets.");
+      }
+
+      const firstSheet = allSheetsData[0];
+      currentSheetName = firstSheet.name;
 
       showSuccess(successMessage, errorMessage, `File "${originalFileName}" uploaded successfully.`);
       currentFileName.textContent = originalFileName;
       editorContainer.style.display = "block";
 
-      initializeHandsontable(currentData);
+      renderSheetSelector(allSheetsData);
+      initializeHandsontable(firstSheet.data);
+
     } catch (error) {
       showError(errorMessage, successMessage, error.message);
+      editorContainer.style.display = "none";
+      sheetSelector.innerHTML = '';
     }
   }
 
@@ -88,7 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    if (currentData !== null) {
+    if (allSheetsData.length > 0) {
       pendingFile = file;
       confirmOverwriteModal.show();
     } else { uploadFile(file); }
@@ -166,11 +221,17 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // -------------------- LLM Summary --------------------
+  // This logic is simplified; in a multi-sheet application, the API
+  // would likely need to know *which sheet* the row_id comes from.
+  // For now, it remains unchanged, assuming row_id is globally unique or
+  // the backend only processes the current sheet data.
   async function generateLLMSummary(rowId) {
     try {
       const response = await fetch("/api/generate-llm-summary", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
+        // NOTE: If row IDs are only unique per sheet, you need to send currentSheetName here:
+        // body: JSON.stringify({ row_id: rowId, sheet_name: currentSheetName })
         body: JSON.stringify({ row_id: rowId })
       });
 
@@ -188,16 +249,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // -------------------- Export --------------------
   async function exportFile(format) {
-    if (!currentData) { showError(errorMessage, successMessage, "No data to export."); return; }
+    // UPDATED: Check for data based on the new state variable
+    if (allSheetsData.length === 0) { showError(errorMessage, successMessage, "No data to export."); return; }
+
+    // NOTE: This currently only exports the data currently visible in the HOT instance.
+    // To export ALL sheets, you would need to loop through allSheetsData and send
+    // it to the backend for re-packaging into a multi-sheet Excel file.
+
     const data = hot.getData(0, 0, hot.countRows() - 1, hot.countCols() - 1, true);
+    // Use the original filename
     const filename = format === "csv" ? originalFileName.replace(".xlsx", ".csv") : originalFileName;
     const contentType = format === "csv" ? "text/csv" : "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
 
     try {
+      // NOTE: This API call must be updated on the backend to accept data as
+      // an array of sheet objects if you want to export *all* sheets to a multi-sheet Excel file.
+      // For now, it sends only the currently visible sheet data.
       const response = await fetch(`/api/excel/export/${format}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ data, filename })
+        body: JSON.stringify({ data, filename, current_sheet_name: currentSheetName })
       });
 
       if (!response.ok) {
