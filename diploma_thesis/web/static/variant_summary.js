@@ -292,7 +292,6 @@ document.addEventListener("DOMContentLoaded", () => {
             const percent = (currentCompletedCalls / currentTotalCalls) * 100;
             relevanceProgressContainer.style.display = "flex";
             relevanceProgressBar.style.width = `${percent}%`;
-            relevanceProgressBar.textContent = `${currentCompletedCalls}/${currentTotalCalls} calls`;
         }
     }
 
@@ -455,9 +454,11 @@ document.addEventListener("DOMContentLoaded", () => {
         div.textContent = text;
         const escapedText = div.innerHTML;
 
-        return escapedText.replace(/\[(PMC\s*:?\s*\d+|PMID\s*:?\s*\d+|\d+)\]/gi, (match, id) => {
-            const cleanId = id.replace(/^(PMC|PMID)\s*:?\s*/i, "").trim();
-            const prefix = id.toUpperCase().startsWith("PMC") ? "PMC" : "";
+        // Matches 'PMC' followed by numbers OR sequences of digits (at least 5 digits)
+        // Uses word boundaries (\b) to avoid matching numbers inside other words
+        return escapedText.replace(/\b(PMC\d+)|(\d{5,})\b/gi, (match) => {
+            const cleanId = match.replace(/^PMC/i, "").trim();
+            const prefix = match.toUpperCase().startsWith("PMC") ? "PMC" : "";
             return `<span class="ref-link" data-article-id="${prefix}${cleanId}">${match}</span>`;
         });
     }
@@ -502,6 +503,13 @@ document.addEventListener("DOMContentLoaded", () => {
         const article = modalEvidenceQueue[currentModalIndex];
         const articleId = article.article_id;
 
+        // Construct the external URL
+        const isPMC = articleId.toString().toUpperCase().startsWith("PMC");
+        const cleanId = articleId.toString().replace(/^PMC/i, "");
+        const externalUrl = isPMC
+            ? `https://pmc.ncbi.nlm.nih.gov/articles/PMC${cleanId}/`
+            : `https://pubmed.ncbi.nlm.nih.gov/${cleanId}/`;
+
         document.getElementById("articleEvidenceModalLabel").textContent = `Evidence from Article ${articleId}`;
 
         if (modalEvidenceQueue.length > 1) {
@@ -532,6 +540,12 @@ document.addEventListener("DOMContentLoaded", () => {
         nextEvidenceBtn.disabled = currentModalIndex === modalEvidenceQueue.length - 1;
 
         let html = `
+            <div class="mb-3">
+                <h5 class="text-primary">${escapeHtml(article.title || "Title not available")}</h5>
+                <a href="${externalUrl}" target="_blank" class="btn btn-sm btn-outline-secondary mb-3">
+                    View on ${isPMC ? 'PMC' : 'PubMed'} ↗
+                </a>
+            </div>
             <div class="mb-4">
                 <h6><strong>Article Conclusion:</strong></h6>
                 <p>${escapeHtml(article.overall_article_summary || "N/A")}</p>
