@@ -75,6 +75,7 @@ class Article:
         self.disease: str = "Unknown"
 
     def get_context(self) -> str:
+        """Returns a string representation of the article. For people."""
         context = f"Article {self.pmcid if self.pmcid else self.pmid}\n"
         context += f"Relevance score: {self.relevance_score}\n"
         if self.title:
@@ -86,16 +87,25 @@ class Article:
         if len(self.suppl_data_list) > 0:
             context += "\nSupplementary evidence records:\n"
             for sd in self.suppl_data_list:
-                context += "\n".join([f"{key}: {value}" for p in sd.paragraphs for key, value in p.model_dump().items()])
+                context += "\n".join([
+                    f"{key}: {value}" for p in sd.paragraphs
+                    for key, value in p.model_dump().items()
+                    if value not in [None, "", []]
+                ])
                 context += "\n"
         return context
 
     def get_structured_context(self) -> dict:
+        """Returns a json representation of the article. For LLMs."""
         supp_data_mentions = []
         for sd in self.suppl_data_list:
             for i, p in enumerate(sd.paragraphs):
                 supp_data_mentions.append({
-                    f"supp{i}": p
+                    f"supp{i}": {
+                        key: value
+                        for key, value in p.model_dump().items()
+                        if value not in [None, "", []]
+                    }
                 })
         return {
             "ARTICLE_ID": self.pmcid if self.pmcid else self.pmid,
@@ -116,20 +126,29 @@ class Article:
         self.paragraphs = shortened
 
 
-def prune_articles(articles: list[Article], max_articles: int = 100) -> list[Article]:
-    """Prune the list of articles to the maximum number of articles."""
+def prune_articles(articles: list[Article], max_articles: int = 50) -> list[Article]:
+    """
+    Prune the list of articles to the maximum number of articles based on relevance_score
+    with the exception that all medline articles are kept.
+    """
     if len(articles) < max_articles:
         return articles
+    medline_articles = [a for a in articles if "medline" in a.data_sources]
     sorted_articles = sorted(articles, key=lambda a: a.relevance_score, reverse=True)
-    return sorted_articles[:max_articles]
+    relevant_articles = sorted_articles[:max_articles-len(medline_articles)]
+    relevant_articles.extend(medline_articles)
+    return relevant_articles
 
 
 def remove_articles_with_no_match(articles: list[Article]) -> list[Article]:
-    """Remove articles that have no match and that are not presumably relevant then."""
+    """
+    Remove articles that have no match and that are not presumably relevant then.
+    Remove only if the relevance score is lower than 0.5. Never remove medline articles.
+    """
     # logger.info(f"Filtering {len(articles)} articles for matches")
     to_remove = []
     for article in articles:
-        if article.relevance_score < 0.5:
+        if "medline" not in article.data_sources and article.relevance_score < 0.5:
             if article.data_sources == {"supp"}:
                 if all((len(sd.paragraphs) == 0) or sd.paragraphs == [""] for sd in article.suppl_data_list):
                     to_remove.append(article)

@@ -1,7 +1,7 @@
 from lxml import etree
 
 from diploma_thesis.core.models import Article, TextBlock, Variant
-from diploma_thesis.utils.helpers import to_human_readable
+from diploma_thesis.utils.helpers import shorten_paragraph, to_human_readable
 from diploma_thesis.utils.text_matching import (
     find_relevant_paragraphs_with_snippets,
     find_relevant_paragraphs_without_snippets)
@@ -78,7 +78,7 @@ def parse_pubtator_document(article: Article, document: etree._Element, variant:
     relevant_payloads: list[object] = []
     used_snippets: list[TextBlock] = []
     if "pmc" in article.data_sources:
-        if not article.fulltext_snippets:   # = there are no evidences from variomes -> we try to search by variant.terms
+        if not article.fulltext_snippets:  # = there are no evidences from variomes -> we try to search by variant.terms
             relevant_payloads = find_relevant_paragraphs_without_snippets(
                 variant.terms,
                 blocks,
@@ -109,7 +109,9 @@ def parse_pubtator_document(article: Article, document: etree._Element, variant:
             elif passage_type == "abstract":
                 article.abstract += annotated_text
             else:
-                annotated_paragraphs.append(annotated_text)
+                annotated_paragraphs.append(
+                    shorten_paragraph(annotated_text, variant.terms)
+                )
 
     article.paragraphs = annotated_paragraphs
 
@@ -279,7 +281,7 @@ def parse_biodiversity_pmc_document(article: Article, article_data: dict, varian
             if not raw:
                 continue
             is_table = para_sentences[0].get("tag") == "table"
-            if is_table:        # we don't want to annotate tables because they have too many entities
+            if is_table:  # we don't want to annotate tables because they have too many entities
                 continue
 
             annotated = apply_annotations_biodiversity_pmc(
@@ -290,7 +292,9 @@ def parse_biodiversity_pmc_document(article: Article, article_data: dict, varian
             annotated_sentences.append(annotated)
 
         if annotated_sentences:
-            relevant_paragraphs.append(" ".join(annotated_sentences))
+            relevant_paragraphs.append(
+                shorten_paragraph(" ".join(annotated_sentences), variant.terms)
+            )
 
     # -------- Finalize --------
     article.paragraphs = relevant_paragraphs
