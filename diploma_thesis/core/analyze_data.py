@@ -65,7 +65,7 @@ def get_data_for_analysis(results_path: Path | str):
         variant_info = {
             "variant": variant.variant_string,
             "time_to_fetch_data": end(start),
-            "context_length": len("\n".join(article.get_context() for article in articles)),
+            "context_length": len("\n".join(str(article.get_structured_context()) for article in articles)),
             "articles_in_total": len(articles),
             "only_medline_count": len([a for a in articles if a.data_sources == {"medline"}]),
             "only_pmc_count": len([a for a in articles if a.data_sources == {"pmc"}]),
@@ -177,6 +177,6 @@ def analyze_data(filename: str):
 
 
 if __name__ == '__main__':
-    results_path = DATA_DIR / "results_updated_ver4.json"
+    results_path = DATA_DIR / "results_updated_ver8.json"
     # get_data_for_analysis(results_path)
     analyze_data(results_path)

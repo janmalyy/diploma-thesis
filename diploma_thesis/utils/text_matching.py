@@ -97,7 +97,7 @@ def find_relevant_paragraphs_without_snippets(
     relevant_texts = []
     relevant_payloads = []
     for text_block, payload in blocks:
-        text = text_block.raw_text
+        text = text_block.original
         if re.search(pattern, text):
             if is_new_text(text, relevant_texts, 90):
                 relevant_texts.append(text)

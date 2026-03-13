@@ -65,17 +65,16 @@ async def main():
         # 5. Remove Articles with no match
         articles = remove_articles_with_no_match(articles)
 
-        print("\n" + "="*50)
-        print("ARTICLE DETAILS")
-        print("="*50)
-        for article in articles:
-            print(article.get_context())
-            print("Annotation source:", article.annotation_source)
-            print("\n")
+        # print("\n" + "="*50)
+        # print("ARTICLE DETAILS")
+        # print("="*50)
+        # for article in articles:
+        #     print(article.get_context())
+        #     print("Annotation source:", article.annotation_source)
+        #     print("\n")
 
         # 6. Generate Summary
         final_result = await run_pipeline(variant, articles)
-        print(final_result)
 
         end_time = time.time()
         logger.info(f"\nWorkflow completed in {round(end_time - start_time, 2)}s")

@@ -25,14 +25,19 @@ class Variant:
 
 
 class TextBlock:
-    def __init__(self, raw_text: str):
-        self.raw_text = raw_text
-        self.human_readable, self.machine_comparable = self.build_text_block()
+    def __init__(self, raw_text: str, annotated: str | None = None):
+        self.original: str = raw_text
+        self.annotated: str | None = annotated
+        self._human_readable: str = to_human_readable(self.original)
+        self._machine_comparable: str = to_machine_comparable(self.human_readable)
 
-    def build_text_block(self):
-        human_readable = to_human_readable(self.raw_text)
-        machine_comparable = to_machine_comparable(human_readable)
-        return human_readable, machine_comparable
+    @property
+    def human_readable(self) -> str:
+        return self._human_readable
+
+    @property
+    def machine_comparable(self) -> str:
+        return self._machine_comparable
 
     def __str__(self):
         return self.human_readable
@@ -55,15 +60,16 @@ class SupplData(BaseModel):
 
 
 class Article:
-    def __init__(self, data_source: str, relevance_score: float, pmid: str = "", pmcid: str = "", fulltext_snippets: list[TextBlock] = None):
+    def __init__(self, data_source: str, relevance_score: float, pmid: str = "", pmcid: str = "", pub_year: int | None = None, fulltext_snippets: list[TextBlock] = None):
         self.pmid: str = pmid or ""  # for medline articles only
         self.pmcid: str = pmcid or ""
         self.relevance_score: float = round(relevance_score, 2)
+        self.pub_year: int | None = pub_year
         self.data_sources: set[str] = set()   # possible combinations: (medline), (pmc), (supp), (medline, pmc, supp), (pmc, supp)
         self.data_sources.add(data_source)
 
-        self.title: str = ""
-        self.abstract: str = ""
+        self.title: TextBlock = TextBlock("")       # needs to be TextBlock because it is put on display on UI
+        self.abstract: TextBlock = TextBlock("")    # it is TextBlock just in case it would be useful later (e.g. also for display)
 
         self.fulltext_snippets: list[TextBlock] = fulltext_snippets or []
         self.paragraphs: list[str] = []  # if variant found in the article
@@ -71,17 +77,15 @@ class Article:
         self.suppl_data_list: list[SupplData] = []
 
         self.annotation_source: str = ""
-        self.study_type: str = "Unknown"
-        self.disease: str = "Unknown"
 
     def get_context(self) -> str:
         """Returns a string representation of the article. For people."""
         context = f"Article {self.pmcid if self.pmcid else self.pmid}\n"
         context += f"Relevance score: {self.relevance_score}\n"
         if self.title:
-            context += f"Title: {self.title}\n"
+            context += f"Title: {self.title.original}\n"
         if self.abstract:
-            context += f"Abstract: {self.abstract}\n"
+            context += f"Abstract: {self.abstract.original}\n"
         if self.paragraphs:
             context += "Relevant paragraphs:\n" + "\n".join(self.paragraphs)
         if len(self.suppl_data_list) > 0:
@@ -96,7 +100,7 @@ class Article:
         return context
 
     def get_structured_context(self) -> dict:
-        """Returns a json representation of the article. For LLMs."""
+        """Returns a JSON representation of the article. For LLMs."""
         supp_data_mentions = []
         for sd in self.suppl_data_list:
             for i, p in enumerate(sd.paragraphs):
@@ -109,21 +113,20 @@ class Article:
                 })
         return {
             "ARTICLE_ID": self.pmcid if self.pmcid else self.pmid,
-            "TITLE": self.title,
-            "ABSTRACT": self.abstract,
+            "TITLE": self.title.annotated,
+            "ABSTRACT": self.abstract.annotated,
             "FULLTEXT_MENTIONS": self.paragraphs,
             "SUPPLEMENTARY_DATA_MENTIONS": supp_data_mentions
         }
 
-    def shorten_context(self, max_length: int = 2000):
-        """Intelligently shortens the context. Mock implementation."""  # TODO
-        shortened = []
-        for p in self.paragraphs:
-            if len(p) > max_length:
-                shortened.append(p[:max_length] + "...")
-            else:
-                shortened.append(p)
-        self.paragraphs = shortened
+    def get_structured_metadata(self) -> dict:
+        """Returns a JSON representation of the article metadata. For UI display."""
+        return {
+            "article_id": self.pmcid if self.pmcid else self.pmid,
+            "title": self.title.original,
+            "relevance_score": self.relevance_score,
+            "pub_year": self.pub_year
+        }
 
 
 def prune_articles(articles: list[Article], max_articles: int = 50) -> list[Article]:

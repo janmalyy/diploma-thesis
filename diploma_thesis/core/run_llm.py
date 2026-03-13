@@ -39,7 +39,10 @@ async def process_single_article(
         semaphore: asyncio.Semaphore,
         progress_callback=None
 ) -> dict | None:
-    """Processes one article, respecting the concurrency limit."""
+    """
+    Evaluate the relevance of the article and extract evidences if it is relevant. Add metadata.
+    Returns: JSON object with evidence data and metadata or None if not relevant
+    """
     async with semaphore:
         try:
             replacements = {
@@ -53,13 +56,17 @@ async def process_single_article(
             result = await analysis_agent.run(ready_prompt)
 
             data = result.output
-
+            print(f"evidence {article.pmcid or article.pmid}: {data.is_relevant}")
+            print(data.reason)
+            print(data.overall_article_summary)
+            print(data.uncertainties_or_limitations)
+            print(data.evidence)
             if progress_callback:
                 await progress_callback("Analysis")
 
             if data.is_relevant:
                 evidence_data = data.model_dump()
-                evidence_data["article_id"] = article.pmcid or article.pmid
+                evidence_data.update(**article.get_structured_metadata())
                 return evidence_data
             return None
 
@@ -81,7 +88,7 @@ async def run_pipeline(variant: Variant, articles: list[Article], progress_callb
     ]
 
     results = await asyncio.gather(*tasks)
-    valid_evidences = [res for res in results if res is not None and res.get("is_relevant") is True]
+    valid_evidences = [res for res in results if res is not None]
 
     if not valid_evidences:
         return {"narrative_summary": "No relevant evidence found.", "article_evidences": []}
@@ -98,7 +105,9 @@ async def run_pipeline(variant: Variant, articles: list[Article], progress_callb
 
     agg_prompt = build_prompt(agg_replacements, get_prompt("user_aggregate.txt"))
     agg_result = await aggregator_agent.run(agg_prompt)
-
+    print(f"aggregation {variant}:")
+    print(agg_result.output.narrative_summary)
+    print(agg_result.output.structured_summary)
     final_output = agg_result.output.model_dump()
     final_output["article_evidences"] = valid_evidences
     return final_output

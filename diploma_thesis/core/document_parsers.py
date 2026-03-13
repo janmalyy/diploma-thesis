@@ -9,7 +9,7 @@ from diploma_thesis.utils.text_matching import (
 
 def apply_annotations_pubtator(passage: etree._Element, meta: dict) -> str:
     annotations = []
-    text = meta["text"]
+    text = meta["text_block"]
 
     for ann in passage.xpath("annotation"):
         ann_text_elem = ann.find("text")
@@ -37,7 +37,9 @@ def apply_annotations_pubtator(passage: etree._Element, meta: dict) -> str:
         })
 
     annotations.sort(key=lambda x: x["start"], reverse=True)
-    annotated_text = text.raw_text
+    # here ugly things happen... I take the original text from TextBlock,
+    # annotate it and then return this annotated text as human_readable...
+    annotated_text = text.original
 
     for ann in annotations:
         start, end = ann["start"], ann["end"]
@@ -71,7 +73,7 @@ def parse_pubtator_document(article: Article, document: etree._Element, variant:
         passage_meta[passage] = {
             "type": passage_type,
             "offset": passage_offset,
-            "text": text,
+            "text_block": text,
         }
 
     # -------- Competitive assignment --------
@@ -97,7 +99,8 @@ def parse_pubtator_document(article: Article, document: etree._Element, variant:
         raise ValueError(f"Unsupported data source: {article.data_sources}")
 
     annotated_paragraphs: list[str] = []
-
+    abstract_raw = ""
+    abstract_ann = ""
     for passage, meta in passage_meta.items():
         passage_type = meta["type"]
 
@@ -105,14 +108,17 @@ def parse_pubtator_document(article: Article, document: etree._Element, variant:
             annotated_text = apply_annotations_pubtator(passage, meta)
 
             if passage_type in title_tag_name:
-                article.title = annotated_text
+                article.title = meta["text_block"]
+                article.title.annotated = annotated_text
             elif passage_type == "abstract":
-                article.abstract += annotated_text
+                abstract_raw += meta["text_block"].original
+                abstract_ann += annotated_text
             else:
                 annotated_paragraphs.append(
                     shorten_paragraph(annotated_text, variant.terms)
                 )
 
+    article.abstract = TextBlock(raw_text=abstract_raw, annotated=abstract_ann)
     article.paragraphs = annotated_paragraphs
 
     for snippet in used_snippets:
@@ -134,9 +140,9 @@ def apply_annotations_biodiversity_pmc(text: str, sentence_num: int, annotations
     relevant = [
         ann for ann in annotations
         if ann.get("sentence_number") == sentence_num
-            and ann.get("start_index") is not None
-            and ann.get("end_index") is not None
-            and ann.get("type")
+           and ann.get("start_index") is not None
+           and ann.get("end_index") is not None
+           and ann.get("type")
     ]
 
     span_map: dict[tuple[int, int], set[str]] = {}
@@ -192,25 +198,29 @@ def parse_biodiversity_pmc_document(article: Article, article_data: dict, varian
     ]
 
     # -------- Title --------
-    title = document.get("title")
-    if title:
-        article.title = apply_annotations_biodiversity_pmc(title, 1, annotations)
+    article.title = TextBlock(raw_text=document.get("title"),
+                              annotated=apply_annotations_biodiversity_pmc(
+                                  document.get("title"), 1, annotations)
+                              )
 
     # -------- Abstract --------
-    abstract_parts: list[str] = []
+    abstract_parts: list[TextBlock] = []
     for s in sentences:
+        sentence_text = s.get("sentence", "")
         if s.get("field") != "abstract":
             continue
         annotated = apply_annotations_biodiversity_pmc(
-            s.get("sentence", ""),
+            sentence_text,
             s.get("sentence_number"),
             annotations,
         )
         if annotated:
-            abstract_parts.append(annotated)
+            abstract_parts.append(TextBlock(raw_text=sentence_text, annotated=annotated))
 
     if abstract_parts:
-        article.abstract = " ".join(abstract_parts)
+        abstract_raw = " ".join([text_block.original for text_block in abstract_parts])
+        abstract_annotated = " ".join([text_block.annotated for text_block in abstract_parts])
+        article.abstract = TextBlock(raw_text=abstract_raw, annotated=abstract_annotated)
 
     if "pmc" not in article.data_sources:
         return
@@ -281,7 +291,8 @@ def parse_biodiversity_pmc_document(article: Article, article_data: dict, varian
             if not raw:
                 continue
             is_table = para_sentences[0].get("tag") == "table"
-            if is_table:  # we don't want to annotate tables because they have too many entities
+            # we don't want to annotate tables because they have too many entities and it only becomes messy
+            if is_table:
                 continue
 
             annotated = apply_annotations_biodiversity_pmc(

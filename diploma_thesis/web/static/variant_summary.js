@@ -541,7 +541,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         let html = `
             <div class="mb-3">
-                <h5 class="text-primary">${escapeHtml(article.title || "Title not available")}</h5>
+                <h5 class="text-primary">${escapeHtml(article.title + " (" + article.pub_year + ")" || "Title not available")}</h5>
                 <a href="${externalUrl}" target="_blank" class="btn btn-sm btn-outline-secondary mb-3">
                     View on ${isPMC ? 'PMC' : 'PubMed'} ↗
                 </a>
