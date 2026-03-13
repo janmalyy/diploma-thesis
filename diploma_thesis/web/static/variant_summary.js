@@ -534,7 +534,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let html = `
             <div class="mb-4">
                 <h6><strong>Article Conclusion:</strong></h6>
-                <p>${escapeHtml(article.overall_article_conclusion || "N/A")}</p>
+                <p>${escapeHtml(article.overall_article_summary || "N/A")}</p>
             </div>
         `;
 
@@ -549,7 +549,6 @@ document.addEventListener("DOMContentLoaded", () => {
                             <span class="badge text-capitalize bg-${claimColor}">${escapeHtml(ev.claim)}</span>
                         </div>
                         <p class="mb-1"><strong>Description:</strong> ${escapeHtml(ev.description)}</p>
-                        <p class="mb-1"><small><strong>Context:</strong> ${escapeHtml(ev.study_context || "N/A")}</small></p>
                         ${ev.quoted_text ? `<p class="mb-0 mt-2 italic text-muted" style="font-style: italic;"><small>"${escapeHtml(ev.quoted_text)}"</small></p>` : ""}
                     </div>
                 `;
@@ -607,7 +606,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <h6 class="card-title">Article: ${escapeHtml(article.article_id)}</h6>
                         <button class="btn btn-sm btn-outline-primary view-details-btn">View Details</button>
                     </div>
-                    <p class="card-text small mb-2 text-muted">${escapeHtml(article.overall_article_conclusion || "No conclusion provided.")}</p>
+                    <p class="card-text small mb-2 text-muted">${escapeHtml(article.overall_article_summary || "No conclusion provided.")}</p>
                     <div class="evidence-summary-list">
                         ${evidenceListHtml}
                     </div>

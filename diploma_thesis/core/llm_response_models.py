@@ -40,8 +40,8 @@ class ConfidenceLevel(str, Enum):
 
 
 class EvidenceItem(BaseModel):
-    quoted_text: str = Field(description="The exact reference to the original text.")
-    description: str = Field(description="Your description of the quoted text.")
+    quoted_text: str = Field(description="1 sentence reference to the original text containing the variant and the evidence")
+    description: str = Field(description="Your description of the quoted text")
     evidence_type: EvidenceType
     claim: Claim
     strength: EvidenceStrength
@@ -51,8 +51,8 @@ class ArticleAnalysis(BaseModel):
     reason: str = Field(description="1 sentence explaining relevance decision")
     is_relevant: bool
     evidence: list[EvidenceItem] = Field(default_factory=list)
-    overall_article_conclusion: str | None = None
-    uncertainties_or_limitations: str | None = None
+    overall_article_summary: str | None = Field(default=None, description="1 sentence summary of the article based on the evidences")
+    uncertainties_or_limitations: str | None = Field(default=None, description="1 sentence summary of the uncertainties or limitations of the article")
 
 
 class StructuredSummary(BaseModel):

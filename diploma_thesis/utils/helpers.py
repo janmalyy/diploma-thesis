@@ -187,7 +187,7 @@ def shorten_paragraph(
     matches = list(re.finditer(pattern, text))
 
     if not matches:
-        logger.info(f"No matches found in paragraph: {text}, with terms: {terms}.")
+        # logger.info(f"No matches found in paragraph: {text}, with terms: {terms}.")
         return ""
 
     # 1. Define base ranges around each match
