@@ -302,6 +302,19 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    function formatNarrativeSummary(rawText) {
+        if (!rawText) return "";
+
+        // 1. Convert Markdown to HTML
+        const rawHtml = marked.parse(rawText);
+
+        // 2. Sanitize HTML to prevent XSS
+        const cleanHtml = DOMPurify.sanitize(rawHtml);
+
+        // 3. Apply your custom citation link logic to the clean HTML
+        return linkifyReferences(cleanHtml);
+    }
+
     function displayResult(result) {
         loadingOverlay.style.display = "none";
         abortController = null;
@@ -314,7 +327,7 @@ document.addEventListener("DOMContentLoaded", () => {
             structuredContainer.style.display = "none";
         } else {
             const narrative = result.narrative_summary || "No narrative summary available.";
-            summaryContent.innerHTML = linkifyReferences(narrative);
+            summaryContent.innerHTML = formatNarrativeSummary(narrative);
 
             if (result.structured_summary) {
                 const ss = result.structured_summary;
@@ -450,13 +463,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function linkifyReferences(text) {
         if (!text) return "";
-        const div = document.createElement("div");
-        div.textContent = text;
-        const escapedText = div.innerHTML;
 
         // Matches 'PMC' followed by numbers OR sequences of digits (at least 5 digits)
         // Uses word boundaries (\b) to avoid matching numbers inside other words
-        return escapedText.replace(/\b(PMC\d+)|(\d{5,})\b/gi, (match) => {
+        return text.replace(/\b(PMC\d+)|(\d{5,})\b/gi, (match) => {
             const cleanId = match.replace(/^PMC/i, "").trim();
             const prefix = match.toUpperCase().startsWith("PMC") ? "PMC" : "";
             return `<span class="ref-link" data-article-id="${prefix}${cleanId}">${match}</span>`;
