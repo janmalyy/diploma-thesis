@@ -244,6 +244,7 @@ document.addEventListener("DOMContentLoaded", () => {
             errorMessage.textContent = error.message;
             errorAlert.style.display = "block";
             loadingOverlay.style.display = "none";
+            resultContainer.style.display = "none";
         }
     });
 
@@ -252,8 +253,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function handleProgressUpdate(data) {
         if (data.error) {
-            throw new Error(data.error);
-        }
+        displayStreamingError(data.error);
+        return;
+    }
 
         if (data.total_calls !== undefined) {
             currentTotalCalls = data.total_calls;
@@ -284,6 +286,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (data.result) {
             displayResult(data.result);
+        }
+    }
+
+    /**
+     * Helper to handle errors that occur during the streaming phase
+     */
+    function displayStreamingError(message) {
+        console.error("Streaming Error:", message);
+        errorMessage.textContent = message;
+        errorAlert.style.display = "block";
+        loadingOverlay.style.display = "none";
+
+        // Ensure the result container is hidden if an error occurs mid-way
+        resultContainer.style.display = "none";
+
+        if (abortController) {
+            abortController.abort();
+            abortController = null;
         }
     }
 

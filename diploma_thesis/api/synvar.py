@@ -56,15 +56,15 @@ def fetch_synvar(gene: str | None, variant: str, level: str) -> etree._Element |
 
         if root.xpath("//error"):
             write_xml(root, cache_path, only_print=True)
-            raise ValueError(f"SynVar returned error for: {gene}, {variant}")
+            raise ValueError(f"SynVar returned error for: {gene}, {variant}, level: {level}.")
 
         if root.xpath("//variant[@valid='false']"):
             write_xml(root, cache_path, only_print=True)
-            raise ValueError(f"SynVar returned this to be a false variant: {gene}, {variant}")
+            raise ValueError(f"SynVar returned this to be a false variant: {gene}, {variant}, level: {level}.")
 
         if not root.xpath("//variant"):
             write_xml(root, cache_path, only_print=True)
-            raise ValueError(f"SynVar returned no data for variant: {gene}, {variant}.")
+            raise ValueError(f"SynVar returned no data for variant: {gene}, {variant}, level: {level}.")
 
         write_xml(root, cache_path)     # todo improve caching to store a list of invalid variants - možná(?)
 
