@@ -26,6 +26,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const copyEvidenceBtn = document.getElementById("copy-evidence-btn");
     const testUiBtn = document.getElementById("test-ui-btn");
 
+    const aboutModal = new bootstrap.Modal(document.getElementById("aboutModal"));
+    const helpModal = new bootstrap.Modal(document.getElementById("helpModal"));
+    const aboutBtn = document.getElementById("about-btn");
+    const helpBtn = document.getElementById("help-btn");
+    const aboutContent = document.getElementById("about-content");
+    const helpContent = document.getElementById("help-content");
+
     const modalTabs = document.getElementById("modal-evidence-tabs");
     const prevEvidenceBtn = document.getElementById("prev-evidence-btn");
     const nextEvidenceBtn = document.getElementById("next-evidence-btn");
@@ -42,6 +49,47 @@ document.addEventListener("DOMContentLoaded", () => {
     let sortedArticlesForModal = [];
     let modalEvidenceQueue = [];
     let currentModalIndex = 0;
+
+    // Helper to fetch and render Markdown
+    async function loadMarkdownContent(filename, container) {
+    try {
+        const response = await fetch(`/static/${filename}`);
+        if (!response.ok) throw new Error(`Could not load ${filename}`);
+        const text = await response.text();
+
+        // Render markdown to HTML
+        const rawHtml = marked.parse(text);
+
+        // Sanitize and force all links to open in a new tab
+        const cleanHtml = DOMPurify.sanitize(rawHtml, {
+            ADD_ATTR: ["target"], // Allow the target attribute
+            FORBID_TAGS: ["style"], // Example of extra security
+        });
+
+        container.innerHTML = cleanHtml;
+
+        // Force target="_blank" on all links inside this container
+        const links = container.querySelectorAll("a");
+        links.forEach(link => {
+            link.setAttribute("target", "_blank");
+            link.setAttribute("rel", "noopener noreferrer");
+        });
+
+    } catch (error) {
+        console.error(error);
+        container.innerHTML = `<div class="alert alert-danger">Error loading content.</div>`;
+    }
+}
+
+    aboutBtn.addEventListener("click", () => {
+        aboutModal.show();
+        loadMarkdownContent("about.md", aboutContent);
+    });
+
+    helpBtn.addEventListener("click", () => {
+        helpModal.show();
+        loadMarkdownContent("help.md", helpContent);
+    });
 
     // Load saved results if any
     const savedResult = sessionStorage.getItem("variant_summary_result");
@@ -117,18 +165,23 @@ document.addEventListener("DOMContentLoaded", () => {
     stopBtn.addEventListener("click", stopGeneration);
 
     document.addEventListener("keydown", (e) => {
-        const modalEl = document.getElementById("articleEvidenceModal");
-        const isModalOpen = modalEl && modalEl.classList.contains("show");
+        const evidenceModalEl = document.getElementById("articleEvidenceModal");
+        const aboutModalEl = document.getElementById("aboutModal");
+        const helpModalEl = document.getElementById("helpModal");
 
         if (e.key === "Escape") {
             if (loadingOverlay.style.display === "flex") {
                 stopGeneration();
-            } else if (isModalOpen) {
-                articleEvidenceModal.hide();
+            } else {
+                // Close any open modal
+                if (evidenceModalEl.classList.contains("show")) articleEvidenceModal.hide();
+                if (aboutModalEl.classList.contains("show")) aboutModal.hide();
+                if (helpModalEl.classList.contains("show")) helpModal.hide();
             }
         }
 
-        if (isModalOpen) {
+        // Logic for article evidence modal only
+        if (evidenceModalEl.classList.contains("show")) {
             if (e.key === "ArrowLeft") {
                 if (modalEvidenceQueue.length > 1 && currentModalIndex > 0) {
                     currentModalIndex--;
@@ -143,7 +196,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        // Grouped Evidence Navigation for Article Cards
+        // Navigation logic for article cards ...
         const activeCard = document.activeElement;
         if (activeCard && activeCard.classList.contains("article-card")) {
             const cards = Array.from(groupedEvidenceBody.querySelectorAll(".article-card"));

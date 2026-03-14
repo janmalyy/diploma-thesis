@@ -143,8 +143,8 @@
         border-color: #0d6efd;
     }
     #summary-content p {
-      margin-bottom: 0.2rem; /* Zmenšení mezery mezi odstavci */
-      line-height: 1.5;      /* Hustší řádkování */
+      margin-bottom: 0.2rem;
+      line-height: 1.5;
     }
 
     #summary-content ul, #summary-content ol {
@@ -153,7 +153,18 @@
     }
 
     #summary-content li {
-      margin-bottom: 0.1rem; /* Mezera mezi položkami seznamu */
+      margin-bottom: 0.1rem;
+    }
+
+    /* Markdown Styling in Modals */
+    .markdown-content h1, .markdown-content h2, .markdown-content h3 {
+      color: #0d6efd;
+      margin-top: 1rem;
+    }
+    .markdown-content code {
+      background-color: #f1f1f1;
+      padding: 2px 4px;
+      border-radius: 4px;
     }
   </style>
 </head>
@@ -162,8 +173,12 @@
     <div class="row justify-content-center">
       <div class="col-lg-8">
         <div class="card">
-          <div class="card-header text-center py-3">
-            <h3 class="mb-0">Generate Variant Summary</h3>
+          <div class="card-header position-relative py-3">
+            <h3 class="mb-0 text-center">Generate Variant Summary</h3>
+            <div class="position-absolute top-50 end-0 translate-middle-y me-3 d-flex gap-2">
+              <button id="about-btn" class="btn btn-sm btn-outline-light" type="button">About</button>
+              <button id="help-btn" class="btn btn-sm btn-outline-light" type="button">Help</button>
+            </div>
           </div>
           <div class="card-body p-4">
             <p class="text-muted mb-4 text-center">Enter variant details below to generate an AI-powered summary from scientific literature.</p>
@@ -262,7 +277,6 @@
                 <h5 class="mb-0">Detailed Evidence by Article</h5>
               </div>
               <div class="card-body p-0" id="grouped-evidence-body">
-                <!-- Grouped evidence cards go here -->
               </div>
             </div>
           </div>
@@ -282,7 +296,38 @@
     </div>
   </div>
 
-  <!-- Article Evidence Modal -->
+  <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="aboutModalLabel">About</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body markdown-content" id="about-content">
+          <div class="text-center">
+            <div class="spinner-border text-primary" role="status"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="helpModal" tabindex="-1" aria-labelledby="helpModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="helpModalLabel">Help</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body markdown-content" id="help-content">
+          <div class="text-center">
+            <div class="spinner-border text-primary" role="status"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="modal fade" id="articleEvidenceModal" tabindex="-1" aria-labelledby="articleEvidenceModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-scrollable">
       <div class="modal-content">
@@ -292,11 +337,9 @@
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <ul class="nav nav-tabs" id="modal-evidence-tabs" style="display: none;">
-            <!-- Tabs will be dynamically added here -->
           </ul>
         </div>
         <div class="modal-body" id="article-evidence-body">
-          <!-- Evidence content goes here -->
         </div>
         <div class="modal-footer d-flex justify-content-between">
           <div>
@@ -305,7 +348,6 @@
           </div>
           <div>
             <button type="button" class="btn btn-outline-primary me-2" id="copy-evidence-btn">Copy Evidence</button>
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
