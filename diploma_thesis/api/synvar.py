@@ -3,8 +3,11 @@ import re
 import requests
 from lxml import etree
 
+from diploma_thesis.api.annotations import get_session
 from diploma_thesis.settings import DATA_DIR, logger
 from diploma_thesis.utils.helpers import normalize_variant, uniq, write_xml
+
+session = get_session()
 
 
 def fetch_synvar(gene: str | None, variant: str, level: str) -> etree._Element | None:
@@ -41,8 +44,9 @@ def fetch_synvar(gene: str | None, variant: str, level: str) -> etree._Element |
 
     else:
         try:
-            r = requests.get(
-                url=f"https://synvar.sibils.org/generate/literature/fromMutation?ref={gene}&variant={variant}&level={level}&map=false&iso=true")
+            r = session.get(
+                url=f"https://synvar.sibils.org/generate/literature/fromMutation?ref={gene}&variant={variant}&level={level}&map=false&iso=true",
+                timeout=10)
             r.raise_for_status()
             root = etree.fromstring(r.content)
         except requests.RequestException as e:
@@ -52,15 +56,15 @@ def fetch_synvar(gene: str | None, variant: str, level: str) -> etree._Element |
 
         if root.xpath("//error"):
             write_xml(root, cache_path, only_print=True)
-            raise ValueError(f"SynVar returned error for: {gene}, {variant}")
+            raise ValueError(f"SynVar returned error for: {gene}, {variant}, level: {level}.")
 
         if root.xpath("//variant[@valid='false']"):
             write_xml(root, cache_path, only_print=True)
-            raise ValueError(f"SynVar returned this to be a false variant: {gene}, {variant}")
+            raise ValueError(f"SynVar returned this to be a false variant: {gene}, {variant}, level: {level}.")
 
         if not root.xpath("//variant"):
             write_xml(root, cache_path, only_print=True)
-            raise ValueError(f"SynVar returned no data for variant: {gene}, {variant}.")
+            raise ValueError(f"SynVar returned no data for variant: {gene}, {variant}, level: {level}.")
 
         write_xml(root, cache_path)     # todo improve caching to store a list of invalid variants - možná(?)
 
@@ -112,7 +116,7 @@ def parse_synvar(root: etree._Element) -> dict:
         if v in canonical_values:
             continue
         norm = normalize_variant(v)
-        if norm not in alias_map:       # todo add fuzz.partial_ratio
+        if norm not in alias_map:       # todo add fuzz.partial_ratio - teď je těch aliasů totiž pořád strašně moc stejných
             alias_map[norm] = v
 
     return {

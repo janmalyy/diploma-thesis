@@ -26,17 +26,70 @@ document.addEventListener("DOMContentLoaded", () => {
     const copyEvidenceBtn = document.getElementById("copy-evidence-btn");
     const testUiBtn = document.getElementById("test-ui-btn");
 
+    const aboutModal = new bootstrap.Modal(document.getElementById("aboutModal"));
+    const helpModal = new bootstrap.Modal(document.getElementById("helpModal"));
+    const aboutBtn = document.getElementById("about-btn");
+    const helpBtn = document.getElementById("help-btn");
+    const aboutContent = document.getElementById("about-content");
+    const helpContent = document.getElementById("help-content");
+
     const modalTabs = document.getElementById("modal-evidence-tabs");
     const prevEvidenceBtn = document.getElementById("prev-evidence-btn");
     const nextEvidenceBtn = document.getElementById("next-evidence-btn");
     const groupedEvidenceContainer = document.getElementById("grouped-evidence-container");
     const groupedEvidenceBody = document.getElementById("grouped-evidence-body");
+    const levelSelect = document.getElementById("level");
+    const geneContainer = document.getElementById("gene-container");
+    const geneInput = document.getElementById("gene");
+    const changeLabel = document.getElementById("change-label");
+    const changeInput = document.getElementById("change");
 
     let abortController = null;
     let currentArticleEvidences = [];
     let sortedArticlesForModal = [];
     let modalEvidenceQueue = [];
     let currentModalIndex = 0;
+
+    // Helper to fetch and render Markdown
+    async function loadMarkdownContent(filename, container) {
+    try {
+        const response = await fetch(`/static/${filename}`);
+        if (!response.ok) throw new Error(`Could not load ${filename}`);
+        const text = await response.text();
+
+        // Render markdown to HTML
+        const rawHtml = marked.parse(text);
+
+        // Sanitize and force all links to open in a new tab
+        const cleanHtml = DOMPurify.sanitize(rawHtml, {
+            ADD_ATTR: ["target"], // Allow the target attribute
+            FORBID_TAGS: ["style"], // Example of extra security
+        });
+
+        container.innerHTML = cleanHtml;
+
+        // Force target="_blank" on all links inside this container
+        const links = container.querySelectorAll("a");
+        links.forEach(link => {
+            link.setAttribute("target", "_blank");
+            link.setAttribute("rel", "noopener noreferrer");
+        });
+
+    } catch (error) {
+        console.error(error);
+        container.innerHTML = `<div class="alert alert-danger">Error loading content.</div>`;
+    }
+}
+
+    aboutBtn.addEventListener("click", () => {
+        aboutModal.show();
+        loadMarkdownContent("about.md", aboutContent);
+    });
+
+    helpBtn.addEventListener("click", () => {
+        helpModal.show();
+        loadMarkdownContent("help.md", helpContent);
+    });
 
     // Load saved results if any
     const savedResult = sessionStorage.getItem("variant_summary_result");
@@ -48,14 +101,58 @@ document.addEventListener("DOMContentLoaded", () => {
             const savedForm = sessionStorage.getItem("variant_summary_form");
             if (savedForm) {
                 const formData = JSON.parse(savedForm);
-                document.getElementById("gene").value = formData.gene || "";
-                document.getElementById("change").value = formData.change || "";
-                document.getElementById("level").value = formData.level || "";
+                geneInput.value = formData.gene || "";
+                changeInput.value = formData.change || "";
+                levelSelect.value = formData.level || "";
+                updateFieldsBasedOnLevel(formData.level);
             }
         } catch (e) {
             console.error("Failed to load saved result:", e);
         }
     }
+
+    function updateFieldsBasedOnLevel(level) {
+        if (!level) return;
+
+        if (level === "dbsnp" || level === "cosmic") {
+            geneContainer.style.display = "none";
+            geneInput.required = false;
+            changeLabel.textContent = "Reference ID";
+        } else {
+            geneContainer.style.display = "block";
+            geneInput.required = true;
+            changeLabel.textContent = "Change";
+        }
+
+        // Update placeholders
+        switch (level) {
+            case "protein":
+                geneInput.placeholder = "e.g. NOP10";
+                changeInput.placeholder = "e.g. D12H";
+                break;
+            case "transcript":
+                geneInput.placeholder = "e.g. NOP10";
+                changeInput.placeholder = "e.g. c.34G>C";
+                break;
+            case "genome":
+                geneInput.placeholder = "e.g. NOP10";
+                changeInput.placeholder = "e.g. g.34343040C>G";
+                break;
+            case "cosmic":
+                changeInput.placeholder = "e.g. COSM3754273";
+                break;
+            case "dbsnp":
+                changeInput.placeholder = "e.g. rs113488022";
+                break;
+            default:
+                geneInput.placeholder = "e.g. BRCA1";
+                changeInput.placeholder = "e.g. Q804H";
+        }
+    }
+
+    levelSelect.addEventListener("change", (e) => {
+        updateFieldsBasedOnLevel(e.target.value);
+    });
 
     function stopGeneration() {
         if (abortController) {
@@ -68,18 +165,23 @@ document.addEventListener("DOMContentLoaded", () => {
     stopBtn.addEventListener("click", stopGeneration);
 
     document.addEventListener("keydown", (e) => {
-        const modalEl = document.getElementById("articleEvidenceModal");
-        const isModalOpen = modalEl && modalEl.classList.contains("show");
+        const evidenceModalEl = document.getElementById("articleEvidenceModal");
+        const aboutModalEl = document.getElementById("aboutModal");
+        const helpModalEl = document.getElementById("helpModal");
 
         if (e.key === "Escape") {
             if (loadingOverlay.style.display === "flex") {
                 stopGeneration();
-            } else if (isModalOpen) {
-                articleEvidenceModal.hide();
+            } else {
+                // Close any open modal
+                if (evidenceModalEl.classList.contains("show")) articleEvidenceModal.hide();
+                if (aboutModalEl.classList.contains("show")) aboutModal.hide();
+                if (helpModalEl.classList.contains("show")) helpModal.hide();
             }
         }
 
-        if (isModalOpen) {
+        // Logic for article evidence modal only
+        if (evidenceModalEl.classList.contains("show")) {
             if (e.key === "ArrowLeft") {
                 if (modalEvidenceQueue.length > 1 && currentModalIndex > 0) {
                     currentModalIndex--;
@@ -94,7 +196,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        // Grouped Evidence Navigation for Article Cards
+        // Navigation logic for article cards ...
         const activeCard = document.activeElement;
         if (activeCard && activeCard.classList.contains("article-card")) {
             const cards = Array.from(groupedEvidenceBody.querySelectorAll(".article-card"));
@@ -136,9 +238,9 @@ document.addEventListener("DOMContentLoaded", () => {
         relevanceProgressBar.style.width = "0%";
 
         const formData = {
-            gene: document.getElementById("gene").value.trim(),
-            change: document.getElementById("change").value.trim(),
-            level: document.getElementById("level").value
+            gene: geneInput.value.trim(),
+            change: changeInput.value.trim(),
+            level: levelSelect.value
         };
 
         sessionStorage.setItem("variant_summary_form", JSON.stringify(formData));
@@ -195,6 +297,7 @@ document.addEventListener("DOMContentLoaded", () => {
             errorMessage.textContent = error.message;
             errorAlert.style.display = "block";
             loadingOverlay.style.display = "none";
+            resultContainer.style.display = "none";
         }
     });
 
@@ -203,8 +306,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function handleProgressUpdate(data) {
         if (data.error) {
-            throw new Error(data.error);
-        }
+        displayStreamingError(data.error);
+        return;
+    }
 
         if (data.total_calls !== undefined) {
             currentTotalCalls = data.total_calls;
@@ -238,12 +342,29 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    /**
+     * Helper to handle errors that occur during the streaming phase
+     */
+    function displayStreamingError(message) {
+        console.error("Streaming Error:", message);
+        errorMessage.textContent = message;
+        errorAlert.style.display = "block";
+        loadingOverlay.style.display = "none";
+
+        // Ensure the result container is hidden if an error occurs mid-way
+        resultContainer.style.display = "none";
+
+        if (abortController) {
+            abortController.abort();
+            abortController = null;
+        }
+    }
+
     function updateProgressBar() {
         if (currentTotalCalls > 0) {
             const percent = (currentCompletedCalls / currentTotalCalls) * 100;
             relevanceProgressContainer.style.display = "flex";
             relevanceProgressBar.style.width = `${percent}%`;
-            relevanceProgressBar.textContent = `${currentCompletedCalls}/${currentTotalCalls} calls`;
         }
     }
 
@@ -252,6 +373,19 @@ document.addEventListener("DOMContentLoaded", () => {
             const remaining = Math.max(0, currentTotalCalls - currentCompletedCalls);
             etaValue.textContent = remaining * 5;
         }
+    }
+
+    function formatNarrativeSummary(rawText) {
+        if (!rawText) return "";
+
+        // 1. Convert Markdown to HTML
+        const rawHtml = marked.parse(rawText);
+
+        // 2. Sanitize HTML to prevent XSS
+        const cleanHtml = DOMPurify.sanitize(rawHtml);
+
+        // 3. Apply your custom citation link logic to the clean HTML
+        return linkifyReferences(cleanHtml);
     }
 
     function displayResult(result) {
@@ -266,7 +400,7 @@ document.addEventListener("DOMContentLoaded", () => {
             structuredContainer.style.display = "none";
         } else {
             const narrative = result.narrative_summary || "No narrative summary available.";
-            summaryContent.innerHTML = linkifyReferences(narrative);
+            summaryContent.innerHTML = formatNarrativeSummary(narrative);
 
             if (result.structured_summary) {
                 const ss = result.structured_summary;
@@ -339,9 +473,10 @@ document.addEventListener("DOMContentLoaded", () => {
         testUiBtn.addEventListener("click", async () => {
             if (loadingOverlay.style.display === "flex") return;
 
-            document.getElementById("gene").value = "BRAF";
-            document.getElementById("change").value = "V600E";
-            document.getElementById("level").value = "protein";
+            geneInput.value = "BRAF";
+            changeInput.value = "V600E";
+            levelSelect.value = "protein";
+            updateFieldsBasedOnLevel("protein");
 
             errorAlert.style.display = "none";
             resultContainer.style.display = "none";
@@ -401,13 +536,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function linkifyReferences(text) {
         if (!text) return "";
-        const div = document.createElement("div");
-        div.textContent = text;
-        const escapedText = div.innerHTML;
 
-        return escapedText.replace(/\[(PMC\s*:?\s*\d+|PMID\s*:?\s*\d+|\d+)\]/gi, (match, id) => {
-            const cleanId = id.replace(/^(PMC|PMID)\s*:?\s*/i, "").trim();
-            const prefix = id.toUpperCase().startsWith("PMC") ? "PMC" : "";
+        // Matches 'PMC' followed by numbers OR sequences of digits (at least 5 digits)
+        // Uses word boundaries (\b) to avoid matching numbers inside other words
+        return text.replace(/\b(PMC\d+)|(\d{5,})\b/gi, (match) => {
+            const cleanId = match.replace(/^PMC/i, "").trim();
+            const prefix = match.toUpperCase().startsWith("PMC") ? "PMC" : "";
             return `<span class="ref-link" data-article-id="${prefix}${cleanId}">${match}</span>`;
         });
     }
@@ -452,6 +586,13 @@ document.addEventListener("DOMContentLoaded", () => {
         const article = modalEvidenceQueue[currentModalIndex];
         const articleId = article.article_id;
 
+        // Construct the external URL
+        const isPMC = articleId.toString().toUpperCase().startsWith("PMC");
+        const cleanId = articleId.toString().replace(/^PMC/i, "");
+        const externalUrl = isPMC
+            ? `https://pmc.ncbi.nlm.nih.gov/articles/PMC${cleanId}/`
+            : `https://pubmed.ncbi.nlm.nih.gov/${cleanId}/`;
+
         document.getElementById("articleEvidenceModalLabel").textContent = `Evidence from Article ${articleId}`;
 
         if (modalEvidenceQueue.length > 1) {
@@ -482,9 +623,15 @@ document.addEventListener("DOMContentLoaded", () => {
         nextEvidenceBtn.disabled = currentModalIndex === modalEvidenceQueue.length - 1;
 
         let html = `
+            <div class="mb-3">
+                <h5 class="text-primary">${escapeHtml(article.title + " (" + article.pub_year + ")" || "Title not available")}</h5>
+                <a href="${externalUrl}" target="_blank" class="btn btn-sm btn-outline-secondary mb-3">
+                    View on ${isPMC ? 'PMC' : 'PubMed'} ↗
+                </a>
+            </div>
             <div class="mb-4">
                 <h6><strong>Article Conclusion:</strong></h6>
-                <p>${escapeHtml(article.overall_article_conclusion || "N/A")}</p>
+                <p>${escapeHtml(article.overall_article_summary || "N/A")}</p>
             </div>
         `;
 
@@ -499,7 +646,6 @@ document.addEventListener("DOMContentLoaded", () => {
                             <span class="badge text-capitalize bg-${claimColor}">${escapeHtml(ev.claim)}</span>
                         </div>
                         <p class="mb-1"><strong>Description:</strong> ${escapeHtml(ev.description)}</p>
-                        <p class="mb-1"><small><strong>Context:</strong> ${escapeHtml(ev.study_context || "N/A")}</small></p>
                         ${ev.quoted_text ? `<p class="mb-0 mt-2 italic text-muted" style="font-style: italic;"><small>"${escapeHtml(ev.quoted_text)}"</small></p>` : ""}
                     </div>
                 `;
@@ -557,7 +703,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <h6 class="card-title">Article: ${escapeHtml(article.article_id)}</h6>
                         <button class="btn btn-sm btn-outline-primary view-details-btn">View Details</button>
                     </div>
-                    <p class="card-text small mb-2 text-muted">${escapeHtml(article.overall_article_conclusion || "No conclusion provided.")}</p>
+                    <p class="card-text small mb-2 text-muted">${escapeHtml(article.overall_article_summary || "No conclusion provided.")}</p>
                     <div class="evidence-summary-list">
                         ${evidenceListHtml}
                     </div>

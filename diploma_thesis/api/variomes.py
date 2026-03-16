@@ -66,7 +66,8 @@ def parse_variomes_data(data: dict, variant: Variant) -> list[Article]:
     medline_list = publications.get("medline")
     for pub in medline_list:
         pm_id = pub.get("id")
-        articles.append(Article(data_source="medline", pmid=pm_id, relevance_score=pub.get("score")))
+        articles.append(Article(data_source="medline", pmid=pm_id,
+                                relevance_score=pub.get("score"), pub_year=pub.get("date")))
 
     # Process PMC articles
     pmc_list = publications.get("pmc")
@@ -78,14 +79,14 @@ def parse_variomes_data(data: dict, variant: Variant) -> list[Article]:
             for ev in evidences
             if ev.get("text")
         ]
-        if snippets:  # TODO we skip articles without evidences=fulltext_snippets for now
-            article = next((a for a in articles if a.pmcid == pmc_id), None)
-            if article is None:
-                articles.append(Article(data_source="pmc", pmcid=pmc_id, relevance_score=pub.get("score"),
-                                        fulltext_snippets=snippets))
-            else:
-                article.data_sources.add("pmc")
-                article.fulltext_snippets = snippets
+        # it can happen that there are no evidences, so None is in fulltext_snippets; we handle it later
+        article = next((a for a in articles if a.pmcid == pmc_id), None)
+        if article is None:
+            articles.append(Article(data_source="pmc", pmcid=pmc_id, relevance_score=pub.get("score"),
+                                    pub_year=pub.get("date"), fulltext_snippets=snippets))
+        else:
+            article.data_sources.add("pmc")
+            article.fulltext_snippets = snippets
 
     # Process Supplemental data
     supp_list = publications.get("supp")
@@ -94,10 +95,12 @@ def parse_variomes_data(data: dict, variant: Variant) -> list[Article]:
 
         article = next((a for a in articles if a.pmcid == pmc_id), None)
         if article is None:
-            article = Article(data_source="supp", pmcid=pmc_id, relevance_score=pub.get("score"))
+            article = Article(data_source="supp", pmcid=pmc_id,
+                              relevance_score=pub.get("score"), pub_year=pub.get("date"))
             articles.append(article)
+        else:
+            article.data_sources.add("supp")
 
-        article.data_sources.add("supp")
         evidences = pub.get("evidences")
         snippets = [
             ev.get("text")
@@ -113,5 +116,9 @@ def parse_variomes_data(data: dict, variant: Variant) -> list[Article]:
             ))
 
     logger.info(
-        f"Found {len(medline_list)} medline articles, {len([a for a in articles if a.fulltext_snippets])} articles with fulltext snippets and {len([a for a in articles if len(a.suppl_data_list) > 0])} articles with suppl. snippets for variant {variant.variant_string}.")
+        f"Found {len(medline_list)} medline articles, "
+        f"{len([a for a in articles if a.fulltext_snippets])} articles with fulltext snippets, "
+        f"{len([a for a in articles if a.data_sources == {"pmc"} and not a.fulltext_snippets])} PMC articles without fulltext snippets, "
+        f"and {len([a for a in articles if len(a.suppl_data_list) > 0])} articles with suppl. snippets "
+        f"for variant {variant.variant_string}.")
     return articles

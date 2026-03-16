@@ -142,38 +142,49 @@
         box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.5);
         border-color: #0d6efd;
     }
+    #summary-content p {
+      margin-bottom: 0.2rem;
+      line-height: 1.5;
+    }
+
+    #summary-content ul, #summary-content ol {
+      margin-bottom: 0.1rem;
+      line-height: 1.1;
+    }
+
+    #summary-content li {
+      margin-bottom: 0.1rem;
+    }
+
+    /* Markdown Styling in Modals */
+    .markdown-content h1, .markdown-content h2, .markdown-content h3 {
+      color: #0d6efd;
+      margin-top: 1rem;
+    }
+    .markdown-content code {
+      background-color: #f1f1f1;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
   </style>
 </head>
 <body>
   <div class="container mt-4">
-    <ul class="nav nav-tabs">
-      <li class="nav-item">
-        <a class="nav-link" href="/excel">Excel Viewer</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="/variant">Variant Summary</a>
-      </li>
-    </ul>
-
     <div class="row justify-content-center">
       <div class="col-lg-8">
         <div class="card">
-          <div class="card-header text-center py-3">
-            <h3 class="mb-0">Generate Variant Summary</h3>
+          <div class="card-header position-relative py-3">
+            <h3 class="mb-0 text-center">Generate Variant Summary</h3>
+            <div class="position-absolute top-50 end-0 translate-middle-y me-3 d-flex gap-2">
+              <button id="about-btn" class="btn btn-sm btn-outline-light" type="button">About</button>
+              <button id="help-btn" class="btn btn-sm btn-outline-light" type="button">Help</button>
+            </div>
           </div>
           <div class="card-body p-4">
             <p class="text-muted mb-4 text-center">Enter variant details below to generate an AI-powered summary from scientific literature.</p>
 
             <form id="summary-form">
               <div class="row g-3">
-                <div class="col-md-4">
-                  <label for="gene" class="form-label">Gene</label>
-                  <input type="text" class="form-control" id="gene" name="gene" placeholder="e.g. BRAF" required>
-                </div>
-                <div class="col-md-4">
-                  <label for="change" class="form-label">Change</label>
-                  <input type="text" class="form-control" id="change" name="change" placeholder="e.g. V600E" required>
-                </div>
                 <div class="col-md-4">
                   <label for="level" class="form-label">Level</label>
                   <select class="form-select" id="level" name="level" required>
@@ -184,6 +195,14 @@
                     <option value="dbsnp">dbSNP</option>
                     <option value="cosmic">COSMIC</option>
                   </select>
+                </div>
+                <div class="col-md-4" id="gene-container">
+                  <label for="gene" class="form-label">Gene</label>
+                  <input type="text" class="form-control" id="gene" name="gene" placeholder="e.g. NOP10" required>
+                </div>
+                <div class="col-md-4">
+                  <label for="change" class="form-label" id="change-label">Change</label>
+                  <input type="text" class="form-control" id="change" name="change" placeholder="e.g. D12H" required>
                 </div>
               </div>
 
@@ -258,7 +277,6 @@
                 <h5 class="mb-0">Detailed Evidence by Article</h5>
               </div>
               <div class="card-body p-0" id="grouped-evidence-body">
-                <!-- Grouped evidence cards go here -->
               </div>
             </div>
           </div>
@@ -278,7 +296,38 @@
     </div>
   </div>
 
-  <!-- Article Evidence Modal -->
+  <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="aboutModalLabel">About</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body markdown-content" id="about-content">
+          <div class="text-center">
+            <div class="spinner-border text-primary" role="status"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="helpModal" tabindex="-1" aria-labelledby="helpModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="helpModalLabel">Help</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body markdown-content" id="help-content">
+          <div class="text-center">
+            <div class="spinner-border text-primary" role="status"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="modal fade" id="articleEvidenceModal" tabindex="-1" aria-labelledby="articleEvidenceModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-scrollable">
       <div class="modal-content">
@@ -288,11 +337,9 @@
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <ul class="nav nav-tabs" id="modal-evidence-tabs" style="display: none;">
-            <!-- Tabs will be dynamically added here -->
           </ul>
         </div>
         <div class="modal-body" id="article-evidence-body">
-          <!-- Evidence content goes here -->
         </div>
         <div class="modal-footer d-flex justify-content-between">
           <div>
@@ -301,7 +348,6 @@
           </div>
           <div>
             <button type="button" class="btn btn-outline-primary me-2" id="copy-evidence-btn">Copy Evidence</button>
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
@@ -309,6 +355,8 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.6/dist/purify.min.js"></script>
   <script type="module" src="/static/variant_summary.js"></script>
 </body>
 </html>

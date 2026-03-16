@@ -5,7 +5,7 @@ from diploma_thesis.api.annotations import (fetch_biodiversity_pmc,
                                             fetch_pubtator, get_session)
 from diploma_thesis.core.document_parsers import (
     parse_biodiversity_pmc_document, parse_pubtator_document)
-from diploma_thesis.core.models import Article, TextBlock
+from diploma_thesis.core.models import Article, TextBlock, Variant
 from diploma_thesis.settings import DATA_DIR, logger
 from diploma_thesis.utils.helpers import write_xml
 from diploma_thesis.utils.json_structure import write_json
@@ -13,10 +13,10 @@ from diploma_thesis.utils.json_structure import write_json
 urllib3.disable_warnings()
 
 
-def update_articles_fulltext(articles: list[Article]):
+def update_articles_fulltext(articles: list[Article], variant: Variant):
     """
     Orchestrates the data fetching pipeline.
-    Gets articles from Variomes and fetches fulltexts (or only abstract ofr medline articles)
+    Gets articles from Variomes and fetches fulltexts (or only abstract for medline articles)
     from Pubtator or BiodiversityPMC, depending on availability,
     and applies annotations to the articles.
     """
@@ -38,8 +38,8 @@ def update_articles_fulltext(articles: list[Article]):
     for pmcid, doc in pubtator_results.items():
         if pmcid in pmcid_to_article:
             article = pmcid_to_article[pmcid]
-            parse_pubtator_document(article, doc)
-            article.source = "pubtator"
+            parse_pubtator_document(article, doc, variant)
+            article.annotation_source = "pubtator"
 
     # get data for fulltext articles not present in pubtator from biodiversity_pmc
     missing_ids = [pmcid for pmcid in pmcid_to_article if pmcid not in pubtator_results]
@@ -48,8 +48,8 @@ def update_articles_fulltext(articles: list[Article]):
         for pmcid in missing_ids:
             if pmcid in biodiversity_pmc_data:
                 article = pmcid_to_article[pmcid]
-                parse_biodiversity_pmc_document(article, biodiversity_pmc_data[pmcid])
-                article.source = "pmc"
+                parse_biodiversity_pmc_document(article, biodiversity_pmc_data[pmcid], variant)
+                article.annotation_source = "pmc"
 
     # get data for medline articles from pubtator
     pmid_to_article = {a.pmid: a for a in articles if a.pmid}
@@ -59,8 +59,8 @@ def update_articles_fulltext(articles: list[Article]):
         for pmid, doc in medline_results.items():
             if pmid in pmid_to_article:
                 article = pmid_to_article[pmid]
-                parse_pubtator_document(article, doc)
-                article.source = "pubtator"
+                parse_pubtator_document(article, doc, variant)
+                article.annotation_source = "pubtator"
 
 
 if __name__ == '__main__':

@@ -1,16 +1,11 @@
 python-dotenv
 urllib3
 pydantic
-numpy
 requests
 lxml
 python-dateutil
 jinja2
 fastapi[standard]
 uvicorn
-nltk
-pandas
-openpyxl
-python-multipart
 pydantic-ai
 rapidfuzz

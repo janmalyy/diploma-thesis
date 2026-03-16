@@ -3,6 +3,7 @@ import io
 import re
 import statistics
 
+from diploma_thesis.core.models import SuppParagraph
 from diploma_thesis.settings import logger
 from diploma_thesis.utils.helpers import to_human_readable
 
@@ -194,7 +195,7 @@ def reconstruct_csv_like_table(text: str, delimiter: str) -> list[list[str]]:
 
 
 def get_title_header_and_context_from_table(table: list[list[str]], match_val: str):
-    # TODO vylepšit, aby se header a context párovali k sobě jako dictionary
+    # TODO vylepšit, aby se header a context párovali k sobě jako dictionary - teď se totiž asi header uloží vícekrát pro víc nálezů v jedné tabulce
     row, title, context = "", "", ""
     best_score = 0
     header_index = -1
@@ -219,42 +220,94 @@ def get_title_header_and_context_from_table(table: list[list[str]], match_val: s
     return title, header, context
 
 
-def build_paragraph(match: re.Match, raw_text: str) -> str:
+def get_context_from_raw_text(match: re.Match, raw_text: str, window: int = 250) -> tuple[str, str]:
+    """
+    Extracts approximately 200 characters before and after a regex match without breaking words.
+
+    Args:
+        match: The re.Match object containing the span of the hit.
+        raw_text: The full string from which to extract context.
+        window: The approximate number of characters to include before and after the match.
+
+    Returns:
+        header: a string at the beginning of the raw_text, if raw_text enough long.
+        context: A string containing the expanded context starting and ending at word boundaries.
+    """
+    start_idx, end_idx = match.span()
+
+    initial_start = max(0, start_idx - window)
+    if initial_start > 0:
+        # Search for the first whitespace after the initial_start to avoid cutting a word
+        # If no whitespace is found, we fall back to the initial_start
+        prefix_search = re.search(r"\s", raw_text[initial_start:start_idx])
+        if prefix_search:
+            actual_start = initial_start + prefix_search.start() + 1
+        else:
+            actual_start = initial_start
+    else:
+        actual_start = 0
+
+    initial_end = min(len(raw_text), end_idx + window)
+    if initial_end < len(raw_text):
+        suffix_search = list(re.finditer(r"\s", raw_text[end_idx:initial_end]))
+        if suffix_search:
+            actual_end = end_idx + suffix_search[-1].start()
+        else:
+            actual_end = initial_end
+    else:
+        actual_end = len(raw_text)
+
+    context = re.sub(UNNAMED_RE, "", raw_text[actual_start:actual_end].strip())
+
+    header = ""
+    if initial_start > 0:
+        suffix_search_header = list(re.finditer(r"\s", raw_text[0:window]))
+        if suffix_search_header:
+            actual_end_header = suffix_search_header[-1].start()
+            header = re.sub(UNNAMED_RE, "", raw_text[0:actual_end_header].strip())
+
+    return header, context
+
+
+def build_paragraph(match: re.Match, raw_text: str) -> SuppParagraph:
     """Construct a contextual paragraph around a regex match."""
     match_val = str(match.group()[1:].strip())
-    # logger.info(f"Building paragraph for match '{match_val}'")
+    # # logger.info(f"Building paragraph for match '{match_val}'")
 
     is_cell_table, number_of_cols = is_cell_coordinate_table(raw_text)
     if is_cell_table:
         if number_of_cols <= 1:
             # logger.info("Too little columns in table. Skipping.")
-            return ""
+            return SuppParagraph()
         else:
-            # logger.info("Processing as cell-coordinate table")
+            # # logger.info("Processing as cell-coordinate table")
             table = reconstruct_coordinate_table(raw_text)
             title, header, context = get_title_header_and_context_from_table(table, match_val)
 
     else:
         is_csv_table, delimiter = is_csv_like_table(raw_text)
         if is_csv_table:
-            # logger.info("Processing as csv-like table")
+            # # logger.info("Processing as csv-like table")
             table = reconstruct_csv_like_table(raw_text, delimiter)
             title, header, context = get_title_header_and_context_from_table(table, match_val)
 
         else:
-            # logger.info("Did not match either as cell-coordinate table or csv-like table")
-            return ""  # TODO we don't process free text yet
+            # # logger.info("Did not match either as cell-coordinate table or csv-like table")
+            # # logger.info("HERE start ---")
+            # # logger.info(raw_text)
+            # # logger.info("HERE end ---")
+            header, context = get_context_from_raw_text(match, raw_text)
+            title = ""
 
-    result = ""
+    result = SuppParagraph()
     if header and context:
         if title:
-            result = "title:" + to_human_readable(title) + "\n"
-        result += "header:" + to_human_readable(header) + "\n" + "context:" + to_human_readable(context)
+            result.title = to_human_readable(title)
+        result.header = to_human_readable(header)
+        result.context = [to_human_readable(context)]
     elif context:
         if title:
-            result = "title:" + to_human_readable(title) + "\n"
-        result += "context:" + to_human_readable(context)
-    else:
-        return ""
-    # logger.info(f"Paragraph built: {result[:100]}...")
+            result.title = to_human_readable(title)
+        result.context = [to_human_readable(context)]
+    # # logger.info(f"Paragraph built: {result["context"][:100]}...")
     return result

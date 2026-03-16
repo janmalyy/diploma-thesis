@@ -1,50 +1,10 @@
 import re
 
-from rapidfuzz import fuzz
-
 from diploma_thesis.core.build_paragraph import build_paragraph
 from diploma_thesis.core.models import Article, Variant
-from diploma_thesis.settings import logger
-
-
-def compile_variant_pattern(input_list: list[str]) -> re.Pattern:
-    """Compile a regex pattern for variant terms."""
-    # logger.info(f"Compiling variant pattern for {len(input_list)} terms")
-    # Sort by length descending to match longer terms first
-    input_list = sorted(input_list, key=len, reverse=True)
-    # Prefix with a non-alphanumeric character (except some symbols) to avoid partial matches
-    escaped = [r"[^\d\*\+a-zA-Z-]" + re.escape(v) for v in input_list]
-    pattern = re.compile("|".join(escaped))
-    # logger.info("Variant pattern compiled successfully")
-    return pattern
-
-
-def is_new_paragraph(paragraph: str, existing_paragraphs: list[str], threshold: int) -> bool:
-    """Determine whether a paragraph is sufficiently different from existing ones."""
-    # logger.info("Checking if paragraph is new")
-    for p in existing_paragraphs:
-        if p == paragraph:
-            # logger.info("Exact match found, paragraph is not new")
-            return False
-        if fuzz.partial_ratio(p, paragraph) > threshold:
-            # logger.info(f"High similarity ({fuzz.partial_ratio(p, paragraph)}%) with existing paragraph, not new")
-            return False
-    # logger.info("Paragraph is considered new")
-    return True
-
-
-def remove_articles_with_no_match(articles: list[Article]) -> list[Article]:
-    """Remove articles that have no extracted paragraphs from supplementary data."""
-    # logger.info(f"Filtering {len(articles)} articles for matches")
-    to_remove = []
-    for article in articles:
-        if article.data_sources == {"supp"}:
-            if all((len(sd.paragraphs) == 0) or sd.paragraphs == [""] for sd in article.suppl_data_list):
-                to_remove.append(article)
-    for a in to_remove:
-        articles.remove(a)
-    # logger.info(f"Removed {len(to_remove)} articles with no matches")
-    return articles
+from diploma_thesis.utils.helpers import compile_variant_pattern
+from diploma_thesis.utils.text_matching import (
+    incorporate_new_paragraph_or_not, is_new_text)
 
 
 def get_preview(raw_text: str, match: re.Match, window: int = 50) -> str:
@@ -55,7 +15,10 @@ def get_preview(raw_text: str, match: re.Match, window: int = 50) -> str:
 
 
 def update_suppl_data(articles: list[Article], variant: Variant) -> list[Article]:
-    """Main entry point to update articles with supplementary data findings."""
+    """
+    Main entry point to update articles with supplementary data findings.
+    We use preview comparison to build only paragraphs that are not too similar to existing ones to save computation time.
+    """
     # logger.info(f"Updating supplementary data for variant {variant.terms[0] if variant.terms else 'unknown'}")
     articles_with_suppl = [a for a in articles if a.suppl_data_list]
 
@@ -68,14 +31,15 @@ def update_suppl_data(articles: list[Article], variant: Variant) -> list[Article
                     continue
 
                 preview = get_preview(sd.raw_text, m)
-                if not is_new_paragraph(preview, sd.paragraphs, 80):
+                contexts = []
+                for p in sd.paragraphs:
+                    contexts.extend(p.context)
+                if not is_new_text(preview, contexts, 90):
                     # logger.info("Skipping reconstruction — preview too similar to existing paragraph")
                     continue
 
                 paragraph = build_paragraph(m, sd.raw_text)
-                if is_new_paragraph(paragraph, sd.paragraphs, 90):
-                    sd.paragraphs.append(paragraph)
+                sd.paragraphs = incorporate_new_paragraph_or_not(paragraph, sd.paragraphs, 90)
 
-    articles = remove_articles_with_no_match(articles)
     # logger.info("Supplementary data update complete")
     return articles
