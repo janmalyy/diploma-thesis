@@ -2,7 +2,7 @@ import re
 
 from rapidfuzz import fuzz
 
-from diploma_thesis.core.models import SuppParagraph, TextBlock
+from diploma_thesis.core.models import SupplParagraph, TextBlock
 from diploma_thesis.utils.helpers import compile_variant_pattern
 
 
@@ -109,10 +109,10 @@ def find_relevant_paragraphs_without_snippets(
 # -----------------------------------------------------------------------
 # function for Suppl. data
 def incorporate_new_paragraph_or_not(
-        paragraph: SuppParagraph,
-        existing_paragraphs: list[SuppParagraph],
+        paragraph: SupplParagraph,
+        existing_paragraphs: list[SupplParagraph],
         threshold: int = 90
-) -> list[SuppParagraph]:
+) -> list[SupplParagraph]:
     """
     Decide whether to incorporate a new paragraph or not, and if so, incorporate it.
     Paragraphs with the same header are grouped together.

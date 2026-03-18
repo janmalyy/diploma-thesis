@@ -69,9 +69,9 @@ def get_data_for_analysis(results_path: Path | str):
             "articles_in_total": len(articles),
             "only_medline_count": len([a for a in articles if a.data_sources == {"medline"}]),
             "only_pmc_count": len([a for a in articles if a.data_sources == {"pmc"}]),
-            "only_supp_count": len([a for a in articles if a.data_sources == {"supp"}]),
-            "both_pmc_and_supp_count": len([a for a in articles if a.data_sources == {"supp", "pmc"}]),
-            "all_three_count": len([a for a in articles if a.data_sources == {"supp", "pmc", "medline"}]),
+            "only_suppl_count": len([a for a in articles if a.data_sources == {"suppl"}]),
+            "both_pmc_and_supplcount": len([a for a in articles if a.data_sources == {"suppl", "pmc"}]),
+            "all_three_count": len([a for a in articles if a.data_sources == {"suppl", "pmc", "medline"}]),
             "articles":
                 [
                     {
@@ -86,9 +86,9 @@ def get_data_for_analysis(results_path: Path | str):
                         "number_of_paragraphs": len(a.paragraphs),
                         "paragraphs_lengths": [len(p) for p in a.paragraphs],
 
-                        "number_of_supp_files": len(a.suppl_data_list),
-                        "supp_paragraphs_counts_per_file": [len(sd.paragraphs) for sd in a.suppl_data_list],
-                        "supp_paragraphs_lengths": [[len(str(p)) for p in sd.paragraphs] for sd in a.suppl_data_list],
+                        "number_of_suppl_files": len(a.suppl_data_list),
+                        "suppl_paragraphs_counts_per_file": [len(sd.paragraphs) for sd in a.suppl_data_list],
+                        "suppl_paragraphs_lengths": [[len(str(p)) for p in sd.paragraphs] for sd in a.suppl_data_list],
                     }
                     for a in articles
                 ],
@@ -123,8 +123,8 @@ def analyze_data(filename: str):
         ("articles_in_total_per_variant", [len(v.get("articles", [])) for v in data], "just_number"),
         ("only_medline_articles_per_variant", [v.get("only_medline_count") for v in data], "just_number"),
         ("only_pmc_articles_per_variant", [v.get("only_pmc_count") for v in data], "just_number"),
-        ("only_supp_articles_per_variant", [v.get("only_supp_count") for v in data], "just_number"),
-        ("both_pmc_and_supp_articles_per_variant", [v.get("both_pmc_and_supp_count") for v in data], "just_number"),
+        ("only_suppl_articles_per_variant", [v.get("only_suppl_count") for v in data], "just_number"),
+        ("both_pmc_and_suppl_articles_per_variant", [v.get("both_pmc_and_suppl_count") for v in data], "just_number"),
         ("all_three_articles_per_variant", [v.get("all_three_count") for v in data], "just_number"),
 
         ("time_to_fetch", [v.get("time_to_fetch_data") for v in data], "seconds"),
@@ -150,23 +150,23 @@ def analyze_data(filename: str):
           for p_len in a.get("paragraphs_lengths", [])
           ], "characters"),
 
-        ("supp_files_per_article",
-         [a.get("number_of_supp_files", 0) for v in data for a in v.get("articles", [])],
+        ("suppl_files_per_article",
+         [a.get("number_of_suppl_files", 0) for v in data for a in v.get("articles", [])],
          "just_number"),
 
-        ("supp_paragraphs_per_file",
+        ("suppl_paragraphs_per_file",
          [count
           for v in data
           for a in v.get("articles", [])
-          for count in a.get("supp_paragraphs_counts_per_file", [])
-          if "supp" in a["data_sources"]],
+          for count in a.get("suppl_paragraphs_counts_per_file", [])
+          if "suppl" in a["data_sources"]],
          "just_number"),
 
-        ("supp_paragraphs_lengths_per_variant",
+        ("suppl_paragraphs_lengths_per_variant",
          [p_len
           for v in data
           for a in v.get("articles", [])
-          for file_lengths in a.get("supp_paragraphs_lengths", [])
+          for file_lengths in a.get("suppl_paragraphs_lengths", [])
           for p_len in file_lengths
           ],
          "characters"),

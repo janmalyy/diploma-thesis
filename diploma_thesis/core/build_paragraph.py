@@ -3,7 +3,7 @@ import io
 import re
 import statistics
 
-from diploma_thesis.core.models import SuppParagraph
+from diploma_thesis.core.models import SupplParagraph
 from diploma_thesis.settings import logger
 from diploma_thesis.utils.helpers import to_human_readable
 
@@ -269,7 +269,7 @@ def get_context_from_raw_text(match: re.Match, raw_text: str, window: int = 250)
     return header, context
 
 
-def build_paragraph(match: re.Match, raw_text: str) -> SuppParagraph:
+def build_paragraph(match: re.Match, raw_text: str) -> SupplParagraph:
     """Construct a contextual paragraph around a regex match."""
     match_val = str(match.group()[1:].strip())
     # # logger.info(f"Building paragraph for match '{match_val}'")
@@ -278,7 +278,7 @@ def build_paragraph(match: re.Match, raw_text: str) -> SuppParagraph:
     if is_cell_table:
         if number_of_cols <= 1:
             # logger.info("Too little columns in table. Skipping.")
-            return SuppParagraph()
+            return SupplParagraph()
         else:
             # # logger.info("Processing as cell-coordinate table")
             table = reconstruct_coordinate_table(raw_text)
@@ -299,7 +299,7 @@ def build_paragraph(match: re.Match, raw_text: str) -> SuppParagraph:
             header, context = get_context_from_raw_text(match, raw_text)
             title = ""
 
-    result = SuppParagraph()
+    result = SupplParagraph()
     if header and context:
         if title:
             result.title = to_human_readable(title)
