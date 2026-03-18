@@ -95,11 +95,11 @@ def parse_variomes_data(data: dict, variant: Variant) -> list[Article]:
 
         article = next((a for a in articles if a.pmcid == pmc_id), None)
         if article is None:
-            article = Article(data_source="supp", pmcid=pmc_id,
+            article = Article(data_source="suppl", pmcid=pmc_id,
                               relevance_score=pub.get("score"), pub_year=pub.get("date"))
             articles.append(article)
         else:
-            article.data_sources.add("supp")
+            article.data_sources.add("suppl")
 
         evidences = pub.get("evidences")
         snippets = [
