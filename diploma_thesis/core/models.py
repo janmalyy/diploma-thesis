@@ -7,18 +7,19 @@ from diploma_thesis.utils.helpers import (to_human_readable,
 
 
 class Variant:
-    def __init__(self, gene: str, variant: str, level: str, fetch_data: bool = True):
-        self.gene: str = gene.upper() if gene else ""
-        self.variant: str = variant.upper() if variant else ""
+    def __init__(self, gene: str, variant: str, level: str, fetch_data: bool = False):
+        self.gene: str = gene.strip().upper() if gene else ""
+        self.variant: str = variant.strip() or ""
+        self.level: str = level.strip().lower()
         self.variant_string = f"{self.gene} {self.variant}"
 
         self.terms: list[str] = []
         self.variant_dict = {}
         if fetch_data:
-            self.fetch_synvar_data(level)
+            self.fetch_synvar_data()
 
-    def fetch_synvar_data(self, level: str):
-        self.variant_dict = parse_synvar(fetch_synvar(self.gene, self.variant, level))
+    def fetch_synvar_data(self):
+        self.variant_dict = parse_synvar(fetch_synvar(self.gene, self.variant, self.level))
 
     def __str__(self):
         return f"Variant {self.variant_string}"

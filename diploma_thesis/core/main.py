@@ -38,7 +38,7 @@ async def main():
         start_time = time.time()
 
         # 1. Initialize Variant (handles normalisation)
-        variant = Variant("BRCA1", "V11A", "protein")
+        variant = Variant("BRCA1", "V11A", "protein", fetch_data=False)
         # variant = Variant(variant.split(" ")[0], variant.split(" ")[1], "protein")
         # logger.info(f"Processing variant: {variant}")
 
@@ -52,6 +52,8 @@ async def main():
             logger.info("No articles found for this variant.")
             return
         # logger.info(f"Found {len(articles)} articles. IDs: {[a.pmcid if a.pmcid != "" else a.pmid for a in articles]}")
+
+        variant.fetch_synvar_data()
 
         articles = prune_articles(articles)
 

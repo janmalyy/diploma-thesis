@@ -43,6 +43,7 @@ def fetch_variomes_data(variant: Variant) -> dict:
 
 def parse_variomes_data(data: dict, variant: Variant) -> list[Article]:
     """
+    Apart from parsing, it sets the preferred terms for the variant and the gene and populates the terms list.
     Args:
         data: JSON object returned by Variomes API
         variant: Variant object for which the data is being parsed
@@ -50,12 +51,12 @@ def parse_variomes_data(data: dict, variant: Variant) -> list[Article]:
         list of Articles with fulltext_snippets for fulltext annotations
                          and with raw supplemental data string
     """
-    # Populate terms and gene in variant for later use in matching
+    # Populate terms and normalize gene and variant to preferred terms
     try:
         norm_q = data.get("normalized_query")
         variant.terms = norm_q.get("variants")[0].get("terms")
-        if not variant.gene:
-            variant.gene = norm_q.get("genes")[0].get("preferred_term")
+        variant.gene = norm_q.get("genes")[0].get("preferred_term")
+        variant.variant = norm_q.get("variants")[0].get("preferred_term")
     except (IndexError, KeyError):
         pass
 
