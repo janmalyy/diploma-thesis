@@ -131,7 +131,7 @@ def parse_synvar(root: etree._Element) -> dict:
 
 
 if __name__ == '__main__':
-    fetch = fetch_synvar("IVD", "p.L106fs", "protein")
+    fetch = fetch_synvar("nola3", "   c.34 g  >c", "transcript")
     # fetch = fetch_synvar("EGFR", "E746_A750del", "protein")
     parsed = parse_synvar(fetch)
     print(parsed)
