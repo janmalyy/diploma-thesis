@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function updateFieldsBasedOnLevel(level) {
         if (!level) return;
 
-        if (level === "dbsnp" || level === "cosmic") {
+        if (level === "dbsnp" || level === "clingen") {
             geneContainer.style.display = "none";
             geneInput.required = false;
             changeLabel.textContent = "Reference ID";
@@ -138,8 +138,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 geneInput.placeholder = "e.g. NOP10";
                 changeInput.placeholder = "e.g. g.34343040C>G";
                 break;
-            case "cosmic":
-                changeInput.placeholder = "e.g. COSM3754273";
+            case "clingen":
+                changeInput.placeholder = "e.g. CA7464815";
                 break;
             case "dbsnp":
                 changeInput.placeholder = "e.g. rs113488022";
