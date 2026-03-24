@@ -62,5 +62,5 @@ class StructuredSummary(BaseModel):
 
 
 class AggregatedSummary(BaseModel):
-    narrative_summary: str = Field(description="A natural language synthesis of the findings.")
+    narrative_summary: str = Field(description="A natural language synthesis of the findings long from one to three paragraphs.")
     structured_summary: StructuredSummary

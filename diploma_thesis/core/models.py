@@ -7,18 +7,19 @@ from diploma_thesis.utils.helpers import (to_human_readable,
 
 
 class Variant:
-    def __init__(self, gene: str, variant: str, level: str, fetch_data: bool = True):
-        self.gene: str = gene.upper() if gene else ""
-        self.variant: str = variant.upper() if variant else ""
+    def __init__(self, gene: str, variant: str, level: str, fetch_data: bool = False):
+        self.gene: str = gene.strip().upper() if gene else ""
+        self.variant: str = variant.strip() or ""
+        self.level: str = level.strip().lower()
         self.variant_string = f"{self.gene} {self.variant}"
 
         self.terms: list[str] = []
         self.variant_dict = {}
         if fetch_data:
-            self.fetch_synvar_data(level)
+            self.fetch_synvar_data()
 
-    def fetch_synvar_data(self, level: str):
-        self.variant_dict = parse_synvar(fetch_synvar(self.gene, self.variant, level))
+    def fetch_synvar_data(self):
+        self.variant_dict = parse_synvar(fetch_synvar(self.gene, self.variant, self.level))
 
     def __str__(self):
         return f"Variant {self.variant_string}"
@@ -46,7 +47,7 @@ class TextBlock:
         return len(self.human_readable)
 
 
-class SuppParagraph(BaseModel):
+class SupplParagraph(BaseModel):
     title: str = ""
     header: str = ""
     context: list[str] = []
@@ -56,7 +57,7 @@ class SupplData(BaseModel):
     raw_text: str
     score: float
     snippets: list[str] = []
-    paragraphs: list[SuppParagraph] = []
+    paragraphs: list[SupplParagraph] = []
 
 
 class Article:
@@ -65,7 +66,7 @@ class Article:
         self.pmcid: str = pmcid or ""
         self.relevance_score: float = round(relevance_score, 2)
         self.pub_year: int | None = pub_year
-        self.data_sources: set[str] = set()   # possible combinations: (medline), (pmc), (supp), (medline, pmc, supp), (pmc, supp)
+        self.data_sources: set[str] = set()   # possible combinations: (medline), (pmc), (suppl), (pmc, suppl)
         self.data_sources.add(data_source)
 
         self.title: TextBlock = TextBlock("")       # needs to be TextBlock because it is put on display on UI
@@ -101,11 +102,11 @@ class Article:
 
     def get_structured_context(self) -> dict:
         """Returns a JSON representation of the article. For LLMs."""
-        supp_data_mentions = []
+        suppl_data_mentions = []
         for sd in self.suppl_data_list:
             for i, p in enumerate(sd.paragraphs):
-                supp_data_mentions.append({
-                    f"supp{i}": {
+                suppl_data_mentions.append({
+                    f"suppl{i}": {
                         key: value
                         for key, value in p.model_dump().items()
                         if value not in [None, "", []]
@@ -116,7 +117,7 @@ class Article:
             "TITLE": self.title.annotated,
             "ABSTRACT": self.abstract.annotated,
             "FULLTEXT_MENTIONS": self.paragraphs,
-            "SUPPLEMENTARY_DATA_MENTIONS": supp_data_mentions
+            "SUPPLEMENTARY_DATA_MENTIONS": suppl_data_mentions
         }
 
     def get_structured_metadata(self) -> dict:
@@ -152,7 +153,7 @@ def remove_articles_with_no_match(articles: list[Article]) -> list[Article]:
     to_remove = []
     for article in articles:
         if "medline" not in article.data_sources and article.relevance_score < 0.5:
-            if article.data_sources == {"supp"}:
+            if article.data_sources == {"suppl"}:
                 if all((len(sd.paragraphs) == 0) or sd.paragraphs == [""] for sd in article.suppl_data_list):
                     to_remove.append(article)
 
@@ -160,7 +161,7 @@ def remove_articles_with_no_match(articles: list[Article]) -> list[Article]:
                 if not article.paragraphs or article.paragraphs == [""]:
                     to_remove.append(article)
 
-            if article.data_sources == {"pmc", "supp"}:
+            if article.data_sources == {"pmc", "suppl"}:
                 if ((all((len(sd.paragraphs) == 0) or sd.paragraphs == [""] for sd in article.suppl_data_list)) and
                         (not article.paragraphs or article.paragraphs == [""])):
                     to_remove.append(article)

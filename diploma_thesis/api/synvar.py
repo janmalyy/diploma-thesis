@@ -16,13 +16,13 @@ def fetch_synvar(gene: str | None, variant: str, level: str) -> etree._Element |
     We use map=false: Output syntactic variations even if the variant could not be mapped on genome. (That is we don't check whether this variant exists on the genome.)
     We use iso=true: Validate on and generate synonyms for isoforms.
     more about map and iso here: https://gemini.google.com/share/75130b9596be
-    Gene can be None if the level is dbsnp or cosmic.
+    Gene can be None if the level is dbsnp or clingen.
     Use caching for faster development.
     # todo improve caching cause now we search only for exactly same filename so there can be more files for the same variant with different naming
     """
     logger.info(f"Fetching data from SynVar for {gene} {variant}, level {level}...")
 
-    if level not in ("protein", "transcript", "genome", "dbsnp", "cosmic"):
+    if level not in ("protein", "transcript", "genome", "dbsnp", "clingen"):
         raise ValueError(f"Invalid synvar level: {level}")
 
     if level not in ("dbsnp", "cosmic") and gene is None:
@@ -131,7 +131,7 @@ def parse_synvar(root: etree._Element) -> dict:
 
 
 if __name__ == '__main__':
-    fetch = fetch_synvar("IVD", "p.L106fs", "protein")
+    fetch = fetch_synvar("nola3", "   c.34 g  >c", "transcript")
     # fetch = fetch_synvar("EGFR", "E746_A750del", "protein")
     parsed = parse_synvar(fetch)
     print(parsed)

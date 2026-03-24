@@ -93,7 +93,7 @@ def parse_pubtator_document(article: Article, document: etree._Element, variant:
         title_tag_name = "front"
     elif article.data_sources == {"medline"}:
         title_tag_name = "title"
-    elif article.data_sources == {"supp"}:
+    elif article.data_sources == {"suppl"}:
         title_tag_name = "front"
     else:
         raise ValueError(f"Unsupported data source: {article.data_sources}")
