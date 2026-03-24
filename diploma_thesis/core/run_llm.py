@@ -4,6 +4,7 @@ import json
 from pydantic_ai import Agent
 from pydantic_ai.models.openai import OpenAIChatModel
 from pydantic_ai.providers.openai import OpenAIProvider
+from pydantic_ai.settings import ModelSettings
 
 from diploma_thesis.core.llm_response_models import (AggregatedSummary,
                                                      ArticleAnalysis)
@@ -17,10 +18,19 @@ model = OpenAIChatModel(
     provider=OpenAIProvider(base_url=EINFRA_URL, api_key=E_INFRA_API_KEY),
 )
 
+
 analysis_agent = Agent(
     model,
     output_type=ArticleAnalysis,
     system_prompt=get_prompt("system_evaluate_and_extract.txt"),
+    model_settings=ModelSettings(
+        # Standard settings
+        temperature=1.0,  # Recommended 1.0 for reasoning models OpenAI-specific reasoning settings via extra_body
+        extra_body={
+            "reasoning_effort": "high",
+            "max_completion_tokens": 2048
+        }
+    ),
     retries=3
 )
 
@@ -28,6 +38,14 @@ aggregator_agent = Agent(
     model,
     output_type=AggregatedSummary,
     system_prompt=get_prompt("system_aggregate.txt"),
+    model_settings=ModelSettings(
+        # Standard settings
+        temperature=1.0,  # Recommended 1.0 for reasoning models OpenAI-specific reasoning settings via extra_body
+        extra_body={
+            "reasoning_effort": "high",
+            "max_completion_tokens": 4096
+        }
+    ),
     retries=3
 )
 
