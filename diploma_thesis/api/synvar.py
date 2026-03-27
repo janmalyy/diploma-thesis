@@ -29,6 +29,7 @@ def fetch_synvar(gene: str | None, variant: str, level: str) -> etree._Element |
         raise ValueError(f"Gene is required for level {level}")
 
     synvar_dir = DATA_DIR / "synvar_cache"
+    synvar_dir.mkdir(parents=True, exist_ok=True)
     filename = re.sub(r'[<>:"/\\|?*]', "_", gene + "_" + variant + "_" + level).upper()
     cache_path = synvar_dir / f"{filename}.xml"
     if cache_path.exists():

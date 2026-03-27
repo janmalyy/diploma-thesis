@@ -14,6 +14,7 @@ def fetch_variomes_data(variant: Variant) -> dict:
     """
     variant_string = variant.variant_string
     variomes_dir = DATA_DIR / "variomes_cache"
+    variomes_dir.mkdir(parents=True, exist_ok=True)
     filename = re.sub(r'[<>:"/\\|?*]', "_", variant_string).upper()
     cache_path = variomes_dir / f"{filename}.json"
     if cache_path.exists():
@@ -119,7 +120,7 @@ def parse_variomes_data(data: dict, variant: Variant) -> list[Article]:
     logger.info(
         f"Found {len(medline_list)} medline articles, "
         f"{len([a for a in articles if a.fulltext_snippets])} articles with fulltext snippets, "
-        f"{len([a for a in articles if a.data_sources == {"pmc"} and not a.fulltext_snippets])} PMC articles without fulltext snippets, "
+        f"{len([a for a in articles if a.data_sources == {'pmc'} and not a.fulltext_snippets])} PMC articles without fulltext snippets, "
         f"and {len([a for a in articles if len(a.suppl_data_list) > 0])} articles with suppl. snippets "
         f"for variant {variant.variant_string}.")
     return articles

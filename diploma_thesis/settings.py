@@ -32,4 +32,3 @@ logging.basicConfig(
 # )
 
 logger = logging.getLogger("diploma_thesis")
-logger.setLevel(logging.INFO)

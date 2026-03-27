@@ -85,7 +85,7 @@ def fetch_pubtator(
         raise ValueError("Choose one of these: pubmed or pmc.")
 
     cache_dir = DATA_DIR / "pubtator_cache"
-
+    cache_dir.mkdir(parents=True, exist_ok=True)
     mapping: dict[str, etree._Element] = {}
 
     for article_id in ids_list:
@@ -172,7 +172,7 @@ def fetch_biodiversity_pmc(
         Mapping from PMCID to article data dictionary.
     """
     cache_dir = DATA_DIR / "biodiversity_pmc_cache"
-
+    cache_dir.mkdir(parents=True, exist_ok=True)
     mapping: dict[str, dict] = {}
 
     # Load cached articles

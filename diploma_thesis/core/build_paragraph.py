@@ -18,29 +18,6 @@ CELL_COORD_RE = re.compile(r"^\d+\t\d+\t.+$")
 UNNAMED_RE = re.compile(r"(?:^|\|)Unnamed:\s*\d+", flags=re.IGNORECASE)
 
 
-def find_line_bounds(raw_text: str, pos: int) -> tuple[int, int]:
-    """Find the start and end indices of the line containing the given position."""
-    # logger.info(f"Finding line bounds for position {pos}")
-    line_start = raw_text.rfind("\n", 0, pos) + 1
-    line_end = raw_text.find("\n", pos)
-    if line_end == -1:
-        line_end = len(raw_text)
-    # logger.info(f"Line bounds found: {line_start} to {line_end}")
-    return line_start, line_end
-
-
-def split_columns(line: str) -> list[str]:
-    """Split a line into columns using various delimiters."""
-    # logger.info("Splitting line into columns")
-    for d in DELIMITERS:
-        if line.count(d) >= 2:
-            # logger.info(f"Split using delimiter '{d}'")
-            return [c.strip() for c in line.split(d)]
-    # Fallback to multiple spaces
-    # logger.info("Split using multiple spaces fallback")
-    return re.split(r"\s{2,}", line)
-
-
 def header_score(columns: list[str]) -> float:
     """Score how likely a list of columns is a header row."""
     # logger.info(f"Scoring header candidates for columns: {columns[:5]}...")
@@ -195,7 +172,7 @@ def reconstruct_csv_like_table(text: str, delimiter: str) -> list[list[str]]:
 
 
 def get_title_header_and_context_from_table(table: list[list[str]], match_val: str):
-    # TODO vylepšit, aby se header a context párovali k sobě jako dictionary - teď se totiž asi header uloží vícekrát pro víc nálezů v jedné tabulce
+    # TODO vylepšit, aby se header a context párovali k sobě jako dictionary - má to ale ten problém, že nemají vždy stejně prvků...
     row, title, context = "", "", ""
     best_score = 0
     header_index = -1

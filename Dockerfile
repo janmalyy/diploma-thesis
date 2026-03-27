@@ -9,6 +9,11 @@ ENV RUNNING_IN_DOCKER=1
 # Set work directory
 WORKDIR /app
 
+RUN mkdir -p /app/diploma_thesis/data/variomes_cache \
+             /app/diploma_thesis/data/pubtator_cache \
+             /app/diploma_thesis/data/synvar_cache \
+             /app/diploma_thesis/data/biodiversity_pmc_cache \
+
 # Install system dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \

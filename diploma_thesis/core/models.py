@@ -138,6 +138,9 @@ def prune_articles(articles: list[Article], max_articles: int = 50) -> list[Arti
     if len(articles) < max_articles:
         return articles
     medline_articles = [a for a in articles if "medline" in a.data_sources]
+    if len(medline_articles) > max_articles:
+        return sorted(medline_articles, key=lambda a: a.relevance_score, reverse=True)[:max_articles]
+
     sorted_articles = sorted(articles, key=lambda a: a.relevance_score, reverse=True)
     relevant_articles = sorted_articles[:max_articles-len(medline_articles)]
     relevant_articles.extend(medline_articles)
