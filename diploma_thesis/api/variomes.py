@@ -12,7 +12,7 @@ def fetch_variomes_data(variant: Variant) -> dict:
     Fetches data from Variomes API for a given variant.
     For faster development, if the file is already downloaded, it is loaded from disk.
     """
-    variant_string = variant.variant_string
+    variant_string = variant.variant_string.strip()
     variomes_dir = DATA_DIR / "variomes_cache"
     variomes_dir.mkdir(parents=True, exist_ok=True)
     filename = re.sub(r'[<>:"/\\|?*]', "_", variant_string).upper()
@@ -29,9 +29,9 @@ def fetch_variomes_data(variant: Variant) -> dict:
             r.raise_for_status()
             data = r.json()
         except requests.RequestException as e:
-            raise RuntimeError(f"Variomes API request failed for {variant_string}") from e
+            raise RuntimeError(f"Variomes API request failed for: '{variant_string}'.") from e
         except json.JSONDecodeError as e:
-            raise RuntimeError(f"Invalid JSON returned by Variomes for {variant_string}") from e
+            raise RuntimeError(f"Invalid JSON returned by Variomes for: '{variant_string}'.") from e
 
         tmp_path = cache_path.with_suffix(".tmp")
         with open(tmp_path, "w", encoding="utf-8") as f:

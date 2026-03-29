@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 changeInput.placeholder = "e.g. CA7464815";
                 break;
             case "dbsnp":
-                changeInput.placeholder = "e.g. rs113488022";
+                changeInput.placeholder = "e.g. rs146261631";
                 break;
             default:
                 geneInput.placeholder = "e.g. BRCA1";
@@ -448,8 +448,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 structuredContainer.style.display = "none";
             }
 
-            renderGroupedEvidences(currentArticleEvidences);
         }
+
+        renderGroupedEvidences(currentArticleEvidences);
 
         resultContainer.style.display = "block";
         resultContainer.scrollIntoView({ behavior: "smooth" });

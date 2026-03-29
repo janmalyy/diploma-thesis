@@ -7,11 +7,15 @@ from diploma_thesis.utils.helpers import (to_human_readable,
 
 
 class Variant:
-    def __init__(self, gene: str, variant: str, level: str, fetch_data: bool = False):
+    """if you create a variant with dbSNP or CLINGEN identifier, write the ID
+    to the variant field and leave the gene field empty.
+    In such cases, it is recommended to fetch the data from SynVar ASAP after the Variant object creation
+    to ensure the following processes will work properly."""
+    def __init__(self, gene: str | None, variant: str, level: str, fetch_data: bool = False):
         self.gene: str = gene.strip().upper() if gene else ""
         self.variant: str = variant.strip() or ""
         self.level: str = level.strip().lower()
-        self.variant_string = f"{self.gene} {self.variant}"
+        self.variant_string = f"{self.gene} {self.variant}".strip()
 
         self.terms: list[str] = []
         self.variant_dict = {}
@@ -20,6 +24,7 @@ class Variant:
 
     def fetch_synvar_data(self):
         self.variant_dict = parse_synvar(fetch_synvar(self.gene, self.variant, self.level))
+        self.variant_string = self.variant_dict.get("variant_string")
 
     def __str__(self):
         return f"Variant {self.variant_string}"
