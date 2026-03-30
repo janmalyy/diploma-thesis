@@ -69,6 +69,7 @@ async def generate_llm_summary(request: Request, variant_request: VariantRequest
 
     async def event_generator():
         pipeline_task = None
+        synvar_error_msg = None
         try:
             # 1. Initialization and SynVar Fetch
             yield f"data: {json.dumps({'status': 'Recognizing the variant (SynVar)'})}\n\n"
@@ -87,19 +88,27 @@ async def generate_llm_summary(request: Request, variant_request: VariantRequest
             try:
                 variant.fetch_synvar_data()
             except Exception as e:
-                logger.error(f"SynVar error: {e}")
-                yield f"data: {json.dumps({'error': str(e)})}\n\n"
-                return
+                synvar_error_msg = str(e)
+                logger.info(f"SynVar error: {e}")
+                logger.info("We try to continue with the pipeline, but the results might be less accurate.")
 
             # 2. Article Retrieval
             if await request.is_disconnected():
                 return
 
             yield f"data: {json.dumps({'status': 'Fetching literature mentions'})}\n\n"
-            data = fetch_variomes_data(variant)
-            articles = parse_variomes_data(data, variant)
+            try:
+                data = fetch_variomes_data(variant)
+                articles = parse_variomes_data(data, variant)
+            except Exception as e:
+                logger.error(f"Variomes API error: {e}")
+                yield f"data: {json.dumps({'error': str(e)})}\n\n"
+                return
 
             if not articles:
+                if synvar_error_msg:
+                    yield f"data: {json.dumps({'error': synvar_error_msg})}\n\n"
+                    return
                 yield f"data: {json.dumps({'result': 'No articles found.'})}\n\n"
                 return
 

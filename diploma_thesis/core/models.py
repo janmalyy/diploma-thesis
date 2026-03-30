@@ -27,10 +27,11 @@ class Variant:
 
     def fetch_synvar_data(self):
         self.variant_dict = parse_synvar(fetch_synvar(self.gene, self.variant, self.level))
-        if not self.gene and self.variant_dict.get("gene"):
-            self.gene = self.variant_dict.get("gene")[0]
-        if self.variant_dict.get("variant_string"):
-            self.variant_string = self.variant_dict.get("variant_string")
+        if self.level in ["dbsnp", "clingen"]:
+            if not self.gene and self.variant_dict.get("gene"):
+                self.gene = self.variant_dict.get("gene")[0]
+            if self.variant_dict.get("variant_string"):
+                self.variant_string = self.variant_dict.get("variant_string")
 
     def __str__(self):
         return f"Variant {self.variant_string}"

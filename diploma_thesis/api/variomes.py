@@ -128,9 +128,13 @@ def parse_variomes_data(data: dict, variant: Variant) -> list[Article]:
 
 
 if __name__ == '__main__':
-    variant = Variant(None, variant="CA789456", level="clingen")
+    # variant = Variant("brca1", variant="c.5266dup", level="transcript")
     # variant = Variant("PRSS8", variant="c.40536205_40536214delCTTCTTTTTG", level="transcript")
-
+    # variant = Variant("MUTYH", "c.1187G>A", "transcript")
+    # variant = Variant("NTHL1", "c.503T>C", "transcript")
+    # variant = Variant(None, "rs779974365", "dbsnp")
+    variant = Variant("brca1", "p.A410T", "protein")
+    # variant = Variant("brca1", "A363T", "protein")
     variant.fetch_synvar_data()
     print("varstring", variant.variant_string)
     print("dict", variant.variant_dict)

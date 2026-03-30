@@ -17,8 +17,8 @@ BIODIVERSITY_PMC_URL = "https://biodiversitypmc.sibils.org/api/fetch"
 def get_session() -> requests.Session:
     session = requests.Session()
     retries = Retry(
-        total=3,
-        backoff_factor=1,
+        total=4,
+        backoff_factor=2,
         status_forcelist=[500, 502, 503, 504],
         allowed_methods=["GET", "POST"],
     )
