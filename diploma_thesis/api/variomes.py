@@ -15,7 +15,7 @@ def fetch_variomes_data(variant: Variant) -> dict:
     variant_string = variant.variant_string.strip()
     variomes_dir = DATA_DIR / "variomes_cache"
     variomes_dir.mkdir(parents=True, exist_ok=True)
-    filename = re.sub(r'[<>:"/\\|?*]', "_", variant_string).upper()
+    filename = re.sub(r'[<>:"/\\|?*]', "_", variant.gene + "_" + variant.variant + "_" + variant.level).upper()
     cache_path = variomes_dir / f"{filename}.json"
     if cache_path.exists():
         try:
@@ -56,7 +56,8 @@ def parse_variomes_data(data: dict, variant: Variant) -> list[Article]:
     try:
         norm_q = data.get("normalized_query")
         variant.terms = norm_q.get("variants")[0].get("terms")
-        variant.gene = norm_q.get("genes")[0].get("preferred_term")
+        if not variant.gene:
+            variant.gene = norm_q.get("genes")[0].get("preferred_term")
         variant.variant = norm_q.get("variants")[0].get("preferred_term")
     except (IndexError, KeyError):
         pass
@@ -124,3 +125,13 @@ def parse_variomes_data(data: dict, variant: Variant) -> list[Article]:
         f"and {len([a for a in articles if len(a.suppl_data_list) > 0])} articles with suppl. snippets "
         f"for variant {variant.variant_string}.")
     return articles
+
+
+if __name__ == '__main__':
+    variant = Variant(None, variant="CA789456", level="clingen")
+    # variant = Variant("PRSS8", variant="c.40536205_40536214delCTTCTTTTTG", level="transcript")
+
+    variant.fetch_synvar_data()
+    print("varstring", variant.variant_string)
+    print("dict", variant.variant_dict)
+    print(parse_variomes_data(fetch_variomes_data(variant), variant))

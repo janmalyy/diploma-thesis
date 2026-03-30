@@ -117,6 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (level === "dbsnp" || level === "clingen") {
             geneContainer.style.display = "none";
             geneInput.required = false;
+            geneInput.value = "";
             changeLabel.textContent = "Reference ID";
         } else {
             geneContainer.style.display = "block";
@@ -230,6 +231,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         errorAlert.style.display = "none";
         resultContainer.style.display = "none";
+        sessionStorage.removeItem("variant_summary_result");
         loadingOverlay.style.display = "flex";
         loadingStatus.textContent = "Initializing...";
         loadingSubtext.textContent = "This may take a minute.";

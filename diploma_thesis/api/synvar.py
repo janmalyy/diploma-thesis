@@ -107,9 +107,9 @@ def parse_synvar(root: etree._Element) -> dict:
             hgvs_c.append(v)
         elif v.startswith("NP_") and ":p." in v and v not in hgvs_p:
             hgvs_p.append(v)
-        elif v.startswith("rs") and v not in dbsnpid:
+        elif re.search(r"^rs\d*$", v, flags=re.IGNORECASE) and v not in dbsnpid:
             dbsnpid.append(v)
-        elif v.startswith("CA") and v not in caid:
+        elif re.search(r"^ca\d*$", v, flags=re.IGNORECASE) and v not in caid:
             caid.append(v)
 
     canonical_values = {
@@ -125,12 +125,22 @@ def parse_synvar(root: etree._Element) -> dict:
         if v in canonical_values:
             continue
         norm = normalize_variant(v)
-        if norm not in alias_map:       # todo add fuzz.partial_ratio - teď je těch aliasů totiž pořád strašně moc stejných
+        if norm not in alias_map:       # todo add fuzz.partial_ratio - teď je těch aliasů totiž pořád strašně moc stejných - možná to ale radši nechci, kdo ví, co by to udělalo
             alias_map[norm] = v
 
     variant_string = ""
     if len(gene) > 0 and len(hgvs_c) > 0:
         variant_string = gene[0] + " " + hgvs_c[0].split(":")[1]
+    elif len(gene) > 0 and len(hgvs_p) > 0:
+        variant_string = gene[0] + " " + hgvs_p[0].split(":")[1]
+    elif len(gene) > 0:
+        regexp_c_variant = None
+        for v in alias_map.values():
+            if re.search(r"^c\.\d.*$", v):
+                regexp_c_variant = v
+                break
+        if regexp_c_variant:
+            variant_string = gene[0] + " " + regexp_c_variant
     return {
         "gene": gene,
         "variant_string": variant_string,
@@ -144,9 +154,12 @@ def parse_synvar(root: etree._Element) -> dict:
 
 
 if __name__ == '__main__':
-    fetch = fetch_synvar("nola3", "   c.34 g  >c", "transcript")
+    # fetch = fetch_synvar("nola3", "   c.34 g  >c", "transcript")
     # fetch = fetch_synvar("EGFR", "E746_A750del", "protein")
     # fetch = fetch_synvar("", "rs146261631", "dbsnp")
-    fetch = fetch_synvar(None, "CA391622325", "clingen")
+    fetch = fetch_synvar(None, " CA789456", "clingen")
+    # fetch = fetch_synvar("", "rs146261631", "dbsnp")
+    # fetch = fetch_synvar(None, "CA391622325", "clingen")
+    # fetch = fetch_synvar(None, "NC_000015.9:g.34635241C>G", level="")
     parsed = parse_synvar(fetch)
     print(parsed)

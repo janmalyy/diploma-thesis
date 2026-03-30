@@ -12,9 +12,12 @@ class Variant:
     In such cases, it is recommended to fetch the data from SynVar ASAP after the Variant object creation
     to ensure the following processes will work properly."""
     def __init__(self, gene: str | None, variant: str, level: str, fetch_data: bool = False):
-        self.gene: str = gene.strip().upper() if gene else ""
-        self.variant: str = variant.strip() or ""
         self.level: str = level.strip().lower()
+        if self.level in ["dbsnp", "clingen"]:
+            self.gene = ""
+        else:
+            self.gene: str = gene.strip().upper() if gene else ""
+        self.variant: str = variant.strip() or ""
         self.variant_string = f"{self.gene} {self.variant}".strip()
 
         self.terms: list[str] = []
@@ -24,7 +27,10 @@ class Variant:
 
     def fetch_synvar_data(self):
         self.variant_dict = parse_synvar(fetch_synvar(self.gene, self.variant, self.level))
-        self.variant_string = self.variant_dict.get("variant_string")
+        if not self.gene and self.variant_dict.get("gene"):
+            self.gene = self.variant_dict.get("gene")[0]
+        if self.variant_dict.get("variant_string"):
+            self.variant_string = self.variant_dict.get("variant_string")
 
     def __str__(self):
         return f"Variant {self.variant_string}"
