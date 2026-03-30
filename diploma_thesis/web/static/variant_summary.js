@@ -16,8 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const stopBtn = document.getElementById("stop-btn");
     const loadingStatus = document.getElementById("loading-status");
     const loadingSubtext = document.getElementById("loading-subtext");
-    const timeEstimate = document.getElementById("time-estimate");
-    const etaValue = document.getElementById("eta-value");
     const relevanceProgressContainer = document.getElementById("relevance-progress-container");
     const relevanceProgressBar = document.getElementById("relevance-progress-bar");
 
@@ -235,7 +233,6 @@ document.addEventListener("DOMContentLoaded", () => {
         loadingOverlay.style.display = "flex";
         loadingStatus.textContent = "Initializing...";
         loadingSubtext.textContent = "This may take a minute.";
-        timeEstimate.style.display = "none";
         relevanceProgressContainer.style.display = "none";
         relevanceProgressBar.style.width = "0%";
 
@@ -314,14 +311,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (data.total_calls !== undefined) {
             currentTotalCalls = data.total_calls;
-            timeEstimate.style.display = "block";
-            updateETA();
+            updateProgressBar();
         }
 
         if (data.completed_calls !== undefined) {
             currentCompletedCalls = data.completed_calls;
             updateProgressBar();
-            updateETA();
         }
 
         if (data.status) {
@@ -367,13 +362,6 @@ document.addEventListener("DOMContentLoaded", () => {
             const percent = (currentCompletedCalls / currentTotalCalls) * 100;
             relevanceProgressContainer.style.display = "flex";
             relevanceProgressBar.style.width = `${percent}%`;
-        }
-    }
-
-    function updateETA() {
-        if (currentTotalCalls > 0) {
-            const remaining = Math.max(0, currentTotalCalls - currentCompletedCalls);
-            etaValue.textContent = remaining * 5;
         }
     }
 
@@ -486,7 +474,6 @@ document.addEventListener("DOMContentLoaded", () => {
             loadingOverlay.style.display = "flex";
             loadingStatus.textContent = "Initializing (Mock)...";
             loadingSubtext.textContent = "Simulation started";
-            timeEstimate.style.display = "none";
             relevanceProgressContainer.style.display = "none";
             relevanceProgressBar.style.width = "0%";
 
