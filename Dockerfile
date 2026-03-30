@@ -9,6 +9,8 @@ ENV RUNNING_IN_DOCKER=1
 # Set work directory
 WORKDIR /app
 
+RUN mkdir -p /app/diploma_thesis/data/
+
 # Install system dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \

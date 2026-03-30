@@ -38,7 +38,8 @@ async def main():
         start_time = time.time()
 
         # 1. Initialize Variant (handles normalisation)
-        variant = Variant("BRCA1", "V11A", "protein", fetch_data=False)
+        # variant = Variant("BRCA1", "V11A", "protein", fetch_data=False)
+        variant = Variant("NOP10", "D12H", "protein", fetch_data=True)
         # variant = Variant(variant.split(" ")[0], variant.split(" ")[1], "protein")
         # logger.info(f"Processing variant: {variant}")
 

@@ -105,6 +105,13 @@ def parse_pubtator_document(article: Article, document: etree._Element, variant:
         passage_type = meta["type"]
 
         if passage_type in (title_tag_name, "abstract") or passage in relevant_payloads:
+
+            if "table" in passage_type:
+                annotated_paragraphs.append(
+                    shorten_paragraph(meta["text_block"].human_readable, variant.terms)
+                )
+                continue
+
             annotated_text = apply_annotations_pubtator(passage, meta)
 
             if passage_type in title_tag_name:
@@ -317,11 +324,3 @@ def parse_biodiversity_pmc_document(article: Article, article_data: dict, varian
         article.paragraphs += [
             s.human_readable for s in article.fulltext_snippets
         ]
-
-
-def annotate_raw_text(text: str) -> str:
-    """
-    Cleans raw text and submits it to PubTator for annotations.
-    Mock implementation as original was not working.
-    """
-    return f"[Annotated Raw Text Mock]\n{text}"  # TODO

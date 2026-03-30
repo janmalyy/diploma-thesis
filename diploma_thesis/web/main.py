@@ -1,5 +1,6 @@
 import asyncio
 import json
+import os
 from typing import Optional
 
 import uvicorn
@@ -26,8 +27,20 @@ templates = Jinja2Templates(directory=PACKAGE_DIR / "web" / "templates")
 
 
 @app.get("/")
-def root():
-    return RedirectResponse(url="/variant", status_code=302)
+def root(request: Request):
+    url = request.url_for("get_variant_summary")
+    return RedirectResponse(url=url, status_code=302)
+
+
+@app.get("/debug-paths")
+async def debug_paths(request: Request):
+    return {
+        "base_url": str(request.base_url),
+        "url_path": request.url.path,
+        "root_path": request.scope.get("root_path"),
+        "path_info": os.environ.get("PATH_INFO"),
+        "script_name": os.environ.get("SCRIPT_NAME")
+    }
 
 
 @app.get("/variant", response_class=HTMLResponse)
@@ -70,6 +83,14 @@ async def generate_llm_summary(request: Request, variant_request: VariantRequest
                 fetch_data=False
             )
 
+            # we fetch synvar data to get the variant name and gene
+            try:
+                variant.fetch_synvar_data()
+            except Exception as e:
+                logger.error(f"SynVar error: {e}")
+                yield f"data: {json.dumps({'error': str(e)})}\n\n"
+                return
+
             # 2. Article Retrieval
             if await request.is_disconnected():
                 return
@@ -110,17 +131,17 @@ async def generate_llm_summary(request: Request, variant_request: VariantRequest
             articles = remove_articles_with_no_match(articles)
             n_articles = len(articles)
             if n_articles == 0:
-                yield f"data: {json.dumps({'result': 'No articles matched filtering.'})}\n\n"
+                yield f"""data: {json.dumps({'result': 'No articles matched filtering.'})}\n\n"""
                 return
 
             # 4. LLM Pipeline with constant monitoring
             total_llm_calls = n_articles + 1
-            yield f"data: {json.dumps({
+            yield f"""data: {json.dumps({
                 'status': 'Analysis and Extraction',
                 'article_count': n_articles,
                 'total_calls': total_llm_calls,
                 'completed_calls': 0
-            })}\n\n"
+            })}\n\n"""
 
             queue = asyncio.Queue()
             completed_count = 0
@@ -142,12 +163,12 @@ async def generate_llm_summary(request: Request, variant_request: VariantRequest
                     phase = await asyncio.wait_for(queue.get(), timeout=0.1)
                     completed_count += 1
 
-                    yield f"data: {json.dumps({
+                    yield f"""data: {json.dumps({
                         'status': f'{phase}: {completed_count}/{total_llm_calls}',
                         'completed_calls': completed_count,
                         'total_calls': total_llm_calls,
                         'phase': phase
-                    })}\n\n"
+                    })}\n\n"""
                 except asyncio.TimeoutError:
                     continue
 
@@ -168,6 +189,7 @@ async def generate_llm_summary(request: Request, variant_request: VariantRequest
                     pass
 
     return StreamingResponse(event_generator(), media_type="text/event-stream")
+
 
 if __name__ == "__main__":
     uvicorn.run("diploma_thesis.web.main:app", host="0.0.0.0", port=8000, reload=True)
