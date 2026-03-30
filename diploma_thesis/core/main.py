@@ -54,6 +54,8 @@ async def main():
             return
         # logger.info(f"Found {len(articles)} articles. IDs: {[a.pmcid if a.pmcid != "" else a.pmid for a in articles]}")
 
+        variant.fetch_synvar_data()
+
         articles = prune_articles(articles)
 
         # 3. Fetch and Parse Data from PubTator and BiodiversityPMC

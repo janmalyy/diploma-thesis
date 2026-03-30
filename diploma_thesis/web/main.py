@@ -99,6 +99,14 @@ async def generate_llm_summary(request: Request, variant_request: VariantRequest
             data = fetch_variomes_data(variant)
             articles = parse_variomes_data(data, variant)
 
+            # we fetch also synvar after variomes, because there is more in the synvar response
+            try:
+                variant.fetch_synvar_data()
+            except Exception as e:
+                logger.error(f"SynVar error: {e}")
+                yield f"data: {json.dumps({'error': str(e)})}\n\n"
+                return
+
             if not articles:
                 yield f"data: {json.dumps({'result': 'No articles found.'})}\n\n"
                 return
