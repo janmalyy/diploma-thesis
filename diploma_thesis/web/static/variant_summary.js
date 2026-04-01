@@ -18,6 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const loadingSubtext = document.getElementById("loading-subtext");
     const relevanceProgressContainer = document.getElementById("relevance-progress-container");
     const relevanceProgressBar = document.getElementById("relevance-progress-bar");
+    const externalLinksContainer = document.getElementById("external-links-container");
+    const clinvarLinksList = document.getElementById("clinvar-links-list");
+    const omimLinkContainer = document.getElementById("omim-link-container");
 
     const articleEvidenceModal = new bootstrap.Modal(document.getElementById("articleEvidenceModal"));
     const articleEvidenceBody = document.getElementById("article-evidence-body");
@@ -258,7 +261,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (!response.ok) {
                 const data = await response.json();
-                throw new Error(data.detail || "Failed to generate summary");
+                throw new Error(`Failed to generate summary: ${data.detail}`);
             }
 
             const reader = response.body.getReader();
@@ -388,6 +391,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (typeof result === "string") {
             summaryContent.textContent = result;
             structuredContainer.style.display = "none";
+            externalLinksContainer.style.display = "none";
         } else {
             const narrative = result.narrative_summary || "No narrative summary available.";
             summaryContent.innerHTML = formatNarrativeSummary(narrative);
@@ -438,12 +442,61 @@ document.addEventListener("DOMContentLoaded", () => {
                 structuredContainer.style.display = "none";
             }
 
+            // Render External Links
+            const hasClinVar = result.clinvar_urls && result.clinvar_urls.length > 0;
+            const hasOmim = !!result.omim_url;
+
+            if (hasClinVar || hasOmim) {
+                renderExternalLinks(result.clinvar_urls, result.omim_url, result.gene);
+                externalLinksContainer.style.display = "block";
+            } else {
+                externalLinksContainer.style.display = "none";
+            }
+
         }
 
         renderGroupedEvidences(currentArticleEvidences);
 
         resultContainer.style.display = "block";
         resultContainer.scrollIntoView({ behavior: "smooth" });
+    }
+
+    function renderExternalLinks(clinvarUrls, omimUrl, geneName) {
+        // Render ClinVar links
+        clinvarLinksList.innerHTML = "";
+        if (clinvarUrls && clinvarUrls.length > 0) {
+            clinvarUrls.forEach(url => {
+                const clinvarId = url.split("/").pop();
+                const a = document.createElement("a");
+                a.href = url;
+                a.target = "_blank";
+                a.className = "btn btn-sm btn-outline-primary";
+                a.innerHTML = `Variation ${clinvarId} ↗`;
+                clinvarLinksList.appendChild(a);
+            });
+        } else {
+            clinvarLinksList.innerHTML = '<span class="text-muted small">No ClinVar records found.</span>';
+        }
+
+        // Render OMIM link
+        omimLinkContainer.innerHTML = "";
+        if (omimUrl) {
+            const a = document.createElement("a");
+            a.href = omimUrl;
+            a.target = "_blank";
+            a.className = "btn btn-sm btn-outline-primary";
+
+            if (geneName) {
+                a.innerHTML = `gene ${geneName} ↗`;
+            } else {
+                const omimId = omimUrl.split("/").pop();
+                a.innerHTML = `Entry ${omimId} ↗`;
+            }
+
+            omimLinkContainer.appendChild(a);
+        } else {
+            omimLinkContainer.innerHTML = '<span class="text-muted small">No OMIM records found.</span>';
+        }
     }
 
     copyBtn.addEventListener("click", () => {

@@ -157,7 +157,7 @@ if __name__ == '__main__':
     # fetch = fetch_synvar("nola3", "   c.34 g  >c", "transcript")
     # fetch = fetch_synvar("EGFR", "E746_A750del", "protein")
     # fetch = fetch_synvar("", "rs146261631", "dbsnp")
-    fetch = fetch_synvar(None, " CA789456", "clingen")
+    fetch = fetch_synvar("JAK2", "V617F", "protein")
     # fetch = fetch_synvar("", "rs146261631", "dbsnp")
     # fetch = fetch_synvar(None, "CA391622325", "clingen")
     # fetch = fetch_synvar(None, "NC_000015.9:g.34635241C>G", level="")

@@ -1,12 +1,7 @@
 diploma_thesis/data
+!diploma_thesis/data/gene2mim.json
+
 diploma_thesis/not_working_pubtator_annotate_raw
-
-neo4j/data
-neo4j/import
-neo4j/logs
-
-node_modules/
-
 # ---------------------------------------------------------------------
 # Byte-compiled / optimized / DLL files
 __pycache__/

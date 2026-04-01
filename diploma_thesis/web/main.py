@@ -11,6 +11,7 @@ from fastapi.templating import Jinja2Templates
 from pydantic import BaseModel
 from starlette.responses import RedirectResponse
 
+from diploma_thesis.api.clinvar import get_clinvar_urls
 from diploma_thesis.api.variomes import (fetch_variomes_data,
                                          parse_variomes_data)
 from diploma_thesis.core.models import (Variant, prune_articles,
@@ -20,6 +21,7 @@ from diploma_thesis.core.update_article_fulltext import \
     update_articles_fulltext
 from diploma_thesis.core.update_suppl_data import update_suppl_data
 from diploma_thesis.settings import PACKAGE_DIR, logger
+from diploma_thesis.utils.helpers import get_omim_url
 
 app = FastAPI()
 app.mount("/static", StaticFiles(directory=PACKAGE_DIR / "web" / "static"), name="static")
@@ -67,6 +69,11 @@ async def generate_llm_summary(request: Request, variant_request: VariantRequest
         StreamingResponse: A server-sent events stream of status updates and results.
     """
 
+    async def fetch_external_links(variant: Variant) -> dict:
+        clinvar_urls = await asyncio.to_thread(get_clinvar_urls, variant.variant_string)
+        omim_url = get_omim_url(variant.gene)
+        return {"clinvar_urls": clinvar_urls, "omim_url": omim_url, "gene": variant.gene}
+
     async def event_generator():
         pipeline_task = None
         synvar_error_msg = None
@@ -109,7 +116,11 @@ async def generate_llm_summary(request: Request, variant_request: VariantRequest
                 if synvar_error_msg:
                     yield f"data: {json.dumps({'error': synvar_error_msg})}\n\n"
                     return
-                yield f"data: {json.dumps({'result': 'No articles found.'})}\n\n"
+
+                yield f"data: {json.dumps({'status': 'Fetching External Links (ClinVar, OMIM)'})}\n\n"
+                external_links = await fetch_external_links(variant)
+                result = {"narrative_summary": "No articles found.", **external_links}
+                yield f"data: {json.dumps({'result': result})}\n\n"
                 return
 
             articles = prune_articles(articles)
@@ -132,7 +143,10 @@ async def generate_llm_summary(request: Request, variant_request: VariantRequest
             articles = remove_articles_with_no_match(articles)
             n_articles = len(articles)
             if n_articles == 0:
-                yield f"""data: {json.dumps({'result': 'No articles matched filtering.'})}\n\n"""
+                yield f"data: {json.dumps({'status': 'Fetching External Links (ClinVar, OMIM)'})}\n\n"
+                external_links = await fetch_external_links(variant)
+                result = {"narrative_summary": "No articles matched filtering.", **external_links}
+                yield f"data: {json.dumps({'result': result})}\n\n"
                 return
 
             # 4. LLM Pipeline with constant monitoring
@@ -174,6 +188,12 @@ async def generate_llm_summary(request: Request, variant_request: VariantRequest
                     continue
 
             final_result = await pipeline_task
+
+            # 5. Add External Links
+            yield f"data: {json.dumps({'status': 'Fetching External Links (ClinVar, OMIM)'})}\n\n"
+            external_links = await fetch_external_links(variant)
+            final_result.update(external_links)
+
             yield f"data: {json.dumps({'result': final_result})}\n\n"
 
         except asyncio.CancelledError:

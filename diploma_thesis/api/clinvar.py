@@ -1,4 +1,3 @@
-
 import requests
 from lxml import etree
 from rapidfuzz import fuzz
@@ -36,8 +35,8 @@ def clinvar_esearch_variant_ids(query: str, max_results: int = 100) -> list[int]
     )
     response.raise_for_status()
 
-    payload = response.json()
-    id_list = payload.get("esearchresult", {}).get("idlist", [])
+    data = response.json()
+    id_list = data.get("esearchresult", {}).get("idlist", [])
 
     return [int(i) for i in id_list]
 
@@ -116,15 +115,28 @@ def parse_clinical_significance(query: str, efetch: etree._Element) -> dict:
     }
 
 
-if __name__ == "__main__":
-    with open(DATA_DIR / "brca_variants.txt", "r", encoding="utf-8") as f:
-        lines = [line.strip() for line in f.readlines()]
-    for variant in lines[:10]:
-        query_str = extend_variant_name(variant)
-        ids = clinvar_esearch_variant_ids(query_str)
-        print(f"{query_str}: {ids}")
+def get_clinvar_urls(query: str, max_results: int = 10) -> list[str]:
+    """
+    Search ClinVar for a variant and return ClinVar Variation URLs.
+    """
+    try:
+        variation_ids = clinvar_esearch_variant_ids(query, max_results)
+        return [f"https://www.ncbi.nlm.nih.gov/clinvar/variation/{vid}" for vid in variation_ids]
+    except Exception:
+        return []
 
-        if ids:
-            summary = clinvar_efetch(ids)
-            clinical = parse_clinical_significance(query_str, summary)
-            print(f"Clinical Significance: {clinical}")
+
+if __name__ == "__main__":
+    # with open(DATA_DIR / "brca_variants.txt", "r", encoding="utf-8") as f:
+    #     lines = [line.strip() for line in f.readlines()]
+    # for variant in lines[:10]:
+    # query_str = extend_variant_name(variant)
+    query_str = "NM_004443.4(EPHB3):c.1202G>C"
+    query_str = "CA7464815"
+    ids = clinvar_esearch_variant_ids(query_str)
+    print(f"{query_str}: {ids}")
+
+        # if ids:
+        #     summary = clinvar_efetch(ids)
+        #     clinical = parse_clinical_significance(query_str, summary)
+        #     print(f"Clinical Significance: {clinical}")

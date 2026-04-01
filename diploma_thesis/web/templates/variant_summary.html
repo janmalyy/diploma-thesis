@@ -236,7 +236,30 @@
               <button class="btn btn-sm btn-outline-light" id="copy-btn">Copy Narrative</button>
             </div>
             <div class="card-body p-0">
-              <div class="p-3 border-bottom bg-light">
+              <!-- External Links Section -->
+              <div id="external-links-container" style="display: none;">
+                <div class="p-3 border-bottom bg-light">
+                  <h5 class="mb-0">External Resources</h5>
+                </div>
+                <div class="p-3">
+                  <div class="row">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                      <h6>ClinVar</h6>
+                      <div id="clinvar-links-list" class="d-flex flex-wrap gap-2">
+                        <span class="text-muted small">No ClinVar records found.</span>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <h6>OMIM</h6>
+                      <div id="omim-link-container">
+                        <span class="text-muted small">No OMIM records found.</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-3 border-top border-bottom bg-light">
                 <h5 class="mb-0">Narrative Summary</h5>
               </div>
               <div class="summary-box" id="summary-content"></div>
@@ -265,6 +288,7 @@
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
 

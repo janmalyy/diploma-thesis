@@ -1,4 +1,5 @@
 import html
+import json
 import re
 import string
 from pathlib import Path
@@ -7,7 +8,7 @@ from xml.dom.minidom import parseString
 
 from lxml import etree
 
-from diploma_thesis.settings import PACKAGE_DIR, logger
+from diploma_thesis.settings import DATA_DIR, PACKAGE_DIR, logger
 
 # TODO Budu chtít nějak zachovat tu pozici, abych ji tam pak mohl zvýrazněnou vrátit do závěrečného kontextu
 #  If you need to extract those IDs later, you can use: re.findall(r'concept_id=\"(.*?)\"', text)
@@ -257,3 +258,46 @@ def shorten_paragraph(
     final_text = re.sub(r"\.{4,}", "...", final_text)
 
     return final_text
+
+
+def transform_mim2gene_to_json(input_path: str | Path, output_path: str | Path) -> None:
+    """
+    throw-away function to transform MIM2Gene mapping file to JSON Gene2MIM mapping JSON file.
+    use: transform_mim2gene_to_json(DATA_DIR / "mim2gene.txt", DATA_DIR / "gene2mim.json")
+    """
+    with open(input_path, "r", encoding="utf-8") as f:
+        text = f.read()
+        lines = text.split("\n")
+
+    gene2mim = {}
+    for i, line in enumerate(lines):
+        if "\tgene\t" in line:
+            splits = line.split("\t")
+            gene2mim[splits[3]] = splits[0]
+
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(gene2mim, f, indent=4)
+
+
+def get_omim_url(gene_symbol: str) -> str | None:
+    """
+    Construct the OMIM URL for a given gene symbol.
+    """
+    if not gene_symbol:
+        logger.warning("No gene symbol provided.")
+        return None
+
+    gene2mim_path = DATA_DIR / "gene2mim.json"
+    if not gene2mim_path.exists():
+        logger.warning(f"Gene2MIM mapping file not found, searched at '{gene2mim_path}'.")
+        return None
+
+    with open(gene2mim_path, "r", encoding="utf-8") as f:
+        gene2mim = json.load(f)
+    try:
+        omim_id = gene2mim.get(gene_symbol.upper())
+    except KeyError:
+        logger.warning(f"No OMIM ID found in the mapping for gene symbol '{gene_symbol}'.")
+        return None
+
+    return f"https://www.omim.org/entry/{omim_id}"
