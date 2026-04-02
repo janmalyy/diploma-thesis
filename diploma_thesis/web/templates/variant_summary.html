@@ -41,15 +41,11 @@
       border-top: 1px solid #dee2e6;
     }
     .evidence-badge {
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       margin-right: 5px;
       margin-bottom: 5px;
-      cursor: pointer;
+      cursor: default;
       transition: transform 0.2s;
-    }
-    .evidence-badge:hover {
-      transform: scale(1.05);
-      background-color: #0dcaf0 !important;
     }
     .dropdown-toggle::after {
       vertical-align: 0.125em;
@@ -61,6 +57,12 @@
     }
     .evidence-badge.dropdown-toggle::after {
       margin-left: 0.5em;
+    }
+    /* Specifically target badges inside the Detailed Evidence section to make them smaller */
+    #grouped-evidence-body .evidence-badge {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.5rem;
+      cursor: pointer;
     }
     .dropdown-item {
       cursor: pointer;
@@ -230,34 +232,37 @@
         </div>
 
         <div id="result-container">
-          <div class="card">
-            <div class="card-header d-flex justify-content-between align-items-center">
-              <span>Result Summary</span>
-              <button class="btn btn-sm btn-outline-light" id="copy-btn">Copy Narrative</button>
-            </div>
-            <div class="card-body p-0">
-              <!-- External Links Section -->
-              <div id="external-links-container" style="display: none;">
-                <div class="p-3 border-bottom bg-light">
-                  <h5 class="mb-0">External Resources</h5>
-                </div>
-                <div class="p-3">
-                  <div class="row">
-                    <div class="col-md-6 mb-3 mb-md-0">
-                      <h6>ClinVar</h6>
-                      <div id="clinvar-links-list" class="d-flex flex-wrap gap-2">
-                        <span class="text-muted small">No ClinVar records found.</span>
-                      </div>
+          <!-- External Links Section -->
+          <div id="external-links-container" style="display: none;" class="mb-4">
+            <div class="card">
+              <div class="card-header bg-light text-dark">
+                <h5 class="mb-0">External Resources</h5>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-6 mb-3 mb-md-0">
+                    <h6>ClinVar</h6>
+                    <div id="clinvar-links-list" class="d-flex flex-wrap gap-2">
+                      <span class="text-muted small">No ClinVar records found.</span>
                     </div>
-                    <div class="col-md-6">
-                      <h6>OMIM</h6>
-                      <div id="omim-link-container">
-                        <span class="text-muted small">No OMIM records found.</span>
-                      </div>
+                  </div>
+                  <div class="col-md-6">
+                    <h6>OMIM</h6>
+                    <div id="omim-link-container">
+                      <span class="text-muted small">No OMIM records found.</span>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+              <h5 class="mb-0 text-white">Result Summary</h5>
+              <button class="btn btn-sm btn-outline-light" id="copy-btn">Copy Narrative</button>
+            </div>
+            <div class="card-body p-0">
 
               <div class="p-3 border-top border-bottom bg-light">
                 <h5 class="mb-0">Narrative Summary</h5>
@@ -272,16 +277,16 @@
                   <div class="row mb-3">
                     <div class="col-md-6">
                       <strong>Overall Pathogenicity:</strong>
-                      <span id="pathogenicity-value" class="badge bg-secondary text-capitalize"></span>
+                      <span id="pathogenicity-value" class="badge rounded-pill bg-secondary evidence-badge me-1 mb-1 text-capitalize"></span>
                     </div>
                     <div class="col-md-6">
                       <strong>Confidence:</strong>
-                      <span id="confidence-value" class="badge bg-secondary text-capitalize"></span>
+                      <span id="confidence-value" class="badge rounded-pill bg-secondary evidence-badge me-1 mb-1 text-capitalize"></span>
                     </div>
                   </div>
                   <div class="mb-3">
-                    <strong>Evidence Counts:</strong>
-                    <div id="evidence-counts" class="mt-2"></div>
+                    <strong>Pathogenicity Counts:</strong>
+                    <div id="pathogenicity-counts" class="mt-2"></div>
                   </div>
                   <div id="conflicting-evidence-warning" class="alert alert-warning py-2 px-3" style="display: none;">
                     <strong>Notice:</strong> Conflicting evidence was identified for this variant.

@@ -18,25 +18,10 @@ class EvidenceStrength(str, Enum):
 
 
 class Claim(str, Enum):
+    no_claim = "no claim"
+    uncertain = "uncertain"
     supports_pathogenicity = "supports pathogenicity"
     supports_benignity = "supports benignity"
-    conflicting = "conflicting"
-    unclear = "unclear"
-    no_claim = "no claim"
-
-
-class Pathogenicity(str, Enum):
-    PATHOGENIC = "pathogenic"
-    LIKELY_PATHOGENIC = "likely pathogenic"
-    BENIGN = "benign"
-    LIKELY_BENIGN = "likely benign"
-    UNCERTAIN = "uncertain"
-
-
-class ConfidenceLevel(str, Enum):
-    LOW = "low"
-    MODERATE = "moderate"
-    HIGH = "high"
 
 
 class EvidenceItem(BaseModel):
@@ -51,16 +36,24 @@ class ArticleAnalysis(BaseModel):
     reason: str = Field(description="1 sentence explaining relevance decision")
     is_relevant: bool
     evidence: list[EvidenceItem] = Field(default_factory=list)
-    overall_article_summary: str | None = Field(default=None, description="1 sentence summary of the article based on the evidences")
     uncertainties_or_limitations: str | None = Field(default=None, description="1 sentence summary of the uncertainties or limitations of the article")
+    overall_article_summary: str | None = Field(default=None, description="1 sentence summary of the article based on the evidences")
 
 
-class StructuredSummary(BaseModel):
-    overall_pathogenicity: Pathogenicity
-    conflicting_evidence: bool
-    overall_confidence: ConfidenceLevel
+# --------------------------------------------------
+class Pathogenicity(str, Enum):
+    PATHOGENIC = "pathogenic"
+    LIKELY_PATHOGENIC = "likely pathogenic"
+    BENIGN = "benign"
+    LIKELY_BENIGN = "likely benign"
+    UNCERTAIN = "uncertain"
+
+
+class ConfidenceLevel(str, Enum):
+    LOW = "low"
+    MODERATE = "moderate"
+    HIGH = "high"
 
 
 class AggregatedSummary(BaseModel):
     narrative_summary: str = Field(description="A natural language synthesis of the findings long from one to three paragraphs.")
-    structured_summary: StructuredSummary

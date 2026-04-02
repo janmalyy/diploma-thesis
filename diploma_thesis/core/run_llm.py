@@ -7,7 +7,9 @@ from pydantic_ai.providers.openai import OpenAIProvider
 from pydantic_ai.settings import ModelSettings
 
 from diploma_thesis.core.llm_response_models import (AggregatedSummary,
-                                                     ArticleAnalysis)
+                                                     ArticleAnalysis, Claim,
+                                                     ConfidenceLevel,
+                                                     Pathogenicity)
 from diploma_thesis.core.models import Article, Variant
 from diploma_thesis.settings import (E_INFRA_API_KEY, EINFRA_URL, MODEL_NAME,
                                      logger)
@@ -96,6 +98,100 @@ async def process_single_article(
             return None
 
 
+def compute_structured_summary(valid_evidences: list[dict]) -> dict:
+    """
+    Compute a structured summary with a conservative approach.
+    Prioritizes lower certainty in case of ambiguity or ties.
+    """
+    strength_weights = {"high": 4, "moderate": 2}
+    default_weight = 1
+
+    scores = {
+        Claim.uncertain.value: 0.0,
+        Claim.supports_pathogenicity.value: 0.0,
+        Claim.supports_benignity.value: 0.0,
+    }
+
+    counts = {key: 0 for key in scores.keys()}
+    strength_counts = {"high": 0, "moderate": 0}
+    total_evidences = 0
+
+    for article in valid_evidences:
+        for ev in article.get("evidence", []):
+            if ev.get("claim", "").lower() not in ("", Claim.no_claim.value):
+                total_evidences += 1
+                claim = ev.get("claim").lower()
+                strength = ev.get("strength", "").lower()
+
+                weight = strength_weights.get(strength, default_weight)
+
+                if strength in strength_counts:
+                    strength_counts[strength] += 1
+
+                if claim in scores:
+                    scores[claim] += weight
+                    counts[claim] += 1
+                else:
+                    scores["uncertain"] += weight
+                    counts["uncertain"] += 1
+
+    if total_evidences == 0:
+        return {
+            "overall_pathogenicity": Pathogenicity.UNCERTAIN,
+            "overall_confidence": ConfidenceLevel.LOW,
+            "pathogenicity_counts": counts,
+            "conflicting_evidence": False
+        }
+
+    score_p = scores[Claim.supports_pathogenicity.value]
+    score_b = scores[Claim.supports_benignity.value]
+
+    # If there are both 'supports pathogenicity' and 'supports benignity' claims
+    # and the ratio is less than 3:1, it is conflicting
+    is_conflicting = False
+    if score_p > 0 and score_b > 0:
+        ratio = max(score_p, score_b) / min(score_p, score_b)
+        if ratio < 3.0:
+            is_conflicting = True
+
+    final_patho = Pathogenicity.UNCERTAIN
+    if is_conflicting:
+        final_patho = Pathogenicity.UNCERTAIN
+    else:
+        max_score = max(scores.values())
+
+        if scores["uncertain"] * 1.1 >= max_score:  # we want to be sure that the uncertain is not the most frequent
+            final_patho = Pathogenicity.UNCERTAIN
+        elif score_b == max_score:
+            if score_b > scores["uncertain"] * 1.3:
+                final_patho = Pathogenicity.BENIGN
+            else:
+                final_patho = Pathogenicity.LIKELY_BENIGN
+        elif score_p == max_score:
+            if score_p > scores["uncertain"] * 1.3:
+                final_patho = Pathogenicity.PATHOGENIC
+            else:
+                final_patho = Pathogenicity.LIKELY_PATHOGENIC
+
+    # Confidence computation
+    ratio_high = strength_counts["high"] / total_evidences
+    ratio_combined = (strength_counts["high"] + strength_counts["moderate"]) / total_evidences
+
+    if ratio_high >= 0.7 or ratio_combined >= 0.8:
+        overall_conf = ConfidenceLevel.HIGH
+    elif ratio_combined >= 0.6:
+        overall_conf = ConfidenceLevel.MODERATE
+    else:
+        overall_conf = ConfidenceLevel.LOW
+
+    return {
+        "overall_pathogenicity": final_patho,
+        "overall_confidence": overall_conf,
+        "pathogenicity_counts": counts,
+        "conflicting_evidence": is_conflicting
+    }
+
+
 async def run_pipeline(variant: Variant, articles: list[Article], progress_callback=None) -> dict:
     semaphore = asyncio.Semaphore(4)
     prompt_template = get_prompt("user_evaluate_and_extract.txt")
@@ -125,7 +221,11 @@ async def run_pipeline(variant: Variant, articles: list[Article], progress_callb
     agg_result = await aggregator_agent.run(agg_prompt)
     print(f"aggregation {variant}:")
     print(agg_result.output.narrative_summary)
-    print(agg_result.output.structured_summary)
+
+    structured_summary = compute_structured_summary(valid_evidences)
+    [print(key, value) for key, value in structured_summary.items()]
+
     final_output = agg_result.output.model_dump()
+    final_output["structured_summary"] = structured_summary
     final_output["article_evidences"] = valid_evidences
     return final_output

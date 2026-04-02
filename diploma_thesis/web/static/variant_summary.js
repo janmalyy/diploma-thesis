@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const structuredContainer = document.getElementById("structured-summary-container");
     const pathogenicityValue = document.getElementById("pathogenicity-value");
     const confidenceValue = document.getElementById("confidence-value");
-    const evidenceCounts = document.getElementById("evidence-counts");
+    const pathogenicityCounts = document.getElementById("pathogenicity-counts");
     const conflictWarning = document.getElementById("conflicting-evidence-warning");
     const errorAlert = document.getElementById("error-alert");
     const errorMessage = document.getElementById("error-message");
@@ -402,37 +402,25 @@ document.addEventListener("DOMContentLoaded", () => {
                 confidenceValue.textContent = ss.overall_confidence || "unknown";
 
                 const pathColor = getPathogenicityColor(ss.overall_pathogenicity);
-                pathogenicityValue.className = `badge bg-${pathColor} text-capitalize`;
+                pathogenicityValue.className = `badge rounded-pill bg-${pathColor} evidence-badge text-capitalize`;
 
                 const confColor = getConfidenceColor(ss.overall_confidence);
-                confidenceValue.className = `badge bg-${confColor} text-capitalize`;
+                confidenceValue.className = `badge rounded-pill bg-${confColor} evidence-badge text-capitalize`;
 
-                evidenceCounts.innerHTML = "";
-                if (ss.evidence_counts) {
-                    Object.entries(ss.evidence_counts).forEach(([type, count]) => {
+                pathogenicityCounts.innerHTML = "";
+                if (ss.pathogenicity_counts) {
+                    Object.entries(ss.pathogenicity_counts).forEach(([path, count]) => {
                         if (count === 0) return;
 
-                        const typeArticles = currentArticleEvidences.filter(a =>
-                            a.evidence && a.evidence.some(ev => ev.evidence_type.toLowerCase() === type.toLowerCase())
-                        );
+                        const badge = document.createElement("span");
+                        const pathColor = getPathogenicityColor(path);
+                        badge.className = `badge rounded-pill bg-${pathColor} evidence-badge text-capitalize me-1 mb-1`;
+                        badge.textContent = `${path}: ${count}`;
 
-                        const uniqueArticles = [];
-                        const seenIds = new Set();
-                        typeArticles.forEach(a => {
-                            if (!seenIds.has(a.article_id)) {
-                                uniqueArticles.push(a);
-                                seenIds.add(a.article_id);
-                            }
-                        });
+                        badge.style.pointerEvents = "none";     // Turn off interaction and cursor change
+                        badge.style.userSelect = "none";        // Prevent random text selection
 
-                        if (uniqueArticles.length > 0) {
-                            const badge = document.createElement("span");
-                            badge.className = "badge rounded-pill bg-info text-dark evidence-badge clickable me-1 mb-1";
-                            badge.textContent = `${type}: ${count}`;
-                            badge.style.cursor = "pointer";
-                            badge.addEventListener("click", () => showTypeEvidence(type));
-                            evidenceCounts.appendChild(badge);
-                        }
+                        pathogenicityCounts.appendChild(badge);
                     });
                 }
 
@@ -549,13 +537,13 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    function getPathogenicityColor(path) {
-        if (!path) return "secondary";
-        const p = path.toLowerCase();
-        if (p.includes("pathogenic") && !p.includes("likely")) return "danger";
-        if (p.includes("likely pathogenic")) return "warning";
-        if (p.includes("benign")) return "success";
-        if (p.includes("uncertain")) return "secondary";
+    function getPathogenicityColor(pathogenicityLevel) {
+        if (!pathogenicityLevel) return "secondary";
+        const p = pathogenicityLevel.toLowerCase();
+        if (p === "supports pathogenicity") return "danger";
+        if (p === "supports benignity") return "success";
+        if (p === "no claim") return "info";
+        if (p === "uncertain") return "secondary";
         return "info";
     }
 
@@ -686,7 +674,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="evidence-item mb-3 p-2 bg-light border-start border-4">
                         <div class="d-flex justify-content-between align-items-center mb-1">
                             <span class="badge evidence-type-badge bg-info text-dark">${escapeHtml(ev.evidence_type)}</span>
-                            <span class="badge text-capitalize bg-${claimColor}">${escapeHtml(ev.claim)}</span>
+                            <span class="badge evidence-badge text-capitalize bg-${claimColor}">${escapeHtml(ev.claim)}</span>
                         </div>
                         <p class="mb-1"><strong>Description:</strong> ${escapeHtml(ev.description)}</p>
                         ${ev.quoted_text ? `<p class="mb-0 mt-2 italic text-muted" style="font-style: italic;"><small>"${escapeHtml(ev.quoted_text)}"</small></p>` : ""}
@@ -715,13 +703,27 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        const strengthMap = { "high": 4, "moderate": 3, "low": 2, "unclear": 1, "none": 0 };
+        // Relevance scoring similar to compute_structured_summary in backend
+        // Weights: high=4, moderate=2, default(other/low/unclear)=1;
+        function scoreArticle(article) {
+            if (!article || !article.evidence) return 0;
+            const weights = { high: 4, moderate: 2 };
+            let score = 0;
+            for (const ev of article.evidence) {
+                const claim = (ev.claim || "").toLowerCase();
+                if (!claim) continue;
+                const strength = (ev.strength || "").toLowerCase();
+                const w = weights[strength] ?? 1;
+                score += w;
+            }
+            return score;
+        }
 
         // Save the sorted list globally for modal navigation
         sortedArticlesForModal = [...articles].sort((a, b) => {
-            const maxStrengthA = a.evidence ? Math.max(...a.evidence.map(ev => strengthMap[ev.strength.toLowerCase()] || 1)) : 0;
-            const maxStrengthB = b.evidence ? Math.max(...b.evidence.map(ev => strengthMap[ev.strength.toLowerCase()] || 1)) : 0;
-            return maxStrengthB - maxStrengthA;
+            const sa = scoreArticle(a);
+            const sb = scoreArticle(b);
+            return sb - sa;
         });
 
         groupedEvidenceBody.innerHTML = "";
@@ -734,7 +736,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (article.evidence) {
                 article.evidence.forEach(ev => {
                     const claimColor = getClaimColor(ev.claim);
-                    evidenceListHtml += `<span class="badge bg-light text-dark border me-1 mb-1" title="${escapeHtml(ev.description)}">
+                    evidenceListHtml += `<span class="badge bg-light text-dark border evidence-badge me-1 mb-1" title="${escapeHtml(ev.description)}">
                         <small>${escapeHtml(ev.evidence_type)}: </small><span class="text-${claimColor}">${escapeHtml(ev.claim)}</span>
                     </span>`;
                 });
@@ -808,12 +810,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     function getClaimColor(claim) {
-        if (!claim) return "secondary";
-        const c = claim.toLowerCase();
-        if (c.includes("pathogenicity")) return "danger";
-        if (c.includes("benignity")) return "success";
-        if (c.includes("conflicting")) return "warning";
-        return "secondary";
+        return getPathogenicityColor(claim);
     }
 
     copyEvidenceBtn.addEventListener("click", () => {
