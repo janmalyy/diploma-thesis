@@ -61,7 +61,7 @@ async def process_single_article(
 ) -> dict | None:
     """
     Evaluate the relevance of the article and extract evidences if it is relevant. Add metadata.
-    Returns: JSON object with evidence data and metadata or None if not relevant
+    Returns: JSON object with evidence data and article metadata or None if not relevant
     """
     async with semaphore:
         try:
@@ -146,7 +146,7 @@ def compute_structured_summary(valid_evidences: list[dict]) -> dict:
     score_p = scores[Claim.supports_pathogenicity.value]
     score_b = scores[Claim.supports_benignity.value]
 
-    # If there are both 'supports pathogenicity' and 'supports benignity' claims
+    # If there are both "supports pathogenicity" and "supports benignity" claims
     # and the ratio is less than 3:1, it is conflicting
     is_conflicting = False
     if score_p > 0 and score_b > 0:
@@ -219,8 +219,8 @@ async def run_pipeline(variant: Variant, articles: list[Article], progress_callb
 
     agg_prompt = build_prompt(agg_replacements, get_prompt("user_aggregate.txt"))
     agg_result = await aggregator_agent.run(agg_prompt)
-    print(f"aggregation {variant}:")
-    print(agg_result.output.narrative_summary)
+    logger.info(f"aggregation {variant}:")
+    logger.info(f"narrative: {agg_result.output.narrative_summary}")
 
     structured_summary = compute_structured_summary(valid_evidences)
     [print(key, value) for key, value in structured_summary.items()]

@@ -8,3 +8,7 @@ Only if relevant, extract explicit evidence reported. Do NOT speculate or infer 
 
 Phase 3: Evidence Summarization
 Summarize the evidence extracted concisely and state uncertainty or limitations of the evidence.
+
+Granularity Rule:
+One Sentence = One Evidence Item. Never split a single sentence or a single row of a table into multiple EvidenceItem objects.
+ - If a sentence contains multiple pieces of information, capture them within the same description field.

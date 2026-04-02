@@ -1,4 +1,5 @@
 from enum import Enum
+from typing import Annotated
 
 from pydantic import BaseModel, Field
 
@@ -25,10 +26,36 @@ class Claim(str, Enum):
 
 
 class EvidenceItem(BaseModel):
-    quoted_text: str = Field(description="1 sentence reference to the original text containing the variant and the evidence")
-    description: str = Field(description="Your description of the quoted text")
-    evidence_type: EvidenceType
-    claim: Claim
+    quoted_text: str = Field(
+        description="The FULL, verbatim sentence or complete table row from the original text. "
+                    "Do NOT extract fragments or single words. "
+                    "MUST be exactly the same as the text in the original article and CAN NOT be modified."
+    )
+    description: str = Field(
+        description="A concise summary of the evidence. If a sentence contains multiple findings, "
+                    "synthesize them here into a single cohesive description."
+    )
+    evidence_type: Annotated[
+        EvidenceType,
+        Field(description=(
+            "functional: In vitro/vivo assays; "
+            "clinical: Case reports/segregation; "
+            "population: Allele frequency (e.g., data from gnomAD or 1000G); "
+            "computational: In silico predictions (e.g., data from PolyPhen or SIFT); "
+            "other: Other types of evidence;"
+        ))
+    ]
+
+    claim: Annotated[
+        Claim,
+        Field(description=(
+            "uncertain: Conflicting/insufficient; "
+            "supports pathogenicity: Evidence for disease-causing; "
+            "supports benignity: Evidence for harmlessness; "
+            "no claim: Mentioned only without interpretation;"
+
+        ))
+    ]
     strength: EvidenceStrength
 
 
