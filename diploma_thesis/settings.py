@@ -12,7 +12,7 @@ NIH_EMAIL = os.getenv("NIH_EMAIL")
 E_INFRA_API_KEY = os.getenv("E_INFRA_API_KEY")
 
 PACKAGE_DIR = Path(__file__).parent  # = your/home/directory/diploma_thesis/diploma_thesis
-DATA_DIR = PACKAGE_DIR / "data"
+DATA_DIR = Path(os.getenv("DATA_PATH", Path(__file__).resolve().parent / "data"))
 
 MODEL_NAME = "gpt-oss-120b"
 
