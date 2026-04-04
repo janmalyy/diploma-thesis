@@ -1,8 +1,10 @@
 import asyncio
 import json
 import os
+import time
 from typing import Optional
 
+import dateutil.utils
 import uvicorn
 from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse, StreamingResponse
@@ -20,8 +22,9 @@ from diploma_thesis.core.run_llm import run_pipeline
 from diploma_thesis.core.update_article_fulltext import \
     update_articles_fulltext
 from diploma_thesis.core.update_suppl_data import update_suppl_data
-from diploma_thesis.settings import PACKAGE_DIR, logger
-from diploma_thesis.utils.helpers import get_omim_url
+from diploma_thesis.settings import DATA_DIR, PACKAGE_DIR, logger
+from diploma_thesis.utils.helpers import end, get_omim_url
+from diploma_thesis.utils.upload_to_drive import upload_json_to_drive
 
 app = FastAPI()
 app.mount("/static", StaticFiles(directory=PACKAGE_DIR / "web" / "static"), name="static")
@@ -77,6 +80,10 @@ async def generate_llm_summary(request: Request, variant_request: VariantRequest
     async def event_generator():
         pipeline_task = None
         synvar_error_msg = None
+
+        variant_info = {}
+        start = time.time()
+
         try:
             # 1. Initialization and SynVar Fetch
             yield f"data: {json.dumps({'status': 'Recognizing the variant (SynVar)'})}\n\n"
@@ -123,6 +130,7 @@ async def generate_llm_summary(request: Request, variant_request: VariantRequest
                 yield f"data: {json.dumps({'result': result})}\n\n"
                 return
 
+            variant_info.update({"articles_before_pruning": len(articles)})
             articles = prune_articles(articles)
 
             # 3. Content Update
@@ -140,8 +148,42 @@ async def generate_llm_summary(request: Request, variant_request: VariantRequest
                 logger.info("Client disconnected after article updates.")
                 return
 
-            articles = remove_articles_with_no_match(articles)
             n_articles = len(articles)
+            variant_info.update({"articles_before_removing": n_articles})
+            articles = remove_articles_with_no_match(articles)
+            variant_info.update({
+                "variant": variant.variant_string,
+                "time_to_process_articles": end(start),
+                "context_length": len("\n".join(str(article.get_structured_context()) for article in articles)),
+                "articles_after_removal": len(articles),
+                "only_medline_count": len([a for a in articles if a.data_sources == {"medline"}]),
+                "only_pmc_count": len([a for a in articles if a.data_sources == {"pmc"}]),
+                "only_suppl_count": len([a for a in articles if a.data_sources == {"suppl"}]),
+                "both_pmc_and_supplcount": len([a for a in articles if a.data_sources == {"suppl", "pmc"}]),
+                "all_three_count": len([a for a in articles if a.data_sources == {"suppl", "pmc", "medline"}]),
+                "articles":
+                    [
+                        {
+                            "pmid": a.pmid,
+                            "pmcid": a.pmcid,
+                            "data_sources": [source for source in a.data_sources],
+                            "source_of_annotation": a.annotation_source,
+                            "title_length": len(a.title),
+                            "abstract_length": len(a.abstract),
+                            "number_of_unmatched_snippets": len(a.fulltext_snippets),
+                            "unmatched_snippets": [s.machine_comparable for s in a.fulltext_snippets],
+                            "number_of_paragraphs": len(a.paragraphs),
+                            "paragraphs_lengths": [len(p) for p in a.paragraphs],
+
+                            "number_of_suppl_files": len(a.suppl_data_list),
+                            "suppl_paragraphs_counts_per_file": [len(sd.paragraphs) for sd in a.suppl_data_list],
+                            "suppl_paragraphs_lengths": [[len(str(p)) for p in sd.paragraphs] for sd in
+                                                         a.suppl_data_list],
+                        }
+                        for a in articles
+                    ],
+            })
+
             if n_articles == 0:
                 yield f"data: {json.dumps({'status': 'Fetching External Links (ClinVar, OMIM)'})}\n\n"
                 external_links = await fetch_external_links(variant)
@@ -195,6 +237,22 @@ async def generate_llm_summary(request: Request, variant_request: VariantRequest
             final_result.update(external_links)
 
             yield f"data: {json.dumps({'result': final_result})}\n\n"
+
+            variant_info.update(
+                final_result,
+            )
+            variant_info.update(
+                {"total_time": end(start)}
+            )
+
+            try:
+                filename = f"{variant.variant_string}_{dateutil.utils.today().date()}_{time.time()}_variant_info.json"
+                upload_json_to_drive(variant_info, filename)
+                (DATA_DIR / "results").mkdir(parents=True, exist_ok=True)
+                with open(DATA_DIR / "results" / filename, "w", encoding="utf-8") as f:
+                    json.dump(variant_info, f, indent=4)
+            except Exception as e:
+                logger.error(f"Error uploading variant_info to Google Drive or to local storage : {e}")
 
         except asyncio.CancelledError:
             logger.info("Pipeline execution cancelled due to client disconnect.")

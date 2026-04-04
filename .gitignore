@@ -1,5 +1,6 @@
 diploma_thesis/data
 !diploma_thesis/data/gene2mim.json
+credentials.json
 
 diploma_thesis/not_working_pubtator_annotate_raw
 # ---------------------------------------------------------------------

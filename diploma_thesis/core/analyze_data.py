@@ -36,10 +36,7 @@ from diploma_thesis.core.update_article_fulltext import \
     update_articles_fulltext
 from diploma_thesis.core.update_suppl_data import update_suppl_data
 from diploma_thesis.settings import DATA_DIR, logger
-
-
-def end(start):
-    return round(time.time() - start, 2)
+from diploma_thesis.utils.helpers import end
 
 
 async def get_data_for_analysis(results_path: Path | str):
@@ -255,16 +252,23 @@ def compare_runs(paths: list[str], variant: str) -> dict:
 
         runs_evidences.append(id2_evidences)
         article_ids_per_run.append(set(current_run_article_ids))
+    common_article_ids = set()
+    if article_ids_per_run:
+        unique_articles_length = len(set.union(*article_ids_per_run))
+        # 1. Ratio of articles in all runs / all unique articles
+        common_article_ids = set.intersection(*article_ids_per_run)
+        matching_articles_ratio = len(common_article_ids) / unique_articles_length
 
-    # 1. Intersection of article IDs (must be in all runs)
-    common_article_ids = set.intersection(*article_ids_per_run) if article_ids_per_run else set()
-    number_of_matching_articles = len(common_article_ids)
-
-    # 2. Article IDs in at least 4 out of 5 runs
-    all_article_counts = Counter([art_id for s in article_ids_per_run for art_id in s])
-    number_of_matching_articles_4_5 = sum(1 for count in all_article_counts.values() if count >= 4)
+        # 2. Ratio of articles in all runs or at least all runs except one run / all unique articles
+        all_article_counts = Counter([art_id for s in article_ids_per_run for art_id in s])
+        # pprint(all_article_counts)
+        matching_articles_minus_one_ratio = sum(1 for count in all_article_counts.values() if count >= len(paths) - 1) / unique_articles_length
+    else:
+        matching_articles_ratio = 0
+        matching_articles_minus_one_ratio = 0
 
     # 3. Matching ratios for evidence_types and claims
+    total_matched_quotes = 0
     total_matched_types = 0
     total_matched_claims = 0
     total_avg_evidence_count = 0.0
@@ -300,6 +304,7 @@ def compare_runs(paths: list[str], variant: str) -> dict:
                     break
 
             if matches_in_all_runs:
+                total_matched_quotes += 1
                 # Check exact match for enums across all 5 runs
                 if all(e["evidence_type"] == matched_group[0]["evidence_type"] for e in matched_group):
                     total_matched_types += 1
@@ -307,19 +312,22 @@ def compare_runs(paths: list[str], variant: str) -> dict:
                     total_matched_claims += 1
 
     # Final ratios (prevent division by zero)
-    evidence_types_matching_ratio = (
-        total_matched_types / total_avg_evidence_count if total_avg_evidence_count > 0 else 0
-    )
-    claims_matching_ratio = (
-        total_matched_claims / total_avg_evidence_count if total_avg_evidence_count > 0 else 0
-    )
+    if total_avg_evidence_count > 0:
+        quoted_text_matching_ratio = total_matched_quotes / total_avg_evidence_count
+        evidence_types_matching_ratio = total_matched_types / total_avg_evidence_count
+        claims_matching_ratio = total_matched_claims / total_avg_evidence_count
+    else:
+        quoted_text_matching_ratio = 0
+        evidence_types_matching_ratio = 0
+        claims_matching_ratio = 0
 
     return {
         "invalid_narrative_summary_count": invalid_narrative_summary_count,
-        "number_of_matching_articles": number_of_matching_articles,
-        "number_of_matching_articles_4_5": number_of_matching_articles_4_5,
+        "matching_articles_ratio": round(matching_articles_ratio, 3),
+        "matching_articles_minus_one_ratio": round(matching_articles_minus_one_ratio, 3),
         "overall_confidences": overall_confidences,
         "overall_pathogenicities": overall_pathogenicities,
+        "quoted_text_matching_ratio": round(quoted_text_matching_ratio, 3),
         "evidence_types_matching_ratio": round(evidence_types_matching_ratio, 3),
         "claims_matching_ratio": round(claims_matching_ratio, 3),
     }

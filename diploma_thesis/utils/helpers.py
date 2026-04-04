@@ -2,6 +2,7 @@ import html
 import json
 import re
 import string
+import time
 from pathlib import Path
 from typing import Any, Generator
 from xml.dom.minidom import parseString
@@ -290,3 +291,7 @@ def get_omim_url(gene_symbol: str) -> str | None:
         return None
 
     return f"https://www.omim.org/entry/{omim_id}"
+
+
+def end(start):
+    return round(time.time() - start, 2)
