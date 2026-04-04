@@ -14,6 +14,7 @@ export const MOCK_RESULT = {
     article_evidences: [
         {
             article_id: "PMC12345",
+            data_sources: ["suppl"],
             variant_confirmed: true,
             overall_article_conclusion: "BRAF V600E is a strong driver in melanoma with high therapeutic relevance.",
             evidence: [

@@ -138,7 +138,8 @@ class Article:
             "article_id": self.pmcid if self.pmcid else self.pmid,
             "title": self.title.original,
             "relevance_score": self.relevance_score,
-            "pub_year": self.pub_year
+            "pub_year": self.pub_year,
+            "data_sources": list(self.data_sources)
         }
 
 
