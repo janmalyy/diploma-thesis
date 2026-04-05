@@ -505,8 +505,8 @@ document.addEventListener("DOMContentLoaded", () => {
         testUiBtn.addEventListener("click", async () => {
             if (loadingOverlay.style.display === "flex") return;
 
-            geneInput.value = "BRAF";
-            changeInput.value = "V600E";
+            geneInput.value = "BRCA1";
+            changeInput.value = "R7C";
             levelSelect.value = "protein";
             updateFieldsBasedOnLevel("protein");
 
