@@ -3,6 +3,7 @@ import os
 
 print(f"DEBUG - Content /app: {os.listdir('/app')}")
 print(f"DEBUG - Content ./: {os.listdir('./')}")
+print(f"DEBUG - path to gene2mim.json: {os.path.abspath('./data/gene2mim.json')}")
 import time
 from pathlib import Path
 
