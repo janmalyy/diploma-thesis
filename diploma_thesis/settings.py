@@ -1,5 +1,8 @@
 import logging
 import os
+
+print(f"DEBUG - Content /app: {os.listdir('/app')}")
+print(f"DEBUG - Content ./: {os.listdir('./')}")
 import time
 from pathlib import Path
 
