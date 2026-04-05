@@ -277,7 +277,7 @@ def get_omim_url(gene_symbol: str) -> str | None:
         logger.warning("No gene symbol provided.")
         return None
 
-    gene2mim_path = DATA_DIR / "gene2mim.json"
+    gene2mim_path = PACKAGE_DIR / "utils" / "gene2mim.json"
     if not gene2mim_path.exists():
         logger.warning(f"Gene2MIM mapping file not found, searched at '{gene2mim_path}'.")
         return None

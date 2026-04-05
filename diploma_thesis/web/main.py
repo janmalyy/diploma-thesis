@@ -247,8 +247,8 @@ async def generate_llm_summary(request: Request, variant_request: VariantRequest
 
             try:
                 filename = f"{variant.variant_string}_{dateutil.utils.today().date()}_{time.time()}_variant_info.json"
-                upload_json_to_drive(variant_info, filename)
-                (DATA_DIR / "results").mkdir(parents=True, exist_ok=True)
+                # upload_json_to_drive(variant_info, filename)
+                # (DATA_DIR / "results").mkdir(parents=True, exist_ok=True)
                 with open(DATA_DIR / "results" / filename, "w", encoding="utf-8") as f:
                     json.dump(variant_info, f, indent=4)
             except Exception as e:

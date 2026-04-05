@@ -1,9 +1,5 @@
 import logging
 import os
-
-print(f"DEBUG - Content /app: {os.listdir('/app')}")
-print(f"DEBUG - Content ./: {os.listdir('./')}")
-print(f"DEBUG - path to gene2mim.json: {os.path.abspath('./data/gene2mim.json')}")
 import time
 from pathlib import Path
 
@@ -15,8 +11,8 @@ NIH_EMAIL = os.getenv("NIH_EMAIL")
 
 E_INFRA_API_KEY = os.getenv("E_INFRA_API_KEY")
 
-PACKAGE_DIR = Path(__file__).parent  # = your/home/directory/diploma_thesis/diploma_thesis
-DATA_DIR = Path(os.getenv("DATA_PATH", Path(__file__).resolve().parent / "data"))
+PACKAGE_DIR = Path(os.getenv("PACKAGE_PATH", Path(__file__).resolve().parent))  # = your/home/directory/diploma_thesis/diploma_thesis
+DATA_DIR = Path(os.getenv("DATA_PATH", PACKAGE_DIR / "data"))
 
 MODEL_NAME = "gpt-oss-120b"
 
