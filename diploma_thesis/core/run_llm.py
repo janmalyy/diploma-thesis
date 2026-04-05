@@ -1,5 +1,6 @@
 import asyncio
 import json
+from pprint import pprint
 
 from pydantic_ai import Agent
 from pydantic_ai.models.openai import OpenAIChatModel
@@ -8,18 +9,18 @@ from pydantic_ai.settings import ModelSettings
 
 from diploma_thesis.core.llm_response_models import (AggregatedSummary,
                                                      ArticleAnalysis, Claim,
-                                                     ConfidenceLevel,
+                                                     ConfidenceLevel, Mention,
                                                      Pathogenicity)
 from diploma_thesis.core.models import Article, Variant
 from diploma_thesis.settings import (E_INFRA_API_KEY, EINFRA_URL, MODEL_NAME,
                                      logger)
-from diploma_thesis.utils.helpers import build_prompt, get_prompt
+from diploma_thesis.utils.helpers import (build_prompt, get_prompt,
+                                          transform_paragraph_for_display)
 
 model = OpenAIChatModel(
     model_name=MODEL_NAME,
     provider=OpenAIProvider(base_url=EINFRA_URL, api_key=E_INFRA_API_KEY),
 )
-
 
 analysis_agent = Agent(
     model,
@@ -61,44 +62,65 @@ async def process_single_article(
 ) -> dict | None:
     """
     Evaluate the relevance of the article and extract evidences if it is relevant. Add metadata.
-    Returns: JSON object with evidence data and article metadata or None if not relevant
+    Returns: JSON object (so-called 'article_mention') with evidence data and article metadata or None if not relevant
     """
     async with semaphore:
         try:
             replacements = {
-                "GENE": variant.gene,
-                "VARIANT": variant.variant,
-                "VARIANT_INFO": variant.variant_dict,
+                "_GENE_": variant.gene,
+                "_VARIANT_": variant.variant,
+                "_VARIANTINFO_": variant.variant_dict,
                 **article.get_structured_context()
             }
             ready_prompt = build_prompt(replacements, prompt_template)
-
+            # print("ready_prompt", ready_prompt)
             result = await analysis_agent.run(ready_prompt)
 
-            data = result.output
-            print(f"evidence {article.pmcid or article.pmid}: {data.is_relevant}")
-            print(data.reason)
+            data: ArticleAnalysis = result.output
+            print(f"article {article.pmcid or article.pmid}")
             print(data.overall_article_summary)
             print(data.uncertainties_or_limitations)
-            print(data.evidence)
+            pprint(data.mentions)
             if progress_callback:
                 await progress_callback("Analysis")
 
-            if data.is_relevant:
-                evidence_data = data.model_dump()
-                evidence_data.update(**article.get_structured_metadata())
-                return evidence_data
+            relevant_mentions: list[Mention] = [mention for mention in data.mentions if mention.is_relevant]
+            if relevant_mentions:
+                formatted_mentions = []
+                paragraphs_mentions = article.get_structured_context().get("_MENTIONS_")
+                for m in relevant_mentions:
+                    formatted_mentions.append(
+                        {
+                            "quoted_text": transform_paragraph_for_display(
+                                paragraphs_mentions[m.mention_id], variant.terms
+                            ),
+                            "mention_type": m.mention_type,
+                            "claim": m.claim,
+                            "strength": m.strength,
+                        }
+                    )
+
+                article_mention = {
+                    "mentions": formatted_mentions,
+                    "overall_article_summary": data.overall_article_summary,
+                    "uncertainties_or_limitations": data.uncertainties_or_limitations,
+                }
+                article_mention.update(**article.get_structured_metadata())
+
+                return article_mention
             return None
 
         except Exception as e:
-            logger.error(f"Error processing {article.pmcid or article.pmid}: {e}")
+            error_type = e.__class__.__name__
+            error_msg = f"{error_type}: {str(e)}"
+            logger.error(f"Process single article: error processing {article.pmcid or article.pmid}: {error_msg}")
             # Even on failure, we notify the callback to keep the count accurate
             if progress_callback:
                 await progress_callback("Analysis")
             return None
 
 
-def compute_structured_summary(valid_evidences: list[dict]) -> dict:
+def compute_structured_summary(article_mentions: list[dict]) -> dict:
     """
     Compute a structured summary with a conservative approach.
     Prioritizes lower certainty in case of ambiguity or ties.
@@ -116,12 +138,20 @@ def compute_structured_summary(valid_evidences: list[dict]) -> dict:
     strength_counts = {"high": 0, "moderate": 0}
     total_evidences = 0
 
-    for article in valid_evidences:
-        for ev in article.get("evidence", []):
-            if ev.get("claim", "").lower() not in ("", Claim.no_claim.value):
+    for article in article_mentions:
+        for mention in article.get("mentions", []):
+            claim = mention.get("claim", None)
+            if not claim:
+                continue
+            claim = claim.lower()
+            if claim not in ("", Claim.no_claim.value):
                 total_evidences += 1
-                claim = ev.get("claim").lower()
-                strength = ev.get("strength", "").lower()
+                claim = mention.get("claim").lower()
+
+                strength = mention.get("strength", None)
+                if not strength:
+                    continue
+                strength = strength.lower()
 
                 weight = strength_weights.get(strength, default_weight)
 
@@ -194,38 +224,53 @@ def compute_structured_summary(valid_evidences: list[dict]) -> dict:
 
 async def run_pipeline(variant: Variant, articles: list[Article], progress_callback=None) -> dict:
     semaphore = asyncio.Semaphore(4)
-    prompt_template = get_prompt("user_evaluate_and_extract.txt")
 
-    tasks = [
-        process_single_article(article, variant, prompt_template, semaphore, progress_callback)
-        for i, article in enumerate(articles)
-    ]
+    # choose appropriate prompt template
+    prompt_basic = get_prompt("user_evaluate_and_extract.txt")
+    prompt_one = get_prompt("user_evaluate_and_extract_one.txt")
+    prompt_medline = get_prompt("user_evaluate_and_extract_medline.txt")
+
+    tasks = []
+    for i, article in enumerate(articles):
+        if article.data_sources == {"medline"}:
+            tasks.append(process_single_article(article, variant, prompt_medline, semaphore, progress_callback))
+        elif len(article.paragraphs) + len(article.suppl_data_list) == 1:
+            tasks.append(process_single_article(article, variant, prompt_one, semaphore, progress_callback))
+        else:
+            tasks.append(process_single_article(article, variant, prompt_basic, semaphore, progress_callback))
 
     results = await asyncio.gather(*tasks)
-    valid_evidences = [res for res in results if res is not None]
+    # it is called article_mention because it is something in between, it is a Mention with some Article data
+    valid_article_mentions = [res for res in results if res is not None]
 
-    if not valid_evidences:
-        return {"narrative_summary": "No relevant evidence found.", "article_evidences": []}
+    if not valid_article_mentions:
+        return {"narrative_summary": "No relevant evidence found.", "article_mentions": []}
 
     if progress_callback:
         await progress_callback("Aggregating")
 
     agg_replacements = {
-        "GENE": variant.gene,
-        "VARIANT": variant.variant,
-        "VARIANT_INFO": variant.variant_dict,
-        "STRUCTURED_EVIDENCE_LIST": json.dumps(valid_evidences)
+        "_GENE_": variant.gene,
+        "_VARIANT_": variant.variant,
+        "_VARIANTINFO_": variant.variant_dict,
+        "_STRUCTURED_EVIDENCE_LIST_": json.dumps(valid_article_mentions)
     }
 
     agg_prompt = build_prompt(agg_replacements, get_prompt("user_aggregate.txt"))
     agg_result = await aggregator_agent.run(agg_prompt)
-    logger.info(f"aggregation {variant}:")
-    logger.info(f"narrative: {agg_result.output.narrative_summary}")
+    narrative = agg_result.output.narrative_summary
+    while len(narrative) < 50:
+        logger.warning(f"Narrative summary is too short: {narrative}. Redoing aggregation.")
+        agg_result = await aggregator_agent.run(agg_prompt)
+        narrative = agg_result.output.narrative_summary
 
-    structured_summary = compute_structured_summary(valid_evidences)
+    logger.info(f"narrative: {narrative}")
+
+    structured_summary = compute_structured_summary(valid_article_mentions)
     [print(key, value) for key, value in structured_summary.items()]
 
     final_output = agg_result.output.model_dump()
     final_output["structured_summary"] = structured_summary
-    final_output["article_evidences"] = valid_evidences
+    final_output["article_mentions"] = valid_article_mentions
+
     return final_output

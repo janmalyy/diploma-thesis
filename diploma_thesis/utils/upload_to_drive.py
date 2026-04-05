@@ -22,6 +22,8 @@ def upload_json_to_drive(data: list | dict, file_name: str) -> None:
         data (dict | list): Data, která chcete uložit.
         file_name (str): Název souboru, pod kterým se uloží na Disku.
     """
+    if type(data) is dict:
+        data = [data]
     json_data = json.dumps(data, indent=4, ensure_ascii=False)
     file_stream = io.BytesIO(json_data.encode("utf-8"))
 

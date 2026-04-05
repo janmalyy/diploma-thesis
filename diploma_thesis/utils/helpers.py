@@ -17,14 +17,15 @@ from diploma_thesis.settings import DATA_DIR, PACKAGE_DIR, logger
 # "[^"]*" matches a full quoted string (allowing > inside)
 # The combination ensures we only stop at a > that is NOT inside quotes
 
-span_pattern = r'<span(?:[^">]|"[^"]*")*>(.*?)</span>'
-all_spaces_pattern = r"(?:&nbsp;?|&#160;|[  \s])+"
+SPAN_PATTERN = r'<span(?:[^">]|"[^"]*")*>(.*?)</span>'
+ALL_SPACES_PATTERN = r"(?:&nbsp;?|&#160;|[  \s])+"
+ANNOTATION_PATTERN = re.compile(r"\[[^\]]+:\s*([^\]]+)\]")
 
 
 def to_human_readable(text: str) -> str:
-    text = re.sub(span_pattern, r"\1", text)
+    text = re.sub(SPAN_PATTERN, r"\1", text)
     text = html.unescape(text)
-    text = re.sub(all_spaces_pattern, " ", text.strip())
+    text = re.sub(ALL_SPACES_PATTERN, " ", text.strip())
     return text
 
 
@@ -295,3 +296,44 @@ def get_omim_url(gene_symbol: str) -> str | None:
 
 def end(start):
     return round(time.time() - start, 2)
+
+
+def transform_paragraph_for_display(paragraph: str | dict, terms: list[str]) -> str | None:
+    """
+    1)
+    If the paragraph is string (it is fulltext): remove annotations
+    If the paragraph is dict (it is suppl data): transform it to string
+
+    2)
+    makes all specified terms bold
+    """
+    if isinstance(paragraph, str):
+        # 1. [type: value] -> value
+        text = ANNOTATION_PATTERN.sub(r"\1", paragraph)
+
+        if not terms:
+            return text
+
+    elif isinstance(paragraph, dict):
+        text = ""
+        if paragraph.get("title"):
+            text += "Table title: " + paragraph["title"] + "\n"
+        if paragraph.get("header"):
+            text += "Column names:\n" + paragraph["header"] + "\n"
+        if paragraph.get("context"):
+            text += "Rows:\n" + "\n".join(paragraph["context"])
+    else:
+        raise TypeError(f"Unsupported paragraph type: {type(paragraph)}, content: {paragraph}")
+
+    # 2. term -> **term**
+    escaped_terms = sorted([re.escape(t) for t in terms], key=len, reverse=True)
+    terms_pattern = "|".join(escaped_terms)
+    final_pattern = re.compile(rf"[^\d\*\+a-zA-Z-]({terms_pattern})[^\d\*\+a-zA-Z-]", re.IGNORECASE)
+
+    return final_pattern.sub(r"**\1**", text)
+
+
+if __name__ == '__main__':
+    text = "blablabal (c.34G> C) blabla"
+    terms = ["c.34G> C"]
+    print(transform_paragraph_for_display(text, terms))

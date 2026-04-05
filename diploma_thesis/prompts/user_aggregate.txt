@@ -1,9 +1,10 @@
 Genetic variant:
-Gene: GENE, Variant: VARIANT
-VARIANT_INFO
+Gene: _GENE_, Variant: _VARIANT_
+Other names for the gene and the variant:
+_VARIANTINFO_
 
 Extracted evidence from individual articles:
-STRUCTURED_EVIDENCE_LIST
+_STRUCTURED_EVIDENCE_LIST_
 
 Task:
 Write a concise, human-readable summary of the evidence regarding this variant. - Narrative summary

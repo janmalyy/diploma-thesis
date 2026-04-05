@@ -114,22 +114,23 @@ class Article:
 
     def get_structured_context(self) -> dict:
         """Returns a JSON representation of the article. For LLMs."""
+        paragraphs_mentions = {i: paragraph for i, paragraph in enumerate(self.paragraphs)}
+        n_paragraphs = len(paragraphs_mentions)
         suppl_data_mentions = []
         for sd in self.suppl_data_list:
             for i, p in enumerate(sd.paragraphs):
                 suppl_data_mentions.append({
-                    f"suppl{i}": {
+                    i+n_paragraphs: {
                         key: value
                         for key, value in p.model_dump().items()
                         if value not in [None, "", []]
                     }
                 })
+        paragraphs_mentions.update(*suppl_data_mentions)
         return {
-            "ARTICLE_ID": self.pmcid if self.pmcid else self.pmid,
-            "TITLE": self.title.annotated,
-            "ABSTRACT": self.abstract.annotated,
-            "FULLTEXT_MENTIONS": self.paragraphs,
-            "SUPPLEMENTARY_DATA_MENTIONS": suppl_data_mentions
+            "_TITLE_": self.title.annotated,
+            "_ABSTRACT_": self.abstract.annotated,
+            "_MENTIONS_": paragraphs_mentions,
         }
 
     def get_structured_metadata(self) -> dict:

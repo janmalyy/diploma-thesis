@@ -1,0 +1,57 @@
+Context:
+Genetic variant:
+Gene: _GENE_, Variant: _VARIANT_
+Other names for the gene and the variant:
+_VARIANTINFO_
+
+Article data:
+Title:
+_TITLE_
+
+Abstract:
+_ABSTRACT_
+
+Extracted mentions from article text and/or from supplementary data:
+_MENTIONS_
+Note:
+ - the mentions are in the format: key: id, value: mention
+ - The mention is either a text from the article body or structured dictionary extracted from the supplementary data.
+ - The structured dictionary contains this type of fields:
+    - title: title of the supplementary data table (might be empty or inaccurate)
+    - header: column names from the supplementary data table (might be empty or inaccurate)
+    - **context**: approx. one row from the supplementary data table with the variant mentioned (the most important part)
+
+---
+Task:
+0. Save the id of the evaluated mention in the mention_id field.
+
+1. Evaluate relevance
+Evaluate whether the mention contains information relevant to the interpretation of the specified variant.
+
+A mention is considered relevant if it does at least one of the following:
+- discusses functional effects of the variant
+- reports clinical observations, cases, or segregation
+- provides pathogenicity interpretation or classification
+- reports experimental, computational, or population evidence specifically for this variant
+
+Provide reasoning in the reason field and the decision in the is_relevant field.
+
+2a. If is_relevant is true, continue.
+
+Classify:
+- the mention type
+- the pathogenicity claim of the mention regarding the variant
+- the strength of the claim
+
+Guidelines:
+- All values must be filled.
+- Do not upgrade or reinterpret pathogenicity claims.
+- If the variant is only mentioned without interpretation, state so.
+- Distinguish evidence types (functional, clinical, population, computational).
+
+2b. If is_relevant is false, end; leave mention_type, claim, strength, overall_article_conclusion, and uncertainties_or_limitations fields empty.
+
+3. Based on the mention:
+  I) write a one-sentence summary for the article (overall_article_conclusion)
+  II) state any uncertainties or limitations (uncertainties_or_limitations)
+  - Both fields must be filled.

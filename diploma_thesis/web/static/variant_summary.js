@@ -53,34 +53,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Helper to fetch and render Markdown
     async function loadMarkdownContent(filename, container) {
-    try {
-        const response = await fetch(`/static/${filename}`);
-        if (!response.ok) throw new Error(`Could not load ${filename}`);
-        const text = await response.text();
+        try {
+            const response = await fetch(`/static/${filename}`);
+            if (!response.ok) throw new Error(`Could not load ${filename}`);
+            const text = await response.text();
 
-        // Render markdown to HTML
-        const rawHtml = marked.parse(text);
+            const rawHtml = marked.parse(text);
 
-        // Sanitize and force all links to open in a new tab
-        const cleanHtml = DOMPurify.sanitize(rawHtml, {
-            ADD_ATTR: ["target"], // Allow the target attribute
-            FORBID_TAGS: ["style"], // Example of extra security
-        });
+            const cleanHtml = DOMPurify.sanitize(rawHtml, {
+                ADD_ATTR: ["target"],
+                FORBID_TAGS: ["style"],
+            });
 
-        container.innerHTML = cleanHtml;
+            container.innerHTML = cleanHtml;
 
-        // Force target="_blank" on all links inside this container
-        const links = container.querySelectorAll("a");
-        links.forEach(link => {
-            link.setAttribute("target", "_blank");
-            link.setAttribute("rel", "noopener noreferrer");
-        });
+            const links = container.querySelectorAll("a");
+            links.forEach(link => {
+                link.setAttribute("target", "_blank");
+                link.setAttribute("rel", "noopener noreferrer");
+            });
 
-    } catch (error) {
-        console.error(error);
-        container.innerHTML = `<div class="alert alert-danger">Error loading content.</div>`;
+        } catch (error) {
+            console.error(error);
+            container.innerHTML = `<div class="alert alert-danger">Error loading content.</div>`;
+        }
     }
-}
 
     aboutBtn.addEventListener("click", () => {
         aboutModal.show();
@@ -98,7 +95,6 @@ document.addEventListener("DOMContentLoaded", () => {
         try {
             const resultData = JSON.parse(savedResult);
             displayResult(resultData);
-            // Also restore form values
             const savedForm = sessionStorage.getItem("variant_summary_form");
             if (savedForm) {
                 const formData = JSON.parse(savedForm);
@@ -126,7 +122,6 @@ document.addEventListener("DOMContentLoaded", () => {
             changeLabel.textContent = "Change";
         }
 
-        // Update placeholders
         switch (level) {
             case "protein":
                 geneInput.placeholder = "e.g. NOP10";
@@ -175,14 +170,12 @@ document.addEventListener("DOMContentLoaded", () => {
             if (loadingOverlay.style.display === "flex") {
                 stopGeneration();
             } else {
-                // Close any open modal
                 if (evidenceModalEl.classList.contains("show")) articleEvidenceModal.hide();
                 if (aboutModalEl.classList.contains("show")) aboutModal.hide();
                 if (helpModalEl.classList.contains("show")) helpModal.hide();
             }
         }
 
-        // Logic for article evidence modal only
         if (evidenceModalEl.classList.contains("show")) {
             if (e.key === "ArrowLeft") {
                 if (modalEvidenceQueue.length > 1 && currentModalIndex > 0) {
@@ -198,7 +191,6 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        // Navigation logic for article cards ...
         const activeCard = document.activeElement;
         if (activeCard && activeCard.classList.contains("article-card")) {
             const cards = Array.from(groupedEvidenceBody.querySelectorAll(".article-card"));
@@ -308,9 +300,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function handleProgressUpdate(data) {
         if (data.error) {
-        displayStreamingError(data.error);
-        return;
-    }
+            displayStreamingError(data.error);
+            return;
+        }
 
         if (data.total_calls !== undefined) {
             currentTotalCalls = data.total_calls;
@@ -342,16 +334,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    /**
-     * Helper to handle errors that occur during the streaming phase
-     */
     function displayStreamingError(message) {
         console.error("Streaming Error:", message);
         errorMessage.textContent = message;
         errorAlert.style.display = "block";
         loadingOverlay.style.display = "none";
-
-        // Ensure the result container is hidden if an error occurs mid-way
         resultContainer.style.display = "none";
 
         if (abortController) {
@@ -370,14 +357,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function formatNarrativeSummary(rawText) {
         if (!rawText) return "";
-
-        // 1. Convert Markdown to HTML
         const rawHtml = marked.parse(rawText);
-
-        // 2. Sanitize HTML to prevent XSS
         const cleanHtml = DOMPurify.sanitize(rawHtml);
-
-        // 3. Apply your custom citation link logic to the clean HTML
         return linkifyReferences(cleanHtml);
     }
 
@@ -416,9 +397,8 @@ document.addEventListener("DOMContentLoaded", () => {
                         const pathColor = getPathogenicityColor(path);
                         badge.className = `badge rounded-pill bg-${pathColor} evidence-badge text-capitalize me-1 mb-1`;
                         badge.textContent = `${path}: ${count}`;
-
-                        badge.style.pointerEvents = "none";     // Turn off interaction and cursor change
-                        badge.style.userSelect = "none";        // Prevent random text selection
+                        badge.style.pointerEvents = "none";
+                        badge.style.userSelect = "none";
 
                         pathogenicityCounts.appendChild(badge);
                     });
@@ -430,7 +410,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 structuredContainer.style.display = "none";
             }
 
-            // Render External Links
             const hasClinVar = result.clinvar_urls && result.clinvar_urls.length > 0;
             const hasOmim = !!result.omim_url;
 
@@ -440,7 +419,6 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
                 externalLinksContainer.style.display = "none";
             }
-
         }
 
         renderGroupedEvidences(currentArticleEvidences);
@@ -450,7 +428,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function renderExternalLinks(clinvarUrls, omimUrl, geneName) {
-        // Render ClinVar links
         clinvarLinksList.innerHTML = "";
         if (clinvarUrls && clinvarUrls.length > 0) {
             clinvarUrls.forEach(url => {
@@ -466,7 +443,6 @@ document.addEventListener("DOMContentLoaded", () => {
             clinvarLinksList.innerHTML = '<span class="text-muted small">No ClinVar records found.</span>';
         }
 
-        // Render OMIM link
         omimLinkContainer.innerHTML = "";
         if (omimUrl) {
             const a = document.createElement("a");
@@ -540,10 +516,10 @@ document.addEventListener("DOMContentLoaded", () => {
     function getPathogenicityColor(pathogenicityLevel) {
         if (!pathogenicityLevel) return "secondary";
         const p = pathogenicityLevel.toLowerCase();
-        if (p === "supports pathogenicity") return "danger";
-        if (p === "supports benignity") return "success";
-        if (p === "no claim") return "info";
-        if (p === "uncertain") return "secondary";
+        if (p.includes("supports pathogenicity") || p.includes("pathogenic")) return "danger";
+        if (p.includes("supports benignity") || p.includes("benign")) return "success";
+        if (p.includes("no claim")) return "info";
+        if (p.includes("uncertain") || p.includes("vus")) return "secondary";
         return "info";
     }
 
@@ -567,9 +543,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function linkifyReferences(text) {
         if (!text) return "";
-
-        // Matches 'PMC' followed by numbers OR sequences of digits (at least 5 digits)
-        // Uses word boundaries (\b) to avoid matching numbers inside other words
         return text.replace(/\b(PMC\d+)|(\d{5,})\b/gi, (match) => {
             const cleanId = match.replace(/^PMC/i, "").trim();
             const prefix = match.toUpperCase().startsWith("PMC") ? "PMC" : "";
@@ -586,7 +559,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function showTypeEvidence(type) {
         const typeArticles = currentArticleEvidences.filter(a =>
-            a.evidence && a.evidence.some(ev => ev.evidence_type.toLowerCase() === type.toLowerCase())
+            a.mentions && a.mentions.some(m => {
+                return m.mention_type.toLowerCase() === type.toLowerCase();
+            })
         );
 
         const uniqueArticles = [];
@@ -617,7 +592,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const article = modalEvidenceQueue[currentModalIndex];
         const articleId = article.article_id;
 
-        // Construct the external URL
         const isPMC = articleId.toString().toUpperCase().startsWith("PMC");
         const cleanId = articleId.toString().replace(/^PMC/i, "");
         const externalUrl = isPMC
@@ -685,23 +659,27 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
         `;
 
-        if (article.evidence && article.evidence.length > 0) {
-            html += `<h6><strong>Specific Evidence Points:</strong></h6>`;
-            article.evidence.forEach(ev => {
-                const claimColor = getClaimColor(ev.claim);
+        if (article.mentions && article.mentions.length > 0) {
+            html += `<h6><strong>Evidences:</strong></h6>`;
+            article.mentions.forEach(m => {
+                const claimValue = m.claim ? (m.claim.split(':').pop().replace(/['>]/g, '').trim()) : "no claim";
+                const claimColor = getClaimColor(claimValue);
+                const mentionType = m.mention_type ? (m.mention_type.split(':').pop().replace(/['>]/g, '').trim()) : "unknown";
+
                 html += `
                     <div class="evidence-item mb-3 p-2 bg-light border-start border-4">
                         <div class="d-flex justify-content-between align-items-center mb-1">
-                            <span class="badge evidence-type-badge bg-info text-dark">${escapeHtml(ev.evidence_type)}</span>
-                            <span class="badge evidence-badge text-capitalize bg-${claimColor}">${escapeHtml(ev.claim)}</span>
+                            <span class="badge evidence-type-badge bg-info text-dark">${escapeHtml(mentionType)}</span>
+                            <span class="badge evidence-badge text-capitalize bg-${claimColor}">${escapeHtml(claimValue)}</span>
                         </div>
-                        <p class="mb-1"><strong>Description:</strong> ${escapeHtml(ev.description)}</p>
-                        ${ev.quoted_text ? `<p class="mb-0 mt-2 italic text-muted" style="font-style: italic;"><small>"${escapeHtml(ev.quoted_text)}"</small></p>` : ""}
+                        ${m.quoted_text ? `
+    <div class="mb-0 mt-2 italic text-muted small quote-container"
+         style="font-style: italic; white-space: pre-wrap; margin: 0; padding: 0;">${DOMPurify.sanitize(marked.parse(m.quoted_text.trim().replace(/\\n/g, '\n')))}</div>` : ""}
                     </div>
                 `;
             });
         } else {
-            html += `<p class="text-muted">No specific evidence points extracted.</p>`;
+            html += `<p class="text-muted">No specific mentions extracted.</p>`;
         }
 
         if (article.uncertainties_or_limitations) {
@@ -722,23 +700,20 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        // Relevance scoring similar to compute_structured_summary in backend
-        // Weights: high=4, moderate=2, default(other/low/unclear)=1;
         function scoreArticle(article) {
-            if (!article || !article.evidence) return 0;
+            if (!article || !article.mentions) return 0;
             const weights = { high: 4, moderate: 2 };
             let score = 0;
-            for (const ev of article.evidence) {
-                const claim = (ev.claim || "").toLowerCase();
+            for (const m of article.mentions) {
+                const claim = (m.claim || "").toLowerCase();
                 if (!claim) continue;
-                const strength = (ev.strength || "").toLowerCase();
-                const w = weights[strength] ?? 1;
+                const strengthStr = m.strength ? m.strength.split(':').pop().replace(/['>]/g, '').trim().toLowerCase() : "low";
+                const w = weights[strengthStr] ?? 1;
                 score += w;
             }
             return score;
         }
 
-        // Save the sorted list globally for modal navigation
         sortedArticlesForModal = [...articles].sort((a, b) => {
             const sa = scoreArticle(a);
             const sb = scoreArticle(b);
@@ -752,12 +727,16 @@ document.addEventListener("DOMContentLoaded", () => {
             card.tabIndex = 0;
 
             let evidenceListHtml = "";
-            if (article.evidence) {
-                article.evidence.forEach(ev => {
-                    const claimColor = getClaimColor(ev.claim);
-                    evidenceListHtml += `<span class="badge bg-light text-dark border evidence-badge me-1 mb-1" title="${escapeHtml(ev.description)}">
-                        <small>${escapeHtml(ev.evidence_type)}: </small><span class="text-${claimColor}">${escapeHtml(ev.claim)}</span>
-                    </span>`;
+            if (article.mentions) {
+                article.mentions.forEach(m => {
+                    const claimValue = m.claim ? (m.claim.split(':').pop().replace(/['>]/g, '').trim()) : "no claim";
+                    const mentionType = m.mention_type ? (m.mention_type.split(':').pop().replace(/['>]/g, '').trim()) : "unknown";
+                    const claimColor = getClaimColor(claimValue);
+
+                    evidenceListHtml += `<span class="badge bg-light text-dark border evidence-badge me-1 mb-1"
+                               title="${escapeHtml(m.quoted_text ? m.quoted_text.trim() : '')}">
+        <small>${escapeHtml(mentionType)}: </small><span class="text-${claimColor}">${escapeHtml(claimValue)}</span>
+    </span>`;
                 });
             }
 
@@ -790,7 +769,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
             `;
 
-            // Pass the full sorted list and the specific index of this card
             card.addEventListener("click", (e) => {
                 if (!e.target.classList.contains("view-details-btn")) {
                     renderEvidenceModal(sortedArticlesForModal, index);
@@ -810,7 +788,6 @@ document.addEventListener("DOMContentLoaded", () => {
     function showArticleEvidence(articleId) {
         const targetClean = articleId.replace(/^(PMC|PMID)\s*:?\s*/i, "").toUpperCase().trim();
 
-        // Find the index within the existing sorted list
         const index = sortedArticlesForModal.findIndex(a => {
             if (!a.article_id) return false;
             const articleClean = a.article_id.toString().replace(/^(PMC|PMID)\s*:?\s*/i, "").toUpperCase().trim();
@@ -826,7 +803,6 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        // Open modal with the full list, starting at the found index
         renderEvidenceModal(sortedArticlesForModal, index);
     }
 

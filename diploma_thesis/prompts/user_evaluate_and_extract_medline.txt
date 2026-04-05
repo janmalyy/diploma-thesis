@@ -1,0 +1,45 @@
+Context:
+Genetic variant:
+Gene: _GENE_, Variant: _VARIANT_
+Other names for the gene and the variant:
+_VARIANTINFO_
+
+Article data:
+Title:
+_TITLE_
+
+Abstract:
+_ABSTRACT_
+
+---
+Task:
+1. Evaluate relevance
+Evaluate whether the abstract contains information relevant to the interpretation of the specified variant.
+
+The abstract is considered relevant if it does at least one of the following regarding the variant of the gene GENE:
+- discusses functional effects.
+- reports clinical observations, cases, or segregation
+- provides pathogenicity interpretation or classification
+- reports experimental, computational, or population evidence specifically for this variant
+
+Provide reasoning in the reason field and the decision in the is_relevant field.
+
+2a. If is_relevant is true, continue.
+
+Classify the abstract:
+- the mention type
+- the pathogenicity claim of the mention regarding the variant
+    - the strength of the claim
+
+Guidelines:
+- All values must be filled.
+- Do not upgrade or reinterpret pathogenicity claims.
+- If the variant is only mentioned without interpretation, state so.
+- Choose only one of the evidence types (functional, clinical, population, computational). If multiple types are applicable, choose the most relevant.
+
+2b. If is_relevant is false, end; leave mention_type, claim, strength, overall_article_conclusion, and uncertainties_or_limitations fields empty.
+
+3. Based on the mention:
+  I) write a one-sentence summary for the article (overall_article_conclusion)
+  II) state any uncertainties or limitations (uncertainties_or_limitations)
+  - Both fields must be filled.

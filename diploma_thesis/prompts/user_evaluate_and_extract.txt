@@ -1,43 +1,59 @@
 Context:
 Genetic variant:
-Gene: GENE, Variant: VARIANT
-VARIANT_INFO
+Gene: _GENE_, Variant: _VARIANT_
+Other names for the gene and the variant:
+_VARIANTINFO_
 
 Article data:
-Article ID: ARTICLE_ID
 Title:
-TITLE
+_TITLE_
 
 Abstract:
-ABSTRACT
+_ABSTRACT_
 
-Extracted mentions from text:
-FULLTEXT_MENTIONS
+Extracted mentions dictionary from article text and/or from supplementary data:
+_MENTIONS_
+Note:
+ - the mentions are in the format: key: id, value: mention
+ - The mention is either a text from the article body or structured dictionary extracted from the supplementary data.
+ - The structured dictionary contains this type of fields:
+    - title: title of the supplementary data table (might be empty or inaccurate)
+    - header: column names from the supplementary data table (might be empty or inaccurate)
+    - **context**: approx. one row from the supplementary data table with the variant mentioned (the most important part)
 
-Extracted mentions from supplementary data:
-SUPPLEMENTARY_DATA_MENTIONS
 ---
 Task:
-1. Evaluate relevance
-Evaluate whether this article contains information relevant to the interpretation of the specified variant.
+Do iteratively following for each extracted mention:
+    0. Save the id of the currently evaluated mention in the mention_id field.
 
-An article is considered relevant if it does at least one of the following:
-- discusses functional effects of the variant
-- reports clinical observations, cases, or segregation
-- provides pathogenicity interpretation or classification
-- reports experimental, computational, or population evidence specifically for this variant
+    1. Evaluate relevance
+    Evaluate whether the mention contains information relevant to the interpretation of the specified variant.
 
-Provide reasoning in the reason field and the decision in the is_relevant field.
+    A mention is considered relevant if it does at least one of the following:
+    - discusses functional effects of the variant
+    - reports clinical observations, cases, or segregation
+    - provides pathogenicity interpretation or classification
+    - reports experimental, computational, or population evidence specifically for this variant
 
-2a. If is_relevant is true, continue and extract all explicit evidence.
-Extract all explicit evidence in this article related to the specified variant.
+    Provide reasoning in the reason field and the decision in the is_relevant field.
 
-Guidelines:
-- Only include evidence explicitly stated in the text.
-- Do not upgrade or reinterpret pathogenicity claims.
-- Distinguish evidence types (functional, clinical, population, computational).
-- If the variant is only mentioned without interpretation, state so.
+    2a. If is_relevant is true, continue.
 
-2b. If is_relevant is false, end and quit. Leave evidence, overall_article_conclusion, and uncertainties_or_limitations fields empty.
+    Classify:
+    - the mention type
+    - the pathogenicity claim of the mention regarding the variant
+    - the strength of the claim
 
-3. Based on the extracted evidence, write a one-sentence summary for the article and state any uncertainties or limitations.
+    Guidelines:
+    - All values must be filled.
+    - Do not upgrade or reinterpret pathogenicity claims.
+    - If the variant is only mentioned without interpretation, state so.
+    - Distinguish evidence types (functional, clinical, population, computational).
+
+    2b. If is_relevant is false, go to step 1 and evaluate the next mention.
+
+After the last mention is evaluated:
+    3. Based on the relevant mentions:
+      I) write a one-sentence summary for the article (overall_article_conclusion)
+      II) state any uncertainties or limitations (uncertainties_or_limitations)
+      - Both fields must be filled.

@@ -6,7 +6,7 @@ from lxml import etree
 from requests.adapters import HTTPAdapter
 from urllib3 import Retry
 
-from diploma_thesis.settings import DATA_DIR
+from diploma_thesis.settings import DATA_DIR, logger
 from diploma_thesis.utils.helpers import write_xml
 from diploma_thesis.utils.json_structure import write_json
 
@@ -121,7 +121,7 @@ def fetch_pubtator(
     except requests.RequestException as e:
         # TODO přidat negativní caching článků, které vím, že v PubTatoru NEJSOU - abych se je vždycky nesnažil stáhnout, i když bych mohl vědět, že neexistují
         # see: https://chatgpt.com/share/697cbd7c-1bd0-8009-9530-15ec028e38e9 nebo? https://chatgpt.com/c/697c869e-9214-8330-a063-621e53f4b673
-        print(f"Request failed. But it can only mean that none of the ids requested is available in Pubtator. Error message: {e}")
+        logger.info(f"Request failed. But it can only mean that none of the ids requested is available in Pubtator. Error message: {e}")
     except Exception as e:
         raise RuntimeError("Failed to parse PubTator response") from e
 

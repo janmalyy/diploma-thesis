@@ -213,44 +213,43 @@ def compare_runs(paths: list[str], variant: str) -> dict:
     Returns:
         A dictionary containing counts and matching ratios across runs.
     """
-    invalid_narrative_summary_count = 0
+    if len(paths) < 2:
+        raise ValueError("At least two runs are required for comparison.")
+
     overall_confidences = []
     overall_pathogenicities = []
 
-    runs_evidences = []
+    runs_mentions = []
     article_ids_per_run = []
 
     for path in paths:
-        with open(DATA_DIR / path, "r", encoding="utf-8") as f:
+        with open(DATA_DIR / "results" / path, "r", encoding="utf-8") as f:
             result_data = json.load(f)
 
-        variant_data = next((v for v in result_data if v["variant"] == variant), None)
+        variant_data = next((v for v in result_data if v["variant"].upper() == variant.upper()), None)
         if variant_data is None:
             raise ValueError(f"Variant {variant} not found in file {path}.")
-
-        if len(variant_data.get("narrative_summary", "")) <= 100:
-            invalid_narrative_summary_count += 1
 
         overall_pathogenicities.append(variant_data["structured_summary"]["overall_pathogenicity"])
         overall_confidences.append(variant_data["structured_summary"]["overall_confidence"])
 
-        id2_evidences = {}
+        id2mentions = {}
         current_run_article_ids = []
 
-        for article in variant_data.get("article_evidences", []):
+        for article in variant_data.get("article_mentions"):
             art_id = article["article_id"]
             current_run_article_ids.append(art_id)
 
-            id2_evidences[art_id] = [
+            id2mentions[art_id] = [
                 {
-                    "quoted_text": ev["quoted_text"],
-                    "evidence_type": ev["evidence_type"],
-                    "claim": ev["claim"]
+                    "quoted_text": ment["quoted_text"],
+                    "mention_type": ment["mention_type"],
+                    "claim": ment["claim"]
                 }
-                for ev in article.get("evidence", [])
+                for ment in article.get("mentions")
             ]
 
-        runs_evidences.append(id2_evidences)
+        runs_mentions.append(id2mentions)
         article_ids_per_run.append(set(current_run_article_ids))
     common_article_ids = set()
     if article_ids_per_run:
@@ -267,68 +266,58 @@ def compare_runs(paths: list[str], variant: str) -> dict:
         matching_articles_ratio = 0
         matching_articles_minus_one_ratio = 0
 
-    # 3. Matching ratios for evidence_types and claims
+    # 3. Matching ratios for mention_types and claims
     total_matched_quotes = 0
     total_matched_types = 0
     total_matched_claims = 0
-    total_avg_evidence_count = 0.0
+
+    mentions_per_run_list = [
+        sum(len(run[art_id]) for art_id in common_article_ids)
+        for run in runs_mentions
+    ]
+    if mentions_per_run_list:
+        avg_mentions_per_run = sum(mentions_per_run_list) / len(mentions_per_run_list)
+    else:
+        avg_mentions_per_run = 0
 
     for art_id in common_article_ids:
-        # Calculate average number of evidences for this article across runs
-        ev_counts = [len(run[art_id]) for run in runs_evidences]
-        avg_ev_count = sum(ev_counts) / len(runs_evidences)
-        total_avg_evidence_count += avg_ev_count
-
         # We take Run 0 as the reference to match against others
-        base_evidences = runs_evidences[0][art_id]
+        base_mentions = runs_mentions[0][art_id]
 
-        for base_ev in base_evidences:
-            matches_in_all_runs = True
-            matched_group = [base_ev]
+        for base_mention in base_mentions:
+            matched_group = [base_mention]
 
-            # Try to find a matching evidence in all other runs (1 to 4)
-            for run_idx in range(1, len(runs_evidences)):
-                best_match = None
-                highest_ratio = 0
-
-                for candidate_ev in runs_evidences[run_idx][art_id]:
-                    ratio = fuzz.partial_ratio(base_ev["quoted_text"], candidate_ev["quoted_text"])
-                    if ratio >= 95 and ratio > highest_ratio:
-                        highest_ratio = ratio
-                        best_match = candidate_ev
-
-                if best_match:
-                    matched_group.append(best_match)
-                else:
-                    matches_in_all_runs = False
-                    break
-
-            if matches_in_all_runs:
+            # Try to find a matching mention in all other runs (1 to N)
+            for run_idx in range(1, len(runs_mentions)):
+                for candidate_ment in runs_mentions[run_idx][art_id]:
+                    if base_mention["quoted_text"] == candidate_ment["quoted_text"]:
+                        matched_group.append(candidate_ment)
+                        break
+            if len(matched_group) == len(runs_mentions):
                 total_matched_quotes += 1
-                # Check exact match for enums across all 5 runs
-                if all(e["evidence_type"] == matched_group[0]["evidence_type"] for e in matched_group):
+                # Check the exact match for enums across all 5 runs
+                if all(e["mention_type"] == matched_group[0]["mention_type"] for e in matched_group):
                     total_matched_types += 1
                 if all(e["claim"] == matched_group[0]["claim"] for e in matched_group):
                     total_matched_claims += 1
 
     # Final ratios (prevent division by zero)
-    if total_avg_evidence_count > 0:
-        quoted_text_matching_ratio = total_matched_quotes / total_avg_evidence_count
-        evidence_types_matching_ratio = total_matched_types / total_avg_evidence_count
-        claims_matching_ratio = total_matched_claims / total_avg_evidence_count
+    if avg_mentions_per_run > 0:
+        quoted_text_matching_ratio = total_matched_quotes / avg_mentions_per_run
+        mention_types_matching_ratio = total_matched_types / avg_mentions_per_run
+        claims_matching_ratio = total_matched_claims / avg_mentions_per_run
     else:
         quoted_text_matching_ratio = 0
-        evidence_types_matching_ratio = 0
+        mention_types_matching_ratio = 0
         claims_matching_ratio = 0
 
     return {
-        "invalid_narrative_summary_count": invalid_narrative_summary_count,
         "matching_articles_ratio": round(matching_articles_ratio, 3),
         "matching_articles_minus_one_ratio": round(matching_articles_minus_one_ratio, 3),
         "overall_confidences": overall_confidences,
         "overall_pathogenicities": overall_pathogenicities,
         "quoted_text_matching_ratio": round(quoted_text_matching_ratio, 3),
-        "evidence_types_matching_ratio": round(evidence_types_matching_ratio, 3),
+        "mention_types_matching_ratio": round(mention_types_matching_ratio, 3),
         "claims_matching_ratio": round(claims_matching_ratio, 3),
     }
 
@@ -341,4 +330,4 @@ async def main():
 
 if __name__ == '__main__':
     # asyncio.run(main())
-    pprint(compare_runs(["results_1.json", "results_2.json"], "BRCA1 R7C"))
+    pprint(compare_runs(["BRCA1 r7c_2026-04-05_21_08_42_variant_info.json", "BRCA1 r7c_2026-04-05_21_22_53_variant_info.json"], "BRCA1 R7C"))

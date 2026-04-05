@@ -245,7 +245,10 @@ async def generate_llm_summary(request: Request, variant_request: VariantRequest
                 {"total_time": end(start)}
             )
 
-            filename = f"{variant.variant_string}_{dateutil.utils.today().date()}_{time.time()}_variant_info.json"
+            today = dateutil.utils.today()
+            now = dateutil.utils.today().now().time()
+            formatted_now = str(now).split(".")[0].replace(":", "_")
+            filename = f"{variant.variant_string}_{today.date()}_{formatted_now}_variant_info.json"
 
             try:
                 upload_json_to_drive(variant_info, filename)
@@ -255,15 +258,18 @@ async def generate_llm_summary(request: Request, variant_request: VariantRequest
             # try:
             #     (DATA_DIR / "results").mkdir(parents=True, exist_ok=True)
             #     with open(DATA_DIR / "results" / filename, "w", encoding="utf-8") as f:
-            #         json.dump(variant_info, f, indent=4)
+            #         json.dump([variant_info], f, indent=4)
             # except Exception as e:
-            #     logger.error(f"Error uploading variant_info to local storage : {e}")
+            #     logger.error(f"Error uploading variant_info to local storage: {e}")
 
         except asyncio.CancelledError:
             logger.info("Pipeline execution cancelled due to client disconnect.")
         except Exception as e:
-            logger.error(f"Pipeline error: {str(e)}", exc_info=True)
-            yield f"data: {json.dumps({'error': 'We are sorry:( Pipeline error:' + str(e)})}\n\n"
+            error_type = e.__class__.__name__
+            error_msg = f"{error_type}: {str(e)}"
+
+            logger.error(f"Pipeline error: {error_msg}", exc_info=True)
+            yield f"data: {json.dumps({'error': 'We are sorry:( Pipeline error: ' + error_msg})}\n\n"
         finally:
             if pipeline_task and not pipeline_task.done():
                 pipeline_task.cancel()
