@@ -19,13 +19,13 @@ pomocí quoted text budu chtít srovnat evidences a chci exact match u evidenceT
 """
 import asyncio
 import json
+import os
 import time
 from collections import Counter
 from pathlib import Path
 from pprint import pprint
 
 import numpy as np
-from rapidfuzz import fuzz
 
 from diploma_thesis.api.variomes import (fetch_variomes_data,
                                          parse_variomes_data)
@@ -36,93 +36,93 @@ from diploma_thesis.core.update_article_fulltext import \
     update_articles_fulltext
 from diploma_thesis.core.update_suppl_data import update_suppl_data
 from diploma_thesis.settings import DATA_DIR, logger
-from diploma_thesis.utils.helpers import end
+from diploma_thesis.utils.helpers import end, get_unique_safe_filename
 
 
 async def get_data_for_analysis(results_path: Path | str):
-    with open(DATA_DIR / "brca_variants.txt", "r", encoding="utf-8") as f:
-        text = f.read()
-    variants = text.split("\n")
+    # with open(DATA_DIR / "brca_variants.txt", "r", encoding="utf-8") as f:
+    #     text = f.read()
+    # variants = text.split("\n")
 
     to_be_json = []
 
-    for i, variant in enumerate(variants[:1]):
-        variant_info = {}
-        start = time.time()
+    # for i, variant in enumerate(variants[:1]):
+    variant_info = {}
+    start = time.time()
 
-        variant = Variant(variant.split(" ")[0], variant.split(" ")[1], "protein")
+    # variant = Variant(variant.split(" ")[0], variant.split(" ")[1], "protein")
+    variant = Variant("NOP10", "c.34G>C", "transcript")
+    articles = parse_variomes_data(fetch_variomes_data(variant), variant)
 
-        articles = parse_variomes_data(fetch_variomes_data(variant), variant)
-
-        if not articles:
-            logger.info(f"No articles found for this variant {variant.variant_string}.")
-            variant_info = {
-                "variant": variant.variant_string,
-                "time_to_process_articles": end(start),
-                "context_length": 0,
-                "articles": [],
-                "supplementary_files": [],
-            }
-            to_be_json.append(variant_info)
-            continue
-        variant_info.update({"articles_before_pruning": len(articles)})
-        articles = prune_articles(articles)
-
-        update_articles_fulltext(articles, variant)
-        update_suppl_data(articles, variant)
-
-        variant_info.update({"articles_before_removing": len(articles)})
-        articles = remove_articles_with_no_match(articles)
-
-        variant_info.update({
+    if not articles:
+        logger.info(f"No articles found for this variant {variant.variant_string}.")
+        variant_info = {
             "variant": variant.variant_string,
             "time_to_process_articles": end(start),
-            "context_length": len("\n".join(str(article.get_structured_context()) for article in articles)),
-            "articles_after_removal": len(articles),
-            "only_medline_count": len([a for a in articles if a.data_sources == {"medline"}]),
-            "only_pmc_count": len([a for a in articles if a.data_sources == {"pmc"}]),
-            "only_suppl_count": len([a for a in articles if a.data_sources == {"suppl"}]),
-            "both_pmc_and_supplcount": len([a for a in articles if a.data_sources == {"suppl", "pmc"}]),
-            "all_three_count": len([a for a in articles if a.data_sources == {"suppl", "pmc", "medline"}]),
-            "articles":
-                [
-                    {
-                        "pmid": a.pmid,
-                        "pmcid": a.pmcid,
-                        "data_sources": [source for source in a.data_sources],
-                        "source_of_annotation": a.annotation_source,
-                        "title_length": len(a.title),
-                        "abstract_length": len(a.abstract),
-                        "number_of_unmatched_snippets": len(a.fulltext_snippets),
-                        "unmatched_snippets": [s.machine_comparable for s in a.fulltext_snippets],
-                        "number_of_paragraphs": len(a.paragraphs),
-                        "paragraphs_lengths": [len(p) for p in a.paragraphs],
-
-                        "number_of_suppl_files": len(a.suppl_data_list),
-                        "suppl_paragraphs_counts_per_file": [len(sd.paragraphs) for sd in a.suppl_data_list],
-                        "suppl_paragraphs_lengths": [[len(str(p)) for p in sd.paragraphs] for sd in a.suppl_data_list],
-                    }
-                    for a in articles
-                ],
-        })
-        # ------- LLM part ----------------------------
-
-        pipeline_task = asyncio.create_task(
-            run_pipeline(variant, articles)
-        )
-        final_result = await pipeline_task
-
-        variant_info.update(
-            final_result,
-        )
-        variant_info.update(
-            {"total_time": end(start)}
-        )
-        # ---------------------------------------------
+            "context_length": 0,
+            "articles": [],
+            "supplementary_files": [],
+        }
         to_be_json.append(variant_info)
+        # continue
+    variant_info.update({"articles_before_pruning": len(articles)})
+    articles = prune_articles(articles)
 
-        if i % 10 == 0:
-            logger.info(f"progress: {i / len(variants) * 100:.2f}%")
+    update_articles_fulltext(articles, variant)
+    update_suppl_data(articles, variant)
+
+    variant_info.update({"articles_before_removing": len(articles)})
+    articles = remove_articles_with_no_match(articles)
+
+    variant_info.update({
+        "variant": variant.variant_string,
+        "time_to_process_articles": end(start),
+        "context_length": len("\n".join(str(article.get_structured_context()) for article in articles)),
+        "articles_after_removal": len(articles),
+        "only_medline_count": len([a for a in articles if a.data_sources == {"medline"}]),
+        "only_pmc_count": len([a for a in articles if a.data_sources == {"pmc"}]),
+        "only_suppl_count": len([a for a in articles if a.data_sources == {"suppl"}]),
+        "both_pmc_and_supplcount": len([a for a in articles if a.data_sources == {"suppl", "pmc"}]),
+        "all_three_count": len([a for a in articles if a.data_sources == {"suppl", "pmc", "medline"}]),
+        "articles":
+            [
+                {
+                    "pmid": a.pmid,
+                    "pmcid": a.pmcid,
+                    "data_sources": [source for source in a.data_sources],
+                    "source_of_annotation": a.annotation_source,
+                    "title_length": len(a.title),
+                    "abstract_length": len(a.abstract),
+                    "number_of_unmatched_snippets": len(a.fulltext_snippets),
+                    "unmatched_snippets": [s.machine_comparable for s in a.fulltext_snippets],
+                    "number_of_paragraphs": len(a.paragraphs),
+                    "paragraphs_lengths": [len(p) for p in a.paragraphs],
+
+                    "number_of_suppl_files": len(a.suppl_data_list),
+                    "suppl_paragraphs_counts_per_file": [len(sd.paragraphs) for sd in a.suppl_data_list],
+                    "suppl_paragraphs_lengths": [[len(str(p)) for p in sd.paragraphs] for sd in a.suppl_data_list],
+                }
+                for a in articles
+            ],
+    })
+    # ------- LLM part ----------------------------
+
+    pipeline_task = asyncio.create_task(
+        run_pipeline(variant, articles)
+    )
+    final_result = await pipeline_task
+
+    variant_info.update(
+        final_result,
+    )
+    variant_info.update(
+        {"total_time": end(start)}
+    )
+    # ---------------------------------------------
+    to_be_json.append(variant_info)
+
+    # if i % 10 == 0:
+    #     logger.info(f"progress: {i / len(variants) * 100:.2f}%")
 
     with open(DATA_DIR / results_path, "w", encoding="utf-8") as f:
         json.dump(to_be_json, f, indent=4)
@@ -260,7 +260,7 @@ def compare_runs(paths: list[str], variant: str) -> dict:
 
         # 2. Ratio of articles in all runs or at least all runs except one run / all unique articles
         all_article_counts = Counter([art_id for s in article_ids_per_run for art_id in s])
-        # pprint(all_article_counts)
+        pprint(all_article_counts)
         matching_articles_minus_one_ratio = sum(1 for count in all_article_counts.values() if count >= len(paths) - 1) / unique_articles_length
     else:
         matching_articles_ratio = 0
@@ -323,11 +323,14 @@ def compare_runs(paths: list[str], variant: str) -> dict:
 
 
 async def main():
-    results_path = DATA_DIR / "results_2.json"
+    filename = get_unique_safe_filename("C34G>C")
+    results_path = DATA_DIR / "results" / filename
     res = await get_data_for_analysis(results_path)
     # analyze_data(results_path)
 
 
 if __name__ == '__main__':
-    # asyncio.run(main())
-    pprint(compare_runs(["BRCA1 r7c_2026-04-05_21_08_42_variant_info.json", "BRCA1 r7c_2026-04-05_21_22_53_variant_info.json"], "BRCA1 R7C"))
+    # for i in range(3):
+    #     asyncio.run(main())
+    paths = [path for path in os.listdir(DATA_DIR / "results") if path.startswith("NOP10")]
+    pprint(compare_runs(paths, "NOP10 c.34G>C"))

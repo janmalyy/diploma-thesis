@@ -42,7 +42,6 @@ Do iteratively following for each extracted mention:
     Classify:
     - the mention type
     - the pathogenicity claim of the mention regarding the variant
-    - the strength of the claim
 
     Guidelines:
     - All values must be filled.

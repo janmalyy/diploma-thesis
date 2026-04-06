@@ -27,10 +27,11 @@ analysis_agent = Agent(
     output_type=ArticleAnalysis,
     system_prompt=get_prompt("system_evaluate_and_extract.txt"),
     model_settings=ModelSettings(
-        # Standard settings
-        temperature=1.0,  # Recommended 1.0 for reasoning models OpenAI-specific reasoning settings via extra_body
+        temperature=0,
+        presence_penalty=0,
+        frequency_penalty=0,
         extra_body={
-            "reasoning_effort": "high",
+            "reasoning_effort": "medium",
             "max_completion_tokens": 2048
         }
     ),
@@ -42,10 +43,11 @@ aggregator_agent = Agent(
     output_type=AggregatedSummary,
     system_prompt=get_prompt("system_aggregate.txt"),
     model_settings=ModelSettings(
-        # Standard settings
-        temperature=1.0,  # Recommended 1.0 for reasoning models OpenAI-specific reasoning settings via extra_body
+        temperature=0,
+        presence_penalty=0,
+        frequency_penalty=0,
         extra_body={
-            "reasoning_effort": "high",
+            "reasoning_effort": "medium",
             "max_completion_tokens": 4096
         }
     ),
@@ -78,8 +80,8 @@ async def process_single_article(
 
             data: ArticleAnalysis = result.output
             print(f"article {article.pmcid or article.pmid}")
-            print(data.overall_article_summary)
-            print(data.uncertainties_or_limitations)
+            print("overall_article_summary: ", data.overall_article_summary)
+            print("uncertainties_or_limitations: ", data.uncertainties_or_limitations)
             pprint(data.mentions)
             if progress_callback:
                 await progress_callback("Analysis")
@@ -96,7 +98,6 @@ async def process_single_article(
                             ),
                             "mention_type": m.mention_type,
                             "claim": m.claim,
-                            "strength": m.strength,
                         }
                     )
 
@@ -110,10 +111,8 @@ async def process_single_article(
                 return article_mention
             return None
 
-        except Exception as e:
-            error_type = e.__class__.__name__
-            error_msg = f"{error_type}: {str(e)}"
-            logger.error(f"Process single article: error processing {article.pmcid or article.pmid}: {error_msg}")
+        except Exception:
+            logger.exception(f"Process single article: error processing {article.pmcid or article.pmid}")
             # Even on failure, we notify the callback to keep the count accurate
             if progress_callback:
                 await progress_callback("Analysis")
@@ -124,18 +123,9 @@ def compute_structured_summary(article_mentions: list[dict]) -> dict:
     """
     Compute a structured summary with a conservative approach.
     Prioritizes lower certainty in case of ambiguity or ties.
+    Exclude no_claim mentions.
     """
-    strength_weights = {"high": 4, "moderate": 2}
-    default_weight = 1
-
-    scores = {
-        Claim.uncertain.value: 0.0,
-        Claim.supports_pathogenicity.value: 0.0,
-        Claim.supports_benignity.value: 0.0,
-    }
-
-    counts = {key: 0 for key in scores.keys()}
-    strength_counts = {"high": 0, "moderate": 0}
+    counts = {key: 0 for key in {Claim.uncertain.value, Claim.supports_pathogenicity.value, Claim.supports_benignity.value}}
     total_evidences = 0
 
     for article in article_mentions:
@@ -148,21 +138,9 @@ def compute_structured_summary(article_mentions: list[dict]) -> dict:
                 total_evidences += 1
                 claim = mention.get("claim").lower()
 
-                strength = mention.get("strength", None)
-                if not strength:
-                    continue
-                strength = strength.lower()
-
-                weight = strength_weights.get(strength, default_weight)
-
-                if strength in strength_counts:
-                    strength_counts[strength] += 1
-
-                if claim in scores:
-                    scores[claim] += weight
+                if claim in counts:
                     counts[claim] += 1
                 else:
-                    scores["uncertain"] += weight
                     counts["uncertain"] += 1
 
     if total_evidences == 0:
@@ -173,8 +151,8 @@ def compute_structured_summary(article_mentions: list[dict]) -> dict:
             "conflicting_evidence": False
         }
 
-    score_p = scores[Claim.supports_pathogenicity.value]
-    score_b = scores[Claim.supports_benignity.value]
+    score_p = counts[Claim.supports_pathogenicity.value]
+    score_b = counts[Claim.supports_benignity.value]
 
     # If there are both "supports pathogenicity" and "supports benignity" claims
     # and the ratio is less than 3:1, it is conflicting
@@ -188,35 +166,23 @@ def compute_structured_summary(article_mentions: list[dict]) -> dict:
     if is_conflicting:
         final_patho = Pathogenicity.UNCERTAIN
     else:
-        max_score = max(scores.values())
+        max_score = max(counts.values())
 
-        if scores["uncertain"] * 1.1 >= max_score:  # we want to be sure that the uncertain is not the most frequent
+        if counts["uncertain"] * 1.1 >= max_score:  # we want to be sure that the uncertain is not the most frequent
             final_patho = Pathogenicity.UNCERTAIN
         elif score_b == max_score:
-            if score_b > scores["uncertain"] * 1.3:
+            if score_b > counts["uncertain"] * 1.3:
                 final_patho = Pathogenicity.BENIGN
             else:
                 final_patho = Pathogenicity.LIKELY_BENIGN
         elif score_p == max_score:
-            if score_p > scores["uncertain"] * 1.3:
+            if score_p > counts["uncertain"] * 1.3:
                 final_patho = Pathogenicity.PATHOGENIC
             else:
                 final_patho = Pathogenicity.LIKELY_PATHOGENIC
 
-    # Confidence computation
-    ratio_high = strength_counts["high"] / total_evidences
-    ratio_combined = (strength_counts["high"] + strength_counts["moderate"]) / total_evidences
-
-    if ratio_high >= 0.7 or ratio_combined >= 0.8:
-        overall_conf = ConfidenceLevel.HIGH
-    elif ratio_combined >= 0.6:
-        overall_conf = ConfidenceLevel.MODERATE
-    else:
-        overall_conf = ConfidenceLevel.LOW
-
     return {
         "overall_pathogenicity": final_patho,
-        "overall_confidence": overall_conf,
         "pathogenicity_counts": counts,
         "conflicting_evidence": is_conflicting
     }
@@ -242,6 +208,7 @@ async def run_pipeline(variant: Variant, articles: list[Article], progress_callb
     results = await asyncio.gather(*tasks)
     # it is called article_mention because it is something in between, it is a Mention with some Article data
     valid_article_mentions = [res for res in results if res is not None]
+    print("valid_article_mentions", valid_article_mentions)
 
     if not valid_article_mentions:
         return {"narrative_summary": "No relevant evidence found.", "article_mentions": []}

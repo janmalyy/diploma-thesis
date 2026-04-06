@@ -29,7 +29,6 @@ Provide reasoning in the reason field and the decision in the is_relevant field.
 Classify the abstract:
 - the mention type
 - the pathogenicity claim of the mention regarding the variant
-    - the strength of the claim
 
 Guidelines:
 - All values must be filled.

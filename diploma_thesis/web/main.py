@@ -23,7 +23,8 @@ from diploma_thesis.core.update_article_fulltext import \
     update_articles_fulltext
 from diploma_thesis.core.update_suppl_data import update_suppl_data
 from diploma_thesis.settings import DATA_DIR, PACKAGE_DIR, logger
-from diploma_thesis.utils.helpers import end, get_omim_url
+from diploma_thesis.utils.helpers import (end, get_omim_url,
+                                          get_unique_safe_filename)
 from diploma_thesis.utils.upload_to_drive import upload_json_to_drive
 
 app = FastAPI()
@@ -115,7 +116,7 @@ async def generate_llm_summary(request: Request, variant_request: VariantRequest
                 data = fetch_variomes_data(variant)
                 articles = parse_variomes_data(data, variant)
             except Exception as e:
-                logger.error(f"Variomes API error: {e}")
+                logger.exception(f"Variomes API error: {e}")
                 yield f"data: {json.dumps({'error': str(e)})}\n\n"
                 return
 
@@ -245,22 +246,19 @@ async def generate_llm_summary(request: Request, variant_request: VariantRequest
                 {"total_time": end(start)}
             )
 
-            today = dateutil.utils.today()
-            now = dateutil.utils.today().now().time()
-            formatted_now = str(now).split(".")[0].replace(":", "_")
-            filename = f"{variant.variant_string}_{today.date()}_{formatted_now}_variant_info.json"
+            filename = get_unique_safe_filename(variant.variant_string)
 
             try:
                 upload_json_to_drive(variant_info, filename)
             except Exception as e:
-                logger.error(f"Error uploading variant_info to Google Drive: {e}")
+                logger.exception(f"Error uploading variant_info to Google Drive: {e}")
 
             # try:
             #     (DATA_DIR / "results").mkdir(parents=True, exist_ok=True)
             #     with open(DATA_DIR / "results" / filename, "w", encoding="utf-8") as f:
             #         json.dump([variant_info], f, indent=4)
-            # except Exception as e:
-            #     logger.error(f"Error uploading variant_info to local storage: {e}")
+            # except Exception:
+            #     logger.exception(f"Error uploading variant_info to local storage.")
 
         except asyncio.CancelledError:
             logger.info("Pipeline execution cancelled due to client disconnect.")
@@ -268,7 +266,7 @@ async def generate_llm_summary(request: Request, variant_request: VariantRequest
             error_type = e.__class__.__name__
             error_msg = f"{error_type}: {str(e)}"
 
-            logger.error(f"Pipeline error: {error_msg}", exc_info=True)
+            logger.exception(f"Pipeline error")
             yield f"data: {json.dumps({'error': 'We are sorry:( Pipeline error: ' + error_msg})}\n\n"
         finally:
             if pipeline_task and not pipeline_task.done():

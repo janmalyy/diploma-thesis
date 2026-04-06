@@ -4,7 +4,35 @@ Phase 1: Relevance Check
 Assess if the mention provides information for the specified variant. Be conservative: if the article contains any potentially relevant information, mark it as relevant.
 
 Phase 2: Mention Classification
-Only if relevant, extract explicit evidence reported. Do NOT speculate or infer conclusions not directly supported. All claims must be supported by quoted text. If the variant is only mentioned without interpretation, state so.
+Only if relevant, classify the mention type, claim and claim strength. Do NOT speculate or infer conclusions not directly supported. The claim must be based on the quoted text.
+Guidelines:
+- If the variant is only mentioned without interpretation, state it as "no claim".
+- Choose "supports pathogenicity" only if it is clearly stated in the mention.
 
-Phase 3: Evidence Summarization
-Summarize the mentions extracted concisely and state uncertainty or limitations of the evidence.
+### Examples of Classification:
+
+Mention: "The variant was predicted as potentially damaging or probably damaging by PolyPhen-2 and as deleterious on the basis of a CADD score >20 (Table 3)."
+- mention_type: "computational"
+- claim: "support pathogenicity"
+
+Mention: "These changes are also thought to be non-pathogenic due to their frequency (frequency of the minor allele in each case, 0.306, 0.121 and 0.064, respectively)."
+- mention_type: "population"
+- claim: "supports benignity"
+
+Mention: "Column names: Gene name|Chrom|Pos|Mutation|HGVS_cDNA|Uniprot|dbSNP_id|Enzyme|Drug enzyme|Drug target|Drug transporter|Disruptive
+          Rows: NOP10|||C>G|NM_018648.3:c.34G>C|Q9NPE3,D12H|rs146261631|||||"
+- mention_type: "other"
+- claim: "no claim"
+
+Mention: "Rows: |BRCA1 |17:41276095 |G>A |missense_variant c.19C>Tr
+          p.Arg7Cys|1 |1 |Benign | |BRCA1 |17:41276064 |G>C |missense_variant\r
+          |c.50C>G |p.Ala17Gly |0 |1 |Benign |"
+- mention_type: "clinical"
+- claim: "supports benignity"
+
+Mention: "In addition, the mutation of arginine at cysteine Arg7Cys also reportedly decreases the activation of the IFN-beta promoter in IAV-infected cells."
+- mention_type: "functional"
+- claim: "supports pathogenicity"
+
+Phase 3: Mentions Summarization
+Summarize the relevant mentions from the article concisely and state your uncertainties and limitations.

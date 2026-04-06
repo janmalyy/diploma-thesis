@@ -1,4 +1,4 @@
-import { MOCK_EVENTS } from "./mock_data.js";
+import {MOCK_EVENTS} from "./mock_data.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     const summaryForm = document.getElementById("summary-form");
@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const summaryContent = document.getElementById("summary-content");
     const structuredContainer = document.getElementById("structured-summary-container");
     const pathogenicityValue = document.getElementById("pathogenicity-value");
-    const confidenceValue = document.getElementById("confidence-value");
     const pathogenicityCounts = document.getElementById("pathogenicity-counts");
     const conflictWarning = document.getElementById("conflicting-evidence-warning");
     const errorAlert = document.getElementById("error-alert");
@@ -60,12 +59,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const rawHtml = marked.parse(text);
 
-            const cleanHtml = DOMPurify.sanitize(rawHtml, {
+            container.innerHTML = DOMPurify.sanitize(rawHtml, {
                 ADD_ATTR: ["target"],
                 FORBID_TAGS: ["style"],
             });
-
-            container.innerHTML = cleanHtml;
 
             const links = container.querySelectorAll("a");
             links.forEach(link => {
@@ -366,7 +363,7 @@ document.addEventListener("DOMContentLoaded", () => {
         loadingOverlay.style.display = "none";
         abortController = null;
 
-        currentArticleEvidences = result.article_evidences || [];
+        currentArticleEvidences = result.article_mentions || [];
         sessionStorage.setItem("variant_summary_result", JSON.stringify(result));
 
         if (typeof result === "string") {
@@ -380,13 +377,9 @@ document.addEventListener("DOMContentLoaded", () => {
             if (result.structured_summary) {
                 const ss = result.structured_summary;
                 pathogenicityValue.textContent = ss.overall_pathogenicity || "unknown";
-                confidenceValue.textContent = ss.overall_confidence || "unknown";
 
                 const pathColor = getPathogenicityColor(ss.overall_pathogenicity);
                 pathogenicityValue.className = `badge rounded-pill bg-${pathColor} evidence-badge text-capitalize`;
-
-                const confColor = getConfidenceColor(ss.overall_confidence);
-                confidenceValue.className = `badge rounded-pill bg-${confColor} evidence-badge text-capitalize`;
 
                 pathogenicityCounts.innerHTML = "";
                 if (ss.pathogenicity_counts) {
@@ -523,15 +516,6 @@ document.addEventListener("DOMContentLoaded", () => {
         return "info";
     }
 
-    function getConfidenceColor(conf) {
-        if (!conf) return "secondary";
-        const c = conf.toLowerCase();
-        if (c === "high") return "success";
-        if (c === "moderate") return "primary";
-        if (c === "low") return "secondary";
-        return "info";
-    }
-
     summaryContent.addEventListener("click", (e) => {
         const refLink = e.target.closest(".ref-link");
         if (refLink) {
@@ -555,27 +539,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const div = document.createElement("div");
         div.textContent = text;
         return div.innerHTML;
-    }
-
-    function showTypeEvidence(type) {
-        const typeArticles = currentArticleEvidences.filter(a =>
-            a.mentions && a.mentions.some(m => {
-                return m.mention_type.toLowerCase() === type.toLowerCase();
-            })
-        );
-
-        const uniqueArticles = [];
-        const seenIds = new Set();
-        typeArticles.forEach(a => {
-            if (!seenIds.has(a.article_id)) {
-                uniqueArticles.push(a);
-                seenIds.add(a.article_id);
-            }
-        });
-
-        if (uniqueArticles.length > 0) {
-            renderEvidenceModal(uniqueArticles, 0);
-        }
     }
 
     function renderEvidenceModal(articles, startIndex = 0) {
@@ -700,25 +663,12 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        function scoreArticle(article) {
-            if (!article || !article.mentions) return 0;
-            const weights = { high: 4, moderate: 2 };
-            let score = 0;
-            for (const m of article.mentions) {
-                const claim = (m.claim || "").toLowerCase();
-                if (!claim) continue;
-                const strengthStr = m.strength ? m.strength.split(':').pop().replace(/['>]/g, '').trim().toLowerCase() : "low";
-                const w = weights[strengthStr] ?? 1;
-                score += w;
-            }
-            return score;
-        }
-
         sortedArticlesForModal = [...articles].sort((a, b) => {
-            const sa = scoreArticle(a);
-            const sb = scoreArticle(b);
-            return sb - sa;
-        });
+    const lengthA = a.mentions?.length || 0;
+    const lengthB = b.mentions?.length || 0;
+
+    return lengthB - lengthA;
+});
 
         groupedEvidenceBody.innerHTML = "";
         sortedArticlesForModal.forEach((article, index) => {

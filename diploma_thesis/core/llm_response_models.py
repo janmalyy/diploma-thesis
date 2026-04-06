@@ -11,12 +11,6 @@ class MentionType(str, Enum):
     other = "other"
 
 
-class MentionStrength(str, Enum):
-    low = "low"
-    moderate = "moderate"
-    high = "high"
-
-
 class Claim(str, Enum):
     no_claim = "no claim"
     uncertain = "uncertain"
@@ -47,8 +41,6 @@ class Mention(BaseModel):
             "no claim: Mentioned only without interpretation;"
         ),
         default=None)
-
-    strength: MentionStrength = Field(default=None)
 
 
 class ArticleAnalysis(BaseModel):

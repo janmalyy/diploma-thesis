@@ -4,9 +4,9 @@ import re
 import string
 import time
 from pathlib import Path
-from typing import Any, Generator
 from xml.dom.minidom import parseString
 
+import dateutil
 from lxml import etree
 
 from diploma_thesis.settings import DATA_DIR, PACKAGE_DIR, logger
@@ -328,12 +328,16 @@ def transform_paragraph_for_display(paragraph: str | dict, terms: list[str]) -> 
     # 2. term -> **term**
     escaped_terms = sorted([re.escape(t) for t in terms], key=len, reverse=True)
     terms_pattern = "|".join(escaped_terms)
-    final_pattern = re.compile(rf"[^\d\*\+a-zA-Z-]({terms_pattern})[^\d\*\+a-zA-Z-]", re.IGNORECASE)
+    pattern_string = rf"(?<![\d\*\+a-zA-Z-])({terms_pattern})(?![\d\*\+a-zA-Z-])"
+    final_pattern = re.compile(pattern_string, re.IGNORECASE)
 
     return final_pattern.sub(r"**\1**", text)
 
+today = dateutil.utils.today()
+now = dateutil.utils.today().now().time()
+formatted_now = str(now).split(".")[0].replace(":", "_")
 
-if __name__ == '__main__':
-    text = "blablabal (c.34G> C) blabla"
-    terms = ["c.34G> C"]
-    print(transform_paragraph_for_display(text, terms))
+
+def get_unique_safe_filename(original_filename: str) -> str:
+    filename = f"{original_filename}_{today.date()}_{formatted_now}.json"
+    return re.sub(r'[<>:"/\\|?*]', "_", filename)

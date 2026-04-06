@@ -53,7 +53,7 @@ def upload_json_to_drive(data: list | dict, file_name: str) -> None:
         drive_service.permissions().create(fileId=file.get("id"), body=permission).execute()
 
     except Exception as e:
-        logger.error(f"Error uploading file ({file_name} to Drive: {e}")
+        logger.exception(f"Error uploading file ({file_name} to Drive")
 
 
 if __name__ == '__main__':
