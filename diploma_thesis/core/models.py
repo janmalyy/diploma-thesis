@@ -114,6 +114,14 @@ class Article:
 
     def get_structured_context(self) -> dict:
         """Returns a JSON representation of the article. For LLMs."""
+        if self.data_sources == {"medline"}:
+            # TODO this is very stupid workaround, but no time to fix it
+            return {
+                "_TITLE_": self.title.annotated,
+                "_ABSTRACT_": self.abstract.annotated,
+                "_MENTIONS_": {0: self.abstract.annotated}
+            }
+
         paragraphs_mentions = {i: paragraph for i, paragraph in enumerate(self.paragraphs)}
         n_paragraphs = len(paragraphs_mentions)
         suppl_data_mentions = []
