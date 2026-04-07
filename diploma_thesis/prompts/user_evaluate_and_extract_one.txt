@@ -1,7 +1,7 @@
 Context:
 Genetic variant:
 Gene: _GENE_, Variant: _VARIANT_
-Other names for the gene and the variant:
+Synonyms:
 _VARIANTINFO_
 
 Article data:
@@ -23,8 +23,6 @@ Note:
 
 ---
 Task:
-0. Save the id of the evaluated mention in the mention_id field.
-
 1. Evaluate relevance
 Evaluate whether the mention contains information relevant to the interpretation of the specified variant.
 

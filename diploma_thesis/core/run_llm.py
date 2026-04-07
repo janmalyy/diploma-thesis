@@ -89,12 +89,16 @@ async def process_single_article(
             relevant_mentions: list[Mention] = [mention for mention in data.mentions if mention.is_relevant]
             if relevant_mentions:
                 formatted_mentions = []
-                paragraphs_mentions = article.get_structured_context().get("_MENTIONS_")
+                paragraphs_mentions = article.get_structured_context()["_MENTIONS_"]
                 for m in relevant_mentions:
+                    if paragraphs_mentions.get(m.mention_id, None):
+                        ment_id = paragraphs_mentions.get(m.mention_id)
+                    else:
+                        ment_id = paragraphs_mentions[0]
                     formatted_mentions.append(
                         {
                             "quoted_text": transform_paragraph_for_display(
-                                paragraphs_mentions[m.mention_id], variant.terms
+                                ment_id, variant.terms
                             ),
                             "mention_type": m.mention_type,
                             "claim": m.claim,

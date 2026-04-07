@@ -1,7 +1,7 @@
 Context:
 Genetic variant:
 Gene: _GENE_, Variant: _VARIANT_
-Other names for the gene and the variant:
+Synonyms:
 _VARIANTINFO_
 
 Article data:

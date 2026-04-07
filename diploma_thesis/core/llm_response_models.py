@@ -19,7 +19,7 @@ class Claim(str, Enum):
 
 
 class Mention(BaseModel):
-    mention_id: int = Field(description="The ID of the mention")
+    mention_id: int = Field(description="The ID of the mention", default=0)
     reason: str = Field(description="1 sentence explaining relevance decision")
     is_relevant: bool
 
@@ -50,7 +50,7 @@ class ArticleAnalysis(BaseModel):
 
 
 class AggregatedSummary(BaseModel):
-    narrative_summary: str = Field(description="A natural language synthesis of the findings long from one to three paragraphs.")
+    narrative_summary: str = Field(description="A natural language synthesis of the findings.")
 
 
 # --------------------------------------------------

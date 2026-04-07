@@ -1,15 +1,28 @@
 Genetic variant:
 Gene: _GENE_, Variant: _VARIANT_
-Other names for the gene and the variant:
+Synonyms:
 _VARIANTINFO_
 
-Extracted evidence from individual articles:
+Input Data (Extracted Evidence):
 _STRUCTURED_EVIDENCE_LIST_
 
 Task:
-Write a concise, human-readable summary of the evidence regarding this variant. - Narrative summary
- - Mention key findings.
- - Cite articles in the form [PMC ID or PubMed ID].
-        - E.g. "A saturation‑genome‑editing study classified V11A as functional with high confidence [PMC6181777; 36775657]".
-        - E.g. "It appears in an OncoKB drug‑prescription supplement without a specific clinical interpretation [PMC9763624]."
- - Note conflicting evidence if present.
+Synthesize the provided evidence into a professional, human-readable biomedical free-text concise summary. Follow this logical flow:
+    - Variant Background: Briefly describe the variant and its known disease associations based on the input.
+    - Evidence Synthesis: Group and summarize findings by their mention_type (Clinical, Functional, Population, Computational).
+    - Conflict & Uncertainty: Explicitly highlight any conflicting results (e.g., one study claims pathogenicity while another lists it as benign).
+    - Pathogenicity Conclusion: Provide a final paragraph summarizing the overall standing of the variant regarding its pathogenicity.
+
+Strict Constraints:
+    - Free text: Do not use headings or bullet points.
+    - No New Info: Use only the provided extracted evidences. Do not introduce outside knowledge.
+    - Citation Style: Every factual claim must be followed by its source ID in square brackets, e.g., [PMC1234567] or [12345678].
+        - Avoid overcrowding citations by only including the most relevant ones.
+    - Missing Evidence: If a specific evidence type (e.g., population) is missing in the data, omit that section entirely rather than stating it's missing.
+
+Desired Logical Flow (each point = one free-text paragraph):
+    - Introduction: Variant identity and clinical context.
+    - Clinical Evidence: Summary of case reports, segregation, or clinical classifications.
+    - Functional Evidence: Summary of in vitro/in vivo experimental results.
+    - Population & Computational: Brief summary of allele frequencies and in silico scores.
+    - Summary of Pathogenicity: Final synthesis of the variant's status.

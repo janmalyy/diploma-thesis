@@ -4,35 +4,53 @@ Phase 1: Relevance Check
 Assess if the mention provides information for the specified variant. Be conservative: if the article contains any potentially relevant information, mark it as relevant.
 
 Phase 2: Mention Classification
-Only if relevant, classify the mention type, claim and claim strength. Do NOT speculate or infer conclusions not directly supported. The claim must be based on the quoted text.
+Only if relevant, classify the mention type, claim and claim strength. Do NOT speculate or infer conclusions not directly supported. The claim must be based on text from the mention.
 Guidelines:
 - If the variant is only mentioned without interpretation, state it as "no claim".
 - Choose "supports pathogenicity" only if it is clearly stated in the mention.
 
-### Examples of Classification:
+Phase 3: Mentions Summarization
+Summarize the relevant mentions from the article concisely and state your uncertainties and limitations.
+
+
+### Examples of Relevant Mentions' Classification:
 
 Mention: "The variant was predicted as potentially damaging or probably damaging by PolyPhen-2 and as deleterious on the basis of a CADD score >20 (Table 3)."
+- reason: "The mention refers to in silico prediction tools (PolyPhen-2, CADD) suggesting a negative impact."
+- is_relevant: True
 - mention_type: "computational"
-- claim: "support pathogenicity"
+- claim: "supports pathogenicity"
 
 Mention: "These changes are also thought to be non-pathogenic due to their frequency (frequency of the minor allele in each case, 0.306, 0.121 and 0.064, respectively)."
+- reason: "The evidence is based on high minor allele frequency (MAF), which is a key population genetics indicator of benignity."
+- is_relevant: True
 - mention_type: "population"
 - claim: "supports benignity"
 
 Mention: "Column names: Gene name|Chrom|Pos|Mutation|HGVS_cDNA|Uniprot|dbSNP_id|Enzyme|Drug enzyme|Drug target|Drug transporter|Disruptive
           Rows: NOP10|||C>G|NM_018648.3:c.34G>C|Q9NPE3,D12H|rs146261631|||||"
+- reason: "The variant is listed in a table of tracked mutations without any interpretative claim or clinical classification."
+- is_relevant: True
 - mention_type: "other"
 - claim: "no claim"
 
 Mention: "Rows: |BRCA1 |17:41276095 |G>A |missense_variant c.19C>Tr
           p.Arg7Cys|1 |1 |Benign | |BRCA1 |17:41276064 |G>C |missense_variant\r
           |c.50C>G |p.Ala17Gly |0 |1 |Benign |"
+- reason: "The structured data explicitly labels the variant as 'Benign', which represents a clinical or curated classification."
+- is_relevant: True
 - mention_type: "clinical"
 - claim: "supports benignity"
 
 Mention: "In addition, the mutation of arginine at cysteine Arg7Cys also reportedly decreases the activation of the IFN-beta promoter in IAV-infected cells."
+- reason: "The mention describes a cell-based functional assay showing a significant decrease in biological activity (IFN-beta activation)."
+- is_relevant: True
 - mention_type: "functional"
 - claim: "supports pathogenicity"
 
-Phase 3: Mentions Summarization
-Summarize the relevant mentions from the article concisely and state your uncertainties and limitations.
+Mention: "Column names: Gene panel testing of 5,589 BRCA1/2-negative index patients with breast cancer in a routine diagnostic setting: Results of the German Consortium for Hereditary Breast and Ovarian Cancer On-line Only Supplemental Material: Table S1: Inclusion
+          Rows: Chr16(GRCh37):g.68771326C>G 1/16 c.8C>G p.(Pro3Arg) CM110009 Class3 missense 7 VUS CDH1 NM_004360.3
+- reason: "The variant is classified as VUS (variant of uncertain significance) in the table."
+- is_relevant: True
+- mention_type: "clinical"
+- claim: "uncertain"
