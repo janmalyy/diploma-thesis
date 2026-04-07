@@ -1,3 +1,4 @@
+import datetime
 import html
 import json
 import re
@@ -6,7 +7,6 @@ import time
 from pathlib import Path
 from xml.dom.minidom import parseString
 
-import dateutil
 from lxml import etree
 
 from diploma_thesis.settings import DATA_DIR, PACKAGE_DIR, logger
@@ -333,11 +333,10 @@ def transform_paragraph_for_display(paragraph: str | dict, terms: list[str]) -> 
 
     return final_pattern.sub(r"**\1**", text)
 
-today = dateutil.utils.today()
-now = dateutil.utils.today().now().time()
-formatted_now = str(now).split(".")[0].replace(":", "_")
-
 
 def get_unique_safe_filename(original_filename: str) -> str:
-    filename = f"{original_filename}_{today.date()}_{formatted_now}.json"
+    timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H_%M_%S")
+
+    filename = f"{original_filename}_{timestamp}.json"
+
     return re.sub(r'[<>:"/\\|?*]', "_", filename)
