@@ -122,19 +122,21 @@ class Article:
                 "_MENTIONS_": {0: self.abstract.annotated}
             }
 
-        paragraphs_mentions = {i: paragraph for i, paragraph in enumerate(self.paragraphs)}
-        n_paragraphs = len(paragraphs_mentions)
-        suppl_data_mentions = []
+        paragraphs_mentions = {i: p for i, p in enumerate(self.paragraphs)}
+        offset = len(paragraphs_mentions)
+
         for sd in self.suppl_data_list:
             for i, p in enumerate(sd.paragraphs):
-                suppl_data_mentions.append({
-                    i+n_paragraphs: {
-                        key: value
-                        for key, value in p.model_dump().items()
-                        if value not in [None, "", []]
-                    }
-                })
-        paragraphs_mentions.update(*suppl_data_mentions)
+                # Clean empty/null values from the Pydantic model
+                cleaned_paragraph = {
+                    k: v for k, v in p.model_dump().items()
+                    if v not in (None, "", [])
+                }
+
+                if cleaned_paragraph:
+                    paragraphs_mentions[offset] = cleaned_paragraph
+                    offset += 1
+
         return {
             "_TITLE_": self.title.annotated,
             "_ABSTRACT_": self.abstract.annotated,
@@ -153,20 +155,20 @@ class Article:
 
 
 def prune_articles(articles: list[Article], max_articles: int = 50) -> list[Article]:
-    """
-    Prune the list of articles to the maximum number of articles based on relevance_score
-    with the exception that all medline articles are kept.
-    """
-    if len(articles) < max_articles:
+    """take all medline and then the other articles in order of relevance score"""
+    if len(articles) <= max_articles:
         return articles
+
     medline_articles = [a for a in articles if "medline" in a.data_sources]
-    if len(medline_articles) > max_articles:
+    other_articles = [a for a in articles if "medline" not in a.data_sources]
+
+    if len(medline_articles) >= max_articles:
         return sorted(medline_articles, key=lambda a: a.relevance_score, reverse=True)[:max_articles]
 
-    sorted_articles = sorted(articles, key=lambda a: a.relevance_score, reverse=True)
-    relevant_articles = sorted_articles[:max_articles-len(medline_articles)]
-    relevant_articles.extend(medline_articles)
-    return relevant_articles
+    needed_others = max_articles - len(medline_articles)
+    sorted_others = sorted(other_articles, key=lambda a: a.relevance_score, reverse=True)
+
+    return medline_articles + sorted_others[:needed_others]
 
 
 def remove_articles_with_no_match(articles: list[Article]) -> list[Article]:
