@@ -1,9 +1,13 @@
+import csv
+import time
+from typing import Any, Generator
+
 import requests
 from lxml import etree
 from rapidfuzz import fuzz
 
 from diploma_thesis.settings import DATA_DIR
-from diploma_thesis.utils.helpers import extend_variant_name
+from diploma_thesis.utils.helpers import write_xml
 
 ENTREZ_BASE_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
 CLINVAR_DB = "clinvar"
@@ -68,7 +72,7 @@ def clinvar_efetch(variation_ids: list[int]) -> etree._Element:
     )
     response.raise_for_status()
     root = etree.fromstring(response.content)
-    # write_xml(root, f"clinvar_efetch_{round(time.time(), 2)}.xml")
+    write_xml(root, DATA_DIR / "clinvar" / f"clinvar_efetch_{round(time.time(), 2)}.xml")
     return root
 
 
@@ -126,17 +130,87 @@ def get_clinvar_urls(query: str, max_results: int = 10) -> list[str]:
         return []
 
 
-if __name__ == "__main__":
-    # with open(DATA_DIR / "brca_variants.txt", "r", encoding="utf-8") as f:
-    #     lines = [line.strip() for line in f.readlines()]
-    # for variant in lines[:10]:
-    # query_str = extend_variant_name(variant)
-    query_str = "NM_004443.4(EPHB3):c.1202G>C"
-    query_str = "CA7464815"
-    ids = clinvar_esearch_variant_ids(query_str)
-    print(f"{query_str}: {ids}")
+def extract_pubmed_ids(root: etree._Element) -> list[str]:
+    """
+    Extracts all PubMed IDs from a ClinVar XML response using manual tree traversal.
 
-        # if ids:
-        #     summary = clinvar_efetch(ids)
-        #     clinical = parse_clinical_significance(query_str, summary)
-        #     print(f"Clinical Significance: {clinical}")
+    Returns:
+        A list of unique PubMed IDs found in the document.
+    """
+    # file_path = DATA_DIR / "clinvar" / xml_path
+
+    # with open(file_path, "rb") as file:
+    #     xml_content = file.read()
+
+    # root = etree.fromstring(xml_content)
+    uniq_ids = set()
+
+    assertion_list = root.find(".//ClinicalAssertionList")
+    if assertion_list is not None:
+        for assertion in assertion_list:
+            classification = assertion.find("Classification")
+            if classification is not None:
+                for citation in classification.findall("Citation"):
+                    id_element = citation.find("ID")
+                    if id_element.text:
+                        uniq_ids.add(str(id_element.text).strip())
+
+    return sorted(list(uniq_ids))
+
+
+def make_batches(iterable: list, size: int) -> Generator[list, Any, None]:
+    """
+    Split a list into smaller batches of fixed size.
+    Example:
+        >>> list(make_batches([1, 2, 3, 4, 5, 6, 7], size=3))
+        [[1, 2, 3], [4, 5, 6], [7]]
+    """
+    for i in range(0, len(iterable), size):
+        yield iterable[i:i + size]
+
+
+def convert_pubmed_ids(ids_to_convert: list[str]) -> list:
+    """
+    Convert article identifiers using the PMC ID Converter API. Operates per batches of 200.
+
+    Args:
+        ids_to_convert: List of PubMedIDs (as string) to convert.
+    Returns:
+        list: A list of converted IDs. If PMC ID exists, it is returned, if not, PMID is returned.
+    """
+    service_root_url = "https://pmc.ncbi.nlm.nih.gov/tools/idconv/api/v1/articles/"
+
+    params = {
+        "idtype": "pmid",
+        "versions": "no",
+        "format": "csv"
+    }
+    decoded = []
+    for batch in make_batches(ids_to_convert, 200):
+        params["ids"] = ",".join(str(x) for x in batch)
+
+        response = requests.get(service_root_url, params=params, timeout=30)
+        response.raise_for_status()
+
+        decoded.extend(response.text.splitlines())
+    reader = csv.DictReader(decoded)
+
+    final_ids = []
+    for i, row in enumerate(reader):
+        if row.get("PMCID"):
+            final_ids.append(row["PMCID"])
+        else:
+            final_ids.append(row["PMID"])
+
+    return final_ids
+
+
+if __name__ == "__main__":
+    query_str = "BRCA1 R7C"
+    # ids = clinvar_esearch_variant_ids(query_str)
+    # clinvar_efetch(ids)
+    extracted = extract_pubmed_ids("clinvar_efetch_1775656875.84.xml")
+    print(extracted)
+    converted = convert_pubmed_ids(extracted)
+    print(converted)
+    print(len(converted) is len(extracted))
