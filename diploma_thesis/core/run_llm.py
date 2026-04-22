@@ -61,12 +61,13 @@ async def process_single_article(
         prompt_template: str,
         semaphore: asyncio.Semaphore,
         progress_callback=None
-) -> dict | None:
+) -> tuple[dict | None, dict]:
     """
     Evaluate the relevance of the article and extract evidences if it is relevant. Add metadata.
-    Returns: JSON object (so-called 'article_mention') with evidence data and article metadata or None if not relevant
+    Returns: Tuple of (article_mention dict or None, usage_stats dict)
     """
     async with semaphore:
+        usage_stats = {"input": 0, "output": 0}
         try:
             replacements = {
                 "_GENE_": variant.gene,
@@ -75,14 +76,13 @@ async def process_single_article(
                 **article.get_structured_context()
             }
             ready_prompt = build_prompt(replacements, prompt_template)
-            # print("ready_prompt", ready_prompt)
             result = await analysis_agent.run(ready_prompt)
 
+            usage = result.usage()
+            usage_stats["input"] = usage.input_tokens or 0
+            usage_stats["output"] = usage.output_tokens or 0
+
             data: ArticleAnalysis = result.output
-            print(f"article {article.pmcid or article.pmid}")
-            print("overall_article_summary: ", data.overall_article_summary)
-            print("uncertainties_or_limitations: ", data.uncertainties_or_limitations)
-            pprint(data.mentions)
             if progress_callback:
                 await progress_callback("Analysis")
 
@@ -91,10 +91,10 @@ async def process_single_article(
                 formatted_mentions = []
                 paragraphs_mentions = article.get_structured_context()["_MENTIONS_"]
                 for m in relevant_mentions:
-                    if paragraphs_mentions.get(m.mention_id, None):
-                        ment_id = paragraphs_mentions.get(m.mention_id)
-                    else:
-                        ment_id = paragraphs_mentions[0]
+                    # fallback logic
+                    ment_id = paragraphs_mentions.get(m.mention_id, list(paragraphs_mentions.values())[
+                        0] if paragraphs_mentions else "")
+
                     formatted_mentions.append(
                         {
                             "quoted_text": transform_paragraph_for_display(
@@ -112,15 +112,16 @@ async def process_single_article(
                 }
                 article_mention.update(**article.get_structured_metadata())
 
-                return article_mention
-            return None
+                return article_mention, usage_stats
+
+            return None, usage_stats
 
         except Exception:
             logger.exception(f"Process single article: error processing {article.pmcid or article.pmid}")
             # Even on failure, we notify the callback to keep the count accurate
             if progress_callback:
                 await progress_callback("Analysis")
-            return None
+            return None, usage_stats
 
 
 def compute_structured_summary(article_mentions: list[dict]) -> dict:
@@ -195,13 +196,12 @@ def compute_structured_summary(article_mentions: list[dict]) -> dict:
 async def run_pipeline(variant: Variant, articles: list[Article], progress_callback=None) -> dict:
     semaphore = asyncio.Semaphore(4)
 
-    # choose appropriate prompt template
     prompt_basic = get_prompt("user_evaluate_and_extract.txt")
     prompt_one = get_prompt("user_evaluate_and_extract_one.txt")
     prompt_medline = get_prompt("user_evaluate_and_extract_medline.txt")
 
     tasks = []
-    for i, article in enumerate(articles):
+    for article in articles:
         if article.data_sources == {"medline"}:
             tasks.append(process_single_article(article, variant, prompt_medline, semaphore, progress_callback))
         elif len(article.paragraphs) + len(article.suppl_data_list) == 1:
@@ -210,12 +210,17 @@ async def run_pipeline(variant: Variant, articles: list[Article], progress_callb
             tasks.append(process_single_article(article, variant, prompt_basic, semaphore, progress_callback))
 
     results = await asyncio.gather(*tasks)
-    # it is called article_mention because it is something in between, it is a Mention with some Article data
-    valid_article_mentions = [res for res in results if res is not None]
-    print("valid_article_mentions", valid_article_mentions)
+
+    valid_article_mentions = [res[0] for res in results if res[0] is not None]
+    analysis_token_counts = [res[1] for res in results]
 
     if not valid_article_mentions:
-        return {"narrative_summary": "No relevant evidence found.", "article_mentions": []}
+        return {
+            "narrative_summary": "No relevant evidence found.",
+            "article_mentions": [],
+            "analysis_token_counts": analysis_token_counts,
+            "structured_summary": {}
+        }
 
     if progress_callback:
         await progress_callback("Aggregating")
@@ -228,20 +233,32 @@ async def run_pipeline(variant: Variant, articles: list[Article], progress_callb
     }
 
     agg_prompt = build_prompt(agg_replacements, get_prompt("user_aggregate.txt"))
+
     agg_result = await aggregator_agent.run(agg_prompt)
+    usage = agg_result.usage()
+    total_agg_input = (usage.input_tokens or 0)
+    total_agg_output = (usage.output_tokens or 0)
+
     narrative = agg_result.output.narrative_summary
     while len(narrative) < 50:
         logger.warning(f"Narrative summary is too short: {narrative}. Redoing aggregation.")
         agg_result = await aggregator_agent.run(agg_prompt)
+        usage = agg_result.usage()
+        total_agg_input += (usage.input_tokens or 0)
+        total_agg_output += (usage.output_tokens or 0)
         narrative = agg_result.output.narrative_summary
 
-    logger.info(f"narrative: {narrative}")
+    aggregation_token_count = {
+        "input": total_agg_input,
+        "output": total_agg_output
+    }
 
     structured_summary = compute_structured_summary(valid_article_mentions)
-    [print(key, value) for key, value in structured_summary.items()]
 
     final_output = agg_result.output.model_dump()
     final_output["structured_summary"] = structured_summary
     final_output["article_mentions"] = valid_article_mentions
+    final_output["analysis_token_counts"] = analysis_token_counts
+    final_output["aggregation_token_count"] = aggregation_token_count
 
     return final_output
