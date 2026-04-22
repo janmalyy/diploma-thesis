@@ -7,7 +7,7 @@ Input Data (Extracted Evidence):
 _STRUCTURED_EVIDENCE_LIST_
 
 Task:
-Synthesize the provided evidence into a professional, human-readable biomedical free-text concise summary. Follow this logical flow:
+Synthesize the provided evidence into a professional, human-readable, biomedical free-text, concise summary. Follow this logical flow:
     - Variant Background: Briefly describe the variant and its known disease associations based on the input.
     - Evidence Synthesis: Group and summarize findings by their mention_type (Clinical, Functional, Population, Computational).
     - Conflict & Uncertainty: Explicitly highlight any conflicting results (e.g., one study claims pathogenicity while another lists it as benign).

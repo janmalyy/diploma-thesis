@@ -9,6 +9,7 @@ fastapi[standard]
 uvicorn
 pydantic-ai
 rapidfuzz
+numpy
 
 google-api-python-client~=2.161.0
 google-auth-httplib2
