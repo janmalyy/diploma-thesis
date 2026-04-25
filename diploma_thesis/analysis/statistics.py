@@ -6,8 +6,8 @@ import numpy as np
 from diploma_thesis.settings import DATA_DIR
 
 
-def compute_and_print_stats(value: str, value_data: list, unit: str):
-    print(f"------ {value} ------ in {unit} ------")
+def compute_and_print_stats(metric: str, value_data: list, unit: str):
+    print(f"------ {metric} ------ in {unit} ------")
     value_data = [value for value in value_data if value is not None]
     if value_data:
         print(f"min: {min(value_data)}")

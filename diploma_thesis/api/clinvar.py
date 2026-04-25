@@ -7,7 +7,7 @@ from lxml import etree
 from rapidfuzz import fuzz
 
 from diploma_thesis.settings import DATA_DIR
-from diploma_thesis.utils.helpers import write_xml
+from diploma_thesis.utils.helpers import get_unique_safe_filename, write_xml
 
 ENTREZ_BASE_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
 CLINVAR_DB = "clinvar"
@@ -45,11 +45,12 @@ def clinvar_esearch_variant_ids(query: str, max_results: int = 100) -> list[int]
     return [int(i) for i in id_list]
 
 
-def clinvar_efetch(variation_ids: list[int]) -> etree._Element:
+def clinvar_efetch(variant: str, variation_ids: list[int]) -> etree._Element:
     """
     Retrieve ClinVar efetch for given Variation IDs.
 
     Args:
+        variant: the query variant that returned the variation_ids; used only for logging purposes
         variation_ids: List of ClinVar Variation IDs.
 
     Returns:
@@ -72,7 +73,7 @@ def clinvar_efetch(variation_ids: list[int]) -> etree._Element:
     )
     response.raise_for_status()
     root = etree.fromstring(response.content)
-    write_xml(root, DATA_DIR / "clinvar" / f"clinvar_efetch_{round(time.time(), 2)}.xml")
+    write_xml(root, DATA_DIR / "clinvar" / f"{get_unique_safe_filename(variant)}.xml")
     return root
 
 
@@ -152,7 +153,7 @@ def extract_pubmed_ids(root: etree._Element) -> list[str]:
             if classification is not None:
                 for citation in classification.findall("Citation"):
                     id_element = citation.find("ID")
-                    if id_element.text:
+                    if id_element is not None and id_element.text:      # there are also citations without IDs but with URL instead
                         uniq_ids.add(str(id_element.text).strip())
 
     return sorted(list(uniq_ids))
@@ -207,9 +208,9 @@ def convert_pubmed_ids(ids_to_convert: list[str]) -> list:
 
 if __name__ == "__main__":
     query_str = "BRCA1 R7C"
-    # ids = clinvar_esearch_variant_ids(query_str)
-    # clinvar_efetch(ids)
-    extracted = extract_pubmed_ids("clinvar_efetch_1775656875.84.xml")
+    ids = clinvar_esearch_variant_ids(query_str)
+    root = clinvar_efetch(query_str, ids)
+    extracted = extract_pubmed_ids(root)
     print(extracted)
     converted = convert_pubmed_ids(extracted)
     print(converted)
