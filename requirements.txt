@@ -15,3 +15,5 @@ google-api-python-client~=2.161.0
 google-auth-httplib2
 google-auth-oauthlib
 protobuf~=5.29.3
+
+statsmodels

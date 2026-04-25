@@ -7,6 +7,7 @@ from pathlib import Path
 from pprint import pprint
 
 import numpy as np
+from statsmodels.stats import inter_rater as ir
 
 from diploma_thesis.api.clinvar import (clinvar_efetch,
                                         clinvar_esearch_variant_ids,
@@ -38,11 +39,19 @@ async def get_data_for_analysis(input_filename: str, results_dir: Path | str):
     for i, variant in enumerate(variants):
         variant_info = {}
         start = time.time()
-        if variant.split(" ")[2] == "p":
-            variant = Variant(variant.split(" ")[0], variant.split(" ")[1], "protein")
-        else:
-            variant = Variant(variant.split(" ")[0], variant.split(" ")[1], "transcript")
+
+        # 100 variants
+        variant = Variant(variant.split(" ")[0], variant.split(" ")[1], "protein")
+
+        # 15 variants
+        # if variant.split(" ")[2] == "p":
+        #     variant = Variant(variant.split(" ")[0], variant.split(" ")[1], "protein")
+        # else:
+        #     variant = Variant(variant.split(" ")[0], variant.split(" ")[1], "transcript")
+
+        # single run
         # variant = Variant("BRCA1", "A1623G", "protein")
+
         articles = parse_variomes_data(fetch_variomes_data(variant), variant)
 
         if not articles:
@@ -151,6 +160,7 @@ def compute_and_print_stats(value: str, value_data: list, unit: str):
         print(f"max: {max(value_data)}")
         print(f"mean: {round(np.mean(value_data), 2)}")
         print(f"median: {round(np.median(value_data), 2)}")
+        print(f"third quartile: {round(np.quantile(value_data, 0.75), 2)}")
         print(f"std: {round(np.std(value_data), 2)}")
         print(f"values_in_total: {len(value_data)}")
         print(f"values:\nhead: {value_data[:10]}\ntail: {value_data[-10:]}")
@@ -158,21 +168,23 @@ def compute_and_print_stats(value: str, value_data: list, unit: str):
     print()
 
 
-def analyze_data(filename: str):
-    """print basic statistics about the data. Works with multiple variants in one JSON file."""
-    with open(DATA_DIR / filename, "r", encoding="utf-8") as f:
-        data = json.load(f)
+def analyze_data():
+    """print basic statistics about the data. Works with multiple JSON files, each containing a single variant."""
+    data = []
+    for filename in os.listdir(DATA_DIR / "100variants"):
+        with open(DATA_DIR / "100variants" / filename, "r", encoding="utf-8") as f:
+            # Every file contains one dict with one variant
+            data.append(json.load(f))
+
     # data → variant → articles → paragraphs
     metrics = [
-        ("articles_after_removal_per_variant", [v.get("articles_after_removal") for v in data], "just_number"),
-        ("only_medline_articles_per_variant", [v.get("only_medline_count") for v in data], "just_number"),
-        ("only_pmc_articles_per_variant", [v.get("only_pmc_count") for v in data], "just_number"),
-        ("only_suppl_articles_per_variant", [v.get("only_suppl_count") for v in data], "just_number"),
-        ("both_pmc_and_suppl_articles_per_variant", [v.get("both_pmc_and_suppl_count") for v in data], "just_number"),
-        ("all_three_articles_per_variant", [v.get("all_three_count") for v in data], "just_number"),
-
-        ("time_to_process_articles", [v.get("time_to_process_articles") for v in data], "seconds"),
+        ("time_to_process_articles", [v.get("time_to_process_articles") for v in data if v.get("aggregation_token_count")], "seconds"),
+        ("total_time", [v.get("total_time") for v in data if v.get("aggregation_token_count")], "seconds"),
         ("context_length", [v.get("context_length") for v in data], "characters"),
+        ("analysis_input_token", [run["input"] for v in data for run in v.get("analysis_token_counts")], "tokens"),
+        ("analysis_output_token", [run["output"] for v in data for run in v.get("analysis_token_counts")], "tokens"),
+        ("aggregation_input_token", [v.get("aggregation_token_count")["input"] for v in data if v.get("aggregation_token_count")], "tokens"),
+        ("aggregation_output_token", [v.get("aggregation_token_count")["output"] for v in data if v.get("aggregation_token_count")], "tokens"),
 
         ("title_length", [a.get("title_length") for v in data for a in v.get("articles", [])], "characters"),
         ("abstract_length", [a.get("abstract_length") for v in data for a in v.get("articles", [])], "characters"),
@@ -198,22 +210,29 @@ def analyze_data(filename: str):
          [a.get("number_of_suppl_files", 0) for v in data for a in v.get("articles", [])],
          "just_number"),
 
-        ("suppl_paragraphs_per_file",
+        ("suppl_paragraphs_per_article",
          [count
           for v in data
           for a in v.get("articles", [])
           for count in a.get("suppl_paragraphs_counts_per_file", [])
-          if "suppl" in a["data_sources"]],
+          if "suppl" in a["data_sources"] and count != [0] and count != 0],
          "just_number"),
 
-        ("suppl_paragraphs_lengths_per_variant",
+        ("suppl_paragraphs_lengths",
          [p_len
           for v in data
           for a in v.get("articles", [])
           for file_lengths in a.get("suppl_paragraphs_lengths", [])
           for p_len in file_lengths
+          if "suppl" in a["data_sources"] and p_len != [0] and p_len != 0
           ],
          "characters"),
+
+        ("mentions_per_article",
+         [len(article_mention["mentions"])
+          for v in data
+          for article_mention in v.get("article_mentions", [])],
+         "just_number"),
     ]
 
     for value, value_data, unit in metrics:
@@ -223,7 +242,7 @@ def analyze_data(filename: str):
 def compare_runs(paths: list[str], variant: str) -> dict:
     """
     Compares multiple analysis runs for a specific genetic variant.
-    Used as a helper in compute_evaluation_consistency function.
+    Used as a helper in the compute_evaluation_consistency function.
 
     Args:
         paths: List of relative paths to JSON results.
@@ -268,7 +287,7 @@ def compare_runs(paths: list[str], variant: str) -> dict:
 
         runs_mentions.append(id2mentions)
         article_ids_per_run.append(set(current_run_article_ids))
-    common_article_ids = set()
+
     unique_articles_length = len(set.union(*article_ids_per_run))
     # 1. Ratio of articles in all runs / all unique articles
     common_article_ids = set.intersection(*article_ids_per_run)
@@ -282,8 +301,6 @@ def compare_runs(paths: list[str], variant: str) -> dict:
 
     # 3. Matching ratios for mention_types and claims
     total_matched_quotes = 0
-    total_matched_types = 0
-    total_matched_claims = 0
 
     mentions_per_run_list = [
         sum(len(run[art_id]) for art_id in common_article_ids)
@@ -309,30 +326,15 @@ def compare_runs(paths: list[str], variant: str) -> dict:
                         break
             if len(matched_group) == len(runs_mentions):
                 total_matched_quotes += 1
-                # Check the exact match for enums across all 5 runs
-                if all(e["mention_type"] == matched_group[0]["mention_type"] for e in matched_group):
-                    total_matched_types += 1
-                if all(e["claim"] == matched_group[0]["claim"] for e in matched_group):
-                    total_matched_claims += 1
 
-    # Final ratios (prevent division by zero)
-    if avg_mentions_per_run > 0:
-        quoted_text_matching_ratio = total_matched_quotes / avg_mentions_per_run
-        mention_types_matching_ratio = total_matched_types / avg_mentions_per_run
-        claims_matching_ratio = total_matched_claims / avg_mentions_per_run
-    else:
-        quoted_text_matching_ratio = 0
-        mention_types_matching_ratio = 0
-        claims_matching_ratio = 0
+    quoted_text_matching_ratio = total_matched_quotes / avg_mentions_per_run
 
     return {
-        "matching_articles_ratio": round(matching_articles_ratio, 3),
-        "matching_articles_minus_one_ratio": round(matching_articles_minus_one_ratio, 3),
+        "matching_articles_ratio": matching_articles_ratio,
+        "matching_articles_minus_one_ratio": matching_articles_minus_one_ratio,
         "overall_pathogenicities": overall_pathogenicities,
-        "quoted_text_matching_ratio": round(quoted_text_matching_ratio, 3),
-        "mention_types_matching_ratio": round(mention_types_matching_ratio, 3),
-        "claims_matching_ratio": round(claims_matching_ratio, 3),
-        "article_counts": all_article_counts.values(),
+        "quoted_text_matching_ratio": quoted_text_matching_ratio,
+        "article_counts": list(all_article_counts.values()),
     }
 
 
@@ -371,9 +373,12 @@ def compare_ids(export_paths: list[str], variant_string: str):
 
 
 def compute_rel_freq():
-    """compute the relative frequency of the article's mean at the current stage
-    compared to the total number of articles at that stage"""
-    # todo opravit aby to bylo relative i vzhledem k velikosti prvního sloupce
+    """
+    Compute the relative frequency of the article's mean at the current stage
+    compared to the total number of articles at that stage and the initial stage.
+
+    Also prints the stats for the number of articles at each stage per data source and in total.
+    """
     res = {
         "medline_before_pruning": [],
         "medline_before_removing": [],
@@ -391,10 +396,18 @@ def compute_rel_freq():
         "only_suppl_before_removing": [],
         "only_suppl_after_removal": [],
         "only_suppl_with_evidences": [],
+        "total_before_pruning": [],
+        "total_before_removing": [],
+        "total_after_removal": [],
+        "total_with_evidences": [],
     }
-    for filepath in os.listdir(DATA_DIR / "100variants"):
-        with open(DATA_DIR / "100variants" / filepath, "r", encoding="utf-8") as f:
+
+    folder_path = DATA_DIR / "100variants"
+    for filepath in os.listdir(folder_path):
+        with open(folder_path / filepath, "r", encoding="utf-8") as f:
             data = json.load(f)
+
+        # Extrakce dat pro jednotlivé fáze
         res["medline_before_pruning"].append(data["before_pruning"]["only_medline_count"])
         res["medline_before_removing"].append(data["before_removing"]["only_medline_count"])
         res["medline_after_removal"].append(
@@ -416,34 +429,125 @@ def compute_rel_freq():
 
         res["only_suppl_before_pruning"].append(data["before_pruning"]["only_suppl_count"])
         res["only_suppl_before_removing"].append(data["before_removing"]["only_suppl_count"])
-        res["only_suppl_after_removal"].append(len([art for art in data["articles"] if art["data_sources"] == ["suppl"]]))
+        res["only_suppl_after_removal"].append(
+            len([art for art in data["articles"] if art["data_sources"] == ["suppl"]]))
         res["only_suppl_with_evidences"].append(
             len([ment for ment in data["article_mentions"] if ment["data_sources"] == ["suppl"]]))
 
-    mean_res = {}
-    for key, value in res.items():
-        mean_res[key] = np.mean(value)
+        res["total_before_pruning"].append(data["before_pruning"]["articles_in_total"])
+        res["total_before_removing"].append(data["before_removing"]["articles_in_total"])
+        res["total_after_removal"].append(data["after_removal"]["articles_in_total"])
+        res["total_with_evidences"].append(len(data["article_mentions"]))
 
-    # for key, value in mean_res.items():
-    #     print(key, value)
+    for metric, value_data in res.items():
+        compute_and_print_stats(metric, value_data, "just_number")
 
-    count = {
-        "before_pruning": sum([value for key, value in mean_res.items() if key.endswith("before_pruning")]),
-        "before_removing": sum([value for key, value in mean_res.items() if key.endswith("before_removing")]),
-        "after_removal": sum([value for key, value in mean_res.items() if key.endswith("after_removal")]),
-        "with_evidences": sum([value for key, value in mean_res.items() if key.endswith("with_evidences")]),
+    # Výpočet průměrů pro každou metriku
+    # from now on we do not continue with total values
+    mean_res = {key: np.mean(value) for key, value in res.items()
+                if not key.startswith("total_")}
+
+    # Celkové počty článků v každé fázi (součet všech zdrojů)
+    stage_totals = {
+        "before_pruning": sum([v for k, v in mean_res.items() if k.endswith("before_pruning")]),
+        "before_removing": sum([v for k, v in mean_res.items() if k.endswith("before_removing")]),
+        "after_removal": sum([v for k, v in mean_res.items() if k.endswith("after_removal")]),
+        "with_evidences": sum([v for k, v in mean_res.items() if k.endswith("with_evidences")]),
     }
-    # print("counts")
-    # [print(key, value) for key, value in count.items()]
-    # print()
+
+    initial_total = stage_totals["before_pruning"]
 
     rel_mean_res = {}
     for key, value in mean_res.items():
-        if key.startswith("medline"):
-            rel_mean_res[key] = round((value / count[key.split("_")[1] + "_" + key.split("_")[2]]) * 100, 2)
-        else:
-            rel_mean_res[key] = round((value / count[key.split("_")[2] + "_" + key.split("_")[3]]) * 100, 2)
-    return rel_mean_res
+        # Identifikace fáze z klíče
+        current_stage = None
+        for stage in stage_totals.keys():
+            if key.endswith(stage):
+                current_stage = stage
+                break
+
+        if current_stage:
+            # Relativní podíl v rámci dané fáze (v %)
+            rel_within_stage = (value / stage_totals[current_stage]) * 100 if stage_totals[current_stage] > 0 else 0
+
+            # Relativní podíl vzhledem k úplnému začátku (v %)
+            rel_to_initial = (value / initial_total) * 100 if initial_total > 0 else 0
+
+            rel_mean_res[key] = {
+                "rel_in_stage": round(rel_within_stage, 2),
+                "rel_to_initial": round(rel_to_initial, 2),
+                "absolute_mean": round(value, 2)
+            }
+
+    # Výpis výsledků
+    for key, metrics in rel_mean_res.items():
+        print(
+            f"{key:40} | In Stage: {metrics['rel_in_stage']:6}% | To Initial: {metrics['rel_to_initial']:6}% | Abs: {metrics['absolute_mean']}")
+
+
+def compute_fleiss_kappa(paths: list[str], attribute: str) -> float:
+    """
+    Computes Fleiss' Kappa for a specific attribute across multiple runs.
+
+    Args:
+        paths: List of relative paths to JSON results
+        attribute: The key to evaluate (e.g., "mention_type" or "claim").
+
+    Returns:
+        The Fleiss' Kappa score.
+    """
+    if len(paths) < 2:
+        raise ValueError("At least two runs are required for comparison.")
+
+    runs_data = []
+    for path in paths:
+        with open(DATA_DIR / "15variants" / path, "r", encoding="utf-8") as f:
+            runs_data.append(json.load(f))
+
+    # 1. Identify common mentions across all runs using (article_id, quoted_text) as a key
+    # We use a reference run (Run 0) to define the set of mentions to check
+    ref_run = runs_data[0]
+
+    # Pre-map all runs for O(1) lookup: run_idx -> article_id -> quoted_text -> label
+    run_maps = []
+    for run in runs_data:
+        lookup = {}
+        for art in run.get("article_mentions", []):
+            art_id = art["article_id"]
+            lookup[art_id] = {m["quoted_text"]: m.get(attribute) for m in art.get("mentions", [])}
+        run_maps.append(lookup)
+
+    # 2. Build the Raw Data Matrix (Mentions x Runs)
+    raw_labels = []
+    for art in ref_run.get("article_mentions", []):
+        art_id = art["article_id"]
+        for mention in art.get("mentions", []):
+            q_text = mention["quoted_text"]
+
+            # Check if this exact mention exists in ALL runs
+            current_mention_labels = []
+            exists_in_all = True
+
+            for r_map in run_maps:
+                label = r_map.get(art_id, {}).get(q_text)
+                if label is None:
+                    exists_in_all = False
+                    break
+                current_mention_labels.append(str(label))
+
+            if exists_in_all:
+                raw_labels.append(current_mention_labels)
+
+    if not raw_labels:
+        return np.nan
+
+    # 3. Aggregate for statsmodels
+    # aggregate_raters expects (n_subjects, n_raters)
+    # returns (n_subjects, n_categories)
+    # print("raw_labels", raw_labels)
+    arr, categories = ir.aggregate_raters(raw_labels)
+    # print("arr", arr)
+    return ir.fleiss_kappa(arr, method="fleiss")
 
 
 def compute_evaluation_consistency():
@@ -458,20 +562,23 @@ def compute_evaluation_consistency():
         "matching_articles_minus_one_ratio": [],
         "overall_pathogenicities": [],
         "quoted_text_matching_ratio": [],
-        "mention_types_matching_ratio": [],
-        "claims_matching_ratio": [],
+        "mention_types_kappa": [],
+        "claims_kappa": [],
         "article_counts": [],
     }
     for prefix, group in groupby(files, key=lambda x: x[:10]):
         file_list = list(group)
-        # print(f"Group {prefix} contains: {file_list}")
+        print(f"Group {prefix} contains: {file_list}")
         with open(folder_path / file_list[0], "r", encoding="utf-8") as f:
             variant = json.load(f)["variant"]
         if variant == "NTHL1 S5C":
             continue
         print("Variant", variant)
         compared = compare_runs(file_list, variant)
-        print(compared)
+        res["mention_types_kappa"].append(compute_fleiss_kappa(file_list, "mention_type"))
+        res["claims_kappa"].append(compute_fleiss_kappa(file_list, "claim"))
+
+        print("compared", compared)
         for key, value in compared.items():
             if key == "overall_pathogenicities":
                 res[key].append(all(patho == value[0] for patho in value))
@@ -480,8 +587,10 @@ def compute_evaluation_consistency():
 
     for key, value in res.items():
         try:
-            print(key, np.nanmean(value))
-        except:
+            print(key, "mean", np.nanmean(value))
+            print(key, "std", np.nanstd(value))
+        except Exception as e:
+            logger.exception("Error in computing mean/std", e)
             continue
 
 
@@ -493,8 +602,12 @@ async def main():
 
 
 if __name__ == '__main__':
-    pass
+    # asyncio.run(main())
+    analyze_data()
 
+    # compute_rel_freq()
+
+    # compute_evaluation_consistency()
     # paths = [path for path in os.listdir(DATA_DIR / "results") if path.startswith("EPCAM")]
     # pprint(compare_runs(paths, "EPCAM c.556-14A>G"))
     # compare_ids(paths, "BRCA1 R7C")
