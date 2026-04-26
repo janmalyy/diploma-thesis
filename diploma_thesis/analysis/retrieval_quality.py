@@ -1,6 +1,12 @@
+import asyncio
 import json
 import os
 import time
+
+from pydantic import BaseModel, Field
+from pydantic_ai import Agent
+from pydantic_ai.models.openai import OpenAIChatModel
+from pydantic_ai.providers.openai import OpenAIProvider
 
 from diploma_thesis.analysis.statistics import compute_and_print_stats
 from diploma_thesis.api.clinvar import (clinvar_efetch, convert_pubmed_ids,
@@ -8,8 +14,11 @@ from diploma_thesis.api.clinvar import (clinvar_efetch, convert_pubmed_ids,
 from diploma_thesis.api.litvar import get_litvar_ids_for_query
 from diploma_thesis.api.variomes import (fetch_variomes_data,
                                          parse_variomes_data)
-from diploma_thesis.core.models import Variant
-from diploma_thesis.settings import DATA_DIR, logger
+from diploma_thesis.core.models import Article, Variant
+from diploma_thesis.settings import (DATA_DIR, E_INFRA_API_KEY, EINFRA_URL,
+                                     PACKAGE_DIR, logger)
+from diploma_thesis.utils.helpers import (build_prompt, get_prompt,
+                                          get_unique_safe_filename)
 
 
 def get_model_output_ids() -> dict[str, list]:
@@ -110,7 +119,8 @@ def get_litvar_ids() -> dict[str, list]:
     return variant2ids
 
 
-def compare_ids(model_output_ids: dict, clinvar_ids: dict, litvar_ids: dict, variomes_ids: dict, before_llm_calls_ids: dict):
+def compare_ids(model_output_ids: dict, clinvar_ids: dict, litvar_ids: dict, variomes_ids: dict,
+                before_llm_calls_ids: dict):
     """
     recall_m_c: kolik z clinvar (=„oficiálně známých“) článků model našel; poměr článků z modelu v clinvaru
     precision_m_c: kolik clinvar článků bylo v modelu; poměr clinvar článků vzhledem k počtu nalezených článků; nízké číslo může jen znamenat, že jsem našel nové články, které v clinvaru nejsou a to je fajn
@@ -135,6 +145,7 @@ def compare_ids(model_output_ids: dict, clinvar_ids: dict, litvar_ids: dict, var
     recalls_m_c = []
     recalls_v_c = []
     recalls_blc_c = []
+    recalls_m_plus_l_c = []
     precisions_m_c = []
     noises = []
     for variant, ids_dict in variant2all_ids.items():
@@ -147,12 +158,14 @@ def compare_ids(model_output_ids: dict, clinvar_ids: dict, litvar_ids: dict, var
         recall_m_c = 0
         recall_v_c = 0
         recall_blc_c = 0
+        recall_m_plus_l_c = 0
         precision_m_c = 0
         noise = 0
         if len(clinvar) > 0:
             recall_m_c = len(set.intersection(model, clinvar)) / len(clinvar)
             recall_v_c = len(set.intersection(variomes, clinvar)) / len(clinvar)
             recall_blc_c = len(set.intersection(before_llm_calls, clinvar)) / len(clinvar)
+            recall_m_plus_l_c = len(set.intersection(set.union(model, litvar), clinvar)) / len(clinvar)
         if len(model) > 0:
             precision_m_c = len(set.intersection(model, clinvar)) / len(model)
         if len(model - clinvar) > 0:
@@ -202,9 +215,12 @@ def compare_ids_fast():
     recalls_v_c = []
     recalls_blc_c = []
     recalls_l_c = []
+    recalls_m_plus_l_c = []
     precisions_m_c = []
     noises = []
     for variant, ids_dict in variant2all_ids.items():
+        if variant == "NTHL1 S5C":
+            continue
         model = ids_dict["model_ids"]
         clinvar = ids_dict["clinvar_ids"]
         litvar = ids_dict["litvar_ids"]
@@ -222,6 +238,7 @@ def compare_ids_fast():
             recall_v_c = len(set.intersection(variomes, clinvar)) / len(clinvar)
             recall_blc_c = len(set.intersection(before_llm_calls, clinvar)) / len(clinvar)
             recall_l_c = len(set.intersection(litvar, clinvar)) / len(clinvar)
+            recall_m_plus_l_c = len(set.intersection(set.union(model, litvar), clinvar)) / len(clinvar)
         if len(model) > 0:
             precision_m_c = len(set.intersection(model, clinvar)) / len(model)
         if len(model - clinvar) > 0:
@@ -234,6 +251,7 @@ def compare_ids_fast():
         print(f"recall_v_c: {recall_v_c}")
         print(f"recall_blc_c: {recall_blc_c}")
         print(f"recall_l_c: {recall_l_c}")
+        print(f"recall_m_plus_l_c: {recall_m_plus_l_c}")
         print(f"precision_m_c: {precision_m_c}")
         print(f"noise: {noise}")
         print("----------------------------------")
@@ -242,6 +260,7 @@ def compare_ids_fast():
         recalls_v_c.append(recall_v_c)
         recalls_blc_c.append(recall_blc_c)
         recalls_l_c.append(recall_l_c)
+        recalls_m_plus_l_c.append(recall_m_plus_l_c)
         precisions_m_c.append(precision_m_c)
         noises.append(noise)
 
@@ -249,8 +268,86 @@ def compare_ids_fast():
     compute_and_print_stats("recall_variomes", recalls_v_c, "%")
     compute_and_print_stats("recall_before_llm_calls", recalls_blc_c, "%")
     compute_and_print_stats("recall_litvar", recalls_l_c, "%")
+    compute_and_print_stats("recall_model_plus_litvar", recalls_m_plus_l_c, "%")
     compute_and_print_stats("precision", precisions_m_c, "%")
     compute_and_print_stats("noise", noises, "%")
+
+
+#########################
+#########################
+class VerificationAnalysis(BaseModel):
+    reason: str = Field(description="...")
+    mention: str = Field(description="...")
+    is_relevant: bool = Field(description="...")
+
+
+model = OpenAIChatModel(
+    model_name="deepseek-v3.2-thinking",
+    provider=OpenAIProvider(base_url=EINFRA_URL, api_key=E_INFRA_API_KEY),
+)
+
+verification_agent = Agent(
+    model,
+    output_type=VerificationAnalysis,
+    system_prompt=get_prompt("system_verification.txt"),
+    retries=3
+)
+
+
+async def run_verification_for_one_article(variant: Variant, article: dict, prompt_template: str):
+    replacements = {
+        "_GENE_": variant.gene,
+        "_VARIANT_": variant.variant,
+        "_VARIANTINFO_": variant.variant_dict,
+        "_TITLE_": article.get("title"),
+        "_ABSTRACT_": article.get("abstract"),
+    }
+    ready_prompt = build_prompt(replacements, prompt_template)
+    result = await verification_agent.run(ready_prompt)
+
+    return result
+
+
+def build_article_like_object_for_verification(art_id: str) -> dict:
+    return {}
+
+
+def run_retrieval_quality_with_llm():
+    prompt_template = get_prompt(PACKAGE_DIR / "prompts" / "user_verification.txt")
+    model_output_ids = get_model_output_ids()
+    # clinvar_ids = get_clinvar_ids()
+    with open(DATA_DIR / "15variants.txt", "r", encoding="utf-8") as f:
+        lines = [line.strip() for line in f.readlines()]
+
+    for line in lines:
+        if line.split(" ")[2] == "p":
+            variant = Variant(line.split(" ")[0], line.split(" ")[1], "protein", fetch_data=True)
+        else:
+            variant = Variant(line.split(" ")[0], line.split(" ")[1], "transcript", fetch_data=True)
+
+        article_ids = model_output_ids[variant.variant_string]
+        verification_results = []
+        for art_id in article_ids:
+            article = build_article_like_object_for_verification(art_id)
+            result = asyncio.run(run_verification_for_one_article(variant, article, prompt_template))
+            data = dict(result.output)
+            data.update(
+                {"article_id": art_id,
+                 "article_data": article,
+                 # "is_in_clinvar": art_id in clinvar_ids[variant.variant_string],
+                 }
+            )
+
+            verification_results.append(data)
+
+        with open(DATA_DIR / "retrieval_quality" / get_unique_safe_filename(variant.variant_string), "w", encoding="utf-8") as f:
+            json.dump(verification_results, f, ensure_ascii=False, indent=4)
+
+        break
+
+
+def compute_retrieval_quality_stats():
+    raise NotImplementedError
 
 
 if __name__ == '__main__':
@@ -272,4 +369,6 @@ if __name__ == '__main__':
 
     # print(time.time() - start)
 
-    compare_ids_fast()
+    # compare_ids_fast()
+
+    run_retrieval_quality_with_llm()
