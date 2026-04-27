@@ -210,18 +210,3 @@ if __name__ == '__main__':
     analyze_data()
 
     compute_rel_freq()
-
-    # compute_evaluation_consistency()
-    # paths = [path for path in os.listdir(DATA_DIR / "results") if path.startswith("EPCAM")]
-    # pprint(compare_runs(paths, "EPCAM c.556-14A>G"))
-    # compare_ids(paths, "BRCA1 R7C")
-    # compare_ids(paths, "EPCAM c.556-14A>G")
-    # analyze_data(r"old\results_from_analyze_data\results_updated_ver8.json")
-
-    # with open(DATA_DIR / "brca_variants.txt", "r", encoding="utf-8") as f:
-    #     text = f.read()
-    # variants = text.split("\n")
-    # hundred_vars = random.choices(variants, k=100)
-    # with open(DATA_DIR / "100variants.txt", "w", encoding="utf-8") as f:
-    #     for var in hundred_vars:
-    #         f.write(var + "\n")

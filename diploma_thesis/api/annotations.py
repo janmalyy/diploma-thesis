@@ -119,8 +119,8 @@ def fetch_pubtator(
         mapping.update(map_pubtator_xml(root, cache_dir, database))
 
     except requests.RequestException as e:
-        # TODO přidat negativní caching článků, které vím, že v PubTatoru NEJSOU - abych se je vždycky nesnažil stáhnout, i když bych mohl vědět, že neexistují
-        # see: https://chatgpt.com/share/697cbd7c-1bd0-8009-9530-15ec028e38e9 nebo? https://chatgpt.com/c/697c869e-9214-8330-a063-621e53f4b673
+        # TODO add negative caching of articles, about which I know that they are not in PubTator. This would prevent trying to fetch them all the time.
+        # see: https://chatgpt.com/share/697cbd7c-1bd0-8009-9530-15ec028e38e9 or https://chatgpt.com/c/697c869e-9214-8330-a063-621e53f4b673
         logger.info(f"Request failed. But it can only mean that none of the ids requested is available in Pubtator. Error message: {e}")
     except Exception as e:
         raise RuntimeError("Failed to parse PubTator response") from e

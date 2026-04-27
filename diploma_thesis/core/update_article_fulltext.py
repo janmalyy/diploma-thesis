@@ -5,10 +5,7 @@ from diploma_thesis.api.annotations import (fetch_biodiversity_pmc,
                                             fetch_pubtator, get_session)
 from diploma_thesis.core.document_parsers import (
     parse_biodiversity_pmc_document, parse_pubtator_document)
-from diploma_thesis.core.models import Article, TextBlock, Variant
-from diploma_thesis.settings import DATA_DIR, logger
-from diploma_thesis.utils.helpers import write_xml
-from diploma_thesis.utils.json_structure import write_json
+from diploma_thesis.core.models import Article, Variant
 
 urllib3.disable_warnings()
 
@@ -61,38 +58,3 @@ def update_articles_fulltext(articles: list[Article], variant: Variant):
                 article = pmid_to_article[pmid]
                 parse_pubtator_document(article, doc, variant)
                 article.annotation_source = "pubtator"
-
-
-if __name__ == '__main__':
-    # pmcid = "PMC8794197"      # in both
-    # test_article = Article(pmcid=pmcid, fulltext_snippets=["We selected 5 families with at least 2 cases of cutaneous melanoma among first-degree relatives, for a total of 10 individuals for WES."])
-
-    pmcid = "PMC3725882"
-    test_article = Article(pmcid=pmcid, snippets=[TextBlock("shkenazi AB47 Br (33) Br-male")])
-    #
-    # # biodiversitypmc
-    # res = fetch_biodiversity_pmc(get_session(), params={
-    #     "ids": pmcid,
-    #     "col": "pmc",
-    # })
-    # if pmcid in res:
-    #     _parse_biodiversity_pmc_document(test_article, res[pmcid])
-    #     print("--- BiodiversityPMC ---")
-    #     print(test_article.get_context())
-
-    # pubtator
-    # res = fetch_pubtator(get_session(), params={
-    #     "pmcids": pmcid,
-    # })
-    # if pmcid in res:
-    #     _parse_pubtator_document(test_article, res[pmcid])
-    #     print("--- Pubtator ---")
-    #     print(test_article.get_context())
-
-    # with open("test.json", "w") as f:
-    #     json.dump(fetch_biodiversity_pmc(get_session(), params={
-    #         "ids": "PMC4925265",
-    #         "col": "pmc",
-    #     }), f, indent=4)
-    #
-    write_xml(fetch_pubtator(get_session(), ["PMC8794197", "PMC8794197"], "pmc"), "test.xml")

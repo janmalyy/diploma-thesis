@@ -9,8 +9,7 @@ from pydantic_ai.settings import ModelSettings
 
 from diploma_thesis.core.llm_response_models import (AggregatedSummary,
                                                      ArticleAnalysis, Claim,
-                                                     ConfidenceLevel, Mention,
-                                                     Pathogenicity)
+                                                     Mention, Pathogenicity)
 from diploma_thesis.core.models import Article, Variant
 from diploma_thesis.settings import (E_INFRA_API_KEY, EINFRA_URL, MODEL_NAME,
                                      logger)
@@ -151,7 +150,6 @@ def compute_structured_summary(article_mentions: list[dict]) -> dict:
     if total_evidences == 0:
         return {
             "overall_pathogenicity": Pathogenicity.UNCERTAIN,
-            "overall_confidence": ConfidenceLevel.LOW,
             "pathogenicity_counts": counts,
             "conflicting_evidence": False
         }

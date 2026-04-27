@@ -131,13 +131,7 @@ def get_litvar_ids() -> dict[str, list]:
 def compare_ids(model_output_ids: dict, clinvar_ids: dict, litvar_ids: dict, variomes_ids: dict,
                 before_llm_calls_ids: dict):
     """
-    recall_m_c: kolik z clinvar (=„oficiálně známých“) článků model našel; poměr článků z modelu v clinvaru
-    precision_m_c: kolik clinvar článků bylo v modelu; poměr clinvar článků vzhledem k počtu nalezených článků; nízké číslo může jen znamenat, že jsem našel nové články, které v clinvaru nejsou a to je fajn
-    noise: kolikrát méně jsem našel článků než LitVar - tj. za předpokladu, že zjistím, že ty mnou nalezené jsou relevantní, tak kolikrát jsem snížil počet článků na prohledání
-                když předpokládám, že ty ostatní z litvaru jsou nerelevantní... což nemůžu asi
-
-    https://gemini.google.com/share/abd46ddaf34e
-
+    Compute recall, precision, and noise stats for each in 15 variants based on article sets from the model, ClinVar, LitVar, and Variomes.
     """
     variant2all_ids: dict[str, dict[str, set]] = {}
     for variant, model_ids in model_output_ids.items():
@@ -154,10 +148,13 @@ def compare_ids(model_output_ids: dict, clinvar_ids: dict, litvar_ids: dict, var
     recalls_m_c = []
     recalls_v_c = []
     recalls_blc_c = []
+    recalls_l_c = []
     recalls_m_plus_l_c = []
     precisions_m_c = []
     noises = []
     for variant, ids_dict in variant2all_ids.items():
+        if variant == "NTHL1 S5C":
+            continue
         model = ids_dict["model_ids"]
         clinvar = ids_dict["clinvar_ids"]
         litvar = ids_dict["litvar_ids"]
@@ -167,6 +164,7 @@ def compare_ids(model_output_ids: dict, clinvar_ids: dict, litvar_ids: dict, var
         recall_m_c = 0
         recall_v_c = 0
         recall_blc_c = 0
+        recall_l_c = 0
         recall_m_plus_l_c = 0
         precision_m_c = 0
         noise = 0
@@ -174,16 +172,21 @@ def compare_ids(model_output_ids: dict, clinvar_ids: dict, litvar_ids: dict, var
             recall_m_c = len(set.intersection(model, clinvar)) / len(clinvar)
             recall_v_c = len(set.intersection(variomes, clinvar)) / len(clinvar)
             recall_blc_c = len(set.intersection(before_llm_calls, clinvar)) / len(clinvar)
+            recall_l_c = len(set.intersection(litvar, clinvar)) / len(clinvar)
             recall_m_plus_l_c = len(set.intersection(set.union(model, litvar), clinvar)) / len(clinvar)
         if len(model) > 0:
             precision_m_c = len(set.intersection(model, clinvar)) / len(model)
         if len(model - clinvar) > 0:
-            noise = len(litvar - clinvar) / len(model - clinvar)
+            noise = len(litvar) / len(model)
+
+        print("HERE", recall_m_c == recall_v_c == recall_blc_c)
 
         print(variant)
         print(f"recall_m_c: {recall_m_c}")
         print(f"recall_v_c: {recall_v_c}")
         print(f"recall_blc_c: {recall_blc_c}")
+        print(f"recall_l_c: {recall_l_c}")
+        print(f"recall_m_plus_l_c: {recall_m_plus_l_c}")
         print(f"precision_m_c: {precision_m_c}")
         print(f"noise: {noise}")
         print("----------------------------------")
@@ -191,17 +194,22 @@ def compare_ids(model_output_ids: dict, clinvar_ids: dict, litvar_ids: dict, var
         recalls_m_c.append(recall_m_c)
         recalls_v_c.append(recall_v_c)
         recalls_blc_c.append(recall_blc_c)
+        recalls_l_c.append(recall_l_c)
+        recalls_m_plus_l_c.append(recall_m_plus_l_c)
         precisions_m_c.append(precision_m_c)
         noises.append(noise)
 
     compute_and_print_stats("recall_model", recalls_m_c, "%")
     compute_and_print_stats("recall_variomes", recalls_v_c, "%")
     compute_and_print_stats("recall_before_llm_calls", recalls_blc_c, "%")
+    compute_and_print_stats("recall_litvar", recalls_l_c, "%")
+    compute_and_print_stats("recall_model_plus_litvar", recalls_m_plus_l_c, "%")
     compute_and_print_stats("precision", precisions_m_c, "%")
     compute_and_print_stats("noise", noises, "%")
 
 
 def compare_ids_fast():
+    """same as compare_ids but with precomputed values as input"""
     variant2all_ids = {
         "APC c.487C>T": {'model_ids': {'PMC10471768', 'PMC11264515'}, 'clinvar_ids': {'20685668', '15300853', '19701947', '17963004', 'PMC1377162', 'PMC1856441', 'PMC1728257', 'PMC7591113'}, 'litvar_ids': {'PMC2561210', 'PMC4054890', 'PMC6410638', 'PMC11370095', 'PMC7240851', 'PMC10789095', 'PMC6570471', 'PMC2638572', 'PMC2728163', 'PMC8067406', 'PMC5478212', 'PMC7226736', 'PMC9719465'}, 'variomes_ids': {'PMC7414214', 'PMC10010437', 'PMC9938029', 'PMC8296534', 'PMC6092430', 'PMC6076228', 'PMC6599263', 'PMC7462278', 'PMC9302303', 'PMC11370095', 'PMC5894988', 'PMC4927697', 'PMC6898788', 'PMC7603305', 'PMC7820010', 'PMC9685809', 'PMC7933761', 'PMC8567654', 'PMC7865061', 'PMC8629245', 'PMC10461021', 'PMC10483046', 'PMC7978308', 'PMC5652672', 'PMC7061455', 'PMC9059084', 'PMC7377867', 'PMC9899438', 'PMC10471768', 'PMC11264515', 'PMC7705408', 'PMC9915828', 'PMC7226542', 'PMC8902761', 'PMC11417107', 'PMC5055158', 'PMC10299728', 'PMC11184281'}, 'before_llm_calls_ids': {'PMC7414214', 'PMC10010437', 'PMC9938029', 'PMC8296534', 'PMC6092430', 'PMC6076228', 'PMC6599263', 'PMC7462278', 'PMC9302303', 'PMC11370095', 'PMC5894988', 'PMC4927697', 'PMC6898788', 'PMC7603305', 'PMC7820010', 'PMC9685809', 'PMC7933761', 'PMC8567654', 'PMC7865061', 'PMC8629245', 'PMC10461021', 'PMC10483046', 'PMC7978308', 'PMC5652672', 'PMC7061455', 'PMC9059084', 'PMC7377867', 'PMC9899438', 'PMC10471768', 'PMC11264515', 'PMC7705408', 'PMC9915828', 'PMC7226542', 'PMC8902761', 'PMC11417107', 'PMC5055158', 'PMC10299728', 'PMC11184281'}},
         "ATM c.829G>T": {'model_ids': {'PMC10471768', '32962506', 'PMC9633290', 'PMC7979806', 'PMC8821084', 'PMC9760934'}, 'clinvar_ids': {'32962506', 'PMC7066887', '36988593', 'PMC4303220', 'PMC3732755', 'PMC5535082', 'PMC6524639', '21665257', 'PMC5985280'}, 'litvar_ids': {'PMC4967469', 'PMC11762072', 'PMC10010347', 'PMC5498998', '32962506', 'PMC6599263', 'PMC7371703', 'PMC10789095', 'PMC5620233', 'PMC10988936', 'PMC6524639', 'PMC5632819'}, 'variomes_ids': {'PMC7463012', 'PMC9633290', 'PMC8804344', 'PMC11414036', 'PMC8292343', 'PMC7181640', 'PMC9685809', 'PMC7933761', 'PMC7982637', 'PMC11211533', '32962506', 'PMC4958737', 'PMC11063555', 'PMC10988936', 'PMC9760934', 'PMC7581879', 'PMC9931534', 'PMC6032922', 'PMC10471768', 'PMC11049764', 'PMC6359859', 'PMC7962287', 'PMC8630635', 'PMC8275599', 'PMC7979806', 'PMC8821084', 'PMC5055158'}, 'before_llm_calls_ids': {'PMC7463012', 'PMC9633290', 'PMC8804344', 'PMC11414036', 'PMC8292343', 'PMC7181640', 'PMC9685809', 'PMC7933761', 'PMC11211533', 'PMC7982637', '32962506', 'PMC4958737', 'PMC11063555', 'PMC10988936', 'PMC9760934', 'PMC7581879', 'PMC6032922', 'PMC9931534', 'PMC10471768', 'PMC11049764', 'PMC6359859', 'PMC7962287', 'PMC8630635', 'PMC8275599', 'PMC7979806', 'PMC8821084', 'PMC5055158'}},
@@ -283,8 +291,9 @@ def compare_ids_fast():
     compute_and_print_stats("noise", noises, "%")
 
 
-#########################
-#########################
+######################################
+########## LLM verification ##########
+######################################
 class VerificationAnalysis(BaseModel):
     reason: str = Field(description="1 sentence explaining relevance decision")
     is_relevant: bool
@@ -320,11 +329,11 @@ async def run_verification_for_one_article(variant: Variant, article: dict, prom
 
 def build_article_like_object_for_verification(variant: Variant, art_obj: dict) -> dict:
     """
-
+    run the whole processing pipeline for one article with some steps (e.g., annotation) skipped
     Args:
         variant:
         art_obj: dict {art_id, is_suppl}
-    Returns: built article-like object
+    Returns: built article-like object with title, abstract and body
     """
     title = ""
     abstract_parts = []
@@ -412,12 +421,11 @@ def build_article_like_object_for_verification(variant: Variant, art_obj: dict) 
 
 
 def run_retrieval_quality_with_llm():
+    """run the verification analysis for each article in 15 variants and save the results into JSONs"""
     prompt_template = get_prompt(PACKAGE_DIR / "prompts" / "user_verification.txt")
 
     variant2objs = {}
     for path in os.listdir(DATA_DIR / "15variants_data_evaluated_by_molecular_geneticist"):
-        if path not in ["TP53 c.666G_A_2026-04-09_09_33_40.json"]:
-            continue
         article_objs = []
         with open(DATA_DIR / "15variants_data_evaluated_by_molecular_geneticist" / path, "r", encoding="utf-8") as f:
             data = json.load(f)
@@ -440,9 +448,6 @@ def run_retrieval_quality_with_llm():
         lines = [line.strip() for line in f.readlines()]
 
     for i, line in enumerate(lines):
-        if not line.startswith("TP53"):
-            continue
-
         if line.split(" ")[2] == "p":
             variant = Variant(line.split(" ")[0], line.split(" ")[1], "protein", fetch_data=True)
         else:
@@ -474,6 +479,7 @@ def run_retrieval_quality_with_llm():
 
 
 def compute_retrieval_quality_stats():
+    """compute the relevance statistics based on the data from files coming from run_retrieval_quality_with_llm"""
     global_total = 0
     global_score = 0
     global_in_clinvar = 0
@@ -539,6 +545,7 @@ def compute_retrieval_quality_stats():
 
 
 if __name__ == '__main__':
+    # run compare_ids in the slow way
     # start = time.time()
 
     # model_output_ids = get_model_output_ids()
@@ -557,14 +564,7 @@ if __name__ == '__main__':
 
     # print(time.time() - start)
 
-    compare_ids_fast()
-    # built = build_article_like_object_for_verification(
-    #     Variant("BARD1", "c.1670G>C", "transcript"),
-    #     art_obj={
-    #         "art_id": "PMC5819082",
-    #         "is_suppl": False
-    #     }
-    # )
-    # pprint(built)
+    # compare_ids_fast()
+
     # run_retrieval_quality_with_llm()
-    # compute_retrieval_quality_stats()
+    compute_retrieval_quality_stats()

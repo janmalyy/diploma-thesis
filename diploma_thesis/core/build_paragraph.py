@@ -40,7 +40,7 @@ def header_score(columns: list[str]) -> float:
 
 def is_cell_coordinate_table(text: str) -> tuple[bool, int]:
     """
-    Detect if text is in cell-coordinate format (row col value).
+    Detect if the text is in cell-coordinate format (row col value).
     Return also the number of columns.
     """
     # logger.info("Checking for cell-coordinate table format")
@@ -172,7 +172,6 @@ def reconstruct_csv_like_table(text: str, delimiter: str) -> list[list[str]]:
 
 
 def get_title_header_and_context_from_table(table: list[list[str]], match_val: str):
-    # TODO vylepšit, aby se header a context párovali k sobě jako dictionary - má to ale ten problém, že nemají vždy stejně prvků...
     row, title, context = "", "", ""
     best_score = 0
     header_index = -1

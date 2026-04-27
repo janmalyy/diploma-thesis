@@ -1,5 +1,4 @@
 import csv
-import time
 from typing import Any, Generator
 
 import requests
@@ -77,49 +76,6 @@ def clinvar_efetch(variant: str, variation_ids: list[int]) -> etree._Element:
     return root
 
 
-def parse_clinical_significance(query: str, efetch: etree._Element) -> dict:
-    """
-    Identifies the correct variant from efetch XML and returns clinical significance.
-    Warnings: Works well only with formats similar to: EPHB3 c.1202G>C, EPHB3 p.Arg401Pro, NM_004443.4(EPHB3):c.1202G>C (p.Arg401Pro).
-              Does not guarantee to work with rsID or COSMICid.
-              Because of fuzzy matching.
-    Args:
-        query: The variant search string (e.g., HGVS or gene name) to match.
-        efetch: The XML root element from a ClinVar efetch response.
-
-    Returns:
-        dict: A dictionary containing variation metadata and clinical significance.
-    """
-    archives = efetch.xpath("//VariationArchive")
-    if not archives:
-        return {}
-
-    target_archive = archives[0]
-    query_lower = query.lower()
-    best_score = 0
-    for archive in archives:
-        name = archive.get("VariationName").lower()
-        score = fuzz.partial_ratio(query_lower, name)
-        if score > best_score:
-            target_archive = archive
-            best_score = score
-
-    classification_node = target_archive.xpath("./ClassifiedRecord/Classifications/GermlineClassification")
-
-    node = classification_node[0]
-    significance = node.xpath("./Description/text()")
-    review_status = node.xpath("./ReviewStatus/text()")
-    explanation = node.xpath("./Explanation/text()")
-
-    return {
-        "variation_id": target_archive.get("VariationID"),
-        "variation_name": target_archive.get("VariationName"),
-        "clinical_significance": significance[0] if significance else "Unknown",
-        "review_status": review_status[0] if review_status else "Unknown",
-        "explanation": explanation[0] if explanation else "Unknown"
-    }
-
-
 def get_clinvar_urls(query: str, max_results: int = 10) -> list[str]:
     """
     Search ClinVar for a variant and return ClinVar Variation URLs.
@@ -138,12 +94,6 @@ def extract_pubmed_ids(root: etree._Element) -> list[str]:
     Returns:
         A list of unique PubMed IDs found in the document.
     """
-    # file_path = DATA_DIR / "clinvar" / xml_path
-
-    # with open(file_path, "rb") as file:
-    #     xml_content = file.read()
-
-    # root = etree.fromstring(xml_content)
     uniq_ids = set()
 
     assertion_list = root.find(".//ClinicalAssertionList")

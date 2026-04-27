@@ -60,9 +60,3 @@ class Pathogenicity(str, Enum):
     BENIGN = "benign"
     LIKELY_BENIGN = "likely benign"
     UNCERTAIN = "uncertain"
-
-
-class ConfidenceLevel(str, Enum):
-    LOW = "low"
-    MODERATE = "moderate"
-    HIGH = "high"

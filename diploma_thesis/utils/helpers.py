@@ -11,12 +11,6 @@ from lxml import etree
 
 from diploma_thesis.settings import DATA_DIR, PACKAGE_DIR, logger
 
-# TODO Budu chtít nějak zachovat tu pozici, abych ji tam pak mohl zvýrazněnou vrátit do závěrečného kontextu
-#  If you need to extract those IDs later, you can use: re.findall(r'concept_id=\"(.*?)\"', text)
-# [^">] matches anything not a quote or a closing bracket
-# "[^"]*" matches a full quoted string (allowing > inside)
-# The combination ensures we only stop at a > that is NOT inside quotes
-
 SPAN_PATTERN = r'<span(?:[^">]|"[^"]*")*>(.*?)</span>'
 ALL_SPACES_PATTERN = r"(?:&nbsp;?|&#160;|[  \s])+"
 ANNOTATION_PATTERN = re.compile(r"\[[^\]]+:\s*([^\]]+)\]")

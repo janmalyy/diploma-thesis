@@ -175,7 +175,7 @@ def compute_fleiss_kappa(paths: list[str], attribute: str) -> float:
 
 
 def compute_evaluation_consistency():
-
+    """compute LLM evaluation consistency based on 5 runs for 15 variants"""
     folder_path = DATA_DIR / "15variants"
     files = [f for f in os.listdir(folder_path) if os.path.isfile(os.path.join(folder_path, f))]
 

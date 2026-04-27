@@ -155,7 +155,7 @@ class Article:
 
 
 def prune_articles(articles: list[Article], max_articles: int = 50) -> list[Article]:
-    """take all medline and then the other articles in order of relevance score"""
+    """Take all MEDLINE and then the other articles in order of relevance score"""
     if len(articles) <= max_articles:
         return articles
 
@@ -174,7 +174,7 @@ def prune_articles(articles: list[Article], max_articles: int = 50) -> list[Arti
 def remove_articles_with_no_match(articles: list[Article]) -> list[Article]:
     """
     Remove articles that have no match and that are not presumably relevant then.
-    Remove only if the relevance score is lower than 0.5. Never remove medline articles.
+    Remove only if the relevance score is lower than 0.5. Never remove MEDLINE articles.
     """
     # logger.info(f"Filtering {len(articles)} articles for matches")
     to_remove = []
