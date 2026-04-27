@@ -70,7 +70,7 @@ def fetch_pubtator(
 ) -> dict[str, etree._Element]:
     """Fetch PubTator XML documents with filesystem caching.
 
-    Cached files are loaded first. Only missing PMC IDs are requested
+    Cached files are loaded first. Only missing PMC/PubMed IDs are requested
     from the PubTator API.
 
     Args:

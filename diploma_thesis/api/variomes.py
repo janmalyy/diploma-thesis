@@ -92,8 +92,8 @@ def parse_variomes_data(data: dict, variant: Variant) -> list[Article]:
             article.fulltext_snippets = snippets
 
     # Process Supplemental data
-    supp_list = publications.get("supp")
-    for pub in supp_list:
+    suppl_list = publications.get("supp")
+    for pub in suppl_list:
         pmc_id = pub.get("pmcid")
 
         article = next((a for a in articles if a.pmcid == pmc_id), None)

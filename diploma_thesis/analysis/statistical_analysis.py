@@ -14,10 +14,10 @@ def compute_and_print_stats(metric: str, value_data: list, unit: str):
         print(f"max: {max(value_data)}")
         print(f"mean: {round(np.mean(value_data), 2)}")
         print(f"median: {round(np.median(value_data), 2)}")
-        print(f"third quartile: {round(np.quantile(value_data, 0.75), 2)}")
+        # print(f"third quartile: {round(np.quantile(value_data, 0.75), 2)}")
         print(f"std: {round(np.std(value_data), 2)}")
         print(f"values_in_total: {len(value_data)}")
-        print(f"values:\nhead: {value_data[:10]}\ntail: {value_data[-10:]}")
+        # print(f"values:\nhead: {value_data[:10]}\ntail: {value_data[-10:]}")
     print(value_data)
     print()
 
