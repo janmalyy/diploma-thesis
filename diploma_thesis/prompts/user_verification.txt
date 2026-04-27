@@ -1,1 +1,38 @@
-Return "OK" (for testing purposes)
+Context:
+Genetic variant:
+Gene: _GENE_, Variant: _VARIANT_
+Synonyms:
+_VARIANTINFO_
+
+Article data:
+Title:
+_TITLE_
+
+Abstract:
+_ABSTRACT_
+
+Body:
+_BODY_
+
+---
+Task:
+You are provided with the full text of an article (Body). Perform comprehensive verification to determine if this article provides actionable evidence for the interpretation of the variant _GENE_ _VARIANT_.
+
+Step 1: Full-Text Analysis
+Scan the Body and Abstract for any occurrences of the variant or its synonyms.
+Determine the role of the variant in the study:
+- Is it a primary subject of a case report?
+- Is it part of a cohort analyzed for specific clinical features?
+- Is it subjected to functional characterization (e.g., luciferase assay, splicing assay, protein stability)?
+- Is it provided with specific population frequency data?
+
+Step 2: Relevance Filtering
+An article is "is_relevant: True" only if it provides specific data points that can be used to support its pathogenicity or benignity.
+An article is "is_relevant: False" if the variant is only mentioned incidentally, such as:
+- In a list of variants that were NOT found in the study.
+- As a citation of previous work without new data.
+- As one of hundreds of entries in a screening table without any variant-specific discussion or phenotype link.
+
+Step 3: Final Judgment
+- reason: Summarize WHY the article is relevant or why it was discarded as noise
+- is_relevant: Boolean decision.

@@ -1,20 +1,29 @@
 import asyncio
 import json
 import os
-import time
+import re
+from pprint import pprint
 
+from lxml import etree
 from pydantic import BaseModel, Field
 from pydantic_ai import Agent
 from pydantic_ai.models.openai import OpenAIChatModel
 from pydantic_ai.providers.openai import OpenAIProvider
 
-from diploma_thesis.analysis.statistics import compute_and_print_stats
+from diploma_thesis.analysis.statistical_analysis import \
+    compute_and_print_stats
+from diploma_thesis.api.annotations import (fetch_biodiversity_pmc,
+                                            fetch_pubtator, get_session)
 from diploma_thesis.api.clinvar import (clinvar_efetch, convert_pubmed_ids,
                                         extract_pubmed_ids)
 from diploma_thesis.api.litvar import get_litvar_ids_for_query
 from diploma_thesis.api.variomes import (fetch_variomes_data,
                                          parse_variomes_data)
-from diploma_thesis.core.models import Article, Variant
+from diploma_thesis.core.build_paragraph import (is_cell_coordinate_table,
+                                                 is_csv_like_table,
+                                                 reconstruct_coordinate_table,
+                                                 reconstruct_csv_like_table)
+from diploma_thesis.core.models import Variant
 from diploma_thesis.settings import (DATA_DIR, E_INFRA_API_KEY, EINFRA_URL,
                                      PACKAGE_DIR, logger)
 from diploma_thesis.utils.helpers import (build_prompt, get_prompt,
@@ -231,6 +240,7 @@ def compare_ids_fast():
         recall_v_c = 0
         recall_blc_c = 0
         recall_l_c = 0
+        recall_m_plus_l_c = 0
         precision_m_c = 0
         noise = 0
         if len(clinvar) > 0:
@@ -242,7 +252,7 @@ def compare_ids_fast():
         if len(model) > 0:
             precision_m_c = len(set.intersection(model, clinvar)) / len(model)
         if len(model - clinvar) > 0:
-            noise = len(litvar - clinvar) / len(model - clinvar)
+            noise = len(litvar) / len(model)
 
         print("HERE", recall_m_c == recall_v_c == recall_blc_c)
 
@@ -276,9 +286,8 @@ def compare_ids_fast():
 #########################
 #########################
 class VerificationAnalysis(BaseModel):
-    reason: str = Field(description="...")
-    mention: str = Field(description="...")
-    is_relevant: bool = Field(description="...")
+    reason: str = Field(description="1 sentence explaining relevance decision")
+    is_relevant: bool
 
 
 model = OpenAIChatModel(
@@ -301,6 +310,7 @@ async def run_verification_for_one_article(variant: Variant, article: dict, prom
         "_VARIANTINFO_": variant.variant_dict,
         "_TITLE_": article.get("title"),
         "_ABSTRACT_": article.get("abstract"),
+        "_BODY_": article.get("body"),
     }
     ready_prompt = build_prompt(replacements, prompt_template)
     result = await verification_agent.run(ready_prompt)
@@ -308,46 +318,224 @@ async def run_verification_for_one_article(variant: Variant, article: dict, prom
     return result
 
 
-def build_article_like_object_for_verification(art_id: str) -> dict:
-    return {}
+def build_article_like_object_for_verification(variant: Variant, art_obj: dict) -> dict:
+    """
+
+    Args:
+        variant:
+        art_obj: dict {art_id, is_suppl}
+    Returns: built article-like object
+    """
+    title = ""
+    abstract_parts = []
+    body_parts = []
+    session = get_session()
+    art_id = art_obj["art_id"]
+    if art_id.startswith("PMC"):
+        # 1. get title+abstract+body from biodiversity
+        try:
+            with open(DATA_DIR / "biodiversity_pmc_cache" / f"{art_id}.json", "r", encoding="utf-8") as f:
+                data = json.load(f)
+        except FileNotFoundError:
+            logger.warning(
+                f"File {DATA_DIR / 'biodiversity_pmc_cache' / f'{art_id}.json'} not found. Fetching from PMC...")
+            data = fetch_biodiversity_pmc(session, [art_id])
+
+        document = data.get("document", {})
+        sentences = data.get("sentences", [])
+        title = document.get("title")
+
+        for s in sentences:
+            sentence_text = s.get("sentence", "")
+            if s.get("field") == "abstract":
+                abstract_parts.append(sentence_text)
+            elif s.get("field") == "text" or s.get("tag") == "table":
+                body_parts.append(sentence_text)
+
+        # 2. if suppl, get SD from variomes and parse it
+        if art_obj["is_suppl"]:
+            try:
+                with open(
+                        DATA_DIR / "variomes_cache" / f"{variant.gene.upper()}_{re.sub(r'[<>:"/\\|?*]', "_", variant.variant).upper()}_{variant.level.upper()}.json",
+                        "r", encoding="utf-8") as f:
+                    variomes_data = json.load(f)
+            except FileNotFoundError:
+                variomes_data = fetch_variomes_data(variant)
+            publications = variomes_data.get("publications")
+            suppl_list = publications.get("supp")
+            publication = {}
+            for pub in suppl_list:
+                if pub.get("pmcid") == art_id:
+                    publication = pub
+                    break
+            raw_suppl_text = publication.get("text")
+
+            is_cell_table, number_of_cols = is_cell_coordinate_table(raw_suppl_text)
+            if is_cell_table:
+                if number_of_cols <= 1:
+                    suppl = raw_suppl_text
+                else:
+                    suppl = reconstruct_coordinate_table(raw_suppl_text)
+
+            else:
+                is_csv_table, delimiter = is_csv_like_table(raw_suppl_text)
+                if is_csv_table:
+                    suppl = reconstruct_csv_like_table(raw_suppl_text, delimiter)
+                else:
+                    suppl = raw_suppl_text
+
+            if raw_suppl_text:
+                body_parts.append("\nSupplementary Data:\n")
+                body_parts.append(str(suppl))
+
+    else:  # medline articles
+        try:
+            with open(DATA_DIR / "pubtator_cache" / f"{art_id}.xml", "r", encoding="utf-8") as f:
+                document = etree.fromstring(f.read())
+        except FileNotFoundError:
+            document = fetch_pubtator(session, [art_id], "pubmed")[art_id]
+        for passage in document.xpath(".//passage"):
+            text = passage.findtext("text")
+            if not text:
+                continue
+
+            infon_type = passage.find("./infon[@key='type']")
+            p_type = infon_type.text if infon_type is not None else ""
+
+            if p_type == "title":
+                title = text
+            elif p_type == "abstract":
+                abstract_parts.append(text)
+    return {"title": title,
+            "abstract": " ".join(abstract_parts),
+            "body": " ".join(body_parts)}
 
 
 def run_retrieval_quality_with_llm():
     prompt_template = get_prompt(PACKAGE_DIR / "prompts" / "user_verification.txt")
-    model_output_ids = get_model_output_ids()
-    # clinvar_ids = get_clinvar_ids()
+
+    variant2objs = {}
+    for path in os.listdir(DATA_DIR / "15variants_data_evaluated_by_molecular_geneticist"):
+        if path not in ["TP53 c.666G_A_2026-04-09_09_33_40.json"]:
+            continue
+        article_objs = []
+        with open(DATA_DIR / "15variants_data_evaluated_by_molecular_geneticist" / path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+        data = data[0]  # IMPORTANT! The data are stored as a list with one element
+
+        variant = data["variant"]
+        for article in data.get("article_mentions"):
+            art_id = article["article_id"]
+            is_suppl = "suppl" in article["data_sources"]
+            article_objs.append({
+                "art_id": art_id,
+                "is_suppl": is_suppl
+            })
+
+        variant2objs[variant] = article_objs
+    # pprint(variant2objs)
+    clinvar_ids = get_clinvar_ids()
     with open(DATA_DIR / "15variants.txt", "r", encoding="utf-8") as f:
         lines = [line.strip() for line in f.readlines()]
 
-    for line in lines:
+    for i, line in enumerate(lines):
+        if not line.startswith("TP53"):
+            continue
+
         if line.split(" ")[2] == "p":
             variant = Variant(line.split(" ")[0], line.split(" ")[1], "protein", fetch_data=True)
         else:
             variant = Variant(line.split(" ")[0], line.split(" ")[1], "transcript", fetch_data=True)
 
-        article_ids = model_output_ids[variant.variant_string]
+        article_objs = variant2objs[variant.variant_string]
         verification_results = []
-        for art_id in article_ids:
-            article = build_article_like_object_for_verification(art_id)
-            result = asyncio.run(run_verification_for_one_article(variant, article, prompt_template))
-            data = dict(result.output)
+        for art in article_objs:
+            article = build_article_like_object_for_verification(variant, art)
+            try:
+                result = asyncio.run(run_verification_for_one_article(variant, article, prompt_template))
+                data = dict(result.output)
+            except Exception as e:
+                logger.exception(
+                    f"Probably exceeded token limit. Error running verification for article {art['art_id']}: {e}")
+                data = {"reason": str(e), "is_relevant": None}
             data.update(
-                {"article_id": art_id,
+                {"article_id": art["art_id"],
+                 "is_in_clinvar": art["art_id"] in clinvar_ids[variant.variant_string],
                  "article_data": article,
-                 # "is_in_clinvar": art_id in clinvar_ids[variant.variant_string],
                  }
             )
 
             verification_results.append(data)
 
-        with open(DATA_DIR / "retrieval_quality" / get_unique_safe_filename(variant.variant_string), "w", encoding="utf-8") as f:
+        with open(DATA_DIR / "retrieval_quality" / get_unique_safe_filename(variant.variant_string), "w",
+                  encoding="utf-8") as f:
             json.dump(verification_results, f, ensure_ascii=False, indent=4)
-
-        break
 
 
 def compute_retrieval_quality_stats():
-    raise NotImplementedError
+    global_total = 0
+    global_score = 0
+    global_in_clinvar = 0
+    global_is_suppl = 0
+    not_evaluated = 0
+
+    global_score_clinvar = 0
+    global_score_without_clinvar = 0
+    global_score_suppl = 0
+
+    for path in os.listdir(DATA_DIR / "retrieval_quality"):
+        if path == "old_partly_empty":
+            continue
+        with open(DATA_DIR / "retrieval_quality" / path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+            variant_total = len(data)
+            variant_in_clinvar = 0
+            variant_is_suppl = 0
+            variant_score = 0
+
+            variant_score_clinvar = 0
+            variant_score_without_clinvar = 0
+            variant_score_suppl = 0
+
+            for article in data:
+                if article["is_relevant"] is None:
+                    not_evaluated += 1
+                    print(path, article["article_id"], article["reason"])
+                    continue
+                if article["is_in_clinvar"]:
+                    variant_in_clinvar += 1
+                    if article["is_relevant"]:
+                        variant_score += 1
+                        variant_score_clinvar += 1
+                else:
+                    if article["is_relevant"]:
+                        variant_score += 1
+                        variant_score_without_clinvar += 1
+
+                if "\nSupplementary Data:\n" in article["article_data"]["body"]:
+                    variant_is_suppl += 1
+                    if article["is_relevant"]:
+                        variant_score_suppl += 1
+
+            global_total += variant_total
+            global_score += variant_score
+            global_in_clinvar += variant_in_clinvar
+            global_is_suppl += variant_is_suppl
+
+            global_score_clinvar += variant_score_clinvar
+            global_score_without_clinvar += variant_score_without_clinvar
+            global_score_suppl += variant_score_suppl
+
+    global_total = global_total - not_evaluated
+
+    print("score", f"{global_score}/{global_total}", global_score / global_total)
+    print("score_in_clinvar", f"{global_score_clinvar}/{global_in_clinvar}", global_score_clinvar / global_in_clinvar)
+    print("score_not_in_clinvar", f"{global_score_without_clinvar}/{(global_total - global_in_clinvar)}", global_score_without_clinvar / (global_total - global_in_clinvar))
+    print("score_suppl", f"{global_score_suppl}/{global_is_suppl}", global_score_suppl / global_is_suppl)
+    print("score_not_suppl", f"{global_score - global_score_suppl}/{global_total - global_is_suppl}", (global_score - global_score_suppl)/(global_total - global_is_suppl))
+    print("not_evaluated", not_evaluated)
 
 
 if __name__ == '__main__':
@@ -369,6 +557,14 @@ if __name__ == '__main__':
 
     # print(time.time() - start)
 
-    # compare_ids_fast()
-
-    run_retrieval_quality_with_llm()
+    compare_ids_fast()
+    # built = build_article_like_object_for_verification(
+    #     Variant("BARD1", "c.1670G>C", "transcript"),
+    #     art_obj={
+    #         "art_id": "PMC5819082",
+    #         "is_suppl": False
+    #     }
+    # )
+    # pprint(built)
+    # run_retrieval_quality_with_llm()
+    # compute_retrieval_quality_stats()
