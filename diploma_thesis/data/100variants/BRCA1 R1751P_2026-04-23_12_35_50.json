@@ -1,0 +1,257 @@
+{
+    "before_pruning": {
+        "articles_in_total": 23,
+        "only_medline_count": 0,
+        "only_pmc_count": 4,
+        "only_suppl_count": 19,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 23,
+        "only_medline_count": 0,
+        "only_pmc_count": 4,
+        "only_suppl_count": 19,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "variant": "BRCA1 R1751P",
+    "time_to_process_articles": 10.86,
+    "context_length": 16816,
+    "after_removal": {
+        "articles_in_total": 8,
+        "only_medline_count": 0,
+        "only_pmc_count": 4,
+        "only_suppl_count": 4,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "",
+            "pmcid": "PMC3040717",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 109,
+            "abstract_length": 1687,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC2894074",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 100,
+            "abstract_length": 1866,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                392
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3111818",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 123,
+            "abstract_length": 1575,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6247502",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 96,
+            "abstract_length": 1872,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                405
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7125325",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 102,
+            "abstract_length": 1536,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10098510",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 146,
+            "abstract_length": 2250,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10558845",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 73,
+            "abstract_length": 2023,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6181777",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 72,
+            "abstract_length": 1039,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        }
+    ],
+    "narrative_summary": "The BRCA1 missense variant p.Arg1751Pro (R1751P) is recorded in the Breast Cancer Information Core as a known BRCA1 alteration, alongside other changes at the same residue such as R1751Q [PMC2894074]. No specific clinical case reports, segregation data, or formal classification of pathogenicity are provided in the extracted source. The article in which the variant is mentioned focuses on arginine methylation of BRCA1 and does not present functional assays, population frequency data, or computational predictions for R1751P, leaving the biological impact of this substitution uncharacterized. Consequently, the current evidence is insufficient to assign a definitive pathogenic or benign status to BRCA1 R1751P; it remains a variant of uncertain significance pending further clinical or functional investigation.",
+    "structured_summary": {
+        "overall_pathogenicity": "uncertain",
+        "overall_confidence": "low",
+        "pathogenicity_counts": {
+            "supports benignity": 0,
+            "supports pathogenicity": 0,
+            "uncertain": 0
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...two of these residues, R1076 and R1751 have known BRCA1 mutations, R1076T, R1751Q and **R1751P**, according to the Breast Cancer Information Core (http://research.nhgri.nih.gov/bic/). To determine if methylated BRCA1 could be detected in breast cancer cell lines, two cell lines,...",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article shows that BRCA1 is methylated at specific arginine and lysine residues, which alters its promoter binding and protein\u2011protein interactions, suggesting methylation can modulate BRCA1 tumor\u2011suppressor activity.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC2894074",
+            "title": "Methylation of the Tumor Suppressor Protein, BRCA1, Influences Its Transcriptional Cofactor Function",
+            "relevance_score": 1.0,
+            "pub_year": 2010,
+            "data_sources": [
+                "pmc"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 1839,
+            "output": 178
+        },
+        {
+            "input": 2056,
+            "output": 570
+        },
+        {
+            "input": 1816,
+            "output": 191
+        },
+        {
+            "input": 2190,
+            "output": 386
+        },
+        {
+            "input": 1791,
+            "output": 335
+        },
+        {
+            "input": 1965,
+            "output": 376
+        },
+        {
+            "input": 1850,
+            "output": 192
+        },
+        {
+            "input": 1672,
+            "output": 238
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 790,
+        "output": 474
+    },
+    "total_time": 21.83
+}

@@ -1,0 +1,171 @@
+{
+    "before_pruning": {
+        "articles_in_total": 7,
+        "only_medline_count": 0,
+        "only_pmc_count": 1,
+        "only_suppl_count": 5,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 7,
+        "only_medline_count": 0,
+        "only_pmc_count": 1,
+        "only_suppl_count": 5,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "variant": "BRCA2 S2533C",
+    "time_to_process_articles": 5.83,
+    "context_length": 8538,
+    "after_removal": {
+        "articles_in_total": 3,
+        "only_medline_count": 0,
+        "only_pmc_count": 1,
+        "only_suppl_count": 1,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "",
+            "pmcid": "PMC6546720",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 83,
+            "abstract_length": 2321,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "c 7598c g 5\u2032ss \u22124 0 4 27 \u2212 3 eses \u2212 eses c 7601c t \u2212 2 eses \u2212 eses c 7611 7615deltaaac 3\u2032ss 0 4 0 86 2 eses \u2212 1 ese 66 67 3\u2032ss \u00b1 eses ess c 7617g a 5\u2032ss 0 99 0 8"
+            ],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                1449,
+                200
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9433957",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 152,
+            "abstract_length": 1704,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                411
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6287763",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 134,
+            "abstract_length": 1358,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        }
+    ],
+    "narrative_summary": "The BRCA2 missense variant p.Ser2533Cys (c.7598C>G) occurs in the region of the gene implicated in hereditary breast and ovarian cancer susceptibility. Clinical interpretation of this change has been addressed in recent studies.\n\nA 2022 analysis that incorporated homology\u2011directed repair functional assay results into an ACMG/AMP framework classified the variant as likely benign (LBEN), supporting a non\u2011pathogenic role for p.Ser2533Cys [PMC9433957].\n\nExperimental assessment of the variant\u2019s effect on splicing was attempted in a 2019 minigene study of BRCA2 exons 14\u201115, but mutagenesis of c.7598C>G failed, preventing functional testing; only in silico splice\u2011site predictions were reported and no pathogenicity classification was assigned [PMC6546720].\n\nComputational splice\u2011site analysis for c.7598C>G indicated alterations to a 5\u2032 splice\u2011site and changes in exonic splicing enhancer motifs, but the study did not draw a definitive conclusion regarding its impact on splicing or disease risk [PMC6546720].\n\nTaken together, the available evidence includes a formal likely\u2011benign clinical classification and a lack of experimental functional data, with computational predictions suggesting possible splice\u2011site effects but without corroborating functional validation. The preponderance of evidence therefore supports the interpretation of BRCA2 p.Ser2533Cys as a likely benign variant.",
+    "structured_summary": {
+        "overall_pathogenicity": "benign",
+        "pathogenicity_counts": {
+            "supports benignity": 1,
+            "supports pathogenicity": 0,
+            "uncertain": 0
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "A total of 52 variants were genetically engineered in the wt MGBR2_14-20 by using specific primers (Supplementary Table S2). Despite 53 variants were initially selected, mutagenesis experiments did not work for c.**7598C > G** variant. The 52 mutant minigenes were checked by Sanger sequencing and assayed in MCF-7 cells. Results showed that 12 of them (23%) altered splicing (Table 2 and Figure 3), seven of which had previously been classified as pathogenic and five as VUS (Table 3). Among these 12 variants, there were 9 intronic, 2 missense and 1 nonsense changes. Functionally, the 9 intronic variants (c.7008-3C > G, c.7008-2A > T, c.7008-1G > A, c.7435+1G > C, c.7436-2A > T, c.7436-1G > A, c.7617+1G > A, c.7617+1G > T, and c.7617+2T > G) disrupted the natural splice sites, the two missense changes (c.7177A > G and c.7447A > G) triggered the use of de novo splice sites and originated other transcripts, and the nonsense one (c.7501C > T) probably altered SREs despite it was primarily selected because of the creation of a new 5'ss (Table 1). According to, nine variants induced severe splicing disruptions as they produced more than 60% of aberrant transcripts, ranging from 92.8 to 100% (Table 3).",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "c.**7598C > G** 5\u2032SS, \u22124.0\u21924.27 [\u2212] 3 ESEs [\u2212]ESEs c.7601C > T [\u2212] 2 ESEs [\u2212]ESEs c.7611_7615delTAAAC 3\u2032SS, <0.4\u21920.86 [+] 2 ESEs; [\u2212]1 ESE [+] (66.67) [+] 3\u2032SS; [\u00b1]ESEs; [+] ESS c.7617G > A 5\u2032SS, 0.99\u21920.8",
+                    "mention_type": "computational",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study evaluated spliceogenic BRCA2 variants in exons 14\u201115, but the S2533C (c.7598C>G) variant could not be experimentally tested and only computational splice\u2011site predictions are reported, without a pathogenicity classification.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6546720",
+            "title": "Minigene Splicing Assays Identify 12 Spliceogenic Variants of BRCA2 Exons 14 and 15",
+            "relevance_score": 1.0,
+            "pub_year": 2019,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...- - BS3 VUS VUS p.Lys2849Glu 4.56 PM1 - - - BP4 PM2 - - BS3-published^ LBEN LBEN p.Pro2827Ser 4.61 PM1 - - - BP4 PM2 - - BS3 VUS LBEN p.Asp2665Gly 4.74 PM1 - - - BP4 - - - BS3-published^ LBEN LBEN **p.Ser2533Cys** 4.64 PM1 - - - BP4 PM2 - - BS3 VUS LBEN p.Gln2561Arg 4.66 PM1 - - - BP4 PM2 - - BS3 VUS LBEN p.Gly3086Ala 4.73 PM1 - - - BP4 - - - BS3 VUS LBEN p.Pro2785Leu 4.79 PM1 - - - PP3 PM2 - - BS3 VUS VUS...",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "Using HDR functional assay data within an ACMG/AMP framework, the study re\u2011classified BRCA2 S2533C as likely benign (LBEN).",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9433957",
+            "title": "Classification of BRCA2 variants of uncertain significance (VUS) using an ACMG/AMP model incorporating a homology directed repair (HDR) functional assay",
+            "relevance_score": 0.22,
+            "pub_year": 2022,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 2792,
+            "output": 922
+        },
+        {
+            "input": 38018,
+            "output": 32241
+        },
+        {
+            "input": 1859,
+            "output": 225
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 1637,
+        "output": 702
+    },
+    "total_time": 234.95
+}

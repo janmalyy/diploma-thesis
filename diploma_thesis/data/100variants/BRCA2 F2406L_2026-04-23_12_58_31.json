@@ -1,0 +1,116 @@
+{
+    "before_pruning": {
+        "articles_in_total": 6,
+        "only_medline_count": 0,
+        "only_pmc_count": 4,
+        "only_suppl_count": 2,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 6,
+        "only_medline_count": 0,
+        "only_pmc_count": 4,
+        "only_suppl_count": 2,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "variant": "BRCA2 F2406L",
+    "time_to_process_articles": 12.3,
+    "context_length": 5172,
+    "after_removal": {
+        "articles_in_total": 2,
+        "only_medline_count": 0,
+        "only_pmc_count": 1,
+        "only_suppl_count": 1,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "",
+            "pmcid": "PMC7722754",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 114,
+            "abstract_length": 1641,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1867
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7519908",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 100,
+            "abstract_length": 1104,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        }
+    ],
+    "narrative_summary": "The BRCA2 missense variant p.Phe2406Leu (F2406L) alters a highly conserved phenylalanine residue in the DNA repair gene BRCA2, a gene in which pathogenic variants predispose to hereditary breast and ovarian cancer. Functional assessment using a mouse embryonic stem cell\u2013based assay reported that the F2406L substitution behaved similarly to wild\u2011type protein, yet the authors classified the result as uncertain, reflecting a lack of definitive functional impact [PMC7722754]. No clinical case data, segregation analyses, population frequency information, or computational prediction scores were provided in the extracted evidence for this variant. Consequently, the current evidence base classifies BRCA2 F2406L as a variant of uncertain significance, with functional assays suggesting retained activity but insufficient to resolve its pathogenic potential.",
+    "structured_summary": {
+        "overall_pathogenicity": "uncertain",
+        "pathogenicity_counts": {
+            "supports benignity": 0,
+            "supports pathogenicity": 0,
+            "uncertain": 1
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Varianta Amino acid changeb ClinVar classificationc BRCA exchanged mES-based classificatione c.73G > A p.Gly25Arg (G25R) Uncertain (2) Indeterminate c.91 T > C p.TrpW31Arg (W31R) Uncertain (1) Non-functional c.93 G > T p.Trp31Cys (W31C) Likely Pathogenic (1)/Uncertain (1) Non-functional c.73_118del (delex3-5') p.Gly25_Ala40del (G25_A40del) Non-functional c.119_312del (delex3-3') p.Pro41_Asp104del (P41_D104del) Functional c.317_631del (delex4-7) p.Gly106_Ile210del (G106_I210del) Indeterminate c.581 G > A p.Trp194Stop (W194X) Pathogenic (10) Pathogenic Non-functional c.631 + 2 T > G IVS7 + 2 T > G Pathogenic (2)/Likely Pathogenic (1) Pathogenic Non-functional c.1964C > G p.Pro655Arg (P655R) Benign (22) Benign Functional c.6323 G > A p.Arg2108His (R2108H) Benign (27) Benign Functional c.6853 A > G p.Ile2285Val (I2285V) Benign (18) Benign Functional c.6842_6937del (delex12) p.Gly2281_Asp2312de (G2281_D2312del)l Functional c.7007 G > A p.Arg2336His(R2336H) Pathogenic (23) Pathogenic Functional c.7216_7217TT > GA p.Phe2406Asp (F2406D) Functional c.**7218 T > G** **p.Phe2406Leu** (**F2406L**) Uncertain (1) Functional c.7468 A > G p.Ile2490Thr (I2490T) Uncertain (1) Functional c.7529 T > C p.Leu2510Pro (L2510P) Likely Pathogenic (4) Non-functional c.7878 G > C p.Trp2626Cys(W2626C) Pathogenic (16) Pathogenic Non-functional c.7958 T > C p.Leu2653Pro (L2653P) Pathogenic (4)/Likely Pathogenic (3) Non-functional c.8084 C > T p.Ser2695Leu (S2695L) Likely benign (1)/Uncertain (2) Functional c.8187 G > T p.Lys2729Asn (K2729N) Benign (16) Benign Functional c.8830 A > T p.Iso2944Phe (I2944F) Benign (26) Benign Functional c.9004 G > A p.Glu3002Lys (E3002K) Pathogenic (11)/Likely Pathogenic (4) Nonfunctional c.9285 C > G p.Asp3095Glu (D3095E) Pathogenic (6)/Likely Pathogenic (2) Nonfunctional c.9371 A > T p.Asn3124Iso (N3124I) Pathogenic (20) Pathogenic Nonfunctional",
+                    "mention_type": "functional",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The article provides functional assay data for the BRCA2 F2406L variant, indicating it behaves functionally in mouse ESCs but its clinical significance remains classified as uncertain (VUS).', ",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7722754",
+            "title": "A computational model for classification of BRCA2 variants using mouse embryonic stem cell-based functional assays",
+            "relevance_score": 1.0,
+            "pub_year": 2020,
+            "data_sources": [
+                "pmc"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 2532,
+            "output": 640
+        },
+        {
+            "input": 1750,
+            "output": 184
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 1427,
+        "output": 466
+    },
+    "total_time": 19.08
+}

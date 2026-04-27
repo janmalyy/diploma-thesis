@@ -1,0 +1,2064 @@
+{
+    "before_pruning": {
+        "articles_in_total": 44,
+        "only_medline_count": 1,
+        "only_pmc_count": 25,
+        "only_suppl_count": 14,
+        "both_pmc_and_suppl_count": 4,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 44,
+        "only_medline_count": 1,
+        "only_pmc_count": 25,
+        "only_suppl_count": 14,
+        "both_pmc_and_suppl_count": 4,
+        "all_three_count": 0
+    },
+    "variant": "PALB2 G998E",
+    "time_to_process_articles": 2.51,
+    "context_length": 146604,
+    "after_removal": {
+        "articles_in_total": 42,
+        "only_medline_count": 1,
+        "only_pmc_count": 24,
+        "only_suppl_count": 13,
+        "both_pmc_and_suppl_count": 4,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "25833210",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 83,
+            "abstract_length": 1223,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7997419",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 142,
+            "abstract_length": 1492,
+            "number_of_unmatched_snippets": 3,
+            "unmatched_snippets": [
+                "or 4 b lb missense variants p asp134asn d134n p leu337ser l337s p gln559arg q559r and p gly998glu g998e white bars or empty vector or 3 pathogenic likely pathogenic variants p arg753ter",
+                "functional studies herein on the p ser64leu and p pro104leu variants of palb2 rather than p leu337ser p gln559arg p glu672gln and p gly998glu based on alamut visual ser64leu and pro104leu were not",
+                "p leu337ser l337s p gln559arg q559r and p gly998glu g998e white bars or empty vector or 3 pathogenic likely pathogenic variants p arg753ter r753x p glu837ter e837x and p arg1086ter"
+            ],
+            "number_of_paragraphs": 10,
+            "paragraphs_lengths": [
+                463,
+                1018,
+                1707,
+                360,
+                1251,
+                1780,
+                286,
+                201,
+                200,
+                200
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3291835",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 75,
+            "abstract_length": 1134,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 3,
+            "paragraphs_lengths": [
+                785,
+                863,
+                1041
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7056643",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 74,
+            "abstract_length": 1428,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                417,
+                1316
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8131579",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 88,
+            "abstract_length": 1691,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 4,
+            "paragraphs_lengths": [
+                1618,
+                407,
+                1888,
+                908
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5345197",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 91,
+            "abstract_length": 1569,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 3,
+            "paragraphs_lengths": [
+                467,
+                1395,
+                606
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5462348",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 136,
+            "abstract_length": 1710,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                505,
+                1432
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3059396",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 79,
+            "abstract_length": 1619,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "m exon 8 1 194 benign neutral g998e exon 9 3 194 probably damaging pathological t1100t exon 12 3 194 s1165s exon 13 1 194 y1183x exon 13 1 194 published mutation screening studies of brca2 in mbc csge"
+            ],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                614,
+                200
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3914669",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 110,
+            "abstract_length": 0,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9024623",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 69,
+            "abstract_length": 2154,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                2579
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3672826",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 82,
+            "abstract_length": 2453,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "0 68 class c0 possibly damaging 0 578 c 2993g a p gly998glu 17 0 9 affect protein function p 0 00 class c65 probably damaging 1 000 family cancer histories of probands carriers of palb2"
+            ],
+            "number_of_paragraphs": 3,
+            "paragraphs_lengths": [
+                328,
+                1824,
+                195
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6847799",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 107,
+            "abstract_length": 1322,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 4,
+            "paragraphs_lengths": [
+                1465,
+                405,
+                406,
+                910
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4065098",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 63,
+            "abstract_length": 1251,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "0 715 0 398 exon 9 p g998e c 2993g a rs45551636 73 0 66 0 0 148 0 700 exon 13 p y1183x c 3549c g rs118203998 1 0 0 0 \u2013 \u2013 discussion to assess the contribution of palb2 to melanoma predisposition we"
+            ],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                1368,
+                199
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4323211",
+            "data_sources": [
+                "pmc",
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 125,
+            "abstract_length": 1825,
+            "number_of_unmatched_snippets": 2,
+            "unmatched_snippets": [
+                "predicted that this variant is not pathogenic and therefore we classified this missense mutation as a new mutation of unknown significance the variants c 1676a g p q559r and c 2993c t p g998e",
+                "three dimensional structure in the wildtype palb2 protein and the p g998e c 2993c t variant competing interest the authors declare that they have no competing interests authors\u2019 contributions"
+            ],
+            "number_of_paragraphs": 4,
+            "paragraphs_lengths": [
+                920,
+                1202,
+                200,
+                197
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    348
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7525363",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 123,
+            "abstract_length": 1342,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 3,
+            "paragraphs_lengths": [
+                1861,
+                737,
+                1898
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3244533",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 84,
+            "abstract_length": 1223,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                540
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8768047",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 59,
+            "abstract_length": 1671,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                530
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6876638",
+            "data_sources": [
+                "pmc",
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 96,
+            "abstract_length": 1151,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 3,
+            "paragraphs_lengths": [
+                1380,
+                1552,
+                400
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    54
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC2806404",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 73,
+            "abstract_length": 1309,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                669
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5999175",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 142,
+            "abstract_length": 1775,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1212
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10454606",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 152,
+            "abstract_length": 1959,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                1082,
+                1634
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6639217",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 111,
+            "abstract_length": 1691,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                408
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4741850",
+            "data_sources": [
+                "pmc",
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 124,
+            "abstract_length": 1367,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                410,
+                1620
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    421
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5312584",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 74,
+            "abstract_length": 1442,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                812,
+                1343
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4539664",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 85,
+            "abstract_length": 1363,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                407
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5819082",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 88,
+            "abstract_length": 1891,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                964
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7770135",
+            "data_sources": [
+                "pmc",
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 104,
+            "abstract_length": 1307,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 3,
+            "paragraphs_lengths": [
+                416,
+                396,
+                405
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    1421
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6636136",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 85,
+            "abstract_length": 2084,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "variants were found among the variants a palb2 p e672q variant polyphen score 0 275 was present in one tumor and a deleterious palb2 p g998e variant found in another polyphen score 1 both tumors were"
+            ],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                205
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4001065",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 85,
+            "abstract_length": 1905,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                405,
+                403
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4828881",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 135,
+            "abstract_length": 2410,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    29
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5623817",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 111,
+            "abstract_length": 2117,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    516
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4163678",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 121,
+            "abstract_length": 1873,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    685
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7870655",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 113,
+            "abstract_length": 2125,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    87
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7288470",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 129,
+            "abstract_length": 1374,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    72
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9988940",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 101,
+            "abstract_length": 2163,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    349
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7409965",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 105,
+            "abstract_length": 1983,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    226
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9116026",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 91,
+            "abstract_length": 1882,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    729
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3960610",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 130,
+            "abstract_length": 1572,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    769
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5740532",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 123,
+            "abstract_length": 1455,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    717
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5963617",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 123,
+            "abstract_length": 1254,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    337
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6457907",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 81,
+            "abstract_length": 1717,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    68
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7108902",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 73,
+            "abstract_length": 1379,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    523
+                ]
+            ]
+        }
+    ],
+    "narrative_summary": "The PALB2 missense change p.Gly998Glu (c.2993G>A) is a recurrent germline variant that has been identified in families with breast, pancreatic, ovarian and other cancers, and it is listed in public databases such as ClinVar (e.g., as benign/likely benign) [PMC7997419].\nClinical reports are discordant. Several cohort studies describe the variant as a common polymorphism with no clear disease association, noting similar carrier frequencies in cases and controls and classifying it as benign or likely benign in ClinVar (e.g., Polish BRCA\u2011negative patients) [PMC5345197] and in large multi\u2011gene panels where it appears without pathogenic annotation [PMC9024623]. In contrast, a Lebanese familial\u2011breast\u2011cancer series reported the variant as a recurrent alteration associated with an increased breast\u2011cancer risk and annotated it as a disease\u2011associated polymorphism [PMC5312584]. Computational predictions in some studies (e.g., PolyPhen, SIFT, MutPred, SDS) label the change as probably damaging or deleterious [PMC4539664, PMC4001065], whereas other in\u2011silico assessments and ClinVar entries support a benign interpretation [PMC7997419]. A male\u2011breast\u2011cancer cohort used only computational tools and suggested pathogenicity, and a colorectal\u2011cancer VUS list records the variant as of uncertain significance [PMC3059396, PMC5819082].\nFunctional assays consistently show that p.Gly998Glu behaves like a non\u2011pathogenic control. Homologous\u2011recombination (HR) activity of the variant is indistinguishable from wild\u2011type PALB2 in DR\u2011GFP reporter assays, and cells expressing the variant remain resistant to PARP inhibition, mirroring benign variants such as p.P864S and p.V932M [PMC7997419, PMC7525363, PMC6847799, PMC6876638]. No loss of function or checkpoint defects were observed, and the variant was used as a benign reference in multiple functional studies [PMC7997419, PMC7525363].\nPopulation data demonstrate that the allele is relatively common, with minor\u2011allele frequencies of ~2\u20133\u202f% in European cohorts (German, Russian, Polish, Finnish) and comparable frequencies in cancer cases and healthy controls, indicating no strong enrichment in disease cohorts [PMC3291835, PMC7056643, PMC5345197, PMC2806404].\nOverall, the preponderance of functional evidence and population frequency data support a benign or likely benign classification for PALB2 p.Gly998E. While a few reports suggest a possible modest risk or label the variant as a disease\u2011associated polymorphism, the lack of functional impact and the absence of consistent case\u2011control enrichment argue against a pathogenic role. The current weight of evidence therefore favors interpretation of p.Gly998E as a benign missense variant with no clear contribution to cancer susceptibility.",
+    "structured_summary": {
+        "overall_pathogenicity": "uncertain",
+        "pathogenicity_counts": {
+            "supports pathogenicity": 18,
+            "uncertain": 2,
+            "supports benignity": 22
+        },
+        "conflicting_evidence": true
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Partner and localizer of BRCA2 (PALB2), plays an important functional role in DNA damage repair. Recent studies indicate that germline mutations in PALB2 predispose individuals to a high risk of developing familial breast cancer. Therefore, comprehensive identification of PALB2 germline mutations is potentially important for understanding their roles in tumorigenesis and for testing their potential utility as clinical targets. Most of the previous studies of PALB2 have focused on familial breast cancer cases with normal/wild-type BRCA1 and BRCA2 (BRCAx). We hypothesize that PALB2 genetic mutations also exist in individuals with BRCA mutations (BRCA+). To test this hypothesis, PALB2 germline mutations were screened in 107 exome data sets collected from familial breast cancer families who were either BRCA1+ or BRCAx. Two novel heterozygous mutations predicted to alter the function of PALB2 were identified (c.2014G>C, p.E672Q and c.2993G>A, **p.G998E**). Notably, both of these mutations co-existed in BRCA1+ and BRCA1x families. These studies show that mutations in PALB2 can occur independent of the status of BRCA1 mutations, and they highlight the importance to include BRCA1+ families in PALB2 mutation screens.",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study identified the PALB2 p.G998E germline mutation in familial breast cancer families, co-occurring with BRCA1 status, and predicts it may affect protein function.",
+            "uncertainties_or_limitations": null,
+            "article_id": "25833210",
+            "title": "Two PALB2 germline mutations found in both BRCA1+ and BRCAx familial breast cancer.",
+            "relevance_score": 1.0,
+            "pub_year": 2015,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Cloning of the cDNA for WT PALB2 into pMMP and pCDNA3.1 containing a N-terminal Flag-HA epitope tag has been described elsewhere (Zhang, Fan, et al., 2009). PALB2 cDNAs encoding the Ser64Leu and Pro104Leu, as well as the Leu35Pro, Asp134Asn, Leu337Ser, Gln559Arg, **Gly998Glu**, Arg753Ter, Glu837Ter and Arg1086Ter variants were generated using the QuikChange II Site-Directed Mutagenesis kit (Stratagene) according to the manufacturer\u2019s instructions.",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Four other missense PALB2 variants, c.1010T>C (p.Leu337Ser), c.1676A>G (p.Gln559Arg), c.2014G>C (p.Glu672Gln) and c.2993G>A (**p.Gly998Glu**), all of which are reported as likely benign (LB) or benign (B) in ClinVar, were also detected in the cohort of familial pancreatic cancer patients. Unlike Ser64Leu and Pro104Leu, all of these missense PALB2 variants have been reported several times in the literature. Leu337Ser, Gln559Arg, Glu672Gln and **Gly998Glu** have been observed in breast cancer patients (Erkko et al., 2007; Rahman et al., 2007; Thompson et al., 2015; Tischkowitz et al., 2007), Leu337Ser and **Gly998Glu** in pancreatic cancer patients (Blanco et al., 2013; Hofstatter et al., 2011), and Gln559Arg in Fanconi anemia patients (Xia et al., 2007). Because of these numerous reports and because each is reported as B/LB in ClinVar, we focused our functional studies herein on the p.Ser64Leu and p.Pro104Leu variants of PALB2 rather than p.Leu337Ser, p.Gln559Arg, p.Glu672Gln and **p.Gly998Glu**.",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "HR assays are relevant for assessing the clinical impact of variants in genes such as BRCA1/2, as well as PALB2, when there is insufficient genetic data (Toland & Andreassen, 2017). Typically, such assays are calibrated based upon known benign and pathogenic variants (Toland & Andreassen, 2017). Although relatively few benign and pathogenic PALB2 variants have been identified, we tested the effects of the p.Ser64Leu and p.Pro104Leu variants of PALB2 on HR in comparison to 4 benign (B)/likely benign (LB) and 4 pathogenic/complete loss of function (LOF) variants. Three of the B/LB variants, Leu337Ser, Gln559Arg and **Gly998Glu**, were identified in our cohort of familial pancreatic cancer patients, and in other various types of cancer and/or Fanconi anemia as detailed earlier in this section. The fourth B/LB variant, Asp134Asn, has been observed in breast cancer patients (Thompson et al., 2015; Zheng, Zhang, Niu, Huo, & Olopade, 2012). Given the dearth of known pathogenic (P)/likely pathogenic (LP) or full LOF missense variants of PALB2, we tested Leu35Pro, which has been reported as either pathogenic (Foo et al., 2017; Rodrigue et al., 2019) or as a LOF variant (Boonen et al., 2019; Wiltshire et al., 2020), as well as 3 nonsense mutants: Arg753Ter, Glu837Ter and Arg1086Ter. One or more of each of these truncating variants has been associated with familial pancreatic cancer (Jones et al., 2009; Zhen et al., 2015), familial breast cancer (Antoniou et al., 2014; Thompson et al., 2015), germline mutations in unselected breast cancer patients (Sun et al., 2017), familial ovarian cancer (Norquist et al., 2016), and Fanconi anemia (Reid et al., 2007).",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "The Asp134Asn and Arg1086Ter forms of PALB2, which were resistant to siPALB2, were expressed in U2OS-DR cells at similar levels as WT PALB2 and PALB2-Ser64Leu and PALB2-Pro104Leu (Fig. 5A). Similarly, si-resistant Leu337Ser, Gln559Arg, **Gly998Glu**, Leu35Pro, Arg753Ter and Glu837Ter were detected in U2OS-DR cells (Supp. Fig. S2).",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Quantification demonstrates that the levels of DSB-initiated HR associated with each of the B/LB missense PALB2 variants, p.Asp134Asn, p.Leu337Ser, p.Gln559Arg and **p.Gly998Glu**, were indistinguishable from PALB2-WT (Fig. 5C). This is consistent with a recent publication (Boonen et al., 2019). In contrast, each of the P/LP variants, p.Arg753Ter, p.Glu837Ter and p.Arg1086Ter, as well as p.Leu35Pro, displayed a clear loss of function in HR (Fig. 5C). In particular, consistent with recent publications (Boonen et al., 2019; Rodrigue et al., 2019; Wiltshire et al., 2020), the level of HR associated with the empty vector and with the p.Leu35Pro missense variant were indistinguishable. Importantly, both the Ser64Leu and Pro104Leu PALB2 variants, identified in familial pancreatic cancer patients, strongly compromised HR (Fig. 5C), and were intermediate to the HR activities of WT PALB2 and the 4 B/LB PALB2 variants, and of the empty vector and 3 P/LP variants and the p.Leu35Pro missense variant. This suggests the possibility that Ser64Leu and Pro104Leu could potentially confer an increased or intermediate risk of developing cancer due to compromised HR, which will need to be evaluated in future studies.",
+                    "mention_type": "functional",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "Our study has made an important contribution to setting thresholds, or cutoffs, for B/LB and P/LP PALB2 variants. In particular, our results (Figure 5C) agree with all other recent PALB2 functional studies that p.Leu35Pro displays full LOF in HR assays, similar to the activity of the empty vector (Boonen et al., 2019; Rodrigue et al., 2019; Wiltshire et al., 2020). In one study, Leu35Pro was classified as pathogenic based upon co-segregation of this variant with cancer in a family with a strong breast cancer predisposition (Foo et al., 2017). Additionally, we tested the same 4 B/LB missense PALB2 variants as Boonen et al. (2019), p.Asp134Asn, p.Leu337Ser, p.Gln559Arg and **p.Gly998Glu**, and similarly find that they are fully active in HR. This adds to confidence in future utilization of these B/LB variants to calibrate functional studies. Finally, we tested 3 truncation variants, p.Arg753Ter, p.Glu837Ter and p.Arg1086Ter, which to the best of our knowledge have not been previously tested functionally. These each exhibited equivalent or less HR activity than the p.Leu35Pro missense LOF variant. Thus, this study expands the list of P/LP variants that can be utilized to set functional thresholds in the future. Ultimately, while saturation screens have only been performed for a portion of BRCA1 (Findlay et al., 2018; Starita et al., 2018), our study and related studies will collectively help subsequent saturation screens for PALB2 missense variants that will more definitively establish thresholds. At present, we have determined that both p.Ser64Leu and p.Pro104Leu have intermediate HR activities as compared to the least active of the B/LB variants, p.Leu337Ser, and the most active of the P/LP-LOF variants, p.Leu35Pro.",
+                    "mention_type": "functional",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "DATA AVAILABILITY PALB2 variants identified in probands of the Familial Pancreatic Cancer Family Registry at MSKCC, including p.Ser64Leu, p.Pro104Leu, p.Leu337Ser, p.Gln559Arg, p.Glu672Gln and **p.Gly998Glu**, have been submitted to ClinVar (https://www.ncbi.nlm.nih.gov/clinvar/).)",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "or 4 B/LB missense variants [p.Asp134Asn (D134N), p.Leu337Ser (L337S), p.Gln559Arg (Q559R) and **p.Gly998Glu** (**G998E**)] (white bars), or empty vector or 3 pathogenic/likely pathogenic variants [p.Arg753Ter",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "functional studies herein on the p.Ser64Leu and p.Pro104Leu variants of PALB2 rather than p.Leu337Ser, p.Gln559Arg, p.Glu672Gln and **p.Gly998Glu**. Based on Alamut Visual, Ser64Leu and Pro104Leu were not",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "), p.Leu337Ser (L337S), p.Gln559Arg (Q559R) and **p.Gly998Glu** (**G998E**)] (white bars), or empty vector or 3 pathogenic/likely pathogenic variants [p.Arg753Ter (R753X), p.Glu837Ter (E837X) and p.Arg1086Ter",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The article provides multiple lines of evidence\u2014ClinVar classification, unchanged homologous recombination activity, and use as a benign control\u2014that PALB2 Gly998Glu (G998E) is likely a benign variant rather than pathogenic.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7997419",
+            "title": "The p.Ser64Leu and p.Pro104Leu missense variants of PALB2 identified in familial pancreatic cancer patients compromise the DNA damage response",
+            "relevance_score": 1.0,
+            "pub_year": 2020,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "PCR amplifications were set up in the presence of the EvaGreen dye (BioBudget, Krefeld, Germany), and high-resolution melting analysis was performed on the Rotor-Gene 6000 real-time PCR machine (Corbett Research, Mortlake, Australia). Primer sequences are described in the Supplementary Table 1. Melting profiles were evaluated using the Melt Curve Analysis tool of the Rotor-Gene 6000 Series Software Version 1.7. All samples with suspicious melting behavior were then subjected to direct sequencing to identify the underlying substitution. The three common PALB2 polymorphisms, p.Q559R, p.E672Q, and **p.G998E**, were confirmed by allele-specific TaqMan assays on a 7500FAST Sequence Detection System platform.",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Exon Nucleotide variation Amino acid change Allelic counts in German patients (relative fraction) Allelic counts in Russian patients (relative fraction) Reference 2 53A>G K18R 2 (0.01) - This study 4 509_510delGA Frameshift mutation (R170X) 1 (<0.01) - Dansonka-Mieszkowska et al. 807T>C G269G 1 (<0.01) - This study 1240C>T Nonsense mutation (R414X) - 1 (0.01) Slater et al. 1470C>T P490P - 1 (0.01) rs45612837 1572A>G S524S 1 (<0.01) - rs45472400 1633G>T Nonsense mutation (E545X) 1 (<0.01) - This study 1676A>G Q559R 18 (0.06) 6 (0.06) rs152451 5 2014G>C E672Q 11 (0.03) 1 (0.01) rs45532440 8 2761C>T Nonsense mutation (Q921X) - 1 (0.01) This study 2794G>A V932 M 2 (0.01) 3 (0.03) rs45624036 2816T>G L939 W 1 (<0.01) - rs45478192 9 2993G>A **G998E** 9 (0.03) 1 (0.01) rs45551636 3300T>G T1100T 7 (0.02) 1 (0.01) rs45516100 13 3495G>A S1165S 1 (<0.01) - rs45439097",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Six missense substitutions were identified besides the four truncating mutations (Table 2). The variants p.Q559R, p.E672Q, p.V932M, p.L939W and **p.G998E** are known to be relatively common both in breast cancer patients and in healthy controls. Bioinformatic analysis using SIFT and PolyPhen-2 classified p.Q559R and p.V932M as benign, whereas p.E672Q, p.L939W and **p.G998E** were predicted as probably damaging by one or both of these software tools. The new missense variant, p.K18R, was observed in two bilateral breast cancer cases from this study. It resides in a putative coiled-coil region of unknown functional importance and is predicted by PolyPhen-2 to be probably damaging. Large-scale case-control comparisons as well as functional studies will be useful to identify any possible disease risks associated with these variants.",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study identifies PALB2 p.G998E as a relatively common missense variant in bilateral breast\u2011cancer patients, reports low allele frequencies, and notes that computational predictions label it as probably damaging, but no clinical classification is provided.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC3291835",
+            "title": "PALB2 mutations in German and Russian patients with bilateral breast cancer",
+            "relevance_score": 0.88,
+            "pub_year": 2010,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...P210L 6.5 1.55 0.21 - 0.28 c.2590C>T p.Pro864Ser P864S 6.4 0.96 0.32 0.21 0.18 c.3056T>C p.Val1019Ala V1019A 6.4 0.45 0.65 0.58 0.57 c.2873A>C p.Gln958Pro Q958P 6.2 1.39 0.84 0.69 0.56 c.2993G>A **p.Gly998Glu** **G998E** 6.0 0.13 0.44 - 0.61 c.26T>A p.Leu9His L9H 5.8 0.10 0.70 0.70 0.45 c.925A>G p.Ile309Val I309V 5.8 1.15 0.01 - 0.08 c.2597G>T p.Gly866Val G866V 5.6 0.16 0.42 0.65 0.37 c.1846G>C p.Asp616His D616H 5.4...",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "The HDR assay yielded HDR scores of <=1.7, which equates to 34% activity, for four missense variants and all truncating variants, other than Y1183X. As all four missense in this range had deleterious effects in several other assays, we chose 34% as a threshold for deleterious variants and HDR scores of 2.4 or 48% activity as a threshold for hypomorphic variants. However, clinically classified variants based on family and other data sources are needed as controls to validate these thresholds. Importantly, p.L337S, **p.G998E**, p.E672Q, and p.Q559R have minor allele frequencies in the gnomAD European non-Finnish population of 1.95%, 2.19%, 2.92%, and 8.88% respectively, suggesting that these variants are not associated with substantially increased risk of cancer. Of these, p.E672Q had the lowest HDR score of 4.4. Thus, hypomorphic variants with partial effects on HDR function in this assay, ranging from 1.7 to possibly as high as 4.4, may be associated with some increased risk of breast cancer. Further studies with the other functional assays reported here may also provide some further insight into the effects of these variants on PALB2 function and on thresholds for pathogenicity.",
+                    "mention_type": "population",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The article reports that PALB2 G998E is a missense variant observed at modest frequency in the general population and provides no functional evidence of pathogenicity, indicating it is likely benign rather than disease\u2011causing.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7056643",
+            "title": "Functional characterization of 84 PALB2 variants of uncertain significance",
+            "relevance_score": 0.83,
+            "pub_year": 2019,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Superimposition of wild type and mutant structures via PyMol, yields that model C891W had the highest RMSD value of 1.463 followed by several other models (D927V, D1125Y, **G998E**, A968G, T911I, I887S, L939W, Q921H, L1150R) with RMSD value of 1.459 and 1.458. The one with the lowest RMSD value of 1.266 was mutant model L947S. There were 3 other models (C1060Y, G1121D and W1140G), which possessed lower RMSD value close to 1.266. All the models had TM- score not greater than 0.99918. L939W, L1150R and Q921H models had the highest TM-score. Finally, based on RMSD value and TM- score prediction, 8 models (C891W, D927V, **G998E**, G1021R, L947F, T911I, A968G and I887S) were selected to estimate cluster formation via Mutation 3D (Supplementary Table 5). All the models submitted had greater MPQS (ModPipe Quality) score from the minimum quality requirement threshold. Mutation 3D showed that 4 models (I887S, C891W, T911I and L947F) were involved in cluster formation. All 4 models had significant p- value of 0.000504 and were pictured as red cluster balls (Figure 4A).",
+                    "mention_type": "computational",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "...1.266 and high TM score greater than 0.99915 were excluded from later analysis. Thus 9 mutant models (C891W, D927V, D1125Y, **G998E**, G1021R, L947F, T911I, A968G, I887S) were chosen to be submitted into Mutation 3D web server for the...",
+                    "mention_type": "computational",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "SNP ID Mutant MutPred2.0 score Impact and probability P-value rs78179744 C891W 0.786 Gain of strand (30%) 0.003 Altered transmembrane protein (22%) 0.003 Altered ordered interface (25%) 0.02 rs116967702 C1060Y 0.871 Altered ordered interface (34%) 0.001 Altered metal binding (23%) 0.04 rs62625280 D927V 0.886 Altered transmembrane protein (42%) 0.000005 Loss of loop (29%) 0.01 Altered ordered surface (26%) 0.01 rs146444298 D1125Y 0.81 Altered metal binding (55%) 0.003 Altered ordered surface (41%) 0.0003 rs45551636 **G998E** 0.665 Gain of intrinsic disorder (31%) 0.04 Loss of B-factor (26%) 0.04 rs143808171 G1021R 0.8 Gain of helix (29%) 0.01 Altered transmembrane protein (26%) 0.001 rs62625282 G1121D 0.857 Altered metal binding (39%) 0.009 rs45478192 L939W 0.862 Gain of loop (27%) 0.03 Altered transmembrane protein (22%) 0.004 rs62625283 W1140G 0.942 Altered ordered surface (48%) 0.0003 Altered metal binding (22%) 0.02 rs45464500 L947S 0.821 Altered stability (80%) 0.0003 Gain of intrinsic disorder (46%) 0.03 rs141047069 L35P 0.848 Altered coiled coil (90%) 0.0007 Altered disordered interface (42%) 0.0006 Loss of helix (28%) 0.02 Loss of acetylation at K30 (26%) 0.01 rs45566737 L1150R 0.811 Gain of strand (27%) 0.03 Altered transmembrane protein (21%) 0.004 rs45510998 S417Y 0.814 Altered ordered interface (30%) 0.02 Altered disordered interface (30%) 0.02 Altered DNA binding (25%) 0.009 Gain of allosteric site (23%) 0.02 rs45550935 I887S 0.799 Gain of strand (27%) 0.02 Altered stability (20%) 0.01 rs372931676 Q921H 0.717 Altered transmembrane protein (30%) 0.0002 rs200048921 R37S 0.622 Altered disordered interface (47%) 0.004 Altered DNA binding (23%) 0.01 rs369132015 A968G 0.526 Gain of strand (26%) 0.04 rs180177123 T911I 0.534 Altered transmembrane protein (33%) 0.00006 Altered ordered interface (26%) 0.01 rs45525135 L947F 0.655 Altered stability (25%) 0.008",
+                    "mention_type": "computational",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Mutant Models Difference in size Hydrophobicity Charge Change Alteration in bond formation C891W Bigger - - - C1060Y Bigger Decreased - - D927V Smaller Increased Negative to neutral Disrupts H-bond formation with Lys at position 974; Disrupts salt bridge formation with Arginine at position 975 and position 976 D1125Y Bigger Increased Negative to neutral Disrupts salt bridge formation with lysine at position 1062 and position 1124 **G998E** Bigger Decreased Neutral to negative - G1021R Bigger Decreased Neutral to positive Disrupts local structure backbone G1121D Bigger Decreased Neutral to negative - L939W Bigger - - - W1140G and A968G Smaller Decreased - W1140G disrupts hydrogen bond formation with Cysteine at position 1109 L947F and Q921H Bigger - - - L1150R Bigger Decreased Neutral to positive - L947s and I887S Smaller Decreased - - T911I Bigger Increased - Loss of H-bond; Disrupts correct folding",
+                    "mention_type": "computational",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article uses multiple in\u2011silico tools and structural modeling to evaluate PALB2 nsSNPs, identifying G998E as a variant with predicted structural and functional disturbances that may be disease\u2011relevant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8131579",
+            "title": "Structure analysis of deleterious nsSNPs in human PALB2 protein for functional inference ",
+            "relevance_score": 0.78,
+            "pub_year": 2021,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Mutations found with NGS were validated by Sanger sequencing. Furthermore, eight selected variants, namely 172_175del4, c.347insT, c.509_510delGA, Gln559Arg, Glu672Gln, Leu939Trp, **Gly998Glu**, and Thr1100Thr were analyzed using TaqMan SNP Genotyping Assays (Thermo) on an ABI 7900HT qPCR system (Thermo), as previously described.",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "NGS Taqman genotyping Localization PALB2 cDNA change PALB2 protein change rsID Familial cancer (n = 268) Non-familial cancer (n = 192) All (n = 460) Familial cancer (n = 403) Non-familial cancer (n = 404) All (n = 807) Healthy controls (n = 1690) Exon 3 c.172_175delTTGT p.Gln60Argfs 180177143 3 (1.1%) 1 (0.5%) 4 (0.9%) 1 (0.2%) 3 (0.7%) 4 (0.5%) 4 (0.2%) Exon 4 c.347insT p.Leu116fs novel 1 (0.4%) 0 1 (0.2%) 0 0 0 0 c.509_510delGA p.Arg170Ilefs 515726123 2 (0.7%) 0 2 (0.4%) 4 (1.0%) 0 4 (0.5%) 0 c.1010T > C p.Leu337Ser 45494092 8 (3.0%) 6 (3.1%) 14 (3.0%) nt nt nt nt c.1676A > G p.Gln559Arg 152451 60 (22.4%) 39 (20.3%) 94 (20.4%) 101 (25%) 101 (25%) 202 (0.25%) 350 (21.3%) c.1572A > G p.Ser524Ser 45472400 1 (0.4%) 0 1 (0.2%) nt nt nt nt Exon 5 c.2014G > C p.Glu672Gln 45532440 16 (6.0%) 7 (3.6%) 22 (4.8%) 27 (6.7%) 32 (7.9%) 59 (7.3%) 108 (6.5%) Exon 7 c.2590C > T p.Pro854Ser 45568339 5 (1.9%) 1 (0.5%) 6 (1.3%) nt nt nt nt Exon 8 c.2794G > A p.Val932Met 45624036 6 (2.2%) 1 (0.5%) 2 (0.4%) nt nt nt nt c.2816T > G p.Leu939Trp 4548192 1 (0.4%) 1 (0.5%) 2 (0.4%) 4 (1.0%) 2 (0.5%) 6 (0.7%) 3 (0.18%) Exon 9 c.2869A > G p.Lys957Gln 515726103 0 1 (0.5%) 1 (0.2%) nt nt nt nt c.2993G > A **p.Gly998Glu** 45551636 8 (3.0%) 7 (3.6%) 15 (3.3%) 21 (5.2%) 19 (4.7%) 40 (5.0%) 73 (4.5%) Exon 12 c.3300T > G p.Thr1100Thr 45516100 15 (5.6%) 7 (3.6%) 22 (4.8%) 27 (6.7%) 32 (7.9%) 59 (7.3%) 108 (6.6%)",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Using TaqMan SNP genotyping assays, the frequencies of eight selected variants, including three truncating mutations (c.172_175delTTGT, c.347insT, c.509_510delGA), a rare missense variant (Leu939Trp), and four common polymorphisms (Gln559Arg, Glu672Gln, **Gly998Glu**, Thr1100Thr), were tested in an additional group of 807 breast and/or ovarian cancer patients (median age, 48 years; range 20-85 years), and 1690 healthy women (median age, 58 years; range 26-79 years).",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study screened PALB2 in Polish BRCA1/2\u2011negative breast/ovarian cancer patients, identified recurrent pathogenic truncating mutations, and reported the Gly998Glu missense variant as a relatively common polymorphism with similar frequencies in cases and controls, implying it is likely benign.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5345197",
+            "title": "PALB2 mutations in BRCA1/2-mutation negative breast and ovarian cancer patients from Poland",
+            "relevance_score": 0.71,
+            "pub_year": 2017,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...G396D rs36053993 c.1145G>A 0.003 1 DEL Probably Damaging VERY HIGH DEL DC 5.4 DM OCN71 NBN MISSENSE I171V rs61754966 c.511A>G 0.001 1 TOL Probably Damaging LOW NEUT DC 4.81 DM OCH30 PALB2 MISSENSE **G998E** rs45551636 c.2993G>A 0.021 2 DEL Probably Damaging LOW DEL DC 5.84 DP OCE17-2 PALB2 MISSENSE **G998E** rs45551636 c.2993G>A 0.021 2 DEL Probably Damaging LOW DEL DC 5.84 DP OCE17-2 PALB2 MISSENSE E672Q rs45532440 c.2014G>C 0.029 3 TOL Benign N/A NEUT PM 1.83 DM? OCH26 PALB2 MISSENSE E672Q rs45532440...",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "Similarly, with PALB2, we detected a pair of rare SNPs inherited together, rs45532440 (p.E672Q MAF = 0.02) and rs45551636 (**p.G998E** MAF = 0.02) r2 = 0.69, in two unrelated individuals (OCH26 and OCE17-2). PALB2 (partner and localizer of BRCA2), physically interacts with BRCA2, is critical for the localization and stability of BRCA2 in the nucleus. Females with monoallelic germline loss of PALB2 have a 2-4 fold increased breast cancer risk. CHEK2 and NBN are also known breast cancer associated genes that were found to each have an interesting variant of unknown significance in our sample. Female CHEK2 and NBN mutation carriers are at an increased lifetime risk of developing breast cancer (2-fold for CHEK2 and 3-fold for NBN carriers). Both patients had a family history of breast cancer and the carrier of CHEK2 had a secondary diagnosis of breast cancer herself. The p.I232V (rs587780185) variant in CHEK2 is extremely rare (MAF = 00001) and SIFT and PolyPhen predict this alteration as deleterious and probably damaging. NBN p.I171V (rs61754966) has contradictory annotations among various bioinformatics assessment tools, but is called as a disease causing mutation in HGMD.",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "PALB2 p.G998E is identified as a rare missense variant in high\u2011risk ovarian cancer patients and is computationally predicted to be probably damaging, though no definitive clinical classification is provided.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5462348",
+            "title": "Reanalysis of BRCA1/2 negative high risk ovarian cancer patients reveals novel germline risk loci and insights into missing heritability",
+            "relevance_score": 0.69,
+            "pub_year": 2017,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "The DNA samples from the 97 MBC cases without a pathogenic BRCA2 mutation were sequenced for PALB2. Fourteen germline variants were identified (Table 3). The truncating mutation, Y1183X, was classified as pathogenic according to Reid et al. [32] and Oliver et al. [33]. The amino acid substitution prediction methods, Polyphen [34] and PMUT [35], were used to assess whether missense variants could affect protein function. Of the six missense variants, Y28C and **G998E** were predicted to likely affect PALB2 protein function by both the Polyphen prediction and the PMUT prediction (Table 3).",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "M Exon 8 1/194 Benign Neutral **G998E** Exon 9 3/194 Probably damaging Pathological T1100T Exon 12 3/194 S1165S Exon 13 1/194 Y1183X Exon 13 1/194 Published mutation screening studies of BRCA2 in MBC CSGE",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The article provides computational predictions that G998E may be deleterious but also records the variant as benign/neutral in a table, reflecting conflicting interpretations of its clinical significance.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC3059396",
+            "title": "Mutations in BRCA2 and PALB2 in male breast cancer cases from the United States",
+            "relevance_score": 0.68,
+            "pub_year": 2010,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Sample ID Gender Age at Diagnosis (y) Kind of Cancer Gene Cdna * Protein * Reference SNP ID Status Clinvar Classification P1 M 60 Pancreas BRCA1 c.4900A > G p.(Ser1634Gly) rs1799966 Het Benign c.3548A > G p.(Lys1183Arg) rs16942 Het Benign c.3113A > G p.(Glu1038Gly) rs16941 Het Benign c.2612C > T p.(Pro871Leu) rs799917 Het Benign c.2596C > T p.(Arg866Cys) rs41286300 Het Benign c.2077G > A p.(Asp693Asn) rs4986850 Het Benign c.1067A > G p.(Gln356Arg) rs1799950 Het Benign BRCA2 c.7397T > C p.(Val2466Ala) rs169547 Hom Benign PALB2 c.2993G > A p.(**Gly998Glu**) rs45551636 Het Benign c.2014G > C p.(Glu672Gln) rs45532440 Het Benign c.1676A > G p.(Gln559Arg) rs152451 Het Benign P2 M 42 Pancreas BRCA1 c.3119G > A p.(Ser1040Asn) rs4986852 Het Benign BRCA2 c.7397T > C p.(Val2466Ala) rs169547 Hom Benign P3 M 66 Pancreas BRCA2 c.3055C > G p.(Leu1019Val) rs55638633 Het Benign c.7397T > C p.(Val2466Ala) rs169547 Hom Benign PALB2 c.1676A > G p.(Gln559Arg) rs152451 Het Benign P4 M 69 Pancreas BRCA2 c.67+1G > A p.(?) rs81002796 Het Pathogenic c.1114A > C p.(Asn372His) rs144848 Het Benign c.7397T > C p.(Val2466Ala) rs169547 Hom Benign PALB2 c.2993G > A p.(**Gly998Glu**) rs45551636 Het Benign c.2014G > C p.(Glu672Gln) rs45532440 Het Benign c.1676A > G p.(Gln559Arg) rs152451 Het Benign P5 M 81 Colorectal BRCA1 c.1067A > G p.(Gln356Arg) rs1799950 Hom Benign BRCA2... ...Prostate BRCA2 c.7397T > C p.(Val2466Ala) rs169547 Hom Benign P22 F 75 Pancreas BRCA2 c.7057G > C p.(Gly2353Arg) rs80358935 Het UCV c.7397T > C p.(Val2466Ala) rs169547 Hom Benign PALB2 c.2993G > A p.(**Gly998Glu**) rs45551636 Het Benign c.2014G > C p.(Glu672Gln) rs45532440 Het Benign c.1676A > G p.(Gln559Arg) rs152451 Het Benign P23 M 28 Pancreas BRCA1 c.5019G > A p.(Met1673Ile) rs1799967 Het Benign c.4900A >... ...rs799917 Het Benign c.2077G > A p.(Asp693Asn) rs4986850 Het Benign BRCA2 c.1114A > C p.(Asn372His) rs144848 Hom Benign c.7397T > C p.(Val2466Ala) rs169547 Hom Benign PALB2 c.2993G > A p.(**Gly998Glu**) rs45551636 Het Benign c.2014G > C p.(Glu672Gln) rs45532440 Het Benign c.1676A > G p.(Gln559Arg) rs152451 Het Benign P41 F 39 Breast BRCA1 c.3119G > A p.(Ser1040Asn) rs4986852 Het Benign BRCA2... ...Hom Benign P47 F 42 Breast BRCA2 c.1114A > C p.(Asn372His) rs144848 Het Benign c.5508T > G p.(Asn1836Lys) rs80358774 Het Benign c.7397T > C p.(Val2466Ala) rs169547 Hom Benign PALB2 c.2993G > A p.(**Gly998Glu**) rs45551636 Het Benign c.2014G > C p.(Glu672Gln) rs45532440 Het Benign c.1676A > G p.(Gln559Arg) rs152451 Het Benign P48 F 74 Breast BRCA1 c.5019G > A p.(Met1673Ile) rs1799967 Het Benign c.4900A > G...",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The four\u2011gene panel detects PALB2 c.2993G>A (G998E) and the variant is reported as benign in ClinVar across the sampled patients.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9024623",
+            "title": "Evaluation of a Four-Gene Panel for Hereditary Cancer Risk Assessment",
+            "relevance_score": 0.53,
+            "pub_year": 2022,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "The 10 exonic missense variants were analysed for their predicted effect on protein function using SIFT, Align GVGD, and Polyphen-2 programs. PALB2 c.2993G>A, **p.Gly998Glu** was the only PALB2 variant predicted to be deleterious to protein function by all three programs (Table 2).",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "Nucleotide change Protein change rs number Frequency (n = 747) % References Exonic variants Nonsense c.196C>T p. Gln66* rs180177083 1 0.1 Casadei et al.;Wong et al. c.3113G>A p.Trp1038* rs180177132 7 0.9 Rahman et al.;Casadei et al.;Wong et al. Frameshift c.1947_1948insA p. Glu650fs*13 - 1 0.1 - c.2982_2983insT p. Ala995fs*16 rs180177127 1 0.1 Rahman et al.;Bogdanova et al. Missense c.90G>T p.Lys30Asn - 1 0.1 - c.94C>G p.Leu32Val rs151316635 1 0.1 - c.596A>G p.Asp219Gly rs45594034 1 0.1 Rahman et al.;Hellebrand et al.;Dansonka-Mieskowska et al. c.956C>A p.Ser319Tyr - 1 0.1 - c.1010T>C p.Leu337Ser rs45494092 25 3.3 Rahman et al.;Hellebrand et al.; c.1475G>T p.Gly492Val - 1 0.1 - c.1676A>G p.Gln559Arg rs152451 72 9.6 Rahman et al.;Hellebrand et al.;Garcia et al.;Bogdanova et al. c.2014G>C p.Glu672Gln rs45532440 51 6.8 Rahman et al.;Hellebrand et al.;Garcia et al.;Bogdanova et al..;Dansonka-Mieskowska et al. c.2590C>T p.Pro864Ser rs45568339 1 0.1 Rahman et al.;Hellebrand et al.;Garcia et al.; c.2993G>A **p.Gly998glu** rs45551636 17 2.3 Rahman et al.;Hellebrand et al.;Garcia et al.;Bogdanova et al. Synonymous c.1431C>T p.Thr477Thr - 1 0.1 - c.1470C>T p.Pro490Pro rs45612837 1 0.1 Rahman et al.;Bogdanova et al. c.1572A>G p.Ser524Ser rs45472400 4 0.5 Rahman et al.;Hellebrand et al.;Garcia et al.;Bogdanova et al. c.1935G>A p.Glu645Glu rs141707455 1 0.1 Hellebrand et al.; c.2469C>A p.Leu823Leu - 1 0.1 - c.2823C>A p.Ile941Ile - 1 0.1 - c.3300T>G p.Thr1100Thr rs45516100 45 6 Rahman et al.;Hellebrand et al.;Erkko et al.;Garcia et al.;Bogdanova et al.Dansonka-Mieskowska et al. c.3321G>A p.Leu1107Leu - 1 0.1 - Intronicvariants c.-47G>A - rs8053188 17 2.3 Hellebrand et al.;Garcia et al.; c.212-58A>C - rs80291632 37 5 Garcia et al.;Dansonka-Mieskowska et al. c.1684+41_42insTGA - - 2 0.3 - c.2834+12C>T - - 1 0.1 -",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "= 0.68 Class C0 Possibly damaging 0.578 c.2993G>A * **p.Gly998Glu** 17 (0.9) Affect protein function; p = 0.00 Class C65 Probably damaging 1.000 Family cancer histories of probands, carriers of PALB2",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The article reports that PALB2 p.Gly998Glu is the only missense variant predicted deleterious by multiple in silico tools and receives damaging computational scores, while also being observed at a modest frequency (2.3%) in the studied families, without further functional or clinical classification provided.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC3672826",
+            "title": "Prevalence of PALB2 mutations in Australasian multiple-case breast cancer families",
+            "relevance_score": 0.52,
+            "pub_year": 2013,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "In order to gain a better understanding regarding the pathogenicity of variants of uncertain significance (VUS) in the PALB2 tumor suppressor gene, a global functional analysis of variants was undertaken. To this end, 44 missense variants found in breast cancer patients were identified in the ClinVar database (https://www.ncbi.nlm.nih.gov/clinvar) and/or selected by literature curation based on their frequency of description or amino acid substitution position in the protein (Supplemental Table S1). The list was comprised mostly of variants listed as either conflicting or of unknown significance in the Clinvar database, as well as three variants (p.P864S, p.V932M, **p.G998E**) with a benign/likely benign classification. As a negative control, we included the p.L35P variant, for which pathogenicity has been recently demonstrated. When submitted to in silico analysis using classical prediction tools (PolyPhen-2 and Align GVGD), 75% of the variants presented at least one score that predicted a potentially damaging effect on the protein function (Supplemental Table S1), which reinforced the need for functional characterization of all 44 PALB2 missense variants. Three additional and more recent in silico prediction algorithms, VEST 3.0 and the meta-predictors M-CAP and REVEL, were used for further correlation with the functional assays (Supplemental Table S2).",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "...of resistance are depicted in Supplemental Figure S2. Variants designated benign/likely benign in ClinVar, p.P864S, p.V932M and **p.G998E**, fell into this resistant category. For further validation, variants with the strongest phenotype were tested in the human U2OS osteosarcoma cell line. Sensitivities similar to those...",
+                    "mention_type": "functional",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "...intact HR function, along with benign/likely benign control variants p.P864S c.2590C>T], p.V932M c.2794G>A] and **p.G998E** c.2993G>A]) (herein after referred to as the B/BL group). The p.L35P variant, whose interaction with BRCA1 is impaired, was included as a...",
+                    "mention_type": "functional",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "Profile of functionality of prioritized PALB2 variants. Heat map summarizing the percentage of residual activity for each PALB2 VUS and its predicted pathogenicity profile. In order to facilitate interpretation of the functional data, values were rescaled to a 0-100% scale for each assay, with the mean value for known pathogenic controls set to 0% and the mean value for non-pathogenic controls to 100%. Where applicable, the pathogenic controls considered for mean value calculations were the empty vector and the p.L35P variant while the wild-type and the benign/likely benign variants, p.P864S, p.V932M and **p.G998E**, were used as non-pathogenic controls. For BRCA1 and BRCA2 interaction, p.L21A and p.A1025R were also taken into account as pathogenic controls.",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study consistently treats PALB2 p.G998E as a benign/likely benign variant, showing intact HR activity, resistance in functional assays, and using it as a non\u2011pathogenic control, supporting a benign interpretation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6847799",
+            "title": "A global functional analysis of missense mutations reveals two major hotspots in the PALB2 tumor suppressor",
+            "relevance_score": 0.52,
+            "pub_year": 2019,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Location proteinchange nucleotidechange rs ID freq. of genotypein CMM probands(n = 201) MAF in CMMprobands MAF in ESP6500*(n = 4300) SIFTprediction protein domain function reference chr16:23647635 p.V78I c.232G>A - 1/201 0.002 na tolerated interacts with BRCA1 & RAD51;required for oligomerization chr16:23646857 p.L337S c.1010T>C rs45494092 8/201 0.020 0.020 tolerated chr16:23646673 p.V398V c.1194G>A rs61755173 2/201 0.005 0.002 na chr16:23646295 p.S524S c.1572A>G rs45472400 3/201 0.007 0.005 na chr16:23646191 p.Q559R c.1676A>G rs152451 33/201 0.082 0.091 tolerated chr16:23641461 p.E672Q c.2014G>C rs45532440 13/201 0.032 0.031 tolerated , chr16:23637715 p.P864S c.2590C>T rs45568339 3/201 0.007 0.003 tolerated WD1; interacts with BRCA2 & RAD51 chr16:23635370 p.V932M c.2794G>A rs45624036 2/201 0.005 0.005 tolerated WD2; interacts with BRCA2 & RAD51 chr16:23635348 p.L939W c.2816T>G rs45478192 2/201 0.005 0.002 damaging WD2; interacts with BRCA2 & RAD51 chr16:23634293 **p.G998E** c.2993G>A rs45551636 12/201 0.030 0.023 damaging WD3; interacts with BRCA2 & RAD51 chr1 6:23619235 p.T1100T c.3300T>G rs45516100 11/201 0.027 0.031 na WD4; interacts with BRCA2 & RAD51 chr16:23614846 p.S1165S c.3495G>A rs45439097 1/201 0.002 0.001 na WD7; interacts with BRCA2 & RAD51 chr16:23614792 p.Y1183X c.3549C>G rs118203998 1/201 0.002 na na WD7; interacts with BRCA2 & RAD51",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study found no overall evidence that PALB2 variants, including the truncating p.Y1183X mutation, confer melanoma susceptibility, concluding PALB2 is not a melanoma predisposition gene.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC4065098",
+            "title": "Assessment of PALB2 as a Candidate Melanoma Susceptibility Gene",
+            "relevance_score": 0.52,
+            "pub_year": 2014,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "We analyzed the complete coding sequence and splice-boundary region of PALB2 in 100 probands from BC families negative for BRCA1 and BRCA2 point mutations with the aim of identifying PALB2 sequence variation in a Chilean population. We identified three sequence variants: c.1676A > G (p.Q559R, rs152451) (exon 4), c.1861C > A (p.P621M) (exon 5), and c.2993C > T (**p.G998E**, rs45551636) (exon 9). The variants detected were analyzed in 436 BC BRCA1/2-negative cases and 809 controls. For the analysis, the whole sample was subdivided into two groups: cases belonging to families with two or more family members with BC and/or OC (n = 273) (subgroup A) and non-familial early-onset BC (<=50 years) (n = 163) (subgroup B).",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "The variant c.1676A > G (p.Q559R) corresponds to a previously-described variant (rs152415). The three pathogenicity programs predicted that it is likely non-pathogenic. The i-Mutant program shows that the amino acid change slightly decreases the protein stability (-0.06 Kcal/mol). The variant c.2993C > T (**p.G998E**) is also a previously-described variant (rs45551636). The results of the bioinformatic predictor programs indicated that it is probably pathogenic. The results obtained with the i-Mutant program predicted that the mutation decreases the protein stability (-0.41 Kcal/mol). In order to analyze the possible effect of this variant on the 3D-structure and function of the PALB2 protein, we carried out homology modeling using MODELLER v.9.12 (Additional file 2). The model obtained was compared in RASMOL with the structure of the wildtype protein, with results predicting that the amino acid change might affect this region and then modify PALB2 function. Considering there are currently no published functional studies, this variant could be classified as a variant of unknown significance.",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "predicted that this variant is not pathogenic, and therefore we classified this missense mutation as a new mutation of unknown significance. The variants c.1676A > G (p.Q559R) and c.2993C > T (**p.G998E**",
+                    "mention_type": "computational",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study reports the identification of the PALB2 p.G998E (c.2993C>T) variant in a Chilean cohort, presents conflicting computational predictions (some suggesting pathogenicity, others indicating non\u2011pathogenicity), and classifies it as a variant of uncertain significance due to lack of functional data.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC4323211",
+            "title": "Association of PALB2 sequence variants with the risk of familial and early-onset breast cancer in a South-American population",
+            "relevance_score": 0.52,
+            "pub_year": 2015,
+            "data_sources": [
+                "pmc",
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "The largest set of PALB2 variants, i.e., 84 patient-derived PALB2 missense variants, was analyzed by Wiltshire and colleagues (Table 2). Several truncating variants (p.Q251X, p.Y551X p.D715Efs, p.Y1108Sfs, p.G1121Vfs, p.G1166Vfs, and p.Y1183X) and benign missense variants as classified by ClinVar (p.I309V, p.Q559R, p.E672Q, p.P864S, p.V932M, and **p.G998E**) were analyzed to validate their functional impact. The assays were mostly performed in Palb2-deficient B400 mouse mammary tumor cells with a stably integrated DR-GFP reporter to measure HR. PALB2 cDNA, with or without a variant, was transiently (over-)expressed in these cells and subsequently the effect on HR was determined. While benign variants had only a moderate or no impact on HR (<12% reduction in HR when compared to WT PALB2), all truncating variants strongly impacted HR (>52% reduction in HR when compared to WT PALB2). Moreover, four PALB2 missense variants (p.L24S, p.L35P, p.I944N, and p.L1070P) were identified that strongly disrupted HR (>65% reduction in HR compared to WT PALB2). To corroborate their findings, a CRISPR-LMNA HR assay was performed in U2OS cells with endogenous PALB2 depletion by siRNA treatment, followed by transient expression of siRNA-resistant PALB2 cDNA with or without variant. Consistently, the same four variants disrupted HR-mediated mRuby integration into the LMNA locus. In this assay, the variants exhibited a >90% reduction in HR compared to cells that were complemented with WT PALB2 cDNA.",
+                    "mention_type": "functional",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "first tested their set of 41 PALB2 VUS using PARPi sensitivity assays (Table 2). Their assay was set up in HeLa cells in which endogenous PALB2 was depleted by siRNA treatment. Following transient expression of siRNA-resistant YFP-PALB2 cDNA, with or without a variant, cells were assayed for PARPi sensitivity. Although no truncating variants were assayed, several benign PALB2 variants were included (i.e., p.P864S, p.V932M, and **p.G998E**). As expected, expression of the benign variants rendered cells PARPi resistant, which was comparable to that observed after WT PALB2 expression. The threshold for impaired PALB2...",
+                    "mention_type": "functional",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "In our recent study, a large number of PALB2 truncating variants was included (p.Q60Rfs, p.S172Gfs, p.E230X, p.Y409X, p.L531Cfs, p.Y551X, p.E669Gfs, p.C882Wfs, p.Q988X, p.P1009Lfs, p.W1038X, and p.Y1183X), as well as several variants that were classified as benign by ClinVar (p.Q559R, p.E672Q, p.V858=, p.P864S, and **p.G998E**) (Table 2). Our functional analysis relied on the stable integration of human PALB2 cDNA at a safe-harbor locus in Palb2 knockout (KO) mouse embryonic stem (mES) cells and its subsequent expression from a relatively weak promotor. Such a strategy avoids differences in PALB2 expression following siRNA-mediated knockdown and reduces possible artifacts that may arise from transient overexpression of PALB2 cDNA. While benign variants had only a moderate or no impact on HR (<20% reduction in HR when compared to WT PALB2), all truncating variants strongly impacted HR (>89% reduction in HR when compare to WT PALB2). Moreover, 48 PALB2 VUS were analyzed, of which the expression of 15 VUS (i.e., p.L24S, p.Y28C, p.L35P, p.R37H, p.W912G, p.G937R, p.I944N, p.L947S, p.L961P, p.L972Q, p.T1030I, p.I1037T, p.G1043D, p.L1070P, and p.L1172P), strongly abrogated PALB2 protein function, with HR being decreased by 55-93% in DR-GFP assays. The same variants also resulted in cellular sensitivity to PARPi (Table 2).",
+                    "mention_type": "functional",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "Functional assays across multiple cell\u2011based systems consistently show that the PALB2 p.G998E variant behaves like benign variants, with little or no reduction in homologous recombination activity and no increased PARP\u2011inhibitor sensitivity, supporting a benign classification for cancer risk assessment.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7525363",
+            "title": "Functional Characterization of PALB2 Variants of Uncertain Significance: Toward Cancer Risk and Therapy Response Prediction",
+            "relevance_score": 0.5,
+            "pub_year": 2020,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "We sequenced four amplicons containing all the three frameshift/truncating mutations, one predicted deleterious (c.2993G>A/**p.Gly998Glu**) and one possibly deleterious missense variant (c.3056T>C/p.Val1019Ala), in 262 cancer-free African-American women. None of the three truncating mutations were found in control subjects from the same population. The MAF of c.2993G>A was 0.005 in caseswhich is comparable to the MAF of 0.004 in 262 controls. The c.3056T>C was found with a MAF of 0.002 in cases but not in controls.",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study identified three novel truncating PALB2 mutations in African\u2011American breast cancer patients and reported the missense variant G998E as a predicted deleterious, low\u2011frequency allele with comparable prevalence in cases and controls.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC3244533",
+            "title": "Novel germline PALB2 truncating mutations in African-American breast cancer patients",
+            "relevance_score": 0.5,
+            "pub_year": 2011,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Gene Variant Numberof patientswith a variantin biopsysample (%)(N = 22) Numberof patientswith a variantdetected in any typeof sample (%)(N = 39) PIK3R1 T369I 11 (50.0) 14 (63.6) FGFR1 E159K 6 (27.3) 10 (45.5) TP53 _72_ 6 (27.3) 10 (45.5) CHEK1 R291S 5 (22.7) 7 (31.8) CDKN2B T95M 5 (22.7) 7 (31.8) POLE Q2228 5 (22.7) 7 (31.8) CDKN2A T77I 3 (13.6) 3 (13.6) NOTCH1 A2356G 4 (18.2) 6 (27.3) NBN I171V 3 (13.6) 3 (13.6) NF1 E212K 3 (13.6) 4 (18.2) NF1 R377C 3 (13.6) 3 (13.6) NF1 R386Q 3 (13.6) 3 (13.6) PALB2 **G998E** 3 (13.6) 3 (13.6)",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study reports PALB2 G998E in 13.6% of Ewing sarcoma patients but does not interpret its clinical significance.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8768047",
+            "title": "Mutational landscape of primary and recurrent Ewing sarcoma",
+            "relevance_score": 0.5,
+            "pub_year": 2021,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Human PALB2 variants and their effect on HR. a Schematic representation of the PALB2 protein with variant positions indicated and categorized as either neutral (green), truncating (red), VUS (blue) and synthetic missense variant (purple). The amino acid numbers are shown to specify the evolutionarily conserved functional domains of PALB2. PALB2 regions involved in the interactions with BRCA1, BRCA2, RNF168, and RAD51 are indicated. b DR-GFP assay in Trp53KO/Palb2KO mES cells expressing human PALB2 variants (or an empty vector control, Ev). Cells were transfected with an I-SceI and mCherry co-expression vector. GFP expression was monitored by FACS. Data represent mean percentages (+-SEM) of GFP-positive cells among the mCherry-positive cells relative to wild type (WT), which was set to 100%, from two independent experiments, except for p.L939W and **p.G998E** for which data from three independent experiments are presented. Variants/conditions are categorized by color as either wild type (WT, black), likely benign SNV (green), truncating variant (red), VUS (blue), synthetic missense variant (purple) or empty vector (Ev, gray). Ev1-5 refer to Ev controls from 5 different replicates. Source data are provided as a Source Data file.",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Effect of PALB2 variants on the DNA damage-induced G2/M checkpoint. a Trp53KO/Palb2KO mES cells were irradiated with 3 or 10 Gy of IR and collected at the indicated time points after radiation exposure to assess the mitotic index by phospho-histone H3 (Ser10) staining and FACS analysis. Data represent the mean percentage of mitotic cells (+-SEM) relative to the unirradiated cells (no IR), which was set to 100%, from two independent experiments. b Trp53KO/Palb2KO mES cells expressing the indicated PALB2 variants were irradiated with 10 Gy of IR and collected 6 h after radiation exposure to assess the mitotic index by phospho-histone H3 (Ser10) staining and FACS analysis. For each variant, the mean percentage of mitotic cells (+-SEM) from two independent experiments is shown relative to unirradiated cells, except for p.L939W and **p.G998E** for which data from three independent experiments is presented. Variants/conditions are categorized by color as in Fig. 2. c Scatter plot showing the correlation between the HR efficiencies and the mitotic index after IR as measured in Fig. 2b and b, respectively. Variants/conditions are categorized by color as in (b). The trendline indicates the negative correlation between the HR efficiency and mitotic index after IR, revealing a strong positive correlation between the impact of PALB2 variants on HR and G2/M checkpoint maintenance. Source data are provided as a Source Data file.",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "...two truncating variants (p.Y551X and p.Y1183X) resulted in a checkpoint defect (Fig. 6b). Two benign variants (p.D134N and **p.G998E**) and 9 different VUS (p.K18R, p.E42K, p.Y408H, p.P707L, p.D871G, p.L931R,...",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "Table title: 2|2|Assay #1\nRows:\n15|19|**G998E**",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study functionally evaluates PALB2 missense variants and classifies the G998E missense change as a benign variant, indicating it does not impair homologous recombination or checkpoint function and is unlikely to increase breast\u2011cancer risk.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6876638",
+            "title": "Functional analysis of genetic variants in the high-risk breast cancer susceptibility gene PALB2",
+            "relevance_score": 0.49,
+            "pub_year": 2019,
+            "data_sources": [
+                "pmc",
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Exon/Intron Nt change Amino acid Change Carrier Frequency (OR; 95% CI) Familial Unselected Controls PALB2 Ex 4 1592delT Leu531>Fs>Stop 1/178 (0.6%) (4.3; 0.3-68.8) 2/748 (0.3%) (2.0; 0.2-22.2) 1/760 (0.2%) Ex 4 1674A>G Gln559Agr 36/178 (20.2%) (1.2; 0.8-1.8) 153/748(20.5%) (1.2; 0.9-1.5) 134/760(18.0%) Ex 8 2794G>A Val932 Met 4/178 (2.2%) (1.0; 0.3-3.4) 7/285(2.5%) (1.2; 0.4-3.1) 10/470 (2.1%) Ex 9 2993G>A **Gly998Glu** 8/178 (4.5%) (1.6; 0.7-3.5) 35/748 (4.9%) (1.6; 0.9-2.8) 22/760 (2.9%) Ex 12 3300T>G Thr1100Thr 6/178 (3.4%) (0.8; 0.3-2.0) 30/748 (3.9%) (1.0: 0.6-1.7) 30/760 (3.9%) 5'UTR G>A - 8/178 (4.5%) (1.8; 0.7-4.4) 14/285 (4.9%) (2.0; 0.9-4.3) 12/470 (2.6%)",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study identified PALB2 variants, including Gly998Glu (G998E), but found no significant association with prostate cancer risk at the population level in Finland, though individual contribution cannot be excluded.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC2806404",
+            "title": "PALB2 variants in hereditary and unselected Finnish Prostate cancer cases",
+            "relevance_score": 0.49,
+            "pub_year": 2009,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "HGVS_ca HGVS_pa dbSNPb MAF in ExACc PolyPhen-2d CADDe # Carriers BCf OCg Frameshifting deletions c.172_175del p.Q60Rfs*7 - - - - 0 1 c.509_510del p.R170Ifs*14 - 0.00010 - - 3 0 Missense substitutions c.13C > T p.P5S rs377085677 0.00005 B 13.2 3 0 c.187C > G p.L63V - 0.00001 B 0.014 1 0 c.1010T > C p.L337S rs45494092 0.01920 B 8.918 6 3 c.1033T > G p.L345V - - B 3.477 1 0 c.1544A > G p.K515R - 0.00006 B 16.16 1 0 c.1676A > G p.Q559R rs152451 0.09550 B 0.029 75 17 c.2014G > C p.E672Q rs45532440 0.02830 B 11.43 24 5 c.2135C > T p.A712V rs141458731 0.00040 B 12.2 0 1 c.2590C > T p.P864S rs45568339 0.00410 B 12.03 1 1 c.2773G > C p.V925L rs180177125 0.00005 B 14.83 1 0 c.2794G > A p.V932M rs45624036 0.00810 D 18.31 4 2 c.2816T > G p.L939Wh rs45478192 0.00160 D 20.9 1 1 c.2993G > A **p.G998E** rs45551636 0.02140 D 22.7 15 3 c.3508C > T p.H1170Y rs200283306 0.00010 D 16.95 2 0 Synonymous substitutions c.615A > G p.E205E - 0.00003 - - 1 0 c.1194G > A p.V398V rs61755173 0.00120 - - 1 1 c.1281T > C p.A427A rs138697796 0.00000 - - 1 0 c.1572A > G p.S524S rs45472400 0.00410 - - 1 0 c.1968A > G p.P656P - - - - 1 0 c.3252G > A p.S1084S rs141570833 0.00004 - - 1 0 c.3300T > G p.T1100T rs45516100 0.02830 - - 23 5",
+                    "mention_type": "computational",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study surveys PALB2 mutations in Polish and Ukrainian breast/ovarian cancer patients, reporting known pathogenic frameshift deletions and cataloguing missense variants such as p.G998E, which is noted with in silico damaging predictions and a modest population frequency but without functional or clinical interpretation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5999175",
+            "title": "Targeted massively parallel sequencing characterises the mutation spectrum of PALB2 in breast and ovarian cancer cases from Poland and Ukraine",
+            "relevance_score": 0.49,
+            "pub_year": 2017,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "In our study, it was found that the frequency of occurrence of mutations in the PALB2 gene is 8 frameshift deletions and 1 non-frameshift deletion; 1 frameshift insertion and 2 non-frameshift insertion; 3 missense options; 3 non-synonymous SNVs and 3 synonymous SNVs, and one stop-gain. Among the frameshift deletions, two mutations (c.1706_1707del and c.1686delG) are of pathogenic significance. Many authors suggest that these mutations may contribute to the risk of familial breast cancer. For other mutations of this class, clinical significance remains unidentified. Interestingly, three missense variants found in our sample, c.2993G>A (**p.Gly998Glu**); c.2014G>C (p.Glu672Gln) and c.1010T>C (p.Leu337Ser) were described earlier. Moreover, some authors suggest that c.1010T>C (p.Leu337Ser) and c.2993G>A (p.Gly998Gln) can affect the function of the PALB2 protein.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "No Mutation rs Class Type 1 c.1010T>C (p.Leu337Ser) rs45494092 Non-synonymous SNV Benign 2 c.1288delC (p.Gln467fs) - Frameshift deletion VUS 3 c.1675_1676insGAGTGAAAGGTAAATCAAGATGTGTGCTCTTCCGACTCC (p.Q559delinsRVKGKSRCVLFRLQ) - Non-frameshift insertion VUS 4 c.1676A>G (p.Gln559Arg) rs152451 Non-synonymous SNV Benign 5 c.1686delG (p.Gly562fs) - Frameshift deletion Pathogenic 6 c.1693delA (p.Ser565fs) - Frameshift deletion VUS 7 c.1706_1707del (p.Lys569fs) rs1060502759 Frameshift deletion Pathogenic 8 c.1706delA (p.Lys569fs) - Frameshift deletion VUS 9 c.2014G>C (p.Glu672Gln) rs45532440 Non-synonymous SNV Benign 10 c.212-58A>C rs80291632 Intronic Benign 11 c.2552delA (p.Asn851fs) - Frameshift deletion VUS 12 c.255dupA (p.Thr86fs) - Frameshift duplication VUS 13 c.256delA (p.Thr86fs) - Frameshift deletion VUS 14 c.2586+58C>T rs249954 Intronic Benign 15 c.2587-38C>T rs180177119 Intronic Likely benign 16 c.2993G>A (**p.Gly998Glu**) rs45551636 Non-synonymous SNV Benign 17 c.3114-51T>A rs249936 Intronic Benign 18 c.3300T>G (p.Thr1100=) rs45516100 Synonymous SNV Benign 19 c.3351-53delT rs35294437 Intronic VUS 20 c.3465dupT (p. Asp1156 Gln1157delinsX) - Stop-gain VUS 21 c.747T>A (p.Pro249=) - Synonymous SNV VUS 22 c.833T>A (p.Leu278Gln) rs200843485 Non-synonymous SNV VUS 23 c.834A>T (p.Leu278=) rs199919863 Synonymous SNV Likely benign 24 c.92_94del (p.31_32del) - Non-frameshift deletion VUS 25 c.921delA (p. Lys307fs) rs202151522 Frameshift deletion VUS 26 c.94C>G (p.Leu32Val) rs151316635 Non-synonymous SNV Conflicting interpretations of pathogenicity 27 c.95_96insCGGAAG (p.Leu32 delinsLGR) - Non-frameshift insertion VUS",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The article presents PALB2 p.Gly998Glu as a missense variant with conflicting evidence: a table classifies it as benign, while the text cites authors suggesting it may affect protein function, implying possible pathogenicity.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10454606",
+            "title": "Mutations of BRCA1, BRCA2, and PALB2 Genes in Breast Tumor Tissue: Relationship with the Effectiveness of Neoadjuvant Chemotherapy and Disease Prognosis",
+            "relevance_score": 0.47,
+            "pub_year": 2023,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...Silent rs750048627 P 1 (0.3) - Yese) Exon 5 c.2329G>A (p.D777N)c) Missense rs148026749 Pc) 1 (0.3) - No Exon 7 c.2590C>T (p.P864S) Missense rs45568339 P 1 (0.3) - Yese),f),g),h) Exon 9 c.2993G>A (**p.G998E**) Missense rs45551636 P 19 (5.1) - Yese),f),g),h) Exon 12 c.3239A>G (p.K1080R)c) Missense - Pc) 1 (0.3) - No Exon 12 c.3300T>G (p.T1100T) Silent rs45516100 P 22 (5.9) - Yese),f),g),h) 5' UTR c.-47G>A...",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study reports the PALB2 missense variant p.G998E among screened patients but does not provide an interpretation of its clinical significance.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6639217",
+            "title": "Prevalence of PALB2 Germline Mutations in Early-onset and Familial Breast/Ovarian Cancer Patients from Pakistan",
+            "relevance_score": 0.45,
+            "pub_year": 2018,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...A/G ALG6 Splice acceptor (-2) - - - 1:120056817 T/TGCA HSD3B1 NP_000853.1 p.V224_Y225insH - 2 66708 4:153332604 TCTC/T FBXW7 NP_361014.1 p.E117del - 35 66114 124604 16:23634293 C/T PALB2 NP_078951.2 **p.G998E** 5 1430 66736 16:89815152 G/A FANCA NP_000126.2 p.S1088F 4 4798 65430 15:91326099 C/T BLM NP_000048.1 p.P868L 4 4239 66162 6:49700908 G/A CRISP3 NP_006052.1 p.A197V** 2 0 66362 124853 18:3452067 G/A...",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "In some cases, combinations involving non-rare variants of DDR genes were suggestive. Patient 124604, diagnosed with prostate cancer at age 43, has a pedigree that shows cases of prostate cancer over 3 generations. This patient carries 3 non-rare missense variants in genes involved in DDR: BLM p.P868L, PALB2 **p.G998E**, and FANCA p.S1088F. BLM encodes a 3'-5' DNA helicase which functions in maintenance of genomic stability, with inactivating mutations associated with a progeria, Bloom Syndrome (BS). BLM p.P868L has been characterized as an allele that is unlikely to cause BS, but causes partial loss of function manifested by an intermediate sensitivity to hydroxyurea, and has been associated with increased rectal cancer risk. Interestingly, an uncle of patient 124604 had colorectal cancer. The PALB2 **p.G998E** variant in this patient was reported at a similar frequency of ~ 10% in a population of BRCA1- and BRCA2-negative male breast cancer patients in Northern Italy as was observed in healthy individuals. A similar high rate of occurrence in normal populations was observed for FANCA p.S1088F (9/97 in breast cancer cases vs 11/94 in controls). However, the assortment of three independent alleles affecting DNA repair in the pedigree of this patient may have an additive effect, given the involvement of all three proteins in related DNA repair pathways (Figure 2B).",
+                    "mention_type": "population",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "Table title: Patient ID|Variant DNA level|Gene|Variant cDNA level|Variant protein level|Variant class|Non neutral scores|Representation in ExACRepresentation in ITMI genomes\nColumn names:\nAllele count|Allele number|Homozygous|Frequency|Allele count|Allele number|Homozygous|Frequency|Allele count|Allele number|Frequency\nRows:\n|16:23634293 C>T (rs45551636)|PALB2|NM_024675.3:c.2993G>A|NP_078951.2 **p.G998E**|Missense||||||||||||",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study identifies PALB2 p.G998E among several DNA\u2011repair gene variants in familial prostate cancer cases, noting its relatively high population frequency and providing no functional or clinical evidence of pathogenicity, thus implying it is likely a benign variant within the broader context of DNA\u2011repair defects assessment.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC4741850",
+            "title": "Systematic evaluation of underlying defects in DNA repair as an approach to case-only assessment of familial prostate cancer",
+            "relevance_score": 0.45,
+            "pub_year": 2015,
+            "data_sources": [
+                "pmc",
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...BRCA1 c.G131T p.C44F DM Breast and/or ovarian cancer Not found SLX4 c.G421T p.G141W DM Breast and/or ovarian cancer 0.0008237 STK11 c.C1211T p.S404F DM Peutz-Jeghers syndrome 0.0009281 PALB2 c.G2993A **p.G998E** DP Breast cancer, increased risk- 0.01579 BRCA2 c.C1151T p.S384F DM? Breast cancer 0.0006789 DICER1 c.A5276G p.K1759R Not found 0.00004942 CEBPA c.T122C p.I41T Not found Not found RECQL4 c.G3314A... ...p.S836S DP Association with thyroid cancer 0.04666 BRCA1 c.5090_5093delGTTA p.L1697fs Not found Not found 20/B43 PALB2 c.G2014C p.E672Q DM? Breast cancer? (common variant) 0.02239 PALB2 c.G2993A **p.G998E** DP Breast cancer (common variant) 0.01579 RAD51C c.G376A p.A126T FP Reduced activity 0.003529 Tp53 c.673-36G > C DFP Breast cancer Not found 21/B44 SLX4 c.G421T p.G141W DM Breast and/or ovarian...",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "We have noted that the most frequently altered genes involved in our familial cases are DNA repair genes (Fig. 3a) and that some variants were recurrent in our cohort: p.W149X in ARL11, p.S836S in RET, p.A126T in RAD51C, p.T241M in XRCC3, **p.G998E** in PALB2 and c.673-36G > C in TP53 (Table 2 and Fig. 3b). In four cases, like the 4 families shown in Fig. 1, individuals appear to co-inherit multiple cancer causing or predisposing gene mutations. Unlike, the old strategy where one stops the investigation once a pathogenic mutation was identified, NGS gives us the capability of collating all known mutations/variants in a sample, which may permit a more comprehensive understanding of the polygenic landscape model of cancer. An important question to be answered is: Does an individual in Family 13 harboring all three DM mutation have different penetrance, genotype to phenotype correlation, type or age of onset of cancer than a sibling with only one DM variant? This critical question can only be answered when we start to combine all germline variant data of cancer patients and their comprehensive phenotypes from around the world in well-curated databases.",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study reports PALB2 G998E as a recurrent variant in Lebanese familial breast cancer cases and annotates it as associated with increased breast cancer risk, but provides no functional validation or detailed classification evidence.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5312584",
+            "title": "Next-generation sequencing in familial breast cancer patients from Lebanon",
+            "relevance_score": 0.44,
+            "pub_year": 2017,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...15 8 23 18.3 Deleterious Probably damaging Tolerated 8 c.2816 T > G p.Leu939Trp rs45478192 Rahman (2007) 0.0009 0.00154 0.0015 2 3 (1) 8 20.9 Deleterious Probably damaging Deleterious 9 c.2993G > A **p.Gly998Glu** rs45551636 Rahman (2007) 0.0105 0.01785 0.0213 42 46 (2) 92 (1) 22.7 Deleterious Probably damaging Deleterious 10 c.3054G > C p.Glu1018Asp rs183489969 Tischkowitz (2012) 0.0009 . 0 1 - 1 16.4...",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study reports PALB2 truncating variants as high\u2011penetrance breast cancer risk factors and notes that the missense variant G998E is predicted deleterious, though missense variants overall showed no excess in cases.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC4539664",
+            "title": "Prevalence of PALB2 mutations in Australian familial breast cancer cases and controls",
+            "relevance_score": 0.42,
+            "pub_year": 2015,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Patient_ID VUS (Class 3) Benign or Likely Benign variants (Class 1 or 2) Polymorphisms Total variants/patient 3222 NOTCH3 NM_000435: c.5854G >A, p.V1952 M(rs115582213)bPOLE NM_006231: c.3046G > A, p.V1016 M (rs147692158) ATM NM_000051: c.5071A > C, p.S1691R (rs1800059) BRCA1 NM_007300: c.5019G > A, p.M1673I (rs1799967) PALB2 NM_024675: c.2993G > A, **p.G998E** (rs45551636)PALB2 NM_024675: c.2014G > C, p.E672Q (rs45532440) rs459552, rs659243, rs2240308, rs1799966, rs16942, rs16941, rs169547, rs4986764, rs1805107, rs506504, rs832582,rs5868032, rs1042821,... ...29 24,789 APC NM_001127510: c.4334C > T, p.T1445I (rs760686348) PALB2 NM_024675: c.1250C > A, p.S417Y (rs45510998) BARD1 NM_000465: c.1972C > T, p.R658C (rs3738888) PALB2 NM_024675: c.2993G > A, **p.G998E** (rs45551636) PALB2 NM_024675: c.2014G > C, p.E672Q (rs45532440) POLE NM_006231: c.776G > A, p.R259H (rs61732929) NOTCH3 NM_000435: c.3399C > A, p.H1133Q (rs112197217) rs459552, rs659243, rs2240308,...",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The article reports PALB2 p.G998E as a variant of uncertain significance identified in patients with familial colorectal tumors.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5819082",
+            "title": "Identification of genetic variants for clinical management of familial colorectal tumors",
+            "relevance_score": 0.42,
+            "pub_year": 2018,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...C/C C/C C/C A/C C/C p.Gln952Pro c.2855A>C chr15:68628163 C ITGA11 rs2306022 C/T p.Val433Met c.1297G>A chr15:81598269 T IL16 rs11556218 T/G p.Asn1147Lys c.3441T>G chr16:23634293 C PALB2 rs45551636 C/T **p.Gly998Glu** c.2993G>A chr16:81211496 C PKD1L2 rs9935113 C/A C/A C/A p.Gly785Cys c.2353G>T chr16:81232336 T PKD1L2 rs34276551 T/C p.Thr492Ala c.1474A>G chr16:81241100 G PKD1L2 rs11150370, rs386792899 G/C G/C G/C...",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "...C/T T/T p.Thr1068Met c.3203C>T chr15:85405995 T ALPK3 rs187316 C/C T/C p.Leu1622Pro c.4865T>C chr15:91419548 C FURIN rs148110342 C/T p.Arg81Cys c.241C>T chr16:23634293 C PALB2 rs45551636 C/T **p.Gly998Glu** c.2993G>A chr16:84213434 A TAF1C rs2230129 T/T A/T T/T T/T A/T A/T p.Leu549Met c.1645T>A chr16:84213684 C TAF1C rs4150167 C/T C/T p.Gly497Arg c.1489G>A chr16:88779132 C CTU2 rs2290895 C/T...",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "...chr15:91459475 G MAN2A2 rs12909056 G/A c.2983G>A p.Val995Met chr15:92647645 G SLCO3A1 rs1517618 C/C C/C C/C C/C C/C C/C C/C C/C c.882G>C p.Glu294Asp chr16:23634293 C PALB2 rs45551636 C/T c.2993G>A **p.Gly998Glu** chr16:82660738 C CDH13 rs753448816 C/A c.76C>A p.Pro26Thr chr16:82673047 C CDH13 rs4782724 T/T T/T T/T T/T T/T T/T T/T T/T c.163C>T p.Pro55Ser chr16:83065791 G CDH13 rs200199969 G/A c.475G>A...",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Column names:\nSupplements Supplements Supplement 1. Rare and novel variants of ADHD genes identified by exome sequencing in the 8 Saudi Arabian ADHD patients Locus Ref dbSNP Variant Frequency Genes 1 2 3 4 5 6 7 8 Amino Acid Change\nRows:\nC/T p.Val433Met c.1297G>A 12 -0.18 0.03 21 0.928 chr15:81598269 T rs11556218 0.12 IL16 T/G p.Asn1147Lys c.3441T>G 16 -1.38 0.04 94 0.977 chr16:23634293 C rs45551636 0.12 PALB2 C/T **p.Gly998Glu** c.2993G>A 9 2.85 0 98 1 chr16:81211496 C rs9935113 0.38 PKD1L2 C/A C/A C/A p.Gly785Cys c.2353G>T 14 3.89 0 159 1 chr16:81232336 T rs34276551 0.12 PKD1L2 T/C p.Thr492Ala c.1474A>G 7 4.29 0.01\nC/C T/C p.Leu1622Pro c.4865T>C 10 1.71 0 98 0.991 chr15:91419548 C rs148110342 0.12 FURIN C/T p.Arg81Cys c.241C>T 3 1.8 0.03 180 0.989 chr16:23634293 C rs45551636 0.12 PALB2 C/T **p.Gly998Glu** c.2993G>A 9 2.85 0 98 1 chr16:84213434 A rs2230129 0.75 TAF1C T/T A/T T/T T/T A/T A/T p.Leu549Met c.1645T>A 15 -1.93 0.01 15 0.899 chr16:84213684 C rs4150167 0.25 TAF1C C/T C/T p.Gly497Arg c.1489G>A\n20 p.Val995Met -0.9 0.14 21 0.001 chr15:92647645 G rs1517618 1 SLCO3A1 C/C C/C C/C C/C C/C C/C C/C C/C c.882G>C 4 p.Glu294Asp 1.06 1 45 0 chr16:23634293 C rs45551636 0.12 PALB2 C/T c.2993G>A 9 **p.Gly998Glu** 2.85 0 98 1 chr16:82660738 C rs753448816 0.12 CDH13 C/A c.76C>A 1 p.Pro26Thr 3.5 0 38 1 chr16:82673047 C rs4782724 1 CDH13 T/T T/T T/T T/T T/T T/T T/T T/T c.163C>T 2 p.Pro55Ser 0.2 0.87 74 0",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study reports PALB2 p.Gly998Glu as one of several rare variants identified in Saudi children with ADHD and autism, but does not provide any interpretation of its clinical significance or functional impact.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7770135",
+            "title": "The Co-existence of ADHD With Autism in Saudi Children: An Analysis Using Next-Generation DNA Sequencing",
+            "relevance_score": 0.41,
+            "pub_year": 2020,
+            "data_sources": [
+                "pmc",
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "variants were found among the variants. A PALB2 p.E672Q variant (Polyphen score 0.275) was present in one tumor and a deleterious PALB2 **p.G998E** variant found in another (Polyphen score 1). Both tumors were",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study identified a somatic PALB2 G998E variant in a BRCA phenocopy tumor and classified it as deleterious based on a PolyPhen score of 1, indicating possible pathogenic significance.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6636136",
+            "title": "Somatic variants of potential clinical significance in the tumors of BRCA phenocopies",
+            "relevance_score": 0.4,
+            "pub_year": 2019,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...Yes [3-layer(alphabetaalpha) sandwich] Yes [2.06] 4 High [0.17] H NMUR1 (409)CGC > TGC [R137C] Yes [4] Yes [180] Yes [1.17] Yes [up-down bundle] Yes [1.83] 5 High [0.27] I PALB2 (2993)GGA > GAA [**G998E**] Yes [5] Yes [G > E] Yes [2.27] Yes [3.23] 4 High [0.32] Yes [97.75] Structural disrupted variants which locate in low tolerance genes J EXOG (830)GGA > GTA [G277V] Yes [6] Yes [109] Yes [G > V] Yes...",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "...Neuromedin-U receptor 1 [uterus contraction, vasoconstriction] Diminishes stabilizing salt bridge and causes protein destabilization Control of food intake No 5 0, 0.08 I PALB2 (2993)GGA > GAA [**G998E**] Partner and localizer of BRCA2 [homologous recombination repair] Mutation may interfere with conformational flexibility of protein, largely decreases protein stability Several mutations identified...",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The article predicts that the PALB2 G998E missense variant is structurally disruptive and reduces protein stability, indicating likely pathogenicity based on computational and functional analyses.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC4001065",
+            "title": "SDS, a structural disruption score for assessment of missense variant deleteriousness",
+            "relevance_score": 0.38,
+            "pub_year": 2014,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nvariantl|LONGEST_UNIPROT_ACC|LONGEST_UNIPROT_ID|LONGEST_UNIPROT_DESC|PrecursorVAR_DESC|Genename|MatureVAR_DESC|Chromosome|Position|Ref_Nucl|Alt_Nucl|UPDATE_HGMD_Professional|comment|MAF|hit patient\nRows:\ngermline|Q86YC2|PALB2_HUMAN|Partner and localizer of BRCA2|**G998E**|PALB2|**G998E**|chr16||C|T|MATCH_TYPE: [Identical Mutation] DESC: [(**G998E**): DISEASE: Breast cancer, increased risk; Variant Class: Disease associated polymorphism; dbSNP_ID: rs45551636 HGMD_ACC: CM098533]||EUR_AF=0.021|eup00105",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study shows that NGS paired with evidence\u2011based software can rapidly identify pharmacogenomic biomarkers in pancreatic cancer and reports the detection of the germline PALB2 G998E variant, classified as a disease\u2011associated polymorphism linked to increased breast\u2011cancer risk.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5623817",
+            "title": "Bioinformatory-assisted analysis of next-generation sequencing data for precision medicine in pancreatic cancer",
+            "relevance_score": 0.55,
+            "pub_year": 2017,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nSupplementary Materials Figure S1. Predicted effect of truncating mutations on PALB2 protein. (A) Graphic representation of I) wild-type PALB2 and the three predicted mutated proteins resulting from the c.3113G>A mutation as described in Casadei\nRows:\n1 12\u00a7 8\u00a7\u00a7 1\u2020 c.3287A>G p.N1096S 1 c.2329G>A p.D777N rs148026749 1 c.2014 G>C p.E672Q rs45532440 1\u2020 8\u00a7\u00a7 c.2586+58C>T rs249954 43 8** 12\u00a7 8\u00a7\u00a7 1\u2020 1\u2020\u2020 c.2590 C>T p.P864S rs45568339 1\u2020\u2020\u2020 c.2993 G>A **p.G998E** rs45551636 8\u00a7\u00a7 c.629C>T p.P210L rs57605939 1** c.3300 T>G p.T1100T rs45516100 1\u2020 8\u00a7\u00a7 * same patient; ** 7 cases have both SNPs and 1 case has an additional SNP; *** 1 case included in \u00a7\u00a7; \u00a7 12 cases have both",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study identified a small number of pathogenic PALB2 mutations, including two clearly pathogenic truncating variants and several missense variants of uncertain significance, in BRCA1/2\u2011negative breast/ovarian cancer families, and recommends targeted PALB2 testing in high\u2011risk families.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC4163678",
+            "title": "Mutation analysis of PALB2 in BRCA1 and BRCA2-negative breast and/or ovarian cancer families from Eastern Ontario, Canada",
+            "relevance_score": 0.52,
+            "pub_year": 2014,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: 0|0|Count\nColumn names:\n0|3|Other Variants (cDNA & protein )\nRows:\n**p.Gly998Glu**",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study screened 76 Armenian HBOC\u2011suspected patients with a 127\u2011gene panel, identifying pathogenic/likely pathogenic variants in BRCA1, BRCA2, CHEK2, PALB2 and NBN, and also reporting additional PALB2 variants such as p.Gly998Glu without interpretation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7870655",
+            "title": "Germline mutational spectrum in Armenian breast cancer patients suspected of hereditary breast and ovarian cancer",
+            "relevance_score": 0.42,
+            "pub_year": 2021,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: 1|0|Number of VUS\nColumn names:\n1|2|Gene\nRows:\n46|4|**p.Gly998Glu**",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The study demonstrates that an expanded 35\u2011gene NGS panel improves detection of pathogenic germline mutations in hereditary cancer patients while also identifying multiple VUS, including PALB2 p.Gly998Glu (G998E).', ",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7288470",
+            "title": "A comprehensive custom panel evaluation for routine hereditary cancer testing: improving the yield of germline mutation detection",
+            "relevance_score": 0.27,
+            "pub_year": 2020,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nindex|Source|Gene name|Uniprot_ID|ClinVar/ACMG|ClinVar/ACMG_2classes|mutation_type|Mutation|maestro|mCSM|saafec-seq|MUpro|CUPSAT|secondary_structure|rASA|plddt|FASTA_url\nRows:\n656|clinvar|PALB2|Q86YC2|LB|0|missense|**G998E**|0.006|0.252|-0.19|-0.46510595|2.27|loop|0.19047619|74.39|https://rest.uniprot.org/uniprotkb/Q86YC2.fasta",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study shows that AlphaFold confidence scores outperform traditional stability predictors in distinguishing pathogenic from benign missense variants across 26 hereditary cancer genes, including PALB2 G998E.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9988940",
+            "title": "Evaluation of AlphaFold structure-based protein stability prediction on missense variations in cancer",
+            "relevance_score": 0.23,
+            "pub_year": 2023,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nCohort|Gene Name|Uniprot ID|Substitution|Prediction FATHMM|Prediction Polyphen|Prediction Provean|Prediction Sift\nRows:\nMSKCC OS|PALB2|Q86YC2|**G998E**|PASSENGER/OTHER|probably damaging|Deleterious|Damaging",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study reports that co\u2011occurring NOTCH and homologous\u2011repair gene mutations, such as PALB2 G998E, are linked to longer progression\u2011free and overall survival in NSCLC patients treated with immune checkpoint inhibitors.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7409965",
+            "title": "Efficacy of immunotherapy in lung cancer with co-occurring mutations in NOTCH and homologous repair genes",
+            "relevance_score": 0.19,
+            "pub_year": 2020,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nFig. S1: Flow diagram of statistical analysis. Training analyses in blue shaded area and validation analyses in yellow shaded area. Boxes outlined in orange show analyses based on population samples only. BRIDGES samples sequenced and passed\nRows:\n0.19 0.12 PALB2 c.2590C>T (p.Pro864Ser) 103 163 0.88 (0.68-1.14) 0.33 0.40 PALB2 c.2794G>A (p.Val932Met) 437 476 1.06 (0.92-1.21) 0.42 0.82 PALB2 c.2816T>G (p.Leu939Trp) 89 100 1.03 (0.77-1.39) 0.84 0.25 PALB2 c.2993G>A (**p.Gly998Glu**) 1307 1529 0.95 (0.87-1.02) 0.16 0.084 a P-value for association in all training samples Table S13: P-values for goodness-of-fit tests performed in validation dataset. Gene Chi-squared test P-value Logistic regression model\u2020",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The analysis shows little or no association between the PALB2 missense variant G998E and breast cancer risk, suggesting it is likely benign in this context.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9116026",
+            "title": "Breast cancer risks associated with missense variants in breast cancer susceptibility genes",
+            "relevance_score": 0.19,
+            "pub_year": 2022,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nb'\\r\\n\\r\\nFrequent germline deleterious mutations in DNA repair genes in familial\\r\\nprostate cancer cases are associated with aggressive disease\\r\\n\\r\\nDaniel Leongamornlerta, Edward Saundersa, Tokhir Dadaeva,\nRows:\n|NA |6/6 |1 |NA | |MSH6 |MMR\\r\\n|NM_000179.2:c.3649A>G:p.(Arg1217Gly) | |NA |NA |NA |6/6 |1 |partial |\\r\\n|MUTYH |BER |NM_001128425.1:c.536A>G:p.(Tyr179Cys) |Yes |0.002153 |NA\\r\\n|rs34612342 |6/6 |2 |1/2 | |PALB2 |HR/FA\\r\\n|NM_024675.3:c.2993G>A:p.(**Gly998Glu**) | |0.017854 |0.01 |rs45551636 |6/6 |12\\r\\n|4/7 | |PMS2 |MMR |NM_000535.5:c.52A>G:p.(Ile18Val) | |0.008336 |0.0041\\r\\n|rs63750123 |6/6 |3 |2/3 | |PMS2 |MMR |NM_000535.5:c.137G>T:p.(Ser46Ile)\\r\\n|Yes |NA |NA |rs121434629 |6/6 |1 |partial | |RAD50",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study reports PALB2 p.Gly998Glu as one of several germline variants identified in familial prostate cancer patients, without providing a pathogenicity classification or functional evidence for this specific variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC3960610",
+            "title": "Frequent germline deleterious mutations in DNA repair genes in familial prostate cancer cases are associated with advanced disease",
+            "relevance_score": 0.17,
+            "pub_year": 2014,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nTable S5. All variants with annotations and frequencies. GeneChromosome Position Reference Allele Alternate Allele Known Variation Truncating CADD Consequence Detail HGVS CDS Notation HGVS Protein Notation Amino Acid Substitution Protein Domain\nRows:\nNANANA12.52NANANANANA0.00000PALB2 1623634273AGrs180177128 NOintron ENST00000261584.4:c.2996+17T>C NANANA18.26NANANANANA0.00000PALB2 1623634293CTrs45551636,CM098533 NOmissense ENST00000261584.4:c.2993G>A ENSP00000261584.4:**p.Gly998Glu** **G998E** PTHR14662:SF2,PTHR14662,Superfamily_domains:SSF50978 33probably_damaging 0.992deleterious 0650.04238PALB2 1623634308GArs61756146 NOmissense ENST00000261584.4:c.2978C>T ENSP00000261584.4:p.Thr993Met T993M",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study finds that truncating PALB2 variants markedly increase breast cancer risk, and notes that missense variants such as G998E are predicted to be damaging by in silico tools but lack definitive risk evidence.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5740532",
+            "title": "Rare, protein-truncating variants in ATM, CHEK2 and PALB2, but not XRCC2, are associated with increased breast cancer risks",
+            "relevance_score": 0.12,
+            "pub_year": 2017,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Supplemental Table S2. Comprehensive list of the variants identified in the 37 colon cancer samples analyzed.\nColumn names:\nGene Symbol|Variant|Coverage|Frequency|Quality|Allele Source|Sample Name|AA change|CODON CHANGE|TYPE|dbSNP_ID\nRows:\nPALB2|chr16_23634293_C_T||||Novel|CC11|**G998E**|GAT G[G/A]A GGA|Single AA Change|rs45551636",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study reports the identification of a novel PALB2 G998E variant in one of the colon cancer samples analyzed, without providing interpretation of its clinical significance.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5963617",
+            "title": "Identification of different mutational profiles in cancers arising in specific colon segments by next generation sequencing",
+            "relevance_score": 0.11,
+            "pub_year": 2018,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: 0|1|Tumor Tissue\nColumn names:\n1|5|Ref\nRows:\n135|21|**p.G998E**",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study demonstrates that cerebrospinal fluid circulating tumor DNA can reliably capture the genomic alterations of gliomas, reflecting tumor evolution and offering a minimally invasive monitoring tool.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6457907",
+            "title": "Tracking Tumor Evolution in Glioma through Liquid Biopsies of Cerebrospinal Fluid",
+            "relevance_score": 0.04,
+            "pub_year": 2019,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nChrom|Pos GRCh37|dbSNP ID|COSMIC ID|Ref|Variant|Gene Name|Variant Type|Transcript ID|Codon Change|AA Change|Filtered Coverage|Allele Coverage|Allele Frequency|Variant Frequency|P-Value|snpEff Effect|snpEff Impact|Filter|SIFT Score|Interpro Domain|UniProt|PolyPhen Score|COSMIC Sample Count|Somatic Mutation Assay|Variant Clinical Significance|PAPER ID\nRows:\nchr16||rs45551636||C|T|PALB2|SNP|NM_024675.3|c.2993G>A|**p.G998E**||C=221 T=205|C=0.519 T=0.481|||NON_SYNONYMOUS_CODING|MODERATE|PASS||||||||P202",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article reports the detection of the PALB2 G998E variant in prostate cancer samples but does not assign a pathogenic or benign classification to it.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7108902",
+            "title": "Genomics of lethal prostate cancer at diagnosis and castration resistance",
+            "relevance_score": 0.04,
+            "pub_year": 2020,
+            "data_sources": [
+                "suppl"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 1732,
+            "output": 695
+        },
+        {
+            "input": 4131,
+            "output": 1571
+        },
+        {
+            "input": 2612,
+            "output": 642
+        },
+        {
+            "input": 2533,
+            "output": 563
+        },
+        {
+            "input": 3434,
+            "output": 1065
+        },
+        {
+            "input": 3085,
+            "output": 689
+        },
+        {
+            "input": 2597,
+            "output": 734
+        },
+        {
+            "input": 2144,
+            "output": 698
+        },
+        {
+            "input": 1524,
+            "output": 127
+        },
+        {
+            "input": 3029,
+            "output": 414
+        },
+        {
+            "input": 3194,
+            "output": 789
+        },
+        {
+            "input": 2698,
+            "output": 1023
+        },
+        {
+            "input": 2557,
+            "output": 612
+        },
+        {
+            "input": 2939,
+            "output": 1307
+        },
+        {
+            "input": 3092,
+            "output": 635
+        },
+        {
+            "input": 1935,
+            "output": 795
+        },
+        {
+            "input": 2185,
+            "output": 540
+        },
+        {
+            "input": 2672,
+            "output": 854
+        },
+        {
+            "input": 2245,
+            "output": 466
+        },
+        {
+            "input": 2550,
+            "output": 639
+        },
+        {
+            "input": 3034,
+            "output": 618
+        },
+        {
+            "input": 2117,
+            "output": 751
+        },
+        {
+            "input": 2494,
+            "output": 706
+        },
+        {
+            "input": 2583,
+            "output": 703
+        },
+        {
+            "input": 1980,
+            "output": 660
+        },
+        {
+            "input": 2343,
+            "output": 1046
+        },
+        {
+            "input": 3164,
+            "output": 799
+        },
+        {
+            "input": 2070,
+            "output": 581
+        },
+        {
+            "input": 2127,
+            "output": 845
+        },
+        {
+            "input": 1969,
+            "output": 206
+        },
+        {
+            "input": 2057,
+            "output": 782
+        },
+        {
+            "input": 2245,
+            "output": 1030
+        },
+        {
+            "input": 2004,
+            "output": 550
+        },
+        {
+            "input": 1820,
+            "output": 452
+        },
+        {
+            "input": 2178,
+            "output": 624
+        },
+        {
+            "input": 1974,
+            "output": 639
+        },
+        {
+            "input": 2218,
+            "output": 772
+        },
+        {
+            "input": 2189,
+            "output": 574
+        },
+        {
+            "input": 2215,
+            "output": 655
+        },
+        {
+            "input": 1888,
+            "output": 517
+        },
+        {
+            "input": 1893,
+            "output": 532
+        },
+        {
+            "input": 2033,
+            "output": 644
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 27677,
+        "output": 1217
+    },
+    "total_time": 100.82
+}

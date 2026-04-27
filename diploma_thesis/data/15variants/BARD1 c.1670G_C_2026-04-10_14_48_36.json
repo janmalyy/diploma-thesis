@@ -1,0 +1,524 @@
+{
+    "before_pruning": {
+        "articles_in_total": 17,
+        "only_medline_count": 0,
+        "only_pmc_count": 7,
+        "only_suppl_count": 10,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 17,
+        "only_medline_count": 0,
+        "only_pmc_count": 7,
+        "only_suppl_count": 10,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "variant": "BARD1 c.1670G>C",
+    "time_to_process_articles": 0.54,
+    "context_length": 34874,
+    "after_removal": {
+        "articles_in_total": 13,
+        "only_medline_count": 0,
+        "only_pmc_count": 7,
+        "only_suppl_count": 6,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "",
+            "pmcid": "PMC7464855",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 99,
+            "abstract_length": 1253,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "domains have been studied 29 32 125 126 127 128 129 130 131 the first identified bard1 c 1692g c p gln564his variant and the most prevalent c 1670g c p cys557ser variant are located in the linker"
+            ],
+            "number_of_paragraphs": 5,
+            "paragraphs_lengths": [
+                1721,
+                1535,
+                1296,
+                1202,
+                200
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10734870",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 118,
+            "abstract_length": 1568,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                400,
+                653
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6672023",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 55,
+            "abstract_length": 1749,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "ca350451296 530 056 heterozygous bard1 c 1670g c p cys557ser 2 nm 000465 np 000456 missense substitution rs28997576 ca250552 8045 heterozygous functional analyses we evaluated each variant for the"
+            ],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                1239,
+                196
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4439969",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 119,
+            "abstract_length": 1281,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "mutations789101112131415161718192021222324252627282930 detected mutations are distributed over almost entire sequence of bard1 and no strong hot spot mutation or hot spot region was identified so far the exception may be c 1670g c p cys557ser"
+            ],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                246
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6827033",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 144,
+            "abstract_length": 1168,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1647
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6410045",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 54,
+            "abstract_length": 1271,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                622
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5819082",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 88,
+            "abstract_length": 1891,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                404
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6522222",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 75,
+            "abstract_length": 1439,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9245282",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 104,
+            "abstract_length": 1969,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6726608",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 97,
+            "abstract_length": 1304,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8248503",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 110,
+            "abstract_length": 1973,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10657378",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 132,
+            "abstract_length": 1434,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7961070",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 168,
+            "abstract_length": 1401,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        }
+    ],
+    "narrative_summary": "The BARD1 missense change c.1670G>C (p.Cys557Ser, rs28997576) has been investigated primarily in relation to hereditary breast and ovarian cancer, with occasional reports in prostate and colorectal cancer cohorts. Early case\u2011control analyses in Finnish, Nordic and Icelandic populations suggested an elevated breast/ovarian cancer risk, and a Finnish frequency of about 1% was noted, which is higher than that of BRCA1/2 pathogenic variants in the same population. However, subsequent studies in Finnish, Australian, Polish and other cohorts failed to confirm a significant association, and a meta\u2011analysis of 11,870 breast\u2011cancer cases and 7,687 controls across multiple European and North\u2011American populations reported an odds ratio of 1.14 (95\u202f%\u202fCI\u202f0.94\u20111.34, p\u202f=\u202f0.13), indicating at most a low\u2011moderate effect [PMC7464855]. A study of Chilean families with a strong breast\u2011cancer history reported an increased risk associated with the variant, whereas a prostate\u2011cancer sequencing cohort classified it as a variant of uncertain significance without functional validation [PMC6410045; PMC10734870]. The same variant was also noted in a Polish breast/ovarian cancer series as a possible hotspot, but no segregation or risk estimates were provided [PMC4439969].\n\nFunctional investigations have been limited. One report described the performance of functional assays on a set of BARD1 germline variants that included c.1670G>C, but the extracted excerpt did not convey any specific functional outcome for this change, leaving its impact on protein activity unresolved [PMC6672023].\n\nPopulation data show that the minor allele frequency of BARD1 c.1670G>C varies widely: overall MAF\u202f\u2248\u202f0.015 in cancer\u2011free reference databases, 5.2\u202f\u00d7\u202f10\u207b\u2075 in East Asians, 0.024 in Ashkenazi Jews, and about 1\u202f% in Finns, which is considerably higher than the frequency of known high\u2011penetrance BRCA1/2 pathogenic variants in the same group. A separate targeted\u2011sequencing cohort reported a heterozygous carrier frequency of 2.4\u202f% (0.02384) among its participants, consistent with a relatively common germline allele in certain populations [PMC7464855; PMC10734870].\n\nTaken together, the evidence for BARD1 c.1670G>C is conflicted. While some population\u2011specific case\u2011control studies and family\u2011based reports suggest a modest increase in breast\u2011cancer risk, larger aggregated analyses and several independent cohorts have not demonstrated a statistically significant association, and functional data are lacking. Consequently, the variant is best regarded as a low\u2011penetrance or possibly benign allele pending further large\u2011scale epidemiologic and functional studies to clarify its contribution to cancer susceptibility.",
+    "structured_summary": {
+        "overall_pathogenicity": "pathogenic",
+        "pathogenicity_counts": {
+            "supports pathogenicity": 3,
+            "uncertain": 2,
+            "supports benignity": 1
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "The first statistical association was reported by analyzing the BARD1 **c.1670G>C**; p.Cys557Ser variant in cancer cases from Finnish, Nordic, and Icelandic populations versus population-matched cancer-free controls. Collectively, these studies were in agreement with the possibility that carriers of this BARD1 variant had an increased risk to BC and/or OC. However, a negative association was reported by three different research groups that analyzed case-control groups from Finnish, Australian, and Polish populations. The inconsistency in results from the same Finnish population was explained by the possibility of a false positive association due to the small sample sizes. Indeed, using publicly available population based genetic databases the minor allele frequency (MAF) of BARD1 **c.1670G>C**; p.Cys557Ser is 0.015 in the general cancer-free population overall, but it is highly variable among different populations ( v2.1.1). It is the rarest (MAF = 5.2 x 10-5) in East Asians and the most common (MAF = 0.024) in the Ashkenazi Jewish population (Supplementary Table S1). In the Finnish population, this variant has a frequency of approximately 1%, which is relatively more common compared to known pathogenic variants in well-established BC and OC predisposing genes, BRCA1 or BRCA2 (0.001%). This suggests that the effect size of BARD1 **c.1670G>C**; p.Cys557Ser could be small, that is, it could confer a low-moderate risk to cancer relative to the high risk associated with BRCA1/BRCA2 pathogenic variants.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "The contribution of BARD1 variants to cancer risk or disease progression in carriers of pathogenic variants in known cancer predisposing genes is unknown. Four studies of BC cases have investigated the co-occurrence of carriers of the BARD1 **c.1670G>C**; p.Cys557Ser variant with pathogenic variants in BRCA1 or BRCA2. The prevalence of this BARD1 variant was significantly higher in Icelandic BC cases who also carried the pathogenic BRCA2 c.771_775del; p.Asn257LysfsTer17 variant known to be a founder pathogenic variant in this population. The risk of BC associated with carrying both variants was estimated to be three-fold higher than carriers of BRCA2 c.771_775del; p.Asn257LysfsTer17 alone and the lifetime probability of developing BC approaches 100% in carriers of both variants. Three other studies of BC cases from Nordic, Polish and mixed populations found that carriers of the BARD1 **c.1670G>C**; p.Cys557Ser variant and a BRCA1 or BRCA2 pathogenic variant did not confirm this finding. Thus, further studies are needed to clarify the interaction of BARD1 with BRCA1 or BRCA2. It is possible that specific BARD1 variants have additive effects by increasing or modifying risk in a linear or synergistic manner in carriers of other high risk variants (reviewed in).",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "A number of studies estimated the cancer risk associated with specific variants in BARD1 in BC and hereditary BC and/or OC syndrome families (Table 2). We found reports describing the risk for nine different BARD1 variants: one nonsense, one frameshift, six missense and two synonymous variants. Risk estimates are variable across these studies, where the highest risk was observed for c.1690C>T; p.Gln564Ter in association with TNBC cases not selected for family history of cancer (OR 3.62, 95% CI 1.21-10.78, p = 0.02). This is consistent with the previous report suggesting that BARD1 variants may be associated with a higher risk for TNBC. A meta-analysis of the **c.1670G>C**; p.Cys557Ser variant in 11,870 BC cases and 7687 controls, from Nordic, Australian, Canadian, Russian, English, and Polish populations, concluded that carriers of this BARD1 variant have a low risk for BC (OR 1.14, 95%CI 0.94-1.34, p = 0.13). While studies estimating the familial risk of BARD1 variants to OC are still lacking, evidence is emerging that BARD1 is a potential moderate risk gene for TNBC.",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "...Familial 663 718 Finland 1.04 (0.8-1.34) 0.79 c.1519G>A p.Val507Met Breast Unselected 867 718 Finland 1.27 (0.99-1.63) 0.06 c.1519G>A p.Val507Met Breast Unselected 507 539 China 0.98 (0.75-1.29) - **c.1670G>C** p.Cys557Ser Breast or ovarian Familial 126 1018 Finland 4.2 (1.7-10.7) 5 x 10-3 **c.1670G>C** p.Cys557Ser Breast Familial 926 725 Finland 0.49 (0.24-1.01) 0.05 **c.1670G>C** p.Cys557Ser Breast Familial 255 358 Finland 0.70 (0.21-2.34) 0.56 **c.1670G>C** p.Cys557Ser Breast Unselected 868 725 Finland 0.74 (0.38-1.44) 0.38 **c.1670G>C** p.Cys557Ser Breast Unselected 697 358 Finland 1.09 (0.47-2.56) 0.84 **c.1670G>C** p.Cys557Ser Breast or ovarian Familial 757 3591 Nordic 1.9 (1.32-2.83) 10-3 **c.1670G>C** p.Cys557Ser Breast Unselected 1984 3591 Nordic 1.7 (1.23-2.22) 10-3 **c.1670G>C** p.Cys557Ser Breast Unselected 992 703 Iceland 1.82 (1.11-3.01) 0.014 **c.1670G>C** p.Cys557Ser Breast High risk 3188 1038 Poland 1.2 (0.9-1.7) 0.3 **c.1670G>C** p.Cys557Ser Breast Unselected 1136 623 Australia 0.80 (0.50-1.27) g 0.3 **c.1670G>C** p.Cys557Ser Breast High risk 322 570 Chile 1.4 (0.6-3.7) 0.47 c.1690C>T p.Gln564Ter Breast Familial 1018 2036 Poland 1.0 (0.1-8.6) 1 c.1690C>T p.Gln564Ter Breast Unselected 13,935 5896 Poland,...",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The review summarizes that BARD1 c.1670G>C shows inconsistent association results, with some studies suggesting a modest increase in breast/ovarian cancer risk, especially when combined with BRCA2, but overall the evidence points to a low\u2011moderate penetrance variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7464855",
+            "title": "Literature Review of BARD1 as a Cancer Predisposing Gene with a Focus on Breast and Ovarian Cancers",
+            "relevance_score": 1.0,
+            "pub_year": 2020,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...p.Gly469_Gly473del chrX:66766381 Het. 0.01 0.0012 - - rs746853821 ATM ENST00000278616: c.5558A>T p.Asp1853Val chr11:108304736 Het. 0.000909 0.000008 - 0.0018 rs1801673 BARD1 ENST00000260947: **c.1670G>C** p.Cys557Ser chr2:214752454 Het. 0.02384 - 0.002724 0.008 rs28997576 BRCA1 ENST00000471181: c.4946T>C p.Met1649Thr chr17:43071031 Het. 0.000349 - 0.000227 0.0026 rs4986854 BRCA2 ENST00000380152:...",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "...Hereditary cancer EHBP1c.2674G>C rs754583745 Missense VUS VUS NA Known - ELAC2c.1621G>A rs5030739 Missense B B B Known Prostate Cancer 8 13 3+3 M APCc.7504G>A rs2229995 Missense B B B Known - BARD1c.**1670G>C** rs28997576 Missense B VUS B Known Breast cancer, Hereditary cancer MUTYHc.1544C>T rs140118273 Missense B B B Known MYH-Associated polyposis, Hereditary cancer PLXNB1c.866A>G rs1314691032 Missense VUS VUS NA Known - 9 18 3+4 T3a BARD1c.**1670G>C** rs28997576 Missense B VUS B Known Breast cancer, Hereditary cancer BRCA2c.4258G>T rs28897727 Missense B B B Known Breast cancer, Hereditary cancer 10 124 5+5 M BRCA2c.5744C>T rs4987117 Missense B B...",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The study identified the BARD1 c.1670G>C missense variant in a prostate cancer cohort and reported it as a variant of uncertain significance with a modest population frequency, without functional validation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10734870",
+            "title": "Germline variant screening with targeted next generation sequencing in prostate cancer: phenotype-genotype correlation",
+            "relevance_score": 0.76,
+            "pub_year": 2022,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Despite these similarities, the clinical significance of BARD1 remains uncertain. Unlike BRCA1, BARD1 germline pathogenic variants are found in <1% of breast cancer patients. As a result, there is insufficient epidemiologic evidence on the role of BARD1 as a breast cancer susceptibility gene. Moreover, the evidence can sometimes be controversial, further impeding our understanding of the clinical relevance of BARD1. For example, one of the most extensively studied BARD1 germline variants, **c.1670G>C**, was shown to be associated with a two- to fourfold increased breast cancer risk in some studies but not in others. Given that BARD1 is a low-penetrance gene, its pathogenic variants likely increased the cancer risk in concert with other low- to moderate-penetrance gene alleles. The interaction among the various genetic risk loci might have led to the varying penetrance estimations observed in the various studies. Overall, existing epidemiologic data are scarce and inconsistent. Functional studies can help circumvent this by reclassifying germline variants:hence, increasing the number of pathogenic variants available for inclusion in epidemiologic studies.",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                },
+                {
+                    "quoted_text": "CA350451296 530,056 Heterozygous BARD1 **c.1670G>C** p.Cys557Ser 2 NM_000465 NP_000456 Missense Substitution rs28997576 CA250552 8045 Heterozygous Functional Analyses We evaluated each variant for the",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article reports conflicting epidemiologic evidence on the breast\u2011cancer risk associated with BARD1 c.1670G>C and notes that functional analyses were performed, though detailed functional results are not presented in the extracted mentions.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6672023",
+            "title": "Functional analysis of clinical BARD1 germline variants",
+            "relevance_score": 0.75,
+            "pub_year": 2019,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "mutations789101112131415161718192021222324252627282930. Detected mutations are distributed over almost entire sequence of BARD1 and no strong hot-spot mutation or hot-spot region was identified so far. The exception may be c.1670G >C (p.Cys557Ser",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study found no large BARD1 mutations in the Polish cohort and identified several deleterious point mutations, noting c.1670G>C as a potential hotspot exception.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC4439969",
+            "title": "Analysis of large mutations in BARD1 in patients with breast and/or ovarian cancer: the Polish population as an example",
+            "relevance_score": 0.64,
+            "pub_year": 2015,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Gene rs Variant COSMIC CLINVAR Brazil Chile Colombia Mexico Peru Uruguay ATM NA c.634delT x ATM NA c.5648_5655del x ATM rs145119475 c.4060C>A x ATM rs1800056 c.2572T>C x ATM rs1801516 c.5557G>A x x ATM rs1801673 c.5558A>T x ATM rs200381392 c.1703G>T x ATM rs202173660 c.1444A>C x ATM rs2234997 c.378T>A x ATM rs2235006 c.1744T>C x ATM rs4986761 c.2119T>C x ATM rs587782153 c.5039C>T x ATM rs758962678 c.241A>G x ATM rs759965045 c.7702_7703del x ATM rs771887195 c.43del x ATM rs786203421 c.7000_7003delTACA x ATM rs786204433 c.5644C>T x TP53 rs1042522 c.215C>G x TP53 rs11540652 c.743G>A x TP53 rs121912664 c.1010G>A x TP53 rs121913344 c.916C>T x TP53 rs144386518 c.173C>G x TP53 rs1800370 c.108G>A x TP53 rs1800371 c.139C>T x TP53 rs28934576 c.818G>A x TP53 rs55863639 c.375G>A x TP53 rs587782144 c.473G>A x TP53 rs587782620 c.427G>A x CHEK2 NA c.1015C>T x CHEK2 NA c.1151delT x CHEK2 NA c.705A>C x CHEK2 NA c.852G>T x CHEK2 rs1555926890? c.506T>C x CHEK2 rs555607708 c.1100delC x x CHEK2 rs587781652 c.485A>G x CHEK2 rs864622149 c.846+1G>C x BARD1 NA c.2215dupT x BARD1 rs143914387 c.33G>T x BARD1 rs28997576 **c.1670G>C** x BARD1 rs587781948 c.1921C>T x BARD1 rs758972589 c.334C>T x BARD1 rs777937955 c.1622C>A x MLH1 NA c.1966C>T x MLH1 NA c.413A>G x MLH1 NA c.791G>A x MLH1 rs148317871 c.2213G>A x MLH1 rs63751615 c.676C>T x MLH1 del_exon8 NA NA x PALB2 NA c.1861C>A x PALB2 NA c.483C>G x PALB2 rs150390726 c.23C>T x PALB2 rs152451 c.1676A>G x PALB2 rs180177100 c.1240C>T x PALB2 rs45551636 c.2993C>T x BRIP1 rs202072866 c.415T>G x BRIP1 rs28997569 c.790C>T x BRIP1 rs371185409 c.3079G>A x BRIP1 rs45589637 c.2220G>T x BRIP1 rs759031349 c.689C>T x",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The review catalogs germline DNA\u2011repair gene mutations in Latin American breast\u2011cancer cohorts and includes BARD1 c.1670G>C among reported variants, but offers no specific interpretation of its clinical impact.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6827033",
+            "title": "Landscape of Germline Mutations in DNA Repair Genes for Breast Cancer in Latin America: Opportunities for PARP-Like Inhibitors and Immunotherapy",
+            "relevance_score": 0.49,
+            "pub_year": 2019,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "The BARD1 protein heterodimerizes with BRCA1 and induces translocation and retention of BRCA1 into the nucleus. The **c.1670G>C** (rs28997576) variant was assessed in case-control studies from several populations. In Chile, this variant was associated with an increased breast cancer risk in families with strong family history. Two other variants were detected in a cohort of 124 Peruvian triple-negative breast cancer patients: the pathogenic c.334C>T (rs758972589) variant and the probably pathogenic c.1622C>A (rs777937955) variant.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The review highlights that the BARD1 c.1670G>C variant has been associated with increased breast cancer risk in Chilean families with strong family history, indicating a potential pathogenic role in this population.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6410045",
+            "title": "Genetic Epidemiology of Breast Cancer in Latin America",
+            "relevance_score": 0.47,
+            "pub_year": 2019,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...> A, p.G322D (rs4987188) MSH6 NM_000179: c.2633 T > C, p.V878A (rs2020912) PALB2 NM_024675: c.2794G > A, p.V932 M (rs45624036) PMS2 NM_000535: c.1454C > A, p.T485 K (rs1805323) BARD1 NM_000465: c.**1670G > C**, p.C557S (rs28997576) rs459552, rs659243, rs2240308, rs2070094, rs2229571, rs11528010, rs169547, rs4986764, rs1805107, rs506504, rs1126497, rs702689, rs832582, rs5868032, rs1799977, rs1042821,...",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study identified a range of genetic variants in colorectal cancer families, including BARD1 c.1670G>C, but did not provide any specific pathogenicity interpretation for this BARD1 variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5819082",
+            "title": "Identification of genetic variants for clinical management of familial colorectal tumors",
+            "relevance_score": 0.39,
+            "pub_year": 2018,
+            "data_sources": [
+                "pmc"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 3618,
+            "output": 1196
+        },
+        {
+            "input": 2280,
+            "output": 586
+        },
+        {
+            "input": 2355,
+            "output": 833
+        },
+        {
+            "input": 1814,
+            "output": 717
+        },
+        {
+            "input": 2551,
+            "output": 527
+        },
+        {
+            "input": 1857,
+            "output": 668
+        },
+        {
+            "input": 2087,
+            "output": 799
+        },
+        {
+            "input": 1705,
+            "output": 209
+        },
+        {
+            "input": 1948,
+            "output": 210
+        },
+        {
+            "input": 1713,
+            "output": 260
+        },
+        {
+            "input": 1996,
+            "output": 255
+        },
+        {
+            "input": 1804,
+            "output": 343
+        },
+        {
+            "input": 1795,
+            "output": 306
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 5031,
+        "output": 1151
+    },
+    "total_time": 21.33
+}

@@ -1,0 +1,267 @@
+{
+    "before_pruning": {
+        "articles_in_total": 13,
+        "only_medline_count": 0,
+        "only_pmc_count": 3,
+        "only_suppl_count": 8,
+        "both_pmc_and_suppl_count": 2,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 13,
+        "only_medline_count": 0,
+        "only_pmc_count": 3,
+        "only_suppl_count": 8,
+        "both_pmc_and_suppl_count": 2,
+        "all_three_count": 0
+    },
+    "variant": "BRCA1 Q687P",
+    "time_to_process_articles": 9.09,
+    "context_length": 17953,
+    "after_removal": {
+        "articles_in_total": 5,
+        "only_medline_count": 0,
+        "only_pmc_count": 3,
+        "only_suppl_count": 0,
+        "both_pmc_and_suppl_count": 2,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "",
+            "pmcid": "PMC4391122",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 153,
+            "abstract_length": 2395,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 3,
+            "paragraphs_lengths": [
+                1024,
+                610,
+                1584
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10742236",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 147,
+            "abstract_length": 2425,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                412
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8869830",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 135,
+            "abstract_length": 2158,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                406
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10728430",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 129,
+            "abstract_length": 1312,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                410,
+                648
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10055651",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 137,
+            "abstract_length": 2295,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                410
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        }
+    ],
+    "narrative_summary": "The BRCA1 missense variant Q687P (c.2060A>C, p.Gln687Pro) has been identified in several cancer\u2011related contexts, most notably in ovarian tumour sequencing panels and in a patient with bilateral Wilms tumour, and is listed in a pancreatic cancer precision\u2011medicine review.\nClinical reports predominantly classify the change as a variant of uncertain significance. In a multiplex PCR\u2011NGS study of FFPE ovarian tumours the variant was detected and reported as VUS [PMC4391122]. A germline analysis of bilateral Wilms tumour patients also described the same missense change as VUS [PMC10728430], and a recent review of BRCA\u2011mutated pancreatic cancer listed Q687P among missense variants of unknown impact [PMC8869830]. One study, however, described the allele as a pathogenic missense variant in a Wilms tumour case [PMC10055651], creating a discordant interpretation.\nNo functional assays or experimental data addressing the effect of the Q687P substitution on BRCA1 protein function have been reported; the only functional\u2011type information is the demonstration that the variant can be reliably detected by the NGS workflow used in the ovarian tumour study [PMC4391122].\nPopulation frequency data and in\u2011silico predictive scores are not provided in the extracted evidence.\nTaken together, the preponderance of evidence classifies BRCA1 Q687P as a variant of uncertain significance, with a single report suggesting pathogenicity but lacking supporting functional or population data. Consequently, the current weight of evidence does not permit a definitive pathogenic or benign assignment.",
+    "structured_summary": {
+        "overall_pathogenicity": "uncertain",
+        "pathogenicity_counts": {
+            "supports benignity": 0,
+            "supports pathogenicity": 1,
+            "uncertain": 3
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Sample Sample type High impact variant Class % variant reads NGS replicate confirmation Sanger confirmation AZ68+ Ovary BRCA1 c.1105delG p.(Asp369MetfsTer5) pathogenic 72 Yes Yes AZ75+ Ovary BRCA1 c.1105delG p.(Asp369MetfsTer5) pathogenic 68 Yes Yes AZ30 Ovary BRCA1 c.4675G>A p.(Glu1559Lys) pathogenic 58 Yes Yes AZ28 Ovary BRCA1 c.5266dupC p.(Gln1756ProfsTer74) pathogenic 52 Yes Yes AZ23 Ovary BRCA2 c.7007+1G>C pathogenic 79 Yes Yes AZ11 Ovary BRCA1 c.181T >G p.(Cys61Gly) pathogenic 84 Yes No data* AZ113 Breast BRCA1 c.2253_2254delGT p.(Met751IlefsTer10) pathogenic 52 Yes Yes AZ109 Breast BRCA1 c.5095C>T p.(Arg1699Trp) pathogenic 59 Yes Yes AZ17 Ovary BRCA1 **c.2060A>C** p.(**Gln687Pro**) VUS 90 Yes Yes AZ78 Ovary BRCA2 c.1408G>C p.(Glu470Gln) VUS 76 Yes Yes AZ72 Ovary BRCA2 c.10024G>A p.(Glu3342Lys) VUS 46 Yes Yes AZ39 Ovary BRCA2 c.7788delAinsGGGT p.(Gly2596dup) VUS 58 Yes Yes AZ29 Ovary BRCA2 c.9302 T>C p.(Leu3101Pro) VUS 82 No data Yes AZ10 Ovary BRCA2 c.10095delinsGAATTATATCT p.(Ser3366AsnfsTer4) VUS 100 Yes Yes",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                },
+                {
+                    "quoted_text": "Sample Variant Dilution % coverage @100x Expected variant allele proportion* Observed variant allele proportion Variant reads/total reads AZ10 BRCA2 c.10095delinsGAATTATATCT p.(Ser3366AsnfsTer4) 1/2 96.9% ~46% 48% 2107/4405 1/4 97.0% ~23% 20% 1438/7185 1/8 97.0% ~11% 9% 747/7871 1/16 96.5% ~5% 4% 322/7591 AZ17 BRCA1 **c.2060A>C** p.(**Gln687Pro**) 1/2 97.0% ~45% 72.2% 5094/7051 1/4 97.0% ~23% 55.5% 3428/6174 1/8 97.0% ~11% 33.6% 2220/6610 1/16 97.0% ~5.5% 19.1% 1056/5523 AZ23 BRCA2 c.7007+1G>C 1/2 96.9% ~40% 67% 2645/3949 1/4 97.0% ~20% 51% 3235/6340 1/8 97.0% ~10% 35.1% 3264/9287 1/16 97.0% ~5% 20.2% 1351/6700",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "As none of the tumour samples were found to contain a validated low frequency variant, we used a series of decreasing variant content admixtures as a model system to assess the ability of the method to detect variants at low proportions as could occur in a heterogeneous tumour. Three FFPE tumour DNA samples known to harbour BRCA pathogenic mutations were mixed with a single background non-mutant FFPE tumour DNA to make 1/2, 1/4, 1/8 and 1/16 admixtures. The total amplifiable input DNA remained constant at 80 ng per test (20 ng per plex) (Admix set 1: BRCA2 c.10095delinsGAATTATATCT p.(Ser3366AsnfsTer4); Admix set 2: BRCA1 **c.2060A>C** p.(**Gln687Pro**); Admix set 3: BRCA2 c.7007+1G>C). All the variants were clearly detected in the lowest 1/16 admixture (Table 3). Although the relative numbers of reads with the variants declined with the lower admixtures, the actual proportion was not always as predicted and may indicate that the measure of amplifiable DNA at 129 bp qPCR is not fully reflecting the numbers of amplifiable copies of each BRCA locus in each sample. Nevertheless, BRCA mutations could be readily detected if present in >10% of a sample DNA, which should enable the detection of low level mutations commonly found in tumour material. If the level of neoplastic cells is lower, macro or microdissection to enrich for the proportion of tumour cells may be necessary to achieve the required limit of detection although we did not assess this in this study.",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article shows that the multiplex PCR\u2011NGS workflow can reliably detect the BRCA1 Q687P (c.2060A>C) variant in FFPE tumour tissue, but classifies it as a variant of uncertain significance, providing no functional or clinical impact assessment.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC4391122",
+            "title": "A reliable method for the detection of BRCA1 and BRCA2 mutations in fixed tumour tissue utilising multiplex PCR-based targeted next generation sequencing",
+            "relevance_score": 1.0,
+            "pub_year": 2015,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...Missense Unknown QCMG L2258P Missense Unknown QCMG BRCA1 X183_splice Splice Presumed LOF, Likely Oncogenic ICGC X1778_splice Splice Presumed LOF, Likely Oncogenic ICGC A622V Missense Unknown ICGC **Q687P** Missense Unknown ICGC T539M Missense Unknown ICGC V1590A Missense Unknown TCGA A314T Missense Unknown TCGA S646G Missense Unknown TCGA E515Q Missense Unknown UTSW BRCA2 R3128* Nonsense Presumed LOF,...",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The review outlines current and emerging precision\u2011medicine approaches for BRCA1/2\u2011 or PALB2\u2011mutated pancreatic cancer, highlighting PARP inhibitor therapy for HR\u2011deficient tumors.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8869830",
+            "title": "Precision Medicine for BRCA/PALB2-Mutated Pancreatic Cancer and Emerging Strategies to Improve Therapeutic Responses to PARP Inhibition",
+            "relevance_score": 0.24,
+            "pub_year": 2022,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...WT] were found to have normal tumor chromosome 11p15.5 copy number with ROI. One patient was found to have a BRCA1 blood germline missense variant of uncertain significance (**p.Q687P**; SJWLM066773), one patient was found to have a pathogenic frameshift variant (p.T2766fs; SJWLM066783) in BRCA2, and one patient was found to have a variant of uncertain...",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                },
+                {
+                    "quoted_text": "SJWLM Blood germline Somatic variants right kidney tumor Somatic variants left kidney tumor Shared both kidney tumors Adjacent normal kidney Blood H19/ICR1 methylation > 2 SD from normal 066770 REST p.H379P DHX36, EIF1AX, HCG22, RPS10P7 ALPK2, BCORL1, GUSBP4, H3F3A, IZKF4, PLCH2, PPFIA4, RBBP4, STAT4, REST, IL2RB, GRLF1, LRRC16B 11p15.5 LOH N/A No 066771 None VCX3A LOC26102, PPCDC, R3HDM1 11p15.5 LOI N/A Yes 066773 TRIM28 p.Q318*, BRCA1 **p.Q687P** CDK13, TAS2R60 ITM2C, LOC100133161, LOC339822 11p15.5 ROI N/A No 066776 WT1 p.Q253* AIM1L, CAMK2B, CTNNB1 p.S45F, DHX30, EBF4, NLRC5, OR4C11, PPL CTNNB1 p.S45del, DBH, DDX60, NANOS1, NELL1, TUBB1,...",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study reports a single germline BRCA1 p.Q687P missense variant classified as a variant of uncertain significance in a patient with bilateral Wilms tumor, without further functional or population evidence.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10728430",
+            "title": "Genetic and epigenetic features of bilateral Wilms tumor predisposition in patients from the Children's Oncology Group AREN18B5-Q",
+            "relevance_score": 0.16,
+            "pub_year": 2023,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...TRIM28-associated WT were found to have normal chromosome 11p15.5 copy number with ROI. One patient was found to have a BRCA1 pathogenic missense variant (**p.Q687P**; SJWLM066773), one patient was found to have a pathogenic frameshift variant (p.T2766fs; SJWLM066783) in BRCA2, and one patient was found to have a variant of uncertain...",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study identified a pathogenic BRCA1 missense variant (p.Q687P) in one bilateral Wilms tumor patient, indicating BRCA1 involvement in tumor predisposition.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10055651",
+            "title": "The Genetic and Epigenetic Features of Bilateral Wilms Tumor Predisposition: A Report from the Children's Oncology Group AREN18B5-Q Study",
+            "relevance_score": 0.13,
+            "pub_year": 2023,
+            "data_sources": [
+                "pmc"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 3228,
+            "output": 880
+        },
+        {
+            "input": 2230,
+            "output": 284
+        },
+        {
+            "input": 2089,
+            "output": 611
+        },
+        {
+            "input": 2284,
+            "output": 546
+        },
+        {
+            "input": 2184,
+            "output": 374
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 2964,
+        "output": 819
+    },
+    "total_time": 26.9
+}

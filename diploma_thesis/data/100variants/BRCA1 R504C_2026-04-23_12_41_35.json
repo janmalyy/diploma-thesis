@@ -1,0 +1,1251 @@
+{
+    "before_pruning": {
+        "articles_in_total": 35,
+        "only_medline_count": 1,
+        "only_pmc_count": 1,
+        "only_suppl_count": 33,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 35,
+        "only_medline_count": 1,
+        "only_pmc_count": 1,
+        "only_suppl_count": 33,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "variant": "BRCA1 R504C",
+    "time_to_process_articles": 16.92,
+    "context_length": 89412,
+    "after_removal": {
+        "articles_in_total": 35,
+        "only_medline_count": 1,
+        "only_pmc_count": 1,
+        "only_suppl_count": 33,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "26219265",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 172,
+            "abstract_length": 1459,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9957003",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 124,
+            "abstract_length": 2396,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "82 \u00b1 7 reduced protein expression c 1508a g p lys503arg 34 \u00b1 12 22 \u00b1 11 81 \u00b1 21 18 \u00b1 9 81 \u00b1 12 no deviations detected c 1510c t p arg504cys 42 \u00b1 15 48 \u00b1 23 63 \u00b1 33 65 \u00b1 18 71 \u00b1 16 no deviations"
+            ],
+            "number_of_paragraphs": 3,
+            "paragraphs_lengths": [
+                788,
+                412,
+                197
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10988807",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 204,
+            "abstract_length": 2985,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    503
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8860097",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 74,
+            "abstract_length": 1214,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    189
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11607406",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 134,
+            "abstract_length": 1411,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    707
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8037250",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 176,
+            "abstract_length": 2750,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    647
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9580879",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 107,
+            "abstract_length": 1741,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    296
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9636114",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 174,
+            "abstract_length": 1792,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    551
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10993466",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 89,
+            "abstract_length": 2063,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    767
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7118020",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 192,
+            "abstract_length": 1320,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    105
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11576737",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 92,
+            "abstract_length": 1676,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    539
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6621990",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 175,
+            "abstract_length": 2421,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    1060
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3660339",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 106,
+            "abstract_length": 2045,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    667
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5546431",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 181,
+            "abstract_length": 1148,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    669
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8629245",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 116,
+            "abstract_length": 1742,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    990
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11184281",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 133,
+            "abstract_length": 0,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    197
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9685809",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 148,
+            "abstract_length": 934,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    764
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6593250",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 146,
+            "abstract_length": 1677,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    338
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8062186",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 102,
+            "abstract_length": 1107,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    756
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7782482",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 74,
+            "abstract_length": 1440,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    157
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11426096",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 76,
+            "abstract_length": 1651,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    576
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6617753",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 136,
+            "abstract_length": 2590,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    162
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9302303",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 214,
+            "abstract_length": 2660,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    156
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8045191",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 67,
+            "abstract_length": 2307,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    713
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4601528",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 129,
+            "abstract_length": 979,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    29
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6872807",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 51,
+            "abstract_length": 1330,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    421
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6946677",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 87,
+            "abstract_length": 1325,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    211
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5584218",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 141,
+            "abstract_length": 1676,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    697
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7603305",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 112,
+            "abstract_length": 1860,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    145
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7200683",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 99,
+            "abstract_length": 1372,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    728
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7865061",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 87,
+            "abstract_length": 1386,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    331
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10471768",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 67,
+            "abstract_length": 905,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    473
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8630635",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 125,
+            "abstract_length": 1650,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    293
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4365969",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 165,
+            "abstract_length": 1724,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    576
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5055158",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 87,
+            "abstract_length": 1706,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    1763
+                ]
+            ]
+        }
+    ],
+    "narrative_summary": "The BRCA1 missense change p.Arg504Cys (c.1510C>T) lies within the first nuclear\u2011localisation signal of the protein (aa\u202f503\u2011508) and has been reported in a variety of cancer\u2011related sequencing studies. Clinical reports have most often classified the variant as a variant of uncertain significance (VUS) or as likely benign. In a Norwegian laboratory survey the variant was assigned class\u202f3 (VUS) in 2016 [PMC9636114], while an Australian national review re\u2011analysed it using ACMG/AMP criteria and concluded a likely\u2011benign classification [PMC11607406]. A population\u2011based screening of healthy Han Chinese individuals identified the same change as a VUS in an asymptomatic carrier [PMC10988807], and an evolutionary analysis of BRCA1/2 pathogenic variants listed it as of uncertain significance in ClinVar [PMC8860097]. Similar VUS designations appear in studies of ovarian cancer response to olaparib [PMC5546431] and in a clinical cfDNA assay validation where it was reported as a VUS [PMC6593250].\nFunctional investigations have not demonstrated a deleterious effect. A nuclear\u2011cytosol fractionation assay showed that the Arg504Cys protein localises to the nucleus at levels comparable to wild\u2011type BRCA1 (\u224884\u202f% nuclear) [PMC9957003]. Parallel analyses reported no reduction in protein expression or stability for the variant [PMC9957003]. Screening of BRCA1 phosphorylation motifs also failed to reveal any disruption caused by Arg504Cys [PMC3660339].\nPopulation data confirm the presence of the allele in individuals without a known cancer phenotype. The variant was detected in a healthy individual in a Chinese cohort [PMC10988807] and in a lung\u2011cancer tumor sample at a 6.93\u202f% allele frequency [PMC11184281]; a germline allele frequency of 0.4863 was reported in a breast\u2011cancer cohort [PMC9580879]. These observations indicate that the change can be present in both non\u2011cancer and cancer contexts without a clear disease association.\nOverall, the accumulated evidence points toward a non\u2011pathogenic role for BRCA1\u202fp.Arg504Cys. Functional assays show no impact on nuclear localisation, protein stability, or phosphorylation motifs, and population surveys find the variant in healthy carriers. Clinical databases and laboratory classifications remain heterogeneous, ranging from VUS to likely benign, reflecting residual uncertainty. Nonetheless, the preponderance of functional and population data supports a classification of the variant as likely benign, with the caveat that definitive pathogenicity has not been established.",
+    "structured_summary": {
+        "overall_pathogenicity": "uncertain",
+        "pathogenicity_counts": {
+            "supports benignity": 1,
+            "supports pathogenicity": 0,
+            "uncertain": 7
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Somatic mosaicism for DNA copy-number alterations (SMC-CNAs) is defined as gain or loss of chromosomal segments in somatic cells within a single organism. As cells harboring SMC-CNAs can undergo clonal expansion, it has been proposed that SMC-CNAs may contribute to the predisposition of these cells to genetic disease including cancer. Herein, the gross genomic alterations (>500 kbp) were characterized in uninvolved mammary glandular tissue from 59 breast cancer patients and matched samples of primary tumors and lymph node metastases. Array-based comparative genomic hybridization showed 10% (6/59) of patients harbored one to 359 large SMC-CNAs (mean: 1,328 kbp; median: 961 kbp) in a substantial portion of glandular tissue cells, distal from the primary tumor site. SMC-CNAs were partially recurrent in tumors, albeit with considerable contribution of stochastic SMC-CNAs indicating genomic destabilization. Targeted resequencing of 301 known predisposition and somatic driver loci revealed mutations and rare variants in genes related to maintenance of genomic integrity: BRCA1 (p.Gln1756Profs*74, **p.Arg504Cys**), BRCA2 (p.Asn3124Ile), NCOR1 (p.Pro1570Glnfs*45), PALB2 (p.Ser500Pro), and TP53 (p.Arg306*). Co-occurrence of gross SMC-CNAs along with point mutations or rare variants in genes responsible for safeguarding genomic integrity highlights the temporal and spatial neoplastic potential of uninvolved glandular tissue in breast cancer patients.",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study detected the BRCA1 R504C variant among other mutations in uninvolved mammary gland tissue of breast cancer patients, without offering any interpretation of its clinical or functional significance.",
+            "uncertainties_or_limitations": null,
+            "article_id": "26219265",
+            "title": "Concurrent DNA Copy-Number Alterations and Mutations in Genes Related to Maintenance of Genome Stability in Uninvolved Mammary Glandular Tissue from Breast Cancer Patients.",
+            "relevance_score": 1.0,
+            "pub_year": 2015,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "According to the literature, the BRCA1 protein is known to be mainly located in the nucleus, and the two NLS of BRCA1 are located at aa 503-508 and 607-614. To investigate if some of the variants of interest could alter the nuclear localisation of the protein, subcellular localisation was assessed by a nuclear/cytosol fractionation assay. This was especially interesting to evaluate for the variants p.Lys503Arg, **p.Arg504Cys**, p.Arg610Thr and p.Arg612Gly, which are all located within the nuclear localisation sequences. Similar to the BRCA1 WT protein (84% located in the nucleus), all analysed variants were found to be mainly located in the nucleus fraction (Supplementary Figure S3).",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "...proteasomal degradation -(1) 0.58 VUSx6 BP1, PS3_sup, PM2_sup LB, VUS VUS c.1508A > G p.(Lys503Arg) NLS No deviations detected 0.0003240(2) 0.76 VUSx4, LBx3 BP1, BS3_sup, PP3,PM2_sup LB, VUS VUS c.**1510C > T** p.(**Arg504Cys**) NLS No deviations detected 0.0003240(4) 0.65 VUSx10 BP1, BS3_sup,PM2_sup VUS LB c.1567T > G p.(Leu523Val) No deviations detected -(1) 0.61 VUSx2 BP1, BS3_sup, PM2_sup VUS LB c.1723G > A...",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                },
+                {
+                    "quoted_text": "82 \u00b1 7 Reduced protein expression c.1508A > G p.Lys503Arg 34 \u00b1 12 22 \u00b1 11 81 \u00b1 21 18 \u00b1 9 81 \u00b1 12 No deviations detected c.**1510C > T** **p.Arg504Cys** 42 \u00b1 15 48 \u00b1 23 63 \u00b1 33 65 \u00b1 18 71 \u00b1 16 No deviations",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study functionally examined the BRCA1 Arg504Cys missense variant and found no impact on nuclear localisation or protein stability, while clinical tables classify it as VUS/likely\u2011benign, leading to a suggested re\u2011classification toward benignity.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9957003",
+            "title": "Functional Analyses of Rare Germline Missense BRCA1 Variants Located within and outside Protein Domains with Known Functions",
+            "relevance_score": 1.0,
+            "pub_year": 2023,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Supplementary File 5 BRCA Variants of Unknown Significance in Healthy Individuals and Cancer Patients\nColumn names:\nGene_Symbol|Transcript|HGVS_transcript|HGVS_Predicted_Protein|HGVS_Genomic_GRCh37|GRCh37_CHR|GRCh37_POS|GRCh37_REF|GRCh37_ALT|HGVS_Genomic_GRCh38|GRCh38_CHR|GRCh38_POS|GRCh38_REF|GRCh38_ALT|Group|Cancer type\nRows:\nBRCA1|MANE|**NM_007294.4:c.1510C>T**|NP_009225.1:p.(**Arg504Cys**)|NC_000017.10:g.**41246038G>A**|17|**41246038|G|A**|**NC_000017.11:g.43094021G>A**|17|**43094021|G|A**|healthy individual|",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The population\u2011based screening study reports the BRCA1 R504C (c.1510C>T) variant as a variant of unknown significance identified in a healthy Han Chinese individual, within a broader analysis of BRCA mutation prevalence.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10988807",
+            "title": "Population-based BRCA germline mutation screening in the Han Chinese identifies individuals at risk of BRCA mutation-related cancer: experience from a clinical diagnostic center from greater Shanghai area",
+            "relevance_score": 1.0,
+            "pub_year": 2024,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Supplementary Table 1. Human BRCA variants used in previous evolution studies\nColumn names:\nB. List of BRCA variants\nRows:\n**c.1510C>T**|**p.R504C**|Uncertain significance\u200b|Lou et al.",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The article concludes that most BRCA1/2 pathogenic variants, including R504C, likely arose in recent human history rather than being anciently conserved.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8860097",
+            "title": "Human BRCA pathogenic variants were originated during recent human history",
+            "relevance_score": 0.65,
+            "pub_year": 2022,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\n\"Supplementary Table 1a. Suggested clinically-relevant classifications from application of BRCA1-specific ACMG/AMP criteria v1.1.0 and points system for variants with single or multiple conflicting submissions, Uncertain, or absent in ClinVar (as at\nRows:\nNM_007294.4:c.1573G>A,NP_009225.1:p.Val525Ile,,,-1,,,,,,-4,,-5,Likely benign,\"criteria_provided,_conflicting_classifications\",Conflicting_classifications_of_pathogenicity,Uncertain_significance(3)|Likely_benign(5) **NM_007294.4:c.1510C>T**,**NP_009225.1:p.Arg504Cys**,,,,,,-2,,,-4,,-6,Likely benign,\"criteria_provided,_conflicting_classifications\",Conflicting_classifications_of_pathogenicity,Uncertain_significance(7)|Likely_benign(1)",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study reports that many breast cancer VUS, including BRCA1 R504C, can be reclassified, with R504C classified as likely benign in their analysis.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC11607406",
+            "title": "Unrecognised actionability for breast cancer risk variants identified in a national-level review of Australian familial cancer centres",
+            "relevance_score": 0.54,
+            "pub_year": 2024,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: |Supplemental Table 3. Genetic alterations identified in serial blood samples in this study.\nColumn names:\nPatientID|SampleID|Genetic Alterations|Gene|Nucleotide change (Amino acid change)|ExonicFunc|AF|CopyNumber\nRows:\n|45|183|Germline|BRCA1|**c.1510C>T**(**p.R504C**)|missense_variant|0.4863|.",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article reports the BRCA1 R504C germline missense variant in a supplemental table without providing any interpretation of its pathogenicity or clinical relevance.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9580879",
+            "title": "Prognostic value of baseline genetic features and newly identified TP53 mutations in advanced breast cancer",
+            "relevance_score": 0.4,
+            "pub_year": 2022,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nSupplementary table 1. Overview of all BRCA1 variants found at the four genetic laboratories in Norway Oslo (OUH) Bergen (HUH) Troms\u00f8 (UNN) Trondheim (TUH) Reclassified Variant Class Date Class Date Class Date Class Date Class\nRows:\n2 2017 c.1450G>T 5 2017 5 2015 c.1486C>T 2 2019 c.1487G>A 2 2018 2 2009 2 2016 c.1500T>A 3 2013 3 2019 c.1508A>G 2 2017 3 2017 2*\u25cb,3\u2206 2021 **c.1510C>T** 3 2016 c.1511G>A 2 2018 c.1521_1531del 5 2017 c.1533C>G 2 2015 c.1534C>T 2 2018 2 2018 3 2015 3 2018 2 2021 c.1556del 5 2019 5 2018 5 2016 5 2018",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The study surveys BRCA1 variant classifications across Norwegian laboratories, revealing discrepancies that were largely resolved through data sharing, and reports the R504C variant as a class 3 (VUS) in 2016.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9636114",
+            "title": "BRCA1 Norway: comparison of classification for BRCA1 germline variants detected in families with suspected hereditary breast and ovarian cancer between different laboratories",
+            "relevance_score": 0.33,
+            "pub_year": 2022,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nSupplementary Table 1. Summay of previous evolutionary studies in DDR gene variation,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4 Gene,HGVS cDNA,HGVS Protein,Reference,Classification (ClinVar) BRCA1,c.68_69del,p.E23fs,\"Burk-Herrick A, Scally M,\nRows:\nBRCA1 sequences: elucidating functionally important sites relevant to breast cancer susceptibility in humans. Mamm Genome. 2006 Mar;17(3):257-70. doi: 10.1007/s00335-005-0067-2. Epub 2006 Mar 3. PMID: 16518715.\",Uncertain significance\u200b BRCA1,**c.1510C>T**,**p.R504C**,\"Lou DI, McBee RM, Le UQ, Stone AC, Wilkerson GK, Demogines AM, Sawyer SL. Rapid evolution of BRCA1 and BRCA2 in humans and other primates. BMC Evol Biol. 2014 Jul 11;14:155. doi: 10.1186/1471-2148-14-155. PMID: 25011685; PMCID:",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The study investigates the evolutionary timing of DNA\u2011damage\u2011repair gene pathogenic variants and notes that BRCA1 p.R504C is recorded in ClinVar as a variant of uncertain significance, without further functional or clinical analysis.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10993466",
+            "title": "Pathogenic variants in human DNA damage repair genes mostly arose in recent human history",
+            "relevance_score": 0.28,
+            "pub_year": 2024,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nSupporting Information Legends to Supplementary Tables Table S1: Summary of the BRCA1 phosphorylation motifs studied. A list of all BRCA1 phosphorylation sites studied. Bolded phosphorylation site represents in vivo phosphorylated residues.\nRows:\n- 7.3511 S454 Biologically uncharacterized S454N, I456T, F461L, G462R S454 - CSNK2A2 - 15.1914 S454 - CK2A1 - 15.1914 T509 Transcription, Intracellular Localization PKB Group Biologically characterized K503R, R504H, **R504C**, R507I, L512F T509 - PIM2 - 14.0558 T509 - RPS6KP1 - 12.3565 S510 Biologically uncharacterized K503R, R504H, **R504C**, R507I, L512F S510 - Pim2 - 11.863 S510 - MOK - 8.9448 S615",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article screens BRCA1 missense VUS, including R504C, for disruption of phosphorylation motifs but does not report a specific functional effect for R504C.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC3660339",
+            "title": "Missense Variants of Uncertain Significance (VUS) Altering the Phosphorylation Patterns of BRCA1 and BRCA2",
+            "relevance_score": 0.22,
+            "pub_year": 2013,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nBiological and clinical evidence for somatic mutations in BRCA1 and BRCA2 as predictive markers for olaparib response in high-grade serous ovarian cancers in the maintenance setting Brian A. Dougherty, Zhongwu Lai, Darren R. Hodgson, Maria C.\nRows:\nHomozygous Myriad VUS VUS-LOH VUS E649Q Germline Homozygous Myriad VUS VUS-LOH VUS K607T Germline Homozygous Not tested Not tested VUS-NA VUS Q804H Germline Unknown Myriad Non-mutant VUS-NA VUS **R504C** Germline Unknown Both Non-mutant VUS-NA (two somatic) VUS; VUS E2260Q; E2275K Somatic; somatic Unknown; unknown CRF Non-mutant VUS-HET VUS D125G Germline Heterozygous Not tested Not tested VUS-NIT",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The study shows that somatic BRCA1/2 loss\u2011of\u2011function mutations, including the R504C variant classified as a VUS, confer similar benefit from olaparib as germline BRCA1/2 mutations in high\u2011grade serous ovarian cancer patients.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5546431",
+            "title": "Biological and clinical evidence for somatic mutations in BRCA1 and BRCA2 as predictive markers for olaparib response in high-grade serous ovarian cancers in the maintenance setting",
+            "relevance_score": 0.17,
+            "pub_year": 2017,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Supplementary Table 1: Mutation list of lung cancer tumor tissue samples\nColumn names:\nPID|Cancer|Gene|AAChange|ExonicFunc|AF\nRows:\nP98|Lung|BRCA1|**c.1510C>T**(**p.R504C**)|missense_variant|6.93%",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article notes the presence of the BRCA1 R504C missense variant in a lung cancer tumor sample with a 6.93% allele frequency, but provides no further interpretation of its clinical significance.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC11184281",
+            "title": "Unravelling the role of  PLK1  in tumorigenesis by revealing the mutational landscape of colorectal and lung cancer with  PLK1  mutations",
+            "relevance_score": 0.1,
+            "pub_year": 2024,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Supplemental Table S12: full list of reportable genomic alterations and variants of unknown significance (VUS) detected in 860 clinical cases\nColumn names:\nDEIDENTIFIED SPECIMEN ID|CANCER TYPE|VARIANT TYPE|GENE|REPORTABLE OR VUS?|PROTEIN CHANGE|TRANSCRIPT|CDS EFFECT\nRows:\nC89|NSCLC|shortvariant|BRCA1|VUS|**R504C**|NM_007294|**1510C>T**",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The paper validates the FoundationACT cfDNA NGS assay and reports BRCA1 R504C among the detected variants, classifying it as a variant of uncertain significance (VUS).', ",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6593250",
+            "title": "Analytical Validation of a Hybrid Capture-Based Next-Generation Sequencing Clinical Assay for Genomic Profiling of Cell-Free Circulating Tumor DNA",
+            "relevance_score": 0.07,
+            "pub_year": 2019,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nSupplementary table 6A. Total BRCA1/2 variants in current BRCA databases (BED, BIC, BMD, clinvar, LOVD, ENIGMA)\nRows:\n**c.1510C>T**|c.1672delA",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study demonstrates substantial ethnic-specific differences in BRCA1/2 germline variants between Chinese and non\u2011Chinese populations, suggesting the need for ethnicity\u2011based reference data.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6617753",
+            "title": "Germline variation in BRCA1/2 is highly ethnic-specific: Evidence from over 30,000 Chinese hereditary breast and ovarian cancer patients",
+            "relevance_score": 0.07,
+            "pub_year": 2019,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Supplementary table 2. Genomic variants from ctDNA samples by NGS\nColumn names:\nPatient ID|Group|MSI status|Age|Sex|Tumor type|gene|c_dot|freq|p_dot|ref_allele|var_allele|exon|variant type\nRows:\n15277|Non-HPD PD|0|32|male|Intestinal cancer|BRCA1|**c.C1510T**|0.0265|**p.R504C**|G|A|exon10|SNV",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study evaluates hyperprogressive disease definitions in gastrointestinal cancer patients receiving immune\u2011checkpoint inhibitors and reports baseline circulating tumor DNA alterations, including the BRCA1 R504C variant, without assigning a functional or clinical interpretation to this variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8630635",
+            "title": "Redefine Hyperprogressive Disease During Treatment With Immune-Checkpoint Inhibitors in Patients With Gastrointestinal Cancer",
+            "relevance_score": 0.04,
+            "pub_year": 2021,
+            "data_sources": [
+                "suppl"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 1754,
+            "output": 569
+        },
+        {
+            "input": 2532,
+            "output": 989
+        },
+        {
+            "input": 2389,
+            "output": 559
+        },
+        {
+            "input": 1824,
+            "output": 521
+        },
+        {
+            "input": 1912,
+            "output": 419
+        },
+        {
+            "input": 2366,
+            "output": 495
+        },
+        {
+            "input": 1980,
+            "output": 617
+        },
+        {
+            "input": 2104,
+            "output": 570
+        },
+        {
+            "input": 2171,
+            "output": 401
+        },
+        {
+            "input": 1775,
+            "output": 494
+        },
+        {
+            "input": 2049,
+            "output": 321
+        },
+        {
+            "input": 2612,
+            "output": 275
+        },
+        {
+            "input": 2219,
+            "output": 701
+        },
+        {
+            "input": 1981,
+            "output": 692
+        },
+        {
+            "input": 2445,
+            "output": 373
+        },
+        {
+            "input": 1548,
+            "output": 494
+        },
+        {
+            "input": 1933,
+            "output": 310
+        },
+        {
+            "input": 1942,
+            "output": 407
+        },
+        {
+            "input": 1905,
+            "output": 441
+        },
+        {
+            "input": 1849,
+            "output": 363
+        },
+        {
+            "input": 2031,
+            "output": 255
+        },
+        {
+            "input": 2093,
+            "output": 595
+        },
+        {
+            "input": 2323,
+            "output": 272
+        },
+        {
+            "input": 2222,
+            "output": 268
+        },
+        {
+            "input": 1711,
+            "output": 202
+        },
+        {
+            "input": 1872,
+            "output": 232
+        },
+        {
+            "input": 1757,
+            "output": 372
+        },
+        {
+            "input": 2243,
+            "output": 326
+        },
+        {
+            "input": 2005,
+            "output": 252
+        },
+        {
+            "input": 2028,
+            "output": 303
+        },
+        {
+            "input": 1870,
+            "output": 283
+        },
+        {
+            "input": 1856,
+            "output": 710
+        },
+        {
+            "input": 2002,
+            "output": 665
+        },
+        {
+            "input": 2072,
+            "output": 313
+        },
+        {
+            "input": 2604,
+            "output": 257
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 5426,
+        "output": 1445
+    },
+    "total_time": 63.6
+}

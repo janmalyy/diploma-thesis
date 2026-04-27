@@ -1,0 +1,442 @@
+{
+    "before_pruning": {
+        "articles_in_total": 30,
+        "only_medline_count": 0,
+        "only_pmc_count": 4,
+        "only_suppl_count": 21,
+        "both_pmc_and_suppl_count": 5,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 30,
+        "only_medline_count": 0,
+        "only_pmc_count": 4,
+        "only_suppl_count": 21,
+        "both_pmc_and_suppl_count": 5,
+        "all_three_count": 0
+    },
+    "variant": "BRCA2 R2842H",
+    "time_to_process_articles": 12.18,
+    "context_length": 29854,
+    "after_removal": {
+        "articles_in_total": 9,
+        "only_medline_count": 0,
+        "only_pmc_count": 4,
+        "only_suppl_count": 0,
+        "both_pmc_and_suppl_count": 5,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "",
+            "pmcid": "PMC3242438",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 131,
+            "abstract_length": 1266,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10694496",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 85,
+            "abstract_length": 2083,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 3,
+            "paragraphs_lengths": [
+                421,
+                764,
+                496
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3995136",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 77,
+            "abstract_length": 1185,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7244490",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 79,
+            "abstract_length": 1361,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "r2842h and v2908g minor allele frequency 6 34 \u00d7 10\u22125 and 1 69 \u00d7 10\u22125 were rare variants therefore it might be difficult to obtain solid evidence for these variants clinvar a clinical database"
+            ],
+            "number_of_paragraphs": 6,
+            "paragraphs_lengths": [
+                1260,
+                696,
+                904,
+                1288,
+                1641,
+                199
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8191791",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 121,
+            "abstract_length": 1379,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "modest \u03b4\u03b4g whereas the benign r2842h mutant exhibits a higher \u03b4\u03b4g than certain pathogenic mutants supplementary figure s1a however when comparing the average \u03b4\u03b4g and rsa of the mutants across all"
+            ],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                1093,
+                200
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC2587343",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 89,
+            "abstract_length": 2580,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                753
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9048643",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 81,
+            "abstract_length": 1393,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1056
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5356755",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 120,
+            "abstract_length": 1732,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1217
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10323079",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 109,
+            "abstract_length": 2016,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                413
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        }
+    ],
+    "narrative_summary": "The BRCA2 missense variant p.Arg2842His (c.8525G>A) alters a conserved residue in the DNA\u2011binding domain of the protein and has been evaluated in the context of hereditary breast\u2011ovarian cancer risk. Clinical databases such as ClinVar list the variant as benign or likely benign, largely based on co\u2011occurrence with a truncating BRCA2 allele and limited segregation data, and it has been reported as a benign finding in two Taiwanese ovarian\u2011cancer patients [PMC5356755][PMC7244490].\n\nClinical evidence therefore supports a benign interpretation: the variant is classified as benign in ClinVar and in the IARC HR assay, and it has been observed in trans with a pathogenic truncating mutation without apparent disease association, although the low penetrance of BRCA2 limits the strength of this evidence [PMC7244490][PMC10694496].\n\nFunctional studies provide mixed results. In a mouse embryonic stem\u2011cell HR assay the variant behaved like wild\u2011type and was assigned a neutral functional class, consistent with a benign effect [PMC10694496]. Conversely, high\u2011throughput drug\u2011sensitivity (MANO\u2011B) assays identified R2842His as an intermediate or hypomorphic allele, showing viability patterns between clearly benign and pathogenic controls and suggesting partial loss of homologous\u2011recombination function [PMC7244490]. The authors of that study noted a discrepancy between the functional read\u2011out and clinical classifications, proposing that the variant may be hypomorphic and that functional data alone could over\u2011estimate risk [PMC7244490].\n\nPopulation data indicate that the allele is very rare, with a minor allele frequency of approximately 6.3\u202f\u00d7\u202f10\u207b\u2075 in the Genome Aggregation Database, consistent with the difficulty of obtaining robust epidemiologic evidence for such low\u2011frequency variants [PMC7244490]. Computational stability analyses of the BRCA2 DNA\u2011binding domain predict a modest change in folding free energy for R2842His, comparable to or less disruptive than known benign variants, and the authors therefore classified it as benign on the basis of \u0394\u0394G calculations [PMC8191791]. An earlier protein\u2011likelihood\u2011ratio study reported raw in\u2011silico predictions for the variant but did not assign a definitive pathogenic or benign label [PMC2587343].\n\nOverall, the preponderance of clinical annotations and computational stability modeling argue for a benign or likely benign status, whereas functional assays that assess homologous\u2011recombination activity have produced conflicting intermediate results, leading some investigators to reclassify the variant as a variant of uncertain significance under ACMG criteria. The current evidence therefore leans toward a non\u2011pathogenic interpretation, but the discordant functional data introduce uncertainty that warrants cautious interpretation and integration with additional lines of evidence.",
+    "structured_summary": {
+        "overall_pathogenicity": "uncertain",
+        "pathogenicity_counts": {
+            "supports benignity": 5,
+            "supports pathogenicity": 2,
+            "uncertain": 1
+        },
+        "conflicting_evidence": true
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...0.0043 0.0006 6.349E-05 F c.8548G>A p.Glu2850Lys 20 US 1.0769 0.7884 0.7826 0.0000 0.0047 0.0008 4.7041E-05 F c.8518A>G p.Ile2840Val 20 US 1.5107 1.0592 1.0904 0.0000 0.0044 0.0007 3.0081E-05 F **c.8525G>A** **p.Arg2842His** 20 B 1.4195 -0.2924 -0.4282 0.0000 0.0164 0.0066 0.00013772 F c.8572C>A p.Gln2858Lys 20 CIP 1.0425 1.2039 1.2558 0.0000 0.0043 0.0006 4.818E-05 F c.8525G>T p.Arg2842Leu 20 CIP 0.6106 -1.0058 -1.1800...",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "...(p.Ser1172Leu, p.Thr2337Ala, p.Tyr2905Cys, p.Gly2901Val, p.Asp2913His, p.Asp2913Val, **p.Arg2842His**, and p.Asp2900Val) that were classified as fClass 2/3 or fClass 3/4 showed a PIF in favor of neutrality in our assay (Figures 4A, 4D, and 5A; Table S4). Among these eight variants, p.Ser1172Leu and **p.Arg2842His** are classified as benign in ClinVar (Table 1). The **p.Arg2842His** is classified as benign using the HR assay. We could not compare the variants that were identified as intermediate by our functional assay because they were not tested by the MANO-B or the HR assay.",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "Among the selected variants, 15 variants with mutations in the DNA-binding domains of BRCA2 have been evaluated previously using the HR assay for prediction of pathogenicity. Nine of them (p.Leu2865Val, p.Phe2873Cys, **p.Arg2842His**, p.Glu2856Ala, p.Glu3152Lys, p.Tyr3098His, p.Ser3123Gly, p.Ala3088Val, and [ProteinMutation:...",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study reports functional assay data for BRCA2 p.Arg2842His and cites ClinVar and HR assay classifications that label the variant as benign, indicating it is likely non\u2011pathogenic.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10694496",
+            "title": "Sequencing-based functional assays for classification of BRCA2 variants in mouse ESCs",
+            "relevance_score": 0.97,
+            "pub_year": 2023,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "The relative viability of the cells treated with each drug was first calculated by comparing the viability with that of vehicle-treated cells, then normalized to that of cells expressing wild-type BRCA2. All variants were sorted by relative viability at the optimal concentrations. A scatter plot of the relative viability of olaparib and the other three drugs revealed an intermediate group including the P2329L, P2639L, D2913H, and S3291C mutants between the benign and pathogenic groups (Supplementary Fig. 3). With this intermediate group as a boundary, all known pathogenic variants showed lower relative viability, whereas all but two known benign variants:**R2842H** and V2908G:showed higher relative viability. The two variants were indeed shown to be hypomorphic by HDR assay in a previous study. In addition, we found that one likely pathogenic variant (N3187K) defined by ClinVar exhibited normal function as evaluated by the MANO-B method. This discordance between the functional classification and the clinical classification suggests potential errors in the clinical annotations for rare variants.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "We believe that the discrepancy in the classification of IARC Class 1/2 variants (**R2842H** and V2908G) that were evaluated as hypomorphic using the MANO-B method was because of the unreliable evidence which the IARC criteria was based on. The IARC classification is based on epidemiological evidence such as cosegregation data and other family-based genetic analyses. According to the Genome Aggregation Database, both **R2842H** and V2908G (minor allele frequency = 6.34 x 10-5 and 1.69 x 10-5) were rare variants. Therefore, it might be difficult to obtain solid evidence for these variants.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "ClinVar, a clinical database curated by experts, also classified **R2842H** and V2908G as benign/likely benign, mainly based on co-occurrence analysis and functional data. **R2842H** was reported to co-occur with Q3066X, a truncating variant in BRCA2. According to the ACMG standards and guidelines, evidence that a variant is observed in trans with a pathogenic variant for a fully penetrant dominant gene/disorder is a supporting evidence indicating that the variant is benign. However, because a pathogenic BRCA2 variant is not fully penetrant, we believe that co-occurrence with a pathogenic variant cannot exclude the possibility that the variant is hypomorphic. For example, another hypomorphic variant R2784Q was reported to co-occur with pathogenic variants in BRCA1 and BRCA2.",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "To assess the pathogenicity of such variants accurately, the classification method must be based on a wide variety of evidence. Therefore, we reinterpreted all the 59 Class 1/2/4/5 variants (37 benign and 22 pathogenic) used in the MANO-B method according to the ACMG 2015 guidelines as previously described. As a result, 18 variants (31%), including **R2842H** and V2908G, were classified into VUSs because of insufficient evidence (Supplementary Data 2). Furthermore, N3187K, defined as a likely pathogenic variant by ClinVar, is also defined as VUS according to both IARC and ACMG criteria. The criteria of the ACMG guidelines are more conservative and stringent than those of other classification methods because ACMG uses multiple criteria from different points of view and perspectives. This discrepancy among clinical databases implies potential errors in the interpretation of clinical variants. Moreover, the IARC and ACMG classification methods were designed for detecting high-risk pathogenic variants, and therefore, hypomorphic function variants or moderate cancer risk variants could be classified inappropriately. Hence, we regard the discrepancy between functional and epidemiological evidence as reasonable.",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                },
+                {
+                    "quoted_text": "There are several limitations regarding the use of the MANO-B method for clinical annotation. The MANO-B method evaluates HDR function of BRCA2 variants via PARP inhibitor sensitivity and estimates their pathogenicity indirectly. This method does not directly consider other BRCA2 functions, such as the regulation of the G2-M transition or transcriptional elongation. Although the high concordance of the MANO-B method with the IARC and ACMG classifications suggest that BRCA2 pathogenicity can be evaluated primarily by investigating HDR activity, we would like to note that BFs for abnormal do not have a direct correlation with the likelihood ratios for pathogenicity, as the normal or abnormal variants defined by this functional assay are not necessarily benign or pathogenic variants in the clinical setting. In fact, there are discrepancies between the functional interpretation by drug sensitivity and clinical annotation of ClinVar in some variants, such as **R2842H** and V2908G. Those variants were mostly hypomorphic variants or very rare variants that have not been reviewed by expert panels in ClinVar. Therefore, the accurate cancer risks of these variants need to be evaluated carefully. For these reasons, we expect that the functional classification should be used as evidence of pathogenicity and combined with other evidence in a comprehensive framework of ACMG guidelines. We believe that our functional evaluation by drug sensitivity might adjust the interpretation of cancer risks, especially of those variants, although further validation studies are needed.",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "**R2842H** and V2908G (minor allele frequency = 6.34 \u00d7 10\u22125 and 1.69 \u00d7 10\u22125) were rare variants. Therefore, it might be difficult to obtain solid evidence for these variants. ClinVar, a clinical database",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article presents high\u2011throughput functional data suggesting BRCA2 R2842H is a hypomorphic (partially impaired) variant, while clinical databases label it benign and ACMG re\u2011classification places it as a VUS, highlighting discordance between functional and clinical evidence.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7244490",
+            "title": "High-throughput functional evaluation of BRCA2 variants of unknown significance",
+            "relevance_score": 0.57,
+            "pub_year": 2020,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "To investigate the effect of BRCA2 DBD mutations on protein folding, we computationally modelled their consequences upon incorporation into the three available crystal structures (PDB reference 1MIU, 1MJE, 1IYJ) of rodent Brca2 DBD/Dss1 complexes. We exclusively studied pathogenic mutations affecting evolutionarily conserved residues (W2626C, I2627F, R2659T, E2663V, T2722R, D2723H, D2723G, G2748D and R3052W), since the amino acid sequence of rodent Brca2 DBD is 56% homologous to the human. We compared them to benign variants (K2729N, **R2842H**, R2888C, V2969M, R2973C, V3079I, D3170G) also affecting conserved amino acids. Our analyses (see Materials and Methods) point to two major effects that distinguish pathogenic DBD mutations from benign variants.",
+                    "mention_type": "computational",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "modest \u0394\u0394G, whereas the benign **R2842H** mutant exhibits a higher \u0394\u0394G than certain pathogenic mutants (Supplementary Figure S1A). However, when comparing the average \u0394\u0394G and RSA of the mutants across all",
+                    "mention_type": "computational",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study compares pathogenic and benign BRCA2 DBD missense mutations and classifies the R2842H variant as benign based on computational stability analyses (\u0394\u0394G).', ",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8191791",
+            "title": "Cancer-causing BRCA2 missense mutations disrupt an intracellular protein assembly mechanism to disable genome maintenance",
+            "relevance_score": 0.45,
+            "pub_year": 2021,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Predicted classes from four computational biology methods Variant Class Validation source PLR SIFT POLYPHEN PMUT AGVGD I2627F D ILR D D D D D E2663K D ILR D D D D D D2665G N ILR N D D D D D2723G D ILR D D D D D K2729N N ILR X N D D D G2748D D ILR D D D D D **R2842H** N ILR X D D D D R2888C N ILR N N N D N V2908G N ILR X D D D D K2950N N ILR N D N N D R2973C N ILR D D D D X R3052Q N ILR X D D D D V3079I N ILR N N N N N Y3092C N ILR D D D D D Y3098H N ILR/Myriad X N N N N D3170G N ILR X N N D N I2490T N Myriad N D D N D T2515I N Myriad N D D D N D2665G N Myriad N D D D D A2717S N Myriad N N N N N D2723H D Myriad D D D D D V2728I N Myriad N N N N N S2835P N Myriad N N N N N E2856A N Myriad N N D D N I2944F N Myriad N D D D D T3013I N Myriad N N N D N",
+                    "mention_type": "computational",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article introduces a protein\u2011likelihood\u2011ratio computational framework and reports raw in\u2011silico predictions for BRCA2 R2842H, but does not assign an explicit pathogenic or benign classification to this variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC2587343",
+            "title": "Classifying Variants of Undetermined Significance in BRCA2 with Protein Likelihood Ratios",
+            "relevance_score": 0.39,
+            "pub_year": 2008,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Of the 99 patients, 19.2 % (n = 19) had BRCA1/2 VUS, all of them being missense variants (Supplementary Table S1). The histological subtypes in the 19 patients with BRCA1/2 VUS included serous (n = 10; 52.6%), endometrial (n = 5; 26.3%), and clear cell (n = 4; 21.2%) carcinomas. One patient with serous ovarian cancer (subject 7) carried an additional pathogenic variant. A total of 23 VUS were detected, with two patients harboring two VUS (subject 22 and 26) and one patient harboring three VUS (subject 14). One of the three VUS identified in this patient was also evident in another study participant (subject 13). Fifteen (63.6%) and seven (30.4%) VUS were germline and somatic, respectively. One BRCA2 variant was not classifiable because DNA from non-tumor control tissues was not available. Four benign variants were identified in eight patients, i.e., BRCA1 variants p.V1247I and p.M1628T, BRCA2 variant p.I1929V (identified in four patients), and **p.R2842H** (identified in two patients).",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study reports the prevalence of BRCA1/2 germline and somatic mutations in Taiwanese ovarian cancer patients, identifying pathogenic and novel variants, and classifies BRCA2 p.R2842H as a benign variant observed in two patients.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5356755",
+            "title": "Prevalence and clinical significance of BRCA1/2 germline and somatic mutations in Taiwanese patients with ovarian cancer",
+            "relevance_score": 0.32,
+            "pub_year": 2016,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...cells stably expressing BRCA2 variants that enable us to evaluate all exonic variants of the BRCA2 gene. Notably, three variants (p.Arg2784Gln, **p.Arg2842His**, and p.Val2908Gly) exhibited some discrepancies between the functional interpretation in the MANO-B method and the classification in the IARC/ClinVar, as depicted in...",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article notes that the BRCA2 p.Arg2842His variant shows a discrepancy between functional assay interpretation and ClinVar classification, suggesting uncertainty about its pathogenicity.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10323079",
+            "title": "The pathogenic role of the BRCA2 c.7847C>T (p.Ser2616Phe) variant in breast and ovarian cancer predisposition",
+            "relevance_score": 0.3,
+            "pub_year": 2023,
+            "data_sources": [
+                "pmc"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 1791,
+            "output": 173
+        },
+        {
+            "input": 2595,
+            "output": 816
+        },
+        {
+            "input": 1718,
+            "output": 154
+        },
+        {
+            "input": 3115,
+            "output": 1392
+        },
+        {
+            "input": 2188,
+            "output": 627
+        },
+        {
+            "input": 2327,
+            "output": 837
+        },
+        {
+            "input": 2032,
+            "output": 615
+        },
+        {
+            "input": 2347,
+            "output": 531
+        },
+        {
+            "input": 2141,
+            "output": 593
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 4299,
+        "output": 1087
+    },
+    "total_time": 36.29
+}

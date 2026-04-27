@@ -1,0 +1,448 @@
+{
+    "before_pruning": {
+        "articles_in_total": 27,
+        "only_medline_count": 1,
+        "only_pmc_count": 5,
+        "only_suppl_count": 19,
+        "both_pmc_and_suppl_count": 2,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 27,
+        "only_medline_count": 1,
+        "only_pmc_count": 5,
+        "only_suppl_count": 19,
+        "both_pmc_and_suppl_count": 2,
+        "all_three_count": 0
+    },
+    "variant": "BRCA1 V1736G",
+    "time_to_process_articles": 13.13,
+    "context_length": 34575,
+    "after_removal": {
+        "articles_in_total": 8,
+        "only_medline_count": 1,
+        "only_pmc_count": 3,
+        "only_suppl_count": 2,
+        "both_pmc_and_suppl_count": 2,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "34584144",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 118,
+            "abstract_length": 1288,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6772163",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 150,
+            "abstract_length": 1557,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                425
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8479081",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 117,
+            "abstract_length": 1288,
+            "number_of_unmatched_snippets": 4,
+            "unmatched_snippets": [
+                "nssnps with lower ddg values in brca1 atm and tp53 gene nssnp id amino acid change stability ddg brca1 rs45553935 v1736g decrease \u2212 2 7 rs80357107 v1838g decrease \u2212 2 37 rs80357451 v1832g decrease",
+                "binding energy kj mol\u22121 v1687g pk083 \u2212 162 942 \u00b1 8 328 \u2212 4 006 \u00b1 4 198 72 501 \u00b1 10 932 \u2212 15 973 \u00b1 0 812 \u2212 110 419 \u00b1 11 896 v1736g pk083 \u2212 176 793 \u00b1 9 540 \u2212 29 386 \u00b1 4 914 111 041 \u00b1 11 923 \u2212 15 701",
+                "v1736g b1 i183t i2865t b2 v224a v2906a c1 v216g and c2 l194h the residues that were involved in molecular docking are shown in bold further we identified the contribution of each",
+                "table 3 as a result the areas affected by those snps might have evolutionary important function our study reports that six nssnps v1687g and v1736g of brca1 i2865t and v2906a of atm v216g and"
+            ],
+            "number_of_paragraphs": 14,
+            "paragraphs_lengths": [
+                1131,
+                775,
+                1082,
+                985,
+                1207,
+                412,
+                1786,
+                1161,
+                1702,
+                1503,
+                198,
+                200,
+                198,
+                199
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10172333",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 110,
+            "abstract_length": 1696,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "generation scotland cohort 26 results clinical ascertainment of the kindred the rs45553935 v1736a variant was ascertained independently in nine diagnostic tests of breast and ovarian cancer"
+            ],
+            "number_of_paragraphs": 5,
+            "paragraphs_lengths": [
+                681,
+                411,
+                906,
+                1496,
+                194
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10899094",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 110,
+            "abstract_length": 2194,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                359
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11607322",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 113,
+            "abstract_length": 1669,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "5207t c is rs45553935 brca2 c 771 775 del is rs80359671 brca1 c 68 69del is rs80357914 brca1 c 5266dup is rs80357906 brca2 c 5946del is rs80359550 variant population n total frequency one in"
+            ],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                198
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10558845",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 73,
+            "abstract_length": 2023,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9519549",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 112,
+            "abstract_length": 1509,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        }
+    ],
+    "narrative_summary": "The BRCA1 missense variant c.5207T>G, resulting in p.Val1736Gly (V1736G), occurs in the BRCT domain of the BRCA1 tumor\u2011suppressor protein and has been investigated as a potential contributor to hereditary breast and ovarian cancer risk. A large\u2011scale multifactorial likelihood quantitative analysis performed by the ENIGMA consortium classified V1736G as a likely pathogenic allele based on combined genetic and epidemiologic data [PMC6772163].\n\nComputational studies consistently predict that the V1736G substitution destabilises the BRCA1 protein structure. One analysis identified V1736G among the major pathogenic variants that markedly reduce protein stability and highlighted its location in a coil region of the BRCT domain, suggesting a disruptive effect on molecular assembly [34584144]. Subsequent in\u2011silico modelling reported high root\u2011mean\u2011square deviation values for the mutant relative to wild\u2011type, increased flexibility and altered compactness in molecular\u2011dynamics simulations, and a substantial decrease in predicted folding stability (\u0394\u0394G \u2248 \u20132.7\u202fkcal/mol) [PMC8479081]. An additional computational exploration described V1736G as an \u201cextremely harmful\u201d mutation that markedly lowers protein stability compared with the wild\u2011type protein [PMC10899094].\n\nNo direct functional assays or population\u2011frequency data specific to V1736G were provided in the extracted evidence. The available data therefore rely on computational predictions and the ENIGMA clinical classification.\n\nTaken together, the clinical likelihood assessment and multiple independent computational analyses converge on a consensus that BRCA1 V1736G is deleterious to protein function and should be regarded as a likely pathogenic variant in the context of hereditary breast\u2011ovarian cancer susceptibility.",
+    "structured_summary": {
+        "overall_pathogenicity": "pathogenic",
+        "pathogenicity_counts": {
+            "supports benignity": 0,
+            "supports pathogenicity": 9,
+            "uncertain": 0
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Genetic polymorphisms in DNA damage repair and tumor suppressor genes have been associated with increasing the risk of several types of cancer. Analyses of putative functional single nucleotide polymorphisms (SNP) in such genes can greatly improve human health by guiding choice of therapeutics. In this study, we selected nine genes responsible for various cancer types for gene enrichment analysis and found that BRCA1, ATM, and TP53 were more enriched in connectivity. Therefore, we used different computational algorithms to classify the nonsynonymous SNPs which are deleterious to the structure and/or function of these three proteins. The present study showed that the major pathogenic variants (V1687G and **V1736G** of BRCA1, I2865T and V2906A of ATM, V216G and L194H of TP53) might have a greater impact on the destabilization of the proteins. To stabilize the high-risk SNPs, we performed mutation site-specific molecular docking analysis and validated using molecular dynamics (MD) simulation and molecular mechanics/Poisson Boltzmann surface area (MM/PBSA) studies. Additionally, SNPs of untranslated regions of these genes affecting miRNA binding were characterized. Hence, this study will assist in developing precision medicines for cancer types related to these polymorphisms.",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study computationally predicts that the BRCA1 V1736G variant destabilizes the protein and is likely pathogenic.",
+            "uncertainties_or_limitations": null,
+            "article_id": "34584144",
+            "title": "Pathogenic genetic variants from highly connected cancer susceptibility genes confer the loss of structural stability.",
+            "relevance_score": 1.0,
+            "pub_year": 2021,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...BRCA1 c.4185+1G>T 0.97 1.10 2.64 2.91 0.989 LP BRCA1 c.4479_4484+2dup 0.97 0.96 3.16 3.04 0.990 LP BRCA1 c.4676-2A>G 0.97 1.03 2.29 2.36 0.987 LP BRCA1 c.5193+1G>A 0.97 1.27 1.67 2.12 0.986 LP BRCA1 **c.5207T>G** p.(**Val1736Gly**) 0.81 1.10 6.53 7.20 0.968 LP BRCA1 c.5213G>A p.(Gly1738Glu) 0.81 1.18 1.18 8.89 12.30 0.981 LP BRCA1 c.5216A>T p.(Asp1739Val) 0.81 0.82 1.03 7.93 6.72 0.966 LP BRCA1 c.5243G>A p.(Gly1748Asp) 0.81...",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study classifies the BRCA1 Val1736Gly (V1736G) variant as likely pathogenic based on multifactorial likelihood quantitative analysis.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6772163",
+            "title": "Large scale multifactorial likelihood quantitative analysis of BRCA1 and BRCA2 variants: An ENIGMA resource to support clinical variant classification",
+            "relevance_score": 1.0,
+            "pub_year": 2019,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Gene SNP ID Amino acid substitutions Proteins mutated using Pymol Proteins modeled using MODELLER RMSD (all atoms) RMSD (Calpha atoms) RMSD (backbone) RMSD (all atoms) RMSD (Calpha atoms) RMSD (backbone) BRCA1 **rs45553935** **V1736G** 3.3315 0.0019 0.0012 4.0309 0.2657 0.3463 rs80357107 V1838G 1.4924 0.0014 0.0015 3.2530 0.2563 0.3345 rs80357451 V1832G 1.6726 0.0005 0.0015 3.3261 0.2841 0.3454 rs1555579627 V1687G 3.9798 0.0017 0.0016 4.3966 0.2512 0.3728 rs730881496 L1729Q 2.0206 0.0018 0.0015 2.7943 0.2905 0.3546 ATM rs201216427 V2757G 2.6360 0.0015 2.0706 2.2624 0.9240 0.9148 rs587779873 I2865T 3.7960 0.0011 1.9320 3.4941 0.9002 0.8567 rs876659516 I2948T 3.1163 0.0012 2.0694 1.8218 0.7576 0.7340 rs1591264625 V2830G 2.7638 0.0020 2.0559 2.1558 0.6263 0.5973 rs1555053927 V2906A 3.1687 0.0010 1.9769 3.1090 1.0781 1.0348 TP53 rs1057520004 V216G 2.6572 0.0020 0.0017 3.7278 0.2980 0.3848 rs1057519998 L194H 2.5904 0.0022 0.0019 3.3840 0.1719 0.2557 rs1330865474 I254S 1.6255 0.0023 0.0014 3.3189 0.2008 0.2592 rs730882027 I251T 1.2445 0.0018 0.0018 3.2160 0.2536 0.3008 rs760043106 I195T 1.8478 0.0014 0.0017 2.5908 0.2767 0.3095",
+                    "mention_type": "computational",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "...using GalaxyRefine server, we calculated their RMSD values. Both the Pymol generated mutant models and homology modeled mutant structures for V1687G and **V1736G** of BRCT, I2865T and V2906A of Catalytic domain, V216G and L194H of p53 exhibited the maximum RMSD values shown in Table 4. From the Stride server results, it was found that V1687G and V216G mutations were in beta-strand region, **V1736G**, V2906A and L194H mutations were in coil region and I2865T mutation was in alpha-helix region of the respected proteins (Supplementary Fig...",
+                    "mention_type": "computational",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Protein/complex MD runs RMSD (nm) RMSF (nm) Rg (nm) SASA (nm2) WT-BRCT 1st run ~ 0.10 ~ 0.34 ~ 1.94 ~ 116 2nd run ~ 0.11 ~ 0.35 ~ 1.94 ~ 121 3rd run ~ 0.14 ~ 0.38 ~ 1.95 ~ 118 V1687G 1st run ~ 0.11 ~ 0.47 ~ 1.94 ~ 119 2nd run ~ 0.13 ~ 0.44 ~ 1.94 ~ 119 3rd run ~ 0.14 ~ 0.44 ~ 1.94 ~ 114 **V1736G** 1st run ~ 0.14 ~ 0.45 ~ 1.96 ~ 114 2nd run ~ 0.10 ~ 0.40 ~ 1.94 ~ 118 3rd run ~ 0.15 ~ 0.41 ~ 1.92 ~ 113 WT-Catalytic domain 1st run ~ 0.45 ~ 0.50 ~ 1.96 ~ 160 2nd run ~ 0.35 ~ 0.80 ~ 1.99 ~ 165 3rd run ~ 0.32 ~ 0.76 ~ 1.98 ~ 165 I2865T 1st run ~ 0.33 ~ 0.40 ~ 2.02 ~ 164 2nd run ~ 0.29 ~ 0.45 ~ 1.96 ~ 165 3rd run ~ 0.39 ~ 0.46 ~ 2.17 ~ 169 V2906A 1st run ~ 0.45 ~ 0.68 ~ 2.07 ~ 168 2nd run ~ 0.29 ~ 0.64 ~ 1.99 ~ 168 3rd run ~ 0.31 ~ 0.66 ~ 1.95 ~ 166 WT-DBD 1st run ~ 0.12 ~ 0.43 ~ 1.70 ~ 115 2nd run ~ 0.15 ~ 0.57 ~ 1.71 ~ 116 3rd run ~ 0.12 ~ 0.55 ~ 1.70 ~ 112 V216G 1st run ~ 0.16 ~ 0.62 ~ 1.70 ~ 112 2nd run ~ 0.16 ~ 0.63 ~ 1.70 ~ 114 3rd run ~ 0.19 ~ 0.53 ~ 1.71 ~ 116 L194H 1st run ~ 0.16 ~ 0.51 ~ 1.71 ~ 114 2nd run ~ 0.12 ~ 0.57 ~ 1.71 ~ 116 3rd run ~ 0.11 ~ 0.57 ~ 1.71 ~ 116",
+                    "mention_type": "computational",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Configuration changes of all the WT and mutant proteins were analyzed in terms of RMSD during the simulation period. Figure 6(A1,A2) depicts that RMSD values from the mutant structures are quite unstable comparing with the WT-BRCT and WT-DBD. The WT BRCT shows steady fluctuation throughout the 100 ns in the WT structure. V1687G and **V1736G** structures showed similar way of deviation till 45 ns from their starting structure, after that, fluctuated up to ~ 0.3 nm for V1687G. RMSD values of V216G and... ...amino acid residue in order to determine the mutation's effect on the protein residues dynamic behavior. From Fig. 6(B1-B3), it can be inferred that residue level fluctuations for **V1736G**, V2906A and V216G were quite high, up to ~ 0.5 nm, ~ 0.6 nm and ~ 1 nm respectively when compared with native proteins and other mutations. Analysis of the...",
+                    "mention_type": "computational",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "...presented in Fig. 7A2,A4,B2,B4,C2,C4 as hydrogen bonding is one of the principal components responsible for the molecular interactions in biological systems. In the V1736G-PK083 complex, highest number of conformations formed up to three hydrogen bonds during the simulation. A very few conformations showed less than two hydrogen bonds. Except the V1687G-PK083 complex, the conformations of the rest of the complexes formed up to two hydrogen bonds throughout the simulation of all the 3 production runs. Moreover, the snapshot of conformers from the 1st MD run showed that PK083 remained in the binding sites of mutants throughout the entire simulation process (Fig. 8). We have also analyzed the interactions of PK083 with the mutants at the final timeframe (100 ns) and found that 2 interactions of V1687G, 3 interactions of L194H, 4 interactions of **V1736G**, I2865T and V216G with PK083 were stable at the end of the simulations. Although there were no interactions proposed in docking remain stable at the end of the...",
+                    "mention_type": "computational",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Graphical representation showing contribution energy plot of each residue of the six mutants, (A1) V1687G, (A2) **V1736G**, (B1) I183T (I2865T), (B2) V224A (V2906A), (C1) V216G and (C2) L194H. The residues that were involved in molecular docking are shown in bold.",
+                    "mention_type": "computational",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "In this study, we retrieved all the available nsSNPs of the corresponding three genes and annotated them using nine computational tools to distinguish between the functional and neutral variants. Assessing the pathogenicity of functional nsSNPs, we filtered those that occur in the conserved domains of respective proteins. Further, evolutionary conservation analysis revealed that majority of the pathogenic nsSNPs occupy conserved amino acid positions whether they decrease or increase protein stability. The nsSNPs greatly decreasing the stability of proteins were finally selected as the high-risk ones. Combining these results, we found that V1687G and **V1736G** variants of BRCA1, I2865T and V2906A variants of ATM, V216G and L194H variants of TP53 were highly damaging mutations that greatly decrease protein stability and might alter their respective protein functions (Table 2). All these six variants were found to occur in BRCT domain, catalytic domain and DNA-binding domain of BRCA1, ATM and p53 respectively (Fig. 3). The missense mutations in these domains might cause severe consequences disrupting their ability of functioning. The harmful polymorphic mutations are mainly found to be located in helixes and coil regions of a protein structure. Our secondary structure analysis also revealed that three of these six mutations occur in coil regions, two in beta-strand region and one in alpha-helix region which is in accordance with the previous recognition. Therefore, these mutations might result in significant distortion of the backbone over a turn leading to the likelihood of impaired molecular assembly.",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "Hence, these novel findings encouraged us to study how the dynamic properties differ from WT and mutant amino acids using MD simulation analysis. The RMSD and RMSF analysis in agreement to each other revealed that all the variants except the I2865T, decreased stability and increased the flexibility of protein (Fig. 6A1-B3). The radius of gyration revealed that the WT proteins showed higher level of compactness throughout the time, whereas all the variants showed differential level of compactness (Fig. 6C1-C3). The SASA analysis showed both increased and reduced volumes gained by the mutants and thereby might be responsible for change in function of protein (Fig. 6D1-D3). Based on the simulation study, we demonstrated that the variants V1687G, **V1736G**, V2906A, V216G and L194H imparted changes in the native conformation or structure of the BRCA1, ATM and TP53 proteins in any sense of behavior and hence speculated to affect the respective protein function and structure in damaging manner.",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "Further, we carried out our investigation to stabilize the high-risk mutations using a small molecule inhibitor PK083. Mutation site specific molecular docking analysis revealed that PK083 had a strong binding affinity towards all the six mutation sites of three proteins (Table 5, Fig. 5). More than five interactions were observed with PK083 in the mutation sites of all the mutant proteins. Highest docking energy of - 99.5 kcal/mol was observed with the WT-V2906 protein forming a carbon hydrogen bond with PK083. In case of the mutants, PK083 showed highest docking energy of - 72.3 kcal/mol forming a hydrogen bond with mutant residue. For the validation of docking process, we performed MD simulation (3 times) of six mutant-PK083 complexes over 100 ns and findings demonstrated that PK083 showed RMSD of less than 0.1 nm and no disassociation of bound PK083 is observed throughout the 100 ns simulations (Fig. 7A1,A3,B1,B3,C1,C3). Moreover, 2 interactions of V1687G, 6 interactions of **V1736G**, 3 interactions of I2865T, 4 interactions of both V216G and L194H with PK083 remained stable during the 100 ns MD simulation. Stability of PK083 during MD simulation were also supported by several H-bonds estimations (Fig. 7A2,A4,B2,B4,C2,C4). The results of MM/PBSA indicated that PK083 binds to all the six mutants efficiently as they exhibit good binding free energies (Table 7). We also identified several key residues essential for binding of PK083 to the mutation sites that will provide valuable insight in drug development against these deleterious mutations (Fig. 9).",
+                    "mention_type": "computational",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "BRCA1, ATM and TP53 protein plays an important role as tumor suppressor in several cancer types. The structural conformation of the functional domains is very crucial for exerting their functional role. This in silico study of the functional SNPs of BRCA1, ATM and TP53 provides significant insight into the damaging effects that the nsSNPs might cause to these proteins. Our study reports that six nsSNPs (V1687G and **V1736G** of BRCA1, I2865T and V2906A of ATM, V216G and L194H of TP53) in the BRCT, Catalytic and DNA-binding domains are highly damaging to the structure and function of three proteins. We also found that these mutants are drug targets for PhiKan083 as molecular interaction results were evaluated by MD simulation and MMPBSA study. miRNAs were affected by SNPs in the 3' and 5' untranslated regions of ATM and TP53 genes and four are noteworthy, hsa-miR-6796-3p, hsa-miR-1233-5p, hsa-miR-525-3p and hsa-miR-548i due their high conservation score. This is the first in silico analysis that combinedly analyzes the impacts of nsSNPs on the structure and function of three cancer susceptibility proteins and predicts stabilizing possibility. Our findings will guide in the study of potential therapeutic inventions upon clinical-trial and experimental mutational studies.",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "nsSNPs with lower DDG values in BRCA1, ATM and TP53. Gene nsSNP ID Amino acid change Stability DDG BRCA1 **rs45553935** **V1736G** Decrease \u2212 2.7 rs80357107 V1838G Decrease \u2212 2.37 rs80357451 V1832G Decrease",
+                    "mention_type": "computational",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": ") Binding energy (KJ mol\u22121) V1687G-PK083 \u2212 162.942 \u00b1 8.328 \u2212 4.006 \u00b1 4.198 72.501 \u00b1 10.932 \u2212 15.973 \u00b1 0.812 \u2212 110.419 \u00b1 11.896 V1736G-PK083 \u2212 176.793 \u00b1 9.540 \u2212 29.386 \u00b1 4.914 111.041 \u00b1 11.923 \u2212 15.701",
+                    "mention_type": "computational",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": ") **V1736G**, (B1) I183T (I2865T), (B2) V224A (V2906A), (C1) V216G and (C2) L194H. The residues that were involved in molecular docking are shown in bold. Further, we identified the contribution of each",
+                    "mention_type": "computational",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "(Table 3). As a result, the areas affected by those SNPs might have evolutionary important function. Our study reports that six nsSNPs (V1687G and **V1736G** of BRCA1, I2865T and V2906A of ATM, V216G and",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The article presents extensive in\u2011silico analyses (structural modeling, MD simulations, stability calculations and docking) that consistently indicate the BRCA1 V1736G missense variant destabilizes the protein and is likely pathogenic.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8479081",
+            "title": "Pathogenic genetic variants from highly connected cancer susceptibility genes confer the loss of structural stability",
+            "relevance_score": 0.82,
+            "pub_year": 2021,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Here, we report for the first time the multiple ascertainment of the BRCA1 pathogenic missense variant c.5207T > C; p.Val1736Ala (V1736A) **rs45553935** as part of routine clinical care in breast and ovarian cancer families from Orkney. We then demonstrate relatedness of V1736A gene carriers using genealogy and haplotyping, and use ORCADES to estimate the population based variant frequency, consider penetrance and make the case for population screening of the variant in ancestral Orcadians. This is an exemplar of the value of phenotyped population cohorts for informing genetic health policy.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "The fully quality controlled exome sequence data set was prepared at the Regeneron Genetic Centre, following the process detailed for UK Biobank by van Hout et al.. Details of the quality control of whole exome sequencing on the 200,000 participants from the UK Biobank are described in Backman et al.. The **rs45553935** variant was validated by Sanger sequencing (further details in supplementary methods).",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "The ORCADES array genotype data were phased using Shapeit2 v2r837, with the duoHMM option that uses the family-based nature of the data. Prior to phasing, the array genotype data were lifted over from the genome build GRCh38 to GRCh37 using liftOver, followed by quality control against the HRC reference panel with Rayner's HRC-1000G-check-bim (v4.2.13) script that was downloaded from https://www.well.ox.ac.uk/~wrayner/tools/. Details of phasing of UK Biobank genotyping data have been described. Then, the phased genotypes were used to determine a shared haplotype around **rs45553935** using the coarse and fine methods described earlier. All methods were performed using R 4.0.2 (R Core Team 2020 https://www.R-project.org/). Haplotypes were defined with custom-built in-house scripts in R. Data handling was performed using data.table and tidyverse R packages. Plots were generated using ggplot2.",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "A single variant-based haplotype search was performed to determine the haplotype length between the different ORCADES carrier kindreds, and also with the UK Biobank carrier individuals, using a stepwise approach. Using phased genotype data, starting from the **rs45553935** rare variant, one SNP at a time was added to define a haplotype. The procedure was repeated until haplotypes of two individuals (both known carriers) no longer matched, providing variant-level resolution of the haplotype length. The procedure was repeated for all pairs of individuals identified as carriers based on the exome sequencing data, both in the ORCADES and UK Biobank datasets. The shortest shared haplotype from ORCADES was then merged with the shortest shared haplotype from the UK Biobank to compare whether the haplotypes match across the 51 variants shared across genotyping chips. Two megabases of exome sequence around **rs45553935** in a carrier from the Healthy Nevada Project were merged with the corresponding region in a carrier from the ORCADES study. 1974 variants overlapped between the two exomes. A similar approach was then taken to assess potential haplotype sharing. Beginning with the **rs45553935** variant, moving one SNP at a time, we compared the two genotypes, repeating the procedure until we came to opposing homozygotes, beyond which haplotypes cannot be shared. Identity-by-descent (IBD) analysis was performed using KING 2.1.5.",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Generation Scotland cohort [26]. Results Clinical ascertainment of the kindred The **rs45553935** (V1736A) variant was ascertained independently in nine diagnostic tests of breast and ovarian cancer",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study identifies BRCA1 V1736A as a pathogenic founder variant in the Orcadian population, with ~1% carrier frequency, segregation with breast/ovarian cancer, and recommends population\u2011based screening for carriers of this variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10172333",
+            "title": "Clinical case study meets population cohort: identification of a BRCA1 pathogenic founder variant in Orcadians",
+            "relevance_score": 0.41,
+            "pub_year": 2023,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...V216G] and L194H variants, the ATM V2865T and V2906A variants, and the BRCA1 V1687G and **V1736G** variants were all extremely harmful mutations that significantly reduce protein stability and may change the activities of the corresponding proteins.",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The article reports that the BRCA1 V1736G variant is predicted to be highly deleterious, markedly reducing protein stability according to computational analysis.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10899094",
+            "title": "Computational Exploration of Single-Nucleotide Polymorphisms in the Human hRAS Gene: Implications and Insights",
+            "relevance_score": 0.36,
+            "pub_year": 2024,
+            "data_sources": [
+                "pmc"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 1664,
+            "output": 434
+        },
+        {
+            "input": 2102,
+            "output": 403
+        },
+        {
+            "input": 5734,
+            "output": 1878
+        },
+        {
+            "input": 2772,
+            "output": 1030
+        },
+        {
+            "input": 2169,
+            "output": 507
+        },
+        {
+            "input": 2009,
+            "output": 268
+        },
+        {
+            "input": 1850,
+            "output": 357
+        },
+        {
+            "input": 1774,
+            "output": 230
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 6570,
+        "output": 971
+    },
+    "total_time": 42.83
+}

@@ -1,0 +1,962 @@
+{
+    "before_pruning": {
+        "articles_in_total": 30,
+        "only_medline_count": 0,
+        "only_pmc_count": 4,
+        "only_suppl_count": 26,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 30,
+        "only_medline_count": 0,
+        "only_pmc_count": 4,
+        "only_suppl_count": 26,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "variant": "BRCA1 D411N",
+    "time_to_process_articles": 16.36,
+    "context_length": 79279,
+    "after_removal": {
+        "articles_in_total": 29,
+        "only_medline_count": 0,
+        "only_pmc_count": 4,
+        "only_suppl_count": 25,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "",
+            "pmcid": "PMC6154770",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 123,
+            "abstract_length": 2033,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                985,
+                1560
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7545562",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 107,
+            "abstract_length": 1199,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1399
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10672121",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 113,
+            "abstract_length": 959,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1452
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3525967",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 151,
+            "abstract_length": 1397,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                410
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8860097",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 74,
+            "abstract_length": 1214,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    203
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11574802",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 85,
+            "abstract_length": 1777,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    732
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10993466",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 89,
+            "abstract_length": 2063,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    764
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7118020",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 192,
+            "abstract_length": 1320,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    105
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3660339",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 106,
+            "abstract_length": 2045,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    1121
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7606457",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 121,
+            "abstract_length": 1290,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    718
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7393544",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 107,
+            "abstract_length": 1301,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    29
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6772163",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 150,
+            "abstract_length": 1557,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    1808
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9679647",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 136,
+            "abstract_length": 2336,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    215
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8226125",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 159,
+            "abstract_length": 2223,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    676
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9990413",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 100,
+            "abstract_length": 1439,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    823
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6457907",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 81,
+            "abstract_length": 1717,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    70
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6617753",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 136,
+            "abstract_length": 2590,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    162
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10580343",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 105,
+            "abstract_length": 2061,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    483
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8748217",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 107,
+            "abstract_length": 1983,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    704
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8062186",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 102,
+            "abstract_length": 1107,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    758
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9839248",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 175,
+            "abstract_length": 3148,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    764
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4981784",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 105,
+            "abstract_length": 1214,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    355
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9325712",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 96,
+            "abstract_length": 1341,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    757
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8059407",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 68,
+            "abstract_length": 1767,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    370
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4385186",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 112,
+            "abstract_length": 1575,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    386
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4862411",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 76,
+            "abstract_length": 547,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    346
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5663045",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 77,
+            "abstract_length": 2055,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    860
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5055158",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 87,
+            "abstract_length": 1706,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    770
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6581088",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 162,
+            "abstract_length": 1262,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    1782
+                ]
+            ]
+        }
+    ],
+    "narrative_summary": "The BRCA1 c.1231G>A (p.D411N) missense change is a rare germline variant that has been examined in the context of hereditary breast and ovarian cancer risk. It is listed in several BRCA variant compilations but has not been definitively linked to disease.\n\nClinical databases and multifactorial likelihood analyses consistently classify D411N as a variant of uncertain significance. The variant appears in supplementary tables of two recent evolutionary studies that label it \u201cuncertain significance\u201d [PMC8860097, PMC10993466] and a large ENIGMA\u2010based quantitative analysis that reports a non\u2011informative combined likelihood ratio and retains the VUS status [PMC6772163]. A machine\u2011learning model trained on known pathogenic and benign BRCA1 variants predicts D411N to be pathogenic, providing a computational argument for deleteriousness [PMC8062186]; however, no independent clinical segregation or case\u2011control data supporting this prediction are presented.\n\nFunctional investigations of D411N are limited to computational assessments of potential disruption of phosphorylation motifs. In a survey of BRCA1 missense variants affecting kinase sites, D411N is listed only as \u201cbiologically uncharacterized\u201d without experimental evidence of altered protein function or impact on DNA repair pathways [PMC3660339]. No other in\u2011vitro or in\u2011vivo functional assays have been reported for this change.\n\nPopulation data show a single observation of D411N in the non\u2011Finnish European subset of gnomAD, insufficient to inform frequency\u2011based classification and yielding a non\u2011informative likelihood ratio in the multifactorial framework [PMC6772163]. Computational annotations beyond the phosphorylation\u2011motif analysis consist of the aforementioned pathogenicity prediction from a random\u2011forest model, but no additional in silico scores or consensus deleteriousness metrics are provided.\n\nOverall, the preponderance of evidence retains BRCA1 D411N in the category of uncertain significance. While a predictive algorithm suggests possible pathogenicity, the lack of functional validation, limited population data, and the absence of supportive clinical segregation or case\u2011control evidence mean that current data are insufficient to reclassify the variant as pathogenic or benign.",
+    "structured_summary": {
+        "overall_pathogenicity": "uncertain",
+        "pathogenicity_counts": {
+            "supports benignity": 0,
+            "supports pathogenicity": 1,
+            "uncertain": 3
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Supplementary Table 1. Human BRCA variants used in previous evolution studies\nColumn names:\nB. List of BRCA variants\nRows:\n**c.1231G>A**|**p.D411N**|Uncertain significance\u200b|Lou et al, Huttley et al",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The study concludes that most human BRCA pathogenic variants, including the D411N variant, likely arose in recent human history after the out-of-Africa migration, rather than being ancient conserved mutations.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8860097",
+            "title": "Human BRCA pathogenic variants were originated during recent human history",
+            "relevance_score": 1.0,
+            "pub_year": 2022,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nSupplementary Table 1. Summay of previous evolutionary studies in DDR gene variation,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4 Gene,HGVS cDNA,HGVS Protein,Reference,Classification (ClinVar) BRCA1,c.68_69del,p.E23fs,\"Burk-Herrick A, Scally M,\nRows:\nMA, Potter JD, Ramirez CJ, Ostrander GK, Ostrander EA (2003) Understanding missense mutations in the BRCA1 gene: An evolutionary approach. Proc Natl Acad Sci U S A 100: 1151\u20131156. doi:10.1073/pnas.0237285100\",Uncertain significance\u200b BRCA1,**c.1231G>A**,**p.D411N**,\"Lou DI, McBee RM, Le UQ, Stone AC, Wilkerson GK, Demogines AM, Sawyer SL. Rapid evolution of BRCA1 and BRCA2 in humans and other primates. BMC Evol Biol. 2014 Jul 11;14:155. doi: 10.1186/1471-2148-14-155. PMID: 25011685; PMCID:",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The article includes BRCA1 D411N as a variant of uncertain significance without providing new functional or population evidence, focusing instead on the evolutionary timing of DDR pathogenic variants overall.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10993466",
+            "title": "Pathogenic variants in human DNA damage repair genes mostly arose in recent human history",
+            "relevance_score": 0.44,
+            "pub_year": 2024,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nGENE|VARIANT|HGVS_Nucleotide|LOG(LR)|N_Probands\nRows:\nBRCA1|**c.1231G>A**|**c.1231G>A**||",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article applies logistic\u2011regression models of personal and family cancer history to estimate likelihood ratios for BRCA1/2 variants, highlighting a subset of VUS\u2014including some with >10:1 odds toward pathogenicity\u2014while integrating these data into multifactorial classification frameworks.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7118020",
+            "title": "Classification of variants of uncertain significance in BRCA1 and BRCA2 using personal and family history of cancer from individuals in a large hereditary cancer multigene panel testing cohort",
+            "relevance_score": 0.39,
+            "pub_year": 2019,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nSupporting Information Legends to Supplementary Tables Table S1: Summary of the BRCA1 phosphorylation motifs studied. A list of all BRCA1 phosphorylation sites studied. Bolded phosphorylation site represents in vivo phosphorylated residues.\nRows:\n- CSNK2A2 - 18.6883 S395 - CK2A1 - 18.6883 S398 Biologically uncharacterized S403F, K408E S398 - CSNK2A2 - 11.7459 S398 - CK2A1 - 11.7459 S398 - TLK1 - 9.4999 S403 Biologically uncharacterized S403F, K408E, **D411N**, D411E S403 - CK2A1 - 10.5925 S403 - CSNK2A2 - 10.5925 S403 - CK2A1 - 10.5925 S405** Biologically uncharacterized **D411N**, D411E Predictions Score <5 S423 Biologically uncharacterized N417K, N417S, D420Y, E421K,\n- CK2A1 - 11.7459 S398 - TLK1 - 9.4999 S403 Biologically uncharacterized S403F, K408E, **D411N**, D411E S403 - CK2A1 - 10.5925 S403 - CSNK2A2 - 10.5925 S403 - CK2A1 - 10.5925 S405** Biologically uncharacterized **D411N**, D411E Predictions Score <5 S423 Biologically uncharacterized N417K, N417S, D420Y, E421K, H437P S423 - CSNK2A2 - 17.8448 S423 - CK2A1 - 17.8448 S451 Biologically uncharacterized E445Q, S454N, I456T, F461L S451 -",
+                    "mention_type": "computational",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study evaluates many BRCA1/2 VUS for potential disruption of phosphorylation motifs, but the D411N variant is only listed as biologically uncharacterized without evidence of functional impact or pathogenicity classification.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC3660339",
+            "title": "Missense Variants of Uncertain Significance (VUS) Altering the Phosphorylation Patterns of BRCA1 and BRCA2",
+            "relevance_score": 0.37,
+            "pub_year": 2013,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nGene|HGVS Nucleotide|HGVS Protein|Legacy Description Nucleotide|Legacy Description Protein|Segregation LR|Pathology LR|Co-occurrence LR|Family History LR|Case-Control LR|Combined LR (Odds for Causality)|Prior Probability of Pathogenicity|Posterior Probability|IARC Class|Comment regarding class assignment|Suggested frequency rule strength derived from this study|Frequency Category Assigned for LR derivation|gnomAD Highest Minor Allele Frequency|gnomAD Population with Highest Minor Allele Frequency|Single Observation in gnomAD|Functional Paper/s|Functional Category Assigned|Findlay_Function|Findlay_RNAscore|Findlay_RNAclass|Starita Depleted|Mesman_Complementation|Mesman_HDR|Mesman_Cisplatin|Mesman_Class|Bouwman_Selection|Bouwman_FxnClass|Fernandes2019_fClass|Fernandes2019_fCategory|Petitalot2019_ControlGroup|Petitalot2019_Class|Hart2018_Functional Class|Hart2018_HDR ratio|Predicted Variant Consequence|Allele-Specific Splicing Result Summary|Coded Splicing Effect|Splicing Paper/s (First author)|Splicing Assay Method/s|Splicing Result/s|Splicing Reference/s|Allele Specific Assay|ClinVar Class Summary|ClinVar Class Details by Submitter|ClinVar Date|Allele Count (All Populations)|Allele Count African|Allele Number African|MAF_African|Allele Count Latino|Allele Number Latino|MAF_Latino|Allele Count East Asian|Allele Number East Asian|MAF_EastAsian|Allele Count European (non-Finnish)|Allele Number European (non-Finnish)|MAF_NFE|Allele Count South Asian|Allele Number South Asian|MAF_SouthAsian\nRows:\nBRCA1|**c.1231G>A**|p.(**Asp411Asn**)|1350G>A|**D411N**||||||||||Combined LR is not <0.5 or >2|1 count - Not informative|1 count||European (Non-Finnish)|Y|||||||||||||||||||missense_variant||||||||Uncertain_significance|uncertain_significance|2002-05-29|2015-03-02||||||||||||||||",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The study\u2019s multifactorial likelihood analysis classifies BRCA1 D411N as a variant of uncertain significance due to insufficient evidence and non\u2011informative combined likelihood ratio.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6772163",
+            "title": "Large scale multifactorial likelihood quantitative analysis of BRCA1 and BRCA2 variants: An ENIGMA resource to support clinical variant classification",
+            "relevance_score": 0.25,
+            "pub_year": 2019,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: 0|1|Tumor Tissue\nColumn names:\n1|5|Ref\nRows:\n556|20|**c.1231G>A**",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study shows that cerebrospinal fluid circulating tumor DNA mirrors the genomic alterations of gliomas, supporting its use for non\u2011invasive disease monitoring.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6457907",
+            "title": "Tracking Tumor Evolution in Glioma through Liquid Biopsies of Cerebrospinal Fluid",
+            "relevance_score": 0.14,
+            "pub_year": 2019,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nSupplementary table 6A. Total BRCA1/2 variants in current BRCA databases (BED, BIC, BMD, clinvar, LOVD, ENIGMA)\nRows:\n**c.1231G>A**|c.1195delA",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article reports extensive ethnic\u2011specific differences in BRCA1/2 variant spectra between Chinese and non\u2011Chinese populations and calls for ethnicity\u2011based reference standards, but does not discuss the clinical or functional significance of the D411N variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6617753",
+            "title": "Germline variation in BRCA1/2 is highly ethnic-specific: Evidence from over 30,000 Chinese hereditary breast and ovarian cancer patients",
+            "relevance_score": 0.14,
+            "pub_year": 2019,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nID BRCA1 VUS(Variation) refSeq ID Prediction Clinical significance (ClinVar) 1 c.5573T>C rs755427809 Benign Conflicting interpretations of pathogenicity 2 c.5511G>T rs80356914 Benign Conflicting interpretations of pathogenicity 3 c.5454C>T\nRows:\n5840 c.1243G>T rs587782770 Benign Uncertain significance 5841 c.1241A>C rs1555592086 Benign Uncertain significance 5842 c.1234G>A rs587776478 Pathogenic Uncertain significance 5843 c.1232A>T rs730881469 Benign Uncertain significance 5844 **c.1231G>A** **rs80357301** Pathogenic Uncertain significance 5845 c.1228G>A rs779974365 Pathogenic Uncertain significance 5846 c.1226T>C rs786202539 Benign Uncertain significance 5847 c.1208C>T rs80356934 Benign Uncertain significance 5848 c.1207T>G Benign",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study presents a random\u2011forest machine\u2011learning model that predicts pathogenicity for BRCA1 variants of unknown significance and applies it to thousands of such variants, including D411N, which is predicted pathogenic by the model.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8062186",
+            "title": "Predicting Ovarian/Breast Cancer Pathogenic Risks of Human BRCA1 Gene Variants of Unknown Significance",
+            "relevance_score": 0.11,
+            "pub_year": 2021,
+            "data_sources": [
+                "suppl"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 2814,
+            "output": 214
+        },
+        {
+            "input": 2371,
+            "output": 266
+        },
+        {
+            "input": 2363,
+            "output": 199
+        },
+        {
+            "input": 1932,
+            "output": 435
+        },
+        {
+            "input": 1829,
+            "output": 457
+        },
+        {
+            "input": 2175,
+            "output": 307
+        },
+        {
+            "input": 2168,
+            "output": 518
+        },
+        {
+            "input": 1775,
+            "output": 667
+        },
+        {
+            "input": 2420,
+            "output": 632
+        },
+        {
+            "input": 2038,
+            "output": 243
+        },
+        {
+            "input": 1674,
+            "output": 191
+        },
+        {
+            "input": 2265,
+            "output": 659
+        },
+        {
+            "input": 2028,
+            "output": 245
+        },
+        {
+            "input": 2280,
+            "output": 288
+        },
+        {
+            "input": 2226,
+            "output": 279
+        },
+        {
+            "input": 1895,
+            "output": 447
+        },
+        {
+            "input": 2093,
+            "output": 610
+        },
+        {
+            "input": 2088,
+            "output": 222
+        },
+        {
+            "input": 2210,
+            "output": 373
+        },
+        {
+            "input": 1906,
+            "output": 1001
+        },
+        {
+            "input": 2600,
+            "output": 396
+        },
+        {
+            "input": 1840,
+            "output": 363
+        },
+        {
+            "input": 2206,
+            "output": 332
+        },
+        {
+            "input": 2063,
+            "output": 335
+        },
+        {
+            "input": 2045,
+            "output": 398
+        },
+        {
+            "input": 1725,
+            "output": 410
+        },
+        {
+            "input": 2349,
+            "output": 209
+        },
+        {
+            "input": 2152,
+            "output": 273
+        },
+        {
+            "input": 2639,
+            "output": 335
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 3390,
+        "output": 983
+    },
+    "total_time": 74.58
+}

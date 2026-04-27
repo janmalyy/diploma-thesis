@@ -1,0 +1,1603 @@
+{
+    "before_pruning": {
+        "articles_in_total": 58,
+        "only_medline_count": 4,
+        "only_pmc_count": 20,
+        "only_suppl_count": 25,
+        "both_pmc_and_suppl_count": 9,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 50,
+        "only_medline_count": 4,
+        "only_pmc_count": 19,
+        "only_suppl_count": 18,
+        "both_pmc_and_suppl_count": 9,
+        "all_three_count": 0
+    },
+    "variant": "BRCA2 E3002K",
+    "time_to_process_articles": 27.82,
+    "context_length": 130412,
+    "after_removal": {
+        "articles_in_total": 34,
+        "only_medline_count": 4,
+        "only_pmc_count": 18,
+        "only_suppl_count": 3,
+        "both_pmc_and_suppl_count": 9,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "21947752",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 149,
+            "abstract_length": 1987,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "26137147",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 161,
+            "abstract_length": 1717,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "20694749",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 130,
+            "abstract_length": 1617,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "25884701",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 140,
+            "abstract_length": 2357,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11055274",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 108,
+            "abstract_length": 3299,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                616
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4910552",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 170,
+            "abstract_length": 1296,
+            "number_of_unmatched_snippets": 3,
+            "unmatched_snippets": [
+                "sequencing exon 26 c 9581c a p p3194q vus vus conf data 7 c0 1 hrm sequencing exon 27 c 10234a g p i3412v neutral no conf data 8 c0 2 hrm sequencing pedigree of a family with p e3002k mutation in",
+                "three analyzed databases although one of them is indeed pathogenic e3002k biswas et al 2012 cote et al 2012 karchin et al 2008 although the results are conflicting between the databases",
+                "pedigree of a family with p e3002k mutation in brca2 gene chek2 1100delc mutation family pedigree a forward b and reverse c sequencing of germline dna wt wild type dx age at diagnosis d age of death red arrows indicate the last readable base"
+            ],
+            "number_of_paragraphs": 6,
+            "paragraphs_lengths": [
+                1522,
+                415,
+                1541,
+                208,
+                201,
+                255
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8055990",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 109,
+            "abstract_length": 1715,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "p leu1839ser brca1 c 81 9c g brca2 c 8023a g p ile2675val and brca2 c 9004g a p glu3002lys odds ratio estimation we calculated the odds ratios ors for each variant using the krgdb as shown in"
+            ],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                1299,
+                204
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7162921",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 97,
+            "abstract_length": 1230,
+            "number_of_unmatched_snippets": 2,
+            "unmatched_snippets": [
+                "glu2846glyfster22 tonin et al 1998 e3002k c 9004 g a p glu3002lys cote et al 2012 palb2 nm 024675 q775x c 2323 c t p gln775ter foulkes et al 2007 full gene panel screening of all known",
+                "0 001 c 9004 g a 1 970 0 967 1 1937 0 554 all variants 3 0 3 17 0 001 palb2 c 2323 c t 0 1000 0 1000 0 2000 0 582 0 0 0 0 the mean age of first invasive breast cancer diagnosis in brca1 2"
+            ],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                204,
+                193
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11372499",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 137,
+            "abstract_length": 778,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8305212",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 187,
+            "abstract_length": 2542,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "p leu2092profster7 6503deltt yes 35 59 78 83 86 c 8537 8538del p glu2846glyfster22 8765delag yes 35 59 63 77\u201379 81 83\u201386 88 c 9004g a p glu3002lys e3002k 63 68 86 frequently occurring potentially"
+            ],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                924,
+                211
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4376165",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 139,
+            "abstract_length": 2450,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 8,
+            "paragraphs_lengths": [
+                1961,
+                1300,
+                696,
+                1283,
+                584,
+                1628,
+                1148,
+                696
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6287763",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 134,
+            "abstract_length": 1358,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                420
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8994564",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 90,
+            "abstract_length": 1632,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1364
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6752316",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 68,
+            "abstract_length": 1253,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                1656,
+                1383
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3549741",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 179,
+            "abstract_length": 1494,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                429
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5485501",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 149,
+            "abstract_length": 1501,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                654
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9472814",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 103,
+            "abstract_length": 2581,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                425
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6003960",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 62,
+            "abstract_length": 1369,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1685
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11021554",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 150,
+            "abstract_length": 654,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10170303",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 160,
+            "abstract_length": 1366,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "glu2663val c 8165c g p thr2722arg c 8168g a p asp2723gly c 8243g a p gly2748asp c 9004g a p glu3002lys c 9227g a p gly3076glu breast cancer ovarian cancer variant group informative"
+            ],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                204
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8394494",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 82,
+            "abstract_length": 1935,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "with breast cancer was found to harbor palb2 c 2323c t and brca2 c 9004g a the maternal side of the double heterozygous carrier contributed to lynch syndrome 43 palb2 mutations have been shown to be"
+            ],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                202
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8628873",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 121,
+            "abstract_length": 1620,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1460
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6631909",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 112,
+            "abstract_length": 1788,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5697861",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 204,
+            "abstract_length": 1625,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1255
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6827033",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 144,
+            "abstract_length": 1168,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                2070
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7722754",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 114,
+            "abstract_length": 1641,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1867
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8876448",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 123,
+            "abstract_length": 2239,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                426
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3419138",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 102,
+            "abstract_length": 1030,
+            "number_of_unmatched_snippets": 7,
+            "unmatched_snippets": [
+                "mutant brca2 c disruption of midbody marker localization by e3002k and r3005a shown by if of 293t cells expressing mutant brca2 for midbody markers green and \u03b1 tubulin red d reconstitution",
+                "of midbody components by e3002k and r3005a in brca2 cells shown by if of brca2 cells expressing mutant brca2 for \u03b1 tubulin green and mklp1 or endobrevin green in arrows indicate absence of",
+                "brca2 n 200 b or brca2 n 200 c cells with multiple nuclei and unresolved cytokinetic bridges 72 hr after expression of e3002k and r3005a mutants d percent polyploidy of brca2 and",
+                "brca2 cells in metaphase spreads n 50 72 hr after expression of wildtype wt e3002k or r3005a brca2 error bars a d show se e rescue of homologous directed repair activity by brca2 mutants in",
+                "e3002k and r3005a shown by if of 293t cells expressing mutant brca2 for midbody markers green and \u03b1 tubulin red d reconstitution of midbody components by e3002k and r3005a in brca2 cells",
+                "nuclei and unresolved cytokinetic bridges 72 hr after expression of e3002k and r3005a mutants d percent polyploidy of brca2 and brca2 cells in metaphase spreads n 50 72 hr after expression",
+                "of wildtype wt e3002k or r3005a brca2 error bars a d show se e rescue of homologous directed repair activity by brca2 mutants in brca2 deficient dr gfp v c8 cells fold increase in gfp"
+            ],
+            "number_of_paragraphs": 16,
+            "paragraphs_lengths": [
+                1925,
+                1087,
+                1472,
+                840,
+                1232,
+                983,
+                1602,
+                1738,
+                1368,
+                198,
+                199,
+                198,
+                203,
+                196,
+                200,
+                192
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3537884",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 112,
+            "abstract_length": 1547,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                342,
+                403
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8345083",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 118,
+            "abstract_length": 2121,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                586
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5667991",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 119,
+            "abstract_length": 1592,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1457
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5057443",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 133,
+            "abstract_length": 1935,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "not uncommon among french canadians brca2 e3002k discussion the introduction of chemotherapy and radiotherapy as a possible neoadjuvant option in borderline resectable and locally advanced"
+            ],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                192
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9433957",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 152,
+            "abstract_length": 1704,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                414
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4436120",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 72,
+            "abstract_length": 2369,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1381
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        }
+    ],
+    "narrative_summary": "The BRCA2 c.9004G>A (p.Glu3002Lys, E3002K) missense change occurs in the conserved C\u2011terminal DNA\u2011binding region of BRCA2 and has been reported in families with hereditary breast and/or ovarian cancer as well as in sporadic ovarian cancer cases, implicating it in the spectrum of BRCA2\u2011associated malignancies such as breast, ovarian, pancreatic and prostate cancer [21947752, 25884701].\n\nClinical observations show that the variant segregates with disease in multiple French\u2011Canadian families, being identified in seven breast/ovarian cancer families while being absent from 960 unrelated breast cancer cases lacking a family history, a pattern interpreted as supporting pathogenicity [21947752]. It has also been detected in ovarian cancer patients from the same founder population, with a carrier frequency of roughly 1\u202f% in a cohort of 439 cases, further indicating recurrence in cancer\u2011affected individuals [25884701]. Subsequent studies have re\u2011classified the allele as pathogenic or likely pathogenic based on ClinVar entries and segregation data, including a Korean hereditary\u2011breast\u2011cancer cohort [PMC8055990] and a Southern\u2011Brazilian series that explicitly described it as pathogenic [PMC4910552]. Additional reports from Brazil and Sicily list the variant among pathogenic germline alterations in breast\u2011cancer patients [PMC9472814, PMC8994564]. Conversely, earlier French\u2011Canadian screening work classified it as a variant of uncertain significance (VUS) in two families [20694749] and several public databases continue to list it as VUS, reflecting historical uncertainty [PMC4910552].\n\nFunctional investigations consistently demonstrate a deleterious impact of E3002K on BRCA2 activity. In vitro assays showed impaired single\u2011stranded DNA binding and loss of homology\u2011directed repair capacity, while cellular studies revealed failure to rescue lethality after conditional Brca2 deletion, inability to complement homologous recombination, and disruption of the Filamin\u202fA interaction that leads to defective mid\u2011body localization, cytokinesis failure and chromosomal instability [PMC4910552, PMC6752316, PMC3419138]. Structural modeling of the OB1\u2011OB2 interface predicts that the substitution of a negatively charged glutamate with a positively charged lysine markedly destabilises the domain, a conclusion supported by computational analyses assigning a high pathogenicity score (AlignGVGD C55) [PMC3537884, PMC4910552].\n\nPopulation data indicate that the allele is rare outside the French\u2011Canadian founder group, with carrier frequencies of only a few per thousand in screened cohorts, and it is absent from large unselected control sets, underscoring its low background prevalence [25884701]. In silico predictions and database annotations are mixed: while some resources label it pathogenic, others retain a VUS designation, and computational tools such as AlignGVGD assign it a possibly/probably pathogenic score (C55) [PMC4910552, PMC6287763].\n\nThe principal source of discordance stems from early classification efforts that listed E3002K as a VUS and from lingering divergent database entries; however, the weight of segregation data, the absence of the variant in cancer\u2011free controls, the recurrent identification in multiple independent cancer families, and the convergent functional evidence of loss\u2011of\u2011function collectively outweigh the residual uncertainty. Recent re\u2011classifications in ClinVar and in population\u2011specific studies further diminish the ambiguity.\n\nTaken together, the accumulated clinical segregation, the consistent loss\u2011of\u2011function experimental results, the low allele frequency in unaffected populations, and the supportive computational destabilisation predictions converge on a consensus that BRCA2 c.9004G>A (E3002K) should be regarded as a pathogenic or likely pathogenic variant associated with increased risk of breast, ovarian and related BRCA2\u2011linked cancers.",
+    "structured_summary": {
+        "overall_pathogenicity": "pathogenic",
+        "pathogenicity_counts": {
+            "supports benignity": 1,
+            "supports pathogenicity": 35,
+            "uncertain": 3
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Specific BRCA1 and BRCA2 mutations recur in French Canadian breast and/or ovarian cancer families because of common ancestors, facilitating carrier detection in this population. We recently reported a BRCA2 **c.9004G>A** variant of unknown clinical significance in two French Canadian breast cancer families. It confers a **E3002K** alteration in the conserved C-terminus domain of BRCA2, and has been reported in non-French Canadian cancer families. Seven variant positive French Canadian families have since been identified by mutation screening of referrals to hereditary cancer clinics. In this article, we describe the cancer phenotypes of these families and further assess the contribution of this variant in the French Canadian population. We screened index breast cancer cases from 58 cancer families with at least three confirmed cases of breast and/or ovarian cancer and 960 breast cancer cases (48 years mean age) not selected for family history of cancer that were previously found not to carry the most common BRCA1 and BRCA2 mutations reported in this population. The index variant-positive cases from each family had breast cancer between the ages of 35-55 years (43 years mean age); and reported close relatives with breast cancer diagnoses between the ages of 28-84 years (57 years mean age). Three families had ovarian or peritoneal cancers. BRCA2-associated cancers, such as bladder, esophagus, pancreas, prostate, and thyroid cancers also occurred in these families. One **c.9004G>A** carrier also harbored the PALB2 c.2323C>T (Q775X) mutation found to recur in French Canadian breast cancer cases. No new BRCA2 variant carriers were identified in mutation screens. The absence of BRCA2 **c.9004G>A** carriers in the breast cancer cases not selected for family history contrasts with familial cases, supporting a pathogenic status for this variant and addition to the existing common BRCA1 and BRCA2 mutation-screening panel for French Canadian breast and/or ovarian cancer families.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study describes the recurrent BRCA2 c.9004G>A (E3002K) variant in French Canadian cancer families and concludes it is likely pathogenic based on segregation and case observations.",
+            "uncertainties_or_limitations": null,
+            "article_id": "21947752",
+            "title": "The BRCA2 c.9004G>A (E2002K) [corrected] variant is likely pathogenic and recurs in breast and/or ovarian cancer families of French Canadian descent.",
+            "relevance_score": 1.0,
+            "pub_year": 2012,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "French Canadian families with breast cancer and breast-ovarian cancer syndrome harbor specific BRCA1, BRCA2 and PALB2 germline mutations, which have been attributed to common founders. Mutations in these genes confer an increased risk to breast and ovarian cancers, and have been identified to play a role in and directly interact with the common homologous recombination DNA repair pathways. Our previous study described the case of a female diagnosed with breast cancer at 45 years old, who harbored the PALB2:c.2323C>T p.Q775X] and BRCA2:**c.9004G>A** **p.E3002K**] germline mutations, which have been found to recur in the French Canadian cancer families. As the frequency of double heterozygous carriers of breast-ovarian cancer susceptibility alleles is unknown, and due to the possibility that there may be implications for genetic counseling and management for these carriers, the present study investigated the co-occurrence of BRCA1/BRCA2 and PALB2 mutations in the French Canadian cancer families. The PALB2:c.2323C>T p.Q775X] mutation, which is the only PALB2 mutation to have been identified in French Canadian cancer families, was screened in 214 breast cancer cases and 22 breast-ovarian cancer cases from 114 BRCA1/BRCA2 mutation-positive French Canadian breast cancer (n=61) and breast-ovarian cancer (n=53) families using a tailored polymerase chain reaction-based TaqMan SNP Genotyping Assay. No additional PALB2:c.2323C>T p.Q775X] mutation carriers were identified among the BRCA1/BRCA2 mutation carriers. The results suggest that carriers of the PALB2:c.2323C>T p.Q775X] mutation rarely co-occur in French Canadian breast cancer and breast-ovarian cancer families harboring BRCA1 or BRCA2 mutations.",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article reports a breast cancer case carrying the BRCA2 p.E3002K germline mutation and notes that this variant recurs in French Canadian cancer families, but offers no specific pathogenicity interpretation for it.",
+            "uncertainties_or_limitations": null,
+            "article_id": "26137147",
+            "title": "Double PALB2 and BRCA1/BRCA2 mutation carriers are rare in breast cancer and breast-ovarian cancer syndrome families from the French Canadian founder population.",
+            "relevance_score": 0.66,
+            "pub_year": 2015,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Few studies have reported on the comprehensive BRCA1/2 mutation analyses of hereditary breast cancer (HBC) families of French Canadian descent. Here we report the investigation of 82 families with at least 3 cases of breast cancer evaluated for mutations by DNA sequencing and/or multiplex ligation-dependent probe amplification (MLPA) assay. DNA sequencing identified pathogenic mutations in 37 (45.1%) families, of which 70.2% were one of three recurring mutations (BRCA1:R1443X, BRCA2:8765delAG, and BRCA2:E1953X) frequently reported in this founder population; and variants of uncertain clinical significance in 7 (8.5%) families of which two harbored BRCA2:**E3002K**. MLPA analysis of the 38 DNA sequence-negative families did not reveal any large rearrangements in BRCA1/2. A phenotypic characterization of the cancer families based on pathogenic mutation status revealed that there were significantly fewer very young age at diagnosis breast cancer cases (<36 years) in mutation-negative families (5.9%, 9 of 153) than in BRCA1 (22.8%, 13 of 57; P = 0.0003) or BRCA2 (22.9%, 27 of 118; P < 1x 10E5) mutation-positive families. There were significantly more mutation-positive families (29 of 36, 80.6%) with a very young age of onset of breast cancer case than those that did not (8 of 39, 20.5%) (P < 10E6). The comprehensive mutation analysis of BRCA1/2 suggests that genomic rearrangements are unlikely to account for sequence-negative HBC families and affirms that the presence of a very young age of diagnosis of breast cancer is strongly predictive of mutation carrier status of French Canadian HBC families.",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The study screened 82 French\u2011Canadian breast\u2011cancer families, found pathogenic BRCA1/2 mutations in 45% of them, and classified BRCA2\u202fE3002K as a variant of uncertain significance in two families.",
+            "uncertainties_or_limitations": null,
+            "article_id": "20694749",
+            "title": "Comprehensive BRCA1 and BRCA2 mutation analyses and review of French Canadian families with at least three cases of breast cancer.",
+            "relevance_score": 0.21,
+            "pub_year": 2010,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "BACKGROUND: The frequency of BRCA1 and BRCA2 mutations in ovarian cancer patients varies depending on histological subtype and population investigated. The six most commonly recurring BRCA1 and BRCA2 mutations previously identified in a founder French Canadian population were investigated in 439 histologically defined ovarian, fallopian tube and primary peritoneal cancer cases that were ascertained at one hospital servicing French Canadians. To further assess the frequency of BRCA1/BRCA2 mutations, a defined subgroup of 116 cases were investigated for all mutations previously reported in this population. METHODS: A PCR-based assay was used to screen 439 ovarian, fallopian tube or extra-ovarian cancers comprised of serous, high grade endometrioid and mixed cell adenocarcinomas with serous components for specific BRCA1: C4446T and 2953delGTAinsC and BRCA2: 8765delAG, G6085T, 3398del5 and **E3002K** mutations. A multiplex bead-array-based Luminex assay was used to evaluate 19 specific mutations that have ever been reported in French Canadians, which included the six mutations assayed by PCR, in 116 cases representing all women ascertained within a defined 3-year window. RESULTS: A targeted analysis of six mutations identified 34/439 (7.7%) mutation carriers and at least two mutation carriers for each mutation screened were found. The BRCA1:C4446T mutation was the most frequently identified variant (15/34, 44.1%) among mutation-positive cases. The expanded mutation screen that also included 13 additional variants identified 19/116 (16.4%) mutation carriers, where C4446T was the most common variant (8/19, 42.1%) identified among mutation-positive carriers in this subgroup. Mutations were identified in women with serous, endometrioid, mixed cell, and undifferentiated adenocarcinomas. Within this subgroup there were 73 high-grade (G3) serous ovarian carcinomas, the most common subtype, with mutations identified in 19.2% (n = 14) serous cases. CONCLUSIONS: Our results reaffirm that specific BRCA1 and BRCA2 mutations found previously to recur in French Canadian breast cancer and breast-ovarian cancer families, also recur in women with ovarian cancer not selected for family history of cancer. The high frequency of mutation carriers rationalizes genetic testing of ovarian cancer patients in this demographically defined population.",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study screened ovarian cancer patients from a French\u2011Canadian founder population and found carriers of the BRCA2\u202fE3002K mutation, demonstrating its presence among the cohort\u2019s recurrent founder variants.",
+            "uncertainties_or_limitations": null,
+            "article_id": "25884701",
+            "title": "A targeted analysis identifies a high frequency of BRCA1 and BRCA2 mutation carriers in women with ovarian cancer from a founder population.",
+            "relevance_score": 0.2,
+            "pub_year": 2015,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Sequencing results were compared to data deposited in the BIC, ClinVar, UMD, HGMD and LOVD databases. We identified 12 and 31 sequence variants in BRCA1 and BRCA2, respectively (Table 3). Most of them were previously described and deposited in one or more databases as variants with no clinical significance. However, databases diverged about classification of some variants. In BRCA1, four variants were classified as variants of unknown significance (VUS) in at least one database, but none was classified as VUS in all three databases. In BRCA2, two variants were consistently classified as VUS in all databases: c.**9004G > A** (**p.E3002K**) and c.9581C > A (p.P3194Q). However, in HGMD the variant **p.E3002K** is described as a deleterious mutation, and its pathogenicity was demonstrated. The pedigree from this family can be seen in Figure 1. We also found three new variants in BRCA2, not described in BIC, ClinVar, UMD, HGMD or LOVD: c.1402A > G (p.R468G), c.2842G > A (p.V948I) and c.7017G > A (p.K2339K). More detailed results can be found in Table 3. Screening for large gene rearrangements in all 18 HBOC probands for BRCA1 and in 10 for BRCA2 did not show any detectable abnormalities.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "...G (p.E2856A) ND No ND C0 2 DHPLC+Sequencing Exon 22 c.8850G > T (p.K2950N) Neutral VUS Conf. data**7 C35 1 HRM+Sequencing Exon 22 c.8851G > A (p.A2951T) Neutral No B/LB C0 3 HRM+Sequencing Exon 23 c.**9004G > A** (**p.E3002K**) VUS VUS Conf. data**8 C55 1 HRM+Sequencing Exon 26 c.9581C > A (p.P3194Q) VUS VUS Conf. data**7 C0 1 HRM+Sequencing Exon 27 c.10234A > G (p.I3412V) Neutral No Conf. data**8 C0 2 HRM+Sequencing",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                },
+                {
+                    "quoted_text": "In spite of the large number of sequence variants identified in the BRCA1/BRCA2 genes worldwide, many of them are still classified as VUS, and the available databases diverge about classification of variants. In this study, we found four BRCA1 variants classified as VUS in at least one database, and two BRCA2 variants that were consistently classified as VUS in all three analyzed databases, although one of them is, indeed, pathogenic (**E3002K**) . Although the results are conflicting between the databases, functional studies done by point to the fact that the mutation **p.E3002K** negatively impacts ssDNA binding and function, resulting in a deleterious phenotype. The findings on the likely pathogenicity of this mutation were corroborated by work published by in a recent study of 58 French Canadian families with breast and/or ovarian cancer and 960 cases not selected for family history of cancer, which found this variant in seven of the 58 families with a family history of cancer and in none of those not selected for family history. Additionally the AlignGVGD score for pathogenicity for this specific mutation is C55, pointing to a possibly/probably pathogenic alteration. Three novel sequence variants were found in BRCA2, two of them in the same individual. Further characterization of these novel variants is imperative and is underway. All efforts will be made to further characterize variants of unknown significance, especially if they were not described previously.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "+Sequencing Exon 26 c.9581C > A (p.P3194Q) VUS VUS Conf. data**7 C0 1 HRM+Sequencing Exon 27 c.10234A > G (p.I3412V) Neutral No Conf. data**8 C0 2 HRM+Sequencing Pedigree of a family with **p.E3002K** mutation in",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "three analyzed databases, although one of them is, indeed, pathogenic (**E3002K**) (Biswas et al., 2012; Cote et al., 2012; Karchin et al., 2008). Although the results are conflicting between the databases",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "Pedigree of a family with **p.E3002K** mutation in BRCA2 gene. CHEK2 1100delC mutation family. Pedigree (A), forward (B) and reverse (C) sequencing of germline DNA. WT=wild type; dx=age at diagnosis; d=age of death; red arrows indicate the last readable base.",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article presents multiple lines of evidence\u2014including database annotation, functional assays, segregation data, and literature reports\u2014indicating that the BRCA2 p.E3002K variant is pathogenic despite being listed as VUS in some databases.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC4910552",
+            "title": "Screening for germline BRCA1, BRCA2, TP53 and CHEK2 mutations in families at-risk for hereditary breast cancer identified in a population-based study from Southern Brazil",
+            "relevance_score": 0.94,
+            "pub_year": 2016,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "In this study, six mutations in nine patients were reclassified from VUSs to pathogenic or likely pathogenic variants. BRCA1 c.5089T>C (p.Cys1697Arg), BRCA1 c.5509T>C (p. Trp1837Arg), BRCA1 c.5516T>C (p.Leu1839Ser), and BRCA1 c.81-9C>G were interpreted as likely pathogenic among variants in BRCA1. BRCA2 c.8023A>G (p.Ile2675Val) and BRCA2 **c.9004G>A** (**p.Glu3002Lys**) were interpreted as pathogenic/likely pathogenic among variants in BRCA2 based on the ClinVar database. Since all six mutations are supported by sufficient evidence in functional studies (PS3), have not been reported in a genomic database for the general Korean population (PM2), are classified as pathogenic in ClinVar (PP5), and are deleterious mutations (PP3) according to an in silico study, they should be reclassified as likely pathogenic or pathogenic mutations. For patients with these mutations, additional genetic counseling and proper management, such as familial genetic testing, risk-reducing medications, or risk-reducing surgery, are needed for the prevention of cancer.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "(p.Leu1839Ser), BRCA1 c.81-9C>G, BRCA2 c.8023A>G (p.Ile2675Val), and BRCA2 **c.9004G>A** (**p.Glu3002Lys**). Odds ratio estimation We calculated the odds ratios (ORs) for each variant using the KRGDB, as shown in",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article reclassifies the BRCA2 E3002K (p.Glu3002Lys) variant as pathogenic/likely pathogenic based on ClinVar classification and functional evidence, and reports population odds\u2011ratio analysis for this variant in a Korean cohort.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8055990",
+            "title": "Analysis of BRCA1/2 variants of unknown significance in the prospective Korean Hereditary Breast Cancer study",
+            "relevance_score": 0.93,
+            "pub_year": 2021,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": ".(Glu2846GlyfsTer22) Tonin et al. (1998) **E3002K** c.**9004 G > A** p.(**Glu3002Lys**) Cote et al. (2012) PALB2 NM_024675 Q775X c.2323 C > T p.(Gln775Ter) Foulkes et al. (2007) Full gene panel screening of all known",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "<0.001 c.**9004 G > A** 1/970 0/967 1/1937 0/554 All variants 3 0 3 17 <0.001 PALB2 c.2323 C > T 0/1000 0/1000 0/2000 0/582 0 0 0 0 The mean age of first invasive breast cancer diagnosis in BRCA1/2",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study screened French\u2011Canadian breast\u2011cancer patients for known founder BRCA2/BRCA1/PALB2 variants and reported the BRCA2 E3002K variant at a very low frequency without explicit pathogenicity interpretation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7162921",
+            "title": "Founder BRCA1/BRCA2/PALB2 pathogenic variants in French-Canadian breast cancer cases and controls",
+            "relevance_score": 0.89,
+            "pub_year": 2020,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "While loss-of-function variants are readily interpretable for their potential to affect risk, missense variants are more difficult to understand. The genetic architecture of the FC population has been useful in classifying such variants. For example, the rare missense BRCA2 c.**9004G > A**; **p.Glu3002Lys** reported in a number of unrelated cancer families from the North American population was initially classified as a variant of uncertain clinical significance in the BIC database. In addition to identifying this variant in unrelated FC cancer cases, it was shown to segregate with cancer cases in FC HBC families, suggesting that it might indeed be pathogenic. This interpretation was supported by subsequent in cellulo assays revealing that it encoded a protein with aberrant HR function, and this finding led to its reclassification as pathogenic.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "p.Leu2092ProfsTer7 6503delTT Yes 35, 59, 78, 83, 86 c.8537_8538del p.Glu2846GlyfsTer22 8765delAG Yes 35, 59, 63, 77\u201379, 81, 83\u201386, 88 c.**9004G > A** **p.Glu3002Lys** **E3002K** - 63, 68, 86 Frequently occurring potentially",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The review indicates that the BRCA2 E3002K missense variant segregates with hereditary breast/ovarian cancer in French\u2011Canadian families and functional assays demonstrate pathogenic effects, leading to its reclassification as pathogenic, while a supplementary table merely notes its occurrence without explicit classification.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8305212",
+            "title": "The Genetic Analyses of French Canadians of Quebec Facilitate the Characterization of New Cancer Predisposing Genes Implicated in Hereditary Breast and/or Ovarian Cancer Syndrome Families",
+            "relevance_score": 0.79,
+            "pub_year": 2021,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "In a targeted mutation analysis of BRCA1 (C4446T, 2953delGTAinsC, 3768insA) and BRCA2 (2816insA, 8765delAG, G6085T, 6503delTT) mutations found to recur at least twice in French Canadians, we reported a mutation carrier frequency of 8% in 99 women with epithelial ovarian cancer not selected for histological subtype or family history of cancer. Mutation carriers were found among seven of 74 women with serous (N = 60) and endometrioid (n = 14) subtype carcinomas and one of four women with mixed cell subtype cancers, and none among the mucinous (n = 14) and clear cell (n = 7) subtype cancers. Carriers harboured the BRCA1:C4446T, BRCA2:8765delAG and BRCA2:G6085T mutations, with C4446T being the most common mutation identified. These findings are in keeping with the carrier frequency of these variants in French Canadian breast cancer and breast-ovarian cancer families of the province of Quebec, Canada. However, since our report on ovarian cancer, the spectrum of BRCA1 and BRCA2 mutations in this population has been further defined through comprehensive analyses of both genes, where 19 different pathogenic mutations in all have been found in French Canadian cancer families. This includes the recurring BRCA2:3398del5 mutation found shared by common ancestors through haplotype analyses (Oros et al.,), and the recurring BRCA2:**E3002K** mutation, initially identified as variant of uncertain significance, and recently reclassified as a pathogenic mutation. Thus the existing figure for the BRCA1 and BRCA2 mutation carrier frequency in French Canadian women with ovarian cancer may be an underestimate.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "Due to the small sample size investigated in our initial study, we have assessed the frequency of the six most frequently reported mutations that were found to recur in French Canadian cancer families in a larger cohort of 439 (new) cases of histologically defined ovarian cancers that were from an ovarian cancer bank comprised of specimens collected from the largest French hospital system servicing gynecologic-oncology patients in Montreal, Quebec. This includes an evaluation of the newest recurring 3398del5 and **E3002K** mutations. To further assess the frequency of BRCA1 and BRCA2 mutations, a subgroup of 116 women with ovarian cancer ascertained within a three-year window were investigated for mutations using a broader panel of 19 mutations, which included the 13 additional variants previously reported in French Canadian cancer families and thus accounting for all BRCA1/BRCA2 mutations reported in French Canadians of Quebec. The findings from this study further define the spectrum and frequency of germline BRCA1/BRCA2 mutations in women with ovarian cancer not selected for family history of cancer and could further inform the development of mutation-screening policies for French Canadians in Quebec.",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Mutation analysis was performed using DNA provided by the tissue bank that had been extracted from peripheral blood lymphocytes (n = 362) or fresh frozen tumour specimens (n = 77) when peripheral blood DNA was not available. All of the 439 women were evaluated for BRCA1 (C4446T, 2953delGTAinsC) and BRCA2 (8765delAG, G6085T, 3398del5, **E3002K**) mutations found to recur at least twice in breast and/or ovarian cancer families of French Canadian descent. DNA samples were screened using established PCR-based screening assays and/or by the Luminex platform as described below.",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "The Luminex platform was used to screen the subgroup of 116 cases (where 111 and five DNA samples were from peripheral blood lymphocytes or fresh frozen tumour specimens, respectively) for a broader panel of BRCA1 (1135insA, 2080insA, 2244insA, 2953delGTAinsC, 3768insA, 3875del4, 5221delTG, C4446T, E352X, G1081A, Q1846X) and BRCA2 (2816insA, 3034del4, 3398del5, 3773delTT, 6503delTT, 8765delAG, **E3002K**, G6085T) mutations, which included the six mutations screened in the whole cohort. Together this panel represented all pathogenic mutations identified in the French Canadians of Quebec that were known to us at the time of the study was conducted, and which included the most frequently recurring mutations screened by PCR-based assays. The Luminex platform is a multiplex bead-array-based technology and was applied according to the manufacturer's instructions with the xPONENT software package for data management and analyses (www.luminexcorp.com).",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Histological subtype Number of women with ovarian cancer (fallopian tube and primary peritoneal cancer) BRCA1 positive (%) BRCA2 positive (%) BRCA1 and BRCA2 positive (%) C4446T 2953delGTAinsC Total 8765delAG G6085T 3398del5 **E3002K** Total Serous 369 (9) 12 (3.3)* 1 (0.3) 13 (3.5) 4 (1.1) 5 (1.4)* 3 (0.8)* 5 (1.4)* 17 (4.6) 30 (8.1) Endometrioid 30 (0) 1 (3.3) 0 1 (3.3) 0 0 0 0 0 1 (3.3) Mixed cell 32 (0) 2 (6.3) 1 (3.1) 3 (9.4) 0 0 0 0 0 3 (9.4) Undifferentiated 8 (1) 0 0 0 0 0 0 0 0 0 All types 439 (10) 15 (3.4) 2 (0.5) 17 (3.9) 4 (0.9) 5 (1.1) 3 (0.7) 5 (1.1) 17 (3.9) 34 (7.7)",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "A previous study of French Canadian women with ovarian cancer was limited by both sample size investigated, and by spectrum of BRCA1 and BRCA2 mutations screened, where additional mutations have since been identified and found to recur in this population.. Therefore to assess the contribution of recurring BRCA1/BRCA2 mutations in ovarian cancer cases from French Canadians, genomic DNA from 429 ovarian carcinomas and 10 fallopian tube or primary peritoneal carcinomas was screened for the presence of the two BRCA1 (C4446T, 2953delGTAinsC) and four BRCA2 (8765delAG, G6085T, 3398del5, **E3002K**) mutations using established PCR-based assays (Table 2). These specific mutations were selected for screening as they reflect the most commonly reported mutations found in French Canadian breast and/or ovarian cancer families based on the most recent observations from our group. A targeted screening for these six specific mutations identified 34/439 (7.7%) mutation carriers, where at least two mutation carriers for each mutation screened were identified (Table 2). The BRCA1:C4446T mutation was the most frequently found variant (15/34, 44.1%) among mutation-positive cases. BRCA1 mutation-positive cases were found among the serous, endometrioid and mixed cell subtype adenocarcinomas in contrast to BRCA2 mutation carriers, which were exclusively found among the serous subtype tumours.",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Gene Common mutation designationa HGVS mutation designation Histological subtypes (%) Serous (n = 92) Endometrioid (n = 9) Mixed cell (n = 12) Undifferentiated (n = 3) All types (n = 116) BRCA1 G1081A c.962G > A 1 (1.1) 0 0 0 1 (0.9) 1135insA c.1016dupA 0 0 0 0 0 E352X c.1054G > T 0 1 (11.1) 0 0 1 (0.9) 2080insA c.1961dupA 0 0 0 0 0 2244insA c.2125_2126insA 1 (1.1) 0 1 (8.3) 0 2 (1.7) 2953delGTAinsCb c.2834_2836delGTAinsC 0 0 1 (8.3) 0 1 (0.9) 3768insAb c.3649_3650insA 0 0 0 0 0 3875del4 c.3756_3759delGTCT 0 0 0 0 0 C4446Tb c.4327C > T 8 (8.7) 0 0 0 8 (6.9) 5221delTG c.5102_5103delTG 0 0 0 0 0 Q1846X c.5536C > T 0 0 0 0 0 All BRCA1 variants 10 (10.9) 1 (11.1) 2 (16.7) 0 13 (11.2) BRCA2 2816insAb c.2588dupA 0 0 0 0 0 3034del4 c.2806_2809delAAAC 0 0 0 0 0 3398del5 c.3170_3174delAGAAA 0 0 0 0 0 3773delTT c.3545_3546delTT 0 0 0 1 (33.3) 1 (0.9) G6085Tb c.5857G > T 1 (1.1) 0 0 0 1 (0.9) 6503delTTb c.6275_6276delTT 0 0 0 0 0 8765delAGb c.8537_8538delAG 2 (2.2) 0 0 0 2 (1.7) **E3002K** c.**9004G > A** 2c (2.2) 0 0 0 2 (1.7) All BRCA2 variants 5 (5.4) 0 0 1 (33.3) 6 (5.2) All BRCA1 and BRCA2 variants 15 (16.3) 1 (11.1) 2 (16.7) 1 (33.3) 19 (16.4)",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Our study also highlights the significance of the BRCA2:**E3002K** mutation in the French Canadian population. We found five **E3002K** mutation-positive carriers in the cohort of 439 women with ovarian cancer, which is similar in frequency to the number of carriers of each of the other three BRCA2 (8765delAG, G6085T, 3398del5) mutations in the same cohort. Although initially classified as a variant of uncertain clinical significance, both the recurrence of this mutation in breast and/or ovarian cancer families and results of an in vitro functional assay suggest that this variant is pathogenic.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study reports that the BRCA2\u202fE3002K variant recurs in French\u2011Canadian ovarian\u2011cancer patients, was initially classified as a VUS, but is now considered pathogenic based on family recurrence and functional assay data, with a carrier frequency of roughly 1\u202f% in the examined cohort.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC4376165",
+            "title": "A targeted analysis identifies a high frequency of BRCA1 and BRCA2 mutation carriers in women with ovarian cancer from a founder population",
+            "relevance_score": 0.76,
+            "pub_year": 2015,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...c.8165C>G C65 Class 5 1.08 +- 0.08 1.00 2.78E-07 Lindor et al., 2012 G2508R c.7522G>C C65 1.09 +- 0.15 1.00 2.92E-07 Current study S2691F c.8072C>T C0 1.10 +- 0.06 1.00 4.09E-07 Guidugli et al., 2017 **E3002K** **c.9004G>A** C55 1.10 +- 0.08 1.00 4.35E-07 Guidugli et al., 2017 D2723G c.8168A>G C65 Class 5 1.11 +- 0.12 1.00 5.19E-07 Lindor et al., 2012 W2626R c.7876T>C C65 1.12 +- 0.01 1.00 6.04E-07 Current study G2596E...",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article includes functional assay data for the BRCA2 E3002K variant but does not provide an explicit interpretation of its pathogenicity or clinical relevance.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6287763",
+            "title": "Comprehensive annotation of BRCA1 and BRCA2 missense variants by functionally validated sequence-based computational prediction models",
+            "relevance_score": 0.7,
+            "pub_year": 2018,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Gene Type of PV HGVS Nomenclature Protein Change No. Cases BRCA1 Duplication c.66_67insA p.(Glu23Argfs) 1 BRCA1 Deletion c.117_118delTG p.(Cys39Ter) 1 BRCA1 SNV c.181T>G p.(Cys61Gly) 1 BRCA1 Deletion c.514del p.(Gln172Asnfs) 1 BRCA1 SNV c.1204G>T p.(Glu402Ter) 1 BRCA1 Deletion c.1360_1361delAG p.(Ser454Ter) 1 BRCA1 Deletion c.2350_2351delTC p.(Ser784Valfs) 1 BRCA1 SNV c.2536G>T p.(Glu846Ter) 1 BRCA1 Insertion c.2835_2836insCC p.(Ile946Profs) 1 BRCA1 Duplication c.3253dup p.(Arg1085Lysfs) 1 BRCA1 SNV c.4117G>T p.(Glu1373Ter) 1 BRCA1 SNV c.4357+1G>T / 1 BRCA1 SNV c.4484G>T p.(Arg1495Met) 1 BRCA1 Deletion c.5035_5039delCTAAT p.(Leu1679Tyrfs) 2 BRCA1 Duplication c.5266dup p.(Gln1756Profs) 1 BRCA1 SNV c.5509T>C p.(Trp1837Arg) 1 BRCA1 Deletion c.5522delG p. (Ser1841fs*) 1 BRCA2 Duplication c.428dup p.(Val144Cysfs) 3 BRCA2 SNV c.631G>A p.(Val211Ile) 1 SNV c.7008-2A>T / BRCA2 Duplication c.5073_5074insA p.(Trp1692Metfs) 1 BRCA2 Deletion c.5603_5606delACAG p.(Asp1868Valfs) 1 BRCA2 Deletion c.5851_5854delAGTT p.(Ser1951TrpfsTer) 2 BRCA2 Deletion c.6082_6086 delGAAGA p.(Glu2028Lysfs) 1 BRCA2 Deletion c.6486_6489delACAA p.(Lys2162Asnfs) 1 BRCA2 SNV c.8331+2T>C / 1 BRCA2 SNV c.8487+1G>A / 3 BRCA2 SNV c.8754+4A>G / 1 BRCA2 SNV **c.9004G>A** p.(**Glu3002Lys**) 1 BRCA2 Deletion c.9026_9030delATCAT p.(Tyr3009Serfs) 1 BRCA2 Deletion c.9455_9456delAG p.(Glu3152Glyfs) 1",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "In a cohort of 389 breast\u2011cancer patients from eastern Sicily, the BRCA2 p.Glu3002Lys (E3002K) variant was reported as a pathogenic germline alteration in one case.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8994564",
+            "title": "Mutational Analysis of BRCA1 and BRCA2 Genes in Breast Cancer Patients from Eastern Sicily",
+            "relevance_score": 0.68,
+            "pub_year": 2022,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Exon Nucleotidea Amino acid Complementationb HDR capacity (%)c Cisplatin sensitivity (%)d 3 c.73G>A p.Gly25Arg Yes 65 66 3 c.93G>T p.Trp31Cys Poor 24 39 3 c.165_167del p.Asn56del Yes 70 84 7 c.599C>T p.Thr200Ile Yes 98 150 10 c.1769T>G p.Phe590Cys Yes 79 106 11 c.4301A>T p.Lys1434Ile Yes 83 124 11 c.5733_5735del p.Asp1911del Yes 85 110 12 c.6867A>T p.Leu2289Phe Yes 125 123 12 c.6935A>T p.Asp2312Val Yes 78 46 15 c.7484T>C p.Ile2495Thr Yes 58 84 15 c.7522G>A p.Gly2508Ser Yes 50 37 15 c.7547C>G p.Ser2516Cys Yes 87 113 16 c.7751G>A p.Gly2584Asp Yes 70 65 16 c.7753G>A p.Gly2585Arg No NA NA 17 c.7875A>T p.Arg2625Ser No NA NA 17 c.7928C>G p.Ala2643Gly Yes 121 102 17 c.7954G>A p.Val2652Met Poor 45 39 18 c.7978T>G p.Tyr2660Asp No NA NA 18 c.8162T>A p.Leu2721His No NA NA 18 c.8111C>T p.Ser2704Phe Yes 116 45 18 c.8249_8251del p.Lys2750del No NA NA 19 c.8350C>T p.Arg2784Trp Poor 15 51 19 c.8351G>A p.Arg2784Gln Poor 15 36 19 c.8435G>A p.Gly2812Glu Yes 50 61 20 c.8524C>T p.Arg2842Cys Yes 31 107 20 c.8525G>T p.Arg2842Leu Yes 53 43 20 c.8552C>T p.Ala2852Val Yes 65 86 21 c.8738A>G p.Asp2913Gly Yes 46 94 21 c.8739C>G p.Asp2913Glu Yes 80 80 22 c.8897T>C p.Val2966Ala Yes 62 65 23 **c.9004G>A** **p.Glu3002Lys** No NA NA 23 c.9104A>C p.Tyr3035Ser Yes 50 52 23 c.9116C>G p.Pro3039Arg Yes 73 43 24 c.9218A>G p.Asp3073Gly No NA NA 25 c.9275A>C p.Tyr3092Ser Yes 39 36 27 c.9838C>T p.Pro3280Ser Yes 125 65 27 c.9839C>G p.Pro3280Arg Yes 86 70 27 c.9871T>G p.Ser3291Ala Yes 66 88 27 c.9872C>G p.Ser3291Cys Yes 81 90 27 c.9925G>T p.Glu3309Ter Yes 75 145 27 c.9945del p.Glu3316Asn-fs*2 Yes 63 61 27 c.9976A>T p.Lys3326Ter Yes 104 44 27 c.10184del p.Glu3395Gly-fs*32 Yes 67 64",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "Given the limited number of class 4/5 missense variants, we expanded our analysis with VUS that had previously displayed an impairment of BRCA2 function in other studies (n = 20) (refs. ,) including 2 VUS significantly associated with an intermediate risk of breast cancer (Fig. S8). In addition, we evaluated the functional consequences of 23 VUS (with focus on missense and single amino acid deletion variants) that had been identified by genetic screening (Table 2). The complementation phenotype of 7 of the 43 VUS tested, i.e., variants p.Gly2585Arg, p.Arg2625Ser, p.Tyr2660Asp, p.Leu2721His, p.Lys2750del, **p.Glu3002Lys**, and p.Asp3073Gly, resembled that of class 4/5 variants with respect to their inability to rescue the cell lethality imposed by Cre-mediated loss of Brca2 (Fig. 2, Table 2). In the case of variants p.Trp31Cys, p.Val2652Met, p.Arg2784Trp, and p.Arg2784Gln, only small numbers of HAT-resistant clones arose after removal of the conditional Brca2 allele indicating that BRCA2 function is compromised in these variants resulting in incomplete complementation (Fig. 2, Table 2).",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study reports that the BRCA2 E3002K (p.Glu3002Lys) variant fails to complement Brca2 loss in mouse embryonic stem cells, indicating a loss\u2011of\u2011function effect and supporting a pathogenic classification.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6752316",
+            "title": "The functional impact of variants of uncertain significance in BRCA2",
+            "relevance_score": 0.67,
+            "pub_year": 2018,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...cases were the same carriers identified in a same previous study (P31030 and P26007) (Table 3). In an independent study involving the investigation of a new BRCA2 variant, c.**9004 G>A** (**E3002K**), a family (F1573) harboring both a BRCA2 variant and the PALB2 p.Q775X mutation was reported . However, pedigree inspection revealed that family F1573 was...",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article briefly notes a family (F1573) reported to carry the BRCA2 c.9004G>A (E3002K) variant together with a PALB2 founder mutation, without providing further interpretation of the BRCA2 variant's significance.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC3549741",
+            "title": "Contribution of the PALB2 c.2323C>T [p.Q775X] Founder mutation in well-defined breast and/or ovarian cancer families and unselected ovarian cancer cases of French Canadian descent",
+            "relevance_score": 0.67,
+            "pub_year": 2013,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Gene Mutation Classification Type BRCA1 (NM_007294.3) c.441+2T>A Pathogenic Intronic (splice donor variant) c.68_69delAG: p.Glu23Valfs*17 Pathogenic Frameshift c.5365G>T: p.Ala1789Ser VUS Missense BRCA2 (NM_000059.3) c.4965C>: p.Y1655* Pathogenic Nonsense c.8878C>T: p.Gln2960* Pathogenic Nonsense c.9382C>T: p.Arg3128* Pathogenic Nonsense c.1813dupA: p.Ile605Asnfs*11 Pathogenic Frameshift **c.9004G>A**: **p.Glu3002Lys** Pathogenic Missense c.8850G>T: p.Lys2950Asn VUS Missense c.5729A>T: p.Asn1910Ile VUS Missense c.7469T>C: p.Ile2490Thr VUS Missense c.956A>C: p.Asn319Thr VUS Missense c.3262C>T: p.Pro1088Ser VUS Missense c.4183G>T: p.Ala1395Ser VUS Missense",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study validates an Ion Torrent\u2013based BRCA1/2 testing workflow and reports the BRCA2 p.Glu3002Lys (E3002K) variant as pathogenic among the detected mutations.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5485501",
+            "title": "Development and validation of a variant detection workflow for BRCA1 and BRCA2 genes and its clinical application based on the Ion Torrent technology",
+            "relevance_score": 0.66,
+            "pub_year": 2017,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...(p.Val2151SerfsTer25) rs80359595 ND Pathogenic P090 BRCA2 13: 32911300 - 32911303 Frameshift c.2808_2811del, (p.Ala938ProfsTer21) rs80359351 0.00002 Pathogenic P109 BRCA2 13:32953937 Missense **c.9004G>A**, (**p.Glu3002Lys**) **rs80359152** ND Pathogenic P130 BRCA2 Deletion deletion exons 1 e 2 ND ND ND Likely pathogenic P136 BRCA2 13: 32890599 Missense c.2T>G, (p.Met1Arg) rs80358547 0.00001 Pathogenic P211 BRCA2 13: 32893302 -...",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "Multigene panel testing in Brazilian breast cancer patients identified pathogenic BRCA2 variants, including the E3002K (p.Glu3002Lys) mutation, demonstrating its role in hereditary risk across molecular subtypes.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9472814",
+            "title": "Characterization of genetic predisposition to molecular subtypes of breast cancer in Brazilian patients",
+            "relevance_score": 0.63,
+            "pub_year": 2022,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Mutations identified in one proband (N = 73; 35.1%) Mutations identified in two probands (N = 12; 11.5%) Mutations identified in three or more probands (N = 18; 53.4%), N and (%) c.298A>T c.5753delA c.658_659delGT c.2808_2811delACAA 20 (9.6) c.738delT c.5782G>T c.1337T>A c.5946delT 15 (7.2) c.956dupA c.5800C>T c.4829_4830delTG c.156_157insAlu 11 (5.3) c.1128delT c.5857G>T c.5164_5165delAG c.6405_6409delCTTAA 10 (4.8) c.1238delT c.6243_6246del c.5681dupA c.2T>G 8 (3.8) c.1588A>T c.6381_6382insTT c.7580_7583dupTAGG c.1138delA 7 (3.4) c.1792delA c.6418_6419insTGAA c.7806-2A>G c.9382C>T 7 (3.4) c.1796_1800delCTTAT c.6443_6444delCT c.9097dupA c.2266C>T 3 (1.4) c.2167delA c.6468_6469delTC c.9098_9099insA c.3680_3681delTG 3 (1.4) c.2505dupA c.6611delC c.9401delG c.4808delA 3 (1.4) c.2701delC c.6752dupA c.9481A>T c.4964dupA 3 (1.4) c.2845delT c.7007G>A Deletion exon 2 c.5073dupA 3 (1.4) c.3046G>T c.7060C>T c.5682C>G 3 (1.4) c.3195_3198delTAAT c.7180A>T c.6656C>G 3 (1.4) c.3264dupT c.7618-2A>G c.6952C>T 3 (1.4) c.3847_3848delGT c.7679_7680delTT c.7987delG 3 (1.4) c.3879_3880delAT c.7738C>T c.8488-1G>A 3 (1.4) c.3975_3978dupTGCT c.8023A>G **c.9004G>A** 3 (1.4) c.4005dupA c.8195T>G c.4006_4007insA c.8247_8248delGA c.4131_4132insTGAGGA c.8489G>A c.4222C>T c.8548_8551delGAAG c.4284dupT c.8695C>T c.4535delG c.8713delT c.4962T>A c.8754+4A>G c.4963delT c.8878C>T c.4968_4969insGT c.9006delA c.4979_4980delCT c.9076C>T c.5158_5159insA c.9117G>A c.5197_5198delTC c.9154C>T c.5217_5218insA c.9282_9397del c.5351delA c.9371 A > T c.5351dupA c.9699_9702delTATG c.5616_5620delAGTAA Deletion exon 13 c.5621_5624delTTAA Deletion exon 14 c.5641_5644delAAAT Deletion exon 25 c.5644_5647delTCAA",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The article describes the Brazilian germline mutational landscape of BRCA1/2 and reports that the BRCA2 E3002K (c.9004G>A) variant was found among pathogenic/likely pathogenic carriers in the studied cohort.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6003960",
+            "title": "The germline mutational landscape of BRCA1 and BRCA2 in Brazil",
+            "relevance_score": 0.61,
+            "pub_year": 2018,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": ".[Glu2663Val]; c.8165C>G, p.[Thr2722Arg]; c.8168G>A, p.[Asp2723Gly]; c.8243G>A, p.[Gly2748Asp]; **c.9004G>A**, p.[**Glu3002Lys**]; c.9227G>A, p.[Gly3076Glu]. Breast Cancer Ovarian Cancer Variant/Group Informative",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study finds that BRCA2 missense pathogenic variants overall confer a lower breast cancer risk after age 50 than protein\u2011truncating variants, though the specific risk for E3002K is not detailed.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10170303",
+            "title": "Risks of breast and ovarian cancer for women harboring pathogenic missense variants in BRCA1 and BRCA2 compared with those harboring protein truncating variants",
+            "relevance_score": 0.6,
+            "pub_year": 2021,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "with breast cancer was found to harbor PALB2 c.2323C>T and BRCA2 **c.9004G>A**. The maternal side of the double heterozygous carrier contributed to Lynch Syndrome [43]. PALB2 mutations have been shown to be",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article notes a breast cancer case with the BRCA2 E3002K (c.9004G>A) variant co\u2011occurring with a PALB2 mutation but does not interpret its significance.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8394494",
+            "title": "Germline PALB2 Mutation in High-Risk Chinese Breast and/or Ovarian Cancer Patients",
+            "relevance_score": 0.56,
+            "pub_year": 2021,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Patient ID Gene 1 Gene 2 Age Onset Country Family History Subtype Reference NA BRCA1: c.1674del (pathogenic) MSH6: c.2419G>A (uncertain significance) NA Colombia YES NA NA BRCA1:c.1674del (pathogenic) PMS2:c.2395C>T (uncertain significance); RAD51C: c.492T>G (uncertain significance) NA Colombia YES NA 15 PALB2: c.1240C>T (pathogenic) PMS2:c.241G>A (uncertain significance) 36 Colombia YES ER+, HER2-, invasive ductal carcinoma 8 BRCA2:c.5616-5620del (not reported) SMAD4:c.677C>T (conflicting interpretations) 35 Colombia YES HR+, HER2- invasive ductal carcinoma NA BRCA1: c.4357+1G>T (pathogenic) BRCA2: c.6405_6409delCTTAA (pathogenic) 38 Brazil NA ipsilateral BC NA BRCA1: LGR (deletion of exons 4-6) BRCA2: **c.9004G>A** (conflicting interpretation) 43 Brazil NA NA NA BRCA2: c.8878C>T (pathogenic), c.9699_9702delTATG (pathogenic) 52 Brazil NA NA CM001 BRCA1: c.1129_1135insA (not reported), c.4063_4065delAAT (conflicting interpretations) 37 Venezuela YES ER+, PR+ CM055 BRCA1: c.1129_1135insA (not reported), c.4063_4065delAAT (conflicting interpretations) 48 Venezuela YES ER-, PR- CM031 BRCA2: c.1282T>C (not reported), c.3479G>A (conflicting interpretations) 49 Venezuela YES NA 5 BRCA2: c.865A>C (benign), c.2971A>G(benign), c.8851G>A (benign) 33 Mexico NA ductal 12 BRCA1: c.2245G>T (uncertain significance) BRCA2: p.Ile3412Val (benign) 34 Mexico NA ductal 7 BRCA1:c.442-34C>T (benign) BRCA2: c.865A>C (benign), c.2971A>G (benign) 34 Mexico NA ductal 17 BRCA1: c.3548A>G (benign), c.442-34C>T (benign) 30 Mexico YES ER+, PR+, HER2- A11 BRCA1: c.4308T>C (benign), c.442-34C (not reported), c.5152+66G>A (benign), c.548-58delT (benign) BRCA2: c.426+67A>C (not reported), c.426-89T>C (benign), c.7435+53C>T (benign) 12 Argentina YES TNBC, Secretory carcinoma A17 BRCA1:c.4308T>C (benign), c.5152+66G>A (benign), c.548-58delT (benign) 25 Argentina NO PR+, ER+, HER2+, infiltrating ductal carcinoma A18 BRCA1:c.442-34T>C (not reported) BRCA2:c.7469T>C (benign), c.681+56C>T (benign), c.7242A>G (benign) 21 Argentina NO ER+, PR+ HER2-, infiltrating lobular carcinoma",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The review of germline DNA\u2011repair gene mutations in Latin American breast\u2011cancer cohorts reports the BRCA2 c.9004G>A (E3002K) variant with a conflicting interpretation of its clinical significance.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6827033",
+            "title": "Landscape of Germline Mutations in DNA Repair Genes for Breast Cancer in Latin America: Opportunities for PARP-Like Inhibitors and Immunotherapy",
+            "relevance_score": 0.53,
+            "pub_year": 2019,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Varianta Amino acid changeb ClinVar classificationc BRCA exchanged mES-based classificatione c.73G > A p.Gly25Arg (G25R) Uncertain (2) Indeterminate c.91 T > C p.TrpW31Arg (W31R) Uncertain (1) Non-functional c.93 G > T p.Trp31Cys (W31C) Likely Pathogenic (1)/Uncertain (1) Non-functional c.73_118del (delex3-5') p.Gly25_Ala40del (G25_A40del) Non-functional c.119_312del (delex3-3') p.Pro41_Asp104del (P41_D104del) Functional c.317_631del (delex4-7) p.Gly106_Ile210del (G106_I210del) Indeterminate c.581 G > A p.Trp194Stop (W194X) Pathogenic (10) Pathogenic Non-functional c.631 + 2 T > G IVS7 + 2 T > G Pathogenic (2)/Likely Pathogenic (1) Pathogenic Non-functional c.1964C > G p.Pro655Arg (P655R) Benign (22) Benign Functional c.6323 G > A p.Arg2108His (R2108H) Benign (27) Benign Functional c.6853 A > G p.Ile2285Val (I2285V) Benign (18) Benign Functional c.6842_6937del (delex12) p.Gly2281_Asp2312de (G2281_D2312del)l Functional c.7007 G > A p.Arg2336His(R2336H) Pathogenic (23) Pathogenic Functional c.7216_7217TT > GA p.Phe2406Asp (F2406D) Functional c.7218 T > G p.Phe2406Leu (F2406L) Uncertain (1) Functional c.7468 A > G p.Ile2490Thr (I2490T) Uncertain (1) Functional c.7529 T > C p.Leu2510Pro (L2510P) Likely Pathogenic (4) Non-functional c.7878 G > C p.Trp2626Cys(W2626C) Pathogenic (16) Pathogenic Non-functional c.7958 T > C p.Leu2653Pro (L2653P) Pathogenic (4)/Likely Pathogenic (3) Non-functional c.8084 C > T p.Ser2695Leu (S2695L) Likely benign (1)/Uncertain (2) Functional c.8187 G > T p.Lys2729Asn (K2729N) Benign (16) Benign Functional c.8830 A > T p.Iso2944Phe (I2944F) Benign (26) Benign Functional c.**9004 G > A** **p.Glu3002Lys** (**E3002K**) Pathogenic (11)/Likely Pathogenic (4) Nonfunctional c.9285 C > G p.Asp3095Glu (D3095E) Pathogenic (6)/Likely Pathogenic (2) Nonfunctional c.9371 A > T p.Asn3124Iso (N3124I) Pathogenic (20) Pathogenic Nonfunctional",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study functionally assessed BRCA2 E3002K using mouse embryonic stem cell assays and classified it as pathogenic/likely pathogenic.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7722754",
+            "title": "A computational model for classification of BRCA2 variants using mouse embryonic stem cell-based functional assays",
+            "relevance_score": 0.5,
+            "pub_year": 2020,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...c.2588dupAc.2806_2809delAAACc.3170_3174delAAAAGc.3545_3546delTTc.5857G>T*c.6275_6276delTTc.8537_8538delAG*c.**9004 G>A** p.Asn863LysfsTerp.Ala938ProfsTer21p.Lys1057fsp.Phe1182Terp.Glu1953Ter*p.Leu2092ProfsTerp.Glu2846Glyfs*p.**Glu3002Lys** Fillipino c.5335delC* p.Gln1779fs* c.4631delA* p.Asn1544Thrfs* Mexican c.211A>G*c.212+1G>Ac.548-?_4185 ?delexons 9-12del*ex8-9dupex18-19delc.4327C>T* p.Arg71Gly*-----p.Arg1443Ter* Peruvian...",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article surveys the prevalence of founder and recurrent pathogenic BRCA1/2 variants in North African breast and ovarian cancer patients, proposing targeted panels for cost\u2011effective testing.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8876448",
+            "title": "Prevalence of specific and recurrent/founder pathogenic variants in BRCA genes in breast and ovarian cancer in North Africa",
+            "relevance_score": 0.48,
+            "pub_year": 2022,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Next we explored the influence of missense mutations in the Filamin A binding domain of BRCA2 on the interaction with Filamin A, localization of BRCA2 to the central spindle and midbody, and the integrity of cytokinesis. We selected 12 mutations from the Filamin A binding site (residues 2970-3020) of BRCA2 for evaluation, including five mutations (L2972W/R2973C/E3002D/**E3002K**/S3020C) from the Breast Cancer Information Core (BIC) website which lists cancer-associated missense mutations in the BRCA2 gene identified through clinical genetic screening of high-risk breast cancer families; six mutations (L2987A/W2990A/L3000A/G3003A/R3005A/S3016A) in residues fully conserved between pufferfish (Fugu rubripes) and human; and one mutation in a non-conserved residue (K3017A) as a control (Figure 4A and Figure S5A). Full-length FLAG-tagged BRCA2 expression constructs encoding these missense mutant proteins (Farrugia et al., 2008; Wu et al., 2005) were immunoprecipitated from 293T cells and western blotted for BRCA2 and Filamin A to assess the ability of each mutation to disrupt the BRCA2-Filamin A interaction. Of the 12 mutations, **E3002K** disrupted the interaction with Filamin A, R3005A substantially reduced the interaction, and E3002D partially reduced the interaction (Figure 4A and Figure S5A). Confocal microscopy showed that the **E3002K** and R3005A mutants, failed to localize efficiently to the midbody during abscission (Figure 4B). In contrast, other mutants that did not influence the interaction with Filamin A, such as L2987A and W2990A, localized normally to the midbody (Figure 4B). Live cell imaging of 293T cells expressing GFP-tagged full-length **E3002K** BRCA2 also confirmed that this mutant was unable to localize to the central spindle or the midbody (Figure S5B), although the mutant did localize to centrosomes (Figure S5B and Movie S6).",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "We then used the **E3002K** and R3005A mutants to assess the effect of disrupting the Filamin A-BRCA2 interaction on the localization of central spindle and midbody markers. Neither mutant excluded Filamin A from the central spindle or the midbody. However, both mutants disordered localization of MKLP1 and MKLP2 at the midbody ring and mislocalized PRC1 along the intercellular bridge during abscission (Figure 4C), but did not alter the localization of Plk1 and CEP55 to the midbody (Figure S5C). The mutants also had no influence on the localization of these markers to the central spindle (data not shown). In additional studies in brca2-/- cells, **E3002K** and R3005A did not rescue MKLP1 localization to the midbody ring or reconstitute Endobrevin at the midbody during abscission (Figure 4D). Together these findings are consistent with a direct influence of BRCA2 on the midbody during late abscission that is dependent on recruitment of BRCA2 to the midbody through an interaction with Filamin A.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "To confirm that disruption of the BRCA2-Filamin A interaction resulted in reduced efficiency of cytokinesis we evaluated the ability of the BRCA2 missense mutants to induce multinucleation and unresolved cytokinetic bridges in 293T cells. Immunofluorescence analysis determined that the **E3002K** and R3005A mutations, which disrupted the BRCA2-Filamin A interaction, induced substantially elevated frequencies of unresolved cytokinetic bridges and multinucleated cells, whereas other mutations had no effect (Figure 5A). Likewise, E3002D induced a moderate increase in multinucleation and cytokinetic bridges, consistent with the mild effect of this mutation on Filamin A binding (Figure 4A and Figure 5A). Similar dominant negative effects on cytokinesis were observed when expressing these mutants in brca2+/+ cells (Figure 5B). In addition, in contrast to wildtype BRCA2 reconstitution of BRCA2 deficient cells, the **E3002K** and R3005A mutants failed to reduce the frequency of cytokinetic bridges and multinucleation (Figure 5C). Furthermore, quantitation of chromosome numbers in metaphase spreads of brca2-/- and brca2+/+ cancer cell lines showed that the **E3002K** and R3005A mutants increased whole-chromosomal instability in brca2+/+ cells and failed to reduce instability in brca2-/- cells similarly to wildtype BRCA2 (Figure 5D), consistent with a delay or failure of cytokinesis.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "Since numerical chromosomal alterations can also result from multipolar mitoses and merotelic attachment of microtubules following centrosome amplification (Ganem et al., 2009), we also evaluated the influence of the **E3002K** and R3005A variants on centrosome number. Immunofluorescence staining for centrosomal \u03b3-tubulin in brca2+/+ and brca2-/- cells expressing the FLAG-tagged **E3002K** or R3005A mutants showed that both mutants maintained a normal centrosome complement in brca2+/+ cells and partially rescued centrosome amplification in brca2-/- cells, similarly to wildtype BRCA2 (Farrugia et al., 2008) (Figure S5D). Thus, the failure of cytokinesis and chromosomal instability induced by disruption of the BRCA2-Filamin A interaction is independent of an effect on centrosome duplication.",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Since the Filamin A binding and midbody localization domain of BRCA2 overlaps with the homologous recombination (HR) DNA repair associated DNA binding domain, we assessed whether disruption of Filamin A binding also disrupted the homology directed repair (HDR) activity of BRCA2. All mutations that had no effect on Filamin A binding to BRCA2 reestablished wildtype HDR activity in BRCA2 deficient V-C8 cells (Figure 5E). However, the **E3002K** mutant that disrupted binding and increased the frequency of cytokinetic failure (Figure 5A) failed to rescue HDR activity, consistent with disruption of the BRCA2 DNA binding domain. Similarly, the E3002D and W2990A mutants that partially reduced Filamin A binding failed to completely rescue HDR activity (Figure 5E). In contrast, the BRCA2 R3005A mutation that disrupted Filamin A binding and promoted failure of cytokinesis successfully corrected HDR activity similarly to wildtype BRCA2 (Figure 5E). Thus, we conclude that the R3005A mutation in the Filamin A interacting domain of BRCA2, which overlaps with the DNA binding domain, can distinguish between the influence of BRCA2 on cytokinesis and on DNA repair.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "Since BRCA2 co-localizes with CEP55, Alix and Tsg101 at the midbody (Figure 2A) we evaluated whether localization of BRCA2 to the midbody influenced BRCA2 and CEP55 complexes involving Alix and Tsg101. In addition to T582P, which disrupts the BRCA2 interaction with CEP55, we tested the effect of **E3002K** and R3005A mutations that impaired Filamin A dependent midbody localization of BRCA2 on formation of these complexes. Similarly to the N-terminal T582P mutant, the BRCA2 **E3002K** and R3005A mutants substantially inhibited BRCA2 interaction with CEP55, Alix, and Tsg101 and also CEP55 interaction with Alix and Tsg101 (Figure 6G). Interestingly, this suggests that the BRCA2-Alix interaction observed in the absence of CEP55 (Figure 6F) is dependent on localization of BRCA2 to the midbody.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "Next, we used immunofluorescence staining of 293T cells expressing BRCA2 mutants to test whether the interactions of BRCA2 with CEP55, Alix and Tsg101 influenced the midbody localization of these proteins. The **E3002K** and R3005A mutants from the Filamin A interacting domain, that failed to localize to the midbody, substantially reduced the levels of Alix and Tsg101 at the midbody (Figure 7A-C). Similarly, the C554W and T582P mutants that perturbed the BRCA2 interactions with Alix and Tsg101 diminished the levels of Alix and Tsg101 at the midbody, but did not influence localization of BRCA2 (Figure 7A) or Plk1, MKLP1 or PRC1 to the midbody (Figure S7A, B). In addition, the N277K mutation that only influenced the BRCA2 interaction with CEP55 and Tsg101 (Figure 6E), reduced localization of Tsg101 to the midbody but had no effect on Alix localization (Figure 7A). In all cases, no effect on CEP55 localization to the midbody was observed, consistent with our finding that depletion of BRCA2 did not influence the midbody localization of CEP55 (Figure 2A,B) and that depletion of CEP55 had no effect on BRCA2 localization to the midbody (Figure S7C, D). Together these results indicate that individual interactions of BRCA2 with CEP55, Alix and Tsg101 during cytokinesis are important for recruitment of ESCRT-associated and ESCRT complexes to the midbody.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "Previously we showed that missense mutations in the Filamin A interacting domain of BRCA2 reduced the efficiency of BRCA2 localization to the midbody and caused an increase in cytokinesis defects (Figure 4B and 5A-D). Here we evaluated the influence of the missense mutations in the N-terminal domain of BRCA2 that disrupted interactions with CEP55, Alix and Tsg101 on the integrity of cytokinesis (Figure 7D). The N277K, I488R and C554W mutants, which disrupted complex formation and localization of Alix or Tsg101 to the midbody, all increased the frequency of multinucleation and delayed cytokinetic bridge resolution relative to wildtype BRCA2 (Figure 7D). Likewise the T582P mutant that reduced the interactions with CEP55, Alix and Tsg101caused a significant difference in the frequency of multinucleation (p=0.006) and unresolved cytokinetic bridges (p=0.024) relative to wildtype BRCA2 (WT-BRCA2) (Figure 7D, E). Importantly, T582P did not influence BRCA2 homology directed repair activity (Figure 7F). Furthermore, like wildtype and the **E3002K** mutant, the T582P mutant partially rescued localization of Myosin II to the cortex of BRCA2 deficient PEO1 cells during furrow ingression (Figure S7E) and did not disrupt Myosin II localization to the cleavage furrow or central spindle in 293T cells (Figure S7E). Thus, disruption of the BRCA2 interaction with CEP55 or the downstream components Alix and Tsg101 appears to directly influence the terminal stage of cytokinesis but has no effect on HDR activity or Myosin II associated furrow formation.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "...we used missense mutations in the Filamin A interacting domain of BRCA2 to distinguish between the ability of BRCA2 to mediate DNA repair and cytokinesis. We found that the **E3002K** mutation that disrupted the BRCA2 interaction with Filamin A and induced a failure of cytokinesis also inhibited the homologous recombination activity of BRCA2 (Farrugia et al., 2008; Wu et al., 2005). Importantly the **E3002K** mutation may disrupt predicted hydrogen bonding and van der Waal\u2019s interactions at the interface between the OB1 and OB2 domains in the crystal structure of rat BRCA2 leading to structural alterations and inactivation of all BRCA2 functions involving this region of BRCA2. In contrast, the R3005A mutation, which also disrupted Filamin A binding and cytokinesis, had no effect on homologous recombination. This is consistent with the crystal structure based finding that Filamin A interacting residues in BRCA2 are distinct from the major DNA binding and DSS1 binding residues in the same region (Yang et al., 2002). Thus, R3005A may only influence Filamin A binding whereas **E3002K** may induce a more significant conformational change in this region of BRCA2 resulting in disruption of both Filamin A and DNA binding. Similarly, the T582P mutation, that had no effect on...",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "mutant BRCA2. (C) Disruption of midbody marker localization by **E3002K** and R3005A shown by IF of 293T cells expressing mutant BRCA2 for midbody markers (green) and \u03b1-tubulin (red). (D) Reconstitution",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "of midbody components by **E3002K** and R3005A in brca2-/- cells shown by IF of brca2-/- cells expressing mutant BRCA2 for \u03b1-tubulin (green) and MKLP1 or Endobrevin (green) in. Arrows indicate absence of",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "brca2+/+ (n=200) (B) or brca2-/- (n=200) (C) cells with multiple nuclei and unresolved cytokinetic bridges 72 hr after expression of **E3002K** and R3005A mutants. (D) Percent polyploidy of brca2+/+ and",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "brca2-/- cells in metaphase spreads (n=50), 72 hr after expression of wildtype (WT) **E3002K** or R3005A BRCA2. Error bars (A-D) show SE. (E) Rescue of homologous directed repair activity by BRCA2 mutants in",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "**E3002K** and R3005A shown by IF of 293T cells expressing mutant BRCA2 for midbody markers (green) and \u03b1-tubulin (red). (D) Reconstitution of midbody components by **E3002K** and R3005A in brca2-/- cells",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "nuclei and unresolved cytokinetic bridges 72 hr after expression of **E3002K** and R3005A mutants. (D) Percent polyploidy of brca2+/+ and brca2-/- cells in metaphase spreads (n=50), 72 hr after expression",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "of wildtype (WT) **E3002K** or R3005A BRCA2. Error bars (A-D) show SE. (E) Rescue of homologous directed repair activity by BRCA2 mutants in brca2 deficient DR-GFP V-C8 cells. Fold increase in GFP",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study provides extensive functional evidence that the BRCA2 E3002K missense variant disrupts Filamin A binding, midbody localization, cytokinesis, and homologous recombination repair, indicating a pathogenic effect of the variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC3419138",
+            "title": "BRCA2 localization to the midbody by Filamin A regulates CEP55 signaling and completion of cytokinesis",
+            "relevance_score": 0.35,
+            "pub_year": 2012,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...2 D). Remarkably, this residue appears to interact with residues E2921 (human E3002) and V2746 (human A2825) in OB2 and with D2992 (human D3073) and N3042 (human N3124) in OB3. Thus, the R3052W, **E3002K**, D3073G and N3124I pathogenic mutations likely disrupt this interaction network and the structure and stability of the OB2-OB3 interface.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "...OB1]-OB2 interface and E3002D (mouse E2921) is at the OB2-OB3 interface. However, P2800R/S and G2812E are solvent exposed and can be accommodated in the structure. Additionally, while the pathogenic **E3002K** substitutes a negatively charged amino acid with a positively charged amino acid and is predicted to induce a dramatic change in the stability of the structure, the E3002D variant at the same...",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study uses HDR functional assays and structural modeling to classify BRCA2 DNA\u2011binding\u2011domain missense variants, indicating that the E3002K variant is pathogenic.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC3537884",
+            "title": "A classification model for BRCA2 DNA binding domain missense variants based on homology directed repair activity",
+            "relevance_score": 0.29,
+            "pub_year": 2012,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "BRCA2 has been implicated in mitosis, specifically through its localization to the midbody, where it serves as a scaffold for proteins that promote cytokinesis. This function requires the phosphorylation of BRCA2 by cyclin-dependent kinase 1 (CDK1) and polo-like kinase 1 (PLK1) and entails several interactions, including with Filamin A, which are compromised in several BRCA2 VUS. As a consequence, cells bearing these variants in homozygosis (ex. **E3002K**) exhibit binucleation and cytokinesis failure.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The review highlights that the BRCA2 E3002K variant causes binucleation and cytokinesis failure in homozygous cells, suggesting a pathogenic functional impact.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8345083",
+            "title": "Missense Variants of Uncertain Significance: A Powerful Genetic Tool for Function Discovery with Clinical Implications",
+            "relevance_score": 0.24,
+            "pub_year": 2021,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Our French Canadian cohort comprised three major familial breast cancer subgroups namely BRCA1 and BRCA2 carriers as well as BRCAX individuals, i.e. non BRCA1/2 (affected and unaffected). The BRCA1 cases included 25 individuals (ind) affected with breast cancer and 11 unaffected women, who were carriers of BRCA1 mutations namely R1443X (22 ind), 3705insA (2 ind), 2244insA (7 ind), 2953del3+C (2 ind) and three individuals carrying E352X, 4160delAG or 1723del9ins13 mutation, respectively. The BRCA2 subgroup was composed of 31 affected and 18 unaffected individuals carrying 8765delAG (44 ind), **E3002K** (2 ind), 6503delTT (1 ind), R3128X (1 ind) or 3036del4 mutation (1 ind). The BRCAX subgroup included 16 affected and 16 unaffected individuals, which represented 16 pairs of sisters (1 affected and 1 unaffected per family). It should be noted that the oldest unaffected sister available was purposely selected in BRCAX families. This subgroup of unaffected sisters was used as controls for comparison purpose in the analyses described below. The mutational profile and relationship status of BRCA1, BRCA2 and BRCAX individuals are highlighted in Supplementary Table 1.",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article reports that the BRCA2 E3002K variant was found in two individuals among the studied families but does not present any functional, computational, or pathogenicity interpretation for this variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5667991",
+            "title": "Transcriptional signature of lymphoblastoid cell lines of BRCA1, BRCA2 and non-BRCA1/2 high risk breast cancer families",
+            "relevance_score": 0.2,
+            "pub_year": 2017,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "not uncommon among French Canadians (BRCA2: **E3002K**). Discussion The introduction of chemotherapy and radiotherapy as a possible neoadjuvant option in borderline resectable and locally advanced",
+                    "mention_type": "population",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The case report describes a complete pathological response after neoadjuvant FOLFIRINOX in a patient with borderline resectable pancreatic cancer.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5057443",
+            "title": "Complete pathological response following neoadjuvant FOLFIRINOX in borderline resectable pancreatic cancer - a case report and review",
+            "relevance_score": 0.2,
+            "pub_year": 2016,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...LPATH PATH p.Thr2722Arg 1.08 PM1 PM5 - - BP4 PM2 - PP_Multifac PS3-published^ PATH PATH p.Phe2562Val 1.08 PM1 - - - BP4 PM2 - - PS3 VUS LPATH p.Gly2724Trp 1.12 PM1 - - PM3 BP4 PM2 - - PS3 LPATH PATH **p.Glu3002Lys** 1.10 PM1 - PP1_Moderate - BP4 PM2 - - PS3-published* PATH PATH p.Val2687Phe 1.14 PM1 - - - BP4 PM2 - - PS3 VUS LPATH p.Gly2596Glu 1.12 PM1 - - - BP4 PM2 - - PS3 VUS LPATH p.Leu3101Arg 1.15 PM1 - -...",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study reclassifies BRCA2 variant E3002K as likely pathogenic using HDR functional assay evidence within an ACMG/AMP framework.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9433957",
+            "title": "Classification of BRCA2 variants of uncertain significance (VUS) using an ACMG/AMP model incorporating a homology directed repair (HDR) functional assay",
+            "relevance_score": 0.16,
+            "pub_year": 2022,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "The estimated carrier frequency for women diagnosed with breast cancer under 50 years of age, at 0.5%, is lower than that estimated for BRCA1/BRCA2 carriers in the same population. A study of 564 French Canadian women with breast cancer under 50 years of age reported a 4.8% carrier frequency in a mutation screen for eight BRCA1/BRCA2 mutations found to recur in French Canadian HBC/HBOC cancer families. Within this cohort 0.7% and 1.1% were found to harbor either the PALB2:p.Gln775Ter or CHEK2:c.1100delC recurrent French Canadian mutations, respectively. A more recent study from the same group, found that 5.3% of French Canadian women with invasive breast cancer had one of six recurrent BRCA1/BRCA2 mutations. The mutation frequency may be higher, given that the screen did not include an analysis for BRCA2:**p.Glu3002Lys**, a mutation that has been recently reclassified as pathogenic and found to recur at a low frequency in French Canadians. Thus relative to BRCA1/BRCA2, germline TP53 mutations are infrequent in French Canadian women with breast cancer, and may be similar (if not lower than) the mutation frequencies observed for specific PALB2 and CHEK2 mutations observed for this population.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The article notes that BRCA2 p.Glu3002Lys has been reclassified as pathogenic and occurs at low frequency in French Canadians, implying its contribution may be underestimated in this population.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC4436120",
+            "title": "Germline TP53 mutational spectrum in French Canadians with breast cancer",
+            "relevance_score": 0.15,
+            "pub_year": 2015,
+            "data_sources": [
+                "pmc"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 1863,
+            "output": 481
+        },
+        {
+            "input": 1897,
+            "output": 745
+        },
+        {
+            "input": 1816,
+            "output": 441
+        },
+        {
+            "input": 1996,
+            "output": 495
+        },
+        {
+            "input": 2484,
+            "output": 203
+        },
+        {
+            "input": 3072,
+            "output": 1368
+        },
+        {
+            "input": 2371,
+            "output": 692
+        },
+        {
+            "input": 1984,
+            "output": 734
+        },
+        {
+            "input": 1613,
+            "output": 210
+        },
+        {
+            "input": 2317,
+            "output": 883
+        },
+        {
+            "input": 5054,
+            "output": 1644
+        },
+        {
+            "input": 2155,
+            "output": 547
+        },
+        {
+            "input": 2544,
+            "output": 766
+        },
+        {
+            "input": 3040,
+            "output": 604
+        },
+        {
+            "input": 2001,
+            "output": 580
+        },
+        {
+            "input": 2057,
+            "output": 533
+        },
+        {
+            "input": 2423,
+            "output": 591
+        },
+        {
+            "input": 2713,
+            "output": 714
+        },
+        {
+            "input": 1617,
+            "output": 168
+        },
+        {
+            "input": 2009,
+            "output": 771
+        },
+        {
+            "input": 2040,
+            "output": 814
+        },
+        {
+            "input": 2297,
+            "output": 241
+        },
+        {
+            "input": 1935,
+            "output": 248
+        },
+        {
+            "input": 2257,
+            "output": 349
+        },
+        {
+            "input": 2596,
+            "output": 663
+        },
+        {
+            "input": 2532,
+            "output": 618
+        },
+        {
+            "input": 2593,
+            "output": 689
+        },
+        {
+            "input": 5478,
+            "output": 1871
+        },
+        {
+            "input": 2077,
+            "output": 649
+        },
+        {
+            "input": 2037,
+            "output": 545
+        },
+        {
+            "input": 2298,
+            "output": 474
+        },
+        {
+            "input": 1905,
+            "output": 553
+        },
+        {
+            "input": 2109,
+            "output": 699
+        },
+        {
+            "input": 2409,
+            "output": 621
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 21310,
+        "output": 2018
+    },
+    "total_time": 102.3
+}

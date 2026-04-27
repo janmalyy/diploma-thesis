@@ -1,0 +1,937 @@
+{
+    "before_pruning": {
+        "articles_in_total": 20,
+        "only_medline_count": 1,
+        "only_pmc_count": 3,
+        "only_suppl_count": 15,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 20,
+        "only_medline_count": 1,
+        "only_pmc_count": 3,
+        "only_suppl_count": 15,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "variant": "BRCA1 G1763V",
+    "time_to_process_articles": 11.68,
+    "context_length": 51688,
+    "after_removal": {
+        "articles_in_total": 19,
+        "only_medline_count": 1,
+        "only_pmc_count": 2,
+        "only_suppl_count": 15,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "29113215",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 99,
+            "abstract_length": 1165,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11380199",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 132,
+            "abstract_length": 2029,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "functional data substantially increases the probability that the variant is benign decreasing uncertainty and increasing information brca1 c 5288g t was classified as a variant of uncertain"
+            ],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                1218,
+                193
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5661407",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 98,
+            "abstract_length": 1165,
+            "number_of_unmatched_snippets": 9,
+            "unmatched_snippets": [
+                "uncertain 11 as a consequence 10\u201320 of patients with familial breast cancer cannot receive any meaningful information from clinical genetic testing 8 11 two missense mutations g1763v and l1786p",
+                "bonferroni method p 0 05 was considered to indicate a statistically significant difference results bioinformatics analyses showed that g1763v and l1786p abolish the tumor suppression function of",
+                "predicted that both mutations were deleterious table i g1763v and l1786p mutants were expressed in the brca1 deficient hcc1937 cell line in order to test and verify the function of g1763v and",
+                "level and protein level in these three groups compared with the control group 24 h subsequent to transfection with wt brca1 and two mutants fig 1c and d g1763v and l1786p mutants reduced cell",
+                "and c 72 h subsequent to transfection these data indicated that g1763v and l1786p have similar tumor suppressor function to wild type brca1 in vitro g1763v and l1786p mutants caused s phase arrest",
+                "with the control group with 29 2 control vs wt brca1 control vs g1763v control vs l1786p p 0 05 fig 3b g1763v and l1786p mutants did not sensitize cells to the parp1 inhibitor olaparib in",
+                "may at least partially explain why these two mutants have no deleterious effect on brca1 function in summary the present study identified two novel brca1 missense mutations in the brct domain g1763v",
+                "of experimental therapeutics division of cancer medicine md anderson cancer center houston usa for assistance with protein structure analysis expression of g1763v and l1786p mutants in the",
+                "mrna level d wild type and mutated brca1 over expression at protein level brca1 breast cancer 1 wt wild type effect of g1763v and l1786p mutants on hcc1937 cells in cell growth and apoptosis"
+            ],
+            "number_of_paragraphs": 17,
+            "paragraphs_lengths": [
+                1265,
+                682,
+                797,
+                1060,
+                644,
+                486,
+                516,
+                191,
+                202,
+                196,
+                194,
+                195,
+                199,
+                199,
+                201,
+                194,
+                198
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    250
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10974778",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 153,
+            "abstract_length": 1405,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1167
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7125325",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 102,
+            "abstract_length": 1536,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    228
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10098510",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 146,
+            "abstract_length": 2250,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    322
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10558845",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 73,
+            "abstract_length": 2023,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    773
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6181777",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 72,
+            "abstract_length": 1039,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    688
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7118020",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 192,
+            "abstract_length": 1320,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    105
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9519549",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 112,
+            "abstract_length": 1509,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    775
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7200594",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 80,
+            "abstract_length": 1366,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    378
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6136750",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 66,
+            "abstract_length": 1214,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    29
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9166814",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 120,
+            "abstract_length": 1097,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    1243
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9763624",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 98,
+            "abstract_length": 1198,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    748
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6287763",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 134,
+            "abstract_length": 1358,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    1194
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8062186",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 102,
+            "abstract_length": 1107,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    761
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6119118",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 98,
+            "abstract_length": 1132,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    153
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7782482",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 74,
+            "abstract_length": 1440,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    157
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5055158",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 87,
+            "abstract_length": 1706,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    764
+                ]
+            ]
+        }
+    ],
+    "narrative_summary": "The BRCA1 missense change Gly1763Val (c.5288G>T) occurs in the C\u2011terminal BRCT domain of the tumor\u2011suppressor protein and has been identified in Chinese families with hereditary breast cancer, implicating it in breast\u2011ovarian cancer susceptibility [29113215]. Clinical databases and recent reviews list the variant variously as a variant of uncertain significance, a VUS with conflicting interpretations, or as pathogenic based on structural considerations; for example, a 2024 review of BRCT mutations classifies G1763V as pathogenic [PMC10974778], while saturation genome editing reported loss\u2011of\u2011function and pathogenic classification [PMC6181777] and an integrative model assigned it a VUS status [PMC9166814].\n\nClinical evidence is mixed. The variant appears in ClinVar as a VUS without consensus interpretation [PMC7200594], is reported as uncertain significance in molecular\u2011dynamics and structural analyses [PMC7125325, PMC10098510], and is described as a pathogenic missense change in a BRCT domain review [PMC10974778]; however, no segregation or case\u2011control data are provided, and several sources explicitly note conflicting interpretations of pathogenicity [PMC9166814].\n\nFunctional assays consistently show that G1763V does not impair BRCA1 tumor\u2011suppressor activity. In Chinese Han breast\u2011cancer cell lines, the mutant reduced proliferation and induced apoptosis to a degree comparable with wild\u2011type BRCA1, did not sensitize cells to the PARP inhibitor Olaparib, and displayed normal cell\u2011cycle effects, supporting a benign functional impact [PMC5661407, 29113215]. An information\u2011content analysis of multiplexed functional assays also reported that the variant\u2019s functional data could be interpreted as either supporting pathogenicity or benignity, highlighting uncertainty in the assay\u2019s clinical translation [PMC11380199].\n\nComputational predictions largely suggest a deleterious effect. In silico tools (PolyPhen, SIFT, Pmut) classified G1763V as damaging or possibly pathogenic [PMC5661407], and a structural review labeled it pathogenic based on its location in the BRCT domain [PMC10974778]. Conversely, other computational assessments described the variant as indeterminate or tolerated, assigning it an uncertain or unclassified status in sequence\u2011based models and molecular\u2011dynamics simulations [PMC6287763, PMC7125325, PMC10098510].\n\nOverall, functional laboratory data indicate that G1763V retains normal BRCA1 activity and therefore leans toward a benign classification, whereas computational predictions and some structural interpretations suggest potential pathogenicity. Clinical databases and recent large\u2011scale functional screens have not reached consensus, resulting in a prevailing classification of variant of uncertain significance. The weight of experimental evidence favors a non\u2011deleterious effect, but the lack of population frequency data and conflicting computational and clinical interpretations prevent a definitive re\u2011classification to benign at this time.",
+    "structured_summary": {
+        "overall_pathogenicity": "uncertain",
+        "pathogenicity_counts": {
+            "supports benignity": 8,
+            "supports pathogenicity": 7,
+            "uncertain": 6
+        },
+        "conflicting_evidence": true
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Breast cancer 1 (BRCA1) is one of the most common tumor suppressor genes in breast cancer. The BRCT domain of BRCA1 has been shown to have a critical role in tumor suppression. In a previous study, two de novo BRCT missense mutations of BRCA1, **G1763V** and L1786P were identified from Chinese females with familial breast cancer. In the present study, the function of these two novel mutations were assessed by bioinformatics analysis and a series of experiments investigating cell proliferation, cell cycle and chemotherapy combination. Although bioinformatics analysis indicated that the mutants may be deleterious, a series of experiments revealed that the two mutants significantly reduced the growth and increased cell apoptosis similar to the function of BRCA1 wild type. Furthermore, no synergistic effect between the Olaparib and BRCA1 mutation was noted on cell apoptosis. These results demonstrated that these two mutations did not affect the tumor suppressor function of BRCA1. It was concluded that not all BRCA1 missense mutations are pathogenic and that any new BRCA1 mutation should be assessed for its effect on the tumor suppressor function of BRCA1.",
+                    "mention_type": "functional",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "Functional assays showed that the BRCA1 G1763V mutation does not impair tumor suppressor activity, suggesting it is likely benign rather than pathogenic.",
+            "uncertainties_or_limitations": null,
+            "article_id": "29113215",
+            "title": "Functional analysis of BRCT missense mutations in BRCA1-mutated Chinese Han familial breast cancer.",
+            "relevance_score": 1.0,
+            "pub_year": 2017,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "BRCA1 c.**5288G > T** was classified as a variant of uncertain significance that is absent in population databases (PM2). Before incorporating functional data it has the same probability of pathogenicity (0.188) and information content (0.303) as the prior example. However, BRCA1 c.**5288G > T** has a functional score of -1.83 [10], which is functionally abnormal and leads to PS3 evidence associated with a 18.8 likelihood ratio supporting pathogenicity. Incorporating this evidence with prior probability and PM2 evidence, gives posterior probability of pathogenicity of 0.812. This can be converted to an information content of 0.303 from application of Formula 1 and Formula 2 which gives (1-(\u2013 0.812* log2(0.812) \u2013 (1\u20130.812) * log2 (1\u20130.812))). The difference in information content that results from incorporating functional data for BRCA1 c.**5288G > T** is 0.303\u20130.303, or 0.000 bits of information. Incorporating functional data substantially changes the probability of pathogenicity, swinging the probability of pathogenicity from 0.188 to 0.812, VUS leaning benign or VUS leaning pathogenic, but we are not any closer to certainty about the variant, so the information content does not change.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "functional data substantially increases the probability that the variant is benign, decreasing uncertainty and increasing information. BRCA1 c.**5288G > T** was classified as a variant of uncertain",
+                    "mention_type": "functional",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The article introduces an information\u2011content metric for multiplexed assays and presents functional data for BRCA1 G1763V that is interpreted both as functionally abnormal supporting pathogenicity and as increasing the probability of benignity, highlighting the variant\u2019s uncertain classification within the new framework.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC11380199",
+            "title": "Assigning credit where it is due: an information content score to capture the clinical value of multiplexed assays of variant effect",
+            "relevance_score": 1.0,
+            "pub_year": 2024,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "A plasmid containing a full-length BRCA1 cDNA on a pcDNA3.1 backbone was provided by Dr Genze Shao (Peking University Health Science Center, Beijing, China), for the sub-cloning and generation of the mutated expression constructs. The **G1763V** and L1786P mutations were generated in this plasmid using QuikChange II XL Site-Directed Mutagenesis kit (Agilent Technologies, Inc., Santa Clara, CA, USA). Primer pairs for the **G1763V** mutagenesis protocol were as follows: 1763 mutation forward, 5'-AGGACAGAAAGATCTTCAGGGTGCTAGAAATCTG-3' and reverse, 5'-ACCCTGAAGATCTTTCTGTCCTGGGATTCTCTTG-3'. The primer pairs for the L1786P mutagenesis protocol were as follows: 1786 mutation forward, 5'-GGAATGGATGGTACAGCcGTGTGGTGCTTCTGTGG-3' and reverse, 5'-CCACAGAAGCACCACACgGCTGTACCATCCATTCC-3'. Large-scale DNA preparations were made using the Qiagen Plasmid Maxi Kit (Qiagen, Inc., Valencia, CA, USA). Each plasmid was sequenced entirely to verify their identity. For gene transfection, HCC1937 cells were grown overnight at 37 C and transfected with plasmids using Lipofectamine 2000 (Invitrogen; Thermo Fisher Scientific, Inc.), according to the manufacturer's instructions.",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Two novel BRCA1 missense mutations in the BRCT domain were identified from the cohort of Chinese women with familial breast cancer, consisting of **G1763V** due to p5407 G>T and L1786P due to p5476 T>C. Protein mutation analysis software, consisting of PolyPhen , SIFT and Pmut , was used to predict the impact of these two BRCT mutations on BRCA1 protein and their possible pathogenicity. PolyPhen software predicted that **G1763V** and L1786P both damage the original protein function. SITF and Pmut software predicted that both mutations were deleterious (Table I).",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "In order to investigate the function of these two mutants following DNA damage, a DNA damage model was created using gamma radiation. Phosphorylation of gammaH2AX is the most sensitive marker that can be used to examine the DNA damage and the subsequent DNA repair. It was found that gammaH2AX foci increased significantly in the irradiated group when compared with the groups without irradiation (Fig. 3A). After 8-Gy irradiation, the percentages of cells in the S-phase were 42.1, 42.1 and 40.0% in the wild-type BRCA1, **G1763V** and L1786P cells, respectively, which were increased compared with the control group with 29.2% (control vs. wt BRCA1, control vs. **G1763V**, control vs. L1786P; P<0.05; Fig. 3B).",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "The key function of BRCA1 is to suppress tumor formation in breast and ovarian tissues. Using a mouse model of hereditary breast cancer, Shakya et al found that the tumor suppression function of BRCA1 is dependent on the ability of the BRCT domain to bind to its phospho-ligands. The BRCT motif of BRCA1 forms a phospho-recognition domain that preferentially binds to the phosphorylated isoforms of repair proteins, Abraxas/CCDC98, BACH1/FancJ and CtIP, and thus has a critical role in tumor suppression. Numerous tumor-associated BRCA1 alleles have frame shift/nonsense mutations that eliminate one or both BRCT motifs. According to the bioinformatics analyses, it was speculated that **G1763V** and L1786P may damage the tumor suppressor function of BRCA1. Notably, it was found that these two mutants had a similar tumor suppression function to wild-type BRCA1, in terms of reducing proliferation and inducing apoptosis in breast cancer cells.",
+                    "mention_type": "functional",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "PARP1 is a nuclear protein that rapidly binds to single-stranded DNA breaks to facilitate DNA repair. Inhibitors of PARP efficiently shrink breast, ovarian or prostate tumors in patients carrying hereditary mutations in the homologous recombination genes BRCA1 or BRCA2. Using the BRCA1-deficient HCC1937 breast cancer cell line, the present results showed that **G1763V** and L1786P mutants were not sensitive to the inhibition of PARP inhibitor Olaparib. This data further indicated that these two mutations had no deleterious function.",
+                    "mention_type": "functional",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "These two mutants have no effect on the suppressor function of BRCA1, the reason for which requires additional investigation. Using the protein structure software, it was found that the **G1763V** and L1786P missense mutations were far away from the interaction site between BRCA1 and its phosphor-ligands (data not shown), which may at least partially explain why these two mutants have no deleterious effect on BRCA1 function.",
+                    "mention_type": "computational",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "Expression of **G1763V** and L1786P mutants in the BRCA1-deficient HCC1937 cell line. (A) The schematic diagram of the location of the **G1763V** and L1786P. (B) Sequencing results of 5407 G>T and 5476 T>C. (C) Wild-type and mutated BRCA1 over expression at mRNA level. (D) Wild-type and mutated BRCA1 over expression at protein level. BRCA1, breast cancer 1; wt, wild type.",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Nucleotide change Protein change Mutation type SIFT PolyPhen Pmut 5407 G>T **G1763V** Germline Damage Possible damaging Pathological 5476 T>C L1786P Germline Damage Possible damaging Pathological",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "uncertain (11). As a consequence, 10\u201320% of patients with familial breast cancer cannot receive any meaningful information from clinical genetic testing (8,11). Two missense mutations, **G1763V** and L1786P",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                },
+                {
+                    "quoted_text": "Bonferroni method. P<0.05 was considered to indicate a statistically significant difference. Results Bioinformatics analyses showed that **G1763V** and L1786P abolish the tumor suppression function of",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "predicted that both mutations were deleterious (Table I). **G1763V** and L1786P mutants were expressed in the BRCA1-deficient HCC1937 cell line In order to test and verify the function of **G1763V** and",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "level and protein level in these three groups compared with the control group 24 h subsequent to transfection with wt BRCA1 and two mutants (Fig. 1C and D). **G1763V** and L1786P mutants reduced cell",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "and C) 72 h subsequent to transfection. These data indicated that **G1763V** and L1786P have similar tumor suppressor function to wild-type BRCA1 in vitro. **G1763V** and L1786P mutants caused S-phase arrest",
+                    "mention_type": "functional",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "with the control group with 29.2% (control vs. wt BRCA1, control vs. **G1763V**, control vs. L1786P; P<0.05; Fig. 3B). **G1763V** and L1786P mutants did not sensitize cells to the PARP1 inhibitor Olaparib In",
+                    "mention_type": "functional",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "may at least partially explain why these two mutants have no deleterious effect on BRCA1 function. In summary, the present study identified two novel BRCA1 missense mutations in the BRCT domain, **G1763V**",
+                    "mention_type": "functional",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "mRNA level. (D) Wild-type and mutated BRCA1 over expression at protein level. BRCA1, breast cancer 1; wt, wild type. Effect of **G1763V** and L1786P mutants on HCC1937 cells in cell growth and apoptosis",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Rows:\nRelative BRCA1 expression Ring BRCT domain: BRCA1 domain: 1 1863 **G1763V** L1786P siore>T G76) | sa76T>c(Li7eer) ATCTTCAGGGTGCTAGAA ATGGATGGTACAGCCGTGT 560 570 630 640 D 125 se oy g 100 s & eh 75 eo V 0 aa ys Ce mene ~~ ee",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study reports that although in\u2011silico tools predict the BRCA1 G1763V missense change to be deleterious, multiple cellular functional assays demonstrate it retains wild\u2011type tumor\u2011suppressor activity, suggesting the variant is likely benign.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5661407",
+            "title": "Functional analysis of BRCT missense mutations in BRCA1-mutated Chinese Han familial breast cancer",
+            "relevance_score": 0.37,
+            "pub_year": 2017,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Mutation GeneLocation VariantSignificance Effect on BRCT Reference Lys1702 Thr c.5105A>C Unknown Destabilize the interaction with Ser group of BACH1/CtIP proteins. Arg1699Pro c.5096G>C Likely pathogenic and uncertain significance Affect residues in the surface cleft of BRCT domain structure.Disrupt interaction with pSer990 in BACH1 protein: a 20-fold lower binding affinity. Val 1696 Leu c.5086G>C Uncertain significance Affect the interaction between BRCT domain BACH1 protein(50% reductions in BACH1 binding in rat). Ala1708GluMet1775Arg c.5123C>Ac.5324T>G Pathogenic Ablate the double-strand break repair and transcription function of BRCA1.Destabilize the BRCT fold.Inhibit BRCT interactions with histone deacetylases BACH1, and the transcriptional co-repressor CtIP. Gly1763ValLeu1786Pro 5407 G>T5476 T>C PathogenicPathogenic These mutations are far away from the interaction site between BRCA1 and its phosphor-ligands, which may at least partially explain why these two mutants have no deleterious effect on BRCA1 function. Tyr 1853 Asn c.5558A>G Pathogenic/Likely pathogenic Deleterious impact on protein structure and function.Impact phosphopeptide binding",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The review of the BRCA1 BRCT domain lists the Gly1763Val (G1763V) variant as a pathogenic mutation affecting BRCA1 function.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10974778",
+            "title": "BRCA1 and Its Vulnerable C-Terminal BRCT Domain: Structure, Function, Genetic Mutations and Links to Diagnosis and Treatment of Breast and Ovarian Cancer",
+            "relevance_score": 0.16,
+            "pub_year": 2024,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Supplementary table 3. Comparison of BRCT VUS classification by different assays\nColumn names:\nNo.|VUS|Classification\nRows:\n|**c.5288G>T**|**p.G1763V**||Tolerated|Non-functional|Defects|-|Intermediate|Uncertain Significance (2)",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The article classifies the BRCA1 G1763V variant as tolerated/uncertain significance based on molecular dynamics simulation and comparison with other functional assays.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7125325",
+            "title": "Classification of VUS and unclassified variants in BRCA1 BRCT repeats by molecular dynamics simulation",
+            "relevance_score": 0.9,
+            "pub_year": 2020,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Table S11. Prediction of unknown Asian missense variants in BRCA1 BRCT and RING and BRCA2 BRC4 domains by RPMDS\nColumn names:\ncDNA*|Protein**|ExonicFunc.refGene|ClinVar classification|Structural deviation (%)|Classification\nRows:\n**c.5288G>T**|p.(**Gly1763Val**)|nonsynonymous SNV|Uncertain significance|24.1|Unclassified",
+                    "mention_type": "computational",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The article reports the BRCA1 G1763V variant as an unclassified missense change with uncertain clinical significance based on computational structural analysis and existing ClinVar annotation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10098510",
+            "title": "Ethnic-specificity, evolution origin and deleteriousness of Asian BRCA variation revealed by over 7500 BRCA variants derived from Asian population",
+            "relevance_score": 0.6,
+            "pub_year": 2022,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nHGGA, Volume 4 Supplemental information BRCA1 frameshift variants leading to extended incorrect protein C termini Thales C. Nepomuceno, Tzeh Keong Foo, Marcy E. Richardson, John Michael O. Ranola, Jamie Weyandt, Matthew J. Varga, Amaya Alarcon,\nRows:\nN1742I N1742Y G1743V G1743R N1745Y N1745S N1745R N1745D H1746L H1746R H1746Q H1746del Q1747H Q1747L Q1747E G1748C G1748R G1748D P1749S P1749Q P1749T R1751P R1751Q A1752T A1752P R1753G R1753I E1754V D1757H D1757del R1758del K1759del K1759W K1759M **G1763V** E1765K G1770E P1771L T1773I N1774R M1775K P1776H D1778N L1780P M1783I Q1785H C1787S C1787S/G1788D G1788D A1789S S1790Y E1794D V1804A H1805L P1806A V1809A V1809_V1810del Q1811R D1813H N1819S H1822Pfs*8 Q1826H A1830T R1835P E1836Vfs*43 W1837Cfs*38",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study concludes that most BRCA1 frameshift variants that create an extended incorrect C\u2011terminus are loss\u2011of\u2011function and therefore likely pathogenic, although some such variants can be benign and require individual evaluation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10558845",
+            "title": "BRCA1 frameshift variants leading to extended incorrect protein C termini",
+            "relevance_score": 0.47,
+            "pub_year": 2023,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nAnalysis removing BIC assertions:|Gene(s)|Condition(s)|Clinical significance (Last reviewed)|Review status|GRCh37Chromosome|GRCh37Location|GRCh38Chromosome|GRCh38Location|VariationID|AlleleID(s)|BIC_influenced_conflict|OMIM_influenced_conflict|clinvar_without_BIC|conflicting_interpretations_provided|SGE_functional_class|best _guess|function.score\nRows:\nNM_007294.3(BRCA1):**c.5288G>T** (**p.Gly1763Val**)|BRCA1|Breast-ovarian cancer, familial 1|Hereditary breast and ovarian cancer syndrome|not specified|not provided|Conflicting interpretations of pathogenicity(Last reviewed: Jul 26, 2017)|criteria provided, conflicting interpretations|||||||no|no|CI|VUS/LP|LOF|Path|",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study used saturation genome editing to functionally evaluate BRCA1 variants, finding that the G1763V missense change exhibits loss\u2011of\u2011function and is classified as pathogenic, illustrating the utility of this approach for variant interpretation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6181777",
+            "title": "Accurate classification of BRCA1 variants with saturation genome editing",
+            "relevance_score": 0.46,
+            "pub_year": 2018,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nEstimated V ariant\u2212Specific Eff ectsVariant Eff ect (eta)b1 a1 b3 a2b4a3 La1 Lb1 La2 b'1 a'1 b'2 b'3 a'2b'4a'3Coiled Coil BRCT1 Linker BRCT2 \u22121012345Neutr alComponent Pathogenic Component WT Classified IARC1/2 Other VUS VUS This Study Classified\nRows:\nV1741A N1742K N1742I G1743E G1743R N1745H N1745Y N1745K N1745S H1746D H1746Y H1746P H1746R Q1747K Q1747E Q1747L G1748R G1748D G1748C P1749R P1749S P1749A R1751G R1751Q A1752T A1752V R1753I R1753K E1754V D1757H D1757del R1758I K1759N K1759del K1759M **G1763V** E1765K G1770V P1771L T1773S N1774R M1775R P1776H D1778G L1780P M1783T Q1785H C1787S C1787_G1788delinsSD G1788D A1789S V1791L G1803A V1804D H1805P V1808A V1809F V1810G P1812A D1818G N1819S Q1826H V1833M R1835Q W1837R W1837G V1838E S1841R L1844P",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study used a validated transcriptional activity assay to assess the functional impact of BRCA1 C\u2011terminal in\u2011frame indels and nonsense variants, identifying positions that are tolerant or sensitive to alteration and providing Bayesian probabilities of pathogenicity for each variant examined.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9519549",
+            "title": "Assessment of small in-frame indels and C-terminal nonsense variants of BRCA1 using a validated functional assay",
+            "relevance_score": 0.36,
+            "pub_year": 2022,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nGene|c.|p.|Region|Protein change (all transcripts)|Clinical significance|Last reviewed|Review status|Stars|GRCh37Chromosome|GRCh37Location|VariationID|AlleleID(s)|dbSNP ID\nRows:\nBRCA1|NM_007294.3:**c.5288G>T**|**p.Gly1763Val**|BRCT repeats|**G1763V**, G659V, G1716V, G1784V|VUS|2017-07-26 00:00:00|criteria provided, multiple submitters, no conflicts||||||**rs80357007**",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The article defines BRCA1 exon 11 as a coldspot lacking pathogenic missense variants and suggests that VUS in this region, including G1763V, could be re\u2011classified as likely benign to reduce the VUS burden.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7200594",
+            "title": "Systematic misclassification of missense variants in BRCA1 and BRCA2 \"coldspots\"",
+            "relevance_score": 0.27,
+            "pub_year": 2020,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nGene|Variant|IARC|Status|PrDel.f|lPostOdds.f|eta.f|PrDel.fF|lPostOdds.fF|eta.fF|PrDel.fP|lPostOdds.fP|eta.fP|PrDel.fA|lPostOdds.fA|eta.fA|PrDel.fFP|lPostOdds.fFP|eta.fFP|PrDel.fFA|lPostOdds.fFA|eta.fFA|PrDel.fPA|lPostOdds.fPA|eta.fPA|PrDel.fFPA|lPostOdds.fFPA|eta.fFPA|PrDel.fm|lPostOdds.fm|eta.fm|PrDel.F|lPostOdds.F|PrDel.P|lPostOdds.P|PrDel.A|lPostOdds.A|PrDel.PA|lPostOdds.PA|PrDel.AF|lPostOdds.AF|PrDel.PF|lPostOdds.PF|PrDel.PFA|lPostOdds.PFA|FH.logLR|FH.nFam\nRows:\nBRCA1|**G1763V**|0|VUS|0.999628217886089|7.89683073934158|1.40829169364907|0.99949752341986|7.59545892293989|1.40973380670133|0.999923754052979|9.48147004885791|1.42796149274777|0.999384471076057|7.3924129024076|1.43016781083804|0.999900724918181|9.21751667677269|1.42184368962722|0.998922415019897|6.83195470525902|1.42745749723107|0.99999914592166|13.9732420605952|1.53199810347256|0.999916247988789|9.38756661756619|1.53024824020953|0.999719456749704|8.17850207227281|1.41228709537503|0.298741009250721|-0.853300269552941|0.994724826520077|5.23945457663814|0.0514623440437699|-2.91407113251228|0.770028905142072|1.20847442679396|0.0607971448997736|-2.73748866001283|0.994866858893082|5.26689114470138|0.796311177510843|1.36339658666101|0.059960604|1",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The article introduces the VarCall XT integrative model for classifying BRCA1/2 VUS and reports the BRCA1 G1763V variant as a variant of uncertain significance based on the model\u2019s output.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9166814",
+            "title": "An integrative model for the comprehensive classification of BRCA1 and BRCA2 variants of uncertain clinical significance",
+            "relevance_score": 0.23,
+            "pub_year": 2022,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\n*,Unnamed: 1,Supplementary table 3 - Details of drugs prescribed for respective SNPs by OncoKB,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Unnamed: 8,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14,Unnamed: 15,*.1\nRows:\n715R,Y1703H,F1761S,E33A,M1628V,W1837G,L1705P,M1689R,G1738E,R1751P,V1809F,S1841N,S1722F,I1766S,S1655F,G1788V,L1780P,V1833E,A1708E,E1660G,C27A,Y1703S,I1807S,T1700A,A1843T,F1734L,V1741G,V1810G,F1704S,G1656D,T1685I,L1854P,Q1811R,M18T,C1697R,G1803A,G1743R,**G1763V**,C24R,T37R,T1773I,D1739G,W1718C,H1686Q,T1691I,L1407P,K1487R,M1652K,S1841R,M1775K,S1841A,F1734S,V1736A,M1689T,L1764P,W1837R,T1691K,R1753T,D1692Y,W1718S,L1657P,A1843P,S1715C,R1699L)\",Responsive,33,,,B,oncokb,oncokb:",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study describes a computational framework for predicting pathogenicity of SNPs in genes linked to triple\u2011negative breast cancer and lists BRCA1 G1763V among many variants in a drug\u2011prescription table, without specific functional or clinical interpretation for this variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9763624",
+            "title": "Analysis of single-nucleotide polymorphisms in genes associated with triple-negative breast cancer",
+            "relevance_score": 0.21,
+            "pub_year": 2022,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Table S2. Annotation of all possible BRCA1 and BRCA2 missense variants by function and in silico prediction models\nColumn names:\nAnalysis|set|Chrom|Position|REF|ALT|Gene|AminoAcid|Functional Classification|Functional Score|Align GVGD category|Function|Function|RF|RF|RF|RF|RF|RF|RF|RF|NVM|NVM_Prediction|NVM|NVM_Prediction|NVM|NVM_Prediction|NVM_(Sum)|NVM_Prediction|CAROL score|Condel score|CaddPhred|CaddRaw|CaddRawRankscore|DannRankscore|DannScore|FathmmConvertedRankscore|FathmmScore|GerpNr|GerpRs|GerpRsRankscore|LrtConvertedRankscore|LrtScore|MetalrRankscore|MetalrScore|MetasvmRankscore|MetasvmScore|MutationassessorRankscore|MutationassessorScore|MutationtasterConvertedRankscore|MutationtasterScore|Phastcons20wayMammalianRankscore|Phastcons7wayVertebrateRankscore|Phylop20wayMammalianRankscore|Phylop7wayVertebrateRankscore|Polyphen2HdivRankscore|Polyphen2HdivScore|Polyphen2HvarRankscore|Polyphen2HvarScore|ProveanConvertedRankscore|ProveanScore|SiftConvertedRankscore|SiftScore|Siphy29wayLogoddsRankscore|Vest3Rankscore|Vest3Score|PERCH|PERCH noMAF\nRows:\nBRCA12_Funct|train|||C|A|BRCA1|**G1763V**|Indeterminate||Class C0|||||||||||||||||||||||||||||||||||||||||||||||||||||||||",
+                    "mention_type": "computational",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The article annotates the BRCA1 G1763V missense variant as indeterminate (uncertain functional impact) based on its sequence\u2011based computational prediction models.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6287763",
+            "title": "Comprehensive annotation of BRCA1 and BRCA2 missense variants by functionally validated sequence-based computational prediction models",
+            "relevance_score": 0.19,
+            "pub_year": 2018,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Supplementary Table 4. Hotspot mutations in known oncogenes and tumor suppressors|\nColumn names:\nHugo_Symbol|AminoAcid_Change\nRows:\nBRCA1|**G1763V**",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study analyzes whole\u2011exome data from 249 microsatellite\u2011stable tumors to identify genomic correlates, including driver gene mutations, that predict response to immune\u2011checkpoint blockade across multiple cancer types.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6119118",
+            "title": "Genomic correlates of response to immune checkpoint blockade in microsatellite-stable solid tumors",
+            "relevance_score": 0.09,
+            "pub_year": 2018,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Table S6. Source determination of cfDNA variants\nColumn names:\nSample|Gene|cHGVS|AF in plasma|Tag\nRows:\n170017021BPD|BRCA1|**c.5288G>T**||Biopsy matched",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study profiled circulating tumor DNA in over 10,000 Chinese cancer patients, demonstrating high detection rates and a mutation spectrum largely concordant with tissue\u2011based data.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7782482",
+            "title": "Pan-cancer circulating tumor DNA detection in over 10,000 Chinese patients",
+            "relevance_score": 0.08,
+            "pub_year": 2021,
+            "data_sources": [
+                "suppl"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 1641,
+            "output": 287
+        },
+        {
+            "input": 2292,
+            "output": 960
+        },
+        {
+            "input": 3916,
+            "output": 2826
+        },
+        {
+            "input": 2073,
+            "output": 737
+        },
+        {
+            "input": 1865,
+            "output": 838
+        },
+        {
+            "input": 2068,
+            "output": 589
+        },
+        {
+            "input": 2209,
+            "output": 845
+        },
+        {
+            "input": 1875,
+            "output": 762
+        },
+        {
+            "input": 1776,
+            "output": 310
+        },
+        {
+            "input": 2159,
+            "output": 907
+        },
+        {
+            "input": 1975,
+            "output": 617
+        },
+        {
+            "input": 1684,
+            "output": 256
+        },
+        {
+            "input": 2262,
+            "output": 379
+        },
+        {
+            "input": 2120,
+            "output": 837
+        },
+        {
+            "input": 2265,
+            "output": 575
+        },
+        {
+            "input": 1909,
+            "output": 439
+        },
+        {
+            "input": 1699,
+            "output": 632
+        },
+        {
+            "input": 1851,
+            "output": 597
+        },
+        {
+            "input": 2154,
+            "output": 243
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 8501,
+        "output": 2567
+    },
+    "total_time": 95.61
+}

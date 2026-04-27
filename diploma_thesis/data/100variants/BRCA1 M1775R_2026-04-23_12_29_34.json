@@ -1,0 +1,1804 @@
+{
+    "before_pruning": {
+        "articles_in_total": 170,
+        "only_medline_count": 22,
+        "only_pmc_count": 88,
+        "only_suppl_count": 43,
+        "both_pmc_and_suppl_count": 17,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 50,
+        "only_medline_count": 22,
+        "only_pmc_count": 22,
+        "only_suppl_count": 2,
+        "both_pmc_and_suppl_count": 4,
+        "all_three_count": 0
+    },
+    "variant": "BRCA1 M1775R",
+    "time_to_process_articles": 62.41,
+    "context_length": 162200,
+    "after_removal": {
+        "articles_in_total": 47,
+        "only_medline_count": 22,
+        "only_pmc_count": 20,
+        "only_suppl_count": 1,
+        "both_pmc_and_suppl_count": 4,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "12427738",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 73,
+            "abstract_length": 980,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "8942979",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 78,
+            "abstract_length": 1127,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "14576432",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 77,
+            "abstract_length": 1007,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "21666281",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 74,
+            "abstract_length": 1438,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "22646717",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 80,
+            "abstract_length": 1753,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "17493881",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 54,
+            "abstract_length": 1352,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "27484786",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 159,
+            "abstract_length": 1624,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "24104880",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 94,
+            "abstract_length": 1851,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "10403822",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 50,
+            "abstract_length": 911,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "20737206",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 75,
+            "abstract_length": 1278,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "14729053",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 94,
+            "abstract_length": 1309,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "31334915",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 132,
+            "abstract_length": 1542,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "19493677",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 95,
+            "abstract_length": 1657,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "16101277",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 77,
+            "abstract_length": 1500,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "8872468",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 72,
+            "abstract_length": 1418,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "22739995",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 82,
+            "abstract_length": 2031,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "12400015",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 162,
+            "abstract_length": 1998,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "12491487",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 44,
+            "abstract_length": 2262,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "17005433",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 93,
+            "abstract_length": 1811,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "15184261",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 145,
+            "abstract_length": 1692,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "17063491",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 136,
+            "abstract_length": 2798,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "12645254",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 95,
+            "abstract_length": 1981,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9559863",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 110,
+            "abstract_length": 1368,
+            "number_of_unmatched_snippets": 2,
+            "unmatched_snippets": [
+                "43051071 a c grch38 was retrived from gnomad genome aggregation database representative diseases phenotypes genes specific variants impact predictors vus variant of uncertain significance",
+                "structure and protein features of brca1 brct mutant m1775k are retrived from studies birrane 2006 tischkowitz et al 2008 the minor allele frequency maf information of variant rs41293463 chr17"
+            ],
+            "number_of_paragraphs": 3,
+            "paragraphs_lengths": [
+                350,
+                200,
+                202
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4894565",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 91,
+            "abstract_length": 2450,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4666784",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 87,
+            "abstract_length": 1311,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1055
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5980658",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 73,
+            "abstract_length": 718,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8876448",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 123,
+            "abstract_length": 2239,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1744
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8231620",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 144,
+            "abstract_length": 1432,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                703,
+                1708
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC2928257",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 163,
+            "abstract_length": 1232,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                421,
+                1465
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4891063",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 113,
+            "abstract_length": 1695,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "g c 5324t g c 1623dupg and c 4122 4123deltg in africans 12 brca1 ex9 12del in mexicans 13 and brca2 c 7480c t in koreans 14 novel brca variants eighty one 59 4 brca1 variants and 46"
+            ],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                1141,
+                197
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11256725",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 102,
+            "abstract_length": 858,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                1175,
+                925
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5915908",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 148,
+            "abstract_length": 1876,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8764043",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 67,
+            "abstract_length": 1196,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1342
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7458311",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 94,
+            "abstract_length": 2109,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                715
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6764847",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 83,
+            "abstract_length": 1299,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "countries in which psv has been reported in sraa individuals continent on which psv has been reported in non sraa individuals brca1 c 5324t g 103 125 82 bahamas nigeria trinidad usa north america"
+            ],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                1287,
+                199
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7174002",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 182,
+            "abstract_length": 1796,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                417
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5432210",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 97,
+            "abstract_length": 3687,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "s s m1775r brct 36 6 10 2 s s the brca1 palb2 brca2 interactions prevent rad52 dependent ssa given the proposed role of brca1 on dsb end resection bunting et al 2010 the activities"
+            ],
+            "number_of_paragraphs": 4,
+            "paragraphs_lengths": [
+                1721,
+                1488,
+                2004,
+                200
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6520942",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 86,
+            "abstract_length": 1907,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "variant in coding exon 21 p metl775arg c 5324t g since then more than 10 000 unique germline variants have been detected in brca1 brca exchange https brcaexchange org 13 initially the"
+            ],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                198
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6695138",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 91,
+            "abstract_length": 2056,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                416
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10164951",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 188,
+            "abstract_length": 2397,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                834
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10170303",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 160,
+            "abstract_length": 1366,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "met1775lys c 5324t g p met1775arg c 5363g t p gly1788val c 5513t a p val1838glu c c 7879a t p ile2627phe c 7940t c p leu2647pro c 7958t c p leu2653pro c 7988a t p"
+            ],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                190
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7700467",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 97,
+            "abstract_length": 2674,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                421
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10974778",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 153,
+            "abstract_length": 1405,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1167
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8998351",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 76,
+            "abstract_length": 1875,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1320
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11184794",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 123,
+            "abstract_length": 2008,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                681
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8164087",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 147,
+            "abstract_length": 1832,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                413
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6617753",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 136,
+            "abstract_length": 2590,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                407
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        }
+    ],
+    "narrative_summary": "The BRCA1 missense change Met1775Arg (c.5324T>G, M1775R) occurs in the C\u2011terminal BRCT tandem repeat, a region essential for BRCA1 tumor\u2011suppressor activity and for binding phosphopeptide ligands.  The variant has been identified in multiple families with hereditary breast and ovarian cancer and is repeatedly reported as a recurrent, disease\u2011associated allele in diverse ethnic groups.\nClinical observations consistently describe M1775R as a pathogenic mutation.  It is listed as a recurrent pathogenic allele in African\u2011American families and in broader African\u2011ancestry cohorts [12491487]; it was re\u2011classified from a variant of uncertain significance to a pathogenic variant in a Spanish high\u2011risk cohort [PMC8231620]; it is recorded as pathogenic (IARC class\u202f5) in curated clinical databases and in ACMG/AMP refinement studies [PMC10164951]; segregation analyses in the WECARE study cite it as a previously reported family\u2011segregating mutation [PMC2928257]; and population screening in Colombian breast\u2011cancer patients identifies it among pathogenic BRCA1 alterations [PMC11184794].\nFunctional investigations provide extensive evidence that M1775R impairs BRCA1 activity.  Structural work shows that the Arg substitution extrudes from the hydrophobic core, destabilising the BRCT domain and causing global unfolding at physiological temperature [12427738].  The mutation abolishes transcription\u2011activation activity of the C\u2011terminal region [8942979] and eliminates phosphoserine\u2011peptide binding, explaining loss of interaction with BACH1, CtIP and other partners [14576432, 16101277].  Cells expressing M1775R display hyper\u2011recombination, excessive DNA resection and atypical PML nuclear bodies [21666281]; transcriptome profiling in HeLa cells reveals deregulation of cancer\u2011related pathways [22646717]; thermal\u2011denaturation assays demonstrate the most severe loss of thermostability among tested BRCT mutants [17493881]; yeast expressing M1775R are hypersensitive to MMS and show reduced recombination without altered nuclear localisation [27484786]; and cytoplasmic mislocalisation due to impaired folding has been documented [14729053].  Molecular\u2011dynamics simulations further predict long\u2011range structural perturbations that disrupt BACH1 binding [17063491].  By contrast, one recombination\u2011based assay reported no effect on non\u2011homologous end\u2011joining [20737206] and a proteomic comparison found no detectable change in the overall protein pattern [17005433]; these isolated findings do not contradict the broader consensus of functional loss.\nPopulation data confirm that M1775R is not a private mutation.  It appears recurrently in African\u2011American and African diaspora studies [12491487, 22739995]; it contributes to a high prevalence of BRCA1 pathogenic variants in young Black women with breast cancer [PMC4666784]; it is catalogued among recurrent alleles in North\u2011African cohorts [PMC8876448]; and it is observed in Colombian patients [PMC11184794].  Computational analyses reinforce its deleterious nature: the Met1775 residue is highly conserved and hydrophobic, and cancer\u2011associated missense mutations disproportionately affect such residues [15184261]; Align\u2011GVGD assigns the change to class\u202fC45, indicating likely functional impact [PMC2928257]; and molecular\u2011dynamics studies predict increased flexibility and loss of phosphopeptide binding [17063491].\nTaken together, the preponderance of clinical segregation, recurrent detection in affected families, multiple independent functional deficits, population recurrence, and consistent in\u2011silico predictions support classification of BRCA1\u202fM1775R as a pathogenic variant that confers increased risk of hereditary breast and ovarian cancer.",
+    "structured_summary": {
+        "overall_pathogenicity": "pathogenic",
+        "pathogenicity_counts": {
+            "supports benignity": 2,
+            "supports pathogenicity": 26,
+            "uncertain": 0
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "The integrity of the carboxyl-terminal BRCT repeat region is critical for BRCA1 tumor suppressor function; however, the molecular details of how a number of clinically derived BRCT missense mutations affect BRCA1 function remain largely unknown. Here we assess the structural response of the BRCT tandem repeat domain to a well characterized, cancer-associated single amino acid substitution, Met-1775 --> Arg-1775. The structure of BRCT-M1775R reveals that the mutated side chain is extruded from the protein hydrophobic core, thereby altering the protein surface. Charge-charge repulsion, rearrangement of the hydrophobic core, and disruption of the native hydrogen bonding network at the interface between the two BRCT repeats contribute to the conformational instability of BRCT-M1775R. Destabilization and global unfolding of the mutated BRCT domain at physiological temperatures explain the pleiotropic molecular and genetic defects associated with the BRCA1-M1775R protein.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study demonstrates that the BRCA1 M1775R mutation destabilizes the BRCT domain, causing conformational instability that is consistent with a pathogenic effect.",
+            "uncertainties_or_limitations": null,
+            "article_id": "12427738",
+            "title": "Structural consequences of a cancer-causing BRCA1-BRCT missense mutation.",
+            "relevance_score": 1.0,
+            "pub_year": 2003,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Mutations in BRCA1 account for 45% of families with high incidence of breast cancer and for 80-90% of families with both breast and ovarian cancer. BRCA1 protein includes an amino-terminal zinc finger motif as well as an excess of negatively charged amino acids near the C terminus. In addition, BRCA1 contains two nuclear localization signals and localizes to the nucleus of normal cells. While these features suggest a role in transcriptional regulation, no function has been assigned to BRCA1. Here, we show that the C-terminal region, comprising exons 16-24 (aa 1560-1863) of BRCA1 fused to GAL4 DNA binding domain can activate transcription both in yeast and mammalian cells. Furthermore, we define the region comprising exons 21-24 (aa 1760-1863) as the minimal transactivation domain. Any one of four germ-line mutations in the C-terminal region found in patients with breast or ovarian cancer (Ala-1708-->Glu, Gln-1756 C+, Met-1775-->Arg, Tyr-1853 ->Stop), had markedly impaired transcription activity. Together these data underscore the notion that one of the functions of BRCA1 may be the regulation of transcription.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study demonstrates that the BRCA1 C-terminal region functions as a transcriptional activation domain and that the germline M1775R mutation markedly impairs this activity.",
+            "uncertainties_or_limitations": null,
+            "article_id": "8942979",
+            "title": "Evidence for a transcriptional activation function of BRCA1 C-terminal region.",
+            "relevance_score": 0.63,
+            "pub_year": 1996,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "We used a proteomic approach to identify phosphopeptide-binding modules mediating signal transduction events in the DNA damage response pathway. Using a library of partially degenerate phosphopeptides, we identified tandem BRCT (BRCA1 carboxyl-terminal) domains in PTIP (Pax transactivation domain-interacting protein) and in BRCA1 as phosphoserine- or phosphothreonine-specific binding modules that recognize substrates phosphorylated by the kinases ATM (ataxia telangiectasia-mutated) and ATR (ataxia telangiectasia- and RAD3-related) in response to gamma-irradiation. PTIP tandem BRCT domains are responsible for phosphorylation-dependent protein localization into 53BP1- and phospho-H2AX (gamma-H2AX)-containing nuclear foci, a marker of DNA damage. These findings provide a molecular basis for BRCT domain function in the DNA damage response and may help to explain why the BRCA1 BRCT domain mutation Met1775 --> Arg, which fails to bind phosphopeptides, predisposes women to breast and ovarian cancer.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study demonstrates that the BRCA1 M1775R mutation disrupts phosphopeptide binding of the BRCT domain, offering a mechanistic explanation for its role in predisposition to breast and ovarian cancer.",
+            "uncertainties_or_limitations": null,
+            "article_id": "14576432",
+            "title": "BRCT repeats as phosphopeptide-binding modules involved in protein targeting.",
+            "relevance_score": 0.52,
+            "pub_year": 2003,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "We introduced a K1702M mutation in the BRCA1 BRCT domain known to prevent the binding of proteins harboring pS-X-X-F motifs such as Abraxas-RAP80, BRIP1, and CtIP. Surprisingly, rather than impairing homologous recombination repair (HRR), expression of K1702M resulted in hyper-recombination coinciding with an accumulation of cells in S-G2 and no effect on nonhomologous end-joining. These cells also showed increased RAD51 and RPA nuclear staining. More pronounced effects were seen with a naturally occurring BRCT mutant (**M1775R**) that also produced elevated levels of ssDNA, in part co-localizing with RPA, in line with excessive DNA resection. **M1775R** induced unusual, thread-like promyelocytic leukemia (PML) nuclear bodies and clustered RPA foci rather than the typical juxtaposed RPA-PML foci seen with wild-type BRCA1. Interestingly, K1702M hyper-recombination diminished with a second mutation in the BRCA1 RING domain (I26A) known to reduce BRCA1 ubiquitin-ligase activity. Thesein vitro findings correlated with elevated nuclear RAD51 and RPA staining of breast cancer tissue from a patient with the **M1775R** mutation. Altogether, the disruption of BRCA1 (BRCT)-pS-X-X-F protein binding results in ubiquitination-dependent hyper-recombination via excessive DNA resection and the appearance of atypical PML-NBs. Thus, certain BRCA1 mutations that cause hyper-recombination instead of reduced DSB repair might lead to breast cancer.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The BRCA1 M1775R mutation causes hyper-recombination and excessive DNA resection, producing atypical nuclear phenotypes and is observed in breast cancer tissue, indicating a likely pathogenic effect.",
+            "uncertainties_or_limitations": null,
+            "article_id": "21666281",
+            "title": "Mutations in the BRCT binding site of BRCA1 result in hyper-recombination.",
+            "relevance_score": 0.48,
+            "pub_year": 2011,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "BACKGROUND: BRCA1 (breast cancer 1, early onset) missense mutations have been detected in familial breast and ovarian cancers, but the role of these variants in cancer predisposition is often difficult to ascertain. In this work, the molecular mechanisms affected in human cells by two BRCA1 missense variants, **M1775R** and A1789T, both located in the second BRCT (BRCA1 C Terminus) domain, have been investigated. Both these variants were isolated from familial breast cancer patients and the study of their effect on yeast cell transcriptome has previously provided interesting clues to their possible role in the pathogenesis of breast cancer. METHODS: We compared by Human Whole Genome Microarrays the expression profiles of HeLa cells transfected with one or the other variant and HeLa cells transfected with BRCA1 wild-type. Microarray data analysis was performed by three comparisons: **M1775R** versus wild-type (M1775RvsWT-contrast), A1789T versus wild-type (A1789TvsWT-contrast) and the mutated BRCT domain versus wild-type (MutvsWT-contrast), considering the two variants as a single mutation of BRCT domain. RESULTS: 201 differentially expressed genes were found in M1775RvsWT-contrast, 313 in A1789TvsWT-contrast and 173 in MutvsWT-contrast. Most of these genes mapped in pathways deregulated in cancer, such as cell cycle progression and DNA damage response and repair. CONCLUSIONS: Our results represent the first molecular evidence of the pathogenetic role of **M1775R**, already proposed by functional studies, and give support to a similar role for A1789T that we first hypothesized based on the yeast cell experiments. This is in line with the very recently suggested role of BRCT domain as the main effector of BRCA1 tumor suppressor activity.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study demonstrates that the BRCA1 M1775R missense variant induces transcriptomic changes in HeLa cells, offering functional evidence that supports its pathogenic role in breast cancer.",
+            "uncertainties_or_limitations": null,
+            "article_id": "22646717",
+            "title": "Effects on human transcriptome of mutated BRCA1 BRCT domain: a microarray study.",
+            "relevance_score": 0.46,
+            "pub_year": 2012,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Missense mutations at the BRCT domain of human BRCA1 protein have been associated with an elevated risk for hereditary breast/ovarian cancer. They have been shown to affect the binding site and they have also been proposed to affect domain stability, severely hampering the protein's tumor suppressor function. In order to assess the impact of various such mutations upon the stability and the function of the BRCT domain, heat-induced denaturation has been employed to study the thermal unfolding of variants **M1775R** and R1699W, which have been linked with the disease, as well as of V1833M, which has been reported for patients with a family history. Calorimetric and circular dichroism results reveal that in pH 9.0, 5 mM borate buffer, 200 mM NaCl, analogously to wild type BRCT, all three variants undergo partial thermal unfolding to a denatured state, which retains most of the native's structural characteristics. With respect to wild-type BRCT, the mutation **M1775R** induces the most severe effects especially upon the thermostability, while R1699W also has a strong impact. On the other hand, the thermal unfolding of variant V1833M is only moderately affected relative to wild-type BRCT. Moreover, isothermal titration calorimetric measurements reveal that contrary to **M1775R** and R1699W variants, V1833M binds to BACH1 and CtIP phosphopeptides.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study demonstrates that the BRCT\u2011domain missense variant M1775R markedly impairs protein thermostability and phosphopeptide binding, suggesting a pathogenic functional impact.",
+            "uncertainties_or_limitations": null,
+            "article_id": "17493881",
+            "title": "Thermal unfolding of human BRCA1 BRCT-domain variants.",
+            "relevance_score": 0.45,
+            "pub_year": 2007,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "BRCA1 tumor suppressor gene is found mutated in familial breast and ovarian cancer. Most cancer related mutations were found located at the RING (Really Interesting New Gene) and at the BRCT (BRca1 C-Terminal) domain. However, 20 y after its identification, the biological role of BRCA1 and which domains are more relevant for tumor suppression are still being elucidated. We previously reported that expression of BRCA1 cancer related variants in the RING and BRCT domain increases spontaneous homologous recombination in yeast indicating that BRCA1 may interact with yeast DNA repair/recombination. To finally demonstrate whether BRCA1 interacts with yeast DNA repair, we exposed yeast cells expressing BRCA1wt, the cancer-related variants C-61G and **M1775R** to different doses of the alkylating agent methyl methane-sulfonate (MMS) and then evaluated the effect on survival and homologous recombination. Cells expressing BRCA1 cancer variants were more sensitive to MMS and less inducible to recombination as compared to cell expressing BRCA1wt. Moreover, BRCA1-C61G and -M1775R did not change their nuclear localization form as compared to the BRCA1wt or the neutral variant R1751Q indicating a difference in the DNA damage processing. We propose a model where BRCA1 cancer variants interact with the DNA double strand break repair pathways producing DNA recombination intermediates, that maybe less repairable and decrease MMS-induced recombination and survival. Again, this study strengthens the use of yeast as model system to characterize the mechanisms leading to cancer in humans carrying the BRCA1 missense variant.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The BRCA1 M1775R variant decreases MMS\u2011induced recombination and cell survival in yeast while maintaining nuclear localization, suggesting a functional defect consistent with pathogenicity.",
+            "uncertainties_or_limitations": null,
+            "article_id": "27484786",
+            "title": "Expression of cancer related BRCA1 missense variants decreases MMS-induced recombination in Saccharomyces cerevisiae without altering its nuclear localization.",
+            "relevance_score": 0.45,
+            "pub_year": 2016,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "**M1775R** and A1789T are two missense variants located within the BRCT domains of BRCA1 gene. The **M1775R** is a known deleterious variant, while the A1789T is an unclassified variant that has been analyzed and classified as probably deleterious for the first time by our group. In a previous study, we described the expression profile of HeLa G1 cells transfected with the two variants and we found that they altered molecular mechanisms critical for cell proliferation and genome integrity. Considering that the mutations in the BRCA1 C terminus (BRCT) domains are associated to a phenotype with an altered ability in the DNA double-strand break repair, we chose three of the genes previously identified, EEF1E1, MRE11A, and OBFC2B, to be tested for an homologous recombination (HR) in vitro assay. For our purpose, we performed a gene expression knockdown by siRNA transfection in HeLa cells, containing an integrated recombination substrate (hprtDRGFP), for each of the target genes included BRCA1. The knockdown of BRCA1, OBFC2B, MRE11A, and EEF1E1 reduces the HR rate, respectively, of 97.6, 28.6, 41.8, and 42.3 % compared to cells transfected with a scrambled negative control duplex and all these differences are statistically significant (P < 0.05; Kruskal-Wallis test). Finally, we analyzed the effect of target gene depletion both on HR that on cell survival after DNA-damage induction by ionizing radiation. The clonogenic assay showed that the down-regulation of the target genes reduced the cell survival, but the effect on the HR, is not evident. Only the BRCA1-siRNA confirmed the inhibition effect on HR. Overall these results confirmed the involvement of MRE11A in the HR pathway and identified two new genes, OBFC2B and EEF1E1, which according to these data and the knowledge obtained from literature, might be involved in BRCA1-pathway.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The article reports the identification of two novel BRCA1-partner genes in DNA double\u2011strand break repair and notes that the BRCA1 M1775R variant is a known deleterious mutation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "24104880",
+            "title": "Identification of two novel BRCA1-partner genes in the DNA double-strand break repair pathway.",
+            "relevance_score": 0.41,
+            "pub_year": 2013,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "The BRCA1 gene encodes a complex protein that appears to be involved in some aspects of DNA repair, transcription, or cell cycle regulation. The phosphorylation of BRCA1 is enhanced following episodes of DNA damage or during cell cycle progression, indicating that phosphorylation may be an important regulatory mechanism. Through a yeast two hybrid assay, we found that the beta-subunit of casein kinase 2 (CK2) associated with a carboxy-terminal region of BRCA1. This association was much weaker with the same fragment bearing a missense mutation (**M1775R**) that has been identified in breast tumors. The interaction was also evident in Sf9 cells. Subsequent studies showed that BRCA1 was phosphorylated in vitro by CK2. An analysis by site directed mutagenesis of BRCA1 showed that in vitro phosphorylation by CK2 required a serine at aa1572. These data implicate CK2 as a potential mediator of BRCA1 activity.",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study demonstrates that the BRCA1 M1775R variant reduces binding to CK2, indicating a functional impact on BRCA1\u2011CK2 interaction and phosphorylation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "10403822",
+            "title": "Casein kinase 2 binds to and phosphorylates BRCA1.",
+            "relevance_score": 0.41,
+            "pub_year": 1999,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Many missense variants in BRCA1 are of unclear clinical significance. Functional and genetic approaches have been proposed for elucidating the clinical significance of such variants. The purpose of this study was to evaluate BRCA1 missense variants for their effect on both homologous recombination (HR) and non homologous end joining (NHEJ). HR frequency evaluation: HeLaG1 cells, containing a stably integrated plasmid that allows us to measure HR events by gene conversion events, were transfected with the pcDNA3beta expression vector containing the BRCA1-wild-type (BRCA1 wild type) or the BRCA1-unclassified variants (BRCA1-UCVs). The NHEJ was measured by a random plasmid integration assay. The assays suggested a BRCA1 involvement mainly in the NHEJ. As a matter of fact, the Y179C and the A1789T variant significantly altered the NHEJ activity as compared to the wild type, suggesting that they may be related to BRCA1-associated pathogenicity by affecting this function. The variants N550H and I1766S, and the mutation **M1775R** did not alter the NHEJ frequency. These data, besides proposing a method for the study of BRCA1 variants' effect on HR and NHEJ, highlighted the need for a range of functional assays to be performed to identify variants with altered function.",
+                    "mention_type": "functional",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study used recombination\u2011based assays to test BRCA1 missense variants and found that M1775R did not affect NHEJ activity, suggesting it is likely benign with respect to this function.",
+            "uncertainties_or_limitations": null,
+            "article_id": "20737206",
+            "title": "A recombination-based method to characterize human BRCA1 missense variants.",
+            "relevance_score": 0.4,
+            "pub_year": 2011,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "BRCA1 is inactivated by gene mutations in >50% of familial breast and ovarian cancers. BRCA1 is primarily a nuclear protein, although others previously reported cytoplasmic staining in breast tumor cells. In this study, we demonstrate the cytoplasmic mislocalization of BRCA1 caused by a subgroup of clinically relevant cancer mutations. We show that mutations that disrupt or delete the C-terminal BRCT domains, but not other regions of BRCA1, caused significant relocalization of BRCA1 from nucleus to cytoplasm. Two of the BRCT mutations tested (**M1775R** and Y1853X) are known to adversely affect BRCA1 protein folding and nuclear function. The BRCT mutations reduced BRCA1 nuclear import by a mechanism consistent with altered protein folding, as indicated by the restoration of nuclear staining by more extensive C-terminal deletions. Furthermore, we observed increased cytoplasmic staining of both the ectopic and endogenous forms of the BRCA1-5382insC mutant (deleted BRCT domain) in HCC1937 breast cancer cells. Unlike wild-type BRCA1, the BRCA1-5382insC mutant failed to form DNA damage-inducible foci when targeted to the nucleus by BARD1. We propose that BRCT mutations alter nuclear targeting of BRCA1, and that this may contribute to the inhibition of nuclear DNA repair and transcription function.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study demonstrates that the BRCA1 M1775R mutation impairs protein folding, leading to cytoplasmic mislocalization and loss of nuclear DNA repair function, suggesting a pathogenic effect.",
+            "uncertainties_or_limitations": null,
+            "article_id": "14729053",
+            "title": "Cytoplasmic mislocalization of BRCA1 caused by cancer-associated mutations in the BRCT domain.",
+            "relevance_score": 0.4,
+            "pub_year": 2004,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "The tandem BRCT domains (tBRCT) of BRCA1 engage phosphoserine-containing motifs in target proteins to propagate intracellular signals initiated by DNA damage, thereby controlling cell cycle arrest and DNA repair. Recently, we identified Bractoppin, the first small-molecule inhibitor of the BRCA1 tBRCT domain, which selectively interrupts BRCA1-mediated cellular responses evoked by DNA damage. Here, we combine structure-guided chemical elaboration, protein mutagenesis and cellular assays to define the structural features responsible for Bractoppin's activity. Bractoppin fails to bind mutant forms of BRCA1 tBRCT bearing K1702A, a key residue mediating phosphopeptide recognition, or F1662R or L1701K that adjoin the pSer-recognition site. However, the **M1775R** mutation, which engages the Phe residue in the consensus phosphopeptide motif pSer-X-X-Phe, does not affect Bractoppin binding, confirming a binding mode distinct from the substrate phosphopeptide binding. We explored these structural features through structure-guided chemical elaboration and characterized structure-activity relationships (SARs) in biochemical assays. Two analogues, CCBT2088 and CCBT2103 were effective in abrogating BRCA1 foci formation and inhibiting G2 arrest induced by irradiation of cells. Collectively, our findings reveal structural features underlying the activity of a novel inhibitor of phosphopeptide recognition by the BRCA1 tBRCT domain, providing fresh insights to guide the development of inhibitors that target protein-protein interactions.",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The BRCA1 M1775R mutation does not alter Bractoppin binding to the tBRCT domain, suggesting a distinct inhibitor binding mode independent of this variant\u2019s effect on phosphopeptide recognition.",
+            "uncertainties_or_limitations": null,
+            "article_id": "31334915",
+            "title": "Structure-Guided Synthesis and Evaluation of Small-Molecule Inhibitors Targeting Protein-Protein Interactions of BRCA1 tBRCT Domain.",
+            "relevance_score": 0.38,
+            "pub_year": 2019,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Germline mutations in breast cancer susceptibility gene 1 (BRCA1) confer high risk of developing breast and ovarian cancers. Even though most BRCA1 cancer-predisposing mutations produce a non-functional truncated protein, 5-10% of them cause single amino acid substitutions. This second type of mutations represents a useful tool for examining BRCA1 molecular functions. Human BRCA1 inhibits cell proliferation in transformed Saccharomyces cerevisiae cells and this effect is abolished by disease-associated mutations in the BRCT domain. Moreover, BRCA1 mutations located both inside and outside the BRCT domain may induce an increase in the homologous recombination frequency in yeast cells. Here we present a microarray analysis of gene expression induced in yeast cells transformed with five BRCA1 missense variants, in comparison with gene expression induced by wild-type BRCA1. Data analysis was performed by grouping the BRCA1 variants into three sets: Recombination (R)-set (Y179C and S1164I), Recombination and Proliferation (RP)-set (I1766S and **M1775R**) and Proliferation (P)-set (A1789T), according to their effects on yeast cell phenotype. We found 470, 740 and 1136 differentially expressed genes in R-, P- and RP-set, respectively. Our results point to some molecular mechanisms critical for the control of cell proliferation and of genome integrity providing support to a possible pathogenic role of the analysed mutations. They also confirm that yeast, despite the absence of a BRCA1 homologue, represents a valid model system to examine BRCA1 molecular functions, as the molecular pathways activated by BRCA1 variants are conserved in humans.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study demonstrates that the BRCA1 M1775R missense variant induces distinct gene expression changes in yeast, affecting recombination and proliferation, which the authors interpret as supporting a possible pathogenic role.",
+            "uncertainties_or_limitations": null,
+            "article_id": "19493677",
+            "title": "Characterisation of gene expression profiles of yeast cells expressing BRCA1 missense variants.",
+            "relevance_score": 0.38,
+            "pub_year": 2009,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "The breast and ovarian tumor suppressor BRCA1 has important functions in cell cycle checkpoint control and DNA repair. Two tandem BRCA1 C-terminal (BRCT) domains are essential for the tumor suppression activity of BRCA1 and interact in a phosphorylation-dependent manner with proteins involved in DNA damage-induced checkpoint control, including the DNA helicase BACH1 and the CtBP-interacting protein (CtIP). The crystal structure of the BRCA1 BRCT repeats bound to the PTRVSpSPVFGAT phosphopeptide corresponding to residues 322-333 of human CtIP was determined at 2.5 A resolution. The peptide binds to a cleft formed by the interface of the two BRCTs in a two-pronged manner, with phospho-Ser327 and Phe330 anchoring the peptide through extensive contacts with BRCA1 residues. Several hydrogen bonds and salt bridges that stabilize the BRCA1-BACH1 complex are missing in the BRCA1-CtIP interaction, offering a structural basis for the approximately 5-fold lower affinity of BRCA1 for CtIP compared to that of BACH1, as determined by isothermal titration calorimetry. Importantly, the side chain of Arg1775 in the cancer-associated BRCA1 mutation **M1775R** sterically clashes with the phenyl ring of CtIP Phe330, disrupting the BRCA1-CtIP interaction. These results provide new insights into the molecular mechanisms underlying the dynamic selection of target proteins involved in DNA repair and cell cycle control by BRCA1 and reveal how certain cancer-associated mutations affect these interactions.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study demonstrates that the BRCA1 M1775R mutation disrupts the BRCA1\u2011CtIP interaction by steric clash, suggesting a functional impact relevant to cancer.",
+            "uncertainties_or_limitations": null,
+            "article_id": "16101277",
+            "title": "Structural basis for cell cycle checkpoint control by the BRCA1-CtIP complex.",
+            "relevance_score": 0.38,
+            "pub_year": 2005,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Five to ten percent of breast cancer in the western world may be attributed to the inheritance of highly penetrant mutations in the breast and ovarian cancer susceptibility gene, BRCA1. The biological function of BRCA1 and factors affecting expressivity, such as gene-environment and gene-gene interactions, may be more effectively studied in appropriate animal models. We report the cloning and sequencing of the canine and murine BRCA1 genes and contrast the sequences with human BRCA1. The amino terminal 120 residues of the gene are > 80% identical among the three species. The C-terminus is also highly conserved, containing an 80 amino acid stretch that is over 80% identical. Motifs of likely functional significance are maintained, including the amino terminal RING finger motif (amino acids 24-64) and the granin consensus sequence (1214-1223). The distribution of missense mutations and neutral polymorphisms identified in BRCA1-linked breast cancer suggests that disease associated missense mutations occur at highly conserved residues whereas polymorphisms are in regions of lower conservation. Among eighteen missense mutations with unknown consequences, seven occur in amino acids that are identical across species. Four of these seven (E1219D, A1708E, P1749R and **M1775R**) are also within conserved domains. Taken together, these data predict regions of the gene which may be critical for normal function.",
+                    "mention_type": "computational",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study compares human, canine, and murine BRCA1 sequences and highlights that the M1775R variant resides in a highly conserved region, implying it may be critical for normal BRCA1 function.",
+            "uncertainties_or_limitations": null,
+            "article_id": "8872468",
+            "title": "Human, canine and murine BRCA1 genes: sequence comparison among species.",
+            "relevance_score": 0.38,
+            "pub_year": 1996,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Recurrent mutations constituted nearly three quarters of all BRCA1 mutations and almost half of all BRCA2 mutations identified in the first cohort of the Nigerian Breast Cancer Study. To further characterize breast/ovarian cancer risks associated with BRCA1/BRCA2 mutations in the African diaspora, we genotyped recurrent mutations among Nigerian, African American, and Barbadian breast cancer patients. A replication cohort of 356 Nigerian breast cancer patients was genotyped for 12 recurrent BRCA1/2 mutant alleles (Y101X, 1742insG, 4241delTG, **M1775R**, 4359insC, C64Y, 1623delTTAAA, Q1090X, and 943ins10 from BRCA1, and 1538delAAGA, 2630del11, and 9045delGAAA from BRCA2) by means of SNaPshot followed by direct sequencing or by direct sequencing alone. In addition, 260 African Americans and 118 Barbadians were genotyped for six of the recurrent BRCA1 mutations by SNaPshot assay. Of all the BRCA1/2 recurrent mutations we identified in the first cohort, six were identified in 11 patients in the replication study. These mutation carriers constitute 3.1 % [95 % Confidence Interval (CI) 1.6-5.5 %] of the replication cohort. By comparison, 6.9 % (95 % CI 4.7-9.7 %) of the discovery cohort carried BRCA1/2 recurrent mutations. For the subset of recurrent mutations we tested in breast cancer cases from Barbados or the United States, only two 943ins10 carriers were identified in African Americans. Nigerian breast cancer patients from Ibadan carry a broad and unique spectrum of BRCA1/2 mutations. Our data suggest that BRCA1/2 mutation testing limited to recurrent mutations is not sufficient to understand the BRCA1/2-associated breast cancer risk in African populations in the diaspora. As the cost of Sanger sequencing is considerably reduced, deploying innovative technologies such as high throughput DNA sequencing of BRCA1/2 and other cancer susceptibility genes will be essential for identifying high-risk individuals and families to reduce the burden of aggressive early onset breast cancer in low-resource settings.",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study genotyped the BRCA1 M1775R recurrent mutation among African ancestry breast cancer patients, identifying it as one of several recurrent alleles but offering no interpretation of its pathogenicity.",
+            "uncertainties_or_limitations": null,
+            "article_id": "22739995",
+            "title": "Recurrent BRCA1 and BRCA2 mutations in breast cancer patients of African ancestry.",
+            "relevance_score": 0.36,
+            "pub_year": 2012,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Mutational inactivation of BRCA1 confers increased risk for breast cancer. However, the underlying basis for the breast tissue-restricted, tumor-suppressive properties of BRCA1 remains poorly defined. Here, we show that BRCA1 and the estrogen receptor alpha (ER-alpha) modulated vascular endothelial growth factor (VEGF) gene transcription and secretion in breast cancer cells. ER-alpha interacted in vitro and in vivo with BRCA1, and this interaction was mediated by the AF-2 domain of ER-alpha and two domains of BRCA1, the amino-acid residues 1-306 and 428-683. Endogenous interaction of ER-alpha with BRCA1 was observed in normal MCF-10A breast epithelial cells and in breast cancer cells (MCF-7 and T47D), and this interaction was significantly reduced in the presence of estrogen. Furthermore, ER-alpha induced activation of VEGF gene transcription, using human VEGF promoter-luciferase reporter constructs. The AF-2 domain of ER-alpha was also shown to induce VEGF gene transcription activation similar to that obtained with the full-length ER-alpha. However, in the presence of BRCA1, VEGF gene transcription activation and VEGF protein secretion were significantly inhibited in a dose-dependent manner. The BRCA1 domain of 1-683 amino acid residues was required for this inhibition of VEGF gene transcription activation. Three mutated forms of BRCA1 (A1708E, **M1775R** and Y1853X), that have been identified in familial breast cancers, failed to associate with ER-alpha and to suppress VEGF promoter activity and VEGF protein secretion. Overexpression of wild-type BRCA1 in HCC-1937 breast cancer cells that lack endogenous functional BRCA1 significantly reduced VEGF secretion in these cells. These results demonstrate a novel pathogenic mechanism whereby mutations in BRCA1, via their interaction with ER-alpha, could promote tumorigenesis through the hormonal regulation of mammary epithelial cell proliferation and impaired VEGF function, which may lead to cancer growth and angiogenesis.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The BRCA1 M1775R mutation disrupts BRCA1\u2011ER\u03b1 interaction and abolishes VEGF transcriptional repression, suggesting a pathogenic loss\u2011of\u2011function mechanism in breast cancer cells.",
+            "uncertainties_or_limitations": null,
+            "article_id": "12400015",
+            "title": "Direct interaction between BRCA1 and the estrogen receptor regulates vascular endothelial growth factor (VEGF) transcription and secretion in breast cancer cells.",
+            "relevance_score": 0.35,
+            "pub_year": 2002,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "BACKGROUND: An overview of the state of genetic testing for BRCA1 and BRCA2 genes was presented at the Summit Meeting on Breast Cancer Among African American women. METHODS: An exhaustive literature search was performed using PubMed and abstracts published from meetings of the American Association for Cancer Research, the American Society of Human Genetics, and the American Society of Clinical Oncology. The Breast Cancer Information Core was also searched for information regarding sequence variants in which the ethnicity of the individual tested was known. RESULTS: Of the 26 distinct BRCA1 pathogenic mutations (protein-truncating, disease-associated missense, and splice variants) detected in Africans or African Americans, 15 (58%) have not been previously reported. In addition, 18 deleterious BRCA2 mutations have been identified and 10 (56%) of these are unique to the group. Only two pathogenic BRCA1 mutations (943ins10 and **M1775R**) have been detected in three or more unrelated families. However, seven additional BRCA1 or BRCA2 deleterious mutations have been reported in at least two unrelated families. Three of these recurrent BRCA1 mutations (943ins10, 1832del5, and 5296del4) have been characterized by haplotype studies and each likely arose from a common ancestor, including one ancestor that could be traced to the Ivory Coast in West Africa. Although only a few African-American families have been tested for BRCA1 and BRCA2 mutations, the probability of finding a mutation is invariably dependent on the age of onset and the number of breast and/or ovarian cancer cases in the family. The psychosocial implications of genetic testing for African Americans have not been well studied, so that high-risk African Americans may underestimate their risks of breast and ovarian cancer. CONCLUSIONS: Deleterious BRCA1 and BRCA2 mutations have been identified in African-American and African families. A number of unique mutations have been described, but recurrent mutations are widely dispersed and are not readily identifiable in the few families that have been tested. Access to genetic counseling and testing in a culturally sensitive research setting must remain a high priority before genetic testing can be disseminated in the community.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The article reports that the BRCA1 M1775R mutation is a recurrent pathogenic variant identified in multiple African American families.",
+            "uncertainties_or_limitations": null,
+            "article_id": "12491487",
+            "title": "Breast cancer genetics in African Americans.",
+            "relevance_score": 0.34,
+            "pub_year": 2003,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "BRCA1 is a nuclear phosphoprotein that plays a key role in many cell functions, including DNA repair, control of transcription, recombination and cell cycle homeostasis. Inherited missense mutations in the BRCA1 gene may predispose to breast and ovarian cancer, but the molecular mechanisms underlying BRCA1-induced tumorigenesis are still to be elucidated. Functional studies performed so far have contributed to the characterization of several single-nucleotide variants, mostly located at the BRCT domain, but very little is known about modifications in the protein pattern occurring in cells carrying these mutations. To shed more light in the molecular events triggered by missense mutations affecting breast cancer susceptibility genes, we have analyzed the whole cell proteome of stably transfected HeLa cell lines bearing three distinct single aminoacid changes in the BRCA1 protein (Ser1841Asn, **Met1775Arg** and Trp1837Arg) by means of liquid chromatography coupled to tandem-mass spectrometry. The results show that the **Met1775Arg** and the Trp1837Arg do not produce significant changes in the proteomic pattern compared to cells transfected with the wild-type BRCA1 cDNA. On the other hand, a different profile is detected in the BRCA1 Ser1841Asn-bearing cell line. In this particular subset, our attention has been focused on two proteins--the tumor protein D52 (TD52) and the folate receptor alpha (FOL1)--whose expression has been already reported to be upregulated in breast cancer, as well as in other tumors. Our findings indicate that Ser1841Asn BRCA1 mutation is able to activate specific protein pathways that are not triggered by other single aminoacid changes and pinpoint to the role TD52 and FOL1 as potential markers in breast cancer patients carrying this particular BRCA1 gene alteration.",
+                    "mention_type": "functional",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The proteomic profiling of HeLa cells shows that the BRCA1 Met1775Arg (M1775R) variant does not cause detectable changes in the cellular protein pattern, unlike the Ser1841Asn mutation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "17005433",
+            "title": "Specific changes in the proteomic pattern produced by the BRCA1-Ser1841Asn missense mutation.",
+            "relevance_score": 0.33,
+            "pub_year": 2007,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Inherited missense mutations in the tumor suppressor gene, BRCA-1, may predispose to breast or ovarian cancer, but the exact effects on the protein are generally unknown. The COOH-terminal region of BRCA-1 encodes two BRCT repeats, which are partially conserved in mammalian species (human, dog, rat, and mouse; 60% amino acid identity). A bioinformatic analysis was conducted to evaluate 246 BRCT missense mutations from high-risk breast and/or ovarian cancer patients (reported in the NIH Breast Cancer Information Core database). It was hypothesized that amino acids conserved in evolution would be disproportionately targeted by the mutations and that conserved amino acids with strongly hydrophobic side chains would be disproportionately perturbed. A statistical model was developed, and chi(2) tests were used to determine whether missense mutations are randomly distributed throughout the BRCT repeats or whether they disproportionately target certain amino acids. The results showed that missense mutations disproportionately target amino acids that are identical in all four mammals (chi(2) = 46.01, P < 0.001). In addition, missense mutations disproportionately perturb conserved amino acids with strongly hydrophobic side chains (chi(2) = 68.57, P < 0.001) and alter the strongly hydrophobic property. The two most frequently observed known cancer-predisposing missense mutations in the BRCT repeats, **M1775R** and A1708E, conform to this pattern. These results suggest that missense mutations affecting highly conserved amino acids with strongly hydrophobic side chains can disturb important features of the BRCA-1 protein and may play a role in breast and ovarian cancer formation.",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The paper identifies BRCA1 M1775R as a frequent, cancer\u2011predisposing missense mutation that disrupts a conserved hydrophobic amino acid in the BRCT domain, implying a pathogenic role based on bioinformatic analysis.",
+            "uncertainties_or_limitations": null,
+            "article_id": "15184261",
+            "title": "Missense mutations in the BRCT domain of BRCA-1 from high-risk women frequently perturb strongly hydrophobic amino acids conserved among mammals.",
+            "relevance_score": 0.3,
+            "pub_year": 2004,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Cancer-associated mutations in the BRCT domain of BRCA1 (BRCA1-BRCT) abolish its tumor suppressor function by disrupting interactions with other proteins such as BACH1. Many cancer-related mutations do not cause sufficient destabilization to lead to global unfolding under physiological conditions, and thus abrogation of function probably is due to localized structural changes. To explore the reasons for mutation-induced loss of function, the authors performed molecular dynamics simulations on three cancer-associated mutants, A1708E, **M1775R**, and Y1853ter, and on the wild type and benign M1652I mutant, and compared the structures and fluctuations. Only the cancer-associated mutants exhibited significant backbone structure differences from the wild-type crystal structure in BACH1-binding regions, some of which are far from the mutation sites. Backbone differences of the A1708E mutant from the liganded wild type structure in these regions are much larger than those of the unliganded wild type X-ray or molecular dynamics structures. These BACH1-binding regions of the cancer-associated mutants also exhibited increases in their fluctuation magnitudes compared with the same regions in the wild type and M1562I mutant, as quantified by quasiharmonic analysis. Several of the regions of increased fluctuation magnitude correspond to correlated motions of residues in contact that provide a continuous path of fluctuating amino acids in contact from the A1708E and Y1853ter mutation sites to the BACH1-binding sites with altered structure and dynamics. The increased fluctuations in the disease-related mutants suggest an increase in vibrational entropy in the unliganded state that could result in a larger entropy loss in the disease-related mutants upon binding BACH1 than in the wild type. To investigate this possibility, vibrational entropies of the A1708E and wild type in the free state and bound to a BACH1-derived phosphopeptide were calculated using quasiharmonic analysis, to determine the binding entropy difference DeltaDeltaS between the A1708E mutant and the wild type. DeltaDeltaS was determined to be -4.0 cal mol(-1) K(-1), with an uncertainty of 2 cal mol(-1) K(-1); that is, the entropy loss upon binding the peptide is 4.0 cal mol(-1) K(-1) greater for the A1708E mutant, corresponding to an entropic contribution to the DeltaDeltaG of binding (-TDeltaDeltaS) 1.1 kcal mol(-1) more positive for the mutant. The observed differences in structure, flexibility, and entropy of binding likely are responsible for abolition of BACH1 binding, and illustrate that many disease- related mutations could have very long-range effects. The methods described here have potential for identifying correlated motions responsible for other long-range effects of deleterious mutations.",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "Molecular dynamics simulations reveal that the BRCA1 BRCT mutant M1775R causes long\u2011range structural disturbances and heightened flexibility that likely abolish BACH1 binding, supporting a pathogenic effect.",
+            "uncertainties_or_limitations": null,
+            "article_id": "17063491",
+            "title": "Cancer-related mutations in BRCA1-BRCT cause long-range structural changes in protein-protein binding sites: a molecular dynamics study.",
+            "relevance_score": 0.27,
+            "pub_year": 2007,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Mutations in breast cancer susceptibility gene 1(BRCA1) account for approximately 40%-50% of familial breast cancer cases and for more than 80% of inherited breast and ovarian cancer cases. Many cancer-predisposing mutations are located in the C-terminal region that functions as a transcriptional activation domain, but most of the mutations in the transactivation domain identified to date cannot be readily distinguished as either disease-associated mutations or benign polymorphisms. Because chromatin structure regulation is an early event in gene transcription control, the chromatin unfolding activities of different transactivation domain variants were compared with that of the wild-type transactivation domain by use of an approach that allows visualization of large-scale chromatin structure through lac repressor/lac operator recognition. To do this, different constructs of the transactivation domain were selected as follows: (a) the wild-type transactivation domain; (b) two polymorphisms (S1613G and M1652I); and (c) four cancer-predisposing mutations (A1708E, **M1775R**, W1837R and Y1853 term). All of the constructs were made by fusing in frame with lac repressor. Western blot analysis indicated that all of the fusion proteins were expressed in A03 1 cells, in which multiple copies of the lac operator were integrated to produce a heterochromatic region of the genome. The chromatin unfolding assay showed that, like the wild-type transactivation domain, two variants that represent benign polymorphisms did not induce chromatin unfolding or only induced subtle change. Contrary to the behaviors of the wild type and two benign variants, four cancer-predisposing mutations in the transactivation domain superactivate the chromatin unfolding. The results suggest that the chromatin unfolding assay can aid in the characterization of deterious mutations in the C-terminal transactivation domain of BRCA1 and may provide more reliable presymptomatic risk assessment.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The BRCA1 M1775R variant markedly increases chromatin unfolding in a cellular assay, suggesting a pathogenic functional impact.",
+            "uncertainties_or_limitations": null,
+            "article_id": "12645254",
+            "title": "[Studies of mutations in BRCA1 transactivation domain by visualization of chromatin structure].",
+            "relevance_score": 0.14,
+            "pub_year": 2002,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "We identified eight recurrent mutations. Five of these (BRCA1 mutations 943ins10, **M1775R** (5443T>G), 5296del4, IVS13+G>A, and IVS16+6T>C) were also identified in the study based on data from an American commercial genetic testing company, where they comprised 31.5% of all mutations detected in African Americans. In our study, these five mutations constituted 34.7% of all mutations found. Similarly, 11 recurrent mutations accounted for over 60% of BRCA mutations in a large Nigerian study of breast cancer patients, of which 1 was also seen in our study. We identified three recurrent mutations not previously reported (i.e., BRCA1 5370C>T, BRCA1 5506C>A, and BRCA2 4699del4) which accounted for 14.3% of the 49 mutations observed in our study. If one used a panel test based on only recurrent mutations only, the sensitivity might be 50%. However, given the decline in the cost of genetic testing it is probably unwise and inefficient to restrict mutation testing to a limited number of founder mutations in Black women.",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study identified a high prevalence of BRCA1/2 pathogenic mutations, including the recurrent BRCA1 M1775R variant, in young Black women with breast cancer in Florida.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC4666784",
+            "title": "A High Frequency of BRCA Mutations in Young Black Women with Breast Cancer from Florida",
+            "relevance_score": 0.82,
+            "pub_year": 2015,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "BRCA1 BRCA2 HGVS nomenclature Effect on amino-acid HGVS nomenclature Effect on amino-acid African Countries by Population Algerian c.798_799delTT* p.Ser267Lysfs* Egyptian c.68_69delAG*c.181T>Gc.4327C>Tc.5266dupCc.5335delC* p.Glu23fs*p.Cys61Glyp.Arg1443Terp.Gln1756Profsp.Gln1779Asnfs* c.771_775del5*c.5335del p.Asn257Lysfs*p.Gln1779Asnfs Moroccan c.798_799delTT*c.3279delCc.5309G>T* p.Ser267Lysfs*p.Tyr1094Ilefsp.Gly1770Val* c.1310_1313detAAGA p.Lys437Ilefs Nigerian c.191G>Ac.303T>G *c.1504_1508delTTAAAc.1623dupG* c.3268C>Tc.4122_4123delTG* c.4240dupC c.5324T>G* p.Cys64Tyrp.Tyr101Ter*p.Leu502Alafsp.Asn542fs*p.Gln1090Terp.Ser1374Argfs*p.Leu1414fsp.Met1775Arg* c.1310_1313delAAGA c.2402_2412del11 c.8817_8820delGAAA p.Lys437Ilefsp.Asn801fsp.Lys2939fs Senegalese c.815_824dup10* p.Thr276Afs* South African c.68_69delAGc.1374delCc.2641G>T*c.5266dupCc.7934delG* p.Glu23fsp.Asp458Glufsp.Glu881Ter*p.Gln1756Profsp.Arg2645Asnfs* Tunisian c.211dupA*c.798_799delTT*c.5266dupC p.Arg71Lysfsp.Ser267Lysfsp.Gln1756Profs c.1310_1313detAAGA p.Lys437Ilefs American countries by population African American c.824_825ins10* c.1713_1717delAGAAT* c.4357+1G>Ac.498616T>C c.5177_5180delGAAA*c.5251C>Tc.**5324T>G** c.5387C>Ac.4485-1G>A* -p.Glu572fs*--p.Arg1726Lysfs*p.Arg1751Terp.Met1775Argp.Ser1796Ter- c.4471_4474delCTGA p.Leu1491Lysfs Argentinian c.68_69delAG*c.211A > G*c.5266dupC* p.Glu23fs*p.Arg71Gly*p.Gln1756Profs* c.2808_2811del4 c.5946_5946delT* p.Ala938Profsp.Ser1982Argfs* Bahamian c.68_69delAG*c.824_825ins10*c.4357+1G>A*c.4611_4612insG* c.49861+6T>C* c.5324T>G* p.Glu23fs--p.Gln1538fs-p.**Met1775Arg** c.7900delA* p.Met2634fsX14 Brazilian ins6Kb, c.68_69delAG c.211A>G*c.1082C>Gc.2037delGinsCCc.3331_3334delCAAG 3261delGinsCCc.3403C>Tc.5263dupCc.5266dupC*...",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The systematic review of North African breast and ovarian cancer patients catalogs numerous BRCA1/2 pathogenic variants, listing the BRCA1 p.Met1775Arg (M1775R) variant without any specific interpretation of its clinical significance.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8876448",
+            "title": "Prevalence of specific and recurrent/founder pathogenic variants in BRCA genes in breast and ovarian cancer in North Africa",
+            "relevance_score": 0.72,
+            "pub_year": 2022,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "In addition, we found two PVs in the BRCA1 gene. In one patient, the c.**5324T > G** (**p.Met1775Arg**) variant had been previously classified as a VUS when she had first been evaluated at the genetic cancer clinic, but this VUS has since been reclassified as a PV. The PV detected in the other patient was BRCA1 NM_007294.3 c.5152 + 5G > A and had remained undetected in her first study. According with these new classifications or detections, we contacted these two women and offered them updated recommendations and familial screening. We also detected two monoallelic pathogenic mutations in MUTYH.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "Gene Variants Personal History Family History Study ID Gene Variant Type Class 1 HGVS Coding HGVS Protein Transcripts rsID 2nd Variant BC Age Subtype (ER/PR/HER2) Bilateral BC No. Cancers No. BCs No. OCs 35022 BRCA1 Splicing 5 c.5152 + 5G > A - NM_007294.3 rs80358165 - 45 -/+/- No 2 2 0 30983 BRCA1 Missense 4 c.**5324T > G** **p.Met1775Arg** NM_07300.4 **rs41293463** - 31 -/-/- Yes 1 1 0 24247 ATM Stop codon 5 c.2413C > T p.Arg805Ter NM_000051.4 rs780619951 - 34 +/+/- Yes 3 2 0 45434 ATM Splicing 5 c.2921 + 1G > A - NM_000051.4 rs587781558 - 42 +/+/- No 3 3 0 36845 ATM Splicing 5 c.2921 + 1G > A - NM_000051.4 rs587781558 - 45 +/+/- No 4 2 1 26672 ATM Frameshift 5 c.43delC p.Leu15Terfs NM_000051.4 rs771887195 - 48 +/+/- No 2 2 0 47150 ATM Stop Codon 5 c.4507C > T p.Gln1503Ter NM_000051.4 rs1131691164 CHEK2 c.1555C > T (p.Arg519Ter)Class 5 48 +/+/- No 3 2 1 60766 CHEK2 Stop Codon 5 c.279G > A p.Trp93Ter NM_007194.4 rs587782070 - 66 +/+/- Yes 10 10 0 36497 CHEK2 Frameshift 5 c.591delA p.Val198Phefs NM_007194.4 rs587782245 - 37 +/+/+ No 3 2 0 55930 TP53 Missense 5 c.743G > A p.Arg248Gln NM_000546.6 rs11540652 - 28 -/-/+ No 3 2 0 18358 TP53 Missense 5 c.638G > A p.Arg213Gln NM_000546.6 rs587778720 - 32 -/+/? No 6 3 0 61221 BRIP1 Splicing 5 c.508-2A > T - NM_032043.2 rs876659707 - 62 +/+/- No 3 1 0 39477 MSH2 Missense 4 c.2320A > G p.Ile774Phe NM_000251.2 rs775464903 - 50 +/+/- No 5 2 0 36984 MUTYH Missense 5 c.1187G > A p.Gly396Asp NM_001048174.2 rs36053993 - 50 +/+/- No 3 3 0 43701 MUTYH Missense 5 c.1187G > A p.Gly396Asp NM_001048174.2 rs36053993 - 51 +/-/- No 4 3 0 38266 CASP8 Frameshift 4 c.331delG p.Ala111Leufs*22 NM_01228.4 rs776712453 NBN c.1238A > G (p.Asn413Ser) Class 3 57 +/+/- No 7 3 0",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study reports that the BRCA1 M1775R (p.Met1775Arg) variant, initially reported as a VUS, was reclassified as pathogenic (likely pathogenic) in their high\u2011risk Spanish cohort.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8231620",
+            "title": "Prevalence and Clinicopathological Characteristics of Moderate and High-Penetrance Genes in Non-BRCA1/2 Breast Cancer High-Risk Spanish Families",
+            "relevance_score": 0.7,
+            "pub_year": 2021,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...repeatedly found to segregate with disease in breast-ovarian cancer families in Scandinavia or globally. BRCA1 c.5095C>T (BIC: R1699W), c.5123C>A (BIC: A1708E), c.5213G>A (BIC: G1738E) and **c.5324T>G** (BIC: **M1775R**) all affect structurally and functionally critical residues in the BRCT domains and are mutations described previously in breast cancer families (Vallon-Christersson et al., 2001; Olopade et al.,...",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "We used Align-GVGD to further assess the functional effect of missense variants, with alignment to 13 BRCA1 and 12 BRCA2 ortholog sequences down to sea urchin. Six VUS (BRCA1 c.2596C>T (BIC: R866C), BRCA2 c.4585G>A (BIC: G1529R), c.7878G>C (BIC: W2626C), c.7988A>T (BIC: E2663V), c.7994A>G (BIC: D2665G) and c.9154C>T (BIC: R3052W)) occurred at strongly conserved residues (GV=0) and had a GD\u226565. Thus, these were inferred to belong to the class (C65) of substitutions most likely to interfere with function and were in this respect comparable to five of the missense mutations a priori classified as deleterious (the remaining, BRCA1 **c.5324T>G** (BIC: **M1775R**) had a GV=14.30 and was inferred to class C45, while BRCA2 c.3G>A (BIC: M1I) had a GV=0 but GD as low as 10.12). Two other BRCA2 variants (c.9104A>G (BIC: Y3035C) and c.10045A>G (BIC: T3349A)) were defined as interfering with function (A-GVGD class C55), an additional 8 VUS had either a low GV or high GD score which lifted them above class C0 and the remaining 169 amino acid substitutions were less likely to compromise function. Details of 16 variants are presented in Table 3 with corresponding details of all VUS missense variants in Supp. Table S3. Lowering the sequence alignment stringency to the level of pufferfish and frog, respectively, led to another 7 and 16 VUS predicted to be functionally defective (C15-C55, Supp. Table S3).",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The article cites BRCA1 M1775R as a previously reported family\u2011segregating mutation and provides computational evidence (Align\u2011GVGD class C45) suggesting it is likely deleterious.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC2928257",
+            "title": "Characterization of BRCA1 and BRCA2 Deleterious Mutations and Variants of Unknown Clinical Significance in Unilateral and Bilateral Breast Cancer: The WECARE Study",
+            "relevance_score": 0.69,
+            "pub_year": 2010,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Variant nomenclature Protein nomenclature Impact Variant class Allelic balance Loss of variant allele Loss of wt allele Total % of allelic imbalance/LOH % LOH wt BREAST c.68_69del p.Glu23Valfs*17 FS P 2 0 7 9 78% 100% c.131G>T p.Cys44Phe MS P 2 0 1 3 33% 100% c.181T>G p.Cys61Gly MS P 5 0 6 11 55% 100% c.962G>A p.Trp321Ter NS P 0 1 1 2 100% 50% dupEx3-8 (c.81_547dup) p.Gly183Valfs*4 FS P 1 0 1 2 50% 100% c.5095C>T p.Arg1699Trp MS P 1 0 2 3 67% 100% c.5123C>A p.Ala1708Glu MS P 0 1 0 1 100% - c.5266dup p.Gln1756Profs*74 FS P 3 1 13 17 84% 87% **c.5324T>G** **p.Met1775Arg** MS P 1 0 1 2 50% 50% c.5453A>G splicing exon 23 (p.(Gly1803Glnfs*11)) FS P 1 0 0 1 - - Total pathogenic - - P 16 3 32 51 69% 91% c.1067A>G p.Gln356Arg MS B 4 2 1 7 43% 33% c.2477C>A p.Thr826Lys MS B 1 1 0 2 50% - c.4535G>T p.Ser1512Ile MS B 2 1 2 5 60% 66% c.4812A>G p.Gln1604Gln SYN LB 2 0 1 3 33% 100% c.4955T>C p.Met1652Thr MS LB 1 0 0 1 - - c.4956G>A p.Met1652Thr MS B 5 0 0 5 - - c.5117G>C p.Gly1706Ala MS B 1 0 1 2 50% 100% c.5531T>C p.Leu1844Pro MS B 1 0 0 1 - - Total (likely) benign - - B/LB 17 4 5 26 35% 56% OVARIAN c.181T>G p.Cys61Gly MS P 0 0 1 1 100% 100% c.2477C>A p.Thr826Lys MS B 0 0 1 1 100% 100% dupEx3-8 (c.81_547dup) p.Gly183Valfs*4 FS P 0 0 1 1 100% 100% c.5266dup p.Gln1756Profs*74 FS P 0 0 1 1 100% 100% **c.5324T>G** **p.Met1775Arg** MS P 0 0 1 1 100% 100%",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study reports loss-of-heterozygosity data for BRCA1 p.Met1775Arg, showing loss of the wild-type allele in 50% of examined tumors, suggesting this evidence could aid classification of the variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8764043",
+            "title": "Value of the loss of heterozygosity to BRCA1 variant classification",
+            "relevance_score": 0.63,
+            "pub_year": 2022,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...(c.5123C>A [p.Ala1708Glu])S1715R (c.5143A>C [p.Ser1715Arg])G1738R (c.5212G>A [p.Gly1738Arg])L1764P (c.5291T>C [p.Leu1764Pro])I1766S (c.5297T>G [p.Ile1766Ser])M1775K (c.5324T>A [p.Met1775Lys])**M1775R** (**c.5324T>G** [**p.Met1775Arg**])C1787S (c.5359T>A [p.Cys1787Ser])G1788V (c.5363G>T [p.Gly1788Val])V1838E (c.5513T>A [p.Val1838Glu]) Class5 if at least one clinically relevant residue is removed. Otherwise Class3. Domain...",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article presents the German Consortium's criteria for classifying hereditary breast\u2011ovarian cancer risk gene variants but does not provide a specific pathogenicity interpretation for BRCA1 M1775R.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7174002",
+            "title": "Criteria of the German Consortium for Hereditary Breast and Ovarian Cancer for the Classification of Germline Sequence Variants in Risk Genes for Hereditary Breast and Ovarian Cancer",
+            "relevance_score": 0.5,
+            "pub_year": 2020,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "HGVS cDNA BIC designation BIC entry count BIC clinical importance ClinVar individuals ClinVar designation Align-GVGD grade IARC classification c.4837A>G S1613G 248 No 1319 Benign C0 1 c.181T>G C61G 239 Yes 323 Pathogenic C65 5 c.2612C>T P871L 211 No 1348 Benign C0 1 c.3113A>G E1038G 182 No 1237 Benign C0 1 c.3548A>G K1183R 164 No 1215 Benign C0 1 c.4039A>G R1347G 161 Unknown 712 Benign C0 1 c.1067A>G Q356R 155 Unknown 315 Benign C0 1 c.3024G>A M1008I 139 Unknown 146 Benign C0 1 c.2521C>T R841W 119 Unknown 128 Benign C15 1 c.4883T>C M1628T 96 Unknown 491 Benign C0 1 c.1487G>A R496H 86 Unknown 90 Benign C0 1 c.736T>G L246V 80 Unknown 83 Benign C0 1 c.3119G>A S1040N 68 Unknown 141 Benign C0 1 c.4910C>T P1637L 67 Unknown 76 Benign C0 1 c.2077G>A D693N 65 No 229 Benign C0 1 c.4956G>A M1652I 61 Unknown 94 Benign C0 1 c.2315T>C V772A 60 Unknown 62 Benign C0 1 c.4535G>T S1512I 58 No 72 Benign C0 1 c.1456T>C F486L 56 Unknown 58 Benign C0 1 c.536A>G Y179C 54 Unknown 59 Benign C35 1 c.1648A>C N550H 54 Unknown 59 Benign C0 1 c.5123C>A A1708E 46 Yes 80 Pathogenic C65 5 **c.5324T>G** **M1775R** 31 Unknown 43 Pathogenic C45 5 c.3418A>G S1140G 29 Unknown 40 Benign C0 1 c.4682C>T T1561I 26 Unknown 33 Conflicting C0 N/A c.2002C>T L668F 25 Unknown 28 Benign C0 1 c.3302G>A S1101N 14 Unknown 16 Benign C0 1 c.190T>C C64R 12 Unknown 15 Conflicting C65 N/A c.5096G>A R1699Q 11 Unknown 22 Conflicting C35 5 c.5145C>G S1715R# 5 Unknown 5 Pathogenic C65 5 c.4964C>T S1655F 3 Unknown 4 Conflicting C25 N/A c.5098T>C C1697R 3 Unknown 7 Conflicting C65 N/A c.4198A>G M1400V 1 Unknown 1 Uncertain C0 N/A c.4220T>C L1407P 1 Unknown 1 Uncertain C65 N/A c.4232T>C M1411T 1 Unknown 1 Uncertain C65 N/A 5055delG V1646Sfs 5 Yes 6 Pathogenic - -",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "To establish an initial functional landscape of BRCA1 mutations for HR-mediated DSB repair, we constructed 32-patient-derived missense variants along the entire length of the protein (Table 1). The list included 11 variants with known or partially known functional consequences: two in the RING domain (C61G and C64R) that disrupt BARD1 binding, three in the CC motif (M1400V, L1407P and M1411T) that affect PALB2 binding and six in the BRCT domain (S1655F, C1697R, R1699Q, A1708E, S1715R and **M1775R**) that abrogate BRCA1 interaction with Abraxas, BRIP1 and CtIP (Figure 1B and Figure 1:figure supplement 1). Also included were the top 20-patient-derived missense variants in the BIC database (21 in total due to a tie at the 20th place) and the top 22 in the ClinVar database (Table 1). Additionally, we included four other VUSs, L668F, S1101N, S1140G and T1561I, which have now been recorded between 16 and 40 times in ClinVar. As a control for the BRCT missense variants, we also generated a patient-derived frameshift mutation (5055delG or p.Val1646Serfs) that truncates the protein immediately before the BRCT domain.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "(A) Immunofluorescence staining of wt BRCA1 and representative RING, CC and BRCT mutants. 3xMyc-tagged BRCA1 expression constructs were transiently transfected into U2OS/DR-GFP cells first depleted of endogenous BRCA1, cells were fixed 48 hr after transfection, and the proteins were stained with an anti-Myc antibody. (B) Quantification of the subcellular distribution of wt BRCA1 and a panel of BRCT mutants. cDNA constructs were transfected into U2OS cells and the tagged BRCA1 proteins were stained as in (A). (C) Effect of Leptomycin B (LMB) on the localization of wt BRCA1 and BRCA1-M1775R. The BRCA1 proteins were expressed and stained as in (A). LMB (50 ng/ml) was added 48 hr after transfection, and cells were incubated with LMB for 12 hr prior to fixation. Staining of endogenous cyclin B in untransfected U2OS cells was used as a positive control. (D-E) Rescue of the localization defect of BRCA1 BRCT mutants by BARD1. 3xMyc-tagged BRCA1 and FLAG-HA-tagged BARD1 were transiently co-expressed in U2OS cells, cells were fixed 48 hr after transfection, and the proteins were stained with Myc and HA antibodies, respectively. Panel D shows the staining patterns of wt and two representative mutants of BRCA1 and the co-expressed BARD1. Panel E shows the quantification of the results. (F) No rescue of the HR defect of the BRCA1 BRCT mutants by BARD1 co-expression. U2OS/DR-GFP cells were depleted of the endogenous BRCA1 for 48 hr and then co-transfected with BRCA1 and BARD1 expression constructs. GFP-positive cells were scored another 52 hr later. The values were normalized against that of wt BRCA1, which was set as 1. Data shown are means +- SDs from three independent experiments.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "- S - S **M1775R** BRCT 36 - ~6 - - 10.2 - S - S The BRCA1-PALB2-BRCA2 interactions prevent RAD52-dependent SSA Given the proposed role of BRCA1 on DSB end resection (Bunting et al., 2010), the activities",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article presents multiple lines of functional and clinical evidence that the BRCA1 M1775R variant disrupts BRCT\u2011mediated protein interactions, shows cellular localization defects, and is classified as pathogenic in clinical databases, supporting its pathogenic role in DNA\u2011repair deficiency and therapy resistance.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5432210",
+            "title": "Functional and mutational landscapes of BRCA1 for homology-directed repair and therapy resistance",
+            "relevance_score": 0.5,
+            "pub_year": 2017,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "variant in coding exon 21 (p.Metl775Arg; **c.5324T>G**). Since then, more than 10,000 unique germline variants have been detected in BRCA1 (BRCA Exchange; https://brcaexchange.org/) [13]. Initially, the",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article reviews the annotation challenges of BRCA1 missense variants and merely cites the M1775R variant without offering any specific pathogenicity assessment or evidence for it.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6520942",
+            "title": "Germline Missense Variants in BRCA1: New Trends and Challenges for Clinical Annotation",
+            "relevance_score": 0.5,
+            "pub_year": 2019,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Validation panel//hci-exlovd.hci.utah.edu/variants.php Domain DNA change Protein change IARC classa Domain DNA change Protein change IARC classa RING Finger c.53T>C p.Met18Thrb 4 BRCTs c.4956G>A p. Met1652Ilec 1 c.65T>C p.Leu22Serb 5 c.4991T>C p.Leu1664Proc 1 c.110C>A p.Thr37Lysb 5 c.5117G>C p.Gly1706Alac 1 c.115T>C p.Cys39Argb 5 c.5158A>G p.Thr1720Alac 1 c.116G>A p.Cys39Tyrb 5 c.5252G>A p.Arg1751Glnc 1 c.122A>G p.His41Argb 5 c.5095C>T p.Arg1699Trpc 5 c.130T>A p.Cys44Serb 5 c.5123C>A p.Ala1708Gluc 5 c.131G>T p.Cys44Pheb 5 c.5207T>C p.Val1736Alac 5 c.131G>A p.Cys44Tyrb 5 **c.5324T>G** p.Met1775Argc 5 c.181T>G p.Cys61Glyb 5 c.5363G>T p.Gly1788Valc 5 c.191G>A p.Cys64Tyrb 5 c.133A>C p.Lys45Glnb 1 c.134A>C p.Lys45Thrc 1 c.154C>A p.Leu52Ilec 1 c.199G>T p.Asp67Tyrb 1 c.314A>G p.Tyr105Cysc 1",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The article reports that the BRCA1 M1775R variant is classified as pathogenic (IARC class 5) based on curated clinical data and functional assay validation of related variants.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10164951",
+            "title": "Refinement of the assignment to the ACMG/AMP BS3 and PS3 criteria of eight BRCA1 variants of uncertain significance by integrating available functional data with protein interaction assays",
+            "relevance_score": 0.49,
+            "pub_year": 2023,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": ".[Met1775Lys]; **c.5324T>G**, (**p.Met1775Arg**]; c.5363G>T, p.[Gly1788Val]; c.5513T>A, p.[Val1838Glu]. c c.7879A>T, p.[Ile2627Phe]; c.7940T>C, p.[Leu2647Pro]; c.7958T>C, p.[Leu2653Pro]; c.7988A>T p",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "Missense pathogenic variants in BRCA1 are associated with substantially lower breast cancer risk than protein\u2011truncating variants, especially for variants in the C\u2011terminal domain.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10170303",
+            "title": "Risks of breast and ovarian cancer for women harboring pathogenic missense variants in BRCA1 and BRCA2 compared with those harboring protein truncating variants",
+            "relevance_score": 0.49,
+            "pub_year": 2021,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...0.503 20 p.? Substitution Splicing BRCA2 only 20 11 c.2269del 0.173 10 p.(Val757fs) Deletion Frameshift None 21 11 c.3481_3491del 0.585 70 p.(Glu1161fs) Deletion Frameshift BRCA2 only 22 21 **c.5324T>G** 0.628 80 p.(**Met1775Arg**) Substitution Missense BRCA1 and BRCA2 23 14 c.4372C>T 0.154 70 p.(Gln1458*) Substitution Stop codon None 24 9 c.593+1G>A 0.051 80 p.? Substitution Splicing BRCA1 only 25 11 c.1603G>T 0.715 80...",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study reports the detection of the BRCA1/BRCA2 missense variant p.Met1775Arg (M1775R) among other BRCA alterations in tumor samples, without providing a pathogenicity classification.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7700467",
+            "title": "Tumor BRCA Testing in High Grade Serous Carcinoma: Mutation Rates and Optimal Tissue Requirements",
+            "relevance_score": 0.49,
+            "pub_year": 2020,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Mutation GeneLocation VariantSignificance Effect on BRCT Reference Lys1702 Thr c.5105A>C Unknown Destabilize the interaction with Ser group of BACH1/CtIP proteins. Arg1699Pro c.5096G>C Likely pathogenic and uncertain significance Affect residues in the surface cleft of BRCT domain structure.Disrupt interaction with pSer990 in BACH1 protein: a 20-fold lower binding affinity. Val 1696 Leu c.5086G>C Uncertain significance Affect the interaction between BRCT domain BACH1 protein(50% reductions in BACH1 binding in rat). Ala1708GluMet1775Arg c.5123C>Ac.**5324T>G** Pathogenic Ablate the double-strand break repair and transcription function of BRCA1.Destabilize the BRCT fold.Inhibit BRCT interactions with histone deacetylases BACH1, and the transcriptional co-repressor CtIP. Gly1763ValLeu1786Pro 5407 G>T5476 T>C PathogenicPathogenic These mutations are far away from the interaction site between BRCA1 and its phosphor-ligands, which may at least partially explain why these two mutants have no deleterious effect on BRCA1 function. Tyr 1853 Asn c.5558A>G Pathogenic/Likely pathogenic Deleterious impact on protein structure and function.Impact phosphopeptide binding",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The review highlights that the BRCA1 M1775R mutation disrupts BRCT domain structure and function and is classified as pathogenic, contributing to breast and ovarian cancer risk.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10974778",
+            "title": "BRCA1 and Its Vulnerable C-Terminal BRCT Domain: Structure, Function, Genetic Mutations and Links to Diagnosis and Treatment of Breast and Ovarian Cancer",
+            "relevance_score": 0.48,
+            "pub_year": 2024,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Gene Variant (HGVS nomenclature) AF exomes (gnomAD v2.1.1) AF latino (gnomAD v2.1.1) AF population of study ACMG/AMP classification ENIGMA classification SNP ID Molecular subtype Personal history of cancer Family history of cancer Number of patients BRCA1 NM_007294.3:c.5123C > A (p.Ala1708Glu) 0.00001990 0.00005784 0.00125 NA Pathogenic (BRCAexchange) rs28897696 TNBC No No 1 BRCA1 NM_007294.3:c.**5324 T > G** (**p.Met1775Arg**) 0.00001193 0 0.00125 NA Pathogenic (BRCAexchange) **rs41293463** ER-,PR + ,HER2 + No No 1 BRCA1 NM_007294.3:c.1674delA (p.Gly559Valfs*13) NR NR 0.00125 NA Pathogenic (BRCAexchange) rs80357600 TNBC No Yes 1 BRCA2 NM_000059.3:c.2380dupA (p.Met794Asnfs*8) NR NR...",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study identified a pathogenic BRCA1 p.Met1775Arg (M1775R) variant among Colombian breast cancer patients, contributing to the overall 6% prevalence of pathogenic/likely\u2011pathogenic germline variants in the cohort.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC11184794",
+            "title": "Germline mutations of breast cancer susceptibility genes through expanded genetic analysis in unselected Colombian patients",
+            "relevance_score": 0.46,
+            "pub_year": 2024,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Mutation rank Caucasian African American Asian Hispanic/Latino Jewish Other BRCA1 1 c.5266dup (17%) c.815_824dup (16%) c.390C > A (4%) c.68_69del (12%) c.68_69del (72%) c.5266dup (12%) 2 c.181T > G (6%) c.**5324T > G** (7%) c.5496_5506delinsA (3%) c.3331_3334del (10%) c.5266dup (24%) c.68_69del (17%) 3 c.68_69del (6%) c.5177_5180del (5%) c.470_471del (3%) c.5123C > A (9%) c.3756_3759del (0.3%) c.181T > G (5%) 4...",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The review concludes that population-wide BRCA testing is cost\u2011effective and can reduce breast and ovarian cancer incidence compared with guideline\u2011based testing alone.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8164087",
+            "title": "Towards population-based genetic screenings for breast and ovarian cancer: A comprehensive review from economic evaluations to patient perspectives",
+            "relevance_score": 0.45,
+            "pub_year": 2021,
+            "data_sources": [
+                "pmc"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 1580,
+            "output": 444
+        },
+        {
+            "input": 1643,
+            "output": 521
+        },
+        {
+            "input": 1641,
+            "output": 527
+        },
+        {
+            "input": 1798,
+            "output": 561
+        },
+        {
+            "input": 1807,
+            "output": 429
+        },
+        {
+            "input": 1716,
+            "output": 528
+        },
+        {
+            "input": 1780,
+            "output": 482
+        },
+        {
+            "input": 1882,
+            "output": 591
+        },
+        {
+            "input": 1556,
+            "output": 524
+        },
+        {
+            "input": 1703,
+            "output": 466
+        },
+        {
+            "input": 1713,
+            "output": 469
+        },
+        {
+            "input": 1781,
+            "output": 572
+        },
+        {
+            "input": 1766,
+            "output": 488
+        },
+        {
+            "input": 1773,
+            "output": 580
+        },
+        {
+            "input": 1679,
+            "output": 624
+        },
+        {
+            "input": 1950,
+            "output": 545
+        },
+        {
+            "input": 1951,
+            "output": 606
+        },
+        {
+            "input": 1859,
+            "output": 453
+        },
+        {
+            "input": 1820,
+            "output": 512
+        },
+        {
+            "input": 1726,
+            "output": 497
+        },
+        {
+            "input": 2018,
+            "output": 588
+        },
+        {
+            "input": 1784,
+            "output": 425
+        },
+        {
+            "input": 1932,
+            "output": 339
+        },
+        {
+            "input": 1886,
+            "output": 152
+        },
+        {
+            "input": 1999,
+            "output": 845
+        },
+        {
+            "input": 1620,
+            "output": 195
+        },
+        {
+            "input": 3207,
+            "output": 583
+        },
+        {
+            "input": 2965,
+            "output": 570
+        },
+        {
+            "input": 2444,
+            "output": 593
+        },
+        {
+            "input": 2467,
+            "output": 186
+        },
+        {
+            "input": 2242,
+            "output": 210
+        },
+        {
+            "input": 1888,
+            "output": 219
+        },
+        {
+            "input": 2563,
+            "output": 823
+        },
+        {
+            "input": 2203,
+            "output": 367
+        },
+        {
+            "input": 2239,
+            "output": 321
+        },
+        {
+            "input": 2048,
+            "output": 618
+        },
+        {
+            "input": 4183,
+            "output": 894
+        },
+        {
+            "input": 1877,
+            "output": 770
+        },
+        {
+            "input": 2071,
+            "output": 514
+        },
+        {
+            "input": 2487,
+            "output": 412
+        },
+        {
+            "input": 2021,
+            "output": 559
+        },
+        {
+            "input": 2325,
+            "output": 674
+        },
+        {
+            "input": 2073,
+            "output": 527
+        },
+        {
+            "input": 2395,
+            "output": 280
+        },
+        {
+            "input": 2263,
+            "output": 573
+        },
+        {
+            "input": 1994,
+            "output": 688
+        },
+        {
+            "input": 2261,
+            "output": 375
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 20142,
+        "output": 1862
+    },
+    "total_time": 156.35
+}

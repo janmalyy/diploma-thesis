@@ -1,0 +1,97 @@
+{
+    "before_pruning": {
+        "articles_in_total": 6,
+        "only_medline_count": 0,
+        "only_pmc_count": 0,
+        "only_suppl_count": 5,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 6,
+        "only_medline_count": 0,
+        "only_pmc_count": 0,
+        "only_suppl_count": 5,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "variant": "BRCA2 D3142G",
+    "time_to_process_articles": 6.41,
+    "context_length": 2753,
+    "after_removal": {
+        "articles_in_total": 1,
+        "only_medline_count": 0,
+        "only_pmc_count": 0,
+        "only_suppl_count": 0,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "",
+            "pmcid": "PMC10694496",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 85,
+            "abstract_length": 2083,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                425
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        }
+    ],
+    "narrative_summary": "The BRCA2 missense change p.Asp3142Gly (c.9425A>G) alters a highly conserved residue in the C\u2011terminal region of the protein, a gene in which pathogenic variants confer hereditary breast and ovarian cancer risk. The only data provided for this variant come from a multiplexed mouse embryonic stem cell functional assay. In that study the D3142G variant displayed a functional score profile that did not meet the thresholds for either loss\u2011of\u2011function or normal activity, and the authors therefore classified it as a variant of uncertain significance (VUS) [PMC10694496]. No clinical case reports, segregation analyses, population frequency data, or computational predictions were supplied in the extracted evidence. Consequently, the current evidence base does not support a definitive pathogenic or benign interpretation; the variant remains classified as uncertain pending additional functional, clinical, or population data.",
+    "structured_summary": {
+        "overall_pathogenicity": "uncertain",
+        "pathogenicity_counts": {
+            "supports benignity": 0,
+            "supports pathogenicity": 0,
+            "uncertain": 1
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...0.0004 0.0043 0.0020 0.00037551 F c.3362C>G p.Ser1121Stop 11 P -4.0407 -4.7562 -5.2877 1.0000 1.0000 1.0000 1 NF c.3496G>A p.Val1166Ile 11 US -0.3355 -0.2721 -0.3444 0.0022 0.0158 0.0054 0.00229499 F **c.9425A>G** **p.Asp3142Gly** 25 US 1.2529 1.1127 1.1823 0.0000 0.0043 0.0006 3.708E-05 F c.9385C>G p.Pro3129Ala 25 US 0.8141 1.1596 0.9435 0.0001 0.0043 0.0007 7.0883E-05 F c.9276T>G p.Tyr3092Stop 25 P -3.5541 -3.8671 -3.9063...",
+                    "mention_type": "functional",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The study used a multiplexed mouse ESC functional assay to evaluate BRCA2 variants, classifying D3142G as a variant of uncertain significance based on its functional score profile.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10694496",
+            "title": "Sequencing-based functional assays for classification of BRCA2 variants in mouse ESCs",
+            "relevance_score": 1.0,
+            "pub_year": 2023,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 2224,
+            "output": 484
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 962,
+        "output": 354
+    },
+    "total_time": 24.91
+}

@@ -1,0 +1,185 @@
+{
+    "before_pruning": {
+        "articles_in_total": 5,
+        "only_medline_count": 1,
+        "only_pmc_count": 1,
+        "only_suppl_count": 3,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 5,
+        "only_medline_count": 1,
+        "only_pmc_count": 1,
+        "only_suppl_count": 3,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "variant": "BRCA2 S2006R",
+    "time_to_process_articles": 9.6,
+    "context_length": 13515,
+    "after_removal": {
+        "articles_in_total": 5,
+        "only_medline_count": 1,
+        "only_pmc_count": 1,
+        "only_suppl_count": 3,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "21671020",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 124,
+            "abstract_length": 1850,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3995136",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 77,
+            "abstract_length": 1185,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4534066",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 85,
+            "abstract_length": 2681,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6617753",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 136,
+            "abstract_length": 2590,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7244490",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 79,
+            "abstract_length": 1361,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        }
+    ],
+    "narrative_summary": "The missense change S2006R occurs in the BRCA2 gene, which encodes a protein essential for DNA repair by homologous recombination and is implicated in hereditary breast and ovarian cancer; carriers of pathogenic BRCA2 mutations have an estimated 45% risk of breast cancer and 11% risk of ovarian cancer by age 70 [21671020].\n\nFunctional testing of this variant was performed in a cellular assay that measured the ability of transiently over\u2011expressed BRCA2 to stimulate spontaneous homologous recombination. The S2006R allele increased the frequency of spontaneous HR to a level comparable with a known cancer\u2011associated BRCA2 mutant (G2748D), and was therefore classified as HR\u2011positive and presumed pathogenic, whereas wild\u2011type BRCA2 and neutral variants did not elevate HR [21671020].\n\nNo clinical case reports, segregation data, population frequency information, or computational predictions were provided for S2006R in the extracted evidence. Consequently, the current classification relies solely on the functional assay, which supports a pathogenic role but lacks corroborating clinical or epidemiological data. In the absence of additional evidence, the variant should be considered likely pathogenic pending further validation.",
+    "structured_summary": {
+        "overall_pathogenicity": "pathogenic",
+        "pathogenicity_counts": {
+            "supports benignity": 0,
+            "supports pathogenicity": 1,
+            "uncertain": 0
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Breast Cancer 2 gene (BRCA2) mutation carriers have a 45% chance of developing breast cancer and a 11% risk of developing ovarian cancer by the age of 70. While hundreds of BRCA2-truncating mutations have been associated with an increased cancer risk in carriers, the contribution of unclassified variants (UCVs) to cancer risk remains largely undefined. BRCA2-defective cells show a high degree of chromosome instability. Although a functional assay based on the BRCA2 capability to stimulate DSB-induced homologous recombination (HR) as a way to classify UCVs has been proposed, so far no data are available concerning the effect of BRCA2 UCVs on spontaneous HR. In this study, we proposed a novel functional HR-based assay that determines the effect of the transient overexpression of the BRCA2 variant on spontaneous HR. This assay will help one in the difficult task of classifying UCVs, and it will give more information on how BRCA2 may induce genome instability and on the basic mechanism of BRCA2-induced tumourigenesis. We chose 11 BRCA2 UCVs not previously described or classified in other articles, and distributed along the entire BRCA2-coding region. They are as follows: G173V, D191V, S286P, M927V, T1011R, L1019V, N1878K, **S2006R**, R2108C, G2353R and V3091I. Basically, because the expression of BRCA2wt and the neutral variants did not increase spontaneous HR, we classified the variants G173V, S286P, M927V, T1011R and L1019V as HR-negative and presumed that they were not pathogenic. The HR-positive variants, D191V, N1878K, **S2006R**, R2108C, G2353R, and V3091I, which increased HR as much as the cancer-associated variant G2748D, could probably be classified as pathogenic. We observed that all our variants in the C-terminus of the protein behaved differently from the wt, suggesting a role for this protein region in spontaneous HR.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study functionally evaluated BRCA2 unclassified missense variants and found that S2006R increased spontaneous homologous recombination, indicating it may be pathogenic.",
+            "uncertainties_or_limitations": null,
+            "article_id": "21671020",
+            "title": "Effect of the overexpression of BRCA2 unclassified missense variants on spontaneous homologous recombination in human cells.",
+            "relevance_score": 1.0,
+            "pub_year": 2011,
+            "data_sources": [
+                "medline"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 1909,
+            "output": 548
+        },
+        {
+            "input": 1718,
+            "output": 174
+        },
+        {
+            "input": 1951,
+            "output": 211
+        },
+        {
+            "input": 2031,
+            "output": 281
+        },
+        {
+            "input": 1784,
+            "output": 206
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 1152,
+        "output": 494
+    },
+    "total_time": 37.2
+}

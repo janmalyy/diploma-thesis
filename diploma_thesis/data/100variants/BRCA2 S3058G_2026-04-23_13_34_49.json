@@ -1,0 +1,189 @@
+{
+    "before_pruning": {
+        "articles_in_total": 8,
+        "only_medline_count": 1,
+        "only_pmc_count": 1,
+        "only_suppl_count": 6,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 8,
+        "only_medline_count": 1,
+        "only_pmc_count": 1,
+        "only_suppl_count": 6,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "variant": "BRCA2 S3058G",
+    "time_to_process_articles": 6.42,
+    "context_length": 10463,
+    "after_removal": {
+        "articles_in_total": 3,
+        "only_medline_count": 1,
+        "only_pmc_count": 1,
+        "only_suppl_count": 1,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "20507642",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 100,
+            "abstract_length": 1128,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC2897790",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 99,
+            "abstract_length": 1082,
+            "number_of_unmatched_snippets": 3,
+            "unmatched_snippets": [
+                "p ser2988gly c 8972g a p arg2991his c 9172a g p ser3058gly and c 9213g t p glu3071asp were generated cell culture and transfection mda mb 231 cells were maintained using dmem invitrogen ca",
+                "8962a g p ser2988gly brca2 c 8972g a p arg2991his brca2 c 9172a g p ser3058gly or brca2 c 9213g t p glu3071asp to determine the consequences of brca2 c 8962a g p ser2988gly brca2",
+                "a p arg2991his brca2 c 9172a g p ser3058gly and brca2 c 9213g t p glu3071asp by a minigene assay revealed no evidence for aberrant splicing conclusions these results illustrate the"
+            ],
+            "number_of_paragraphs": 6,
+            "paragraphs_lengths": [
+                908,
+                1555,
+                1270,
+                208,
+                203,
+                196
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6287763",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 134,
+            "abstract_length": 1358,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        }
+    ],
+    "narrative_summary": "The BRCA2 missense variant p.Ser3058Gly (c.9172A>G) has been investigated for its potential impact on breast\u2011cancer susceptibility. It was initially identified among a set of BRCA2 variants of unknown clinical significance and was predicted by bioinformatic tools to disrupt an exonic splice\u2011enhancer motif, raising the possibility of a pathogenic effect on RNA splicing.\n\nFunctional assays using both patient\u2011derived RNA and minigene constructs containing BRCA2 exons 23 and 24 demonstrated that the p.Ser3058Gly allele does not alter normal splicing. In the minigene experiments, transcripts from the variant were indistinguishable from wild\u2011type, with no aberrant splice products detected, and the positive control known to cause splicing disruption behaved as expected. These results were consistent across duplicate cell\u2011culture experiments and were reported in two independent studies [20507642] [PMC2897790].\n\nGiven the absence of evidence for splicing disruption and the lack of reported clinical, population, or additional computational data indicating pathogenicity, the current functional evidence supports a benign interpretation of the BRCA2 p.Ser3058Gly variant with respect to its effect on RNA splicing.",
+    "structured_summary": {
+        "overall_pathogenicity": "benign",
+        "pathogenicity_counts": {
+            "supports benignity": 3,
+            "supports pathogenicity": 0,
+            "uncertain": 0
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "BACKGROUND: Genetic screening of breast cancer patients and their families have identified a number of variants of unknown clinical significance in the breast cancer susceptibility genes, BRCA1 and BRCA2. Evaluation of such unclassified variants may be assisted by web-based bioinformatic prediction tools, although accurate prediction of aberrant splicing by unclassified variants affecting exonic splice enhancers (ESEs) remains a challenge. METHODS: This study used a combination of RT-PCR analysis and splicing reporter minigene assays to assess five unclassified variants in the BRCA2 gene that we had previously predicted to disrupt an ESE using bioinformatic approaches. RESULTS: Analysis of BRCA2 c.8308 G > A (p.Ala2770Thr) by mRNA analysis, and BRCA2 c.8962A > G (p.Ser2988Gly), BRCA2 c.8972G > A (p.Arg2991His), BRCA2 c.**9172A > G** (**p.Ser3058Gly**), and BRCA2 c.9213G > T (p.Glu3071Asp) by a minigene assay, revealed no evidence for aberrant splicing. CONCLUSIONS: These results illustrate the need for improved methods for predicting functional ESEs and the potential consequences of sequence variants contained therein.",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study experimentally evaluated the BRCA2 p.Ser3058Gly variant with a minigene assay and found no evidence of aberrant splicing, suggesting it does not disrupt splicing.",
+            "uncertainties_or_limitations": null,
+            "article_id": "20507642",
+            "title": "Effect of BRCA2 sequence variants predicted to disrupt exonic splice enhancers on BRCA2 transcripts.",
+            "relevance_score": 1.0,
+            "pub_year": 2010,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "In this study we analysed five BRCA2 unclassified variants that we had previously predicted to either cause loss of an ESE motif (denoted using HGVS nomenclature as: BRCA2 c.8962A > G (p.Ser2988Gly), BRCA2 c.8972G > A (p.Arg2991His) and BRCA2 c.9213G > T (p.Glu3071Asp)) or to decrease the score of the predicted ESE motif (BRCA2 c.**9172A > G** (**p.Ser3058Gly**) and BRCA2 c.8308 G > A (p.Ala2770Thr)). A source of RNA was only available for one of these variants (BRCA2 c.8308 G > A (p.Ala2770Thr)), which was analysed for splicing defects by RT-PCR. For the remaining four, we used a minigene approach to examine the effect of each variant on splicing.",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "To determine the consequences of BRCA2 c.8962A > G (p.Ser2988Gly), BRCA2 c.8972G > A (p.Arg2991His), BRCA2 c.**9172A > G** (**p.Ser3058Gly**), and BRCA2 c.9213G > T (p.Glu3071Asp) on splicing, minigene constructs containing BRCA2 exons 23 and 24 and flanking intron sequences, and either wild-type, positive control or unclassified variant sequences, were introduced into cells and their respective transcripts analysed by RT-PCR and DNA sequencing. As expected, a normal splicing product containing exons 23 and 24 was observed for the wild-type constructs, whereas a smaller product containing exon 24 only was observed upon analysis of the positive control BRCA2 c.9117G > A (p.Pro3039Pro), which has been previously reported to induce aberrant splicing (Figure 2). Sequence analysis also revealed that PCR products contained an additional 115 base pair sequence, which corresponded to a cryptic exon derived from intronic sequence downstream from the multiple cloning site within the vector, and which has been reported previously. Analysis of the minigenes containing each of the four tested unclassified variants resulted in PCR products that were indistinguishable from that generated by the wild-type construct (Figure 2). Sequence analysis of the PCR product confirmed the presence of the unclassified variant sequence (data not shown).",
+                    "mention_type": "functional",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "No evidence for altered splicing of transcripts derived from minigenes incorporating the BRCA2 unclassified variants: c.8962A > G (p.Ser2988Gly), c.8972G > A (p.Arg2991His), c.**9172A > G** (**p.Ser3058Gly**), and c.9213G > T (p.Glu3071Asp). RT-PCR products from duplicate cell culture experiments for each minigene construct and a vector only control. The vector only sample does not contain an insert and therefore produces a 261 bp band made up of fragments of pSPL3 constitutive exons. The positive control, BRCA2 c.9117G > A (p.Pro3039Pro) produces a 410 bp band representing the vector exons and BRCA2 exon 24. The higher molecular weight band in all samples includes a 115 bp cryptic exon. The 574 bp band seen in all unclassified variants and the wildtype represents the vector exons and BRCA2 exons 23 and 24. Negative controls include: 1. No reverse transcriptase in cDNA synthesis of the wild type construct; 2. No template for the PCR; 3. Negative control for transfection. Fragments resolved 1.5% agarose gel stained with ethidium bromide.",
+                    "mention_type": "functional",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "(p.Ser2988Gly), c.8972G > A (p.Arg2991His), c.**9172A > G** (**p.Ser3058Gly**), and c.9213G > T (p.Glu3071Asp) were generated. Cell Culture and transfection MDA-MB-231 cells were maintained using DMEM (Invitrogen, CA",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": ".8962A > G (p.Ser2988Gly), BRCA2 c.8972G > A (p.Arg2991His), BRCA2 c.**9172A > G** (**p.Ser3058Gly**), or BRCA2 c.9213G > T (p.Glu3071Asp) To determine the consequences of BRCA2 c.8962A > G (p.Ser2988Gly), BRCA2",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "> A (p.Arg2991His), BRCA2 c.**9172A > G** (**p.Ser3058Gly**), and BRCA2 c.9213G > T (p.Glu3071Asp) by a minigene assay, revealed no evidence for aberrant splicing. Conclusions These results illustrate the",
+                    "mention_type": "functional",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study found that the BRCA2 p.Ser3058Gly (c.9172A>G) variant does not cause abnormal splicing in minigene assays, suggesting it is likely benign with respect to splicing disruption.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC2897790",
+            "title": "Effect of BRCA2 sequence variants predicted to disrupt exonic splice enhancers on BRCA2 transcripts",
+            "relevance_score": 1.0,
+            "pub_year": 2010,
+            "data_sources": [
+                "pmc"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 1714,
+            "output": 654
+        },
+        {
+            "input": 3142,
+            "output": 1353
+        },
+        {
+            "input": 1859,
+            "output": 203
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 2285,
+        "output": 415
+    },
+    "total_time": 20.1
+}

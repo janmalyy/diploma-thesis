@@ -1,0 +1,756 @@
+[
+    {
+        "articles_before_pruning": 22,
+        "articles_before_removing": 22,
+        "variant": "EPCAM c.556-14A>G",
+        "time_to_process_articles": 10.74,
+        "context_length": 62926,
+        "articles_after_removal": 17,
+        "only_medline_count": 5,
+        "only_pmc_count": 9,
+        "only_suppl_count": 0,
+        "both_pmc_and_supplcount": 3,
+        "all_three_count": 0,
+        "articles": [
+            {
+                "pmid": "37554749",
+                "pmcid": "",
+                "data_sources": [
+                    "medline"
+                ],
+                "source_of_annotation": "pubtator",
+                "title_length": 117,
+                "abstract_length": 1204,
+                "number_of_unmatched_snippets": 0,
+                "unmatched_snippets": [],
+                "number_of_paragraphs": 0,
+                "paragraphs_lengths": [],
+                "number_of_suppl_files": 0,
+                "suppl_paragraphs_counts_per_file": [],
+                "suppl_paragraphs_lengths": []
+            },
+            {
+                "pmid": "30461124",
+                "pmcid": "",
+                "data_sources": [
+                    "medline"
+                ],
+                "source_of_annotation": "pubtator",
+                "title_length": 98,
+                "abstract_length": 1362,
+                "number_of_unmatched_snippets": 0,
+                "unmatched_snippets": [],
+                "number_of_paragraphs": 0,
+                "paragraphs_lengths": [],
+                "number_of_suppl_files": 0,
+                "suppl_paragraphs_counts_per_file": [],
+                "suppl_paragraphs_lengths": []
+            },
+            {
+                "pmid": "34198699",
+                "pmcid": "",
+                "data_sources": [
+                    "medline"
+                ],
+                "source_of_annotation": "pubtator",
+                "title_length": 73,
+                "abstract_length": 1401,
+                "number_of_unmatched_snippets": 0,
+                "unmatched_snippets": [],
+                "number_of_paragraphs": 0,
+                "paragraphs_lengths": [],
+                "number_of_suppl_files": 0,
+                "suppl_paragraphs_counts_per_file": [],
+                "suppl_paragraphs_lengths": []
+            },
+            {
+                "pmid": "28701297",
+                "pmcid": "",
+                "data_sources": [
+                    "medline"
+                ],
+                "source_of_annotation": "pubtator",
+                "title_length": 83,
+                "abstract_length": 1637,
+                "number_of_unmatched_snippets": 0,
+                "unmatched_snippets": [],
+                "number_of_paragraphs": 0,
+                "paragraphs_lengths": [],
+                "number_of_suppl_files": 0,
+                "suppl_paragraphs_counts_per_file": [],
+                "suppl_paragraphs_lengths": []
+            },
+            {
+                "pmid": "24142340",
+                "pmcid": "",
+                "data_sources": [
+                    "medline"
+                ],
+                "source_of_annotation": "pubtator",
+                "title_length": 135,
+                "abstract_length": 1912,
+                "number_of_unmatched_snippets": 0,
+                "unmatched_snippets": [],
+                "number_of_paragraphs": 0,
+                "paragraphs_lengths": [],
+                "number_of_suppl_files": 0,
+                "suppl_paragraphs_counts_per_file": [],
+                "suppl_paragraphs_lengths": []
+            },
+            {
+                "pmid": "",
+                "pmcid": "PMC10404837",
+                "data_sources": [
+                    "pmc"
+                ],
+                "source_of_annotation": "pubtator",
+                "title_length": 116,
+                "abstract_length": 1204,
+                "number_of_unmatched_snippets": 1,
+                "unmatched_snippets": [
+                    "homozygous splice mutation on intron 5 c 556 14a g confirming the diagnosis cte also referred as intestinal epithelial dysplasia ied is an autosomal recessive disorder presenting since first few"
+                ],
+                "number_of_paragraphs": 2,
+                "paragraphs_lengths": [
+                    240,
+                    201
+                ],
+                "number_of_suppl_files": 0,
+                "suppl_paragraphs_counts_per_file": [],
+                "suppl_paragraphs_lengths": []
+            },
+            {
+                "pmid": "",
+                "pmcid": "PMC6328345",
+                "data_sources": [
+                    "pmc",
+                    "suppl"
+                ],
+                "source_of_annotation": "pubtator",
+                "title_length": 97,
+                "abstract_length": 1927,
+                "number_of_unmatched_snippets": 1,
+                "unmatched_snippets": [
+                    "28 patients 23 homozygotes c 556–14a g 14 patients 6 homozygotes c 491 1g a 9 patients 2 homozygotes and c 492–2a g 7 patients 2 homozygotes reported variants of epcam in lynch"
+                ],
+                "number_of_paragraphs": 3,
+                "paragraphs_lengths": [
+                    1988,
+                    405,
+                    193
+                ],
+                "number_of_suppl_files": 1,
+                "suppl_paragraphs_counts_per_file": [
+                    0
+                ],
+                "suppl_paragraphs_lengths": [
+                    []
+                ]
+            },
+            {
+                "pmid": "",
+                "pmcid": "PMC8232273",
+                "data_sources": [
+                    "pmc"
+                ],
+                "source_of_annotation": "pubtator",
+                "title_length": 72,
+                "abstract_length": 1401,
+                "number_of_unmatched_snippets": 0,
+                "unmatched_snippets": [],
+                "number_of_paragraphs": 2,
+                "paragraphs_lengths": [
+                    536,
+                    1303
+                ],
+                "number_of_suppl_files": 0,
+                "suppl_paragraphs_counts_per_file": [],
+                "suppl_paragraphs_lengths": []
+            },
+            {
+                "pmid": "",
+                "pmcid": "PMC9679307",
+                "data_sources": [
+                    "pmc"
+                ],
+                "source_of_annotation": "pubtator",
+                "title_length": 132,
+                "abstract_length": 1671,
+                "number_of_unmatched_snippets": 1,
+                "unmatched_snippets": [
+                    "fig 2 7101415161718192021222324252627282930313233 among them pathogenic variants c 491 1g a intron 4 c 556 14a g intron 6 c 492 2a g intron 5 and c 498insc exon 5 were reported in five"
+                ],
+                "number_of_paragraphs": 2,
+                "paragraphs_lengths": [
+                    3060,
+                    203
+                ],
+                "number_of_suppl_files": 0,
+                "suppl_paragraphs_counts_per_file": [],
+                "suppl_paragraphs_lengths": []
+            },
+            {
+                "pmid": "",
+                "pmcid": "PMC5701300",
+                "data_sources": [
+                    "pmc",
+                    "suppl"
+                ],
+                "source_of_annotation": "pubtator",
+                "title_length": 82,
+                "abstract_length": 1637,
+                "number_of_unmatched_snippets": 1,
+                "unmatched_snippets": [
+                    "0 983 none left ventricular noncompaction 1 noncompaction of left ventricular myocardium familial isolated autosomal dominant 1 nd the epcam intronic variant c 556 14a g was previously reported in"
+                ],
+                "number_of_paragraphs": 4,
+                "paragraphs_lengths": [
+                    410,
+                    742,
+                    1376,
+                    198
+                ],
+                "number_of_suppl_files": 1,
+                "suppl_paragraphs_counts_per_file": [
+                    0
+                ],
+                "suppl_paragraphs_lengths": [
+                    []
+                ]
+            },
+            {
+                "pmid": "",
+                "pmcid": "PMC7530495",
+                "data_sources": [
+                    "pmc"
+                ],
+                "source_of_annotation": "pubtator",
+                "title_length": 106,
+                "abstract_length": 1198,
+                "number_of_unmatched_snippets": 1,
+                "unmatched_snippets": [
+                    "2 c 492 2a g 4 salomon et al 16 2 salomon et al 19 6 c 492 1g a 1 salomon et al 16 1 pathak et al 60 2 c 555 1g c 3 salomon et al 16 1 pathak et al 60 4 c 556 14a g 1"
+                ],
+                "number_of_paragraphs": 3,
+                "paragraphs_lengths": [
+                    1913,
+                    1169,
+                    199
+                ],
+                "number_of_suppl_files": 0,
+                "suppl_paragraphs_counts_per_file": [],
+                "suppl_paragraphs_lengths": []
+            },
+            {
+                "pmid": "",
+                "pmcid": "PMC9710291",
+                "data_sources": [
+                    "pmc"
+                ],
+                "source_of_annotation": "pubtator",
+                "title_length": 78,
+                "abstract_length": 0,
+                "number_of_unmatched_snippets": 0,
+                "unmatched_snippets": [],
+                "number_of_paragraphs": 1,
+                "paragraphs_lengths": [
+                    1823
+                ],
+                "number_of_suppl_files": 0,
+                "suppl_paragraphs_counts_per_file": [],
+                "suppl_paragraphs_lengths": []
+            },
+            {
+                "pmid": "",
+                "pmcid": "PMC7915612",
+                "data_sources": [
+                    "pmc"
+                ],
+                "source_of_annotation": "pubtator",
+                "title_length": 101,
+                "abstract_length": 1241,
+                "number_of_unmatched_snippets": 1,
+                "unmatched_snippets": [
+                    "p tyr186phefster6 c 556 14a g 376155665 molecular analysis of patients with glucose galactose malabsorption included in the present study † novel mutation case gender mutation iupac protein hgvs protein hgvs"
+                ],
+                "number_of_paragraphs": 3,
+                "paragraphs_lengths": [
+                    1744,
+                    1928,
+                    209
+                ],
+                "number_of_suppl_files": 0,
+                "suppl_paragraphs_counts_per_file": [],
+                "suppl_paragraphs_lengths": []
+            },
+            {
+                "pmid": "",
+                "pmcid": "PMC7642537",
+                "data_sources": [
+                    "pmc"
+                ],
+                "source_of_annotation": "pubtator",
+                "title_length": 71,
+                "abstract_length": 1442,
+                "number_of_unmatched_snippets": 0,
+                "unmatched_snippets": [],
+                "number_of_paragraphs": 1,
+                "paragraphs_lengths": [
+                    1624
+                ],
+                "number_of_suppl_files": 0,
+                "suppl_paragraphs_counts_per_file": [],
+                "suppl_paragraphs_lengths": []
+            },
+            {
+                "pmid": "",
+                "pmcid": "PMC8855161",
+                "data_sources": [
+                    "pmc"
+                ],
+                "source_of_annotation": "pubtator",
+                "title_length": 111,
+                "abstract_length": 1737,
+                "number_of_unmatched_snippets": 0,
+                "unmatched_snippets": [],
+                "number_of_paragraphs": 1,
+                "paragraphs_lengths": [
+                    410
+                ],
+                "number_of_suppl_files": 0,
+                "suppl_paragraphs_counts_per_file": [],
+                "suppl_paragraphs_lengths": []
+            },
+            {
+                "pmid": "",
+                "pmcid": "PMC9195140",
+                "data_sources": [
+                    "pmc"
+                ],
+                "source_of_annotation": "pubtator",
+                "title_length": 83,
+                "abstract_length": 1483,
+                "number_of_unmatched_snippets": 0,
+                "unmatched_snippets": [],
+                "number_of_paragraphs": 1,
+                "paragraphs_lengths": [
+                    1060
+                ],
+                "number_of_suppl_files": 0,
+                "suppl_paragraphs_counts_per_file": [],
+                "suppl_paragraphs_lengths": []
+            },
+            {
+                "pmid": "",
+                "pmcid": "PMC10874402",
+                "data_sources": [
+                    "pmc",
+                    "suppl"
+                ],
+                "source_of_annotation": "pubtator",
+                "title_length": 113,
+                "abstract_length": 1802,
+                "number_of_unmatched_snippets": 0,
+                "unmatched_snippets": [],
+                "number_of_paragraphs": 1,
+                "paragraphs_lengths": [
+                    619
+                ],
+                "number_of_suppl_files": 1,
+                "suppl_paragraphs_counts_per_file": [
+                    0
+                ],
+                "suppl_paragraphs_lengths": [
+                    []
+                ]
+            }
+        ],
+        "narrative_summary": "The EPCAM c.556-14A>G variant is an intronic change that creates an abnormal splice acceptor site in intron 5 of the EPCAM gene. It has been repeatedly reported in patients with congenital tufting enteropathy (CTE), a rare autosomal‑recessive disorder characterised by intractable infantile diarrhoea, villous tufting and loss of EPCAM expression, and it has also appeared in multigene cancer panels as a pathogenic allele.\n\nClinical observations consistently link homozygous or compound‑heterozygous c.556-14A>G carriers with CTE. A one‑year‑old infant with classic CTE features was found to be homozygous for the variant and showed complete loss of MOC31 staining on duodenal biopsies [37554749]. Similar homozygous cases have been described in several families, often with severe diarrhoea requiring total or partial parenteral nutrition and with absent EPCAM immunostaining in intestinal tissue [34198699, 28701297, PMC10404837, PMC8232273, PMC9679307, PMC5701300, PMC7915612, PMC7642537]. In a larger cohort of 69 CTE patients the variant was present in 14 individuals but did not show a statistically significant association with treatment intensity or mortality, suggesting that its phenotypic impact may be milder than that of other EPCAM mutations [30461124]. A separate study of 81 CTE cases reported that c.556-14A>G was the most common intronic mutation and was associated with a comparatively better outcome, including a higher likelihood of partial rather than full parenteral nutrition [24142340].\n\nFunctional investigations demonstrate that the c.556-14A>G change generates a novel splice acceptor site, leading to aberrant mRNA processing and loss of the normal EPCAM protein. Immunohistochemistry of intestinal biopsies from affected patients consistently shows absent or markedly reduced EPCAM staining, confirming a loss‑of‑function effect [8232273, PMC9679307]. Structural modelling and splicing assays have classified the variant as a pathogenic splice‑site mutation that disrupts the trans‑membrane domain of EPCAM [7530495, 9710291].\n\nPopulation data indicate that the allele is rare, with a gnomAD East Asian frequency of 0.0006 and an overall frequency of about 0.07 % in a cancer‑gene panel cohort, consistent with a low‑frequency disease‑causing variant [9195140]. The variant is listed in ClinVar as pathogenic with a two‑star review status, and it has been reported as a pathogenic variant in breast‑cancer panel testing [10874402, 8855161].\n\nTaken together, the preponderance of clinical case reports, segregation data, functional splice‑site disruption, low population frequency and expert classification converge on a pathogenic interpretation of EPCAM c.556-14A>G for congenital tufting enteropathy. While some studies have not found a significant correlation with disease severity, the overall evidence supports a disease‑causing role, most likely resulting in a milder CTE phenotype compared with truncating EPCAM mutations.",
+        "structured_summary": {
+            "overall_pathogenicity": "pathogenic",
+            "pathogenicity_counts": {
+                "uncertain": 0,
+                "supports benignity": 1,
+                "supports pathogenicity": 22
+            },
+            "conflicting_evidence": false
+        },
+        "article_mentions": [
+            {
+                "mentions": [
+                    {
+                        "quoted_text": "The causes of intractable diarrhoea in infancy are varied, and can be classified into enteropathic and non-enteropathic groups. Congenital tufting enteropathy (CTE) is a rare cause of enteropathic form of intractable diarrhoea in infants requiring nutritional supplementation. We herein report a case of CTE in a one-year-old female child who presented with recurrent abdominal distension, frequent watery diarrhoea and marked stunted growth soon after birth. A systematic clinical, laboratory and pathological evaluation brought out the etiology, followed by genotypic confirmation. Histological examination revealed mild villous abnormality with presence of epithelial tufts both in the villous and crypt surface, in the duodenum and rectal biopsies supported by complete loss of MOC31 staining. Deep sequencing revealed homozygous 3' splice mutation at intron 5 of the EPCAM gene (**c.556-14A>G**). She was given TPN support and discharged with weight gain under home-based parenteral nutrition supplement. This case brings out the need for a multidisciplinary team approach to reveal underlying the cause of infantile intractable diarrhoea and report a favorable outcome with nutritional supplementation.",
+                        "mention_type": "clinical",
+                        "claim": "supports pathogenicity"
+                    }
+                ],
+                "overall_article_summary": "A homozygous EPCAM c.556-14A>G splice-site mutation was identified as the likely pathogenic variant causing congenital tufting enteropathy in the reported infant case.",
+                "uncertainties_or_limitations": null,
+                "article_id": "37554749",
+                "title": "Tufting enteropathy: a rare anatomical cause of small bowel diarrhoea in infants with mild or no villous abnormality.",
+                "relevance_score": 1.0,
+                "pub_year": 2023,
+                "data_sources": [
+                    "medline"
+                ]
+            },
+            {
+                "mentions": [
+                    {
+                        "quoted_text": "The epithelial cell adhesion molecule gene (EPCAM, previously known as TACSTD1 or TROP1) encodes a membrane-bound protein that is localized to the basolateral membrane of epithelial cells and is overexpressed in some tumors. Biallelic mutations in EPCAM cause congenital tufting enteropathy (CTE), which is a rare chronic diarrheal disorder presenting in infancy. Monoallelic deletions of the 3' end of EPCAM that silence the downstream gene, MSH2, cause a form of Lynch syndrome, which is a cancer predisposition syndrome associated with loss of DNA mismatch repair. Here, we report 13 novel EPCAM mutations from 17 CTE patients from two separate centers, review EPCAM mutations associated with CTE and Lynch syndrome, and structurally model pathogenic missense mutations. Statistical analyses indicate that the c.499dupC (previously reported as c.498insC) frameshift mutation was associated with more severe treatment regimens and greater mortality in CTE, whereas the **c.556-14A>G** and c.491+1G>A splice site mutations were not correlated with treatments or outcomes significantly different than random simulation. These findings suggest that genotype-phenotype correlations may be useful in contributing to management decisions of CTE patients. Depending on the type and nature of EPCAM mutation, one of two unrelated diseases may occur, CTE or Lynch syndrome.",
+                        "mention_type": "clinical",
+                        "claim": "supports benignity"
+                    }
+                ],
+                "overall_article_summary": "The study presents novel EPCAM mutations and indicates that the c.556-14A>G splice site variant is not significantly associated with disease severity or mortality in congenital tufting enteropathy patients.",
+                "uncertainties_or_limitations": null,
+                "article_id": "30461124",
+                "title": "EPCAM mutation update: Variants associated with congenital tufting enteropathy and Lynch syndrome.",
+                "relevance_score": 0.97,
+                "pub_year": 2019,
+                "data_sources": [
+                    "medline"
+                ]
+            },
+            {
+                "mentions": [
+                    {
+                        "quoted_text": "Tufting enteropathy (TE) is caused by recessive EPCAM mutations, and is characterized by intractable diarrhea of congenital onset and disorganization of enterocytes. TE generally requires parenteral nutrition (PN) during childhood or intestinal bowel transplantation. We report three unrelated families with six children with TE. We highlight the high rate of disease-related mortality. We observe adequate weight gain with PN, but low to normal and stunted body length, supporting the recent notion that a short stature might be intrinsic to TE. The diagnosis of TE in the index patients from each family was delayed for months to years, even when clinical data, duodenal biopsies, or exome sequencing data were obtained early on. We identified three novel pathogenic EPCAM variants: a deletion of exon 1 that removes the ATG initiation codon, a missense variant c.326A > G (p.Gln109Arg), and nonsense mutation c.429G > A (p.Trp143*) in a compound heterozygous state with the Mediterranean splice site variant c.**556-14A > G** (Tyr186Phefs*6). Homozygosity for p.Gln109Arg was associated with absent EPCAM staining, and compound heterozygosity for p.Trp143*/Tyr186Phefs*6 was associated with reduced EPCAM staining in duodenal biopsies; such observations might contribute to a genotype-phenotype correlation in larger cohorts of TE patients. This study extends the clinical and molecular spectrum of TE.",
+                        "mention_type": "clinical",
+                        "claim": "supports pathogenicity"
+                    }
+                ],
+                "overall_article_summary": "The article reports three novel EPCAM pathogenic variants causing tufting enteropathy, including the splice‑site variant c.556-14A>G, which in compound heterozygosity is associated with disease phenotype and reduced EPCAM staining.",
+                "uncertainties_or_limitations": null,
+                "article_id": "34198699",
+                "title": "Three Novel EPCAM Variants Causing Tufting Enteropathy in Three Families.",
+                "relevance_score": 0.97,
+                "pub_year": 2021,
+                "data_sources": [
+                    "medline"
+                ]
+            },
+            {
+                "mentions": [
+                    {
+                        "quoted_text": "We describe a case of an infant presenting with intractable diarrhea who subsequently developed dilated cardiomyopathy, for whom a diagnosis was not initially achieved despite extensive clinical testing, including panel-based genetic testing. Research-based whole-genome sequences of the proband and both parents were analyzed by the SAVANNA pipeline, a variant prioritization strategy integrating features of variants, genes, and phenotypes, which was implemented using publicly available tools. Although the intestinal morphological abnormalities characteristic of congenital tufting enteropathy (CTE) were not observed in the initial clinical gastrointestinal tract biopsies of the proband, an intronic variant, EPCAM **c.556-14A>G**, previously identified as pathogenic for CTE, was found in the homozygous state. A newborn cousin of the proband also presenting with intractable diarrhea was found to carry the same homozygous EPCAM variant, and clinical testing revealed intestinal tufting and loss of EPCAM staining. This variant, however, was considered nonexplanatory for the proband's dilated cardiomyopathy, which could be a sequela of the child's condition and/or related to other genetic variants, which include de novo mutations in the genes NEDD4L and GSK3A and a maternally inherited SCN5A variant. This study illustrates three ways in which genomic sequencing can aid in the diagnosis of clinically challenging patients: differential diagnosis despite atypical clinical presentation, distinguishing the possibilities of a syndromic condition versus multiple conditions, and generating hypotheses for novel contributory genes.",
+                        "mention_type": "clinical",
+                        "claim": "supports pathogenicity"
+                    }
+                ],
+                "overall_article_summary": "The article documents homozygous EPCAM c.556-14G>A as a pathogenic cause of congenital tufting enteropathy in an infant with severe diarrhea, while noting it does not explain the accompanying dilated cardiomyopathy.",
+                "uncertainties_or_limitations": null,
+                "article_id": "28701297",
+                "title": "Genomic analysis of an infant with intractable diarrhea and dilated cardiomyopathy.",
+                "relevance_score": 0.93,
+                "pub_year": 2017,
+                "data_sources": [
+                    "medline"
+                ]
+            },
+            {
+                "mentions": [
+                    {
+                        "quoted_text": "Congenital tufting enteropathy (CTE) is a rare and severe enteropathy recently ascribed to mutations in the epcam gene. Here we establish SPINT2, previously ascribed to congenital sodium diarrhea, as a second gene associated with CTE and report molecular and immunohistochemistry data in 57 CTE patients. Inclusion criteria were early onset diarrhea and intestinal insufficiency with the typical histological CTE abnormalities. The clinical phenotype was registered, the entire coding regions of epcam and SPINT2 sequenced, and immunostaining of EpCAM and SPINT2 performed on intestinal biopsies. An epcam mutation was involved in 41 patients (73 %) who mainly displayed isolated digestive symptoms. Mutations severely affected gene expression since the EpCAM signal on intestinal tissues was either undetectable or low and irregular. Twelve other patients (21 %) carried mutations in SPINT2, and were phenotypically characterized by systematic association with keratitis (p < 10(-4)) and, for half of them, with choanal atresia (p < 10(-4)). Dependency on parenteral nutrition (PN) was comparable in patients with epcam or SPINT2 mutations, but the frequent epcam mutation **c.556-14A>G** (abnormal splicing) was significantly associated with a better outcome (p = 0.032) with milder PN dependency to weaning in some cases. Finally, four patients (7 %) with isolated digestive symptoms had no detectable epcam or SPINT2 mutation. Two candidate genes, Elf3 and Claudin7, were excluded from this population. Our study allows us to separate CTE patients into at least three genetic classes, each with specific phenotypes. The genetics approach raises the question of the distinction between two congenital enteropathies. Our findings should help improve the diagnosis of CTE, guide toward strategies of long-term PN management, and limit indications for intestinal transplantation to life-threatening PN complications.",
+                        "mention_type": "clinical",
+                        "claim": "supports pathogenicity"
+                    }
+                ],
+                "overall_article_summary": "The study identifies EPCAM c.556-14A>G as a common splice‑site mutation in congenital tufting enteropathy that correlates with milder disease and better nutritional outcomes.",
+                "uncertainties_or_limitations": null,
+                "article_id": "24142340",
+                "title": "Genetic characterization of congenital tufting enteropathy: epcam associated phenotype and involvement of SPINT2 in the syndromic form.",
+                "relevance_score": 0.87,
+                "pub_year": 2014,
+                "data_sources": [
+                    "medline"
+                ]
+            },
+            {
+                "mentions": [
+                    {
+                        "quoted_text": "...Thereafter blood sample was sent for clinical targeted exome sequencing using an Illumina platform, which showed homozygous 3' splice variation at intron 5 of the EPCAM gene (**c.556-14A>G**), confirming our diagnosis.",
+                        "mention_type": "clinical",
+                        "claim": "supports pathogenicity"
+                    },
+                    {
+                        "quoted_text": "homozygous splice mutation on intron 5 (**c.556-14A>G**) confirming the diagnosis. CTE, also referred as intestinal epithelial dysplasia (IED), is an autosomal recessive disorder presenting since first few",
+                        "mention_type": "clinical",
+                        "claim": "supports pathogenicity"
+                    }
+                ],
+                "overall_article_summary": "The case report describes a child with congenital tufting enteropathy in whom a homozygous EPCAM c.556-14A>G splice variant was identified by sequencing and interpreted as pathogenic for the disease.",
+                "uncertainties_or_limitations": null,
+                "article_id": "PMC10404837",
+                "title": "Tufting enteropathy: a rare anatomical cause of small bowel diarrhoea in infants with mild or no villous abnormality",
+                "relevance_score": 1.0,
+                "pub_year": 2023,
+                "data_sources": [
+                    "pmc"
+                ]
+            },
+            {
+                "mentions": [
+                    {
+                        "quoted_text": "Patient** Coding DNA Protein Type of mutation Zygosity Ethnicity Gender TPN requirement Transplant 1 c.113G>A; c.48_68del21 p.(C38Y); p.(A18_Q24del) Missense; in-frame deletion Compound heterozygous Caucasian M Full TPN No 2 c.1A>C; c.38_62dup25 p.(M1L); p.(A22Cfs*17) Missense; frameshift Compound heterozygous Palestinian F Off TPN due to limited access No 3 c.267G>C; c.*118T>C p.(Q89H); unknown consequence Missense; unknown Compound heterozygous English M Full TPN No 4 c.307G>A; c.492-5T>C p.(G103R); splicing defect Missense; splicing defect Compound heterozygous English-Italian M Partial TPN No 5.1 c.491+1G>A; **c.556-14A>G** p.(W143_T164del) [del exon 4]; p.(Y186_D219del*) Splicing defect; splicing defect Compound heterozygous Bangladeshi M Full TPN No 5.2 c.491+1G>A; **c.556-14A>G** p.(W143_T164del) [del exon 4]; p.(Y186_D219del*) Splicing defect; splicing defect Compound heterozygous Bangladeshi M Full TPN No 6 c.492-1G>A; c.491+1G>A p.(W143_T164del) [del exon 4]; p.(W143_T164del) [del exon 4] Splicing defect; splicing defect Compound heterozygous Hispanic M Full TPN No 7 c.509_511delTCA p.(I170del) In-frame deletion Homozygous Pakistani Unknown Unknown Unknown 8 c.555+1G>C p.(A65Mfs*23) [del exon 5] Splicing defect Homozygous Turkish F Weaned off No 9.1 c.579delT p.(I193Mfs*17) Frameshift Homozygous Bedouin M Full TPN No 9.2 c.579delT p.(I193Mfs*17) Frameshift Homozygous Bedouin F Full TPN No 10 c.589C>T p.(Q197*) Truncation Homozygous Iraqi M Full TPN No 11.1 c.540delT; c.491+1G>A p.(F180Lfs*30); p.(W143_T164del) [del exon 4] Frameshift; splicing defect Compound heterozygous Unknown M Partial TPN No 11.2 c.540delT; c.491+1G>A p.(F180Lfs*30); p.(W143_T164del) [del exon 4] Frameshift; Splicing defect Compound heterozygous Unknown M Partial TPN No 12 c.757G>A p.(D253N) Missense Homozygous Turkish M Full TPN No 13 g.29411_34526del5116 p.(Q24_Y142del) Deletion Homozygous Hispanic F Partial TPN No 14 c.227C>G p.(S76*) Truncation Homozygous Israeli F Full TPN No",
+                        "mention_type": "clinical",
+                        "claim": "supports pathogenicity"
+                    },
+                    {
+                        "quoted_text": "...with more severe clinical outcomes (10 of 16 frameshift/frameshift genotypes are homozygous c.499dupC mutations; Supporting Information Table 3). In contrast, the **c.556-14A>G** mutation (present in 14 of the 69 patients) is not correlated with treatments or outcomes that are significantly different than random simulation for full TPN (P = 0.09), partial TPN (P = 0.31),...",
+                        "mention_type": "clinical",
+                        "claim": "no claim"
+                    },
+                    {
+                        "quoted_text": "; 28 patients, 23 homozygotes), c.556–14A>G (14 patients, 6 homozygotes), c.491+1G>A (9 patients, 2 homozygotes), and c.492–2A>G (7 patients, 2 homozygotes). Reported variants of EPCAM in Lynch",
+                        "mention_type": "clinical",
+                        "claim": "no claim"
+                    }
+                ],
+                "overall_article_summary": "The article reports c.556-14A>G as a splice‑site EPCAM variant found in multiple congenital tufting enteropathy patients, noting it does not significantly affect treatment severity, and provides patient frequency data without assigning a definitive pathogenicity classification.",
+                "uncertainties_or_limitations": null,
+                "article_id": "PMC6328345",
+                "title": " EPCAM mutation update: Variants associated with congenital tufting enteropathy and Lynch syndrome",
+                "relevance_score": 0.96,
+                "pub_year": 2018,
+                "data_sources": [
+                    "pmc",
+                    "suppl"
+                ]
+            },
+            {
+                "mentions": [
+                    {
+                        "quoted_text": "The proband from family 3 is a compound heterozygote for two EPCAM variants: the EPCAM variant c.429G > A (p.Trp143*) is listed as pathogenic in the ClinVar database ( (accessed on 1 February 2021)); however, neither clinical details nor zygosity are provided with the variant, and therefore, we labelled it as a novel variant. It was found in-trans with the well-studied EPCAM variant c.**556-14A > G** (p.Tyr186Phefs*6). Both variants lead to premature stop codons.",
+                        "mention_type": "functional",
+                        "claim": "supports pathogenicity"
+                    },
+                    {
+                        "quoted_text": "To date, pathogenic EPCAM variants were identified in about 100 individuals with TE, and most EPCAM variants were rare or confined to single families. There are seven out of 42 variants that have been identified in more than two TE patients each. Our identification of three novel EPCAM variants in three families extends this genetic heterogeneity further. The index patient in family 3 carries the novel premature stop codon in-trans with the second most frequent variant, the pathogenic Mediterranean EPCAM variant c.**556-14A > G** (p.Tyr186Phefs*6), that has been shown to result in defective RNA splicing and loss of protein. The deletion of exon 1 in family 1 is expected to abolish the production of a functional protein as the translation start codon is removed. The novel missense variant p.Gln109Arg is considered pathogenic, as it replaces an evolutionary highly-conserved polar glutamine residue within an alpha-helix of EPCAM with a larger and charged arginine, and it is present in a homozygous state in all three affected individuals in family 2. In addition, homozygosity for the p.Gln109Arg variant was associated with absent EPCAM staining in intestinal epithelium.",
+                        "mention_type": "functional",
+                        "claim": "supports pathogenicity"
+                    }
+                ],
+                "overall_article_summary": "The article reports that the EPCAM splice‑site variant c.556-14A>G is a pathogenic Mediterranean allele that disrupts RNA splicing and leads to loss of EPCAM protein in tufting enteropathy patients.",
+                "uncertainties_or_limitations": null,
+                "article_id": "PMC8232273",
+                "title": "Three Novel EPCAM Variants Causing Tufting Enteropathy in Three Families",
+                "relevance_score": 0.95,
+                "pub_year": 2021,
+                "data_sources": [
+                    "pmc"
+                ]
+            },
+            {
+                "mentions": [
+                    {
+                        "quoted_text": "...(exon 5) Frameshift mutation Homozygous Arabic Diarrhea Yes PN Unknown Thoeni et al. P1 2013 c.227C>G (exon 3) Nonsense mutation Homozygous East African Diarrhea Yes PN Alive Pegas et al. P1 2014 **c.556-14A>G** (intron 6) Noncoding-splicing mutation Homozygous Brazilian Diarrhea Unknown PN Alive Salomon et al. (39 patients) P1 2014 c.139C>T/? (exon 2) Noncoding-splicing mutation Heterozygous Italian... ...mutation Homozygous Turkish Diarrhea, keratodermy ITx (at 5 years) Alive P23 c.555+1G>C (intron 5) Noncoding-splicing mutation Homozygous Turkish Diarrhea ITx (at 11 years) Alive P24 **c.556-14A>G** (intron 6) Noncoding-splicing mutation Homozygous Morroccan Diarhhea, arthritis PN Alive P25 **c.556-14A>G** (intron 6) Noncoding-splicing mutation Homozygous Morroccan Diarhhea PN Alive P26 **c.556-14A>G** (intron 6) Noncoding-splicing mutation Homozygous Algerian Diarhhea PN Alive P27 **c.556-14A>G** (intron 6) Noncoding-splicing mutation Homozygous Algerian Diarhhea PN Alive P28 **c.556-14A>G** (intron 6) Noncoding-splicing mutation Homozygous Portugal Diarhhea PN Deceased P29 **c.556-14A>G**/? (intron 6) Noncoding-splicing mutation Heterozygous Morroccan Diarhhea, arthritis, oesophageal atresia PN Alive P30.1, P30.2 **c.556-14A>G** (intron 6)/c.654delA (exon 6) Noncoding-splicing mutation/frameshift mutation Compound heterozygous Italian Diarhhea ITx (at 9 years) Alive P31 Del Ex 1-4 Deletion Homozygous Turkish Diarrhea PN Alive P32 Del Ex 1-7 Deletion Homozygous Turkish Diarrhea PN Alive P33 Del EpCAM Deletion Homozygous Algerian Diarrhea ITx (at 12 years) Alive Haas et al. P1.1, P1.2 (siblings) 2016 NA NA Homozygous Unknown Diarrhea Unknown PN Alive d'Apolito et al. P1.1, P1.2 (siblings) 2016 c.654delA (exon 6)/**c.556-14A>G** (intron 6) (P1.1, P1.2) Frameshift mutation/noncoding-splicing mutation (P1.1, P1.2) Compound heterozygous (P1.1, P1.2) Italian Diarrhea None ITx (P1.1 at 10 years, P1.2 at 11 years) Deceased (P1.1,... ...Deletion Homozygous Arabic Diarrhea None PN Deceased P4 c.412C>T (exon 3) Nonsense mutation Homozygous Arabic Diarrhea Yes PN, ITx at 2.5 years Alive Bodian et al. P1.1, P1.2 (second cousins) 2017 **c.556-14A>G** (intron 6) Noncoding-splicing mutation Homozygous Hispanic Diarrhea, dilate cardiomyopathy (unexplained) (P1) None (?) PN Deceased (P1.1), alive (P1.2) Tan et al. P1 2017 c.38_62dup25 (exon... ...PN Alive P4 c.307G>A (exon 3)/c.492-5T>C (intron 5) Missense mutation/noncoding-splicing mutation Compound heterozygous English/Italian Diarrhea Unknown PN Alive P5.1, P5.2 c.491+1G>A (intron 4)/**c.556-14A>G** (intron 6) Noncoding-splicing mutation Compound heterozygous Bangladeshi Diarrhea Unknown PN Alive P6 c.492-1G>A (intron 5)/c.491+1G>A (intron 4) Noncoding-splicing mutation Compound heterozygous... ...Diarrhea Yes PN Alive P2.1, P2.2 (siblings) c.326A>G (exon 3) (P2.1, P2.2.) Missense mutation (P2.1, P2.2) Homozygous Unknown Diarrhea Yes PN Deceased (P2.1), alive (P2.2) P3 c.429G>A (exon 4)/**c.556-14A>G** (intron 6) Nonsense mutation/noncoding-splicing mutation Compound heterozygous Unknown Diarrhea None PN Alive",
+                        "mention_type": "clinical",
+                        "claim": "supports pathogenicity"
+                    },
+                    {
+                        "quoted_text": ", Fig. 2) [7101415161718192021222324252627282930313233]. Among them, pathogenic variants c.491+1G>A (intron 4), **c.556-14A>G** (intron 6), c.492-2A>G (intron 5), and c.498insC (exon 5) were reported in five",
+                        "mention_type": "clinical",
+                        "claim": "supports pathogenicity"
+                    }
+                ],
+                "overall_article_summary": "The article reports the intronic EPCAM variant c.556-14A>G as a disease‑causing non‑coding splicing mutation associated with congenital tufting enteropathy, citing several affected patients and labeling it pathogenic.",
+                "uncertainties_or_limitations": null,
+                "article_id": "PMC9679307",
+                "title": "Homozygous Missense Epithelial Cell Adhesion Molecule Variant in a Patient with Congenital Tufting Enteropathy and Literature Review",
+                "relevance_score": 0.94,
+                "pub_year": 2022,
+                "data_sources": [
+                    "pmc"
+                ]
+            },
+            {
+                "mentions": [
+                    {
+                        "quoted_text": "...sequencing Homozygous recessive C14orf28 Chr14:45369688A>G NM_001017923.1:c.A50G p.Asn17Ser 0,3021,1721,21 Homozygous 0.0004(Internal) 0.006 0.99 None None nd EPCAM Chr2:47606078A>G NM_002354.2:**c.556-14A>G** - 0,3714,2428,23 Homozygous 0.0006(gnomAD_genome_EAS) 0 0.561 Diarrhea 5, with tufting enteropathy, congenital Colorectal cancer, hereditary nonpolyposis, type 8Diarrhea 5, with tufting enteropathy,...",
+                        "mention_type": "clinical",
+                        "claim": "supports pathogenicity"
+                    },
+                    {
+                        "quoted_text": "Because of the relatedness of the two patients and the shared phenotype of intractable diarrhea, we tested Patient 2 for the EPCAM mutation identified in Patient 1. Targeted genetic testing via Sanger sequencing of the mutation of interest (GeneDx) revealed homozygosity for the tested mutation, EPCAM **c.556-14A>G**. Upper endoscopy and flexible sigmoidoscopy were grossly normal. However, duodenal biopsies were consistent with tufting enteropathy with villous atrophy and mild crypt hyperplasia, irregularity of the surface epithelium, including focal mild tufting, and complete absence of staining for EPCAM protein (by MOC31 and Ber-EP4 stains) (Fig. 1C,D).",
+                        "mention_type": "clinical",
+                        "claim": "supports pathogenicity"
+                    },
+                    {
+                        "quoted_text": "We present the case of an infant with intractable diarrhea and dilated cardiomyopathy for whom a diagnosis was not achieved by extensive clinical testing. Whole-genome sequencing identified the homozygous intronic variant EPCAM **c.556-14A>G**, considered explanatory for the patient's intractable diarrhea and providing a diagnosis of congenital tufting enteropathy. CTE was not considered in the differential diagnosis because of the biopsy results without the characteristic ultrastructural features of tufting enteropathy, and EPCAM staining as a method of diagnosing tufting enteropathy was not described at the time of this patient's presentation and evaluation. These findings are consistent with reports that CDDs associated with enterocyte defects can have subtle histological features that make them difficult to diagnose clinically, and that genomics-first approaches can provide explanations for atypical cases. The genetic diagnosis also suggests that the diarrhea and the cardiomyopathy may represent two superimposed conditions, rather than a single syndromic Mendelian disorder, because CTE-related EPCAM mutations have not been previously associated with cardiac conditions in other patients.",
+                        "mention_type": "clinical",
+                        "claim": "supports pathogenicity"
+                    },
+                    {
+                        "quoted_text": "0.983 None Left ventricular noncompaction 1 Noncompaction of left ventricular myocardium, familial isolated, autosomal dominant 1 nd The EPCAM intronic variant **c.556-14A>G** was previously reported in",
+                        "mention_type": "other",
+                        "claim": "no claim"
+                    }
+                ],
+                "overall_article_summary": "The article provides clinical and population evidence that the homozygous EPCAM c.556-14A>G intronic variant is pathogenic for congenital tufting enteropathy causing intractable diarrhea, while the associated dilated cardiomyopathy is likely unrelated to this variant.",
+                "uncertainties_or_limitations": null,
+                "article_id": "PMC5701300",
+                "title": "Genomic analysis of an infant with intractable diarrhea and dilated cardiomyopathy",
+                "relevance_score": 0.92,
+                "pub_year": 2017,
+                "data_sources": [
+                    "pmc",
+                    "suppl"
+                ]
+            },
+            {
+                "mentions": [
+                    {
+                        "quoted_text": "After a comprehensive analysis of previous reports on CTE and EpCAM, we found 103 mutations in EpCAM from 14 studies (Tables 1 and 2), including 3 chromosomal deletions, 7 noncoding/splicing mutations, 14 frameshift/truncation mutations, and 11 in-frame deletions or missense mutations. Only four of the mutations were reported in five or more patients: c.498insC (21 patients), **c.556-14A>G** (15 patients), c.491+1G>A (9 patients), and c.492-2A>G (6 patients). The frameshift mutation (c.498insC) was the most common form of mutation in all CTE patients, bringing in 21 different amino acids followed by premature truncation of the protein (Q167Pfsx21). Among splicing mutations, **c.556-14A>G**, an intronic mutation, was the most common, forming a new acceptor splice site within intron 5, thus impairing the splicing of the EpCAM transcript. Recent studies revealed that splicing mutations could result in the absence of EpCAM in the transmembrane domain. In general, most reported mutations (chromosomal deletion, splicing mutations, and truncating mutations) are believed to result in the absence of the EpCAM protein. Accordingly, the protein could not be detected by immunohistochemistry in intestinal biopsies. Moreover, missense mutations were reported to manifest as weak EpCAM immunostaining or the disappearance of EpCAM immunohistochemical signals. Although the protein EpCAM seemed detectable by immunohistochemistry in some cases with missense mutations, it is likely that an abnormal extracellular domain of EpCAM was formed, which might impair the related signaling pathways. Clinically, patients with EpCAM mutations mainly present isolated congenital diarrhea without parenteral symptoms.",
+                        "mention_type": "functional",
+                        "claim": "supports pathogenicity"
+                    },
+                    {
+                        "quoted_text": "CTE is a life-threatening disease characterized by persistent severe diarrhea within a few days after birth, leading to rapid dehydration, electrolyte imbalance, and eventually metabolic decompensation. Intractable diarrhea is present independent of breast or formula feeding, and most CTE patients with neonatal diarrhea require total parenteral nutrition (TPN) due to protein energy malnutrition (Table 1), while some infants with a milder phenotype only require partial TPN ranging from 3 to 6 times per week. In any case, careful monitoring should be performed continuously during TPN to ensure appropriate growth. A study on how different mutation types affect prognosis suggested that the frameshift mutation group (particularly c.498insC), the only group with a significant difference, was more likely to require full TPN and was associated with more severe clinical outcomes. In contrast, mutations of splice sites, particularly **c.556-14A>G**, were more frequently observed in patients requiring partial TPN, suggesting better clinical outcomes.",
+                        "mention_type": "clinical",
+                        "claim": "supports pathogenicity"
+                    },
+                    {
+                        "quoted_text": "]) 2 c.492-2A>G 4 (Salomon et al. [16]) 2 (Salomon et al. [19]) 6 c.492-1G>A 1 (Salomon et al. [16]) 1 (Pathak et al. [60]) 2 c.555+1G>C 3 (Salomon et al. [16]) 1 (Pathak et al. [60]) 4 **c.556-14A>G** 1",
+                        "mention_type": "other",
+                        "claim": "no claim"
+                    }
+                ],
+                "overall_article_summary": "The review identifies EPCAM c.556-14A>G as a frequent splicing mutation that disrupts EPCAM expression and is associated with congenital tufting enteropathy, generally causing a milder clinical phenotype than truncating mutations.",
+                "uncertainties_or_limitations": null,
+                "article_id": "PMC7530495",
+                "title": "Tufting Enteropathy: A Review of Clinical and Histological Presentation, Etiology, Management, and Outcome",
+                "relevance_score": 0.8,
+                "pub_year": 2020,
+                "data_sources": [
+                    "pmc"
+                ]
+            },
+            {
+                "mentions": [
+                    {
+                        "quoted_text": "A total of 16 articles about CTE caused by the EPCAM gene, containing 81 cases, were retrieved. A summary of 81 patients found that the vast majority of reported EPCAM mutation-caused CTE patients were from Europe, Northwest Africa, the Mediterranean and Arab regions, while 3 patients were from China and 2 patients were from South Korea. Since then, more than 40 EPCAM mutations have been discovered. Many CTE patients (56 of 81 patients) were homozygotes and most of the remainder (21 of 88 patients) were compound heterozygotes for mutations in EPCAM, finally, there are a few gene fragments or complete gene deletions. The virulence gene for CTE in EPCAM was classified into four parts: chromosomal deletion, non-coding/splicing, frameshift/truncation, and missense mutation. Only 3 kinds of EPCAM mutations have been reported in 5 or more patients: c.498insC (20 patients, 15 homozygous), **c.556-14A>G** (14 patients, 10 homozygous), c.491+1G >A (10 patients, 3 homozygous). Frameshift mutation (c.498insC) is the most common form of mutation in all CTE patients, **c.556-14A>G** is the most common intron mutation, which forms a new receptor splice site in intron 5., which affects the splicing of EPCAM transcription. All CTE patients (81 patients) showed severe persistent diarrhea in the first month after birth. The disease outcomes included: 78 patients treated with PN, 1 patient rejected PN, the treatment of 2 patients was unknown; 9 patients accepted intestinal transplantation; 8 patients (of 68 patients) died, no patients of intestinal transplantation (9 patients) died.",
+                        "mention_type": "functional",
+                        "claim": "supports pathogenicity"
+                    }
+                ],
+                "overall_article_summary": "The article describes EPCAM c.556-14A>G as a frequent pathogenic intronic mutation in congenital tufting enteropathy that creates a novel splice site and disrupts normal splicing, leading to disease.",
+                "uncertainties_or_limitations": null,
+                "article_id": "PMC9710291",
+                "title": "A novel compound-heterozygous EPCAM mutation in congenital tufting enteropathy",
+                "relevance_score": 0.77,
+                "pub_year": 2022,
+                "data_sources": [
+                    "pmc"
+                ]
+            },
+            {
+                "mentions": [
+                    {
+                        "quoted_text": "We studied 5 patients affected by CTE (OMIM # 613217; Table 4). Case 1, male, conceived by consanguineous parents, was homozygous for the known c.757G>A epithelial cell adhesion molecule (EPCAM) gene mutation. Both the parents were heterozygous for the proband mutation. Bioinformatic tools predicted the variant as pathogenic (Supplementary Table S3). The variant, not annotated so far into databases, was absent in 200 alleles from control subjects. Case 2 was also born from consanguineous parents and homozygous for the novel c.712G>T variant. Again, both the parents were heterozygous for the c.712G>T variant. Such a variant causes the formation of a premature stop-codon (p.Glu238Ter) and is predicted to be pathogenic. Case 3 was compound heterozygous for the abovementioned c.712G>T mutation and the novel c.551-1G>T. The latter was predicted to be pathogenic since it impairs the splicing process. Case 4 was compound heterozygous for the novel c.649G>T EPCAM variant, which was predicted to be pathogenic because of the formation of a premature stop-codon (p.Glu217Ter), and for the c.758A>G, variant, predicted to be pathogenic by bioinformatic tools. Such mutation involves the same codon of the known c.757G>A pathogenic variant. The c.758A>G variant was absent in 200 alleles from control subjects. Finally, in Case 5, only the EPCAM **c.556-14A>G** known mutation was revealed. In this patient, the diagnosis of CTE was confirmed by enzymatic analysis of duodenal biopsy samples.",
+                        "mention_type": "clinical",
+                        "claim": "supports pathogenicity"
+                    },
+                    {
+                        "quoted_text": "However, despite the fact that NGS analysis includes all known genes related to CDDs, in some patients, only one mutation was identified. For example, in one of the three patients with SI deficiency, we identified only the c.2074C>T heterozygous mutation within the SI gene, but the diagnosis was confirmed by enzymatic analysis on duodenal biopsy samples. Similarly, in a patient with MVID, the analysis revealed only the EPCAM **c.556-14A>G** known mutation. In this patient, the diagnosis of CTE was confirmed by the enzymatic analysis on duodenal biopsy samples. It is possible that in these patients, a second, undetected mutation would be intronic or lie within the promoter or within the 3' untranslated region (UTR) of the gene, which are not covered by NGS. Otherwise, the patient with SI deficiency could bear to the novel potential entity of subjects that are affected by the disease but would result as heterozygous for SI gene mutations. Moreover, these not-detected variants may also be located in other genes, which have not been strictly associated with CDDs to date. For instance, they may be located in other genes involved in the same pathways as the known associated ones. In this regard, to better achieve differential diagnosis in our routinely diagnostic procedures, we recently designed a new CDD-related panel of 112 genes. These include the 92 genes described herein and other genes predicted to be involved in these diseases; moreover, we also selected not only genes closely associated with CCDs but also those related to diseases that cause similar clinical features. The inclusion of genes predicted to be involved in CDD-related diseases may add intriguing insights into CCD pathogenesis and may help to achieve a more precise diagnosis.",
+                        "mention_type": "clinical",
+                        "claim": "supports pathogenicity"
+                    },
+                    {
+                        "quoted_text": "p.Tyr186PhefsTer6 **c.556-14A>G** 376155665 Molecular analysis of patients with glucose-galactose malabsorption included in the present study. † Novel mutation. Case Gender Mutation IUPAC Protein HGVS Protein HGVS",
+                        "mention_type": "other",
+                        "claim": "no claim"
+                    }
+                ],
+                "overall_article_summary": "The article identifies EPCAM c.556-14A>G as a known disease‑associated mutation in patients with congenital tufting enteropathy, confirmed by enzymatic analysis, but provides no functional or population evidence beyond case reports.",
+                "uncertainties_or_limitations": null,
+                "article_id": "PMC7915612",
+                "title": "NGS Gene Panel Analysis Revealed Novel Mutations in Patients with Rare Congenital Diarrheal Disorders",
+                "relevance_score": 0.74,
+                "pub_year": 2021,
+                "data_sources": [
+                    "pmc"
+                ]
+            },
+            {
+                "mentions": [
+                    {
+                        "quoted_text": "The virulence gene for CTE in EPCAM was classified into four parts: Chromosomal deletion, non-coding/splicing, frameshift/truncation, and missense mutation. Among them, the mutations c.491+1G>A, c.492-2A>G, **c.556-14A>G**, c.498insC, and c.499dupC appeared most frequently, manifesting in more than five people. All CTE patients presented with severe persistent diarrhea in the first months after birth. They exhibited stunted growth. Some patients had complications such as cardiomyopathy, arthritis, facial deformity, choanal rectal, and or esophageal atresia, which were not associated with EPCAM mutations. These complications may be associated with other gene mutations or arise as the disease progresses. A study by Al-Mayouf et al reported that CTE patients are prone to chronic arthritis. The patient's clinical manifestation and auxiliary examination accord with the CTE diagnosis. Genetic studies revealed a homozygous mutation c.657+1G>A in the EPCAM gene, which was inherited from the father and mother, respectively. This mutation is a novel splice mutation that resulted in the loss of the exon 6. It was speculated that his sister may have died at the age of two years with similar symptoms caused by the same mutation. To rapidly achieve the required bodyweight for small intestinal transplantation, the patient was treated with TPN combined with human growth hormone.",
+                        "mention_type": "clinical",
+                        "claim": "supports pathogenicity"
+                    }
+                ],
+                "overall_article_summary": "The case report describes a novel EPCAM splice mutation causing congenital tufting enteropathy and notes that the c.556-14A>G variant is one of the most frequently observed EPCAM mutations in CTE patients.",
+                "uncertainties_or_limitations": null,
+                "article_id": "PMC7642537",
+                "title": "New mutation in EPCAM for congenital tufting enteropathy: A case report",
+                "relevance_score": 0.64,
+                "pub_year": 2020,
+                "data_sources": [
+                    "pmc"
+                ]
+            },
+            {
+                "mentions": [
+                    {
+                        "quoted_text": "...NM_007294.4(BRCA1):c.5266dupC PV Breast Breast, ovarian, lung No NM_000051.3(ATM):c.3576G>A PV Breast NA NA NM_000059.3(BRCA2):c.4376dupA LPV Breast Breast, ovarian, endometrium No NM_002354.2(EPCAM):**c.556-14A>G** PV Breast Breast, gastric No NM_000059.3(BRCA2):rsa13q13.1 LPV Breast Breast No (BRCA2exon3)x1 NM_007294.4(BRCA1):c.5176A>T PV Breast Breast, ovarian, CNS No NM_001128425.1(MUTYH):c.1187G>A PV...",
+                        "mention_type": "clinical",
+                        "claim": "supports pathogenicity"
+                    }
+                ],
+                "overall_article_summary": "The article identifies EPCAM c.556-14A>G as a pathogenic variant in breast (and gastric) cancer patients within a multigene panel study.",
+                "uncertainties_or_limitations": null,
+                "article_id": "PMC8855161",
+                "title": "Importance of multigene panel test in patients with consanguineous marriage and family history of breast cancer",
+                "relevance_score": 0.53,
+                "pub_year": 2022,
+                "data_sources": [
+                    "pmc"
+                ]
+            },
+            {
+                "mentions": [
+                    {
+                        "quoted_text": "Germline Mutation Gene Mutation Frequency Mutation Sites MLH1 1.03474% c.649C>T(p.R217C), p.Q701K (c.C2101A), p.V384D (c.T1151A) BRCA2 0.77605% c.2830A>T(p.K944*), c.671-1G>A, c.956dupA(p.N319Kfs*8) STK11 0.62823% p.F354L (c.C1062G) CHEK2 0.44346% p.H371Y (c.C1111T), c.1245dup(p.K416Qfs*22) TP53 0.44346% c.91G>A(p.V31I), p.V31I (c.G91A), c.7516-1G>A ATM 0.29564% c.3602_3603delTT(p.F1201Wfs*3), p.S1042R (c.A3124C) BRCA1 0.25868% c.671-1G>A CDH1 0.25868% p.T340A (c.A1018G) MSH6 0.25868% c.1406A>G(p.Y469C) MUTYH 0.18477% c.55C>T(p.R19*) PALB2 0.18477% c.2480_2481del(p.T827Mfs*6) PMS2 0.18477% c.1A>G(p.M1)? RAD51D 0.18477% c.270_271dup(p.K91Ifs*13) ATR 0.11086% c.4681C>T(p.Q1561*) BRIP1 0.11086% c.918+1G>A MSH2 0.11086% p.L390F (c.C1168T) NBN 0.11086% c.1651dupA(p.R551Kfs*5) EPCAM 0.07391% **c.556-14A>G** FANCA 0.07391% c.1900+1G>T POLE 0.07391% c.G4952+1T RET 0.07391% p.V804M (c.G2410A) SDHA 0.07391% c.1A>T(p.M1)? VHL 0.07391% p.W8X (c.G23A) APC 0.03695% c.3374T>C(p.V1125A) FANCI 0.03695% c.504-1G>A MEN1 0.03695% c.1A>G(p.M1)? SDHB 0.03695% c.200+1G>C",
+                        "mention_type": "population",
+                        "claim": "no claim"
+                    }
+                ],
+                "overall_article_summary": "The study identifies a germline ATR mutation linked to familial lung adenocarcinoma and, in a supplementary table, reports EPCAM c.556-14A>G among other variants with a low population frequency, without further interpretation of its clinical significance.",
+                "uncertainties_or_limitations": null,
+                "article_id": "PMC9195140",
+                "title": "A Germline Mutation in ATR Is Associated With Lung Adenocarcinoma in Asian Patients",
+                "relevance_score": 0.52,
+                "pub_year": 2022,
+                "data_sources": [
+                    "pmc"
+                ]
+            },
+            {
+                "mentions": [
+                    {
+                        "quoted_text": "In a clinically suspected multiple endocrine neoplasia type 2 (MEN2) case (S11), we identified a potential splicing variant in the EPCAM gene (**c.556-14A>G**), which has been registered as \"pathogenic\" with two stars in the ClinVar (Supplementary Fig. 5a). Furthermore, we identified polymorphisms G691S/S904S in the RET gene, whose modifier effects on MEN2 have been investigated in several previous studies. Therefore, a combination of heterogeneous effects of various mutations might produce symptoms in this patient.",
+                        "mention_type": "clinical",
+                        "claim": "supports pathogenicity"
+                    }
+                ],
+                "overall_article_summary": "The study reports that target adaptive sampling long‑read sequencing identified the EPCAM splice‑site variant c.556-14A>G, which is listed as pathogenic in ClinVar, alongside other cancer‑related findings.",
+                "uncertainties_or_limitations": null,
+                "article_id": "PMC10874402",
+                "title": "Assessing the efficacy of target adaptive sampling long-read sequencing through hereditary cancer patient genomes",
+                "relevance_score": 0.38,
+                "pub_year": 2024,
+                "data_sources": [
+                    "pmc",
+                    "suppl"
+                ]
+            }
+        ],
+        "clinvar_urls": [
+            "https://www.ncbi.nlm.nih.gov/clinvar/variation/157603"
+        ],
+        "omim_url": "https://www.omim.org/entry/185535",
+        "gene": "EPCAM",
+        "total_time": 90.73
+    }
+]

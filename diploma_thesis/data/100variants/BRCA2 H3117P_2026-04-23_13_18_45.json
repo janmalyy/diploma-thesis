@@ -1,0 +1,98 @@
+{
+    "before_pruning": {
+        "articles_in_total": 2,
+        "only_medline_count": 0,
+        "only_pmc_count": 0,
+        "only_suppl_count": 1,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 2,
+        "only_medline_count": 0,
+        "only_pmc_count": 0,
+        "only_suppl_count": 1,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "variant": "BRCA2 H3117P",
+    "time_to_process_articles": 5.95,
+    "context_length": 2744,
+    "after_removal": {
+        "articles_in_total": 1,
+        "only_medline_count": 0,
+        "only_pmc_count": 0,
+        "only_suppl_count": 0,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "",
+            "pmcid": "PMC10694496",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 85,
+            "abstract_length": 2083,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                416
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        }
+    ],
+    "narrative_summary": "The BRCA2 missense variant p.His3117Pro (c.9350A>C) occurs in the BRCA2 gene, which is implicated in hereditary breast and ovarian cancer susceptibility. The variant has been evaluated in a recent multiplexed mouse embryonic stem cell functional assay that generated a quantitative functional score for this change, but the study did not assign an explicit pathogenic or benign classification to the result [PMC10694496].\n\nNo clinical case reports, segregation analyses, or formal clinical classifications for p.His3117Pro were identified in the extracted evidence, indicating an absence of direct clinical data supporting either pathogenicity or benignity.\n\nFunctional testing using the mouse ESC\u2011based assay produced a functional score for the H3117P variant, yet the authors did not provide a definitive interpretation of that score in terms of disease relevance, leaving the functional impact of the variant unresolved [PMC10694496].\n\nPopulation frequency data and computational predictive scores for this variant were not present in the supplied evidence, and therefore cannot be incorporated into the assessment.\n\nOverall, the available evidence consists solely of an uninterpreted functional assay result, with no supporting clinical, population, or in silico data. Consequently, the pathogenicity of BRCA2 p.His3117Pro remains uncertain, and the variant would be best classified as of uncertain significance pending further evidence.",
+    "structured_summary": {
+        "overall_pathogenicity": "uncertain",
+        "overall_confidence": "low",
+        "pathogenicity_counts": {
+            "supports benignity": 0,
+            "supports pathogenicity": 0,
+            "uncertain": 0
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...0.0054 0.0007 2.7722E-05 F c.9367A>G p.Ser3123Gly 25 US 1.0917 1.9432 1.5569 0.0000 0.0063 0.0006 4.6219E-05 F c.9292T>C p.Tyr3098His 25 B 1.3183 1.5267 1.5487 0.0000 0.0047 0.0006 3.4899E-05 F **c.9350A>C** **p.His3117Pro** 25 US 1.0466 1.0860 1.3583 0.0000 0.0043 0.0006 4.7865E-05 F c.9501G>A p.Glu3167 = 25 1.6919 1.4348 1.4565 0.0000 0.0045 0.0006 2.7661E-05 F c.9466C>T p.Gln3156Stop 25 P -4.2907 -6.1321 -5.2203...",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study presents a multiplexed mouse ESC\u2011based functional assay that generated functional scores for the BRCA2 H3117P variant, but does not provide an explicit pathogenicity interpretation for this variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10694496",
+            "title": "Sequencing-based functional assays for classification of BRCA2 variants in mouse ESCs",
+            "relevance_score": 1.0,
+            "pub_year": 2023,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 2227,
+            "output": 427
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 971,
+        "output": 449
+    },
+    "total_time": 12.03
+}

@@ -1,0 +1,423 @@
+{
+    "before_pruning": {
+        "articles_in_total": 43,
+        "only_medline_count": 0,
+        "only_pmc_count": 6,
+        "only_suppl_count": 36,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 43,
+        "only_medline_count": 0,
+        "only_pmc_count": 6,
+        "only_suppl_count": 36,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "variant": "BRCA2 C2689",
+    "time_to_process_articles": 27.01,
+    "context_length": 23660,
+    "after_removal": {
+        "articles_in_total": 9,
+        "only_medline_count": 0,
+        "only_pmc_count": 5,
+        "only_suppl_count": 3,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "",
+            "pmcid": "PMC9024354",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 153,
+            "abstract_length": 2173,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                444
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC2714556",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 129,
+            "abstract_length": 1582,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                812
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8907244",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 96,
+            "abstract_length": 1769,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                405
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    635
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5903938",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 89,
+            "abstract_length": 1181,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3374947",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 76,
+            "abstract_length": 1169,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "following transcripts brca2 nm 000059 3 fancd2 nm 033084 3 fanci nm 001113378 1 fancl nm 001114636 1 nf not found sample gene mut 1 effect 1 mut 2 effect 2 note unc1 brca2 c t8067a p c2689x c"
+            ],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                204
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4407692",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 83,
+            "abstract_length": 1940,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "c2689x w31x 6503deltt q1408x 2506deltt the prevalence of breast cancer susceptibility gene 1 brca1 and brca2 mutations by patient demographics and baseline disease characteristics abbreviations aj"
+            ],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                199
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9627733",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 91,
+            "abstract_length": 3536,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    748
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6649818",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 100,
+            "abstract_length": 1198,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    755
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6872491",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 60,
+            "abstract_length": 1781,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    337
+                ]
+            ]
+        }
+    ],
+    "narrative_summary": "The BRCA2 c.8067T>A (p.Cys2689*) variant, also reported as C2689X or Cys2689Ter, creates a premature stop codon in the BRCA2 protein and has been observed in individuals with hereditary breast and ovarian cancer as well as other malignancies such as prostate cancer and melanoma [PMC9024354]. Clinical evidence includes a co\u2011segregation analysis that yielded a likelihood ratio of 12.24 in favor of pathogenicity, indicating strong familial segregation with disease [PMC2714556]. The same variant was classified as pathogenic in a Brazilian breast\u2011cancer cohort and was absent from both the Brazilian non\u2011cancer control set and the gnomAD population databases, underscoring its rarity and disease association [PMC8907244]. Additional reports have identified the truncating change in diverse cancer screening programs, including a South African cohort of nearly 3,000 patients and a diagnostic workflow for Fanconi anemia, further supporting its relevance to cancer predisposition [PMC9024354, PMC3374947]. No experimental functional assays were presented in the extracted literature, and computational predictive scores were not reported. Population data consistently show the variant to be extremely rare or absent in large reference datasets, reinforcing its likely deleterious nature [PMC8907244]. Taken together, the convergent clinical classifications, segregation data, and absence from population controls provide robust evidence that the BRCA2 p.Cys2689* truncating variant is pathogenic and contributes to hereditary cancer risk.",
+    "structured_summary": {
+        "overall_pathogenicity": "pathogenic",
+        "pathogenicity_counts": {
+            "supports benignity": 0,
+            "supports pathogenicity": 2,
+            "uncertain": 0
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...NP_000050.3: p.Arg2645AsnfsTer3 Male BC, BC, OVC, prostate cancer, melanoma 17 176 rs80359688 NM_000059.4(BRCA2): c.7955T>G NP_000050.3: p.Val2952Gly BC 17 2 rs1555286868 NM_000059.4(BRCA2): **c.8067T>A** NP_000050.3: **p.Cys2689Ter** BC 18 4 **rs80359046** NM_000059.4(BRCA2): c.8165C>G NP_000050.3: p.Thr2722Arg BC 18 1 rs80359062 NM_000059.4(BRCA2): c.8167G>C NP_000050.3: p.Asp2723His BC 18 3 rs41293511 NM_000059.4(BRCA2): c.8168A>T NP_000050.3:...",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study screened nearly 3,000 South African breast and ovarian cancer patients, identified 481 likely\u2011pathogenic BRCA1/2 variants, and catalogued recurrent and novel mutations\u2014including the BRCA2 p.Cys2689Ter truncating variant\u2014across diverse ethnic groups.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9024354",
+            "title": "Prevalence of Clinically Relevant Germline BRCA Variants in a Large Unselected South African Breast and Ovarian Cancer Cohort: A Public Sector Experience",
+            "relevance_score": 1.0,
+            "pub_year": 2022,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Gene HGVS1 traditional2 protein # fam3 LR per family4 LR-variant5 BRCA1 c.81-6T>A IVS2-6T>A p.Cys27fsX1 1 6.4287(5+; 3+; 1-; 3-) 6.4287 BRCA1 c.213-12A>G IVS5-12A>G p.Arg71fsX20 1 10.2701(1+; 3+; 6-) 10.2701 BRCA1 c.1292dup 1411insT p.Leu431PhefsX5 2 1.7312(2+; 1+; 1-) 3.3715 1.9475(1+; 2+; 1-) BRCA1 c.2193_2197del 2312delAGAAG p.Glu733ThrfsX5 1 4.7089(2+; 1+; 4-) 4.7089 BRCA1 c.5095C>T 5214C>T p.Arg1699Trp 3 22.8602(3+; 6+; 2-; 4-) 402.164 2.2720(1+; 1+; 1-) 7.7431(2+; 1+) BRCA2 c.2806_2809del 3034delAAAC p.Ala938ProfsX21 1 1.9901(2+; 1+; 1-) 1.9901 BRCA2 c.3269del 3497delT p.Met1090SerfsX14 16 87.46(5+) 87.46 BRCA2 c.3599_3560del 3827delTG p.Cys1200X 1 1.1876(1+; 3+; 1-) 1.1876 BRCA2 **c.8067T>A** 8295T>A p.Cys2689X 1 12.2424(3+; 1+; 4-) 12.2424 BRCA2 c.8773C>T 9001C>T p.Gln2925X 1 1.8827(1+; 3+) 1.8827",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The article describes a simple co\u2011segregation analysis method and reports a likelihood ratio of 12.24 for BRCA2 p.Cys2689X, indicating evidence in favor of pathogenicity for this variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC2714556",
+            "title": "A simple method for co-segregation analysis to evaluate the pathogenicity of unclassified variants; BRCA1 and BRCA2 as an example",
+            "relevance_score": 0.9,
+            "pub_year": 2009,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Supplementary Table 2. Allele frequency of pathogenic and probably pathogenic variants according to Brazilian and gnomAD genomic databases\nColumn names:\nGene|Transcript|CCDS|Chrom|Pos|Start|Ref|Alt|HGVS|Effect|Type|Classification|Copies|Brazilian_AF non cancer (N=18919)|gnomAD_AF|gnomAD_AF non cancer|gnomAD_AF_afr|gnomAD_AF_amr|gnomAD_AF_eas|gnomAD_AF_nfe|gnomAD_AF_sas|gnomAD_non cancer AF_afr|gnomAD_non cancer AF_amr|gnomAD_non cancer AF_eas|gnomAD_non cancer AF_nfe|gnomAD_non cancer AF_sas\nRows:\nBRCA2|NM_000059.3|CCDS9344|13|32937406|**32937406|T|A**|**c.8067T>A**|p.Cys2689*|stop_gained|pathogenic|1|0|0|0|0|0|0|0|0|0|0|0|0|0",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study identifies the BRCA2 p.Cys2689* (c.8067T>A) stop\u2011gain variant as pathogenic in the Brazilian breast cancer cohort.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8907244",
+            "title": "Detection of germline variants in Brazilian breast cancer patients using multigene panel testing",
+            "relevance_score": 0.86,
+            "pub_year": 2022,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "following transcripts: BRCA2, NM_000059.3; FANCD2, NM_033084.3; FANCI, NM_001113378.1; FANCL, NM_001114636.1. *NF = not found. Sample Gene Mut 1 Effect 1 Mut 2 Effect 2 Note Unc1 BRCA2 **c.T8067A** **p.C2689X** c",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study presents an NGS\u2011based diagnostic workflow for Fanconi anemia and reports the detection of a BRCA2 nonsense variant (c.T8067A, p.C2689X) in a patient cohort.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC3374947",
+            "title": "Diagnosis of Fanconi Anemia: Mutation Analysis by Next-Generation Sequencing",
+            "relevance_score": 0.37,
+            "pub_year": 2012,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "**C2689X** W31X 6503delTT Q1408X 2506delTT The Prevalence of Breast Cancer-Susceptibility Gene 1 (BRCA1) and BRCA2 Mutations by Patient Demographics and Baseline Disease Characteristics Abbreviations: AJ",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "Women with DCIS who have a family history of ovarian cancer or a BRCAPRO probability \u226510% show a high rate of BRCA1/2 mutations, indicating they are appropriate candidates for genetic testing despite the absence of invasive disease.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC4407692",
+            "title": "Predictive Factors for BRCA1/BRCA2 Mutations in Women With Ductal Carcinoma In Situ",
+            "relevance_score": 0.36,
+            "pub_year": 2011,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nSupplementary Table SII | Detailed overview of the samples used for clinical validation of ETS-PGT approach.,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Unnamed: 8,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12\nRows:\n\"Breast-ovarian cancer, familial, 2\",AD,612555,BRCA2,600185,Chr13(GRCh37):g.32929409_32929410del,NM_000059.3(BRCA2):c.7419_7420del,p.(Cys2473*),2,0,8,0,8 \"Breast-ovarian cancer, familial, 2\",AD,612555,BRCA2,600185,Chr13(GRCh37):g.**32937406T>A**,NM_000059.4(BRCA2):**c.8067T>A**,p.(Cys2689*),1,4,0,4,0 Brown-Vialetto-Van Laere syndrome 2,AR,614707,SLC52A2,607882,\"Chr8(GRCh37):g.145584264T>C Chr8(GRCh37):g.145583300dup\",\"NM_024531.5(SLC52A2):c.1016T>C NM_024531.5(SLC52A2):c.148dup",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The paper presents an embryo\u2011tracking system that enhances the safety, efficiency, and scalability of sequencing\u2011based preimplantation genetic testing without affecting the genomic profile of embryos.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9627733",
+            "title": "Embryo tracking system for high-throughput sequencing-based preimplantation genetic testing",
+            "relevance_score": 1.0,
+            "pub_year": 2022,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\n!1 SUPPLEMENTARY MATERIALS The landscape of somatic genetic alterations in breast cancers from CHEK2 germline mutation carriers Mandelk er et al. Supplementary Methods Supplementary Figures 1 -7 Supplementary Table s 1-3 !2\nRows:\nCarcinoma BRCA2 c.5286T>A; p.Y1762* Nonsense PD3945 ICGC (Nik-Zainal et al.) 59Positive Negative IIIInvasive Ductal Carcinoma BRCA2 c.6065C>G; p.S2022* Nonsense PD4604 ICGC (Nik-Zainal et al.) 49Positive Negative IIIInvasive Lobular Carcinoma BRCA2 **c.8067T>A**; **p.C2689*** Nonsense PD23558 ICGC (Nik-Zainal et al.) 56Positive Negative IIIInvasive Ductal Carcinoma BRCA2 c.8314G>T; p.E2772* Nonsense PD4115 ICGC (Nik-Zainal et al.) 54Positive Negative IIIInvasive Ductal Carcinoma BRCA2 c.9294C>A; p.Y3098*",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article characterizes the somatic mutation landscape of breast cancers from CHEK2 germline mutation carriers, noting hormone\u2011receptor positivity and lack of HRD signatures, and includes a table listing various somatic alterations such as a BRCA2 nonsense variant (p.C2689*).', ",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6649818",
+            "title": "The Landscape of Somatic Genetic Alterations in Breast Cancers from CHEK2 Germline Mutation Carriers",
+            "relevance_score": 0.3,
+            "pub_year": 2019,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nsampleId|cancerType|gene|coordinate|category|mutationClass|pHGVS|biallellicInTumor|variantLostInTumor|wildTypeLostInTumor|germlineVariants|somaticVariants|highConfidenceGenePanel|Category\nRows:\nHMF002295A|Skin|BRCA2|13:**32937406T>A**|Nonsense|Nonsense|p.Cys2689*|||||||gene in 29 core cancer predisposition gene list",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study presents a large pan\u2011cancer whole\u2011genome analysis of 2,520 metastatic tumours, revealing driver mutations\u2014including a nonsense BRCA2 p.Cys2689* variant\u2014in core cancer predisposition genes and highlighting the potential for genomic profiling to guide therapy.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6872491",
+            "title": "Pan-cancer whole-genome analyses of metastatic solid tumours",
+            "relevance_score": 0.15,
+            "pub_year": 2019,
+            "data_sources": [
+                "suppl"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 2211,
+            "output": 555
+        },
+        {
+            "input": 2413,
+            "output": 888
+        },
+        {
+            "input": 2624,
+            "output": 471
+        },
+        {
+            "input": 1797,
+            "output": 178
+        },
+        {
+            "input": 1829,
+            "output": 592
+        },
+        {
+            "input": 2015,
+            "output": 580
+        },
+        {
+            "input": 2514,
+            "output": 656
+        },
+        {
+            "input": 2086,
+            "output": 748
+        },
+        {
+            "input": 1895,
+            "output": 683
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 3622,
+        "output": 900
+    },
+    "total_time": 47.78
+}

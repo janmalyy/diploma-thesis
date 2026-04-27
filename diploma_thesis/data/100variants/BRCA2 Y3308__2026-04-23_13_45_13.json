@@ -1,0 +1,890 @@
+{
+    "before_pruning": {
+        "articles_in_total": 32,
+        "only_medline_count": 1,
+        "only_pmc_count": 11,
+        "only_suppl_count": 19,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 32,
+        "only_medline_count": 1,
+        "only_pmc_count": 11,
+        "only_suppl_count": 19,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "variant": "BRCA2 Y3308*",
+    "time_to_process_articles": 21.66,
+    "context_length": 57006,
+    "after_removal": {
+        "articles_in_total": 17,
+        "only_medline_count": 1,
+        "only_pmc_count": 11,
+        "only_suppl_count": 4,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "18593900",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 96,
+            "abstract_length": 1557,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7174002",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 182,
+            "abstract_length": 1796,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                606,
+                421
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8365963",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 120,
+            "abstract_length": 2501,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                400
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5677944",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 138,
+            "abstract_length": 2076,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1379
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10878975",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 100,
+            "abstract_length": 1243,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                1359,
+                1938
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4959813",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 74,
+            "abstract_length": 1082,
+            "number_of_unmatched_snippets": 2,
+            "unmatched_snippets": [
+                "analysis quantifying the overall levels of chromatin bound mre11 per individual nucleus in wt and brca2y3308x cells treated as indicated a u arbitrary units supplementary material author information",
+                "have higher levels of chromatin bound mre11 a representative image of a brca2 hypomorph mouse es denoted brca2y3308x cell showing mre11 foci red in s phase identified by pcna foci green dna"
+            ],
+            "number_of_paragraphs": 6,
+            "paragraphs_lengths": [
+                1992,
+                1158,
+                0,
+                422,
+                203,
+                199
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC2640324",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 67,
+            "abstract_length": 985,
+            "number_of_unmatched_snippets": 18,
+            "unmatched_snippets": [
+                "therefore tested these three truncations in our assay we obtained viable es cell clones expressing an y3308x transgene as confirmed by rt pcr fig 1f but observed 5\u201310 fold reduction in the number of hatr",
+                "a defect in rad51 mediated dna repair in y3308x cells one of the hallmarks of brca2 deficient cells is a marked increase in genomic instability predisposing them to tumorigenesis22 karyotyping",
+                "we therefore concluded that like y3308x e3309x was a deleterious variant comparing the effects of r3051q and r3052w variants finally we tested the impact of different amino acid substitutions",
+                "2 000 dilution ecl plus western blotting detection system amersham was used for chemiluminescent detection genotoxin sensitivity assay 8 000 es cells per well 16 000 cells per well for y3308x",
+                "mutant phenotypes revealed by y3308x and other brca2 variants in es cells a western blot analysis of nuclear n and cytoplasmic c protein fractions showing abnormal subcellular localization of",
+                "d2723h mutant brca2 protein hsp90 and oct1 were used as controls to show purity of cytoplasmic and nuclear fractions respectively b actin is used as a loading control b y3308x mutant is defective",
+                "relative to the total number of colonies tested c d radiation induced rad51 foci formation is severely compromised in y3308x mutant es cells rad51 foci are shown in green \u03b3 h2ax foci marking dna",
+                "each case for y3308x mutant and the wild type wt control respectively f \u2013 h genomic instability revealed by karyotypic analysis of y3308x cells shown are representative metaphases of the wild type",
+                "wt control cells f and y3308x g arrow shows a radial structure arrowheads indicate chromatid gaps h histogram showing quantitative analysis of chromosomal aberrations in untreated wt and",
+                "y3308x es cells 100 metaphases were counted twice and scored for different types of chromosomal aberrations error bars in e and h indicate standard deviation scale bar in c d f and g",
+                "right variants after cre expression f es cells carrying r3052q variant are moderately sensitive to mmc r3052q sensitivity is intermediate between wild type cells and y3308x mutation carriers",
+                "revealed by y3308x and other brca2 variants in es cells a western blot analysis of nuclear n and cytoplasmic c protein fractions showing abnormal subcellular localization of d2723h mutant brca2",
+                "protein hsp90 and oct1 were used as controls to show purity of cytoplasmic and nuclear fractions respectively b actin is used as a loading control b y3308x mutant is defective in homologous",
+                "number of colonies tested c d radiation induced rad51 foci formation is severely compromised in y3308x mutant es cells rad51 foci are shown in green \u03b3 h2ax foci marking dna damage are shown in",
+                "pink nuclei are stained with dapi in blue e quantification of rad51 and \u03b3 h2ax foci before \u2212ir and after ir ionizing radiation 30 and 40 nuclei have been counted in each case for y3308x",
+                "mutant and the wild type wt control respectively f \u2013 h genomic instability revealed by karyotypic analysis of y3308x cells shown are representative metaphases of the wild type wt control cells",
+                "f and y3308x g arrow shows a radial structure arrowheads indicate chromatid gaps h histogram showing quantitative analysis of chromosomal aberrations in untreated wt and y3308x es cells 100",
+                "after cre expression f es cells carrying r3052q variant are moderately sensitive to mmc r3052q sensitivity is intermediate between wild type cells and y3308x mutation carriers evaluation of brca2"
+            ],
+            "number_of_paragraphs": 23,
+            "paragraphs_lengths": [
+                866,
+                1315,
+                771,
+                774,
+                369,
+                210,
+                194,
+                200,
+                197,
+                199,
+                201,
+                200,
+                203,
+                197,
+                193,
+                196,
+                199,
+                195,
+                198,
+                197,
+                201,
+                199,
+                200
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC2536704",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 95,
+            "abstract_length": 1507,
+            "number_of_unmatched_snippets": 2,
+            "unmatched_snippets": [
+                "on brca2 function mmc and etoposide sensitivity in the syval brca2\u03b4ex11 y3308x had profound sensitivity to mmc and etoposide 20 and 10 fold respectively whereas brca2\u03b4ex11 y3308y did not differ",
+                "sensitive than controls table 1 rad51 focus formation in the syval rad51 focus formation was drastically diminished in untreated and treated brca2\u03b4ex11 y3308x a negative assay result but robust in"
+            ],
+            "number_of_paragraphs": 3,
+            "paragraphs_lengths": [
+                808,
+                199,
+                201
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5559773",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 108,
+            "abstract_length": 1263,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1172
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6549572",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 47,
+            "abstract_length": 1288,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                666
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4979061",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 57,
+            "abstract_length": 1318,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "disrupted by olaparib supplementary fig 5c suggests that the n terminal domain might be auto parylated consistent with previous studies2 we observed rescue of the fork degradation in y3308x brca2"
+            ],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                2029,
+                200
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7575062",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 87,
+            "abstract_length": 1469,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                615,
+                678
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7722754",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 114,
+            "abstract_length": 1641,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "0 0022 0 0590 0 f c3233wfs 0 9996 0 9744 1 nf d2489g 1 0 1672 1 nf y3308x 1 0 9392 1 nf the estimated pifs and associated 95 interval estimates derived from the combined model are plotted in fig"
+            ],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                410,
+                203
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7713129",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 74,
+            "abstract_length": 1231,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11021554",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 150,
+            "abstract_length": 654,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5803202",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 82,
+            "abstract_length": 1246,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11211533",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 112,
+            "abstract_length": 1982,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        }
+    ],
+    "narrative_summary": "The BRCA2 Y3308* (c.9924C>G, p.Tyr3308Ter) is a truncating nonsense mutation that creates a premature stop codon at amino\u2011acid 3308, placing it within the C\u2011terminal RAD51\u2011binding domain of the protein. It has been reported in families with hereditary breast, ovarian and pancreatic cancer and is listed as a high\u2011risk pathogenic allele in clinical classification schemes [PMC7174002].\nClinical data consistently describe Y3308* as a deleterious variant. The German Consortium for Hereditary Breast and Ovarian Cancer classifies it as a Class\u202f5 high\u2011risk mutation, and it has been identified as a pathogenic truncation in participants of the Australian Pancreatic Cancer Screening Program [PMC8365963]. A case report of a 55\u2011year\u2011old woman with a strong family history of breast and pancreatic cancer also documents inheritance of the Y3308* allele [PMC6549572]. No studies in the set present evidence of benign or uncertain clinical significance.\nFunctional investigations uniformly demonstrate loss of BRCA2 activity. In a syngeneic variance library, cells harboring the Y3308* allele showed loss of RAD51 focus formation and marked hypersensitivity to mitomycin\u202fC and etoposide, indicating a null phenotype [18593900]. Mouse embryonic stem\u2011cell assays revealed absent homologous\u2011recombination repair, failure to form radiation\u2011induced RAD51 foci, and extensive chromosomal instability in Y3308* cells, supporting a deleterious effect [PMC2640324]. Parallel human cell studies using engineered BRCA2\u2011deficient lines confirmed severe MMC sensitivity, loss of RAD51 foci, and impaired gene targeting for the Y3308* variant [PMC2536704]. CRISPR\u2011based statistical modeling showed that de novo stop codons at Y3308* sensitize cells to PARP inhibition, consistent with pathogenicity [PMC10878975]. Additional work demonstrated replication\u2011fork degradation and synthetic lethality phenotypes in Y3308*\u2011expressing cells, further confirming functional deficiency [PMC4959813, PMC4979061].\nPopulation data note that the Y3308* truncation has been observed across Asian, European, Sub\u2011Saharan African and African\u2011American cohorts, although precise allele frequencies are not provided [PMC5559773]. Computational classification using mouse embryonic stem\u2011cell functional assay data assigns a high probability of pathogenicity to Y3308* (Bayes score >1) [PMC7722754].\nTaken together, the convergent clinical classifications, segregation in high\u2011risk families, and extensive loss\u2011of\u2011function experimental evidence establish BRCA2 Y3308* as a pathogenic, high\u2011risk truncating variant. No contradictory evidence was identified in the available literature.",
+    "structured_summary": {
+        "overall_pathogenicity": "pathogenic",
+        "pathogenicity_counts": {
+            "supports benignity": 0,
+            "supports pathogenicity": 35,
+            "uncertain": 0
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "The enormous scope of natural human genetic variation is now becoming defined. To accurately annotate these variants, and to identify those with clinical importance, is often difficult to assess through functional assays. We explored systematic annotation by using homologous recombination to modify a native gene in hemizygous (wt/Deltaexon) human cancer cells, generating a novel syngeneic variance library (SyVaL). We created a SyVaL of BRCA2 variants: nondeleterious, proposed deleterious, deleterious, and of uncertain significance. We found that the null states BRCA2(Deltaex11/Deltaex11) and BRCA2(Deltaex11/**Y3308X**) were deleterious as assessed by a loss of RAD51 focus formation on genotoxic damage and by acquisition of toxic hypersensitivity to mitomycin C and etoposide, whereas BRCA2(Deltaex11/Y3308Y), BRCA2(Deltaex11/P3292L), and BRCA2(Deltaex11/P3280H) had wild-type function. A proposed phosphorylation site at codon 3291 affecting function was confirmed by substitution of an acidic residue (glutamate, BRCA2(Deltaex11/S3291E)) for the native serine, but in contrast to a prior report, phosphorylation was dispensable (alanine, BRCA2(Deltaex11/S3291A)) for BRCA2-governed cellular phenotypes. These results show that SyVaLs offer a means to comprehensively annotate gene function, facilitating numerical and unambiguous readouts. SyVaLs may be especially useful for genes in which functional assays using exogenous expression are toxic or otherwise unreliable. They also offer a stable, distributable cellular resource for further research.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study functionally characterizes the BRCA2 Y3308* truncating variant and demonstrates it causes loss of DNA repair function, indicating a deleterious effect.",
+            "uncertainties_or_limitations": null,
+            "article_id": "18593900",
+            "title": "A syngeneic variance library for functional annotation of human variation: application to BRCA2.",
+            "relevance_score": 1.0,
+            "pub_year": 2008,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "The following should be categorised as Class5 in BRCA1/2 : all truncating BRCA1 variants up to the last mutation unequivocally identified as pathogenic at amino acid position 1853 and all truncating BRCA2 variants up to amino acid position 3308, **c.9924C>G** . See ENIGMA BRCA1,2 functional domains, Tables 3 and 4 . Caution: Be aware of the potential impact of NMD; the last 50 bp in the penultimate exon and variants in the last exon usually are usually not subject to NMD. The predictive value of RNA analysis of blood may be limited as it does not involve the target tissue.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "...(Meeks et al., 2016), demonstrating that residues at and downstream of 3327 are likely dispensable.Position 3308 is implicated as clinically important by the observation that a nonsense variant **c.9924C>G** (**p.Tyr3308Ter**) is recognized as a high-risk pathogenic variant with known functional relevance ([Vallee et al., 2016]; Bayes score 1122 : 1 from a single large kConFab family, Spurdle unpublished data). There is...",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The article\u2019s classification criteria designate the BRCA2 truncating variant Y3308* (c.9924C>G) as a Class\u202f5 high\u2011risk pathogenic mutation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7174002",
+            "title": "Criteria of the German Consortium for Hereditary Breast and Ovarian Cancer for the Classification of Germline Sequence Variants in Risk Genes for Hereditary Breast and Ovarian Cancer",
+            "relevance_score": 1.0,
+            "pub_year": 2020,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...n = 1 Female - 1FDR; 1SDR c.9294C > G Pathogenic; Truncating mutation Kindred 1 n = 1 Male - 1FDR n = 1 Female Dx 46 breast 1FDR c.9371A > T Pathogenic; Missense n = 1 Female Dx 44 breast 1SDR c.**9924C > G** Pathogenic; Truncating mutation Kindred 1 n = 1 Female Dx 43 breast 2TDR n = 1 Female Dx 33/40 breast 1SDR; 1TDR Exon 14-16 deletion Pathogenic; Deletion n = 1 Male - 1FDR CDKN2A c.47 T > G...",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study identified new germline pathogenic BRCA2 truncating variants, including Y3308* (c.9924C>G), among high\u2011risk participants in the Australian Pancreatic Cancer Screening Program.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8365963",
+            "title": "Significant detection of new germline pathogenic variants in Australian Pancreatic Cancer Screening Program participants",
+            "relevance_score": 0.8,
+            "pub_year": 2021,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "We then assessed the overall occurrence of germline and somatic nonsense mutations in the FA pathway predicted by TOBI (Fig. 5a). In bladder cancer, TOBI predicted these variants in 11% (11/100) of patients. Less than 2.5% of patients in any other cancer type had predicted nonsense FA variants. True somatic nonsense variants occurred in 6% of BLCA cases, affecting genes BRCA2, FANCM, FANCE, REV3L, and SLX4. Germline nonsense variants were predicted in 5% of BLCA cases, affecting BRCA2, FANCM, and FANCD2. Several of these germline variants showed potential loss of heterozygosity based on increased VAF in tumor DNA compared to germline DNA (Fig. 5b: FANCM R1931*, BRCA2 **Y3308***). Of note, BRCA2 variant **Y3308*** has been associated with hereditary colorectal and breast cancer. Mice ES cells with BRCA2 **Y3308*** mutations showed hypersensitivity to ionizing radiation and crosslinking agents, as well as decreased homologous recombination efficiency. Additionally, FANCM R1931* was associated with increased breast cancer risk and deficient DNA repair. Fig. 5c and Supplementary Table 11 describe published somatic copy number alterations and predicted nonsynonymous variants within the FA pathway for this BLCA cohort.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study reports that BRCA2 Y3308* germline nonsense variants occur in bladder cancer patients, are linked to loss of heterozygosity, and exhibit functional deficits in DNA repair, suggesting a pathogenic role and possible hereditary cancer predisposition.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5677944",
+            "title": "Identification of potentially oncogenic alterations from tumor-only samples reveals Fanconi anemia pathway mutations in bladder carcinomas",
+            "relevance_score": 0.51,
+            "pub_year": 2017,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Our conclusion that amino acids 3301 and 3302 are critical amino acids in BRCA2 is again highly consistent with biochemical data that mapped the amino acids 3,280 to 3,305 in BRCA2 to be required for the recruitment of RAD51 (ref. ) and with mouse data that map this interaction to the very same conserved region (P3301 Homo sapiens corresponds to P3224 Mus musculus (Fig. 6b)). To further corroborate our conclusion, we deployed our statistical model to evaluate the effect of in-frame mutations within the RAD51 binding domain (Fig. 6b) on BRCA2 function. Using the aforementioned statistical method for quantifying the effect of mutations in individual sites confirmed the importance of amino acids 3,293-3,302 and revealed overlap between evolutionarily conserved amino acids in this region (Extended Data Fig. 7a). Importantly, in-frame mutations that removed the 3,300-3,302 PPR motif and de novo stop mutations, S3303X, C3304X and **Y3308X** also rendered cells sensitive to PARPi (Extended Data Fig. 7b-e), which is consistent with the clinVar annotation and previous reports. Thus, our data correlate the disruption of this well-mapped interaction domain as the most C-terminal frame-shift mutations that result in PARPi sensitivity.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "a, Functional score of amino acid in the BRCA2 RAD51 binding domain encoded in exon 27 calculated by a statistical model, with CRISPR cut site labeled. Only scores of amino acids covered by one amino acid deletions are plotted. b, The aligned allele profile of <=4 amino acids in-frame deletions around PPR (3300-3302) and heatmaps of allele frequency changes upon the treatment of irradiation or PARPi. Alleles were grouped by the amino acid in PPR motif deleted. Allele frequencies of each mutation were normalized to the corresponding allele frequencies in mock. c, Categorized allele frequency changes of alleles in b. Boxes showing quartiles and Whiskers showing the 10th and 90th percentile. p, FDR-corrected two-tailed student's t-test. n, number of different alleles in each group. d, The aligned allele profile of de novo stops and frame-shift mutation that result in stop codons between S3303 and Y3308 and heatmaps of allele frequency changes upon the treatment of irradiation or PARPi as shown in b. Note: We identified three de novo stop mutations S3303X, C3304X and **Y3308X**. In each case these de novo stops depleted after PARPi suggesting that de novo stop codons between 3302 and 3308 have reduced fitness suggesting that the presence of amino acids (even it not generated by the BRCA2 frame) between amino acid 3302 and 3308 contributes to BRCA2 protein function. These findings are consistent with a pathogenic de novo stop codon identified at amino acid 3308. e, Categorized allele frequency changes of alleles in d upon PARP inhibition. p, two-tailed student's t-test. n, number of measurements in each group. The responses of each allele to Niraparib or Olaparib were considered as separate measurements.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The article provides functional evidence that the BRCA2 Y3308* stop mutation impairs protein function and sensitizes cells to PARP inhibition, supporting its classification as pathogenic.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10878975",
+            "title": "Functional annotation of variants of the BRCA2 gene via locally haploid human pluripotent stem cells",
+            "relevance_score": 0.46,
+            "pub_year": 2023,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Loss of Brca2 in embryonic stem (ES) cells is incompatible with cell survival. To test whether PTIP deficiency could promote ES cell survival we knocked-down PTIP in PL2F7 mouse ES cells, that have one null and one conditional allele of Brca2 (Brca2f/- Fig. 2a and Extended Data Fig. 4a). After CRE transfection in Brca2f/- ES cells and selection in HAT medium, very few resistant colonies were obtained and these remained Brca2f/- rather than Brca2-null, reflecting the essential role of BRCA2 in ES cell viability (Fig. 2b). Strikingly, 12.5% and 5% of the HAT-resistant colonies were Brca2-null when targeted by Ptip shRNAs #1 and #2 respectively (Fig. 2b and Extended Data Fig. 4b). Consistent with our analysis of Brca2-/-Ptip-/- B cells (Fig. 1g), irradiation (IR)-induced RAD51 foci formation was defective in Brca2/Ptip-deficient ES cells (Fig. 2c,d). Moreover, while efficient gene targeting to the pim-1 locus was observed in WT ES cells using a promoterless hygromycin cassette (100% of the hygromycin-resistant WT clones were targeted integrations), we did not observe a single targeted clone in Brca2/Ptip-deficient ES cells (Fig. 2e) indicative of defective HR. Similarly, the synthetic HR reporter substrate DR-GFP revealed impaired HR in Brca2/Ptip-deficient ES cells (Extended Data Fig. 4c). Nevertheless, stalled RFs in PTIP-deficient Brca2-/- ES cells displayed RF protection when compared with Brca2 hypomorphic mutant ES cells (**Y3308X**) (Fig. 2f). Thus, deficiency in PTIP protects RFs from degradation and rescues the lethality of Brca2 knockout ES cells without restoring DSB-induced HR.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "It has been suggested that HR at stalled forks is regulated differently from HR at DSBs. As a readout for HR at RFs, we assayed for sister chromatid exchanges (SCE) in WT and **Y3308X** ES cells. Although **Y3308X** cells show undetectable levels of IR-induced RAD51 formation and loss of targeted integration, indicative of a defect in DSB-induced HR, the basal frequency of SCE was normal in **Y3308X** cells (Extended Data Fig. 4d). Moreover, RAD51 was enriched on nascent DNA in **Y3308X** during normal replication and also in presence of HU as measured by iPOND (isolation of Proteins On Native DNA) analysis (Extended Data Fig. 4e). We also observed similar frequencies of spontaneously generated and DNA damage-induced SCEs in WT, Brca2-null and Brca2/Ptip-deficient cells B cells (Extended Data Fig. 4f). Thus, in contrast to RAD51 which is required for DSB- and replication-associated HR, BRCA2 appears to be dispensable for HR that uses the nascent sister chromatid to repair DNA lesions during replication.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "(a) Representative image of a Brca2 hypomorph mouse ES (denoted **Brca2Y3308X**) cell showing MRE11 foci (red) in S-phase (identified by PCNA foci (green). DNA was stained with DAPI (blue). (b) High-throughput microscopy analysis quantifying the overall levels of chromatin-bound MRE11 per individual nucleus in WT and **Brca2Y3308X** cells treated as indicated (a.u., arbitrary units).",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "analysis quantifying the overall levels of chromatin-bound MRE11 per individual nucleus in WT and **Brca2Y3308X** cells treated as indicated (a.u., arbitrary units). Supplementary Material Author Information",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "have higher levels of chromatin-bound MRE11 (a) Representative image of a Brca2 hypomorph mouse ES (denoted **Brca2Y3308X**) cell showing MRE11 foci (red) in S-phase (identified by PCNA foci (green). DNA",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study shows that the BRCA2 Y3308* (Y3308X) hypomorphic variant impairs replication\u2011fork protection and homologous\u2011recombination repair, indicating a loss\u2011of\u2011function effect that contributes to chemoresistance in BRCA\u2011deficient cells.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC4959813",
+            "title": "Replication Fork Stability Confers Chemoresistance in BRCA-deficient Cells",
+            "relevance_score": 0.46,
+            "pub_year": 2016,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "In an effort to demonstrate the ability to perform various functional assays on Brca2-deficient ES-cells, we generated a known deleterious mutation that results in a protein truncated at codon 3308 (**Y3308X**)8. We expected this mutation to be a hypomorphic allele based on the phenotype of mice that have a similar truncating mutation in Brca2 (exon 27-deletion)14,15. Evaluation of the **Y3308X** variant in our assay was also relevant to a similar truncation involving the next codon, E3309X, found in a patient with ovarian cancer (personal communication, Dr. William Foulkes). Based on the deleterious nature of the **Y3308X** variant, E3309X was expected to be deleterious. However, existence of a known polymorphism a few amino acids downstream, K3326X16, added ambiguity to the interpretation. We, therefore, tested these three truncations in our assay.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "Because of the known role of BRCA2 in homologous recombination15, we tested the efficiency of homologous recombination in **Y3308X** mutant ES-cells using two gene-targeting vectors. One was designed to target a genomic locus located 150 kb upstream of Brca1 (Supplementary Figure 6 a,b online) and contained a negative selection marker (diphtheria toxin gene, DT). The second construct, which targeted the Rosa26 locus, lacked a negative selection marker (Supplementary Figure 6 c,d online). Although the control cells exhibited a targeting efficiency within the range of normal experimental variation, we did not observe a single correctly targeted clone in cells expressing **Y3308X** BRCA2 (Fig. 2b), suggesting a defect in the homologous recombination process. BRCA2 plays a key role in the recruitment of RAD51 to the sites of DNA repair21, therefore, we examined the effect of the **Y3308X** mutation on radiation-induced RAD51 foci formation. We observed on average 32 RAD51 foci per cell after irradiation (10 Gy) in control cells whereas none or occasionally only one or two RAD51 foci could be found in the mutant cells (Fig. 2 c\u2013e). These results provide additional evidence demonstrating a defect in RAD51-mediated DNA repair in **Y3308X** cells.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "One of the hallmarks of BRCA2-deficient cells is a marked increase in genomic instability predisposing them to tumorigenesis22. Karyotyping revealed on average 68 chromosomal aberrations such as chromatid gaps and breaks, radial structures and fragmented chromosomes per 100 mutant cells versus 10.5 aberrations per 100 control cells (Fig. 2 f\u2013h). The extent of genomic instability in **Y3308X** mutant cells strongly suggests that this variant is likely to predispose a cell to tumorigenesis. Interestingly, we found elevated levels of p53 and p21 proteins in unirradiated mutant cells (Supplementary Figure 4c online). This elevated DNA damage response may explain the defects in cell proliferation and plating efficiency of the **Y3308X** mutant cells.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": ", therefore, tested these three truncations in our assay. We obtained viable ES-cell clones expressing an **Y3308X** transgene as confirmed by RT-PCR (Fig. 1f) but observed 5\u201310 fold reduction in the number of HATr",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "a defect in RAD51-mediated DNA repair in **Y3308X** cells. One of the hallmarks of BRCA2-deficient cells is a marked increase in genomic instability predisposing them to tumorigenesis22. Karyotyping",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "). We, therefore, concluded that, like **Y3308X**, E3309X was a deleterious variant. Comparing the effects of R3051Q and R3052W variants Finally, we tested the impact of different amino acid substitutions",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": ". Mutant phenotypes revealed by **Y3308X** and other BRCA2 variants in ES-cells (a) Western blot analysis of nuclear (N) and cytoplasmic (C) protein fractions showing abnormal subcellular localization of",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "D2723H mutant BRCA2 protein. HSP90 and Oct1 were used as controls to show purity of cytoplasmic and nuclear fractions, respectively. b-actin is used as a loading control. (b) **Y3308X** mutant is defective",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "relative to the total number of colonies tested. (c, d) Radiation-induced RAD51 foci formation is severely compromised in **Y3308X** mutant ES-cells. RAD51 foci are shown in green, \u03b3-H2AX foci marking DNA",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "each case for **Y3308X** mutant and the wild-type (WT) control, respectively. (f \u2013 h) Genomic instability revealed by karyotypic analysis of **Y3308X** cells. Shown are representative metaphases of the wild-type",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "(WT) control cells (f) and **Y3308X** (g). Arrow shows a radial structure, arrowheads indicate chromatid gaps. (h) Histogram showing quantitative analysis of chromosomal aberrations in untreated WT and",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "(right) variants after Cre expression. (f) ES-cells carrying R3052Q variant are moderately sensitive to MMC. R3052Q sensitivity is intermediate between wild type cells and **Y3308X** mutation carriers",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "revealed by **Y3308X** and other BRCA2 variants in ES-cells (a) Western blot analysis of nuclear (N) and cytoplasmic (C) protein fractions showing abnormal subcellular localization of D2723H mutant BRCA2",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "protein. HSP90 and Oct1 were used as controls to show purity of cytoplasmic and nuclear fractions, respectively. b-actin is used as a loading control. (b) **Y3308X** mutant is defective in homologous",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "number of colonies tested. (c, d) Radiation-induced RAD51 foci formation is severely compromised in **Y3308X** mutant ES-cells. RAD51 foci are shown in green, \u03b3-H2AX foci marking DNA damage are shown in",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "pink. Nuclei are stained with DAPI (in blue). (e) Quantification of RAD51 and \u03b3-H2AX foci before (\u2212IR) and after (+IR) ionizing radiation. 30 and 40 nuclei have been counted in each case for **Y3308X**",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "mutant and the wild-type (WT) control, respectively. (f \u2013 h) Genomic instability revealed by karyotypic analysis of **Y3308X** cells. Shown are representative metaphases of the wild-type (WT) control cells",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "(f) and **Y3308X** (g). Arrow shows a radial structure, arrowheads indicate chromatid gaps. (h) Histogram showing quantitative analysis of chromosomal aberrations in untreated WT and **Y3308X** ES-cells. 100",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study provides extensive functional evidence in mouse embryonic stem cells that the BRCA2 truncating variant Y3308* abolishes homologous recombination, RAD51 foci formation, and genome stability, supporting its classification as a pathogenic mutation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC2640324",
+            "title": "Mouse ES-cell-based functional assay to evaluate mutations in BRCA2",
+            "relevance_score": 0.41,
+            "pub_year": 2008,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "The heterozygous clone used for exon 27 targeting was verified to have intact BRCA2 function by showing an absence of MMC hypersensitivity and the formation of RAD51 foci on DNA damage (Fig. 2A and D). A series of mutations was introduced by site mutagenesis into a targeting construct whose original right homology arm included wt exon 27 (Table 1; Fig. 4). As a positive control, a known deleterious nonsense mutation (10152C\u2192G, **Y3308X**) was used. As a negative control, a synonymous mutation was introduced in the same codon (10152C\u2192T, Y3308Y). Two naturally occurring missense human sequence variants (10067C\u2192A, P3280H; 10103C\u2192T, P3292L) reported from several cancer families and listed in the BRCA2 mutation database4 as variants of uncertain significance were examined (Table 1).",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "on BRCA2 function. MMC and etoposide sensitivity in the SyVaL BRCA2\u0394ex11/**Y3308X** had profound sensitivity to MMC and etoposide (20- and 10-fold, respectively), whereas BRCA2\u0394ex11/Y3308Y did not differ",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "sensitive than controls (Table 1). RAD51 focus formation in the SyVaL RAD51 focus formation was drastically diminished in untreated and treated BRCA2\u0394ex11/**Y3308X** (a negative assay result) but robust in",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "Functional assays in engineered BRCA2\u2011deficient cells demonstrate that the Y3308* (nonsense) variant abolishes BRCA2 activity, leading to loss of RAD51 foci and heightened sensitivity to DNA\u2011damaging agents, supporting its pathogenic nature.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC2536704",
+            "title": "A Syngeneic Variance Library for Functional Annotation of Human Variation: Application to BRCA2",
+            "relevance_score": 0.36,
+            "pub_year": 2008,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "From the NCBI database; BRCA2 human has a total of about 10,736 known SNPs, and more than 466 reported truncating mutations. One of these mutations is the K3326X (rs11571833). This mutation has been associated with a 26% increase in the risk of developing breast cancer in European, Latin Americans, and Indian populations. K3326X mutation has been associated with a 2.5 fold increase in risk of squamous lung cancer. Another example of stop codon mutation in BRCA2 is **Y3308X** (**rs4987049**) which has been found in Asian, European, Sub-Saharan and African American populations. Other stop mutations in BRCA2 coding region lack frequency data. Seventy Nigerian breast cancer patients with ages younger than 40 years were studied, and one BRCA2 truncating mutation 3034del4 within exon 11 has been reported. The same mutation has been reported in a study of 39 early onset breast cancer (< 40 years) patients in Nigeria. Although 30 variants of BRCA2 were detected, there was only one (3034del4) truncating mutation, located in exon 11.",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study identified a heterozygous BRCA2 nonsense mutation (L1053X) in Sudanese breast cancer patients and references other BRCA2 stop codon variants such as Y3308X found across diverse populations.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5559773",
+            "title": "Monoallelic characteristic-bearing heterozygous L1053X in BRCA2 gene among Sudanese women with breast cancer",
+            "relevance_score": 0.34,
+            "pub_year": 2017,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "The patient is a 55-yr-old woman who has a past medical history that included a right mastectomy with contralateral prophylactic mastectomy (bilateral) in 2010. She was found to have a BRCA2 mutation, **Y3308X**, which she inherited from the paternal side of her family. This **Y3308X** mutation results in premature termination of the BRCA2 protein at amino acid 3308. Her father was diagnosed with a BRCA2 gene mutation and her paternal grandfather died of pancreatic cancer. She has several paternal aunts with breast cancer. On the maternal side of the family, her grandmother also died of pancreatic cancer.",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article describes a pancreatic cyst case with KRAS G12D mutation and notes that the patient also carries a BRCA2 Y3308X truncating variant linked to a family history of breast and pancreatic cancer.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6549572",
+            "title": "Pancreatic cyst fluid harboring a KRAS mutation",
+            "relevance_score": 0.32,
+            "pub_year": 2019,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "BRCA2 has been reported to protect replication forks from degradation, independent of its role in DSB repair by HR. PARP1 has been shown to play important roles in the control of several aspects of replication fork dynamics, including fork restart, degradation and reversal. Since cell viability is not associated with restoration of the HR defect, we therefore asked whether PARP1 deficiency conferred replication fork stability to Brca2ko/ko mESC rescued by PARP1 knockdown. Integrity of the replication forks was examined using the DNA fibre assay, which allows single-molecule resolution of replication fork tracts. Ongoing replication forks were labelled with chlorodeoxyuridine (CldU; red) and then with iododeoxyuridine (IdU; green) for 15 min each followed by fork stalling agent, hydroxyurea (HU) treatment for 3 h. We measured the track length of CldU- and IdU-labelled DNA fibres and calculated the IdU to CldU ratio. The ratio is close to 1 when the forks are protected, but <1 when the forks are degraded. While WT cells exhibited an average ratio of IdU to CldU tracts lengths close to 1, IdU tracts in mESC expressing a truncated allele of BRCA2 (**Y3308X**) were considerably shorter (average IdU to CldU ratio=0.807, P<0.0001, Mann-Whitney test), indicating the degradation of nascent strands on replicative stress (Fig. 4a,b). Strikingly, in both Brca2ko/ko clones rescued by PARP1 knockdown, IdU to CldU ratios were comparable to those observed in PL2F7 cells (average IdU to CldU ratio=1.09 and 1.12, respectively) (Fig. 4a,b). These results indicate that deficiency of PARP1 deficiency confers protection to the replication forks in the absence of functional BRCA2.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "disrupted by olaparib (Supplementary Fig. 5c) suggests that the N-terminal domain might be auto-PARylated. Consistent with previous studies2, we observed rescue of the fork degradation in **Y3308X** BRCA2",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study demonstrates that the BRCA2 Y3308* truncating variant impairs replication fork protection, indicating a pathogenic loss\u2011of\u2011function effect, and that PARP1 deficiency can rescue this defect, revealing synthetic viability.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC4979061",
+            "title": "Synthetic viability by BRCA2 and PARP1/ARTD1 deficiencies",
+            "relevance_score": 0.28,
+            "pub_year": 2016,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "We then examined the effect of Tet1 and Tet2 loss on RF integrity in the rescued PL2F7-shTET2-Brca2ko/ko mESC clones. Expression of a truncated BRCA2 (**Y3308X**) allele in mESCs resulted in RF degradation in response to HU-induced replicative stress. Two independent rescued Brca2ko/ko ESC clones generated in PL2F7-shTET2 (fig. S3, C and D) and PL2F7-shTET1 (fig. S3G) cells exhibited a significant protection of stalled forks. As observed in KB2P1.21-shTET2 cells, HR was not restored in PL2F7-shTET2-Brca2ko/ko cells based on the failure to recruit RAD51 after IR (fig. S3, H and I).",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "All mESCs were cultured on top of mitotically inactive SNL feeder cells in M15 media (knockout DMEM media (Life Technologies) supplemented with 15% fetal bovine serum (FBS; Life Technologies), 0.00072% beta-mercaptoethanol, 100 U/ml penicillin, 100 \u03bcg/ml streptomycin, and 0.292 mg ml-1 L-glutamine) at 37 \u00b0C, 5% CO2. PL2F7 cells are derivatives from AB2.2 mouse embryonic stem cell line (57). PL2F7 cells expressing BRCA2 R2336H and **Y3308X** variants were generated by electroporating respective BACs in PL2F7 cells(31, 57). PL2F7-Brca2cko/ko;BRCA2(R2336H) cells express a conditional allele (cko) of Brca2 along...",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study shows that the BRCA2 Y3308* (truncated) allele leads to replication fork degradation in mouse embryonic stem cells, suggesting a pathogenic functional impact, and reports the generation of cell lines harboring this variant for experimental use.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7575062",
+            "title": "Degradation of 5hmC-marked stalled replication forks by APE1 causes genomic instability",
+            "relevance_score": 0.27,
+            "pub_year": 2020,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...that lacks nuclear localization signals and part of the RAD51 binding domain and it is also upstream of a known pathogenic variant that results in truncation at codon 3308 (**Y3308X**) (https://www.ncbi.nlm.nih.gov/clinvar/). In our assay Brca2KO/KO ES cells expressing C3233Wfs variant is also defective in both IR-induced RAD51 foci formation and also...",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "0.0022 0.0590 0 (F) C3233Wfs 0.9996 0.9744 1 (NF) D2489G 1 0.1672 1 (NF) **Y3308X** 1 0.9392 1 (NF) The estimated PIFs and associated 95% interval estimates derived from the combined model are plotted in Fig",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The article presents computational and clinical evidence that the BRCA2 truncating variant Y3308X is pathogenic, consistent with its classification as a disease\u2011causing mutation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7722754",
+            "title": "A computational model for classification of BRCA2 variants using mouse embryonic stem cell-based functional assays",
+            "relevance_score": 0.26,
+            "pub_year": 2020,
+            "data_sources": [
+                "pmc"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 1788,
+            "output": 577
+        },
+        {
+            "input": 2156,
+            "output": 481
+        },
+        {
+            "input": 2285,
+            "output": 877
+        },
+        {
+            "input": 2289,
+            "output": 546
+        },
+        {
+            "input": 2598,
+            "output": 481
+        },
+        {
+            "input": 2955,
+            "output": 1231
+        },
+        {
+            "input": 3727,
+            "output": 2282
+        },
+        {
+            "input": 2243,
+            "output": 742
+        },
+        {
+            "input": 2098,
+            "output": 524
+        },
+        {
+            "input": 2041,
+            "output": 595
+        },
+        {
+            "input": 2544,
+            "output": 612
+        },
+        {
+            "input": 2360,
+            "output": 647
+        },
+        {
+            "input": 2059,
+            "output": 739
+        },
+        {
+            "input": 1699,
+            "output": 204
+        },
+        {
+            "input": 1616,
+            "output": 419
+        },
+        {
+            "input": 1824,
+            "output": 256
+        },
+        {
+            "input": 1917,
+            "output": 222
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 8939,
+        "output": 1065
+    },
+    "total_time": 84.46
+}

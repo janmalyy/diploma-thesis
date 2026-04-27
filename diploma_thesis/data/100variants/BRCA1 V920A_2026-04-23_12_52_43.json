@@ -1,0 +1,223 @@
+{
+    "before_pruning": {
+        "articles_in_total": 12,
+        "only_medline_count": 0,
+        "only_pmc_count": 4,
+        "only_suppl_count": 7,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 12,
+        "only_medline_count": 0,
+        "only_pmc_count": 4,
+        "only_suppl_count": 7,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "variant": "BRCA1 V920A",
+    "time_to_process_articles": 10.62,
+    "context_length": 12514,
+    "after_removal": {
+        "articles_in_total": 5,
+        "only_medline_count": 0,
+        "only_pmc_count": 3,
+        "only_suppl_count": 1,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "",
+            "pmcid": "PMC3904950",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 139,
+            "abstract_length": 1373,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 3,
+            "paragraphs_lengths": [
+                1527,
+                1361,
+                877
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5348397",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 141,
+            "abstract_length": 1580,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "g 41223048a g 0 54 vus brca1 chr17 g 41243940c t 0 41 vus brca1 chr17 g 41244789a g 0 28 vus tumor specific analysis for analytical performance as the entire coding regions of the brca genes"
+            ],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                197
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3242438",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 131,
+            "abstract_length": 1266,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3478957",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 90,
+            "abstract_length": 1352,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "by spearman et al was more restrictive four substitutions classified as uncertain by spurdle et al spurdle et al 2008 also move to class 2 for three of these brca1 p v920a brca2 p k607t and"
+            ],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                198
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11607406",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 134,
+            "abstract_length": 1411,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        }
+    ],
+    "narrative_summary": "The BRCA1 missense variant c.2759T>C, which results in the p.Val920Ala (V920A) substitution, occurs in the coding region of the BRCA1 tumor\u2011suppressor gene and has been evaluated for its contribution to hereditary breast and ovarian cancer risk.\nClinical data from a multifactorial likelihood study of 19 exonic BRCA1/2 variants reported that V920A was re\u2011classified from a prior Class\u202f2 (likely not pathogenic) to Class\u202f1 (not pathogenic) after additional family genotyping reduced the Bayes segregation odds to 0.002, yielding a posterior probability of pathogenicity of 1.5\u202f\u00d7\u202f10\u207b\u2075 [PMC3904950]. The same analysis placed the variant among 7 class\u20111 and 9 class\u20112 variants, indicating no association with high cancer risk. A separate database\u2011focused classification effort also evaluated V920A and assigned it to Class\u202f2, describing it as a non\u2011pathogenic substitution [PMC3478957]. Both sources therefore support a benign interpretation, although they differ in the exact IARC class assigned.\nNo functional assays, population frequency data, or computational predictions were provided in the extracted evidence.\nTaken together, the preponderance of clinical evidence, particularly the detailed multifactorial likelihood assessment, classifies BRCA1\u202fV920A as a benign (Class\u202f1) variant, with the alternative classification of Class\u202f2 representing a slightly less definitive but still non\u2011pathogenic assessment.",
+    "structured_summary": {
+        "overall_pathogenicity": "benign",
+        "pathogenicity_counts": {
+            "supports benignity": 4,
+            "supports pathogenicity": 0,
+            "uncertain": 0
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Variant A-GVGD A-GVGD prior probability Segreg-ation Tumor Patho-logy Co-occurrence Family History Odds for Causality Posterior Probability of Pathogenicity IARC Class Splicing class BRCA1 c.122A>G(p.His41Arg) C25 0.29 159.17 2.95 - - 469.56 0.995 Class 5 - **c.2759T>C** (**p.Val920Ala**) C0 0.01 0.002 - - - 0.002 1.52x10-5 Class 1 - c.4484G>C(Arg1495Thr) C0 0.01 - - - - - - - Class 5 c.4991T>C (p.Leu1664Pro) C0 0.01 0.01 - 1.29 0.03 0.0003 3.89x10-6 Class 1 Class 1 BRCA2 c.1354C>A (p.Leu452Ile) C0 0.01 0.03 - - - 0.03 0.0003 Class 1 - c.440A>G (p.Gln147Arg) C0 0.01 1.38 1.20 1.07 0.78 1.37 0.014 Class 2 Class 1 c.1514T>C (p.Ile505Thr) C0 0.01 0.16 1.20 - - 0.191 0.002 Class 2 Class 1 c.4609G>A (p.Glu1537Lys) C0 0.01 0.004 - - - 0.004 4.24x10-5 Class 1 - c.5070A>C (p.Lys1690Asn) C0 0.01 0.48 - 0.30 3.23x10-5 4.55x10-6 4.59x10-8 Class 1 - c.5278T>G (p.Ser1760Ala) C0 0.01 1.38 0.14 - - 0.1977 0.002 Class 2 - c.5714A>G (p.His1905Arg) C0 0.01 0.16 - - - 0.16 0.0016 Class 2 - c.6172T>A (p.Phe2058Ile) C15 0.29 0.04 - 1.12 0.20 0.008 0.003 Class 2 - c.6322C>T (p.Arg2108Cys) C0 0.01 0.06 - - - 0.06 0.0006 Class 1 - c.7521A>G (p. = ) SYN 0.01 0.01 - - - 0.01 9.89x10-5 Class 1 Class 1 c.7534C>T (p.Leu2512Phe) C0 0.01 0.11 - - - 0.11 0.0011 Class 2 - c.7828G>A (p.Val2610Met) C15 0.29 0.83 - - - 0.8288 0.25 Class 3 Class 1 c.8734G>A (p.Ala2912Thr) C0 0.01 0.14 - - - 0.14 0.0014 Class 2 Class 1 c.9038C>T (p.Thr3013Ile) C0 0.01 0.23 - - - 0.23 0.002 Class 2 - c.9364G>A (p.Ala3122Thr) C0 0.01 0.34 - - - 0.34 0.0034 Class 2 -",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "As shown in Table 2, classifications after multifactorial analysis of the 18 of the 19 exonic variants assessed were: class 1 (not pathogenic) for 7 variants, class 2 (likely not pathogenic) for 9 variants, class 3 (uncertain) for 1 variant, and class 5 (Pathogenic) for 1 variant. The posterior probability of pathogenicity for BRCA1:c.122A>G(p.His41Arg) was 0.995, driven predominantly by a strong co-segregation score (159.17) calculation from two families. BRCA1:**c.2759T>C**(**p.Val920Ala**) and BRCA2:c.5278T>G(p.Ser1760Ala) were previously analyzed by multifactorial likelihood analysis and were determined to be Class 3 and Class 2 respectively, based on the data available at that time. The Bayes odds for BRCA1:**c.2759T>C** (**p.Val920Ala**) was 0.9811 in the initial study and genotyping of additional family members in this study lowered the Bayes segregation odds to 0.002, resulting in a revised posterior probability of 1.52x10-5 (Class 1). For BRCA2:c.5278T>G(p.Ser1760Ala), additional genotyping of six individuals changed the Bayes segregation odds from 1.17 in the initial study to 1.38 in this study but did not alter the Class 2 classification.",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "Results from this study provide evidence of pathogenicity for the two variants BRCA1:c.4484G>C(p.Arg1495Thr) and BRCA1:c.122A>G(p.His41Arg), and indicate that another 16 variants are not associated with high risk of cancer (Class 1 or 2). These findings are of direct relevance for counselling and management of individuals found to carry these variants. They also highlight the need for ongoing collection of clinical data to facilitate classification, as recommended for variants that fall into IARC Class 2, 3 or 4. Specifically, the inclusion of additional genotypes into the Bayes segregation analysis for BRCA1:**c.2759T>C**(**p.Val920Ala**) was a major factor which led to reclassification of this variant from Class 2 to Class 1.",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The article concludes that the BRCA1 V920A (p.Val920Ala) variant is classified as Class\u202f1 (not pathogenic), providing evidence that it does not confer high cancer risk.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC3904950",
+            "title": "Multifactorial Likelihood Assessment of BRCA1 and BRCA2 Missense Variants Confirms That BRCA1:c.122A>G(p.His41Arg) Is a Pathogenic Mutation",
+            "relevance_score": 1.0,
+            "pub_year": 2014,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "by Spearman et al was more restrictive. Four substitutions classified as uncertain by Spurdle et al (Spurdle et al., 2008) also move to Class 2. For three of these, BRCA1 **p.V920A**, BRCA2 p.K607T, and",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The article reclassifies the BRCA1 p.V920A missense variant as a non\u2011pathogenic (Class\u202f2) substitution in its database of BRCA variants.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC3478957",
+            "title": "Classification of Missense Substitutions in the BRCA Genes: a Database Dedicated to Ex-UVs",
+            "relevance_score": 0.14,
+            "pub_year": 2011,
+            "data_sources": [
+                "pmc"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 3362,
+            "output": 848
+        },
+        {
+            "input": 1955,
+            "output": 374
+        },
+        {
+            "input": 1790,
+            "output": 175
+        },
+        {
+            "input": 1796,
+            "output": 436
+        },
+        {
+            "input": 1702,
+            "output": 207
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 2339,
+        "output": 614
+    },
+    "total_time": 21.41
+}

@@ -1,0 +1,1241 @@
+{
+    "before_pruning": {
+        "articles_in_total": 62,
+        "only_medline_count": 3,
+        "only_pmc_count": 17,
+        "only_suppl_count": 41,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 50,
+        "only_medline_count": 3,
+        "only_pmc_count": 17,
+        "only_suppl_count": 29,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "variant": "BRCA1 C39G",
+    "time_to_process_articles": 32.74,
+    "context_length": 96422,
+    "after_removal": {
+        "articles_in_total": 31,
+        "only_medline_count": 3,
+        "only_pmc_count": 15,
+        "only_suppl_count": 13,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "20437199",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 277,
+            "abstract_length": 1053,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "29510000",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 120,
+            "abstract_length": 1764,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "19504351",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 80,
+            "abstract_length": 1484,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6406614",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 165,
+            "abstract_length": 1367,
+            "number_of_unmatched_snippets": 2,
+            "unmatched_snippets": [
+                "nd nd nd nd nd nd nd nd nd c 110c g p thr37arg c65 na \u2212 \u2212 \u2212 \u2212 \u2212 nd nd nd nd \u2212 \u2212 \u2212 lof p c 115t g p cys39gly zn2 siteii c65 na \u2212 \u2212 nd nd nd nd nd nd nd nd nd \u2212 \u2212 lof c 121 122delcainsgc",
+                "p cys39gly p his41ala p cys47gly p met48arg p cys64tyr p thr69met and p val83gly figure 2 the screening assessing the effect of brca1 variants on the binding to ubch5a revealed bright"
+            ],
+            "number_of_paragraphs": 5,
+            "paragraphs_lengths": [
+                1181,
+                1740,
+                1722,
+                189,
+                195
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3660328",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 120,
+            "abstract_length": 1666,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    1026
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7072602",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 185,
+            "abstract_length": 0,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                1730,
+                1337
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7814423",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 115,
+            "abstract_length": 1809,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    752
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6406718",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 131,
+            "abstract_length": 1601,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1730
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5903938",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 89,
+            "abstract_length": 1181,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1405
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5761139",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 114,
+            "abstract_length": 2249,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                418
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4234380",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 158,
+            "abstract_length": 2292,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 4,
+            "paragraphs_lengths": [
+                1205,
+                757,
+                398,
+                413
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6181777",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 72,
+            "abstract_length": 1039,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    628
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10504444",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 163,
+            "abstract_length": 1728,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1667
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9636114",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 174,
+            "abstract_length": 1792,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    514
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10488022",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 223,
+            "abstract_length": 1241,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                684
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3405339",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 113,
+            "abstract_length": 1094,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                396
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9698073",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 149,
+            "abstract_length": 1904,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1899
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9174522",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 135,
+            "abstract_length": 893,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1892
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6562042",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 45,
+            "abstract_length": 1294,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                463
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3422501",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 59,
+            "abstract_length": 2009,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                843
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10098510",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 146,
+            "abstract_length": 2250,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    778
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9763624",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 98,
+            "abstract_length": 1198,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    772
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9948421",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 86,
+            "abstract_length": 2238,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1258
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6617753",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 136,
+            "abstract_length": 2590,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    225
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5042562",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 80,
+            "abstract_length": 849,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "g 34 2 3 2 18 8 39 c a 30 0 3 4 16 3 39 c g 28 5 5 8 16 1 39 c t 27 1 6 1 16 8 180 t a 25 1 4 0 18 1 180 t c 24 6 13 0 19 2 180 t g 28 4 2 4 21 4 some synonymous mutant cell lines lose contact"
+            ],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                524,
+                200
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11442673",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 120,
+            "abstract_length": 871,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    478
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8352870",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 84,
+            "abstract_length": 1777,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    581
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9988940",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 101,
+            "abstract_length": 2163,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    351
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8062186",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 102,
+            "abstract_length": 1107,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    766
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6508748",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 91,
+            "abstract_length": 2980,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    253
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6823358",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 119,
+            "abstract_length": 1338,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    613
+                ]
+            ]
+        }
+    ],
+    "narrative_summary": "The BRCA1 C39G (c.115T>G, p.Cys39Gly) missense change occurs in the RING finger domain of the BRCA1 protein and has been reported as a founder mutation in the Greenlandic Inuit population, where it is associated with hereditary breast and ovarian cancer risk. Clinical investigations have repeatedly linked the variant to disease: a Greenlandic cohort study identified the mutation in 10% of breast cancer patients and 33% of ovarian cancer patients, recommending genetic counseling for Inuit women [19504351]; a case\u2011control analysis found a 12\u2011fold increased breast\u2011cancer odds for carriers [29510000]; and a large screening of 2,869 Greenlandic individuals reported an overall carrier frequency of 1.6% with geographic hotspots up to 9.7% [19504351]. Additional reports classified the variant as pathogenic in tumor\u2011profiling data [3660328] and in a Chinese breast\u2011cancer cohort where it was re\u2011annotated as disease\u2011causing [7814423]. Conversely, a functional study using a GFP\u2011fragment reassembly assay described the variant as non\u2011pathogenic in a protein\u2011interaction test [6406614], and a machine\u2011learning prediction of ovarian/breast cancer risk labeled it benign [8062186], reflecting some discordance in clinical interpretation.\nFunctional assays provide mixed signals. A GFP\u2011fragment reassembly screen that measures BRCA1\u2011UbcH5a interaction classified C39G as pathogenic [6406614], and a saturation\u2011genome\u2011editing effort identified the allele as loss\u2011of\u2011function, supporting a deleterious effect [6181777]. However, the same GFP\u2011based assay also reported a benign binding phenotype for the variant, and no experimental splice\u2011alteration has been demonstrated despite in\u2011silico splice\u2011site predictions suggesting a potential effect [6406614].\nPopulation data underscore the variant\u2019s prevalence: the Greenlandic founder mutation reaches frequencies as high as 9.7% in isolated eastern communities and was observed in four carriers in a correction dataset of 1,918 BRCA1 variants [7072602]. The mutation has also been noted in other ethnic groups, including a Chinese Han cohort where it was re\u2011classified as pathogenic [7814423] and in broader mutational surveys of worldwide families [5903938]. Computational predictions overwhelmingly label C39G as deleterious: splice\u2011site tools predict novel acceptor sites [6406614]; multiple in\u2011silico classifiers (DriverDetect, AlphaFold\u2011based stability scores, and consensus pathogenicity tools) assign pathogenic or loss\u2011of\u2011function scores [11442673; 9988940; 8352870]. A minority of algorithms, such as a random\u2011forest model, have suggested a benign classification [8062186].\nOverall, the preponderance of clinical and functional evidence, together with high carrier frequencies in a founder population and consistent deleterious computational annotations, supports the interpretation of BRCA1 C39G as a pathogenic variant that confers increased breast and ovarian cancer risk. The few reports of benign behavior appear limited to specific assay contexts and do not outweigh the broader body of data indicating pathogenicity.",
+    "structured_summary": {
+        "overall_pathogenicity": "pathogenic",
+        "pathogenicity_counts": {
+            "supports benignity": 2,
+            "supports pathogenicity": 15,
+            "uncertain": 1
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Germ-line mutations in the tumour suppressor proteins BRCA1 and BRCA2 predispose to breast and ovarian cancer. We have recently identified a Greenlandic Inuit BRCA1 nucleotide 234T>G/**c.115T>G** (**p.Cys39Gly**) founder mutation, which at that time was the only disease-causing BRCA1/BRCA2 mutation identified in this population. Here, we describe the identification of a novel disease-causing BRCA1 nucleotide 4803delCC/c.4684delCC mutation in a Greenlandic Inuit with ovarian cancer. The mutation introduces a frameshift and a premature stop at codon 1572. We have also identified a BRCA1 nucleotide 249T>A/c.130T>A (p.Cys44Ser) mutation in another Greenlandic individual with ovarian cancer. This patient share a 1-2 Mb genomic fragment, containing the BRCA1 gene, with four Danish families harbouring the same mutation, suggesting that the 249T>A/c.130T>A (p.Cys44Ser) mutation originates from a Danish ancestor. We conclude that screening of Greenlandic Inuits with high risk of breast or ovarian cancer should include sequencing of the entire BRCA1 gene.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study identifies novel BRCA1 mutations in Greenlandic Inuit families and confirms that the previously reported p.Cys39Gly founder mutation is disease\u2011causing, recommending comprehensive BRCA1 sequencing for high\u2011risk individuals.",
+            "uncertainties_or_limitations": null,
+            "article_id": "20437199",
+            "title": "Identification of a novel BRCA1 nucleotide 4803delCC/c.4684delCC mutation and a nucleotide 249T>A/c.130T>A (p.Cys44Ser) mutation in two Greenlandic Inuit families: implications for genetic screening of Greenlandic Inuit families with high risk for breast and/or ovarian cancer.",
+            "relevance_score": 1.0,
+            "pub_year": 2010,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "This study investigated the effects of single nucleotide polymorphisms (SNPs) in xenobiotic and steroid hormone-metabolizing genes in relation to breast cancer risk and explored possible effect modifications on persistent organic pollutants (POPs) and breast cancer associations. The study also assessed effects of Greenlandic BRCA1 founder mutations. Greenlandic Inuit women (77 cases and 84 controls) were included. We determined two founder mutations in BRCA1: **Cys39Gly** (**rs80357164**) and 4684delCC, and five SNPs in xenobiotic and oestrogen-metabolizing genes: CYP17A1 -34T>C (rs743572), CYP19A1 *19C>T (rs10046), CYP1A1 Ile462Val (rs1048943), CYP1B Leu432Val (rs1056836) and COMT Val158Met (rs4680). We used chi-square test for comparison of categorical variables between groups. Odds ratio (OR) estimates with 95% confidence interval (95%CI) were obtained using logistic regression models. The variant allele of BRCA1 **Cys39Gly** increased breast cancer risk (Gly/Cys versus Cys/Cys, OR: 12.2, 95%CI: 1.53; 98.1), and carriers of the variant allele of CYP17A1 -34T>C had reduced risk (CT+CC versus TT, OR: 0.44, 95%CI: 0.21; 0.93). CYP17A1 -34T>C was an effect modifier on the association between perfluoroalkyl acids (PFAAs) and breast cancer risk ( PFAA, ratio of OR: 0.18, 95%CI: 0.03; 0.97). Non-significant modifying tendencies were seen for the other SNPs on the effect of polychlorinated biphenyls, organochlorine pesticides and PFAAs. In summary, the BRCA1 **Cys39Gly** and CYP17A1 -34T>C genetic variations were associated with breast cancer risk. Our results indicate that the evaluated genetic variants modify the effects of POP exposure on breast cancer risk; however, further studies are needed to document the data from the relatively small sample size.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study found that the BRCA1 Cys39G (Cys39Gly) founder mutation is associated with a markedly increased risk of breast cancer in Greenlandic Inuit women.",
+            "uncertainties_or_limitations": null,
+            "article_id": "29510000",
+            "title": "Genetic Variations, Exposure to Persistent Organic Pollutants and Breast Cancer Risk - A Greenlandic Case-Control Study.",
+            "relevance_score": 0.29,
+            "pub_year": 2018,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Approximately 10% of all breast and ovarian cancers are dominantly inherited and mutations are mainly found in the BRCA 1 and 2 genes. The penetrance of BRCA1 mutations is reported to be between 68 and 92% and confers a 36-92% life time risk of breast cancer. Most mutations in BRCA1 are uniquely occurring mutations, but founder mutations have been described. In this study we describe a founder mutation with wide spread presence in the Inuit population. We have screened 2,869 persons from Greenland for the presence of a BRCA1 mutation (**p.Cys39Gly**) only found in the Inuit population. The overall carrier frequency was 1.6% in the general population, but the frequency differs geographically from 0.6% on the West coast to 9.7% in the previously isolated population of the East coast. This is to our knowledge the highest population frequency of a BRCA1 mutation ever to be described. To determine the clinical relevance of the mutation, we have examined ten breast cancer patients and nine ovarian cancer patients from Greenland for the presence of the **p.Cys39Gly** mutation. We found three ovarian cancer patients (33%) and one breast cancer patient (10%) carrying the mutation. The high number of women carrying a BRCA1 mutation known to trigger the development of potentially lethal diseases leads us to recommend an offer of genetic counselling and test for the mutation to all females of Inuit origin, thereby hopefully preventing a number of breast and ovarian cancer deaths.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study identifies the BRCA1 p.Cys39Gly founder mutation in the Greenlandic population with a carrier frequency up to 9.7% and reports its occurrence in breast and ovarian cancer patients, indicating pathogenic relevance and recommending genetic counseling for Inuit women.",
+            "uncertainties_or_limitations": null,
+            "article_id": "19504351",
+            "title": "A high frequent BRCA1 founder mutation identified in the Greenlandic population.",
+            "relevance_score": 0.21,
+            "pub_year": 2009,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Exonic variants may affect protein functions not only by altering the amino acid sequence, but also abolishing naturally-occurring splice sites or introducing/activating new or cryptic splice sites. To account for this possibility, we performed an in silico analysis on all 30 VUS included in the study, from which only three were predicted to be spliceogenic by >=three algorithms of the Alamut software. These included BRCA1 c.110C>G and **c.115T>G**, predicted to introduce novel acceptor splice sites, and BRCA1 c.190T>G, predicted to reinforce the strength of an alternatively used donor splice site in exon 5. Existing mRNA assay data reports no effect on mRNA splicing for BRCA1 c.110C>G, while BRCA1 c.190T>G has been shown to lead to increased levels of a non-productive naturally-occurring isoform (Delta5q), which carries the out of frame deletion of the distal portion of exon 5. To the best of our knowledge, no experimental data has been reported as for the **c.115T>G**. No spliceogenic effect was predicted for all remaining VUS.",
+                    "mention_type": "computational",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Two issues need to be considered when evaluating the performance of the GFP-fragment reassembly assay. First, since the assays described are based on an artificial experimental model, where functional domains of human proteins are expressed in prokaryotic cells, the behavior of mutant constructs that we observed might not reflect the properties of full-length BRCA proteins expressed in their 'natural' context. However, it must be considered that, although our observations might actually provide clues for the molecular mechanisms mediating the tumor suppressor activity of BRCA proteins (see below), the aim of this study was essentially to collect evidence for the clinical relevance of BRCA VUS by the use of functional assays that efficiently dichotomize variants into pathogenic or non-pathogenic. Second, some exonic non-synonymous changes can affect gene functionality by altering mRNA splicing. In a few cases, i.e., when the spliceogenic allele retains the ability to produce a full-length protein, this occurrence may co-exist with a pathogenic effect of the missense substitution such as in the case of the BRCA2 c.8168A>G (p.Asp2723Gly). Previous data and in silico analyses revealed for two of the BRCA1 VUS we tested, an actual (c.190T>G) or potential (**c.115T>G**) spliceogenic effect. Based on the outcomes of the BRCA/UbcH5a interaction assay, all the above variants were predicted to be pathogenic. However, no data are presently available to ascertain if full-length proteins carrying such variants are actually expressed, and, therefore, no data are present to hypothesize dual mRNA/protein defects.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "Gene DNA Change Protein Change Domain Motif Source ClinVar BRCA1 c.20_28del9 p.7-10delinsGln RING finger INT VUS (1) c.43A>G p.Ile15Val RING finger Helical bundle N INT NR c.44T>C p.Ile15Thr RING finger Helical bundle N INT VUS (4) c.53T>A p.Met18Lys RING finger Helical bundle N ClinVar VUS (2) c.70T>C p.Cys24Arg RING finger Zn2+/SiteI ClinVar VUS (1); LP (1), P (1) c.79_80delTGinsGC p.Cys27Ala RING finger Zn2+/SiteI Synthetica NR c.83T>C p.Leu28Pro RING finger INT VUS (4) c.93C>G p.Ile31Met RING finger INT LB (1), VUS (2) c.100C>T p.Pro34Ser RING finger Rigshospitalet VUS (2) c.107C>A p.Ser36Tyr RING finger beta-strand ICO VUS (5) c.110C>G p.Thr37Arg RING finger beta-strand ClinVar LP (1) **c.115T>G** **p.Cys39Gly** RING finger Zn2+/SiteII Rigshospitalet VUS (1), LP (1), P (1) c.121_122delCAinsGC p.His41Ala RING finger Zn2+/SiteII Synthetic a NR c.124A>G p.Ile42Val RING finger Clinvar 3 LB (1), VUS (3) c.139T>G p.Cys47Gly RING finger Zn2+/SiteI Clinvar LP (1), P (6) c.143T>G p.Met48Arg RING finger Central Helix Rigshospitalet NR c.143T>A p.Met48Lys RING finger Central Helix INT NR c.190T>G p.Cys64Gly RING finger Zn2+/SiteII Clinvar VUS (1), P (11) c.190T>C p.Cys64Arg RING finger Zn2+/SiteII INT VUS (1), P (4) c.206_207delCCinsTG p.Thr69Met RING finger INT NR c.230C>T p.Thr77Met RING finger INT VUS (6) c.248T>G p.Val83Gly RING finger Helical bundle C ICO NR c.293G>T p.Gly98Val RING finger INT NR BRCA2 c.7505G>A p.Arg2502His DBD HD INT B (1), LB (5), VUS (3) c.7628A>G p.Tyr2543Cys DBD HD INT VUS (7) c.7636T>C p.Ser2546Pro DBD HD INT VUS (1) c.7649T>C p.Ile2550Thr DBD HD Clinvar B (1) c.7684T>C p.Phe2562Leu DBD HD INT VUS (6) c.7698T>G p.Asp2566Glu DBD HD INT NR c.7930A>G p.Asn2644Asp DBD HD INT VUS (3)",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                },
+                {
+                    "quoted_text": "ND ND ND ND ND ND ND + ND ND c.110C>G p.Thr37Arg C65 NA \u2212 \u2212 \u2212 \u2212 \u2212 ND ND ND ND \u2212 + \u2212 \u2212 LOF p **c.115T>G** **p.Cys39Gly** Zn2+/SiteII C65 NA \u2212 \u2212 ND ND ND ND ND ND ND ND ND \u2212 \u2212 LOF c.121_122delCAinsGC",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": ", **p.Cys39Gly**, p.His41Ala, p.Cys47Gly, p.Met48Arg, p.Cys64Tyr, p.Thr69Met., and p.Val83Gly (Figure 2). The screening assessing the effect of BRCA1 variants on the binding to UbcH5a revealed bright",
+                    "mention_type": "functional",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The article provides mixed evidence for BRCA1 p.Cys39Gly (C39G), including computational splice predictions, functional assay results suggesting pathogenicity, a loss\u2011of\u2011function annotation, and a functional binding assay indicating a benign phenotype, as well as divergent clinical classifications across databases.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6406614",
+            "title": "GFP-Fragment Reassembly Screens for the Functional Characterization of Variants of Uncertain Significance in Protein Interaction Domains of the BRCA1 and BRCA2 Genes",
+            "relevance_score": 1.0,
+            "pub_year": 2019,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nTable S 1 . BRCA1 / 2 germline mutation s and its relation to m olecular tumor subtypes . Mutations are all known pathogenic mutation described using HGVS nomenclature. Basal HER2 LumA LumB Normal Functional effects\nRows:\n/ 2 germline mutation s and its relation to m olecular tumor subtypes . Mutations are all known pathogenic mutation described using HGVS nomenclature. Basal HER2 LumA LumB Normal Functional effects BRCA1 **c.115T>G**, Exon3, p.(**Cys39Gly**) - - - 1 - MS c.181T>G, Exon5, p.(Cys61Gly) 2 - - - 1 MS c.1082_1092del, Exon11, p.(Ser361*) - - 1 - - NS c.1505delT, Exon11, p.(Leu502*) 1 - - - - FS c.1556delA,\ns and its relation to m olecular tumor subtypes . Mutations are all known pathogenic mutation described using HGVS nomenclature. Basal HER2 LumA LumB Normal Functional effects BRCA1 **c.115T>G**, Exon3, p.(**Cys39Gly**) - - - 1 - MS c.181T>G, Exon5, p.(Cys61Gly) 2 - - - 1 MS c.1082_1092del, Exon11, p.(Ser361*) - - 1 - - NS c.1505delT, Exon11, p.(Leu502*) 1 - - - - FS c.1556delA, Exon11,",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The article reports that RNA tumor profiling can identify BRCA1/2 mutation carriers and includes a supplementary table that classifies the BRCA1 C39G variant as a known pathogenic mutation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC3660328",
+            "title": "Classifications within Molecular Subtypes Enables Identification of BRCA1/BRCA2 Mutation Carriers by RNA Tumor Profiling",
+            "relevance_score": 1.0,
+            "pub_year": 2013,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "BRCA1 Variant Number of Carriers c.1016dupA 366 c.1556delA 337 c.3228_3229delAG 193 c.697_698delGT 159 c.3178G>T 119 c.4745delA 63 c.1A>C 49 c.2351_2357delCGTTACT 47 c.5075-2A>C 37 c.3084_3094delTAATAACATTA 36 c.5047G>T 35 c.(441 + 1_442-1)_(4357 + 1_4358-1)del 24 c.(4185 + 1_41861)_(4357 + 1_4358-1)dup 22 c.3607C>T 22 c.3048_3052dupTGAGA 21 c.5266dupC 20 c.3331_3334delCAAG 20 c.(5332 + 1_5333-1)_(5406 + 1_5407-1)del 19 c.1072delC 18 c.5511G>A 15 c.1450G>T 14 c.(80 + 1_81-1)_(4986 + 1_4987-1)del 12 c.5513T>G 12 c.66dupA 12 c.2475delC 11 c.3966delA 11 c.2869C>T 10 c.2591C>G 10 c.1058G>A 10 c.3319G>T 10 c.4065_4068delTCAA 9 c.5407-25T>A 8 c.1292dupT 7 c.2558ins356 7 c.3874delT 6 c.68_69delAG 6 c.5251C>T 6 c.5534C>A 5 c.1687C>T 5 c.(?_1-1)_(4357 + 1_4358-1)del 5 c.794_795delCT 5 c.5503C>T 5 c.3710delT 5 c.4035delA 4 c.2989_2990dupAA 4 c.4689C>G 4 c.3319G>T 4 c.5213G>A 4 c.4300_4301delA 4 **c.115T>G** 4 c.5153G>C 3 c.848T>A 3 c.339_361dup 3 c.4612C>T 3 c.(?_1-1)_(134 + 1_135-1)del 3 c.457_458ins21 3 c.3770_3771delAG 3 c.2869C>T 3 c.3700_3704delGTAAA 2 c.3477_3479delAAAinsC 2 c.3835_3835delG 2 c.2438dupG 2 c.2389G>T 2 c.1695dupG 2 c.65T>C 2 c.1287_1287delA 2 c.385_385delG 2 c.2681_2682delAA 2 c.4932_4933dupAA 2 c.4972_4972delA 2 c.(5074 + 1_5075-1)_(5592 + 1_?-1)del 2 c.(134 + 1_135-1)_(441 + 1_442-1)del 2 c.241C>T 1 c.5434C>G 1 c.3817C>T 1 c.2722G>T 1 (4185 + 1_41861)_(4357 + 1_4358-1)del 1 c.4883T>C 1 c.1059G>A 1 c.5123C>T 1 c.3937C>T 1 c.140G>T 1 c.1961dupA 1 c.3808T>G 1 c.(5193 + 1_5194-1)_(5592 + 1_?-1)del 1 c.514C>T 1 c.2185G>T 1 c.4689C>G 1 c.130T>A 1 c.4987-16T>G 1 c.1674_1674dupA 1 c.2745_2748delTCAA 1 c.5075A>C 1 c.(4675 + 1_4676-1)_(4986 + 1_4987-1)del 1 c.929delA 1 c.3005delA 1 c.5212G>A 1 Sum 1918",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "BRCA1 Variant Number of Carriers c.1016dupA 366 c.1556delA 337 c.3228_3229delAG 193 c.697_698delGT 159 c.3178G>T 119 c.4745delA 63 c.1A>G 49 c.2351_2357delCGTTACT 47 c.5075-2A>C 37 c.3084_3094delTAATAACATTA 36 c.5047G>T 35 del exon 8-13 24 c.3607C>T 22 dup exon 13 22 c.3048_3052dupTGAGA 21 c.3331_3334delCAAG 20 c.5266dupC 20 del exon 22 19 c.1072delC 18 c.5511G>A 15 c.1450G>T 14 c.3319G>T 14 c.2869C>T 13 c.5513T>G 12 c.66dupA 12 del exon 3-16 12 c.2475delC 11 c.3966delA 11 c.1058G>A 10 c.2591C>G 10 c.4065_4068delTCAA 9 c.5407-25T>A 8 c.1292dupT 7 c.2558ins356 7 c.3874delT 6 c.457_458ins21 6 c.5251C>T 6 c.68_69delAG 6 c.1687C>T 5 c.3710delT 5 c.5503C>T 5 c.5534delA 5 c.794_795delCT 5 del exon 1-13 5 c.4689C>G 5 **c.115T>G** 4 c.2989_2990dupAA 4 c.4035delA 4 c.4300delA 4 c.5213G>A 4 c.3770_3771delAG 3 c.4612C>T 3 c.5153G>C 3 c.848T>A 3 del exon 1-3 3 c.1287delA 2 c.1695dupG 2 c.2389G>T 2 c.2438dupG 2 c.2681_2682delAA 2 c.3477_3479delAAAinsC 2 c.3700_3704delGTAAA 2 c.3835delG 2 c.386delG 2 c.4932_4933dupAA 2 c.4972delA 2 c.65T>C 2 del exon 18-24 2 del exon 5-7 2 c.1059G>A 1 c.130T>A 1 c.140G>T 1 c.1674dupA 1 c.1961dupA 1 c.2185G>T 1 c.241C>T 1 c.2722G>T 1 c.2727_2730delTCAA 1 c.3005delA 1 c.3817C>T 1 c.3937C>T 1 c.5075A>C 1 c.514C>T 1 c.5212G>A 1 c.5434C>G 1 c.929delA 1 del exon 13 1 del exon 16 1 del exon 20-24 1 Sum 1914",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The correction reports that the BRCA1 C39G (c.115T>G) variant was observed in four carriers in the dataset, but provides no interpretation of its clinical significance.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7072602",
+            "title": "Correction: Moller, P.; et al. Causes for Frequent Pathogenic BRCA1 Variants Include Low Penetrance in Fertile Ages, Recurrent De-Novo Mutations and Genetic Drift. Cancers 2019, 11, 132",
+            "relevance_score": 0.99,
+            "pub_year": 2020,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nb'\\r\\n Supplementary Table 5 55 VUS detected in our study\\r\\n with distinct status in the Findlay et al. study\\r\\n\\r\\n Gene |Chr:posi |ref>alt |Type |hgvs_c |hgvs_p |Number (BCs) |Number (HCs)\\r\\n |Annotation | |BRCA1\nRows:\n|0 |1\\r\\n |Benign | |BRCA1 |17:41276038 |T>C |missense_variant |c.76A>G |p.Ile26Val\\r\\n |0 |1 |Benign | |BRCA1 |17:41267777 |G>A |missense_variant |c.100C>T\\r\\n |p.Pro34Ser |0 |1 |Pathogenic | |BRCA1 |17:41267762 |A>C |missense_variant\\r\\n |**c.115T>G** |**p.Cys39Gly** |0 |1 |Pathogenic | |BRCA1 |17:41267738 |C>T\\r\\n |splice_donor_variant |c.134+5G>A | |0 |1 |Pathogenic | |BRCA1 |17:41258531\\r\\n |G>A |missense_variant |c.154C>T |p.Leu52Phe |7 |10 |Benign | |BRCA1\\r\\n|17:41258524 |T>C",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The article reports ethnicity\u2011specific BRCA1/2 variant data in a large Chinese cohort and reclassifies the BRCA1 C39G (c.115T>G) variant as pathogenic based on external functional assay results and database annotation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7814423",
+            "title": "Prevalence and reclassification of BRCA1 and BRCA2 variants in a large, unselected Chinese Han breast cancer cohort",
+            "relevance_score": 0.87,
+            "pub_year": 2021,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "We observed a number of other recurrent mutations. BRCA1 c.3331_3334del comprised more than half of all mutations identified in Colombia, consistent with a previous report that this is a founder mutation in the Colombian population (Torres, et al., 2007). However, this mutation has not been found at high rates in a second Colombian population (Cock-Rada, et al., 2017). BRCA2 c.2808_2811del was frequently observed, not only as the most common mutation in France and Colombia, but also in other Western and Southern European countries, and destinations to which individuals from these countries have migrated. It estimated to have arisen approximately 80 (46\u2013134) generations ago. However, due to the diversity of the haplotypes, multiple independent origins could not be ruled out (Neuhausen, et al., 1998). BRCA2 c.6275_6276del was a recurrent BRCA2 mutation in Australia, the UK, Belgium, Spain, the Netherlands, and North America. This mutation has been estimated to have originated 52 (24\u201398) generations ago from a single founder (Neuhausen, et al., 1998). Recurrent or founder mutations were observed in diverse populations. For example, the **c.115T>G** (**Cys39Gly**) mutation has been described in Greenlanders (Hansen, et al., 2009). The c.2641G >T and c.7934del mutations have both been reported as founder mutation in South African Afrikaners (Reeves, et al., 2004).",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article reports that the BRCA1 C39G (c.115T>G) variant has been observed in Greenlanders, without providing any pathogenicity classification or functional interpretation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5903938",
+            "title": "Mutational Spectrum in a Worldwide Study of 29,700 Families with BRCA1 or BRCA2 Mutations",
+            "relevance_score": 0.49,
+            "pub_year": 2018,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...p.Ser1292Leufs*15 fs 7 1 Danish founder del exon 1-13/ c.(?_1-1)_(4357 + 1_4358-1)del p.? rearr 5 1 Norwegian founder c.5534del p.Glu1346Lysfs*20 fs 5 1 NPR c.1793 T > G p.Leu598* stop 4 1 NF c.**115 T > G** **p.Cys39Gly** missense 2 1 Greenlandic/Danish founder del exon 5-7/c.(134 + 1_135-1)_(441 + 1_442-1)del p.? rearr 3 1 NF del exon 8 c.(441 + 1_442-1)_(547 + 1_548-1)del p.? rearr 3 1 European founder c.848 T > A...",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study updates the BRCA1/2 mutation spectrum in Norway, showing a diverse set of variants and a reduced founder effect compared to earlier reports.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5761139",
+            "title": "BRCA1 and BRCA2 mutation spectrum - an update on mutation distribution in a large cancer genetics clinic in Norway",
+            "relevance_score": 0.33,
+            "pub_year": 2018,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "The following SNPs were analysed: CYP1A1 Ile462Val (rs1048943), CYP1B1 Leu432Val (rs1056836), COMT Val158Met (rs4680), CYP17 -34T>C (rs743572), CYP19 C > T (rs10046), CYP19 (TTTA)n repeat and BRCA1 founder mutation (p. **Cys39GlY**). Table 1 shows the specifications of these polymorphisms. All the genotypes except for BRCA1 and CYP19 (TTTA)n repeat were obtained using TaqMan Drug Metabolism Genotyping Assays, following manufacturer's instructions (Applied Biosystems, ABI). The TaqMan assay was done in a 12 muL reaction volume containing 1x TaqMan Drug Metabolism Genotyping Assay Mix (containing premixed PCR primers and MGB probes), TaqMan Universal PCR Master mix, and 10-15 ng genomic DNA as described previously. Allele discrimination analyses were performed on the ABI Prism 7000 Sequence Detection System. Positive controls consisting of DNA representing wild-type/wild-type (wt/wt), wt/variant and variant/variant genotypes and negative controls (no DNA) were included in each assay.",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Gene Position Reference SNP Location/amino acid change Genotyping method Main function Activity Low High CYP1A1 15q24.1 rs1048943 A> C C_25624888_50# Carcinogen activation Ile (wt) Val (var) Ile462Val 2-hydroxylation of E2 CYP1B1 2p22.2 rs1056836 C> G Leu432val C_3099976_30# Carcinogen activation Leu (wt) Vala (var) 4-hydroxylation of E2 COMT 22q11.21 rs4680 G> A C_25746809_50# Estradiol catabolism Met (mut) Val (var) Val158Met CYP17A1 10q24.3 rs743572 5'UTR C_2852784_30# Steroid 17alpha-hydroxylase A2b -34 T> C (A1> A2) CYP19A1 15q21.1 rs10046 3'UTR C_8234731_30# Aromatase activity (androgen to estrogen) Tc (var) C> T CYP19A1 15q21.1 - (TTTA)n repeats PCR-based Aromatase activity - - BRCA1 17q21 **rs80357164** **Cys39Gly** PCR-based DNA damage repair - -",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "The BRCA1 **p.Cys39Gly** mutation genotyping was performed using allele-specific PCR amplification with mutation-specific forward primers: BRCA1-39-N-F: 5'-ATCAAGGAACCTGTCTCCACAAAcT-3' (normal) and BRCA1-39-S-F: 5'-AGGAACCTGTCTCCACAAAcg-3' (mutation) and reverse primer BRCA1-39-fl-R: 5'-TGACCGGCAGCAAAATTGC TCCTGGGTTATGAAGGACAAA-3' and a Fam-primer FAM6-TGACCGGCAGCAAAATTGC.",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "...(0.2-2.45); p = 0.577 S (11-13) 0 (0) 3 (3.0) - - - SF + S 4 (12.9) 25 (24.8) .217 0.45 (0.14-1.41); p = 0.17 0.44 (0.14-1.39); p = 0.160 0.70 (0.20-2.45); p = 0.577 S allele 4 (6.5) 28 (13.9) BRCA1 (**Cys39Gly**) Cys/Cys 28 (90.3) 106 (97.2) .122 1.00 (Ref.) 1.00 (Ref.) 1.00 (Ref.) Cys/Gly 3 (9.7) 3 (2.8) 3.79 (0.73-19.7); p = 0.115 4.29 (0.77-23.9); p = 0.097 5.14(0.45-58.9); p = 0.189 Gly /Gly 0 (0) 0 (0)...",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study reports that the BRCA1 Cys39Gly founder mutation occurs more frequently in breast\u2011cancer cases than controls among Inuit women, showing a non\u2011significant trend toward increased risk, with no functional or definitive pathogenicity evidence presented.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC4234380",
+            "title": "Polymorphisms in Phase I and Phase II genes and breast cancer risk and relations to persistent organic pollutant exposure: a case-control study in Inuit women",
+            "relevance_score": 0.29,
+            "pub_year": 2014,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nAnalysis removing BIC assertions:|Gene(s)|Condition(s)|Clinical significance (Last reviewed)|Review status|GRCh37Chromosome|GRCh37Location|GRCh38Chromosome|GRCh38Location|VariationID|AlleleID(s)|BIC_influenced_conflict|OMIM_influenced_conflict|clinvar_without_BIC|conflicting_interpretations_provided|SGE_functional_class|best _guess|function.score\nRows:\nNM_007294.3(BRCA1):**c.115T>G** (**p.Cys39Gly**)|BRCA1|Breast-ovarian cancer, familial 1|not specified|Conflicting interpretations of pathogenicity(Last reviewed: Oct 17, 2016)|criteria provided, conflicting interpretations|||||||no|no|CI|P/LP/VUS|LOF|Path|",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "Saturation genome editing classified the BRCA1 C39G (p.Cys39Gly) variant as loss\u2011of\u2011function and pathogenic.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6181777",
+            "title": "Accurate classification of BRCA1 variants with saturation genome editing",
+            "relevance_score": 0.19,
+            "pub_year": 2018,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nSupplementary table 1. Overview of all BRCA1 variants found at the four genetic laboratories in Norway Oslo (OUH) Bergen (HUH) Troms\u00f8 (UNN) Trondheim (TUH) Reclassified Variant Class Date Class Date Class Date Class Date Class\nRows:\n2 2017 c.81-14C>T 2 2018 2 2016 c.81-13C>A 2 2018 c.81-12C>G 2 2018 c.81-11del 2 2018 c.81-2del 5 2019 c.114G>A 2 2017 **c.115T>G** 4 2016 c.116G>A 5 2018 5 2015 c.130T>A 5 2018 5 2015 c.133_134del 5 2014 c.140G>T 4 2014 5 2008 4 2021 c.147G>A 3 2016 c.154C>T 3",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study surveyed BRCA1 variant classifications across four Norwegian laboratories, identified discrepancies, and showed that collaborative review can substantially reduce inconsistent interpretations.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9636114",
+            "title": "BRCA1 Norway: comparison of classification for BRCA1 germline variants detected in families with suspected hereditary breast and ovarian cancer between different laboratories",
+            "relevance_score": 0.18,
+            "pub_year": 2022,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Recently a pathogenic founder BRCA1 mutation c.234T>G (BIC: 2466T>G/**Cys39Gly**) was desribed in Greenland (Inuit population), an autonomous country within the Kingdom of Denmark, with a high carrier frequency (1.6%) in this population. Therefore all women of Greenlandic origin are recommended to be counseled and screened for this mutation.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The review reports a pathogenic BRCA1 founder mutation (c.234T>G, p.Cys39Gly) prevalent in the Greenlandic population and recommends targeted genetic counseling and testing for women of Greenlandic origin.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC3405339",
+            "title": "Founder BRCA1/2 mutations in the Europe: implications for hereditary breast-ovarian cancer prevention and control",
+            "relevance_score": 0.16,
+            "pub_year": 2010,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "At the outside hospital the patient was deemed not a candidate for cisplatin due to his PD, so a radical cystectomy was planned without neoadjuvant chemotherapy. Due to the nonspecific pulmonary nodules concerning for metastatic disease on prior imaging, a restaging CT chest/abdomen/pelvis was performed, and unfortunately, it revealed new and enlarging bilateral pulmonary nodules consistent with pulmonary metastatic disease and a sclerotic L2 vertebral body osseous lesion consistent with bone metastatic disease (Figure 1). With surgery no longer an option, the patient received carboplatin (dose reduced to 75 mg/m2) and full dose gemcitabine (1,000 mg/m2) with growth factor support in May 2021. This was complicated by a prolonged hospitalization secondary to neutropenic fever from Escherichia coli sepsis, from which he ultimately recovered. Next-generation sequencing through Caris Life Sciences was performed, which demonstrated a high tumor mutation burden (TMB) of 17, and pathogenic variant BRCA1 mutations at Exon 20 pT1777fs and Exon 3 **p.C39G** without any identified FGFR alterations. Because of the concern of further myelosuppression and infection, and his noted high TMB, he was subsequently switched to immunotherapy with pembrolizumab 200 mg every 3 weeks as second-line therapy. He received 4 cycles of pembrolizumab from May 2021 to August 2021, which he tolerated well. Unfortunately, a follow-up PET CT scan in August 2021 showed progression in the lungs with numerous bilateral hypermetabolic solid pulmonary nodules that were increased in number and size and raised concern for malignant pleural effusion (Figure 2).",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The case report describes a metastatic urothelial carcinoma patient on peritoneal dialysis who harbored a BRCA1 C39G pathogenic variant and experienced a marked response to enfortumab vedotin therapy.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9174522",
+            "title": "Case Report: Safety and Efficacy of Enfortumab Vedotin in a Patient With Metastatic Urothelial Carcinoma Undergoing Peritoneal Dialysis ",
+            "relevance_score": 0.15,
+            "pub_year": 2022,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "In one of the two studies it is described that 13 families exhibited a BRCA1 exon 3 nucleotide 234 T>G mutation (pCys39Gly), which is not previously reported in the BC information core database and thus only demonstrated in the Inuit population. All 13 families shared a 4.5-Mb genomic fragment containing the BRCA1 gene, showing that the mutation originates from a founder. In the other study, 2,869 persons from Greenland were screened for the presence of a BRCA1 mutation (**p.Cys39Gly**). The overall carrier frequency was 1.6% in the general population, but the frequency differed geographically from 0.6% at the West coast to 9.7% in the previously isolated population at the East coast. This is the highest population frequency of a BRCA1 mutation ever described.",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article highlights a high-frequency BRCA1 C39G founder mutation in Greenlandic populations, suggesting it may contribute to breast cancer risk in the Arctic region.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC3422501",
+            "title": "Breast cancer in the Arctic - changes over the past decades",
+            "relevance_score": 0.15,
+            "pub_year": 2012,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\n*,Unnamed: 1,Supplementary table 3 - Details of drugs prescribed for respective SNPs by OncoKB,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Unnamed: 8,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14,Unnamed: 15,*.1\nRows:\nBRCA1 MUT (D96G), BRCA1 MUT (C1146Y), BRCA1 MUT (C1718R), BRCA1 MUT (C1718Y), BRCA1 MUT (C1789G), BRCA1 MUT (C1789Y), BRCA1 MUT (C1849G), BRCA1 MUT (C1868F), BRCA1 MUT (C1868W), BRCA1 MUT (C24R), BRCA1 MUT (C24Y), BRCA1 MUT (C305F), BRCA1 MUT (**C39G**), BRCA1 MUT (C39F), BRCA1 MUT (C39W), BRCA1 MUT (C39Y), BRCA1 MUT (C44R), BRCA1 MUT (C44G), BRCA1 MUT (C44F), BRCA1 MUT (C44Y), BRCA1 MUT (C47R), BRCA1 MUT (C47G), BRCA1 MUT (C47Y), BRCA1 MUT (C61R), BRCA1 MUT (C61G), BRCA1 MUT (C64R), BRCA1 MUT",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study describes a computational framework for predicting SNP pathogenicity in triple\u2011negative breast cancer genes, including BRCA1, and lists the C39G variant in a drug\u2011prescription table without further interpretation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9763624",
+            "title": "Analysis of single-nucleotide polymorphisms in genes associated with triple-negative breast cancer",
+            "relevance_score": 0.12,
+            "pub_year": 2022,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nGene|ENSP|Variation|VAR|ENST|Mutation|Ref AA|Position|Final AA|Randomized|Type|CONDEL|CONDEL Prediction|PredictSNP|PredictSNP Prediction|MutPred|MutPred Prediction|VEST|Vest Prediction|VEST FDR|Vest FDR Prediction|VEST P|Vest P Prediction\nRows:\nBRCA1|ENST00000357654|ENSP00000350283|VAR0860||**C39G**|C|39|G|0.7462419083628425|Pathogenic|0.762891263|Deleterious|-0.86908365|Deleterious|0.837|Deleterious|0.903|Deleterious|0.7641|Deleterious|0.849|Deleterious",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The article introduces DriverDetect, a machine learning\u2011based tool that combines several prediction algorithms to more accurately identify deleterious cancer driver mutations, and reports that it classifies BRCA1 C39G as pathogenic based on computational scores.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC11442673",
+            "title": "Machine learning optimized DriverDetect software for high precision prediction of deleterious mutations in human cancers",
+            "relevance_score": 0.07,
+            "pub_year": 2024,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: S1 Table The functional, conservation and protein stability prediction results for 100 nsSNPs associated with breast cancer from ClinVar as a training dataset.\nColumn names:\nnsSNPs|Chromosome|Position|Reference allele|Risk allele|Codons _ change|Protein_ change|Gene_symbol|ClinVar|Functional Effect Tools|Conservation|Protein Stability|Statistical Parameters\nRows:\nrs11540654|||C|A|cGt/cTt|**C39G**|BRCA1|Pathogenic|deleterious (0.04)|benign (0.343)|neutral (0.457)|deleterious (-3.25)|probably damaging (1628)|highly conserved (9)|Decrease ( -1.25 )||TP|TP|TP|FN|TP|TP|TP|FN",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The article reports that the BRCA1 C39G variant is classified as pathogenic in ClinVar and predicted deleterious by several in silico tools within its supplementary data table.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8352870",
+            "title": "Pathogenic nsSNPs that increase the risks of cancers among the Orang Asli and Malays",
+            "relevance_score": 0.06,
+            "pub_year": 2021,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nindex|Source|Gene name|Uniprot_ID|ClinVar/ACMG|ClinVar/ACMG_2classes|mutation_type|Mutation|maestro|mCSM|saafec-seq|MUpro|CUPSAT|secondary_structure|rASA|plddt|FASTA_url\nRows:\n756|clinvar|BRCA1|P38398|LP|1|missense|**C39G**|-0.122|-1.761|-2.02|-1.8289648|-3.06|loop|0.155555556|88.54|https://rest.uniprot.org/uniprotkb/P38398.fasta",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study evaluates AlphaFold\u2011based protein stability predictors for missense variants in hereditary cancer genes, showing that AF2 confidence scores better discriminate pathogenic variants and reporting BRCA1 C39G as a likely pathogenic variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9988940",
+            "title": "Evaluation of AlphaFold structure-based protein stability prediction on missense variations in cancer",
+            "relevance_score": 0.05,
+            "pub_year": 2023,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nID BRCA1 VUS(Variation) refSeq ID Prediction Clinical significance (ClinVar) 1 c.5573T>C rs755427809 Benign Conflicting interpretations of pathogenicity 2 c.5511G>T rs80356914 Benign Conflicting interpretations of pathogenicity 3 c.5454C>T\nRows:\nc.134+5G>T rs80358038 Benign Likely pathogenic 1275 c.134+5G>A rs80358038 Benign Likely pathogenic 1276 c.134+5G>C rs80358038 Benign Likely pathogenic 1277 c.132C>G Benign Likely pathogenic 1278 c.116G>T rs80357498 Benign Likely Pathogenic 1279 **c.115T>G** **rs80357164** Benign Likely Pathogenic 1280 c.115T>A **rs80357164** Benign Likely Pathogenic 1281 c.110C>G rs80356880 Benign Likely pathogenic 1282 c.72T>G Benign Likely pathogenic 1283 c.70T>C rs80357410 Benign Likely Pathogenic 1284 c.[-1A>G;3G>A]",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study presents a machine\u2011learning (random\u2011forest) framework that predicts pathogenicity for thousands of BRCA1 variants of unknown significance, including the C39G variant, and reports the predicted risk classifications.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8062186",
+            "title": "Predicting Ovarian/Breast Cancer Pathogenic Risks of Human BRCA1 Gene Variants of Unknown Significance",
+            "relevance_score": 0.04,
+            "pub_year": 2021,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nGene|mutation|VEST|CanDrA|FatHMM|Frequency|Mutability|B-Score|label|REVEL|MSKFreq|group|LR|Annotation2|MSKGroup|CosmicGroup|PlotGroup|PlotFill|CHASMplus|MSKBScore|CHASM\nRows:\nBRCA1|**C39G**||||||||||||Non-neutral||||Non-neutral NA|||",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The article includes BRCA1 C39G in a dataset of missense mutations labeled as non\u2011neutral, suggesting it has functional impact consistent with a potential driver mutation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6508748",
+            "title": "Finding driver mutations in cancer: Elucidating the role of background mutational processes",
+            "relevance_score": 0.04,
+            "pub_year": 2019,
+            "data_sources": [
+                "suppl"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 1781,
+            "output": 536
+        },
+        {
+            "input": 1995,
+            "output": 504
+        },
+        {
+            "input": 1695,
+            "output": 639
+        },
+        {
+            "input": 3457,
+            "output": 1721
+        },
+        {
+            "input": 2197,
+            "output": 498
+        },
+        {
+            "input": 3381,
+            "output": 624
+        },
+        {
+            "input": 2301,
+            "output": 485
+        },
+        {
+            "input": 2909,
+            "output": 425
+        },
+        {
+            "input": 2098,
+            "output": 1010
+        },
+        {
+            "input": 2197,
+            "output": 617
+        },
+        {
+            "input": 3358,
+            "output": 877
+        },
+        {
+            "input": 1863,
+            "output": 603
+        },
+        {
+            "input": 2783,
+            "output": 378
+        },
+        {
+            "input": 2073,
+            "output": 503
+        },
+        {
+            "input": 2026,
+            "output": 561
+        },
+        {
+            "input": 1789,
+            "output": 746
+        },
+        {
+            "input": 2922,
+            "output": 467
+        },
+        {
+            "input": 2140,
+            "output": 568
+        },
+        {
+            "input": 1909,
+            "output": 338
+        },
+        {
+            "input": 2080,
+            "output": 501
+        },
+        {
+            "input": 2359,
+            "output": 343
+        },
+        {
+            "input": 2101,
+            "output": 944
+        },
+        {
+            "input": 2540,
+            "output": 201
+        },
+        {
+            "input": 2096,
+            "output": 315
+        },
+        {
+            "input": 2068,
+            "output": 247
+        },
+        {
+            "input": 1782,
+            "output": 438
+        },
+        {
+            "input": 2067,
+            "output": 676
+        },
+        {
+            "input": 2176,
+            "output": 500
+        },
+        {
+            "input": 1938,
+            "output": 647
+        },
+        {
+            "input": 2044,
+            "output": 656
+        },
+        {
+            "input": 1968,
+            "output": 261
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 12745,
+        "output": 1380
+    },
+    "total_time": 88.23
+}

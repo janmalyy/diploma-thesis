@@ -1,0 +1,2212 @@
+{
+    "before_pruning": {
+        "articles_in_total": 259,
+        "only_medline_count": 34,
+        "only_pmc_count": 111,
+        "only_suppl_count": 85,
+        "both_pmc_and_suppl_count": 29,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 50,
+        "only_medline_count": 34,
+        "only_pmc_count": 7,
+        "only_suppl_count": 1,
+        "both_pmc_and_suppl_count": 8,
+        "all_three_count": 0
+    },
+    "variant": "BRCA1 A1708E",
+    "time_to_process_articles": 59.31,
+    "context_length": 224236,
+    "after_removal": {
+        "articles_in_total": 50,
+        "only_medline_count": 34,
+        "only_pmc_count": 7,
+        "only_suppl_count": 1,
+        "both_pmc_and_suppl_count": 8,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "28477318",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 233,
+            "abstract_length": 1596,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "30541753",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 152,
+            "abstract_length": 1901,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "26656232",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 145,
+            "abstract_length": 1105,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "27742776",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 182,
+            "abstract_length": 1699,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "39438962",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 83,
+            "abstract_length": 1815,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "29884136",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 88,
+            "abstract_length": 1475,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "35641219",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 134,
+            "abstract_length": 1657,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "38075165",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 184,
+            "abstract_length": 1589,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "23479189",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 251,
+            "abstract_length": 1500,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "31292799",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 127,
+            "abstract_length": 2090,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "8942979",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 78,
+            "abstract_length": 1127,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "22399190",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 86,
+            "abstract_length": 2009,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "17063491",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 136,
+            "abstract_length": 2798,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "9523200",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 121,
+            "abstract_length": 1462,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "15923272",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 96,
+            "abstract_length": 2546,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "11916966",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 154,
+            "abstract_length": 1433,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "28680148",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 100,
+            "abstract_length": 1418,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "8872468",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 72,
+            "abstract_length": 1418,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "18036263",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 121,
+            "abstract_length": 2691,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "17080309",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 102,
+            "abstract_length": 1529,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "11802208",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 143,
+            "abstract_length": 1449,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "11157798",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 108,
+            "abstract_length": 1739,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "31769492",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 152,
+            "abstract_length": 1938,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "12400015",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 162,
+            "abstract_length": 1998,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "20960228",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 95,
+            "abstract_length": 1737,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "36593954",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 115,
+            "abstract_length": 2059,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "24742220",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 101,
+            "abstract_length": 2049,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "10737987",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 88,
+            "abstract_length": 840,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "27286788",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 125,
+            "abstract_length": 2848,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "15184261",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 145,
+            "abstract_length": 1692,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "28470340",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 156,
+            "abstract_length": 934,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "16758124",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 123,
+            "abstract_length": 1437,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "21063910",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 58,
+            "abstract_length": 1122,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "12645254",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 95,
+            "abstract_length": 1981,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6327376",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 134,
+            "abstract_length": 2203,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 3,
+            "paragraphs_lengths": [
+                831,
+                1899,
+                753
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4894565",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 91,
+            "abstract_length": 2450,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8895486",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 133,
+            "abstract_length": 1968,
+            "number_of_unmatched_snippets": 2,
+            "unmatched_snippets": [
+                "tables 1 and 2 brca1 2 mutation frequencies in the 60 afro colombian families affected by breast ovarian cancer by risk groups including the brca1 c 5123c a mutation previously identified bc breast",
+                "correspond to islands and departments off the coast of colombia conclusion of the 5 pathogenic afro colombian mutations 2 mutations brca1 c 5123c a and brca2 c 2701delc were previously reported in white"
+            ],
+            "number_of_paragraphs": 7,
+            "paragraphs_lengths": [
+                1504,
+                1261,
+                590,
+                837,
+                1068,
+                201,
+                206
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4495576",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 71,
+            "abstract_length": 1339,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                1547,
+                768
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8876448",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 123,
+            "abstract_length": 2239,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                405,
+                872
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10701504",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 183,
+            "abstract_length": 1543,
+            "number_of_unmatched_snippets": 4,
+            "unmatched_snippets": [
+                "prioritization algorithm designed by our working group results variants c 68 69del c 212 1g a and c 5123c a were detected in 30 of brca1 carriers whereas exon 2 deletion concurrent with c 3264dupt c",
+                "geographic origin of carrier families there was heterogeneity in the geographic origin of carriers of c 68 69del brca1 c 5123c a brca1 and c 3264dup brca2 as these variants were widely",
+                "brca1 2 breast tumors observed in this study are consistent with the literature 26 the median age at diagnosis of brca1 brca2 breast cancer exceeded 40 years likewise brca1 c 68 69del and c",
+                "a prioritization algorithm designed by our working group results variants c 68 69del c 212 1g a and c 5123c a were detected in 30 of brca1 carriers whereas exon 2 deletion concurrent with c"
+            ],
+            "number_of_paragraphs": 8,
+            "paragraphs_lengths": [
+                1577,
+                545,
+                341,
+                873,
+                205,
+                195,
+                196,
+                195
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9939169",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 150,
+            "abstract_length": 2902,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 5,
+            "paragraphs_lengths": [
+                1125,
+                899,
+                867,
+                1455,
+                894
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10701495",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 190,
+            "abstract_length": 1663,
+            "number_of_unmatched_snippets": 3,
+            "unmatched_snippets": [
+                "de un algoritmo de priorizaci\u00f3n dise\u00f1ado por nuestro grupo de trabajo resultados las variantes c 68 69del c 212 1g a y c 5123c a fueron detectadas en un 30 de los portadores de brca1 mientras que",
+                "di la 23 c 9117g a rs28897756 synonymous vp 16 cm di la atm 56 c 8251 8254del rs786202120 frameshift vp 8 cm di la los resultados obtenidos indican que los cambios c 68 69del c 212 1g a y c 5123c a se",
+                "aplicaci\u00f3n de un algoritmo de priorizaci\u00f3n dise\u00f1ado por nuestro grupo de trabajo resultados las variantes c 68 69del c 212 1g a y c 5123c a fueron detectadas en un 30 de los portadores de brca1 mientras"
+            ],
+            "number_of_paragraphs": 7,
+            "paragraphs_lengths": [
+                1789,
+                545,
+                843,
+                361,
+                200,
+                205,
+                207
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6389095",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 124,
+            "abstract_length": 1767,
+            "number_of_unmatched_snippets": 4,
+            "unmatched_snippets": [
+                "50 11 c 2296 2297delag 11 c 4111c t 11 c 2433delc 11 c 3598c t 11 c 4327c t 18 c 5123c a cohort characteristics and pathogenic brac1 and brac2 mutation in unselected breast cancer cases in central",
+                "3331 3334delcaag 11 \u2714 \u2714 brazil c 5251c t 20 \u2714 \u2714 colombia c 3331 3334delcaag 11 \u2714a \u2714a colombia c 5123c a 18 \u2714a \u2714a mexico c 548 4185 del 9 12 \u2714 \u2714 mexico c 4065 4068deltcaa 11 \u2714 \u2714 mexico c 2296 2297delag",
+                "11 \u2714 \u2714 mexico c 2433delc 11 \u2714 \u2714 \u2714 mexico c 3598c t 11 \u2714 \u2714 mexico c 4327c t 13 \u2714 \u2714 mexico c 5123c a 18 \u2714 \u2714 \u2714 mexico c 211 a g 5 \u2714 \u2714 mexico c 3759 3760delta 11 \u2714 \u2714 brca2 brazil c 2808 2811delacaa 11 \u2714 \u2714",
+                "\u2714 0 25 18 c 5123c a argentina \u2714 brazil \u2714 colombia \u2714 \u2714 5 7 1 3 mexico \u2714 \u2714 \u2714 0 5 20 c 5266up c argentina \u2714 brazil \u2714 \u2714 \u2714 2 5 0 65 5 a 3 7 1 2 mutation in brca 2 3 c 145g t argentina \u2714 chile \u2714"
+            ],
+            "number_of_paragraphs": 7,
+            "paragraphs_lengths": [
+                2173,
+                896,
+                1963,
+                200,
+                202,
+                200,
+                197
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9601514",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 177,
+            "abstract_length": 2043,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "present in brca2 0 56 in a separate family figure 1 the brca1 mutation c 5123c a p ala1708glu was found in three separate families and c 5266dupc p gln1756profs in four families the brca2"
+            ],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                737,
+                199
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10316545",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 111,
+            "abstract_length": 2291,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "p his41tyr 25 26 28 c 121c t p his41tyr ms p lpa 1 2 2 multiple ethnicities 35 44 brca1 18 c 5123c a p ala1708glu 25 26 28 c 5123c a p ala1708glu ms pa 2 2 0 founder variant of"
+            ],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                442,
+                201
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9249944",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 83,
+            "abstract_length": 1665,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 4,
+            "paragraphs_lengths": [
+                824,
+                1032,
+                711,
+                640
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10470619",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 79,
+            "abstract_length": 2082,
+            "number_of_unmatched_snippets": 2,
+            "unmatched_snippets": [
+                "brca1 c 140g t x x x x 18 29 36 46\u201348 brca1 c 815 824dupagccatgtgg x x x x x 18 31 33 35 49 brca1 c 5123c a x x x 28 50\u201352 brca1 c 1961dela x x 28 52 brca1 c 2344dupa none none none",
+                "3450del4 a1708e and brca2 3034del4 17 unfortunately there is a gap in information about the genetic epidemiology of breast and ovarian cancers in peru a limited number of publications describe the"
+            ],
+            "number_of_paragraphs": 3,
+            "paragraphs_lengths": [
+                680,
+                200,
+                203
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5994127",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 87,
+            "abstract_length": 1564,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 3,
+            "paragraphs_lengths": [
+                1402,
+                1127,
+                1898
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4098986",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 89,
+            "abstract_length": 1322,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 3,
+            "paragraphs_lengths": [
+                1812,
+                677,
+                1449
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5601155",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 165,
+            "abstract_length": 1523,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                574,
+                1086
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        }
+    ],
+    "narrative_summary": "The BRCA1 c.5123C>A (p.Ala1708Glu) variant is a missense substitution located in the C\u2011terminal BRCT domain of BRCA1, a region critical for transcriptional activation and protein\u2011protein interactions, and has been reported in families with hereditary breast and ovarian cancer [8942979][9523200]. Clinical reports from multiple populations describe the variant in individuals with early\u2011onset breast cancer, ovarian cancer, or multiple primary tumours, often as a recurrent founder mutation in Colombian, Afro\u2011Colombian, Spanish, Sephardic Jewish, Mexican, Argentine, and Turkish cohorts, and it has been classified as pathogenic in several case series and family studies [30541753][28680148][24742220][31292799][21063910][5601155][9249944][9939169][10737987][4495576][10316545]. One Spanish series, however, reported the same change as a likely benign polymorphism, indicating some discordance in clinical interpretation [10737987]. Functional investigations consistently demonstrate deleterious effects: the A1708E protein fails to activate transcription in yeast and mammalian assays, markedly reduces chromatin\u2011unfolding activity, disrupts BRCA1 recruitment to DNA damage foci, exhibits a dominant\u2011negative effect that heightens sensitivity to the PARP inhibitor olaparib, and abolishes inhibition of VEGF transcription through loss of BRCA1\u2011ER\u03b1 interaction, all supporting a loss\u2011of\u2011function mechanism [8942979][27742776][12645254][11916966][12400015][15923272][31769492]. Computational analyses reinforce pathogenicity; the altered alanine resides at a highly conserved, strongly hydrophobic position across mammals, and molecular\u2011dynamics simulations reveal long\u2011range structural perturbations that impair BACH1 binding, while an AI model trained on AlphaFold2 structures correctly predicts the variant as disease\u2011causing [15184261][17063491][36593954]. Population screening data show allele frequencies ranging from ~0.3\u202f% to >2\u202f% in specific founder groups, with the variant contributing to a notable proportion of BRCA1 mutations in several Latin American and Mediterranean populations, further underscoring its clinical relevance [30541753][28680148][24742220][22399190][4495576][9249944][10316545]. In summary, the preponderance of clinical segregation, functional loss\u2011of\u2011activity assays, and computational evidence classify BRCA1 A1708E as a pathogenic missense variant, despite isolated reports suggesting benignity; the weight of evidence supports its inclusion as a disease\u2011causing mutation in hereditary breast and ovarian cancer risk assessment.",
+    "structured_summary": {
+        "overall_pathogenicity": "pathogenic",
+        "pathogenicity_counts": {
+            "supports benignity": 1,
+            "supports pathogenicity": 43,
+            "uncertain": 0
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "BACKGROUND: Inherited mutations in the breast cancer susceptibility genes BRCA1 and BRCA2 (BRCA1/2) confer high risks of breast and ovarian cancer. In Colombian Hispanic families, four common BRCA1/2 founder mutations have previously been identified. Because nothing is known about the contribution of BRCA1/2 germline mutations to early-onset and hereditary breast and/or ovarian cancer in Afro-Colombians, we conducted the first study on 60 patients with early-onset and familial breast cancer in this population. MATERIALS AND METHODS: Screening for the four Colombian founder mutations BRCA1/c.3331_3334delCAAG, BRCA1/**c.5123C>A**, BRCA2/c.2806_2809delAAAC, and BRCA2/c.1763_1766delATAA was performed using mismatch polymerase chain reaction (PCR) analysis, PCR-based restriction fragment length polymorphism analysis, and qualitative real-time PCR. Mutations were confirmed by direct DNA sequencing. RESULTS: The BRCA1 founder mutation **c.5123C>A** was identified in one family with breast and ovarian cancer (1/60, 1.7%). Three women were diagnosed with breast cancer, including one with bilateral disease, at the ages of 30, 30/33, and 52 years, and one woman was diagnosed with ovarian cancer at the age of 60 years. CONCLUSION: Our data showed a low prevalence of the BRCA1/2 founder mutations in Colombians of African descent, implying that these mutations should not be recommended for genetic screening programs in the Afro-Colombian population. IMPLICATIONS FOR PRACTICE: Risk reduction intervention programs are needed for women who are found to carry a BRCA1/2 mutation, as is the implementation of prevention programs for patients with inherited breast cancer, to reduce the burden of inherited diseases. With the aim of reducing racial disparities in breast cancer prevention, this study focused on genetic testing and treatment for patients in a minority population with BRCA1/2 mutations.",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study found a low prevalence (1.7%) of the BRCA1 A1708E founder mutation among Afro-Colombian breast cancer patients, suggesting it should not be prioritized for screening in this population.",
+            "uncertainties_or_limitations": null,
+            "article_id": "30541753",
+            "title": "Low Prevalence of the Four Common Colombian Founder Mutations in BRCA1 and BRCA2 in Early-Onset and Familial Afro-Colombian Patients with Breast Cancer.",
+            "relevance_score": 0.98,
+            "pub_year": 2019,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "In Brazil, several recurring mutations in BRCA1 and BRCA2 and a TP53 mutation (R337H) have been reported in high risk breast cancer cases. We hypothesized that these recurring mutations may also be detected in the general population and ovarian cancer cases in the state of Minas Gerais. To test this notion, participants were recruited from the outpatient and the Gynecological clinic in the UFMG Medical Center in Belo Horizonte, Minas Gerais, Brazil. BRCA1 (c.68_69delAG, c.5266dupC, c.181T>G, c.4034delA, **c.5123C>A**), BRCA2 (c.5946delT, c.8537_8538delAG, 4936_4939delGAAA), the c.156_157insAlu* BRCA2 and the c.1010G>A *TP53 mutation were genotyped using validated techniques. Overall, 513 cancer free participants (273 men) (mean age 47.7 +- 15.1 years) and 103 ovarian cancer cases (mean age at diagnosis 58.7 +- 9.6 years) were studied. None of the participants were found to carry any of the genotyped mutations. We conclude that the recurring mutations in BRCA1, BRCA2 and TP53 cannot be detected in the general population or consecutive ovarian cancer cases in this geographical region in Brazil.",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study screened 513 cancer\u2011free individuals and 103 ovarian cancer patients for several recurrent BRCA1/2 and TP53 mutations, including BRCA1 A1708E (c.5123C>A), and found none of these variants in the cohort.",
+            "uncertainties_or_limitations": null,
+            "article_id": "26656232",
+            "title": "The rate of recurrent BRCA1, BRCA2, and TP53 mutations in the general population, and unselected ovarian cancer cases, in Belo Horizonte, Brazil.",
+            "relevance_score": 0.85,
+            "pub_year": 2016,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "BRCA1-deficient cells show defects in DNA repair and rely on other members of the DNA repair machinery, which makes them sensitive to PARP inhibitors (PARPi). Although carrying a germline pathogenic variant in BRCA1/2 is the best determinant of response to PARPi, a significant percentage of the patients do not show sensitivity and/or display increased toxicity to the agent. Considering previously suggested mutation-specific BRCA1 haploinsufficiency, we aimed to investigate whether there are any differences in cellular response to PARPi olaparib depending on the BRCA1 mutation type. Lymphoblastoid cell lines derived from carriers of missense pathogenic variants in the BRCA1 BRCT domain (c.5117G > A, p.Gly1706Glu and c.**5123C > A**, **p.Ala1708Glu**) showed higher sensitivity to olaparib than cells with truncating variants or wild types (WT). Response to olaparib depended on a basal PARP enzymatic activity, but did not correlate with PARP1 expression. Interestingly, cellular sensitivity to the agent was associated with the level of BRCA1 recruitment into gammaH2AX foci, being the lowest in cells with missense variants. Since these variants lead to partially stable protein mutants, we propose a model in which the mutant protein acts in a dominant negative manner on the WT BRCA1, impairing the recruitment of BRCA1 into DNA damage sites and, consequently, increasing cellular sensitivity to PARPi. Taken together, our results indicate that carriers of different BRCA1 mutations could benefit from olaparib in a distinct way and show different toxicities to the agent, which could be especially relevant for a potential future use of PARPi as prophylactic agents in BRCA1 mutation carriers.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "BRCA1 p.Ala1708Glu confers heightened sensitivity to olaparib via a dominant\u2011negative effect, suggesting it is a pathogenic missense variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "27742776",
+            "title": "Germline missense pathogenic variants in the BRCA1 BRCT domain, p.Gly1706Glu and p.Ala1708Glu, increase cellular sensitivity to PARP inhibitor olaparib by a dominant negative effect.",
+            "relevance_score": 0.85,
+            "pub_year": 2016,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "PURPOSE: Between 5 and 10% of cases of breast cancer (BC) are attributable to a genetic susceptibility. The BRCA1 and BRCA2 genes described in the late 1990s are associated with an increased risk of breast and ovarian cancer, and the clinical management of carriers of pathogenic variants in these genes is defined in several clinical guidelines (Paluch-Shimon et al. in Ann Oncol 27(suppl 5):v103-v110, 2016; Llort et al. in Clin Transl Oncol 17(12):956-961, 2015). However, the pathogenic variants in BRCA1 and BRCA2 represent only a third of the causes of hereditary BC (Easton et al. in N Engl J Med 372:2243-2257, 2015). The incorporation of NGS (Next Generation Sequencing) techniques in the genetic diagnosis of this pathology, in addition to minimising the cost and time of analysis, allows the simultaneous study of other genes of high and moderate penetrance (Easton et al. in N Engl J Med 372:2243-2257, 2015; Op. Cit.; Tung et al. in Cancer 121(1):25-33, 2015). To date, there are not many cases or series of patients that describe the co-occurrence of two pathogenic variants in these genes of BC. Cases of double heterozygosis have been described with the presence of pathogenic variants in BRCA1, BRCA2, PALB2, CHEK2, BLM or NBN (Nomizu et al. in Breast Cancer 22(5):557-61, 2015; Heidemann et al. in Breast Cancer Res Treat 134(3):1229-1239, 2012; Zuradelli et al. in Breast Cancer Res Treat 124(1):251-258, 2010; Sokolenko et al. in Breast Cancer Res Treat 145(2):553-562, 2014). METHODS: We report the case of a patient diagnosed with multiple tumours who presented two pathogenic variants in heterozygosis. RESULTS: Two pathogenic variants, c.**5123C > A** (**p.Ala1708Glu**) in the BRCA1 gene and c.2413C > T (p.Arg805X) in the ATM gene were detected in heterozygosis. Said variants were confirmed by Sanger-type sequencing using specific primers. CONCLUSIONS: The implementation of gene panels using NGS in the study of hereditary cancer involves the detection of heterozygous double mutations in genes of high and moderate penetrance for cancer, although with a low frequency.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "A case report describing a patient with double heterozygous pathogenic BRCA1 (A1708E) and ATM (p.Arg805X) mutations who developed multiple primary tumors.",
+            "uncertainties_or_limitations": null,
+            "article_id": "31292799",
+            "title": "Double heterozygous mutation in the BRCA1 and ATM genes involved in development of primary metachronous tumours: a case report.",
+            "relevance_score": 0.72,
+            "pub_year": 2019,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Mutations in BRCA1 account for 45% of families with high incidence of breast cancer and for 80-90% of families with both breast and ovarian cancer. BRCA1 protein includes an amino-terminal zinc finger motif as well as an excess of negatively charged amino acids near the C terminus. In addition, BRCA1 contains two nuclear localization signals and localizes to the nucleus of normal cells. While these features suggest a role in transcriptional regulation, no function has been assigned to BRCA1. Here, we show that the C-terminal region, comprising exons 16-24 (aa 1560-1863) of BRCA1 fused to GAL4 DNA binding domain can activate transcription both in yeast and mammalian cells. Furthermore, we define the region comprising exons 21-24 (aa 1760-1863) as the minimal transactivation domain. Any one of four germ-line mutations in the C-terminal region found in patients with breast or ovarian cancer (Ala-1708-->Glu, Gln-1756 C+, Met-1775-->Arg, Tyr-1853 ->Stop), had markedly impaired transcription activity. Together these data underscore the notion that one of the functions of BRCA1 may be the regulation of transcription.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study demonstrates that the BRCA1 C\u2011terminal region activates transcription, and the A1708E mutation markedly reduces this activity, implying a deleterious functional effect.",
+            "uncertainties_or_limitations": null,
+            "article_id": "8942979",
+            "title": "Evidence for a transcriptional activation function of BRCA1 C-terminal region.",
+            "relevance_score": 0.55,
+            "pub_year": 1996,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "The spectrum of germline mutations among Jewish non Ashkenazi high risk breast/ovarian cancer families includes a few predominant mutations in BRCA1 (185delAG and Tyr978X) and BRCA2 (8765delAG). A few additional recurring mutations **A1708E**, 981delAT, C61G (BRCA1) R2336P, and IVS2 + 1G > A (BRCA2)] have been reported in Jewish non Ashkenazi families. The 4153delA*BRCA1 C61G*BRCA1 and the 4075delGT*BRCA2 has been reported to recur in Russian/Polish non Jews and Ashkenazim, respectively. The rate of these recurring mutations has not been reported in Israeli high risk families. Genotyping for these recurring mutations by restriction enzyme digest and sequencing method was applied to high risk, predominantly cancer affected, unrelated Israeli individuals of Ashkenazi (n = 827), non Ashkenazi (n = 2,777), non Jewish Caucasians (n = 193), and 395 of mixed ethnicity. Jewish participants included 827 Ashkenazi, 804 Balkans, 847 North Africans, 234 Yemenites, and 892 Asians (Iraq and Iran). Age at diagnosis of breast cancer (median +- SD) (n = 2,484) was 47.2 +- 9.6 for all women participants. Males (n = 236) were also included, of whom 24 had breast cancer and 35 had pancreatic cancer. Overall, 8/282 (2.8%) of the Balkan cases carried the BRCA1*A1708E mutation, 4/180 (2.2%) the R2336P mutation, and 0/270 the IVS2 + 1G > A BRCA2 mutations, respectively. Of North Africans, 7/264 (2.65%) carried the BRCA1*981delAT mutation. The BRCA1*C61G mutation was detected in 3/269 Ashkenazi, non Ashkenazi, and non Jewish Russians; the BRCA1*[ProteinMutation: Tyr978X] mutation was detected in 23/3220 individuals of non Ashkenazi origin, exclusively of Asian ethnicity (23/892, 2.6% of the Asians tested). The BRCA1*4153delA mutation was noted in 2/285 non Jewish Caucasians, and none of the Ashkenazim (n = 500) carried the BRCA2*4075delGT mutation. Jewish high risk families of North African, Asian, and Balkan descent should be screened for the 981delAT, Tyr978X, **A1708E** BRCA1, and the R2336P BRCA2 mutations, respectively.",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study screened high\u2011risk Israeli families and found that the BRCA1 A1708E mutation occurs in 2.8% of Balkan cases.",
+            "uncertainties_or_limitations": null,
+            "article_id": "22399190",
+            "title": "Recurrent germline mutations in BRCA1 and BRCA2 genes in high risk families in Israel.",
+            "relevance_score": 0.37,
+            "pub_year": 2012,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Cancer-associated mutations in the BRCT domain of BRCA1 (BRCA1-BRCT) abolish its tumor suppressor function by disrupting interactions with other proteins such as BACH1. Many cancer-related mutations do not cause sufficient destabilization to lead to global unfolding under physiological conditions, and thus abrogation of function probably is due to localized structural changes. To explore the reasons for mutation-induced loss of function, the authors performed molecular dynamics simulations on three cancer-associated mutants, **A1708E**, M1775R, and Y1853ter, and on the wild type and benign M1652I mutant, and compared the structures and fluctuations. Only the cancer-associated mutants exhibited significant backbone structure differences from the wild-type crystal structure in BACH1-binding regions, some of which are far from the mutation sites. Backbone differences of the **A1708E** mutant from the liganded wild type structure in these regions are much larger than those of the unliganded wild type X-ray or molecular dynamics structures. These BACH1-binding regions of the cancer-associated mutants also exhibited increases in their fluctuation magnitudes compared with the same regions in the wild type and M1562I mutant, as quantified by quasiharmonic analysis. Several of the regions of increased fluctuation magnitude correspond to correlated motions of residues in contact that provide a continuous path of fluctuating amino acids in contact from the **A1708E** and Y1853ter mutation sites to the BACH1-binding sites with altered structure and dynamics. The increased fluctuations in the disease-related mutants suggest an increase in vibrational entropy in the unliganded state that could result in a larger entropy loss in the disease-related mutants upon binding BACH1 than in the wild type. To investigate this possibility, vibrational entropies of the **A1708E** and wild type in the free state and bound to a BACH1-derived phosphopeptide were calculated using quasiharmonic analysis, to determine the binding entropy difference DeltaDeltaS between the **A1708E** mutant and the wild type. DeltaDeltaS was determined to be -4.0 cal mol(-1) K(-1), with an uncertainty of 2 cal mol(-1) K(-1); that is, the entropy loss upon binding the peptide is 4.0 cal mol(-1) K(-1) greater for the **A1708E** mutant, corresponding to an entropic contribution to the DeltaDeltaG of binding (-TDeltaDeltaS) 1.1 kcal mol(-1) more positive for the mutant. The observed differences in structure, flexibility, and entropy of binding likely are responsible for abolition of BACH1 binding, and illustrate that many disease- related mutations could have very long-range effects. The methods described here have potential for identifying correlated motions responsible for other long-range effects of deleterious mutations.",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "Molecular dynamics simulations reveal that the BRCA1 A1708E mutation induces long\u2011range structural and dynamic changes that likely abolish BACH1 binding, indicating a pathogenic mechanism.",
+            "uncertainties_or_limitations": null,
+            "article_id": "17063491",
+            "title": "Cancer-related mutations in BRCA1-BRCT cause long-range structural changes in protein-protein binding sites: a molecular dynamics study.",
+            "relevance_score": 0.36,
+            "pub_year": 2007,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "The cloning of the breast and ovarian cancer susceptibility gene, BRCA1, allows direct estimation of the proportion of these cancers in the general population which can be attributed to germline mutations in this gene. We have used a combination of SSCP, heteroduplex analysis, and chemical cleavage of mismatch to screen the BRCA1 gene for mutations in the germline of 42 patients with breast or ovarian cancer who either have a moderate family history of these cancers, or have no family history of malignancy but a very early onset of the disease. A total of 30 sequence variants were observed, eight of which have not been described previously. Three sequence changes detected by chemical cleavage or heteroduplex analysis were missed by SSCP. The variants included 13 missense mutations, which were assessed for their pathogenic implications. Two of these (M18T and **A1708E**) are nonconservative substitutions which are located in evolutionarily conserved regions of the gene: M18T lies just upstream of the RING finger motif, and **A1708E** abolishes the transcriptional transactivation activity of the carboxy-terminal region of BRCA1. Mutations were observed in eight patients overall (19.0%), and protein-truncating mutations occurred in five of 27 (18.5%) families with 1-3 cases of breast or ovarian cancer. The data suggest that a significant proportion of patients with a modest or no family history of these cancers may carry germline mutations in BRCA1.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study reports the BRCA1 A1708E missense mutation, which abolishes transcriptional transactivation activity, indicating it is likely pathogenic in breast/ovarian cancer patients.",
+            "uncertainties_or_limitations": null,
+            "article_id": "9523200",
+            "title": "Identification of missense and truncating mutations in the BRCA1 gene in sporadic and familial breast and ovarian cancer.",
+            "relevance_score": 0.35,
+            "pub_year": 1998,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "BACKGROUND: The vast majority of BRCA1 missense sequence variants remain uncharacterized for their possible effect on protein expression and function, and therefore are unclassified in terms of their pathogenicity. BRCA1 plays diverse cellular roles and it is unlikely that any single functional assay will accurately reflect the total cellular implications of missense mutations in this gene. OBJECTIVE: To elucidate the effect of two BRCA1 variants, 5236G>C (G1706A) and 5242C>A (**A1708E**) on BRCA1 function, and to survey the relative usefulness of several assays to direct the characterisation of other unclassified variants in BRCA genes. METHODS AND RESULTS: Data from a range of bioinformatic, genetic, and histopathological analyses, and in vitro functional assays indicated that the 1708E variant was associated with the disruption of different cellular functions of BRCA1. In transient transfection experiments in T47D and 293T cells, the 1708E product was mislocalised to the cytoplasm and induced centrosome amplification in 293T cells. The 1708E variant also failed to transactivate transcription of reporter constructs in mammalian transcriptional transactivation assays. In contrast, the 1706A variant displayed a phenotype comparable to wildtype BRCA1 in these assays. Consistent with functional data, tumours from 1708E carriers showed typical BRCA1 pathology, while tumour material from 1706A carriers displayed few histopathological features associated with BRCA1 related tumours. CONCLUSIONS: A comprehensive range of genetic, bioinformatic, and functional analyses have been combined for the characterisation of BRCA1 unclassified sequence variants. Consistent with the functional analyses, the combined odds of causality calculated for the 1706A variant after multifactorial likelihood analysis (1:142) indicates a definitive classification of this variant as \"benign\". In contrast, functional assays of the 1708E variant indicate that it is pathogenic, possibly through subcellular mislocalisation. However, the combined odds of 262:1 in favour of causality of this variant does not meet the minimal ratio of 1000:1 for classification as pathogenic, and **A1708E** remains formally designated as unclassified. Our findings highlight the importance of comprehensive genetic information, together with detailed functional analysis for the definitive categorisation of unclassified sequence variants. This combination of analyses may have direct application to the characterisation of other unclassified variants in BRCA1 and BRCA2.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "Functional and histopathological analyses indicate that the BRCA1 A1708E variant impairs protein function and is likely pathogenic, though it remains formally unclassified due to insufficient odds for definitive classification.",
+            "uncertainties_or_limitations": null,
+            "article_id": "15923272",
+            "title": "Genetic, functional, and histopathological evaluation of two C-terminal BRCA1 missense variants.",
+            "relevance_score": 0.33,
+            "pub_year": 2006,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Germ-line mutations in BRCA1 predispose individuals to breast and ovarian cancers. We observed a novel endogenous association of BRCA1 with Nmi (N-Myc-interacting protein) in breast cancer cells. Nmi was found to interact specifically with BRCA1, both in vitro and in vivo, by binding to two major domains in BRCA1, amino acid residues 298-683 and 1301-1863. Homodimerization of Nmi enhanced its association with BRCA1. Nmi functioned as an adaptor molecule to recruit c-Myc to a complex containing Nmi.c-Myc.BRCA1. Because c-Myc can activate transcription of the human telomerase reverse transcriptase gene (hTERT), we addressed the role of BRCA1 and Nmi in modulating c-Myc-induced hTERT promoter activity. Although Nmi or BRCA1 alone had no effect on c-Myc induced hTERT promoter activity, BRCA1 together with Nmi significantly inhibited this c-Myc induced hTERT promoter activity ( approximately 75% inhibition). Two mutated forms of BRCA1, a missense (**A1708E**) and a nonsense (Y1853X) that have been identified in familial breast cancers, associated with Nmi and c-Myc but failed to suppress c-Myc-induced hTERT promoter activity. These results demonstrate a novel pathogenic mechanism whereby mutations in BRCA1, via a novel transcription factor complex containing BRCA1, c-Myc, and Nmi, impair inhibition of c-Myc-induced hTERT promoter activity, which allows sustained activation of telomerase, a key enzyme in carcinogenesis.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The BRCA1 A1708E variant fails to inhibit c-Myc-driven hTERT promoter activation, suggesting a loss of tumor suppressor function.",
+            "uncertainties_or_limitations": null,
+            "article_id": "11916966",
+            "title": "A novel tricomplex of BRCA1, Nmi, and c-Myc inhibits c-Myc-induced human telomerase reverse transcriptase gene (hTERT) promoter activity in breast cancer.",
+            "relevance_score": 0.31,
+            "pub_year": 2002,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Pathogenic BRCA1/2 germline mutations confer high risks of breast and ovarian cancer to women of European ancestry. Characterization of BRCA1/2 mutations in other ethnic groups is also medically important. We comprehensively screened 68 Colombian breast/ovarian cancer families for small-range mutations, 221 families for large-genomic rearrangements, and 1,022 unselected breast cancer cases for Colombian founder mutations in BRCA1/2. The risk of cancer among relatives of mutation carriers and the mutation penetrance were estimated by survival analysis. Identified BRCA2 mutations included 6310delGA and the recurrent 1991del4 mutations. A novel large BRCA2 deletion was found in 0.9% of the screened families. Among unselected breast cancer cases, 3.3% tested positive for BRCA1/3450del4, 2.2% for BRCA1/**A1708E**, 1.1% for BRCA2/3034del4, and 0.4% for BRCA2/1991del4. Female relatives of carriers of BRCA1/2 founder mutations showed a 5.90 times higher risk of breast cancer, when the woman herself carried a BRCA1 mutation compared to a non-carrier (95% CI 2.01-17.3). The estimated cumulative risk of breast cancer by age 70 years for BRCA1 mutations carriers was 14% (95% CI 5-38) compared to 3% for the general Colombian population (relative risk of breast cancer 4.05). Together with known founder mutations, reported novel variants may ease a cost-effective BRCA1/2 screening in women with Colombian ancestry.",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study screened Colombian breast/ovarian cancer families and unselected breast cancer cases, reporting that the BRCA1 A1708E variant was present in 2.2% of cases and estimating overall BRCA1/2 mutation penetrance in this population.",
+            "uncertainties_or_limitations": null,
+            "article_id": "28680148",
+            "title": "Prevalence and Penetrance of BRCA1 and BRCA2 Germline Mutations in Colombian Breast Cancer Patients.",
+            "relevance_score": 0.31,
+            "pub_year": 2017,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Five to ten percent of breast cancer in the western world may be attributed to the inheritance of highly penetrant mutations in the breast and ovarian cancer susceptibility gene, BRCA1. The biological function of BRCA1 and factors affecting expressivity, such as gene-environment and gene-gene interactions, may be more effectively studied in appropriate animal models. We report the cloning and sequencing of the canine and murine BRCA1 genes and contrast the sequences with human BRCA1. The amino terminal 120 residues of the gene are > 80% identical among the three species. The C-terminus is also highly conserved, containing an 80 amino acid stretch that is over 80% identical. Motifs of likely functional significance are maintained, including the amino terminal RING finger motif (amino acids 24-64) and the granin consensus sequence (1214-1223). The distribution of missense mutations and neutral polymorphisms identified in BRCA1-linked breast cancer suggests that disease associated missense mutations occur at highly conserved residues whereas polymorphisms are in regions of lower conservation. Among eighteen missense mutations with unknown consequences, seven occur in amino acids that are identical across species. Four of these seven (E1219D, **A1708E**, P1749R and M1775R) are also within conserved domains. Taken together, these data predict regions of the gene which may be critical for normal function.",
+                    "mention_type": "computational",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article reports that the BRCA1 A1708E variant resides in a highly conserved region across species, suggesting it may be critical for normal protein function.",
+            "uncertainties_or_limitations": null,
+            "article_id": "8872468",
+            "title": "Human, canine and murine BRCA1 genes: sequence comparison among species.",
+            "relevance_score": 0.3,
+            "pub_year": 1996,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "INTRODUCTION: Many of the DNA sequence variants identified in the breast cancer susceptibility gene BRCA1 remain unclassified in terms of their potential pathogenicity. Both multifactorial likelihood analysis and functional approaches have been proposed as a means to elucidate likely clinical significance of such variants, but analysis of the comparative value of these methods for classifying all sequence variants has been limited. METHODS: We have compared the results from multifactorial likelihood analysis with those from several functional analyses for the four BRCA1 sequence variants **A1708E**, G1738R, R1699Q, and A1708V. RESULTS: Our results show that multifactorial likelihood analysis, which incorporates sequence conservation, co-inheritance, segregation, and tumour immunohistochemical analysis, may improve classification of variants. For **A1708E**, previously shown to be functionally compromised, analysis of oestrogen receptor, cytokeratin 5/6, and cytokeratin 14 tumour expression data significantly strengthened the prediction of pathogenicity, giving a posterior probability of pathogenicity of 99%. For G1738R, shown to be functionally defective in this study, immunohistochemistry analysis confirmed previous findings of inconsistent 'BRCA1-like' phenotypes for the two tumours studied, and the posterior probability for this variant was 96%. The posterior probabilities of R1699Q and A1708V were 54% and 69%, respectively, only moderately suggestive of increased risk. Interestingly, results from functional analyses suggest that both of these variants have only partial functional activity. R1699Q was defective in foci formation in response to DNA damage and displayed intermediate transcriptional transactivation activity but showed no evidence for centrosome amplification. In contrast, A1708V displayed an intermediate transcriptional transactivation activity and a normal foci formation response in response to DNA damage but induced centrosome amplification. CONCLUSION: These data highlight the need for a range of functional studies to be performed in order to identify variants with partially compromised function. The results also raise the possibility that A1708V and R1699Q may be associated with a low or moderate risk of cancer. While data pooling strategies may provide more information for multifactorial analysis to improve the interpretation of the clinical significance of these variants, it is likely that the development of current multifactorial likelihood approaches and the consideration of alternative statistical approaches will be needed to determine whether these individually rare variants do confer a low or moderate risk of breast cancer.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study integrates functional data and multifactorial likelihood analysis, concluding that BRCA1 A1708E is functionally compromised and has a 99% posterior probability of pathogenicity, indicating it is likely pathogenic.",
+            "uncertainties_or_limitations": null,
+            "article_id": "18036263",
+            "title": "Identification of BRCA1 missense substitutions that confer partial functional activity: potential moderate risk variants?",
+            "relevance_score": 0.3,
+            "pub_year": 2007,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "In South America, a high proportion of the population is of Hispanic origin with an important representation in Colombia. Since nothing is known about the contribution of BRCA1 and BRCA2 germline mutations to hereditary breast/ovarian cancer in the Hispanic population from Colombia, we conducted the first study of 53 breast/ovarian cancer families from this country. Comprehensive BRCA mutation screening was performed using a range of techniques, including DHPLC, SSCP, and PTT, followed by DNA sequencing analysis. Thirteen deleterious germline mutations (24.5%) were identified in 53 families, comprising eight in BRCA1 and five in BRCA2. The two recurrent BRCA1 mutations, 3450 delCAAG and **A1708E**, accounted for 100% of all BRCA1 mutations identified in this cohort and the recurrent 3034 delACAA BRCA2 mutation for 40% of all BRCA2 mutations. Haplotype analyses suggested that each of these mutations has arisen from a common ancestor. The prevalence of BRCA1 or BRCA2 mutations was 50% in multiple case breast cancer families, and was 33% for the breast-ovarian cancer families. Our findings show that BRCA mutations account for a substantial proportion of hereditary breast/ovarian cancer in Colombia. The spectrum of mutations differed completely to that previously reported in Hispanic families of predominantly Mexican origin from Southern California [1] suggesting that specific genetic risk assessment strategies for the different Hispanic populations in South America and in the United States need to be developed.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study identifies the BRCA1 A1708E mutation as a recurrent deleterious germline variant accounting for a substantial portion of BRCA1 mutations in Colombian hereditary breast/ovarian cancer families.",
+            "uncertainties_or_limitations": null,
+            "article_id": "17080309",
+            "title": "High proportion of BRCA1/2 founder mutations in Hispanic breast/ovarian cancer families from Colombia.",
+            "relevance_score": 0.29,
+            "pub_year": 2007,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Index cases from a clinically relevant cohort of 102 Spanish families with at least 3 cases of breast and/or ovarian cancer (at least 1 case diagnosed before age 50) in the same lineage were screened for germline mutations in the entire coding sequence and intron boundaries of the breast cancer susceptibility genes BRCA1 and BRCA2. Overall, the prevalence of mutations was 43% in female breast/ovarian cancer families, 15% in female breast cancer families and 100% in male breast cancer families. Three recurrent mutations (185delAG, 589delCT and **A1708E**) explained 63% of BRCA1-related families. Early age at diagnosis of breast cancer, ovarian cancer, bilateral breast cancer, concomitant breast/ovarian cancer in a single patient and prostate cancer but not unilateral breast cancer were associated with BRCA1 and BRCA2 mutations. Male breast cancer was associated with BRCA2 mutations. The presence of male breast cancer was the only cancer phenotype that distinguished BRCA2- from BRCA1-related families. We have developed a logistic regression model for predicting the probability of harbouring a mutation in either BRCA1 or BRCA2 as a function of the cancer phenotype present in the family. The predictive positive and negative values of this model were 77.4% and 79%, respectively (probability cutoff of 30%). The findings of our work may be a useful tool for increasing the cost-effectiveness of genetic testing in familial cancer clinics.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study reports that the BRCA1 A1708E mutation is a recurrent alteration contributing significantly to BRCA1-related cancer families in Spain, underscoring its relevance for genetic testing decisions.",
+            "uncertainties_or_limitations": null,
+            "article_id": "11802208",
+            "title": "Association between BRCA1 and BRCA2 mutations and cancer phenotype in Spanish breast/ovarian cancer families: implications for genetic testing.",
+            "relevance_score": 0.29,
+            "pub_year": 2002,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Germline mutations in the breast and ovarian cancer susceptibility gene BRCA1 are responsible for the majority of cases involving hereditary breast and ovarian cancer. Whereas all truncating mutations are considered as functionally deleterious, most of the missense variants identified to date cannot be readily distinguished as either disease-associated mutations or benign polymorphisms. The C-terminal domain of BRCA1 displays an intrinsic transactivation activity, and mutations linked to disease predisposition have been shown to confer loss of such activity in yeast and mammalian cells. In an attempt to clarify the functional importance of the BRCA1 C-terminus as a transcription activator in cancer predisposition, we have characterized the effect of C-terminal germline variants identified in Scandinavian breast and ovarian cancer families. Missense variants A1669S, C1697R, R1699W, R1699Q, **A1708E**, S1715R and G1738E and a truncating mutation, W1837X, were characterized using yeast- and mammalian-based transcription assays. In addition, four additional missense variants (V1665M, D1692N, S1715N and D1733G) and one in-frame deletion (V1688del) were included in the study. Our findings demonstrate that transactivation activity may reflect a tumor-suppressing function of BRCA1 and further support the role of BRCA1 missense mutations in disease predisposition. We also report a discrepancy between results from yeast- and mammalian-based assays, indicating that it may not be possible to unambiguously characterize variants with the yeast assay alone. We show that transcription-based assays can aid in the characterization of deleterious mutations in the C-terminal part of BRCA1 and may form the basis of a functional assay.",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article functionally evaluates BRCA1 C\u2011terminal missense variants, including A1708E, via transcription assays to assess their effect on transactivation activity and potential role in cancer predisposition.",
+            "uncertainties_or_limitations": null,
+            "article_id": "11157798",
+            "title": "Functional analysis of BRCA1 C-terminal missense mutations identified in breast and ovarian cancer families.",
+            "relevance_score": 0.29,
+            "pub_year": 2001,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Evaluation of the functional impact of germline BRCA1 variants that are likely to be associated to breast and ovarian cancer could help to investigate the mechanism of BRCA1 tumorigenesis. Expression of pathogenic BRCA1 missense variants increased homologous recombination (HR) and gene reversion (GR) in yeast. We thought to exploit yeast genetics to shed light on BRCA1-induced genome instability and tumorigenesis. We determined the effect on GR of several neutral and pathogenic BRCA1 variants in the yeast strain RSY6wt and its isogenic DSB repair mutants, such as mre11 , rad50 and rad51 . In the RSY6wt, four out of five pathogenic and two out of six neutral variants significantly increased GR; rad51 strain, the pathogenic variants C61G and **A1708E** induced a weak but significant increase in GR. On the other hand, in rad50 mutant expressing the pathogenic variants localised at the BRCT domain, a further GR increase was seen. The neutral variant N132K and the VUS A1789T induced a weak GR increase in mre11 mutant. Thus, BRCA1 missense variants require specific genetic functions and presumably induced GR by different mechanisms. As DNA repair is regulated by cell cycle, we determined the effect on GR of BRCA1 variants in cell cycle-arrested RSYwt cells. GR is highly BRCA1-inducible in S-phase-arrested cells as compared to G1 or G2. Sequence analysis of genomic DNA from ILV1 revertant clones showed that BRCA1-induced ilv1-92 reversion by base substitution when GR is at least 6-fold over the control. Our study demonstrated that BRCA1 may interfere with yeast DNA repair functions that are active in S-phase causing high level of GR. In addition, we confirmed here that yeast could be a reliable model to investigate the mechanism and genetic requirements of BRCA1-induced genome instability. Finally, developing yeast-based assays to characterise BRCA1 missense variants could be useful to design more precise therapies.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study demonstrates that the BRCA1 A1708E missense variant increases gene reversion in yeast, supporting its pathogenic role through functional assays.",
+            "uncertainties_or_limitations": null,
+            "article_id": "31769492",
+            "title": "Effect of BRCA1 missense variants on gene reversion in DNA double-strand break repair mutants and cell cycle-arrested cells of Saccharomyces cerevisiae.",
+            "relevance_score": 0.29,
+            "pub_year": 2020,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Mutational inactivation of BRCA1 confers increased risk for breast cancer. However, the underlying basis for the breast tissue-restricted, tumor-suppressive properties of BRCA1 remains poorly defined. Here, we show that BRCA1 and the estrogen receptor alpha (ER-alpha) modulated vascular endothelial growth factor (VEGF) gene transcription and secretion in breast cancer cells. ER-alpha interacted in vitro and in vivo with BRCA1, and this interaction was mediated by the AF-2 domain of ER-alpha and two domains of BRCA1, the amino-acid residues 1-306 and 428-683. Endogenous interaction of ER-alpha with BRCA1 was observed in normal MCF-10A breast epithelial cells and in breast cancer cells (MCF-7 and T47D), and this interaction was significantly reduced in the presence of estrogen. Furthermore, ER-alpha induced activation of VEGF gene transcription, using human VEGF promoter-luciferase reporter constructs. The AF-2 domain of ER-alpha was also shown to induce VEGF gene transcription activation similar to that obtained with the full-length ER-alpha. However, in the presence of BRCA1, VEGF gene transcription activation and VEGF protein secretion were significantly inhibited in a dose-dependent manner. The BRCA1 domain of 1-683 amino acid residues was required for this inhibition of VEGF gene transcription activation. Three mutated forms of BRCA1 (**A1708E**, M1775R and Y1853X), that have been identified in familial breast cancers, failed to associate with ER-alpha and to suppress VEGF promoter activity and VEGF protein secretion. Overexpression of wild-type BRCA1 in HCC-1937 breast cancer cells that lack endogenous functional BRCA1 significantly reduced VEGF secretion in these cells. These results demonstrate a novel pathogenic mechanism whereby mutations in BRCA1, via their interaction with ER-alpha, could promote tumorigenesis through the hormonal regulation of mammary epithelial cell proliferation and impaired VEGF function, which may lead to cancer growth and angiogenesis.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "BRCA1 A1708E mutation disrupts BRCA1\u2011ER\u03b1 interaction and abolishes inhibition of VEGF transcription and secretion, indicating a pathogenic functional defect.",
+            "uncertainties_or_limitations": null,
+            "article_id": "12400015",
+            "title": "Direct interaction between BRCA1 and the estrogen receptor regulates vascular endothelial growth factor (VEGF) transcription and secretion in breast cancer cells.",
+            "relevance_score": 0.28,
+            "pub_year": 2002,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Three mutations in BRCA1 (185delAG, 5382InsC) and BRCA2 (6174delT) predominate among high risk breast ovarian cancer Ashkenazi Jewish families, with few \"private\" mutations described. Additionally, the spectrum of BRCA1 and BRCA2 germline mutations among high risk Jewish non Ashkenazi and non Jewish Israelis is undetermined. Genotyping by exon-specific sequencing or heteroduplex analysis using enhanced mismatch mutation analysis was applied to 250 high risk, predominantly cancer affected, unrelated Israeli women of Ashkenazi (n = 72), non Ashkenazi (n = 90), Moslem (n = 45), Christian Arabs (n = 21), Druze (n = 17), and non Jewish Caucasians (n = 5). All Jewish women were prescreened and did not harbor any of the predominant BRCA1 or BRCA2 Jewish mutations. Age at diagnosis of breast cancer (median +- SD) (n = 219) was 40.1 +- 11.7, 45.6 +- 10.7, 38.7 +- 9.2, 45.5 +- 11.4 +- and 40.7 +- 8.1 years for Ashkenazi, non Ashkenazi, Moslem, Christian, and Druze participants, respectively. For ovarian cancer (n = 19) the mean ages were 45.75 +- 8.2, 57.9 +- 10.1, 54 +- 8, 70 +- 0, and 72 +- 0 for these origins, respectively. Overall, 22 (8.8%) participants carried 19 clearly pathogenic mutations-10 BRCA1 and 9 BRCA2 (3 novel): 3 in Ashkenazim, 6 in 8 non-Ashkenazim, 6 in 7 Moslems, 2 in Druze, and 2 in non Jewish Caucasians. Only three mutations (c.1991del4, C61G, **A1708E**) were detected in 2 seemingly unrelated families of Moslem and non- Ashkenazi origins. There were no inactivating mutations among 55 Ashkenazi high risk breast cancer only families. In conclusion, there are no predominant recurring germline mutations in BRCA1 or BRCA2 genes among ethnically diverse Jewish and non Jewish high risk families in Israel.",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study identified the BRCA1 A1708E variant in two unrelated high\u2011risk families of Moslem and non\u2011Ashkenazi origin, but did not provide an interpretation of its pathogenicity.",
+            "uncertainties_or_limitations": null,
+            "article_id": "20960228",
+            "title": "Germline mutations in BRCA1 and BRCA2 genes in ethnically diverse high risk families in Israel.",
+            "relevance_score": 0.28,
+            "pub_year": 2011,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "With the surge of the high-throughput sequencing technologies, many genetic variants have been identified in the past decade. The vast majority of these variants are defined as variants of uncertain significance (VUS), as their significance to the function or health of an organism is not known. It is urgently needed to develop intelligent models for the clinical interpretation of VUS. State-of-the-art artificial intelligence (AI)-based variant effect predictors only learn features from primary amino acid sequences, leaving out information about the most important three-dimensional structure that is more related to its function. Methods: We proposed a deep convolutional neural network model named variant effect recognition network for BRCA1 (vERnet-B) to recognize the clinical pathogenicity of missense single-nucleotide variants in the BRCT domain of BRCA1. vERnet-B learned features associated with the pathogenicity from the tertiary protein structures of variants predicted by AlphaFold2. Results: After performing a series of validation and analyses on vERnet-B, we discovered that it exhibited significant advances over previous works. Recognizing the phenotypic consequences of VUS is one of the most daunting challenges in genetic informatics; however, we achieved 85% accuracy in recognizing disease BRCA1 variants with an ideal balance of false-positive and true-positive detection rates. vERnet-B correctly recognized the pathogenicity of variant **A1708E**, which was poorly predicted by AlphaFold2 as previously described. The vERnet-B web server is freely available from URL: http://ai-lab.bjrz.org.cn/vERnet. Conclusions: We applied protein tertiary structures to successfully recognize the pathogenic missense SNVs, which were difficult to be addressed by classical approaches based on sequences. Our work demonstrated that AlphaFold2-predicted structures were expected to be used for rich feature learning and revealed unique insights into the clinical interpretation of VUS in disease-related genes, using vERnet-B as a discovery tool.",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study introduces vERnet-B, an AI model leveraging AlphaFold2-predicted BRCA1 structures, which correctly predicts the pathogenicity of the A1708E missense variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "36593954",
+            "title": "Artificial intelligence-based recognition for variant pathogenicity of BRCA1 using AlphaFold2-predicted structures.",
+            "relevance_score": 0.27,
+            "pub_year": 2023,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "BACKGROUND: Approximately 5% of all breast cancers can be attributed to a mutation in the BRCA1 or BRCA2 gene. The genetic component of breast cancer in Colombia has been, for the most part, studied on cases from the Bogota region. Five different founder mutations were in two studies of breast cancer patients in the Bogota region. It is important that the frequency of mutations be established among unselected cases of breast cancer of other regions of Colombia in order to estimate the genetic burden of this cancer in Colombia and to plan genetic services. The aim of this study was to establish the mutation frequencies of the BRCA genes in breast cancer patients unselected for family history or age, from Medellin, Colombia. METHODS: We enrolled 280 unselected women with breast cancer from a large public hospital in Medellin, Colombia. A detailed family history from each patient and a blood sample was obtained and processed for DNA analysis. Mutations in BRCA1 and BRCA2 were sought using a combination of techniques including a panel of recurrent Hispanic BRCA mutations which consists of fifty BRCA1 mutations and forty-six BRCA2 mutations, including the five recurrent Colombian BRCA mutations. All mutations were confirmed by direct sequencing. RESULTS: Genetic testing was successfully completed for 244 of the 280 cases (87%). Among the 244 cases, three deleterious mutations were identified (two in BRCA1 and one in BRCA2) representing 1.2% of the total. The average age of breast cancer in the mutation-positive cases was 34 years. The two BRCA1 mutations were known founder mutations (3450del4 in exon 11 and **A1708E** in exon 18). The BRCA2 mutation was in exon 11 (5844del5) and has not been previously reported in individuals of Colombian descent. Among the three mutation-positive families was a breast cancer family and two families with no history of breast or ovarian cancer. CONCLUSION: The frequency of BRCA mutations in unselected breast cancer cases from the Medellin region of Colombia is low and is approximately 1.2%.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "Among 244 unselected breast cancer patients from Medellin, Colombia, the BRCA1 A1708E founder mutation was found and classified as deleterious, contributing to a low overall BRCA mutation frequency of 1.2%.', ",
+            "uncertainties_or_limitations": null,
+            "article_id": "24742220",
+            "title": "Prevalence of BRCA1 and BRCA2 mutations in unselected breast cancer patients from medellin, Colombia.",
+            "relevance_score": 0.26,
+            "pub_year": 2014,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "We have carried out a study of breast cancer in Spanish families in which the entire coding region of the BRCA1 gene have been analyzed. To identify BRCA1 mutations, PTT and CSGE methods were used followed by direct sequencing. We investigated 51 breast cancer women with a family history. Among these we have identified 7 frameshifts mutations (15%), 185delAG (4 times), 1623del5 and 3450del4 (2 times), and 3 missense mutations, Ser1613Gly, Met1652Ile and **Ala1708Glu**, which are likely polymorphisms. These findings show that BRCA1 is implicated in a fraction of Spanish familial breast cancer similar to other countries. There was association between bilateral breast cancer and BRCA1 mutations. The CSGE technique has been demonstrated to be a highly reliable method for mutation screening because of its sensitivity and high throughput.",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study of 51 Spanish breast\u2011cancer families identified the BRCA1 Ala1708Glu missense variant and classified it as likely a benign polymorphism.",
+            "uncertainties_or_limitations": null,
+            "article_id": "10737987",
+            "title": "Frequency of germ-line BRCA1 mutations among Spanish families from a Mediterranean area.",
+            "relevance_score": 0.26,
+            "pub_year": 2000,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "BACKGROUND: Numerous epidemiological factors affect the probability of developing breast or ovarian cancer, but no predictor is as determinant as inheriting a mutation in BRCA1 or BRCA2. The concept of the founder effect explains the reduced genetic variability in some populations, according to the theory that new populations can be formed from a reduced number of individuals, so the new population would carry only a small fraction of the genetic variability of the original population. The main purpose of this review is to provide an update on the state of the art in founder mutations and some recurrent mutations that have recently been described in Latin America. METHODS: A literature search was performed in the electronic databases of PUBMED, EMBASE, LILACS, and BIREME using the terms BRCA1, BRCA2, founder mutation, Latin American population, and Hispanic. Sixty-two papers were identified, of which 38 were considered relevant for this review. Each result is shown per country. RESULTS: In Latin America, clear founder effects have been reported in Mexico (BRCA1 del exons 9-12), Brazil (BRCA1 5382insC and BRCA2 c.156_157insAlu), and Colombia (BRCA1 3450del4, **A1708E**, and BRCA2 3034del4) and in Latinas residing in Southern California (BRCA1 185delAG, IVS5+1G>A, S955x, and R1443x). Of these, mutation BRCA1 3450del4 has also been reported in Brazil and Chile, whereas mutation BRCA2 3034del4 has been reported in Argentina and Peru. These data support the idea that although most Hispanic populations are the result of a mixture between Europeans, Africans, and Amerindians, the relative proportion of each genetic component varies throughout the Hispanic populations, making it necessary to identify the mutations characteristic of each population to generate mutation profiles adjusted to each one of them. CONCLUSION: In Latin American countries, and even among regions of the same country, there is great heterogeneity of ancestors. Therefore, Latinas should not be analyzed like other population groups without taking into account their genetic ancestry. The presence of founder mutations in specific population groups represents a cost-effective analysis. The importance of determining the founder mutations lies mainly in the decrease in costs. If we manage to decrease costs, screenings could be offered more widely and cover a larger number of women. IMPLICATIONS FOR PRACTICE: Hispanic and African-American populations are four to five times less likely than other populations worldwide to receive screening for BRCA mutations, a main reason being the high costs of these tools. The present study seeks to identify the prevalent mutations and the founder effect in the BRCA gene in the Hispanic population to address specific panels for this population group in the future and develop strategies for population screening.",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article reports that the BRCA1 A1708E protein mutation is a recurrent mutation identified in Colombian populations as part of founder mutation studies in Latin America.",
+            "uncertainties_or_limitations": null,
+            "article_id": "27286788",
+            "title": "Founder and Recurrent Mutations in BRCA1 and BRCA2 Genes in Latin American Countries: State of the Art and Literature Review.",
+            "relevance_score": 0.25,
+            "pub_year": 2016,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Inherited missense mutations in the tumor suppressor gene, BRCA-1, may predispose to breast or ovarian cancer, but the exact effects on the protein are generally unknown. The COOH-terminal region of BRCA-1 encodes two BRCT repeats, which are partially conserved in mammalian species (human, dog, rat, and mouse; 60% amino acid identity). A bioinformatic analysis was conducted to evaluate 246 BRCT missense mutations from high-risk breast and/or ovarian cancer patients (reported in the NIH Breast Cancer Information Core database). It was hypothesized that amino acids conserved in evolution would be disproportionately targeted by the mutations and that conserved amino acids with strongly hydrophobic side chains would be disproportionately perturbed. A statistical model was developed, and chi(2) tests were used to determine whether missense mutations are randomly distributed throughout the BRCT repeats or whether they disproportionately target certain amino acids. The results showed that missense mutations disproportionately target amino acids that are identical in all four mammals (chi(2) = 46.01, P < 0.001). In addition, missense mutations disproportionately perturb conserved amino acids with strongly hydrophobic side chains (chi(2) = 68.57, P < 0.001) and alter the strongly hydrophobic property. The two most frequently observed known cancer-predisposing missense mutations in the BRCT repeats, M1775R and **A1708E**, conform to this pattern. These results suggest that missense mutations affecting highly conserved amino acids with strongly hydrophobic side chains can disturb important features of the BRCA-1 protein and may play a role in breast and ovarian cancer formation.",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study reports that the BRCT\u2011domain BRCA1 A1708E missense mutation, a frequently observed cancer\u2011predisposing variant, disrupts a conserved hydrophobic residue, suggesting a pathogenic role in breast and ovarian cancer formation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "15184261",
+            "title": "Missense mutations in the BRCT domain of BRCA-1 from high-risk women frequently perturb strongly hydrophobic amino acids conserved among mammals.",
+            "relevance_score": 0.24,
+            "pub_year": 2004,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "A total of 264 unrelated breast/ovarian cancer patients and 45 healthy individuals with familial antecedents referred for genetic testing were scanned for germ-line mutations in BRCA1 and BRCA2 by conformation-sensitive gel electrophoresis (CSGE) and heteroduplex analysis by capillary array electrophoresis (HA-CAE). We detected 101 distinct mutations (41 in BRCA1 and 60 in BRCA2); ten of them have not been previously reported. These mutations were c.2411_2429dup19, c.2802_2805delCAAA and c.5294A>G (p.E1725E) of BRCA1; and c.667C>T (p.Q147X), c.2683C>T (p.Q819X), c.5344_5347delAATA, c.5578_5579delAA;insT, c.8260_8261insGA, c.744+14C>T and c.8099A>G (p.Y2624C) of BRCA2. Twenty-four different mutations, including seven of the new mutations (five frameshift and two nonsense), were classified as pathogenic. These 24 alterations were found in 39 families (12.6% of all families). A remarkable proportion of deleterious mutations were found in BRCA2: 25 families carried a mutation in BRCA2 (BRCA2+; 64.1%) compared with 14 families BRCA1+ (35.9%). The highest incidences of deleterious mutations were found in families with three or more cases of site-specific breast cancer (BC) (27.4%) and families with BC and ovarian cancer (22.2%). Finally, four recurrent mutations, 3036_3039delACAA, c.5374_5377delTATG of BRCA2, as well as c.5272-1G>A and c.5242C>A (**p.A1708E**) of BRCA1, accounted for 44% of all of the deleterious mutations.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "Screening of 264 Spanish breast/ovarian cancer families identified several BRCA1/2 mutations, with the BRCA1 p.A1708E variant recurrently observed and classified as a deleterious (pathogenic) mutation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "16758124",
+            "title": "High proportion of novel mutations of BRCA1 and BRCA2 in breast/ovarian cancer patients from Castilla-Leon (central Spain).",
+            "relevance_score": 0.23,
+            "pub_year": 2006,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Founder mutations in BRCA1/2 genes have been detected in several Jewish communities in Israel, including in Ashkenazi Jews and Jews who immigrated to Israel from Iraq, Yemen, Iran and Afghanistan. We analyzed DNA samples of patients of Sephardic origin (descendents of Jews from the Iberian Peninsula) with breast cancer (BC) and/or ovarian cancer (OC) and additional family history of these cancers. In this study we identified 2 mutations: **p.A1708E** in BRCA1 and c.67 + 1G > A (IVS2 + 1G > A) in BRCA2, each in 3 unrelated patients. The frequency of the two mutations was 26-31% among Sephardic high risk families and about 3% among the full cohort of 177 patients of this origin who were tested in our center. Based on haplotype analysis we concluded that these mutations are most probably founder mutations in Sephardic Jews. We recommend testing the two mutations in women of Sephardic origin who apply for BRCA testing because of personal and/or family history of BC and/or OC. Furthermore, we suggest adding them to the 5 mutations included in \"The Jewish panel\" of BRCA1/2 mutations that are being tested in Israel.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study identifies the BRCA1 p.A1708E variant as a likely founder mutation in Sephardic Jews, found in high\u2011risk breast/ovarian cancer families and recommends its inclusion in testing panels.",
+            "uncertainties_or_limitations": null,
+            "article_id": "21063910",
+            "title": "Two BRCA1/2 founder mutations in Jews of Sephardic origin.",
+            "relevance_score": 0.23,
+            "pub_year": 2011,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Mutations in breast cancer susceptibility gene 1(BRCA1) account for approximately 40%-50% of familial breast cancer cases and for more than 80% of inherited breast and ovarian cancer cases. Many cancer-predisposing mutations are located in the C-terminal region that functions as a transcriptional activation domain, but most of the mutations in the transactivation domain identified to date cannot be readily distinguished as either disease-associated mutations or benign polymorphisms. Because chromatin structure regulation is an early event in gene transcription control, the chromatin unfolding activities of different transactivation domain variants were compared with that of the wild-type transactivation domain by use of an approach that allows visualization of large-scale chromatin structure through lac repressor/lac operator recognition. To do this, different constructs of the transactivation domain were selected as follows: (a) the wild-type transactivation domain; (b) two polymorphisms (S1613G and M1652I); and (c) four cancer-predisposing mutations (**A1708E**, M1775R, W1837R and Y1853 term). All of the constructs were made by fusing in frame with lac repressor. Western blot analysis indicated that all of the fusion proteins were expressed in A03 1 cells, in which multiple copies of the lac operator were integrated to produce a heterochromatic region of the genome. The chromatin unfolding assay showed that, like the wild-type transactivation domain, two variants that represent benign polymorphisms did not induce chromatin unfolding or only induced subtle change. Contrary to the behaviors of the wild type and two benign variants, four cancer-predisposing mutations in the transactivation domain superactivate the chromatin unfolding. The results suggest that the chromatin unfolding assay can aid in the characterization of deterious mutations in the C-terminal transactivation domain of BRCA1 and may provide more reliable presymptomatic risk assessment.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study shows that the BRCA1 A1708E mutation markedly increases chromatin unfolding activity, suggesting it is a deleterious, cancer\u2011predisposing variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "12645254",
+            "title": "[Studies of mutations in BRCA1 transactivation domain by visualization of chromatin structure].",
+            "relevance_score": 0.11,
+            "pub_year": 2002,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "A recent review about mutations in the BRCA genes identified a clear founder effect in several Latin American populations, including Mexico (BRCA1 ex9-12del), Brazil (BRCA1 5382insC y BRCA2 c.156_157insAlu), and Colombia (BRCA1 3450del4, **A1708E**, y BRCA2 3034del4), as well as in Latino population from southern California (BRCA1 185delAG, IVS5+1G>A, S955x, y R1443x). The differences in the frequency and type of BRCA mutations in Latin America have been associated with the admixture dynamics in each specific population and with the differences in the proportions of ancestral components resulting from the admixture processes over time.",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article focuses on BRCA1/2 variant frequencies in the Mexican population and does not provide specific pathogenicity or frequency information for the BRCA1 A1708E variant, mentioning it only in a broader discussion of founder mutations in other Latin American groups.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6327376",
+            "title": "Population and breast cancer patients' analysis reveals the diversity of genomic variation of the BRCA genes in the Mexican population",
+            "relevance_score": 1.0,
+            "pub_year": 2019,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Approximately 10% of BC cases are due to genetic factors and associated with a family history, which can be attributed to germline mutations in BC susceptibility genes, in particular BRCA1 and BRCA2 (BRCA1/2). The contribution of BRCA1/2 germline mutations to early-onset and hereditary breast/ovarian cancer (OC) in the Colombian population was previously described by us in 2 studies conducted among a total of 121 White/mestizo breast/OC-affected families and unselected patients with BC. In these studies, we reported on the prevalence of pathogenic BRCA1/2 germline mutation and the identification of 4 small-scale founder mutations and 1 large deletion, 2 in BRCA1 (HGVS/BIC: c.3331_3334delCAAG/3450del4 and **c.5123C>A**/**A1708E**) and 3 in BRCA2 (c.1763_1766delATAA/1991del4, c.2808_2811delACAA/-3034del4, and ex1-14del), which accounted for 89% and 44% of all BRCA1 and BRCA2 mutations, respectively. The overall prevalence of BRCA1/2 mutations was 16% in families with multiple female cases of BC and 21% in families affected by both breast and OC. Furthermore, 2 other previous studies on unselected patients with breast cancer and OC showed mutation frequencies of 1.2% and 15%, respectively.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "All Afro-Colombian families affected by breast/OC who were investigated in this study have previously been described. In summary, a total of 60 families comprising 51 affected by BC and 9 affected by both breast and OC were recruited at the Cancer Leagues in Cartagena, Quibdo, and San Andres Island, Colombia, from March to December 2016. Of the 60 index patients, 52 were Afro-Colombians and 8 were Raizales. All patients had previously been screened for the 4 Colombian BRCA1/2 founder mutations (BRCA1/c.3331_3334delCAAG, BRCA1_**c.5123C>A**, BRCA2/c.1763_1766delATAA, and BRCA2/c.2808_2811delACAA) and a mutation carrier (BRCA1_**c.5123C>A**) was identified. All patients were selected for genetic BRCA1/2 testing using NGS. They were classified into 3 categories based on the family history of cancer: group A1: families with one female case of BC diagnosed at or before 35 years of age; group A2: families with 2 or more BC cases diagnosed at any age; and group A3: families with one or more female BC cases and one or more OC cases diagnosed at any age.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "The present study included 60 index cases from 60 Afro-Colombian families affected by breast/OC. Three patients had been diagnosed with BC before 35 years of age (5%); 48 belonged to families with at least 2 BC cases (80%) and 9 to families with both breast and OC (15%). The median ages of disease onset differed between BRCA1/2 carriers (n = 5, including the previously identified BRCA1_**c.5123C>A** carrier) and noncarriers (n = 55; 40 years, range 30-45 vs 51 years, range 33-70 years, P = .019 by Wilcoxon rank-sum test).",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "Family Ethnic group Gene Mutation nomenclature No. of BIC entriesa No. of ClinVar Entriesg Total entriesh BICa: Genomic Level HGVSb: genomic level HGVS:protein level Asian descent European descent African descentc Hispanic descentd Unknowne Totalf Deleterious BRCA1/2 mutations A004 Afro BRCA1 IVS5-12A>G c.213-12A>G : 1 16 1j 2l 8 28 55 83 A012 Afro BRCA1 4282insA c.4163_4164insA p.Ser1389Glufs 0 0 1j 0 0 1 4 5 A035 Afro BRCA1 5242C>Ai **c.5123C>A** **p.Ala1708Glu** 0 15 1j 12 19 47 77 124 A036 Raizal BRCA1 : c.4203delT p.Gln1401Hisfs 0 0 1k 0 0 1 0 1 A015 Afro BRCA2 2929delC c.2701delC p.Ala902Leufs 0 0 1j 2m 0 3 13 16 Variants of uncertain significance A032 Afro BRCA2 : c.9259C>A p.Leu3087Ile 0 0 1j 0 0 1 2 3 A038 Raizal BRCA2 1778A>G c.1550A>G p.Asn517Ser 0 2 1j 1n 0 4 16 20 A058 Afro BRCA2 : c.3685G>A p.Val1229Ile 0 0 1j 0 0 1 2 3",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "This is the first report that describes the frequency and spectrum of small-scale mutations and LGRs in the BRCA1/2 genes of patients with early-onset and familial breast and OC among Colombians of African descent. Four BRCA1/2 pathogenic/likely pathogenic variants (including the recurrent BRCA2_c.2701delC mutation, which showed a founder origin) were identified, and one variation was already confirmed (BRCA1_**c.5123C>A**) in 60 Afro-Colombian families affected by breast and OC (8.3%). Overall, BRCA1 mutations (80%) were more common than those in BRCA2 (20%), which is similar to the findings observed in most Latin American countries. This is in line with a report describing that women of African (15.6%) and Latin American (14.8%) descent have a significantly higher prevalence of deleterious BRCA1/2 mutations than women of Western European ancestry (12.1%), mainly due to an increased prevalence of BRCA1 mutations in these 2 groups.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "Tables 1 and 2. BRCA1/2 mutation frequencies in the 60 Afro-Colombian families affected by breast/ovarian cancer by risk groups. Including the BRCA1_**c.5123C>A** mutation previously identified. BC, breast",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "correspond to islands and departments off the coast of Colombia. Conclusion Of the 5 pathogenic Afro-Colombian mutations, 2 mutations, BRCA1_**c.5123C>A** and BRCA2_c.2701delC, were previously reported in White",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study identifies the BRCA1 c.5123C>A (p.Ala1708Glu) variant as a pathogenic founder mutation in Afro\u2011Colombian families, associated with early\u2011onset breast/ovarian cancer and shared with White/mestizo Colombians.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8895486",
+            "title": "Prevalence of BRCA1 and BRCA2 Germline Mutations in Patients of African Descent with Early-Onset and Familial Colombian Breast Cancer",
+            "relevance_score": 0.72,
+            "pub_year": 2022,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "The four remaining BRCA1 mutations were tested by differing methods. A tetra-primer Amplification Refractory Mutation System (ARMS) assay was designed for the exon 13 R1443X mutation, a restriction fragment length polymorphism (RFLP) was designed for the exon 18 **A1708E** mutation, and a TaqMan Copy Number Variation (CNV) assay (Applied Biosystems Inc., Assay ID: Hs05509065_cn) was employed to detect the BRCA1 ex9\u201312del large rearrangement. The binding site of the probe for TaqMan CNV assay was on exon 10 of BRCA1 gene. To confirm the mutations identified by the TaqMan CNV assay and also determining the extent of the deleted region, a Multiple Ligation-dependent Probe Amplification (MLPA) assay (MRC Holland Inc., Assay ID: P002) on 3500XL genetic Analyzer (Applied Biosystems Inc.) was used. The 185delAG mutation, commonly seen in the Hispanic women in the US of apparent Mexican and Jewish ancestry was coupled in a previously designed multiplex assay (52). In addition, we tested for the BRCA1 5382insC and BRCA2 6174delT mutations commonly seen in Jews and others of eastern European ancestry using the same rapid multiplex method (52). Mutation-positive controls were included in the assay. All primer designs and PCR conditions are available upon request. All deleterious mutations detected by all methods were confirmed by direct sequencing [BigDye\u00ae Terminator v.3.1 Cycle Sequencing Kit; 3130xL Genetic Analyzer (Applied BioSystems, Foster City, CA)] according to the manufacturer\u2019s protocol.",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "...recent follow-up study (34), the BRCA1 exon 13 C4446T (R1443X) was reported six times, four of which were in families of Mexican descent. The 2552delC was reported in four families and the **A1708E** was observed in three families of Mexican origin. The latter was also reported by Myriad Genetics in seven Latin American subjects in the BIC database (54). The BRCA2 exon 11 3492insT was identified in 10 families of Mexican descent only. In this study, we also identified the BRCA1 exon 13 C4446T (R1443X) twice; the exon 11 2552delC twice, the **A1708E** four times and BRCA2 exon 11 3492insT once. Weitzel et al (33) also reported single BRCA1 mutations which we also detected in the current study, each in a single individual:...",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article reports the detection of the recurrent BRCA1 A1708E mutation in multiple Mexican breast\u2011cancer families, supporting its presence in this population but providing no functional or classification evidence.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC4495576",
+            "title": "Recurrent BRCA1 and BRCA2 mutations in Mexican women with breast cancer",
+            "relevance_score": 0.66,
+            "pub_year": 2014,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...del exons 9-12), Brazil (BRCA1 c.5266dupC and BRCA2 c.156_157insAlu), and Colombia (BRCA1 c.3331_3334delCAAG, BRCA1 c.**5123 C>A**, and BRCA2 c.2808_2811delACAA). In the Middle Eastern population, nine PVs were recurrent in epithelial OC and founder mutation analysis revealed only...",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "...c.6275_6276delTc.8987T>A*c.9382C<T* p.Glu49Ter*p.Glu1581Trpfs*p.Tyr1716LysfsTer8*p.Leu2092Profsp.Leu2996*p.Arg3128Ter* Colombian c.114G>Ac.211A>G*c.2808_2811delACAA* c.3331_3334delCAAG* c.4327C>T*c.5123C>A* p.Lys38=p.Gln1111fsp.Ala1708Glup.Arg1443Terp.**Ala1708Glu** ex1-14del c.1763_1766delATAA c.2808_2811del4*c.6024dupG -p.Asn588Serfsp.Ala938Profsp.Gln2009Alafs Costa Rican c.68_69delc.3403C>Tc.5266dupC* p.Glu23fsp.Gln1135Terp.Gln1756Profs*... ...p.Cys61Gly*p.Cys61Serp.Gln563Terp.Gln1756Profs c.6589delA*c.7806-2A>G* p.Thr2197fs- Spanish c.68_69delAG*c.211A>G* (Galicia) c.2900_2901dupCT c.3331_3334delCAAGc.5117G>Ac.5123C>Ac.470_471delCTc.5153-1G>A p.Glu23Valfs*p.Arg71Gly*p.Pro968Leufsp.Gln1111Asnfsp.Gly1706Glu(**p.Ala1708Glu**)p.Leu156_Ser157insTer- c.1813dupAc.2095C>Tc.2808_2811del4c.4030_4035delinsC c.5146_5149del4c.6629_6630delAAc.9026_9030del5c.9310_9311delAA...",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article surveys the prevalence of BRCA1/2 pathogenic founder variants in North Africa and lists A1708E among many variants, but does not provide specific interpretation for this variant.', ",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8876448",
+            "title": "Prevalence of specific and recurrent/founder pathogenic variants in BRCA genes in breast and ovarian cancer in North Africa",
+            "relevance_score": 0.65,
+            "pub_year": 2022,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "In Spain, the mutational spectrum of BRCA1/2 shows considerable variations across the different Spanish population groups. Of note, there is a spectrum of recurrent pathogenic variants in Spanish HBOC families. Concerning BRCA1, c.211A>G is the most prevalent genetic variant in the Spanish population (especially in northwest Spain), followed by c.68_69del and **c.5123C>A**. The historical presence of Jews (Sephardic) in the Iberian Peninsula explains that these two variants are highly prevalent and widely distributed across the national territory. The following most prevalent pathogenic variants in the Spanish population are c.3770_3771del and c.3331_3334del. In regard to the c.3331_3334del variant, haplotype analysis in Hispanic carriers suggests that this ancestral mutation originated in the Iberian Peninsula and spread to Latin America during the colonization. As for BRCA2, the c.2808_2811del and c.6275_6276del variants are widely distributed across the Spanish population. The diversity of c.2808_2811del haplotypes suggests multiple separate origins. Nevertheless, haplotype analysis of the c.6275_6276del variant reported in a variety of populations worldwide indicates that it may have originated in northern Europe. In contrast, the genetic variants c.3264dup, c.9026_9030del, and c.9018C>A are more recurrent in the Mediterranean basin.",
+                    "mention_type": "population",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "Gene Exon/intron HGVS refSNP Type of variant ClinVar No. of families Dominant phenotype BRCA1 2 c.68_69del rs80357914 Frameshift PV 23 BC: ID TN IN4-5 c.212+1G>A rs80358042 Intronic PV 16 BC: ID TN 10 c.1918C>T rs886039981 Nonsense PV 9 BC: ID TN 17 **c.5123C>A** **rs28897696** Missense PV 12 BC: ID TN BRCA2 2 exon2del - LGR PV 12 BC: ID LA 11 c.3264dup rs80359380 Frameshift PV 10 BC: ID LA 11 c.3455T>G rs80358593 Nonsense PV 12 BC: ID LA 23 c.9117G>A rs28897756 Synonymous PV 16 BC: ID LA ATM 56 c.8251_8254del rs786202120 Frameshift PV 8 BC: ID LA",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "This study revealed that variants c.68_69del, c.212+1G>A, and **c.5123C>A** were detected in 30 % of BRCA1+ patients. Additionally, exon 2 deletion, along with c.3264dup, c.3455T>G and c.9117G>A variants were found in 30 % of BRCA2+ cases.",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Likewise, BRCA1 c.68_69del and **c.5123C>A** variants were associated with a higher number of cases of bilateral breast cancer. In addition, the prevalence of male breast cancer was higher in carriers of BRCA2 variants. The histopathological and immunohistochemical profile of synchronous and metachronous bilateral breast carcinomas showed a concordance of 65 %, which is lower than such described in previous studies. This finding suggests that the phenotypic expression of the primary tumor was relatively predictive of the expression status of the secondary tumor. Nevertheless, since the phenotype of the primary tumor is not always predictive, it is necessary to determine the histopathological and immunohistochemical profile of each tumor in order to ensure appropriate diagnosis and therapeutic decision-making.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "prioritization algorithm designed by our working group. Results Variants c.68_69del, c.212+1G>A, and **c.5123C>A** were detected in 30 % of BRCA1 carriers, whereas exon 2 deletion concurrent with c.3264dupT, c",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": ". Geographic origin of carrier families There was heterogeneity in the geographic origin of carriers of c.68_69del (BRCA1), **c.5123C>A** (BRCA1), and c.3264dup (BRCA2), as these variants were widely",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article identifies BRCA1 c.5123C>A (A1708E) as a recurrent pathogenic variant in the Murcian population, observed in 30% of BRCA1 carriers and linked to a higher incidence of bilateral breast cancer, supporting its likely pathogenic role.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10701504",
+            "title": "Recurrent genetic variants and prioritization of variants of uncertain clinical significance associated with hereditary breast and ovarian cancer in families from the Region of Murcia",
+            "relevance_score": 0.63,
+            "pub_year": 2023,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "SNV/indel pathogenic variants and VUS (*) detected in Tanzanian breast cancer patients displayed along the BRCA1/2 proteins. BRCA1 variants are c.2090del (p.Phe697fs), c.4065_4068del (p.Asn1355fs), c.5030_5033del (p.Thr1677fs), **c.5123C>A** (**p.Ala1708Glu**), and a splice donor c.212 + 1G>A (protein unknown, hence not shown). BRCA1 domains are Ring/Zinc finger (green), BRCT associate/Serine-rich (red), Disordered region (blue), and BRCT (yellow). BRCA2 variant is c.6591_6592del (p.Glu2198fs), and a VUS c.4042T>A (p.Cys1348Ser). BRCA2 domains are BRC repeats (green), BRCA2 helical (red), BRCA2 oligosaccharide binding: BRCA2 OB1 (blue), BRCA2 oligosaccharide/oligonucleotide binding: BRCA2 DBD_OB2 (yellow), and BRCA2 oligosaccharide binding: BRCA2 OB3 (purple).",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "Gene Variant at DNA level Variant at protein level Exon Variant type Molecular consequences Clinical significance (ClinVar) dbSNP ID Age at breast cancer diagnosis TNM stage Molecular subtype Family history of cancer BRCA1 c.212 + 1G>A : 4 SNV Splice donor Pathogenic rs80358042 32 III Triple-negative No BRCA1 c.4065_4068del p.Asn1355fs 10 Deletion of TCAA Frameshift Pathogenic rs80357508 34 Unknown Triple-negative Yes: BC, Paternal Aunt, dx?, dcd 55 BRCA1 c.2090del p.Phe697fs 10 Deletion of A Frameshift Pathogenic rs886039996 40 II Luminal-B Yes: BC, Maternal Aunt, dx 50, dcd 52 BRCA1 c.5030_5033del p.Thr1677fs 16 Deletion of CTTA Frameshift Pathogenic rs80357580 53 III Triple-negative No BRCA1 **c.5123C>A** **p.Ala1708Glu** 17 SNV Missense Pathogenic **rs28897696** 29 II Triple-negative No BRCA2 c.6591_6592del p.Glu2198fs 11 Deletion of TG Frameshift Pathogenic rs80359605 45 III Triple-negative No",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "The **c.5123C>A** (**p.Ala1708Glu**) variant was the second SNV BRCA1 pathogenic variant identified in the patients group. This is a missense variant arising as a result of substitution of cytosine residue by a thiamine at position 5123 of exon 17 of the cDNA. The substitution results in a change of alanine to glutamine residue at position 1708 of a BRCA1 protein. This variant is located in the BRCT domain of the BRCA1 protein (Figure 2), a region that interacts with several other proteins. The BC patient harboring this variant in our series was diagnosed with ILC of the left breast at the age of 29. The tumor immunohistochemistry results revealed a triple-negative status. The patient was an overweight, non-smoker, non-drinker, nulliparous married female.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "We observed an overall 6% frequency for germline SNV/indel pathogenic variants and CNVs in BRCA1/2. Among them, 5% of variants were detected in BRCA1 and were either a SNV or a deletion. The remaining 1% variant was a deletion detected in BRCA2. All SNV/indel pathogenic variants (c.212 + 1G>A, c.4065_4068del, c.2090del, c.5030_5033del, **c.5123C>A**, and c.6591_6592del) were detected in six unrelated patients. All the pathogenic variants identified in our cohort were mentioned in ClinVar database and are given in Table 2. Despite the fact that our cohort was not selected for age at diagnosis, the prevalence of germline BRCA1/2 pathogenic variants observed does not differ significantly from that observed in the Rwandan BC patients diagnosed with the disease before 35 years. Our findings also agree with other scholars' findings from unselected Chinese BC patients, Sweden, and Bahrain that analyzed 25 patients selected for early onset of the disease and family history of cancer. However, the prevalence observed in our cohort (6%) is lower compared to that reported in Uganda and Cameroon combined, Morocco, and Mexico. The prevalence of germline BRCA1/2 pathogenic variants between studies may possibly vary by race/ethnicity of population, study sample size, and different enrollment criteria.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "A very low number of VUS was observed in our analysis. We noted one VUS: the c.4042T>A (p.Cys1348Ser) in exon 11 of BRCA2 in one patient. Our fewer VUS finding is consistent with that of the Moroccan population, and contrary to that observed in the young Rwandan population. While there is insufficient evidence to determine the role of this variant in BC, its clinical significance remains elusive. Of a special interest, the patient harboring the only VUS in our cohort was diagnosed with triple-negative BC at 29 years of age. She was also determined to harboring the pathogenic variant: **c.5123C>A** (**p.Ala1708Glu**). We suggest a close follow-up of this patient and her family to get more insight of the BRCA1/2 variants in her blood relatives.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study identifies the BRCA1 c.5123C>A (p.Ala1708Glu) missense variant as a pathogenic mutation in Tanzanian breast cancer patients, particularly those with triple\u2011negative disease, and suggests its contribution to cancer risk in this population.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9939169",
+            "title": "Breast cancer in East Africa: Prevalence and spectrum of germline SNV/indel and CNVs in  BRCA1  and  BRCA2  genes among breast cancer patients in Tanzania",
+            "relevance_score": 0.63,
+            "pub_year": 2022,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "En Espana, el espectro mutacional de BRCA1/2 muestra una variacion considerable en las diferentes subpoblaciones espanolas. No obstante, destaca un espectro de variantes patogenicas recurrentes en familias espanolas con SCMOH. En relacion a BRCA1, c.211A>G representa la variante genetica mas prevalente en poblacion espanola (especialmente en el noroeste de Espana) seguida de c.68_69del y **c.5123C>A**, ambas relacionadas con la presencia historica de los judios (sefardies) en la peninsula Iberica por lo que se encuentran ampliamente distribuidas por todo el territorio nacional. A continuacion, se posicionan c.3770_3771del y c.3331_3334del entre las variantes patogenicas reportadas de forma recurrente en poblacion espanola. Respecto a la variante c.3331_3334del, el analisis de haplotipos realizado en portadores hispanos apunta que esta mutacion ancestral fue originada en la peninsula iberica y posteriormente, propagada durante la colonizacion hacia Latinoamerica. Con respecto a BRCA2, c.2808_2811del y c.6275_6276del se encuentran ampliamente distribuidas por diferentes subpoblaciones espanolas. La diversidad de haplotipos relacionados con la variante c.2808_2811del, sugiere que posiblemente presente multiples origenes independientes. Sin embargo, el analisis de haplotipo realizado sobre la variante c.6275_6276del, reportada en diversas poblaciones del mundo, estima su origen en Europa del Norte. Por el contrario, las variantes geneticas c.3264dup, c.9026_9030del y c.9018C>A destacan de forma recurrente en la region mediterranea.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "Gen Exon/Intron HGVS refSNP Tipo de variante ClinVar No familias Fenotipo predominante BRCA1 2 c.68_69del rs80357914 Frameshift VP 23 CM: DI TN IN4-5 c.212+1G>A rs80358042 Intronica VP 16 CM: DI TN 10 c.1918C>T rs886039981 Nonsense VP 9 CM: DI TN 17 **c.5123C>A** **rs28897696** Missense VP 12 CM: DI TN BRCA2 2 exon2del - LRG VP 12 CM: DI LA 11 c.3264dup rs80359380 Frameshift VP 10 CM: DI LA 11 c.3455T>G rs80358593 Nonsense VP 12 CM: DI LA 23 c.9117G>A rs28897756 Synonymous VP 16 CM: DI LA ATM 56 c.8251_8254del rs786202120 Frameshift VP 8 CM: DI LA",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Asimismo, destaca un numero superior de casos de cancer de mama bilateral asociado a las variantes c.68_69del y **c.5123C>A** en BRCA1 mientras que las variantes BRCA2 presentan una mayor prevalencia de cancer de mama en el varon. La concordancia observada en el perfil histopatologico e inmunohistoquimico de los carcinomas mamarios bilaterales de tipo sincronico y metacronico fue del 65 %, inferior a lo descrito en estudios previos. Este dato evidencia que la expresion fenotipica del primer tumor fue relativamente predictiva del estatus de expresion del segundo tumor. Sin embargo, no siempre resulta asi, lo que refuerza la necesidad de determinar el perfil histopatologico e inmunohistoquimico de cada tumor para establecer de forma adecuada el pronostico y la decision terapeutica.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "En el estudio realizado sobre el origen geografico de las familias estudiadas, se ha observado como las portadoras de las variantes c.68_69del (BRCA1), **c.5123C>A** (BRCA1) y c.3264dup (BRCA2) presentan una procedencia heterogenea, encontrandose ampliamente distribuidas por la Region de Murcia.",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "de un algoritmo de priorizaci\u00f3n dise\u00f1ado por nuestro grupo de trabajo. Resultados Las variantes c.68_69del, c.212+1G>A, y **c.5123C>A** fueron detectadas en un 30 % de los portadores de BRCA1 mientras que",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": ": DI LA 23 c.9117G>A rs28897756 Synonymous VP 16 CM: DI LA ATM 56 c.8251_8254del rs786202120 Frameshift VP 8 CM: DI LA Los resultados obtenidos indican que los cambios c.68_69del, c.212+1G>A y **c.5123C>A** se",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "aplicaci\u00f3n de un algoritmo de priorizaci\u00f3n dise\u00f1ado por nuestro grupo de trabajo. Resultados Las variantes c.68_69del, c.212+1G>A, y **c.5123C>A** fueron detectadas en un 30 % de los portadores de BRCA1 mientras",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article characterises the BRCA1 c.5123C>A (A1708E) variant as a recurrent pathogenic mutation in Spanish families, noting its relatively high prevalence, association with bilateral breast cancer, and widespread geographic distribution within the region studied.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10701495",
+            "title": "Variantes geneticas recurrentes y priorizacion de variantes de significado clinico desconocido asociadas al sindrome de cancer de mama y ovario hereditario en familias de la Region de Murcia",
+            "relevance_score": 0.62,
+            "pub_year": 2023,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Country Cohort size Inclusion criteria Number of mutation detected Pathogenic mutation in BC patients Recurrent mutation (frequency %) Large genomic rearrangements (frequency %) References BRCA1 BRCA2 BRCA1 BRCA2 BRCA1 BRCA2 BRCA1 BRCA2 Exon Mutation Exon Mutation Brazil 402 Unselected, but all of the patients postive for a BRCA mutation had a family history of BC 2 2 11 c.3228_3229delAG 11 c.5946delT c.5266dupC (1.2%) c.6405_6409delCTTAA (0.5%) NS NS Gomes et al. 20 c.5266dupC 11 c.640_6409delCTTAA Colombiab 766 Unselected for family history 2 1 11 c.3331_3334delCAAGc.**5123C>A** 11 c.2808_2811delACAA c.3331_3334de lCAAG (1.6%)**c.5123C>A** (1.3%) c.2808_2811delACAA (1.3%) NS NS Torres et al. Colombiac 96 Unselected for family history 3 2 11 c.3331_3334de lCAAG 11 c.6024dupG c.3331_3334de lCAAG (11.4) ND NS NS Rodriguez et al. 11 c.1674_1674de lA 11 c.6024dupG 18 **c.5123C>A** Colombia 244 Unselected for family history 2 1 11 c.3331_3334de lCAAG 11 c.5616_5620de lAGTAA ND ND NS NS Hernandez et al. 18 **c.5123C>A** Mexico 188 Unselected for family history 14 6 2 70insAG 10 1803insA ND ND ex9-12del (6.9%) ND Villarreal-garza et al. 2 c.68_69de lAG 11 2900de lCT ex8-9dup (1.1%) 5 c.211A>G 11 C.6024dupG ex18-19del (1.1%) 5 c.212+1G>A 11 6244de lG ex8-10del 11 c.798_799de lTT 11 c.6486_6489de lACAA 11 803de lA 25 c.9463_9467de I5in8 11 c.815_824dupAGCCATGTGG 11 c.2806_2809de lGATA 11 c.3759_3760de lTGAG 11 c.3858_3861de lTGAG 11 c.4065_4068de lTCAA 13 c.4327C>T 18 c.5095C>T 18 **c.5123C>A** Mexico 810 Unselected [85.3% with sporadic BC and 67.7% with early-onset BC (<= 50 years of age)] 8 11 9_12 c.548?_4185?de l 10 c.1796-1800de lTTTAT c.548?_4185?de I(1%) c.1796-1800de lTTTAT(0.37%) NS NS Torres-Mejia et al. 11 c.1016-1017insA 11 c.2808_2811de lACAA c.2433de IC(0.25%) c.4111C>T 11 c.2071-2071de lA 11 2971de I5 c.4327C>T (0.25%) 11 c.2296-2297de lAG 11 c.3264_3265insT **c.5123C>A** (0.5%) 11 c.2433de lC 11 c.4111C>T 11 c.3598C>T 11 4321insAA 13 c.4327C>T 11 4534de lAT 18 **c.5123C>A** 11 c.5542de lA 11 11 11 Perua 266 Unselected for family history 4 1 2 c.68_69de lAG 11 c.2808_2811de lACAA c.68_69de lAG (2.6%) c.2808_2811de lACAA (0.75%) NS NS Abugattas et al. 11...",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "The only study on patients with hereditary BC in Colombia (n = 53) described 6 BRCA mutations (2 in BRCA1 and 4 in BRCA2), 2 of which were recurrent in BRCA1 (c.3331_3334delCAAG and **c.5123C>A**) and one of which was recurrent in BRCA2 (c.2808_2811delACAA) (Additional file 1: Table S1). Another 3 studies that collectively screened 1106 patients unselected for family history described another 4 mutations (1 in BRCA1 and 3 in BRCA2). Table 3 shows the mutations that were reported in more than one cohort. No LGR studies were performed in Colombia. Therefore, in the Colombian population, 10 different pathogenic point mutations in BRCA were detected, 3 of which were recurrent (Additional file 1: Table S1 and Table 2), and no LGR studies were available.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "Table 4 shows BRCA1/2 mutations common in more than one Central or South American country, including a total of 21 mutations (14 in BRCA1 and 7 in BRCA2). The most common mutations were found in exons 2, 5, 11, 13, 18 and 20 in BRCA1 and in exons 3 and 11 in BRCA2. Seven mutations were present in 3 or more countries: c.68_69delAG, c.211A>G, c.3331_3334delCAAG and c.5123C>G in BRCA1 and c.145G>T, c.2808_2811delACAA and c.5946delT in BRCA2. The c.68_69delAG mutation, also known as 185delAG (BRCA1 exon 2), was described in Argentina, Brazil, Chile, Mexico and Peru and was reported as a recurrent mutation in Brazil (0.3%), Chile (0.6%) and Peru (2.6%). The mutation c.211A>G (BRCA1 exon 5) was detected in Argentina, Brazil, Mexico and Peru and was reported as a recurrent mutation in hereditary BC in Argentina (1.17%). The c.3331_3334delCAAG was present in BC patients from Brazil, Chile and Colombia and was a recurrent mutation in Chile (0.9%) and Colombia (9.4%). The mutation **c.5123C>A** (BRCA1 exon 18) was detected in Argentina (cohort A), Brazil (Cohort A), Colombia (cohort A and C) and Mexico (cohort A, B and C) and was a recurrent mutation in Colombia (5.7%) and Mexico (0.5%). In BRCA2, 6 mutations in exon 11 (c.2808_2811delACAA, c.3264dupT, c.4740_4741insTG, c.535dupA, c.5946delT and c.6024dupG) and one in exon 3 (c.145G>T) were detected in more than one country; c.2808_2811delACAA was a recurrent mutation in Argentina (0.64%), Colombia (3.8%) and Peru (0.75%), and c.145G>T was a recurrent mutation in Chile (2.6%).",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": ". [50] 11 c.2296-2297delAG 11 c.4111C>T 11 c.2433delC 11 c.3598C>T 11 c.4327C>T 18 **c.5123C>A** Cohort characteristics and pathogenic BRAC1 and BRAC2 mutation in unselected breast cancer cases in Central",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": ".3331_3334delCAAG 11 \u2714 \u2714 Brazil c.5251C>T 20 \u2714 \u2714 Colombia c.3331_3334delCAAG 11 \u2714a \u2714a Colombia **c.5123C>A** 18 \u2714a \u2714a Mexico c.548?_4185?del 9_12 \u2714 \u2714 Mexico c.4065_4068delTCAA 11 \u2714 \u2714 Mexico c.2296-2297delAG",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "11 \u2714 \u2714 Mexico c.2433delC 11 \u2714 \u2714 \u2714 Mexico c.3598C>T 11 \u2714 \u2714 Mexico c.4327C>T 13 \u2714 \u2714 Mexico **c.5123C>A** 18 \u2714 \u2714 \u2714 Mexico c.211 A>G 5 \u2714 \u2714 Mexico c.3759_3760delTA 11 \u2714 \u2714 BRCA2 Brazil c.2808_2811delACAA 11 \u2714 \u2714",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "\u2714 0.25% 18 c. **5123C>A** Argentina \u2714 Brazil \u2714 Colombia \u2714 \u2714 5.7% 1.3% Mexico \u2714 \u2714 \u2714 0.5% 20 c.5266up C Argentina \u2714 Brazil \u2714 \u2714 \u2714 2.5%/0.65%/5%a 3.7% 1.2% Mutation in BRCA 2 3 c.145G>T Argentina \u2714 Chile \u2714",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The review reports c.5123C>A (BRCA1 p.Ala1708Glu) as a recurrent pathogenic mutation in multiple Central and South American populations, with documented frequencies in several cohorts.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6389095",
+            "title": "Mutations in BRCA1, BRCA2 and other breast and ovarian cancer susceptibility genes in Central and South American populations",
+            "relevance_score": 0.62,
+            "pub_year": 2017,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...Niece (Unaffected) 18 Wild Type 9 BRCA1 c.3756_3759delGTCT (p.Ser1253ArgfsTer10) 11 Proband (Ovarian Cancer) 59 Mutated Son (Unaffected) 36 Wild Type Daughter (Unaffected) 39 Wild Type 10 BRCA1 c.**5123C > A**(**p.Ala1708Glu**) 18 Proband (Breast and Ovarian Cancer) 52 Mutated Sister (Unaffected) 54 Mutated Brother (Unaffected) 51 Wild Type 11 BRCA1 c.**5123C > A**(**p.Ala1708Glu**) 18 Proband (Ovarian Cancer) 52 Mutated Sister (Melanoma) 55 Mutated Sister (Unaffected) 47 Wild Type Cousin (Unaffected) 50 Wild Type 12 BRCA1 c.**5123C > A**(**p.Ala1708Glu**) 18 Proband (Colon Cancer) 54 Mutated Sister (Unaffected) 55 Mutated Sister (Unaffected) 59 Mutated Cousin (Colon Cancer) 54 Wild Type 13 BRCA1 c.5266dupC(p.Gln1756Profs) 20 Proband (Breast and...",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": ") present in BRCA2 (0.56%) in a separate family (Figure 1). The BRCA1 mutation **c.5123C>A**(**p.Ala1708Glu**) was found in three separate families and c.5266dupC (p.Gln1756Profs) in four families; the BRCA2",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study reports the BRCA1 p.Ala1708Glu (c.5123C>A) variant in several families with hereditary breast/ovarian and other cancers, but does not assign a definitive pathogenicity classification.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9601514",
+            "title": "Increased Risk of Hereditary Prostate Cancer in Italian Families with Hereditary Breast and Ovarian Cancer Syndrome Harboring Mutations in BRCA and in Other Susceptibility Genes",
+            "relevance_score": 0.61,
+            "pub_year": 2022,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...c.6627_6634del p.(Ile2209Metfs*13). On the other hand, only one of the identified recurrent BRCA1 variants seems to be ethnic-specific, which is BRCA1 c.**5123C > A** p.(**Ala1708Glu**), that was identified in 2/25 and 2/24 patients. This variant is a known Mediterranean founder variant, and has been described in the Spanish, Sephardic Jews and Hispanics (Table 2). In order to...",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "(p.His41Tyr) [25, 26, 28] c.121C > T p.(His41Tyr) ms P/LPa 1 2 2 Multiple Ethnicities [35, 44] BRCA1 18 c.**5123C > A** (**p.Ala1708Glu**) [25, 26, 28] c.**5123C > A** p.(**Ala1708Glu**) ms Pa 2 2 0 Founder variant of",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article reports BRCA1 c.5123C>A (p.Ala1708Glu) as a Mediterranean founder variant found in a few Jordanian patients, supporting its inclusion in a population\u2011specific screening panel.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10316545",
+            "title": "BRCA1/2 potential founder variants in the Jordanian population: an opportunity for a customized screening panel",
+            "relevance_score": 0.61,
+            "pub_year": 2023,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "More than one variation in BRCA1 Genetic alteration 1 Genetic alteration 2 P1 c.1444_1447delATTA p.I482* c.**5123C > A** **p.A1708E** P2 c.4065_4068delTCAA p.N1355Kfs*10 c.2599C > G p.Q867E More than one variation in BRCA2 Genetic alteration 1 Genetic alteration 2 P3 c.1414C > T p.Q472* c.8359C > T p.R2787C P4 c.1909 + 22delT c.1343G > A p.R448H P5 c.4587_4588insA p.V1532Sfs*2 c.1146A > T p.K382N P6 c.8020_8021dupAA p.I2675fs*2 c.6080G > A p.R2027K P7 c.1235C > G p.P412R c.4081C > G p.Q1361E P8 c.1235C > G p.P412R c.4081C > G p.Q1361E Both BRCA1 and BRCA2 BRCA1 variant BRCA2 variant P9 c.1444_1447delATTA p.I482* c.1411G > A p.E471K P10 c.4956G > A p.M1652I c.3836A > G p.N1279S P11 c.981_982delAT p.C328* c.658_659delGT p.V220fs*4 P12 c.4956G > C p.M1652I c.6614T > G p.V2205G P13 c.3247A > G p.M1083V c.9097dupA p.3033fs*11",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Gene n Genetic alteration Internal Freq. Pathogenicity BRCA1 20 c.1444_1447delATTA p.I482* 0.0092 P BRCA1 17 c.5266dupC p.Q1756Pfs*74 0.0078 P BRCA1 16 c.2800C > T p.Q934* 0.0074 P BRCA1 13 c.4327C > T p.R1443* 0.0060 P BRCA1 7 c.**5123C > A** **p.A1708E** 0.0032 P BRCA1 7 c.181T > G p.C61G 0.0032 P BRCA1 6 c.981_982delAT p.C328* 0.0028 P BRCA1 5 c.4035delA p.E1346fs*20 0.0023 P BRCA1 4 c.2611_2612delCC p.P871Vfs*31 0.0018 P BRCA1 4 c.3211G > T p.E1071* 0.0018 P BRCA1 4 c.3607C > T p.R1203* 0.0018 P BRCA1 4 c.4391_4393delinsTT p.P1464Lfs*2 0.0018 P BRCA2 9 c.2765dupT p.K923Qfs*13 0.0042 P BRCA2 9 c.9097dupA p.T3033Nfs*11 0.0042 P BRCA2 8 c.7689delC p.H2563Qfs*85 0.0037 P BRCA2 6 c.3751dupA p.T1251Nfs*14 0.0028 P BRCA2 6 c.4169delT p.L1390Wfs*20 0.0028 P BRCA2 6 c.67+1G > A - 0.0028 P BRCA2 5 c.7976G > A p.R2659K 0.0023 P BRCA2 5 c.1773_1776delTTAT p.I591Mfs*22 0.0018 P BRCA2 4 c.1519delA p.R507Efs*2 0.0018 LP BRCA2 4 c.5969delA p.D1990Vfs*14 0.0018 P BRCA2 4 c.7007G > A p.R2336H 0.0018 P BRCA2 4 c.8478C > A p.Y2826* 0.0018 P",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "Region Gene N Genetic alteration Variant Class. Mediterranean Region BRCA1 20 c.1444_1447delATTA p.I482* P BRCA1 6 c.**5123C > A** **p.A1708E** P BRCA2 9 c.3836A > G p.N1279S VUS BRCA2 6 c.4169delT p.L1390Wfs*20 P Marmara Region BRCA1 7 c.5266dupC p.Q1756Pfs*74 P BRCA1 4 c.181T > G p.C61G P BRCA2 3 c.67+1G > A - P Aegean Region BRCA1 7 c.5266dupC p.Q1756Pfs*74 P BRCA1 4 c.181T > G p.C61G P BRCA2 3 c.67+1G > A - P Central Anatolia Region BRCA1 16 c.2800C > T p.Q934* P BRCA1 13 c.4327C > T p.R1443* P BRCA1 7 c.5266dupC p.Q1756fs*74 P BRCA2 8 c.7689delC p.H2563Qfs*85 P BRCA2 5 c.7976G > A p.R2659K P Black Sea Region BRCA1 3 c.6158 C > G p.S2053C VUS Southeastern Anatolia Region BRCA1 3 c.5266dupC p.Q17756Pfs*74 P",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "In addition, C61G (observed in Marmara, Central Anatolia and Mediterranean regions) variant in BRCA1 gene was observed with significantly low allele frequency compared to global databases (0.1614%-0.6%) which also implicated in Saudi ovarian cancer patients. The variant had also been linked to hereditary breast and ovarian cancer in Italian and Polish populations. On the contrary of global data (0.00199), **p.A1708E** variation detected in Mediterranean and Aegen regions in our study had higher allele frequency (0.1614) which is reported as the most frequent in Spanish and Latin populations.",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study identifies BRCA1 p.A1708E as a pathogenic variant observed in the Turkish population, reporting its frequency and regional distribution across Turkey and noting its higher allele frequency in certain regions compared with global data.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9249944",
+            "title": "Germline landscape of BRCAs by 7-site collaborations as a BRCA consortium in Turkey",
+            "relevance_score": 0.6,
+            "pub_year": 2022,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "HGVSc Nomenclature HGVSp Nomenclature Effect Exon Frequency % (n=64) Tumor type Mutation type Reference 2105dupT Leu702Phefs*10 L702Ffs*10 10 18.75% (12) OC (9), TNBC (3) inframe insertion ACMG 68_69delAG Glu23Valfs*17 E23Vfs*17 2 9.38% (6) OC (5), TNBC (1) inframe deletion ACMG/ClinVar 140G>T Cys47Phe C47F 4 7.81% (5) OC (4), TNBC (1) missense ACMG/ClinVar 815_824dupAGCCATGTGG Thr276Alafs*14 T276Afs*14 10 7.81% (5) OC inframe insertion ACMG/ClinVar **5123C>A** **Ala1708Glu** **A1708E** 17 6.25% (4) OC (3), TNBC (1) missense ACMG/ClinVar 1961delA Lys654Serfs*47 K654Sfs*47 10 4.69% (3) OC (2), BC (HER2- RH+, 1) inframe deletion ACMG/ClinVar 2344dupA Ser782Lysfs*8 S782Kfs*8 10 3.13%...",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": ") BRCA1 c.140G>T x x x x (18, 29, 36, 46\u201348) BRCA1 c.815_824dupAGCCATGTGG x x x x x (18, 31, 33, 35, 49) BRCA1 **c.5123C>A** x x x (28, 50\u201352) BRCA1 c.1961delA x x (28, 52) BRCA1 c.2344dupA None None None",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "3450del4, **A1708E** and BRCA2 3034del4) (17). Unfortunately, there is a gap in information about the genetic epidemiology of breast and ovarian cancers in Peru. A limited number of publications describe the",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study describes the spectrum and frequency of BRCA1/2 germline variants in Peruvian breast and ovarian cancer patients, noting A1708E as a missense variant observed in a small number of cases, without providing pathogenicity interpretation for this variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10470619",
+            "title": "Landscape of germline BRCA1/BRCA2 variants in breast and ovarian cancer in Peru",
+            "relevance_score": 0.58,
+            "pub_year": 2023,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Recurrent mutations in BRCA1 Family Criteria Breast Cancer (BC) Male BC BC < 50 Bilateral BC Ovarian Cancer Other tumours Phenotype 5078_5080delCTG (p.Ala1693del) 40 1, 2, 8 Yes No Yes Yes Yes ENT Unknown 252 1, 5, 6 Yes No Yes Yes No Lung, endometrial and kidney Triple negative 525 1, 6 Yes No Yes Yes No Luminal 537 2, 7, 8 Yes No Yes No Yes Unknown 669 1, 2, 8 Yes No Yes No Yes Luminal c.**5123C > A** (**p.Ala1708Glu**) 207 1, 6 Yes No Yes Yes No Triple negative - Luminal 507 1, 2, 8 Yes No Yes No Yes ENT Unknown 811 1, 3, 5 Yes No Yes No Yes Luminal 836 1, 5, 6 Yes No Yes Yes No Triple negative 861 1, 5 Yes No Yes No No Endometrial, gastric Triple negative - Luminal c.3756_3759delGTCT (p.Ser1253Argfs) 253 5 Yes No Yes No No Unknown 337 1, 7, 8 Yes No Yes No Yes Lung, colon and multiple myeloma Triple negative 823 1, 5 Yes No Yes No No Luminal - HER2 1070 1, 5, 8 Yes No Yes No Yes Cerebral and germinal tumour Unknown c.3770_3771delAG (p.Glu1257Glyfs) 7 1, 5 Yes No Yes Yes No Skin Triple negative 62 1, 3, 6 Yes No Yes No Yes Colon Triple negative 859 1, 3, 5 Yes No Yes No Yes Colon, kidney and bladder Triple negative 984 1, 3, 6 Yes No Yes Yes Yes ENT and lymphoma Luminal c.5419delA (p.Ile1807Leufs) 481 1, 5 Yes No Yes No No Unknown 690 1, 3, 5 Yes No Yes No Yes Triple negative 835 1, 3, 6 Yes No Yes Yes Yes Colon and lung Triple negative 983 3, 5 Yes No Yes No Yes Colon Triple negative",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "The 5 most recurrent mutations in BRCA1 and 5 most recurrent in BRCA2 identified in our population represent 44 and 40% of the mutations found in these genes, respectively (Tables 3 and 4). The most frequent mutations observed in BRCA1 were c.5078_5080delCTG (p.Ala1693del) and c.**5123C > A** (**p.Ala1708Glu**), followed by c.3756_3759delGTCT, c.3770_3771delAG and c.5419delA. The most recurrent BRCA2 variant in our study was c.9018C > A (p.Tyr3006Ter), identified in 10 of the 70 positive BRCA2 families (14.3%). This nonsense variant results in a premature stop codon and is predicted to encode a truncated non-functional protein. The next most recurrent BRCA2 variant, c.5720_5723delCTCT, is caused by a deletion, producing a shift in the translational reading frame and leading to a premature stop codon (p.Ser1907Terfs). No genotype-phenotype correlation was observed regarding recurrent mutations.",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Regarding recurrent mutations, the most frequent mutation observed in BRCA1 was c.5078_5080delCTG, not reported as recurrent in other national or international populations. The other more frequent recurrent BRCA1 variant present in population databases, c.**5123C > A**, has been reported in several Spanish studies, and is considered as recurrent in the Valencian community and other geographical areas. Haplotype analysis supports the idea that this mutation is a founder in Sephardic Jews and there may be a common origin in Sephardic Jews and the Spanish population. The most recurrent BRCA2 variant in our study was c.9018C > A, overrepresented in our population but not frequent in other populations. Although the recurrent mutation c.9018C > A found in ten of our families has been reported in several populations, the databases do not consider it a frequent mutation, suggesting a possible founding effect in the Andalusian territory. The second most frequent recurrent mutation was c.5720_5723delCTCT, not being described a founding origin in any population at present. To test for the presence of founder effects in c.9018C > A and c.5720_5723delCTCT, we used the genotype of the polymorphic markers linked to BRCA2. All the c.9018C > A families shared a common haplotype in 14 markers. All the c.5720_5723delCTCT families shared this common haplotype in 14 markers. Haplotype analysis supports the idea that this mutation has a founder origin in the south of Spain. We should emphasize that none of the BRCA1/2 recurrent mutations reported in North African studies (Algeria, Morocco, and Tunisia) were found in our study, despite the geographical proximity and the influence of the North African population on our ancestors.",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study identifies BRCA1 c.5123C>A (p.Ala1708Glu) as a recurrent variant in Andalusian families, describing its frequency and associated clinical phenotypes but does not assign a pathogenicity classification.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5994127",
+            "title": "Hereditary breast and ovarian cancer in Andalusian families: a genetic population study",
+            "relevance_score": 0.57,
+            "pub_year": 2018,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "In the total 14 GS Junior runs, we identified 14 patients with deleterious mutations of which 7 are frameshift mutations (one mutation was found in three different patients), 4 are nonsense, 2 are missense, and 1 is an in frame deletion that affects splicing (Table 4). All mutations were confirmed by Sanger sequencing discarding the presence of false positives. One BRCA1 mutation, c.68_69delAG, was found in three different patients. This mutation accounts for the 30.4% BRCA1 mutations in the Mediterranean area. Although only found once in our series, mutations c.211A>G, **c.5123C>A** in BRCA1, and c.3264dupT in BRCA2 are also considered recurrent in the Spanish population. We have identified 5 novel mutations in our cohort. Mutation c.2900_2901dupCT in the BRCA1 gene and mutations c.4030del6insC, c.5189dupA, c.8009delC, and c.9274delT in the BRCA2 gene are mutations not described previously. In addition we detected 9 variants with unknown clinical significance (VUS). All of them are missense mutations except one located in an intronic sequence (c.68-7T>A in the BRCA2 gene). Finally, large genomic deletions and duplications were screened using the MAQ assay, which consists in a semiquantitative PCR that amplifies all exons in the BRCA1 and BRCA2 genes together with control regions. We detected an exonic deletion that comprises exons 16 and 17 of the BRCA1 gene. This mutation is predicted to produce an inframe deletion of 132 amino acids that disrupts the BRCT-N domain (p.Glu1559_Thr1691del) and it has been described to be deleterious by functional analysis.",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Variant HGVS Gene Variant freq. % (number of reads) forward reverse c.70_71insTGTC BRCA1 55.88 (68) 59.32 (59) c.1121-1123delCACinsT BRCA1 35 (60) 49.25 (67) c.1961delA BRCA1 38.68 (106) 31.07 (103) c.2921T>A (p.L974X) BRCA1 51.16 (43) 36.21 (58) c.3767_3768delCA BRCA1 26 (50) 54.69 (64) c.3770-3771delAG BRCA1 50 (50) 47.46 (59) c.4107-4110dupATCT BRCA1 54.24 (59) 51.85 (54) **c.5123C>A** BRCA1 52.38 (42) 56.25 (48) c.1842dupT BRCA2 56.00 (25) 55.17 (29) c.5350-5351delAAinsT BRCA2 48.92 (139) 54.08 (98) c.6275-6276delTT BRCA2 47.41 (116) 38.13 (139) c.7617+1G>A BRCA2 34.78 (23) 48.28 (29) c.8946delAa BRCA2 100 (52) 44.44 (36) c.9026_9030delATCAT BRCA2 50.94 (53) 40.54 (37)",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Variant HGVS Gene Detected with assay Clinical significance c.68_69delAG (p.Glu23Valfs*16) BRCA1 NGS Pathogenic Spanish recurrent mutation c.211A>G (p.Arg71Gly) BRCA1 NGS Pathogenic Spanish recurrent mutation c.2410C>T (p.Gln804*) BRCA1 NGS Pathogenic Reported c.2900_2901dupCT (p.Pro968Leufs*32) BRCA1 NGS Pathogenic Novel c.3406C>A p.(Pro1136Thr) BRCA1 NGS VUS Novel c.3708T>G (p.Asn1236Lys) BRCA1 NGS VUS Reported c.4935G>C (p.Arg1645Ser) BRCA1 NGS VUS Reported c.5078_5080delCTG (p.1692del26) BRCA1 NGS Pathogenic Reported **c.5123C>A** (**p.Ala1708Glu**) BRCA1 NGS Pathogenic Spanish recurrent mutation Delta Exons 16/17 BRCA1 MAQ Pathogenic Reported c.68-7T>A BRCA2 NGS VUS Reported c.754G>A (p.Asp252Asn) BRCA2 NGS VUS Novel c.3264dupT (p.Gln1089Serfs*8) BRCA2 NGS Pathogenic Spanish recurrent mutation c.4030del6insC (p.Asn1344Hisfs*5) BRCA2 HP Pathogenic Novel c.4316C>A (p.Ala1439Asp) BRCA2 NGS VUS Reported c.4681C>A (p.His1561Asn) BRCA2 NGS VUS Reported c.4965C>A (p.Tyr1655*) BRCA2 NGS Pathogenic Reported c.5189dupA (p.Asn1730Lysfs*12) BRCA2 HP Pathogenic Novel c.5722_5723delCT (p.Leu1908Argfs*1) BRCA2 HP Pathogenic Reported c.6215C>G (p.Ser2072Cys) BRCA2 NGS VUS Reported c.6613G>A (p.Val2205Met) BRCA2 NGS VUS Reported c.7180A>T (p.Arg2394*) BRCA2 NGS Pathogenic Reported c.7480C>T (p.Arg2494*) BRCA2 NGS Pathogenic Reported c.8009delC (p.Ser2670Trpfs*2) BRCA2 NGS Pathogenic Novel c.9274delT (p.Tyr3092Ilefs*11) BRCA2 NGS Pathogenic Novel",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study validates NGS for BRCA1/2 testing and reports the BRCA1 c.5123C>A (p.Ala1708Glu) variant as a pathogenic, recurrent Spanish mutation detected with high sensitivity and specificity.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC4098986",
+            "title": "Genetic Testing in Hereditary Breast and Ovarian Cancer Using Massive Parallel Sequencing",
+            "relevance_score": 0.56,
+            "pub_year": 2014,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Recurrent mutations are listed in Table 4, which shows four different deleterious mutations detected 4 or more times in 27 probands, and which represent 2.87% of the total probands analyzed and 15.08% of the patients with a detected mutation. Two additional mutations, the c.**5123C > A** **p.Ala1708Glu** in BRCA1 and c.9026_9030delATCAT p.Tyr3009_His3010fs in BRCA2 were found in three probands each, increasing frequency of recurrent mutations from 2.87% to 3.52% of the total probands analyzed.",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "In our population, a single mutation -c.211A > G, Arg71Gly, reported as of Spanish origin- out of the 15 recurrent mutations included in the Hispanic panel has four or more probands; regarding other mutations described in the panel, three were found up to three times in our population: **Ala1708Glu** (c.**5123C > A**) and Arg1443* (c.4327C > T) in BRCA1 and c.9026_9030del5, p.Tyr3009_His3010fs in BRCA2. In other words, if the Hispanic panel were applied, these mutations would altogether reach 1.8% of the total probands and 9.5% of the mutated samples. These numbers mean that sequencing the 15 mutations described in 100 probands would render less than 2 patients bearing one of the mutations. Remarkably, the 185delAG (c.66_67delAG, p.Leu22_Glu23LeuValfs) mutation was never found in our series and is included in the Hispanic panel, although it has always been described to occur on the Jewish haplotype.",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study documents the BRCA1 p.Ala1708Glu (c.5123C>A) variant as a low\u2011frequency recurrent mutation observed in a few Argentine patients, highlighting its presence but providing no functional or classification evidence beyond its occurrence among deleterious mutations reported in the cohort.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5601155",
+            "title": "Spectrum of BRCA1/2 variants in 940 patients from Argentina including novel, deleterious and recurrent germline mutations: impact on healthcare and clinical practice",
+            "relevance_score": 0.54,
+            "pub_year": 2016,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 1877,
+            "output": 145
+        },
+        {
+            "input": 1878,
+            "output": 656
+        },
+        {
+            "input": 1764,
+            "output": 496
+        },
+        {
+            "input": 1860,
+            "output": 449
+        },
+        {
+            "input": 2059,
+            "output": 340
+        },
+        {
+            "input": 1991,
+            "output": 122
+        },
+        {
+            "input": 1815,
+            "output": 104
+        },
+        {
+            "input": 1794,
+            "output": 152
+        },
+        {
+            "input": 1945,
+            "output": 143
+        },
+        {
+            "input": 2006,
+            "output": 578
+        },
+        {
+            "input": 1643,
+            "output": 667
+        },
+        {
+            "input": 2093,
+            "output": 435
+        },
+        {
+            "input": 2018,
+            "output": 440
+        },
+        {
+            "input": 1697,
+            "output": 381
+        },
+        {
+            "input": 2001,
+            "output": 557
+        },
+        {
+            "input": 1879,
+            "output": 470
+        },
+        {
+            "input": 1804,
+            "output": 440
+        },
+        {
+            "input": 1679,
+            "output": 600
+        },
+        {
+            "input": 1933,
+            "output": 590
+        },
+        {
+            "input": 1739,
+            "output": 516
+        },
+        {
+            "input": 1728,
+            "output": 585
+        },
+        {
+            "input": 1799,
+            "output": 526
+        },
+        {
+            "input": 1845,
+            "output": 431
+        },
+        {
+            "input": 1951,
+            "output": 503
+        },
+        {
+            "input": 1937,
+            "output": 609
+        },
+        {
+            "input": 1766,
+            "output": 531
+        },
+        {
+            "input": 1866,
+            "output": 671
+        },
+        {
+            "input": 1592,
+            "output": 434
+        },
+        {
+            "input": 2041,
+            "output": 525
+        },
+        {
+            "input": 1726,
+            "output": 554
+        },
+        {
+            "input": 1565,
+            "output": 357
+        },
+        {
+            "input": 1947,
+            "output": 490
+        },
+        {
+            "input": 1664,
+            "output": 694
+        },
+        {
+            "input": 1784,
+            "output": 439
+        },
+        {
+            "input": 3285,
+            "output": 503
+        },
+        {
+            "input": 1886,
+            "output": 156
+        },
+        {
+            "input": 3820,
+            "output": 1271
+        },
+        {
+            "input": 2414,
+            "output": 593
+        },
+        {
+            "input": 3025,
+            "output": 596
+        },
+        {
+            "input": 3121,
+            "output": 1616
+        },
+        {
+            "input": 3714,
+            "output": 1316
+        },
+        {
+            "input": 3245,
+            "output": 1857
+        },
+        {
+            "input": 4333,
+            "output": 1223
+        },
+        {
+            "input": 2435,
+            "output": 994
+        },
+        {
+            "input": 2205,
+            "output": 921
+        },
+        {
+            "input": 3319,
+            "output": 805
+        },
+        {
+            "input": 2809,
+            "output": 1129
+        },
+        {
+            "input": 3438,
+            "output": 770
+        },
+        {
+            "input": 3292,
+            "output": 945
+        },
+        {
+            "input": 2292,
+            "output": 807
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 32149,
+        "output": 1377
+    },
+    "total_time": 171.2
+}

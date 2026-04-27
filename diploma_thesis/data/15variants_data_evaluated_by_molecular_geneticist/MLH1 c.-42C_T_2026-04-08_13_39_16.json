@@ -1,0 +1,342 @@
+[
+    {
+        "articles_before_pruning": 21,
+        "articles_before_removing": 21,
+        "variant": "MLH1 c.-42C>T",
+        "time_to_process_articles": 29.22,
+        "context_length": 30889,
+        "articles_after_removal": 8,
+        "only_medline_count": 1,
+        "only_pmc_count": 5,
+        "only_suppl_count": 2,
+        "both_pmc_and_supplcount": 0,
+        "all_three_count": 0,
+        "articles": [
+            {
+                "pmid": "12919137",
+                "pmcid": "",
+                "data_sources": [
+                    "medline"
+                ],
+                "source_of_annotation": "pubtator",
+                "title_length": 65,
+                "abstract_length": 1372,
+                "number_of_unmatched_snippets": 0,
+                "unmatched_snippets": [],
+                "number_of_paragraphs": 0,
+                "paragraphs_lengths": [],
+                "number_of_suppl_files": 0,
+                "suppl_paragraphs_counts_per_file": [],
+                "suppl_paragraphs_lengths": []
+            },
+            {
+                "pmid": "",
+                "pmcid": "PMC3908650",
+                "data_sources": [
+                    "pmc"
+                ],
+                "source_of_annotation": "pubtator",
+                "title_length": 140,
+                "abstract_length": 1404,
+                "number_of_unmatched_snippets": 0,
+                "unmatched_snippets": [],
+                "number_of_paragraphs": 3,
+                "paragraphs_lengths": [
+                    1065,
+                    1291,
+                    2078
+                ],
+                "number_of_suppl_files": 0,
+                "suppl_paragraphs_counts_per_file": [],
+                "suppl_paragraphs_lengths": []
+            },
+            {
+                "pmid": "",
+                "pmcid": "PMC4682451",
+                "data_sources": [
+                    "pmc"
+                ],
+                "source_of_annotation": "pubtator",
+                "title_length": 98,
+                "abstract_length": 1475,
+                "number_of_unmatched_snippets": 0,
+                "unmatched_snippets": [],
+                "number_of_paragraphs": 3,
+                "paragraphs_lengths": [
+                    1827,
+                    615,
+                    1294
+                ],
+                "number_of_suppl_files": 0,
+                "suppl_paragraphs_counts_per_file": [],
+                "suppl_paragraphs_lengths": []
+            },
+            {
+                "pmid": "",
+                "pmcid": "PMC5856559",
+                "data_sources": [
+                    "pmc"
+                ],
+                "source_of_annotation": "pubtator",
+                "title_length": 81,
+                "abstract_length": 2484,
+                "number_of_unmatched_snippets": 0,
+                "unmatched_snippets": [],
+                "number_of_paragraphs": 1,
+                "paragraphs_lengths": [
+                    401
+                ],
+                "number_of_suppl_files": 0,
+                "suppl_paragraphs_counts_per_file": [],
+                "suppl_paragraphs_lengths": []
+            },
+            {
+                "pmid": "",
+                "pmcid": "PMC5610604",
+                "data_sources": [
+                    "pmc"
+                ],
+                "source_of_annotation": "pubtator",
+                "title_length": 97,
+                "abstract_length": 2618,
+                "number_of_unmatched_snippets": 0,
+                "unmatched_snippets": [],
+                "number_of_paragraphs": 1,
+                "paragraphs_lengths": [
+                    398
+                ],
+                "number_of_suppl_files": 0,
+                "suppl_paragraphs_counts_per_file": [],
+                "suppl_paragraphs_lengths": []
+            },
+            {
+                "pmid": "",
+                "pmcid": "PMC10239107",
+                "data_sources": [
+                    "pmc"
+                ],
+                "source_of_annotation": "pubtator",
+                "title_length": 202,
+                "abstract_length": 1646,
+                "number_of_unmatched_snippets": 0,
+                "unmatched_snippets": [],
+                "number_of_paragraphs": 1,
+                "paragraphs_lengths": [
+                    858
+                ],
+                "number_of_suppl_files": 0,
+                "suppl_paragraphs_counts_per_file": [],
+                "suppl_paragraphs_lengths": []
+            },
+            {
+                "pmid": "",
+                "pmcid": "PMC6062514",
+                "data_sources": [
+                    "suppl"
+                ],
+                "source_of_annotation": "pubtator",
+                "title_length": 100,
+                "abstract_length": 2584,
+                "number_of_unmatched_snippets": 0,
+                "unmatched_snippets": [],
+                "number_of_paragraphs": 0,
+                "paragraphs_lengths": [],
+                "number_of_suppl_files": 1,
+                "suppl_paragraphs_counts_per_file": [
+                    0
+                ],
+                "suppl_paragraphs_lengths": [
+                    []
+                ]
+            },
+            {
+                "pmid": "",
+                "pmcid": "PMC4558085",
+                "data_sources": [
+                    "suppl"
+                ],
+                "source_of_annotation": "pubtator",
+                "title_length": 77,
+                "abstract_length": 2213,
+                "number_of_unmatched_snippets": 0,
+                "unmatched_snippets": [],
+                "number_of_paragraphs": 0,
+                "paragraphs_lengths": [],
+                "number_of_suppl_files": 1,
+                "suppl_paragraphs_counts_per_file": [
+                    1
+                ],
+                "suppl_paragraphs_lengths": [
+                    [
+                        926
+                    ]
+                ]
+            }
+        ],
+        "narrative_summary": "The MLH1 c.-42C>T variant is a single‑nucleotide change in the promoter region of the mismatch‑repair gene MLH1 that has been reported in families with hereditary non‑polyposis colorectal cancer (Lynch syndrome) [12919137].\nClinical observations show that the variant co‑segregates with disease in a Newfoundland kindred that fulfills the Amsterdam criteria, with affected carriers developing colorectal cancer at a mean age of 62 years, later than typical HNPCC onset, suggesting partial loss of mismatch‑repair function [12919137]. A separate Seattle cohort identified a carrier with an MSI‑high colorectal tumour, loss of MLH1 protein expression, and a family history of gastric cancer, and a German HNPCC patient also carried the change [PMC3908650]. In a Latino cohort the variant was detected in a tumour that exhibited loss of heterozygosity of the mutant allele [PMC5610604]. More recent reviews continue to list c.-42C>T as a variant of uncertain significance, noting the paucity of data on its effect on constitutional MLH1 methylation and its classification as VUS in ClinVar [PMC10239107, PMC4558085].\nFunctional studies consistently demonstrate that the c.-42C>T substitution disrupts a putative Myb transcription‑factor binding site, leading to markedly reduced promoter activity. Electrophoretic mobility shift assays showed weaker nuclear protein binding, and reporter assays in HeLa cells measured only 37 % of wild‑type promoter activity [12919137]. Independent luciferase reporter assays in HCT116 and HEK293 cells confirmed a major reduction in transcriptional output for the mutant promoter, comparable to the effect of another pathogenic promoter variant c.-11C>T [PMC3908650, PMC4682451]. These data indicate that the variant impairs MLH1 transcription.\nPopulation screening has not identified the c.-42C>T allele in large control cohorts. It was absent from 304 healthy Australian individuals and was not observed among the 1000 Genomes Project participants, underscoring its rarity in the general population [PMC3908650, PMC4558085]. No computational prediction scores are provided in the extracted evidence.\nTaken together, the variant is rare, segregates with Lynch‑syndrome phenotypes in multiple families, and demonstrably reduces MLH1 promoter activity, supporting a likely pathogenic role. Nevertheless, its classification remains uncertain in some clinical databases due to limited epidemiologic data and the absence of a clear effect on constitutional MLH1 methylation, indicating that while the preponderance of evidence favours pathogenicity, definitive classification requires further corroboration.",
+        "structured_summary": {
+            "overall_pathogenicity": "pathogenic",
+            "pathogenicity_counts": {
+                "uncertain": 1,
+                "supports pathogenicity": 8,
+                "supports benignity": 0
+            },
+            "conflicting_evidence": false
+        },
+        "article_mentions": [
+            {
+                "mentions": [
+                    {
+                        "quoted_text": "Hereditary non-polyposis colon cancer (HNPCC) is an autosomal dominant form of inherited predisposition to colorectal and other malignancies. It is associated with mutations in DNA mismatch-repair genes, especially hMSH2 and hMLH1. Management of HNPCC families is improved if the underlying mutation in each family can be discovered. We describe a Newfoundland kindred, meeting the Amsterdam Criteria for HNPCC, in which a mutation in the promoter region of the hMLH1 gene co-segregates with the disease phenotype. The **-42C > T** mutation is within a putative Myb proto-oncogene binding site. Using electrophoretic mobility shift assays, we demonstrated that the mutated Myb binding sequence is less effective in binding nuclear proteins than the wild-type promoter sequence. Using in vivo transfection experiments in HeLa cells, we further demonstrated that the mutated promoter has only 37% of the activity of the wild-type promoter in driving the expression of a reporter gene. The average age of onset in six family members affected with colorectal cancer is 62 years, which is substantially later than the typical age of onset in HNPCC families. This is consistent with a substantial decrease, but not total elimination, of mismatch repair function in affected members of this family. This is the first report of a heritable hMLH1 promoter mutation in any HNPCC family.",
+                        "mention_type": "functional",
+                        "claim": "supports pathogenicity"
+                    }
+                ],
+                "overall_article_summary": "The MLH1 promoter c.-42C>T mutation co‑segregates with HNPCC in a Newfoundland family and markedly reduces promoter activity, supporting its pathogenic role.",
+                "uncertainties_or_limitations": null,
+                "article_id": "12919137",
+                "title": "Germline hMLH1 promoter mutation in a Newfoundland HNPCC kindred.",
+                "relevance_score": 1.0,
+                "pub_year": 2003,
+                "data_sources": [
+                    "medline"
+                ]
+            },
+            {
+                "mentions": [
+                    {
+                        "quoted_text": "Five probands (I-M, Table 2) from the population-based registry in Seattle had a sequence variant within the promoter or 5'UTR of MLH1 without any methylation (Table 2 and Figure 3). These comprised two SNVs, c.-11C>T and **c.-42C>T** and two novel microdeletions, delc.-411-413GAG and delc.-432-435AAAG. Because RNA was unavailable to directly assess whether the promoter variants caused a reduction in allelic expression in the subjects, luciferase promoter reporter assays were instead used to assess their effect on promoter activity (Figure 3b). The c.-11C>T and **c.-42C>T** SNVs showed a major reduction in promoter activity as compared with the wild-type promoter sequence, whereas the delc.-411-413GAG microdeletion showed a statistically significant but lesser degree of transcriptional reduction. These findings were consistent in transient transfections of both HCT116 and HEK293 cell lines. The delc.-432-435AAAG had no detrimental effect on promoter activity in these assays.",
+                        "mention_type": "functional",
+                        "claim": "supports pathogenicity"
+                    },
+                    {
+                        "quoted_text": "Sequence analysis of the entire MLH1 promoter revealed an additional four sequence variants in five index cases, none of which were associated with constitutional methylation. The luciferase assays demonstrated that the novel c.-11C>T SNV causes a profound constitutive downregulation of transcription, although one of the two novel microdeletions caused a minor reduction in transcriptional activity. Consistent with previous reports, the **c.-42C>T** SNV was associated with significantly reduced transcriptional output. Collectively, these findings suggest that some MLH1 promoter variants cause transcriptional dysregulation through a primarily DNA alteration-based mechanism; presumably by creating or destroying individual DNA-nucleoprotein binding motifs and thereby altering interactions with particular transcription factors. It is interesting to note that with the exception of one carrier of the c.-11C>T SNV, each of the other probands developed cancer at an older age of onset and did not have a remarkable family history of cancer, suggesting that the mechanism of inactivation of MLH1 may influence phenotype. Review of the MLH1 promoter sequences from 304 healthy Australians did not identify any of these sequence changes among them.",
+                        "mention_type": "functional",
+                        "claim": "supports pathogenicity"
+                    },
+                    {
+                        "quoted_text": "Pedigrees of individuals with sequence changes in the MLH1 promoter without constitutional methylation (families I-M) and their effect on promoter activity. (a) The family labels correspond with Table 2. The proband is shown by an arrow, squares are males, circles are females, and crosses indicate deceased individuals. The dark shading represents individuals with CRC, the gray shading is for other cancers. The sequence variant for each family is shown. Apart from one case (aged 34 years), the probands were over 50 years of age, all had right-sided CRC, and one person had multiple cancers including uterine cancer. (b) The promoter activity of a luciferase reporter construct containing the entire wild-type (blue) MLH1 promoter and 5'-UTR (from c.-513 to c.-1 with respect to the ATG start codon), and constructs containing the promoter sequence variants c.-11C>T, **c.-42C>T**, delc.-411-413GAG, and delc.-432-435AAAG (red) and also the SNPs c.-269C>G and c.-93G>A (yellow) in transient transfections of HCT116 and HEK293 cells are shown. The c.-11C>T and **c.-42C>T** SNVs each resulted in a major reduction in promoter activity as compared with the wild-type promoter sequence. The delc.-411-413GAG microdeletion showed a lesser degree of transcriptional reduction (77-89% of the wild type), although this was statistically significant, whereas the delc.-432-435AAAG appeared to have no detrimental effect on promoter activity in these assays. The c.-269C>G and c.-93G>A SNPs also demonstrated marginally diminished promoter activity specifically in HCT116 cells. Values are shown as the mean +- SD of the luciferase output normalized to a cotransfected Renilla control, and expressed as a percentage of the positive control vector, for multiple independent experiments performed in triplicate. CRC, colorectal cancer; SNP, single-nucleotide polymorphism; SNV, single-nucleotide variant.",
+                        "mention_type": "functional",
+                        "claim": "supports pathogenicity"
+                    }
+                ],
+                "overall_article_summary": "The study provides functional evidence that the MLH1 promoter variant c.-42C>T markedly reduces transcriptional activity, suggesting a pathogenic role in Lynch‑syndrome‑associated colorectal cancer.",
+                "uncertainties_or_limitations": null,
+                "article_id": "PMC3908650",
+                "title": "Identification of constitutional MLH1 epimutations and promoter variants in colorectal cancer patients from the Colon Cancer Family Registry",
+                "relevance_score": 1.0,
+                "pub_year": 2012,
+                "data_sources": [
+                    "pmc"
+                ]
+            },
+            {
+                "mentions": [
+                    {
+                        "quoted_text": "Several class 3 variants within the MLH1 promoter have been found in cases of suspected Lynch syndrome, namely, c.-411_-413del, c.-432_-435del, c.-64G>T, c.-53G>T, **c.-42C>T**, c.-28A>G, c.-28A>T, c.-27C>A, c.-11C>T, and c.-7C>T [Green et al.,; Hitchins et al.,; Ward et al.,; Kwok et al.,; Thompson et al., ]. However, for most of these variants, it is unclear whether they abrogate MLH1 function directly or whether they are linked to another genetic defect within MLH1. Studies of the c.-27C>A variant provide the most compelling evidence that MLH1 promoter variants can directly affect the regulation of MLH1. This variant segregates with colorectal cancer in multiple cancer-affected families [Raevaara et al.,; Hitchins et al.,; Ward et al.,; Kwok et al., ] and has been associated with reduced transcriptional activity and the dominant inheritance of a mosaic constitutional MLH1 epimutation [Hitchins et al., ]. These studies suggest that MLH1 promoter variants may cause unbalanced constitutional expression of MLH1. In support of this, the c.-411_-413del, **c.-42C>T**, c.-27C>A, and c.-11C>T variants also significantly reduce the activity of the MLH1 promoter in driving the expression of a reporter gene [Green et al.,; Hitchins et al.,; Ward et al., ]. To date, however, no analysis of the potential pathogenicity of the c.-28A>G or c.-7C>T variants has been undertaken, despite the fact that these variants have been described in at least two unrelated individuals with suspected Lynch syndrome [Lee et al.,; Muller-Koch et al., ].",
+                        "mention_type": "functional",
+                        "claim": "supports pathogenicity"
+                    },
+                    {
+                        "quoted_text": "There are now several reports of Lynch syndrome associated with partial loss of MLH1 expression [Curia et al.,; Green et al.,; Hinrichsen et al., ]. Curia et al. described Lynch syndrome associated with a silent variant within exon 9 of the MLH1 gene and 50% reduction in constitutional levels of expression compared with the wild-type allele. Green et al. described a **c.-42C>T** variant within the MLH1 gene associated with the reduction of promoter activity to ~37% that of wild-type promoter sequence. Furthermore, several constitutional MLH1 missense mutations that lead to...",
+                        "mention_type": "functional",
+                        "claim": "supports pathogenicity"
+                    },
+                    {
+                        "quoted_text": "The variable age of onset of cancer associated with the c.-28A>G and c.-7C>T variants was evident from the two families we investigated. While Proband 32 presented with CRC aged 38 years, Proband N was asymptomatic at 54 years. However, the father and grandfather of Proband N presented with colonic adenomas and colorectal cancer at ages 50 and 40 years, respectively, though we were unable to ascertain whether the grandfather had the c.-28A>G and c.-7C>T variants. This variable penetrance may be explained by incomplete inactivation of MLH1 expression, as described previously for the **c.-42C>T** variant, which was associated with drastically different ages of cancer onset between 35 and 76 years (average 62 years) in a single Lynch syndrome family [Green et al., ]. Interestingly, in this study, loss of heterozygosity analyses of the tumor from an individual with the **c.-42C>T** variant revealed deletion of the MLH1 allele with the variant and not of the wild-type allele, as one would expect. In our analyses, both MLH1 alleles were retained in the tumor of Proband 32. These results are most likely explained by the presence of somatic MLH1 mutations in the tumor.",
+                        "mention_type": "clinical",
+                        "claim": "supports pathogenicity"
+                    }
+                ],
+                "overall_article_summary": "The article presents multiple lines of evidence—functional reporter assays, reduced promoter activity, and clinical segregation data—suggesting that the MLH1 c.-42C>T promoter variant is likely pathogenic for Lynch syndrome with intermediate penetrance.",
+                "uncertainties_or_limitations": null,
+                "article_id": "PMC4682451",
+                "title": "Lynch Syndrome Associated with Two MLH1 Promoter Variants and Allelic Imbalance of MLH1 Expression",
+                "relevance_score": 0.95,
+                "pub_year": 2015,
+                "data_sources": [
+                    "pmc"
+                ]
+            },
+            {
+                "mentions": [
+                    {
+                        "quoted_text": "...a single-nucleotide substitution (-107C G) in the MLH1 promoter found in colorectal cancer populations has been shown to reduce transcriptional activity. The mutation **-42C > T** in the promoter region of the MLH1 gene, localized within a putative Myb protooncogene binding site, has been described in a Newfoundland kindred, meeting the Amsterdam Criteria for...",
+                        "mention_type": "clinical",
+                        "claim": "supports pathogenicity"
+                    }
+                ],
+                "overall_article_summary": "The article introduces a rhesus macaque model of MLH1‑related hereditary colorectal cancer and cites the human MLH1 promoter -42C>T variant as previously reported in a familial HNPCC cohort.",
+                "uncertainties_or_limitations": null,
+                "article_id": "PMC5856559",
+                "title": "MLH1-rheMac hereditary nonpolyposis colorectal cancer syndrome in rhesus macaques",
+                "relevance_score": 0.6,
+                "pub_year": 2018,
+                "data_sources": [
+                    "pmc"
+                ]
+            },
+            {
+                "mentions": [
+                    {
+                        "quoted_text": "...with LOH 15 Sigmoid colon/50 Yes No Absent Present Present Absent - - - - No MMR mutationsBRAFV600E negative MSI stable 16 Ascending colon/52 No No Absent Present Present Absent - - - - MLH1 **c.-42C>T** with LOH 17 Ascending colon/48 Yes No Present Absent Absent Present - - - - MSH2 c.1076+1G>TMSH2 c.14delMSH6 c.3261dup 18 Ascending colon/47 Yes No Present Absent Absent Present NA - - NA MSH2...",
+                        "mention_type": "clinical",
+                        "claim": "no claim"
+                    }
+                ],
+                "overall_article_summary": "The study of Latino colorectal cancer patients identifies the MLH1 c.-42C>T variant in a tumor with loss of heterozygosity, among other findings linking mismatch repair deficiency to Lynch syndrome in this population.",
+                "uncertainties_or_limitations": null,
+                "article_id": "PMC5610604",
+                "title": "DNA mismatch repair deficiency and hereditary syndromes in Latino patients with colorectal cancer",
+                "relevance_score": 0.56,
+                "pub_year": 2017,
+                "data_sources": [
+                    "pmc"
+                ]
+            },
+            {
+                "mentions": [
+                    {
+                        "quoted_text": "To date, the MLH1: c.-27C > A germline pathogenic variant is the only reported variant known to underlie secondary MLH1 epimutations. Several other non-coding MLH1 promoter germline variants have been reported (e.g. c.-11C > T, c.-[28A > G; 7C > T], c.**-42C > T**), although their pathogenicity and effect on inducing MLH1 methylation are less defined and, as such, remain classified as variants of uncertain clinical significance (VUS). In CRCs associated with these VUS, a constitutional reduction of MLH1 expression was observed but without a clear effect on MLH1 promoter methylation. Due to their rarity, studies of these variants are scarce and validation difficult, which impedes optimal clinical management in carriers.",
+                        "mention_type": "clinical",
+                        "claim": "uncertain"
+                    }
+                ],
+                "overall_article_summary": "The study demonstrates that low‑level constitutional MLH1 methylation can be detected using ddPCR and methylation profiling, and notes that the c.-42C>T promoter variant remains a VUS with no clear impact on MLH1 methylation or pathogenicity.",
+                "uncertainties_or_limitations": null,
+                "article_id": "PMC10239107",
+                "title": "Identifying primary and secondary MLH1 epimutation carriers displaying low-level constitutional MLH1 methylation using droplet digital PCR and genome-wide DNA methylation profiling of colorectal cancers",
+                "relevance_score": 0.53,
+                "pub_year": 2023,
+                "data_sources": [
+                    "pmc"
+                ]
+            },
+            {
+                "mentions": [
+                    {
+                        "quoted_text": "Column names:\nDisease|Gene|Genomic Position|Coding Change|Protein Change|dbSNP Identifier|Number of minor alleles in 1000 Genomes|Number of minor alleles in ESP|Clinical Significance by ClinVar|Notes from literature screening (PMIDs of references)|PMIDs of all articles appraised\nRows:\nLynch syndrome|MLH1|Chr3:37034997|**c.-42C>T**||rs41285097|||||||Uncertain significance|Variant identified in three individuals with cancer in an HNPCC Newfoundland family as well as biochemical evidence supporting reduced promoter activity (12919137); Variant found in one Caucasian individual in Seattle diagnosed with colorectal cancer at age 53 that was MSI high and IHC showed loss of expression, also had family history of gastric cancer, and variant showed a reduction in promoter activity (22878509); Variant identified in 1 German HNPCC patient (15849733); Required expert evaluation;|12919137, 22878509, 15849733, (11726306)",
+                        "mention_type": "functional",
+                        "claim": "no claim"
+                    }
+                ],
+                "overall_article_summary": "The study screened 1,092 individuals from the 1000 Genomes Project and identified 12 secondary findings classified as pathogenic or likely pathogenic, while the MLH1 c.-42C>T variant was noted with uncertain significance despite functional and clinical evidence.",
+                "uncertainties_or_limitations": null,
+                "article_id": "PMC4558085",
+                "title": "Identification of Medically Actionable Secondary Findings in the 1000 Genomes",
+                "relevance_score": 0.2,
+                "pub_year": 2015,
+                "data_sources": [
+                    "suppl"
+                ]
+            }
+        ],
+        "clinvar_urls": [
+            "https://www.ncbi.nlm.nih.gov/clinvar/variation/90458",
+            "https://www.ncbi.nlm.nih.gov/clinvar/variation/89593"
+        ],
+        "omim_url": "https://www.omim.org/entry/120436",
+        "gene": "MLH1",
+        "total_time": 67.15
+    }
+]

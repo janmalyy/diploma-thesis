@@ -1,0 +1,1209 @@
+{
+    "before_pruning": {
+        "articles_in_total": 43,
+        "only_medline_count": 0,
+        "only_pmc_count": 3,
+        "only_suppl_count": 39,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 43,
+        "only_medline_count": 0,
+        "only_pmc_count": 3,
+        "only_suppl_count": 39,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "variant": "BRCA2 L209F",
+    "time_to_process_articles": 22.67,
+    "context_length": 121192,
+    "after_removal": {
+        "articles_in_total": 40,
+        "only_medline_count": 0,
+        "only_pmc_count": 3,
+        "only_suppl_count": 36,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "",
+            "pmcid": "PMC8207626",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 95,
+            "abstract_length": 2030,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                402
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4915734",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 166,
+            "abstract_length": 1701,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10993466",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 89,
+            "abstract_length": 2063,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1991
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    455
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9489697",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 140,
+            "abstract_length": 1444,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                860
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5760284",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 110,
+            "abstract_length": 1307,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    738
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9463535",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 113,
+            "abstract_length": 1787,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    682
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8144406",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 87,
+            "abstract_length": 1763,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    4287
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8606794",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 104,
+            "abstract_length": 1586,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    759
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10088148",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 153,
+            "abstract_length": 1858,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    1994
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6134256",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 136,
+            "abstract_length": 2337,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    285
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4907813",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 122,
+            "abstract_length": 1436,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    409
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11067708",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 100,
+            "abstract_length": 2408,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    669
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7299932",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 120,
+            "abstract_length": 1416,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    733
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10471768",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 67,
+            "abstract_length": 905,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    2063
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9213547",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 97,
+            "abstract_length": 1747,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    334
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6287763",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 134,
+            "abstract_length": 1358,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    1175
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9986059",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 101,
+            "abstract_length": 2015,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    678
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8857274",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 58,
+            "abstract_length": 947,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    689
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9426037",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 101,
+            "abstract_length": 2276,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    667
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10658597",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 56,
+            "abstract_length": 1671,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    403
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9335099",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 96,
+            "abstract_length": 1849,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    745
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11211533",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 112,
+            "abstract_length": 1982,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    653
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9980257",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 167,
+            "abstract_length": 2353,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    707
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4534066",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 85,
+            "abstract_length": 2681,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    382
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10897416",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 92,
+            "abstract_length": 1701,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    700
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10657888",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 65,
+            "abstract_length": 713,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    700
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10920999",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 98,
+            "abstract_length": 2282,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    713
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7200683",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 99,
+            "abstract_length": 1372,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    3425
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8900618",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 110,
+            "abstract_length": 2018,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    417
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6617753",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 136,
+            "abstract_length": 2590,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    160
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5951744",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 81,
+            "abstract_length": 1471,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    256
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9575197",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 67,
+            "abstract_length": 2317,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    382
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7968334",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 151,
+            "abstract_length": 2162,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    197
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7186305",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 76,
+            "abstract_length": 2114,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    314
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7654627",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 153,
+            "abstract_length": 0,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    370
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6797235",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 182,
+            "abstract_length": 3492,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    357
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4152579",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 132,
+            "abstract_length": 2462,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    307
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7494676",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 90,
+            "abstract_length": 2436,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    909
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4627344",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 108,
+            "abstract_length": 1304,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    439
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6581088",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 162,
+            "abstract_length": 1262,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    2750
+                ]
+            ]
+        }
+    ],
+    "narrative_summary": "The BRCA2 missense change p.L209F (c.625C>T) occurs in the breast\u2011ovarian cancer susceptibility gene and has been evaluated in the context of hereditary breast and ovarian cancer risk [PMC6134256]. No clinical case reports, segregation analyses, or formal clinical classifications for this variant are presented in the supplied literature.\n\nFunctional assessment of the variant using a splice\u2011reporter assay found no aberrant splicing, and the authors interpreted the result as supporting a benign effect [PMC4907813]. In a separate comprehensive annotation of BRCA2 missense changes, the same variant was placed in functional class C0, a category consistent with a neutral impact on protein function [PMC6287763].\n\nIn silico analyses further reinforce a benign interpretation. A study that evaluated multiple computational predictors assigned the variant a benign classification based on scores from tools such as MutationTaster, PolyPhen\u20112, and others [PMC9213547]. An earlier evaluation of splicing prediction tools included the variant in a validation set but did not attribute any pathogenicity claim, consistent with a lack of evidence for deleterious splicing effects [PMC6134256]. The variant is also listed among BRCA2 alterations observed in a large Chinese cohort, without any indication of pathogenic relevance [PMC6617753].\n\nTaken together, the available functional data showing no splice disruption, the neutral functional class assignment, and the concordant benign predictions from multiple computational platforms provide consistent evidence that BRCA2 p.L209F is not pathogenic. No conflicting data were identified, and the preponderance of evidence supports a benign classification for this variant.",
+    "structured_summary": {
+        "overall_pathogenicity": "benign",
+        "pathogenicity_counts": {
+            "supports benignity": 2,
+            "supports pathogenicity": 0,
+            "uncertain": 0
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Supplementary table 8. Values of SSF-like and MES via Alamut Visual 2.10 and via SpiCe for validation dataset\nColumn names:\nATM|YES|c.1066-6T>G|cNomen|3'|nearestSS|wtSSF|wtMaxEnt|varSSF|varMaxEnt|SSF|MES|References|MES|HSF|Reference\nRows:\nBRCA2|NO|**c.625C>T**||5'||||||||||||||||",
+                    "mention_type": "computational",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article evaluates splicing prediction tools for hereditary cancer genes and includes BRCA2 L209F in its validation dataset, but does not assign a pathogenicity interpretation for this variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6134256",
+            "title": "Computational Tools for Splicing Defect Prediction in Breast/Ovarian Cancer Genes: How Efficient Are They at Predicting RNA Alterations?",
+            "relevance_score": 0.38,
+            "pub_year": 2018,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Supp. Table S1. BRCA1 and BRCA2 sequence variants tested for spliceogenicity\nColumn names:\nGene|Exon|Sequence variant designation:|Acceptor Class|Donor Class|De novo Donor Class|Splice Assay Result|Prior Probability of Pathogenicity|First Author|PMID\nRows:\nBRCA2|exon7|**c.625C>T**|**p.L209F**|NA-2|NA-3|Weak/Null & Low|no aberration|||Gaildrat||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||",
+                    "mention_type": "functional",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study adds splice\u2011assessment to BRCA variant evaluation and reports that BRCA2 L209F does not cause splice aberrations, supporting a benign interpretation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC4907813",
+            "title": "Adding In Silico Assessment of Potential Splice Aberration to the Integrated Evaluation of BRCA Gene Unclassified Variants",
+            "relevance_score": 0.33,
+            "pub_year": 2016,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nvariants|AWESOME_Score|ClinPred_score|HENS920101|LUTR910107|MIYS990107|MPC_rankscore|MetaSVM_score|MutationTaster_score|N-t-Ace.|Polyphen_Score|THOP960101|Ubi.|WEIL970101|WEIL970102|provean|Prediction|Gene\nRows:\n**L209F**|0|0.877695683820836|-3|-6|0.2|0.18725|0.9339|0.984945|0|0.0|-0.08|0.0|-2|1|0.96|Benign|BRCA2",
+                    "mention_type": "computational",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The article\u2019s computational analysis classifies the BRCA2 L209F missense variant as benign based on multiple predictive scores.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9213547",
+            "title": "Understanding and predicting the functional consequences of missense mutations in BRCA1 and BRCA2",
+            "relevance_score": 0.26,
+            "pub_year": 2022,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Table S2. Annotation of all possible BRCA1 and BRCA2 missense variants by function and in silico prediction models\nColumn names:\nAnalysis|set|Chrom|Position|REF|ALT|Gene|AminoAcid|Functional Classification|Functional Score|Align GVGD category|Function|Function|RF|RF|RF|RF|RF|RF|RF|RF|NVM|NVM_Prediction|NVM|NVM_Prediction|NVM|NVM_Prediction|NVM_(Sum)|NVM_Prediction|CAROL score|Condel score|CaddPhred|CaddRaw|CaddRawRankscore|DannRankscore|DannScore|FathmmConvertedRankscore|FathmmScore|GerpNr|GerpRs|GerpRsRankscore|LrtConvertedRankscore|LrtScore|MetalrRankscore|MetalrScore|MetasvmRankscore|MetasvmScore|MutationassessorRankscore|MutationassessorScore|MutationtasterConvertedRankscore|MutationtasterScore|Phastcons20wayMammalianRankscore|Phastcons7wayVertebrateRankscore|Phylop20wayMammalianRankscore|Phylop7wayVertebrateRankscore|Polyphen2HdivRankscore|Polyphen2HdivScore|Polyphen2HvarRankscore|Polyphen2HvarScore|ProveanConvertedRankscore|ProveanScore|SiftConvertedRankscore|SiftScore|Siphy29wayLogoddsRankscore|Vest3Rankscore|Vest3Score|PERCH|PERCH noMAF\nRows:\nBRCA12_Other||||C|T|BRCA2|**L209F**|||Class C0|||||||||||||||||||||||||||||||||||||||||||||||||||||||||",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article includes a functional annotation of the BRCA2 L209F variant, assigning it to functional class C0 in a comprehensive missense variant table.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6287763",
+            "title": "Comprehensive annotation of BRCA1 and BRCA2 missense variants by functionally validated sequence-based computational prediction models",
+            "relevance_score": 0.23,
+            "pub_year": 2018,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nSupplementary table 6A. Total BRCA1/2 variants in current BRCA databases (BED, BIC, BMD, clinvar, LOVD, ENIGMA)\nRows:\nc.5080G>T|**c.625C>T**",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study demonstrates that BRCA1/2 germline variant spectra differ markedly between Chinese and non\u2011Chinese populations, emphasizing the need for ethnicity\u2011specific reference data.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6617753",
+            "title": "Germline variation in BRCA1/2 is highly ethnic-specific: Evidence from over 30,000 Chinese hereditary breast and ovarian cancer patients",
+            "relevance_score": 0.1,
+            "pub_year": 2019,
+            "data_sources": [
+                "suppl"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 2112,
+            "output": 438
+        },
+        {
+            "input": 1923,
+            "output": 154
+        },
+        {
+            "input": 2942,
+            "output": 498
+        },
+        {
+            "input": 2339,
+            "output": 406
+        },
+        {
+            "input": 2217,
+            "output": 318
+        },
+        {
+            "input": 2201,
+            "output": 317
+        },
+        {
+            "input": 3692,
+            "output": 338
+        },
+        {
+            "input": 2157,
+            "output": 280
+        },
+        {
+            "input": 2711,
+            "output": 315
+        },
+        {
+            "input": 2210,
+            "output": 679
+        },
+        {
+            "input": 1913,
+            "output": 532
+        },
+        {
+            "input": 2212,
+            "output": 204
+        },
+        {
+            "input": 2192,
+            "output": 527
+        },
+        {
+            "input": 2716,
+            "output": 364
+        },
+        {
+            "input": 1945,
+            "output": 462
+        },
+        {
+            "input": 2258,
+            "output": 713
+        },
+        {
+            "input": 2094,
+            "output": 341
+        },
+        {
+            "input": 1990,
+            "output": 224
+        },
+        {
+            "input": 2509,
+            "output": 324
+        },
+        {
+            "input": 1907,
+            "output": 338
+        },
+        {
+            "input": 2200,
+            "output": 269
+        },
+        {
+            "input": 2205,
+            "output": 339
+        },
+        {
+            "input": 2276,
+            "output": 425
+        },
+        {
+            "input": 2095,
+            "output": 297
+        },
+        {
+            "input": 2165,
+            "output": 343
+        },
+        {
+            "input": 1911,
+            "output": 232
+        },
+        {
+            "input": 2579,
+            "output": 341
+        },
+        {
+            "input": 3050,
+            "output": 261
+        },
+        {
+            "input": 1989,
+            "output": 499
+        },
+        {
+            "input": 2092,
+            "output": 740
+        },
+        {
+            "input": 1986,
+            "output": 271
+        },
+        {
+            "input": 2138,
+            "output": 299
+        },
+        {
+            "input": 2023,
+            "output": 282
+        },
+        {
+            "input": 2159,
+            "output": 321
+        },
+        {
+            "input": 1617,
+            "output": 283
+        },
+        {
+            "input": 2272,
+            "output": 328
+        },
+        {
+            "input": 2255,
+            "output": 321
+        },
+        {
+            "input": 2418,
+            "output": 331
+        },
+        {
+            "input": 1952,
+            "output": 350
+        },
+        {
+            "input": 3119,
+            "output": 214
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 2108,
+        "output": 763
+    },
+    "total_time": 61.1
+}

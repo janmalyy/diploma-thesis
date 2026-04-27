@@ -1,0 +1,604 @@
+{
+    "before_pruning": {
+        "articles_in_total": 28,
+        "only_medline_count": 2,
+        "only_pmc_count": 9,
+        "only_suppl_count": 16,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 28,
+        "only_medline_count": 2,
+        "only_pmc_count": 9,
+        "only_suppl_count": 16,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "variant": "BRCA2 F1524V",
+    "time_to_process_articles": 12.29,
+    "context_length": 45103,
+    "after_removal": {
+        "articles_in_total": 14,
+        "only_medline_count": 2,
+        "only_pmc_count": 8,
+        "only_suppl_count": 3,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "32785644",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 93,
+            "abstract_length": 1328,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "24817641",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 148,
+            "abstract_length": 2225,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7515699",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 92,
+            "abstract_length": 1328,
+            "number_of_unmatched_snippets": 2,
+            "unmatched_snippets": [
+                "variation in f1524v alters conformational landscape of brca2 fragments covering relatively large regions of brca2wt indicated their different contribution to the conformational landscape of the",
+                "brca2f1524v however showed almost no change in oligomeric distribution in response to rad51 figure 5b and supplementary table s6 the conformational distribution for brca2g1771d was similar to"
+            ],
+            "number_of_paragraphs": 10,
+            "paragraphs_lengths": [
+                1180,
+                499,
+                1090,
+                1432,
+                709,
+                765,
+                1106,
+                1155,
+                193,
+                197
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9032308",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 198,
+            "abstract_length": 1381,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                690
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4028255",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 101,
+            "abstract_length": 1076,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                2038
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3968516",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 46,
+            "abstract_length": 1433,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1679
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3242438",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 131,
+            "abstract_length": 1266,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3995136",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 77,
+            "abstract_length": 1185,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7722754",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 114,
+            "abstract_length": 1641,
+            "number_of_unmatched_snippets": 2,
+            "unmatched_snippets": [
+                "drug sensitivity data and probability of impact on function pif estimates a a plot of the observed mms assay survival fractions for variant f1524v blue points paired wildtype values are plotted",
+                "sensitivity data and probability of impact on function pif estimates a a plot of the observed mms assay survival fractions for variant f1524v blue points paired wildtype values are plotted as green"
+            ],
+            "number_of_paragraphs": 5,
+            "paragraphs_lengths": [
+                1483,
+                1223,
+                404,
+                199,
+                203
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4855620",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 114,
+            "abstract_length": 818,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                991
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3364210",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 49,
+            "abstract_length": 846,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1628
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8160182",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 102,
+            "abstract_length": 1422,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7519908",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 100,
+            "abstract_length": 1104,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7244490",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 79,
+            "abstract_length": 1361,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        }
+    ],
+    "narrative_summary": "The BRCA2 missense change p.Phe1524Val (F1524V) lies in the Brc repeat region that mediates interaction with RAD51 and has been reported in breast\u2011cancer sequencing studies.  Early clinical databases list the variant as a variant of uncertain significance, but more recent ClinVar entries and ACMG assessments have classified it as benign or likely benign [PMC9032308].  In a functional\u2011assay study that used mouse embryonic stem cells, the same variant was included among a set of previously classified benign controls and was ultimately judged non\u2011functional, supporting a benign interpretation [PMC7722754].\n\nClinical reports therefore provide no evidence of disease segregation or increased cancer risk for carriers of F1524V, and the variant is recorded as benign in public repositories.\n\nIn contrast, several biochemical and biophysical investigations have shown that the phenylalanine at position 1524 is part of the FxxA motif critical for RAD51 binding.  Single\u2011molecule scanning\u2011force microscopy of full\u2011length BRCA2 demonstrated that the F1524V substitution markedly reduces oligomerization, impairs the conformational switch that normally occurs upon RAD51 binding, and leads to a higher proportion of monomeric, extended molecules compared with wild\u2011type protein [PMC7515699].  An earlier single\u2011molecule study reported a dramatic effect of the same change on the BRCA2\u2011RAD51 interaction and on the overall conformational landscape of the protein [32785644].  An integrated in\u2011silico and molecular\u2011dynamics analysis also predicted that the variant destabilises the BRCA2\u2011RAD51 complex and classified it as deleterious [24817641].\n\nPopulation data are limited; the variant appears only as a rare allele in sequencing cohorts and is not reported at appreciable frequency in large reference datasets, consistent with a low\u2011frequency variant but without evidence of enrichment in disease cohorts [PMC3968516].  Computational predictions from multiple tools (SIFT, PolyPhen, PANTHER) and protein\u2011stability algorithms converged on a deleterious score for F1524V, reinforcing the hypothesis of functional impact [24817641].\n\nOverall, the evidence is discordant.  Functional assays that directly measure BRCA2\u2011RAD51 interaction and protein conformation provide strong support for a disruptive, potentially pathogenic effect of F1524V, whereas clinical classification databases and a stem\u2011cell functional assay label the variant as benign.  The lack of robust epidemiological or segregation data prevents a definitive conclusion.  At present, the variant remains classified as a variant of uncertain significance, with functional studies suggesting pathogenic potential but clinical annotations favouring a benign interpretation.",
+    "structured_summary": {
+        "overall_pathogenicity": "pathogenic",
+        "pathogenicity_counts": {
+            "supports benignity": 3,
+            "supports pathogenicity": 10,
+            "uncertain": 0
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "BRCA2 is a key breast cancer associated protein that is predicted to have interspersed regions of intrinsic disorder. Intrinsic disorder coupled with large size likely allows BRCA2 to sample a broad range of conformational space. We expect that the resulting dynamic arrangements of BRCA2 domains are a functionally important aspect of its role in homologous recombination DNA repair. To determine the architectural organization and the associated conformational landscape of BRCA2, we used scanning force microscopy based single molecule analyses to map the flexible regions of the protein and characterize which regions influence oligomerization. We show that the N- and the C-terminal regions are the main flexible regions. Both of these regions also influence BRCA2 oligomerization and interaction with RAD51. In the central Brc repeat region, Brc 1-4 and Brc 5-8 contribute synergistically to BRCA2 interaction with RAD51. We also analysed several single amino acid changes that are potentially clinically relevant and found one, the variant of **F1524V**, which disrupts key interactions and alters the conformational landscape of the protein. We describe the overall conformation spectrum of BRCA2, which suggests that dynamic structural transitions are key features of its biological function, maintaining genomic stability.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study finds that the BRCA2 F1524V variant disrupts RAD51 interaction and changes protein conformation, suggesting a functional effect on DNA repair activity.",
+            "uncertainties_or_limitations": null,
+            "article_id": "32785644",
+            "title": "Conformational flexibility and oligomerization of BRCA2 regions induced by RAD51 interaction.",
+            "relevance_score": 1.0,
+            "pub_year": 2020,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Fanconi anemia (FA) is an autosomal recessive human disease characterized by genomic instability and a marked increase in cancer risk. The importance of FANCD1 gene is manifested by the fact that deleterious amino acid substitutions were found to confer susceptibility to hereditary breast and ovarian cancers. Attaining experimental knowledge about the possible disease-associated substitutions is laborious and time consuming. The recent introduction of genome variation analyzing in silico tools have the capability to identify the deleterious variants in an efficient manner. In this study, we conducted in silico variation analysis of deleterious non-synonymous SNPs at both functional and structural level in the breast cancer and FA susceptibility gene BRCA2/FANCD1. To identify and characterize deleterious mutations in this study, five in silico tools based on two different prediction methods namely pathogenicity prediction (SIFT, PolyPhen, and PANTHER), and protein stability prediction (I-Mutant 2.0 and MuStab) were analyzed. Based on the deleterious scores that overlap in these in silico approaches, and the availability of three-dimensional structures, structure analysis was carried out with the major mutations that occurred in the native protein coded by FANCD1/BRCA2 gene. In this work, we report the results of the first molecular dynamics (MD) simulation study performed to analyze the structural level changes in time scale level with respect to the native and mutated protein complexes (G25R, W31C, W31R in FANCD1/BRCA2-PALB2, and **F1524V**, V1532F in FANCD1/BRCA2-RAD51). Analysis of the MD trajectories indicated that predicted deleterious variants alter the structural behavior of BRCA2-PALB2 and BRCA2-RAD51 protein complexes. In addition, statistical analysis was employed to test the significance of these in silico tool predictions. Based on these predictions, we conclude that the identification of disease-related SNPs by in silico methods, in combination with MD approach has the potential to create personalized tools for the diagnosis, prognosis, and treatment of diseases. The methods reviewed here generated a considerable amount of valuable data, but also the need for further validation.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study uses in silico prediction tools and molecular dynamics simulations to suggest that the BRCA2 F1524V variant disrupts the BRCA2\u2011RAD51 complex structure, implying a deleterious effect.",
+            "uncertainties_or_limitations": null,
+            "article_id": "24817641",
+            "title": "An integrated in silico approach to analyze the involvement of single amino acid polymorphisms in FANCD1/BRCA2-PALB2 and FANCD1/BRCA2-RAD51 complex.",
+            "relevance_score": 0.87,
+            "pub_year": 2014,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Here, we probe the contribution of different regions of BRCA2 to its conformational landscape by SFM. The N- and the C-terminal regions of BRCA2 are the most variable in structure, presumably due to flexibility. The central region including the Brc repeats appears to be involved in oligomerization, both self-association, BRCA2-BRCA2, and in BRCA2-RAD51 complexes. In agreement with previous studies, we show that in isolation the two Brc modules (1-4 and 5-8) are biochemically distinct. However, in the context of the whole protein the two modules contribute synergistically to the conformational landscape. We similarly analysed the architectural effects of two clinically relevant missense variants of the Brc region in detail, **F1524V** and G1771D. The single amino acid change **F1524V** in Brc 4 had a dramatic effect on BRCA2 conformational landscape and interaction with RAD51. These results highlight the importance of knowledge on the conformational distribution of disordered proteins to identify factors that can affect their conformation and function.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "Regions of BRCA2 (N region, R region, C region, NR region, RC region, BRCA2 DeltaBrc 1-4, BRCA2 DeltaBrc 5-8, Brc 1-4 and Brc 5-8), with two tandem N-terminal maltose binding protein (MBP) tag, and BRCA2 variants of unknown significance (**BRCA2F1524V**, BRCA2G1771D) were made by Q5 site directed mutagenesis (NEB) (Figure 1) (Plasmid for fl-BRCA2 gene was kindly gifted by S. Kowalczykowski). Positive clones for each variant were...",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Purification at various steps was assessed by western blot using anti-BRCA2 antibodies. For N region, BRCA2 DeltaBrc 5-8 and BRCA2G1771D, rabbit polyclonal anti-BRCA2 (1:1000) (3675-Biovision) was used as the primary antibody followed by donkey anti-rabbit HRP (1:2500) (Jackson ImmunoResearch) as the secondary antibody. For R, NR, RC, BRCA2 DeltaBrc 1-4, **BRCA2F1524V**, mouse monoclonal anti-BRCA2, epitope aa 1651-1821 (1: 500) (OP95-Calbiochem ) was used as the primary antibody and sheep anti-mouse HRP (1:2000) (Jackson ImmunoResearch) as the secondary antibody. For C, rabbit polyclonal anti-BRCA2, epitope aa 3245-3418 (1:500) (CA1033-Calbiochem ) was used as the primary antibody followed by donkey anti-rabbit HRP (1:2500) (Jackson ImmunoResearch) as the secondary antibody. For Brc 1-4, Brc 5-8, rabbit polyclonal anti-maltose binding protein (1:2000) (ab9084-abcam) was used as the primary antibody and donkey anti-rabbit HRP (1:2500) (Jackson ImmunoResearch) as the secondary antibody (Supplementary Figure S2).",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Fragments covering relatively large regions of BRCA2wt indicated their different contribution to the conformational landscape of the protein. We were curious if any of the single amino acid variants of unknown significance (VUS, often reported from breast cancer patient derived sequencing studies, UniProtKB-P51587, BRCA2_HUMAN) could influence this conformational landscape. We screened a number of clinically relevant variants of BRCA2 and selected two, **F1524V** and G1771D to probe their functional significance in detail. The variations lie in the Brc repeat region and were identified in genetic screens from breast cancer patients. The choice of these variants was based on two criteria, 1) the amino acid change is in the RAD51 interacting region of Brc repeats, and 2) the variation is likely to perturb innate interactions of the BRCA2wt. In **BRCA2F1524V**, the hydrophobic phenylalanine is replaced by an aliphatic valine, predicted to destabilize Brc4-RAD51 interaction and possibly altering a structural motif due to different spatial geometry. In BRCA2G1771D, a small aliphatic glycine is replaced by negatively charged bulkier glutamate likely resulting in gain of electrostatic interaction or steric hindrance. The variants were imaged in the presence and absence of RAD51 and analysed for oligomerization and solidity.",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "Both the single amino acid variants, like BRCA2wt, formed irregular multimeric assemblies (Figures 3A, 5A and Supplementary Figure S8). In the absence of RAD51, **BRCA2F1524V** and BRCA2G1771D were similar to BRCA2wt with extended shape and average solidity at ~0.8 (Figure 5C and Supplementary Table S5). With respect to oligomerization, **BRCA2F1524V** deviated the most, consisting of only 35% oligomers larger than tetramers versus 68% for BRCA2wt and 63% for BRCA2G1771D (Figures 5B, Supplementary Figure S8 and Supplementary Table S6). Moreover, the **BRCA2F1524V** variant had the highest proportion of monomers at 28%, signifying a reduced ability to self-associate (Figure 5B and Supplementary Table S6).",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "Single amino acid variations in BRCA2wt can alter conformational landscape of the protein. (A) Representative SFM height image of **BRCA2F1524V** in the absence (top panel) and presence (bottom panel) of RAD51. Green arrow highlights the persistence of flexible extended molecules in the presence of RAD51. The representative images do not necessarily depict the most populous molecular assemblies but are aimed to show, as much as is possible in a single image, the range of architecture of BRCA2 constructs. (B) Oligomeric distribution and (C) histogram of conformation for wt, **F1524V** and G1771D in the absence and presence of RAD51. Histograms for solidity were normalised to their maximum value.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "The conformational distribution for BRCA2G1771D was similar to BRCA2wt, with average solidity of ~1 in the presence of RAD51. For **BRCA2F1524V**, although volume distribution did not change, there was a change in conformation upon interacting with RAD51. This conformational change however was also muted, compared to BRCA2wt and BRCA2G1771D, displaying an average solidity of ~0.9 upon incubation with RAD51 (Figures 5A, Supplementary Figure S8 and Supplementary Table S5). For **BRCA2F1524V** about 30% of the molecules had solidity <0.9 while in BRCA2wt and BRCA2G1771D this was a negligible percentage, 1%, and 4% respectively. A notable number of **BRCA2F1524V** molecules in SFM images also displayed an extended conformation revealing lack of conformational change upon interaction with RAD51 (Figure 5A). The single amino acid change in the variant **F1524V** had a large influence (equivalent to or greater than deleting a region including Brc 1-4) on both self-oligomers of BRCA2 and an impaired conformational switch on interaction with RAD51.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "For more specific information on BRCA2 conformational flexibility we analysed two clinically identified variants of BRCA2, **BRCA2F1524V**, BRCA2G1771D, both located in the Brc repeats. The single amino acid change **BRCA2F1524V**, in the Brc 4 repeat, drastically impaired the characteristic conformational change of BRCA2 on interaction with RAD51. More than a third of molecules analysed failed to adopt a compact conformation and retained the flexible extended conformation. The residue F1524 is the phenylalanine of the FxxA motif of Brc 4 and mutation of phenylalanine at 1524 to valine, most likely disrupts hydrophobic interaction with RAD51. This suggests that interaction with RAD51 and the Brc 4 is crucial for the dynamic allosteric interactions resulting in the compact BRCA2-RAD51 conformation. The observed variety of conformations is indicative of multiple energetically equivalent conformations in BRCA2, one or more of which is not able to interact with RAD51 when phenylalanine 1524 is replaced by a valine.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "variation in **F1524V** alters conformational landscape of BRCA2 Fragments covering relatively large regions of BRCA2wt indicated their different contribution to the conformational landscape of the",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": ". **BRCA2F1524V** however, showed almost no change in oligomeric distribution in response to RAD51 (Figure 5B and Supplementary Table S6). The conformational distribution for BRCA2G1771D was similar to",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study provides extensive in\u2011vitro functional evidence that the BRCA2 F1524V missense variant disrupts BRCA2\u2011RAD51 interaction, alters protein conformation, and reduces oligomerization, supporting a pathogenic effect of the variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7515699",
+            "title": "Conformational flexibility and oligomerization of BRCA2 regions induced by RAD51 interaction",
+            "relevance_score": 1.0,
+            "pub_year": 2020,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "From the list of seven exonic variants identified by our methods, all but BRCA2 **c.4570T>G**; **p.Phe1524Val** were not predicted to be damaging by all seven selected in silico tools (see Table S1). Furthermore, all these coding variants have been classified as benign by ClinVar and/or benign or likely benign by ACMG guidelines in the context of hereditary BC and/or OC and reported as benign in the BRCA exchange database. These observations are consistent with medical genetic reports for cases harboring these variants, as commercial testing should have detected these exonic variants if regions were adequately covered.",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The paper reports a likely pathogenic BRCA1 intronic variant in ovarian cancer families and notes that the BRCA2 p.Phe1524Val variant is classified as benign in public databases.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9032308",
+            "title": "Case Review: Whole-Exome Sequencing Analyses Identify Carriers of a Known Likely Pathogenic Intronic BRCA1 Variant in Ovarian Cancer Cases Clinically Negative for Pathogenic BRCA1 and BRCA2 Variants",
+            "relevance_score": 0.96,
+            "pub_year": 2022,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Genomic position (hg19) Gene Alleles In-house exomes Genotyping dbSNP132 1,000 Genomes NHLBI-ESP Transcript Variation Penetrance for PD (%) Cases Controls AF/DP (EA only, hetero/total individuals) Nucleotide Amino acid n = 1076 n = 862 n = 1,014 n = 32 chr15:101593219 LRRK1 1 1 4 8 Not found 8/4,250 NM_024652.3 c.3782G > A p.Arg1261Gln 50.00 chr8:144662740 EEF1D 1 0 1 0 Not found Not found NM_032378.4 c.1646G > A p.Ala549Val 50.00 chr8:145771154 ARHGAP39 1 3 2 2 rs11994207 0.004:1,747 20/4,279 NM_025251.1 c.2000C > T p.Arg667Gln 50.00 chr7:100694947 MUC17 1 0 1 0 Not found Not found NM_001040105.1 c.12928C > T p.Gln4310X 42.85 chr8:145736082 MFSD3 1 3 4 2 rs35905340 0.003:1,950 19/4,280 NM_138431.1 c.932 T > C p.Met311Thr 42.85 chr12:119926578 CCDC60 1 0 1 0 Not found Not found NM_178499.3 c.464G > A p.Arg155His 42.85 chr19:40366263 FCGBP 1 1 2 0 Not found Not found NM_003890.2 c.13971_13971delC p.Glu4657fs 42.85 chr4:76846923 NAAA 1 0 1 0 Not found Not found NM_001042402.1 c.631G > A p.Arg211Trp 37.50 chr7:157931118 PTPRN2 1 1 1 0 Not found 3/4,297 NM_002847.3 c.949C > T p.Glu317Lys 37.50 chr10:31137973 ZNF438 1 0 1 1 Not found Not found NM_001143769.1 c.1361G > A p.Thr454Ile 37.50 chr2:234581080 UGT1A9 1 1 n/a n/a Not found 13/4,287 NM_021027.2 c.500 T > C p.Val167Ala 33.33 chr18:24440758 AQP4 1 2 1 7 rs72557975 0.003:2,587 9/4,291 NM_004028.3 c.605A > G p.Met202Thr 33.33 chr13:32913062 BRCA2 1 1 2 6 **rs56386506** Not found 1/4,299 NM_000059.3 c.**4570 T > G** **p.Phe1524Val** 30.00 chr17:9729563 GLP2R 1 0 1 0 Not found Not found NM_004246.1 c.183C > G p.Ile61Met 30.00 chr18:12325722 TUBB6 1 0 n/a n/a Not found 16/4,284 NM_032525.1 c.823A > G p.Thr275Ala 30.00",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article identifies the BRCA2 F1524V variant among many rare variants in PD patients and controls but does not assess its functional or clinical impact, focusing instead on LRRK1 as a candidate gene for Parkinson's disease.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC3968516",
+            "title": "Rare variants in LRRK1 and Parkinson's disease",
+            "relevance_score": 0.89,
+            "pub_year": 2013,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "We selected 88 variants for analysis in this study, each based on one or more of the following criteria: (i) the variant was listed as \"uncertain\" in ClinVar or class 3 in IARC classification; (ii) the variant was observed in Fanconi anemia (FA) patients; (iii) the variant may have an effect on splicing based on proximity to an exon-intron junction; (iv) truncating variants. Forty-seven variants are located in the DNA-binding domain (Fig. 1b). Twenty-four variants are listed as \"uncertain\" and twenty-six variants as having \"conflicting interpretation\" in ClinVar. Five variants are listed as class 3 in the IARC classification. Thirteen variants are located in close proximity to an exon-intron junction (within +3 or -3 from a splice junction site) (Supplementary Table 1). We included ten variants with previous classifications in the ClinVar database or based on published functional assay data for purposes of evaluating our assays and classification models. These were P168T, **F1524V**, G1529R, D2312V, K2411T (benign) and Q742X, E1308X, L2740X, C3069X, D3073G (pathogenic, Supplementary Table 1). In addition to these ten previously classified variants, we included V220Ifs as a negative (loss-of-function) control; WT constructs were used as a positive control.",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "We estimated the accuracy of the VarCall models based on their predictions of the ten previously classified variants (P168T, **F1524V**, G1529R, D2312V, K2411T and Q742X, E1308X, L2740X, C3069X, D3073G). All analyses also included V220Ifs and the WT as negative (non-function) and positive (functional) controls, respectively. We labeled the two controls and ten previously classified variants as functional/not functional when classifying the VUS. In order to characterize the accuracy of the approach, we ran ten additional analyses, where in each we systematically left one of the ten (six missense and four nonsense variants) previously classified variants unlabeled and estimated its classification status with the remaining nine known +2 controls (WT and V220Ifs) labeled. We report and plot classification probabilities for the VUS based on the full analysis and for the known missense and nonsense variants based on the leave-one-variant-out analyses. We base our estimates of classification accuracy on the latter set of values.",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "...+ 1301Tdel 0.0076 0.0504 0 (F) S2670L 1 NA 1 (NF) T1302del 0.0076 0.6654 0.0132 (F) T2681R 0.0028 0.1666 0 (F) E1308X 1 NA 1 (NF) L2686P 1 NA 1 (NF) S1479T 0.0010 0.0654 0 (F) L2688P 1 NA 1 (NF) **F1524V** 0 0.0436 0 (F) S2691F 1 NA 1 (NF) G1529R 0.0176 0.1146 0 (F) T2708Nfs 1 0.9950 1 (NF) T1624A 0.0110 0.9554 0.0518 (I) L2721H 1 NA 1 (NF) V1643A 0.0032 0.0710 0 (F) D2723A 1 NA 1 (NF) D1781N 0.1906...",
+                    "mention_type": "functional",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "drug sensitivity data and probability of impact on function (PIF) estimates. a A plot of the observed MMS assay survival fractions for variant **F1524V** (blue points); paired wildtype values are plotted",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "sensitivity data and probability of impact on function (PIF) estimates. a A plot of the observed MMS assay survival fractions for variant **F1524V** (blue points); paired wildtype values are plotted as green",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study combines mouse embryonic stem cell functional assays and a computational model to evaluate BRCA2 variants, and classifies the F1524V missense variant as benign based on functional assay results and prior clinical annotation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7722754",
+            "title": "A computational model for classification of BRCA2 variants using mouse embryonic stem cell-based functional assays",
+            "relevance_score": 0.38,
+            "pub_year": 2020,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Mutation contexta Mutation FxxA motif Technique used Effect RAD51 (FTTA) F86E ETTA Immunoprecipitation 11 No binding BRC4 (FHTA) F1524E EHTA Competitive ELISA 12 Peptide inactive BRC4 (FHTA) F1524W WHTA Competitive ELISA 12 Comparable activity to WT BRC4 (FHTA) **F1524V** VHTA BRCA2 mutations database 14 - BRC4 (FHTA) DeltaF1524 -HTA Dissociation of RAD51-DNA complex 13 Peptide inactive BRC4 (FHTA) H1525Q FQTA Dissociation of RAD51-DNA complex 13 Comparable activity BRC7 (FSTA) S1979R FRTA BRCA2 mutations database 14 - BRC3 (FQTA) T1430A FQAA RAD51:DNA bandshift assay 3 Peptide inactive BRC3 (FQTA) T1430A FQAA Electron microscopic visualisation of nucleoprotein filaments 3 Peptide inactive BRC1 (FRTA) T1011R FRRA BRCA2 mutations database 14 - BRC2 (FYSA) S1221P FYPA BRCA2 mutations database 14 - BRC2 (FYSA) S1221Y FYYA BRCA2 mutations database 14 - RAD51 (FTTA) A89E FTTE Immunoprecipitation 11 No binding BRC4 (FHTA) A1527S FHTS Dissociation of RAD51-DNA complex 13 Peptide inactive",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article includes BRCA2 F1524V in a mutation\u2011database table but does not report functional assays or clinical classification for this variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC4855620",
+            "title": "Structure-activity relationship of the peptide binding-motif mediating the BRCA2:RAD51 protein-protein interaction",
+            "relevance_score": 0.31,
+            "pub_year": 2016,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "DNA BRCA1 Category BRCA1 Mutation BRCA2 Category BRCA2 Mutation Age at Diagnosis Second Tumor (Age) Family History of Cancer (Age) Criteria for Mutation Screening* a) Mutation Carriers 1110 LCS p.R496H PM; RP (TNBC) c.1029delA; p.T1915M 69 0 6 x BC ms yes 1129 - - PrPM p.W2626C 61 0 4x lung cancer ms, grandmother ms BC (61), 4 add. cancers ms no 1153 PM c.5266dupC - - 43 BC (48) mother BC (60) yes 1156 - - PM p.S1882X 37 0 0 no 1186 - - PM c.476-1G>A 56 0 sister BC (52), mother OvCa (63) yes 1245 - - PM c.6444dupT 38 BC (43) mother OvCa (60) yes Median 50 4/6 (67%) b) Remaining TNBC Patients 1102 - - LCS p.A2951T 38 0 0 no 1106 - - RP (TNBC) p.T1915M 48 BC (56) mother BC (45) yes 1108 - - - - 71 0 0 no 1109 - - - - 63 skin sister BC (58) no 1111 - - - - 64 0 aunt ms BC (68), aunt ms BC (50) yes 1115 LCS p.M1652I - - 59 0 0 no 1117 - - - - 57 basalioma (56) 0 no 1118 - - - - 51 uterus (20; cis) sister BC (50) yes 1130 - - - - 70 0 mother BC (41) yes 1132 - - - - 43 0 aunt fs BC (42+50) yes 1135 - - - - 48 0 0 no 1139 LCS p.M1652I - - 43 BC (57), basalioma (58) 0 yes 1141 - - - - 74 0 0 no 1145 - - US c.68-7T>A 57 0 0 no 1178 - RP (TNBC) p.T1915M 70 0 aunt ms OvCa yes 1180 - US **p.F1524V** 49 0 0 no 1182 - - - - 63 0 3 x BC ms, 2x lung cancer ms yes 1201 - - RP (TNBC) p.T1915M 63 0 sister of grandmother ms BC no 1217 - - - - 50 0 0 no 1219 - - - - 70 0 cousin ms BC (40) yes 1232 LCS p.M1652I - - 63 0 niece bilateral BC (32), aunt ms BC (42) yes 1244 - - - - 66 0 aunt fs BC no 1252 LCS p.M1652I - - 68 0 sister BC (66), grandmother fs BC (50) yes 1259 - - - - 56 0 0 no Median 61 11/24 (46%) Total 15/30 (50%)",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study reports a high frequency of deleterious BRCA2 mutations in TNBC patients and includes the BRCA2 p.F1524V variant as an observed case, without assigning a pathogenicity classification to it.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC3364210",
+            "title": " BRCA2 Mutations and Triple-Negative Breast Cancer",
+            "relevance_score": 0.27,
+            "pub_year": 2012,
+            "data_sources": [
+                "pmc"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 1652,
+            "output": 405
+        },
+        {
+            "input": 1936,
+            "output": 751
+        },
+        {
+            "input": 4003,
+            "output": 1437
+        },
+        {
+            "input": 2044,
+            "output": 700
+        },
+        {
+            "input": 2499,
+            "output": 289
+        },
+        {
+            "input": 2597,
+            "output": 706
+        },
+        {
+            "input": 1791,
+            "output": 163
+        },
+        {
+            "input": 1718,
+            "output": 158
+        },
+        {
+            "input": 2851,
+            "output": 1215
+        },
+        {
+            "input": 1991,
+            "output": 816
+        },
+        {
+            "input": 2431,
+            "output": 551
+        },
+        {
+            "input": 1823,
+            "output": 231
+        },
+        {
+            "input": 1750,
+            "output": 199
+        },
+        {
+            "input": 1784,
+            "output": 262
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 7572,
+        "output": 1058
+    },
+    "total_time": 51.69
+}

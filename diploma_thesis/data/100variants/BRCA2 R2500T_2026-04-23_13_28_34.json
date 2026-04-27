@@ -1,0 +1,62 @@
+{
+    "before_pruning": {
+        "articles_in_total": 1,
+        "only_medline_count": 0,
+        "only_pmc_count": 0,
+        "only_suppl_count": 1,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 1,
+        "only_medline_count": 0,
+        "only_pmc_count": 0,
+        "only_suppl_count": 1,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "variant": "BRCA2 R2500T",
+    "time_to_process_articles": 4.88,
+    "context_length": 2768,
+    "after_removal": {
+        "articles_in_total": 1,
+        "only_medline_count": 0,
+        "only_pmc_count": 0,
+        "only_suppl_count": 1,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "",
+            "pmcid": "PMC2587343",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 89,
+            "abstract_length": 2580,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        }
+    ],
+    "narrative_summary": "No relevant evidence found.",
+    "article_mentions": [],
+    "analysis_token_counts": [
+        {
+            "input": 1932,
+            "output": 199
+        }
+    ],
+    "structured_summary": {},
+    "total_time": 6.71
+}

@@ -1,7 +1,11 @@
-diploma_thesis/data
+diploma_thesis/data/biodiversity_pmc_cache
+diploma_thesis/data/pubtator_cache
+diploma_thesis/data/synvar_cache
+diploma_thesis/data/variomes_cache
+diploma_thesis/data/clinvar
+
 credentials.json
 
-diploma_thesis/not_working_pubtator_annotate_raw
 # ---------------------------------------------------------------------
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -1,0 +1,87 @@
+{
+    "before_pruning": {
+        "articles_in_total": 11,
+        "only_medline_count": 0,
+        "only_pmc_count": 0,
+        "only_suppl_count": 11,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 11,
+        "only_medline_count": 0,
+        "only_pmc_count": 0,
+        "only_suppl_count": 11,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "variant": "BRCA1 E1172G",
+    "time_to_process_articles": 8.92,
+    "context_length": 3056,
+    "after_removal": {
+        "articles_in_total": 2,
+        "only_medline_count": 0,
+        "only_pmc_count": 0,
+        "only_suppl_count": 2,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "",
+            "pmcid": "PMC8860097",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 74,
+            "abstract_length": 1214,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11607406",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 134,
+            "abstract_length": 1411,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        }
+    ],
+    "narrative_summary": "No relevant evidence found.",
+    "article_mentions": [],
+    "analysis_token_counts": [
+        {
+            "input": 1762,
+            "output": 309
+        },
+        {
+            "input": 1703,
+            "output": 213
+        }
+    ],
+    "structured_summary": {},
+    "total_time": 12.59
+}

@@ -1,0 +1,1766 @@
+{
+    "before_pruning": {
+        "articles_in_total": 371,
+        "only_medline_count": 54,
+        "only_pmc_count": 160,
+        "only_suppl_count": 135,
+        "both_pmc_and_suppl_count": 22,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 50,
+        "only_medline_count": 50,
+        "only_pmc_count": 0,
+        "only_suppl_count": 0,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "variant": "BRCA1 P871L",
+    "time_to_process_articles": 70.81,
+    "context_length": 186991,
+    "after_removal": {
+        "articles_in_total": 50,
+        "only_medline_count": 50,
+        "only_pmc_count": 0,
+        "only_suppl_count": 0,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "32453341",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 115,
+            "abstract_length": 1296,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "23964347",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 184,
+            "abstract_length": 1976,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "25273865",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 188,
+            "abstract_length": 2416,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "27039803",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 169,
+            "abstract_length": 1212,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "26109977",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 81,
+            "abstract_length": 1271,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "25735359",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 84,
+            "abstract_length": 1289,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "25885115",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 127,
+            "abstract_length": 1487,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "19287957",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 80,
+            "abstract_length": 1780,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "22684231",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 108,
+            "abstract_length": 3103,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "28427168",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 92,
+            "abstract_length": 912,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "10070866",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 144,
+            "abstract_length": 1526,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "14555511",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 71,
+            "abstract_length": 1521,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "19482343",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 122,
+            "abstract_length": 1347,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "29209986",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 94,
+            "abstract_length": 1540,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "12188064",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 72,
+            "abstract_length": 559,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "28862356",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 140,
+            "abstract_length": 1022,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "10980541",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 70,
+            "abstract_length": 1361,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "25266802",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 118,
+            "abstract_length": 1537,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "30832521",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 103,
+            "abstract_length": 1301,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "16026807",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 118,
+            "abstract_length": 2072,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "23749772",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 109,
+            "abstract_length": 1876,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "34008499",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 62,
+            "abstract_length": 1676,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "31203256",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 229,
+            "abstract_length": 1268,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "33850565",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 121,
+            "abstract_length": 1880,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "25194442",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 107,
+            "abstract_length": 1302,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "15924337",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 69,
+            "abstract_length": 1601,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "32063924",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 77,
+            "abstract_length": 945,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "17317153",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 113,
+            "abstract_length": 1264,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "29492227",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 81,
+            "abstract_length": 1591,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "28744749",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 140,
+            "abstract_length": 1471,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "15138483",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 95,
+            "abstract_length": 1184,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "31938277",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 116,
+            "abstract_length": 1665,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "39170756",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 136,
+            "abstract_length": 1960,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "15159312",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 131,
+            "abstract_length": 1481,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "30541318",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 70,
+            "abstract_length": 1387,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "9063749",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 96,
+            "abstract_length": 1619,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "19661094",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 80,
+            "abstract_length": 1650,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "30820179",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 100,
+            "abstract_length": 1574,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "19484476",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 101,
+            "abstract_length": 1351,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "19205873",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 104,
+            "abstract_length": 1384,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "23996866",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 65,
+            "abstract_length": 1645,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "32606887",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 162,
+            "abstract_length": 1692,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "24289560",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 135,
+            "abstract_length": 1448,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "18559551",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 140,
+            "abstract_length": 1661,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "23619945",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 93,
+            "abstract_length": 874,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "36922933",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 167,
+            "abstract_length": 2722,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "29963112",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 108,
+            "abstract_length": 2049,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "27221928",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 113,
+            "abstract_length": 1584,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "20332227",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 92,
+            "abstract_length": 1734,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "24062231",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 159,
+            "abstract_length": 1685,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        }
+    ],
+    "narrative_summary": "The BRCA1 c.2612C>T (p.Pro871Leu, rs799917) is a missense change in exon 11 of the BRCA1 tumor\u2011suppressor gene that has been investigated in a wide range of malignancies, including breast, ovarian, cervical, gastric, esophageal, endometrial, glioblastoma and triple\u2011negative breast cancer [32453341].\nClinical investigations have most often found no association between the P871Leu genotype and cancer risk or outcome. Case\u2011control studies in North Indian breast cancer patients, in Pakistani, Algerian, Moroccan, Greek, Saudi Arabian and Australian cohorts, and large meta\u2011analyses of breast cancer (19,878 subjects) and of overall cancer (24 studies) reported comparable genotype frequencies in cases and controls and concluded that the variant does not confer a measurable increase in breast or ovarian cancer risk [32453341, 23964347, 14555511, 15138483, 9063749, 19661094, 24289560, 25194442, 28427168, 30541318]. Similar null results were observed for ovarian cancer progression\u2011free and overall survival in a Gynecologic Oncology Group trial [23964347] and for epithelial ovarian cancer risk in a large pooled analysis [15924337].\nIn contrast, several disease\u2011specific association studies have reported modest risk effects. The P871Leu TT genotype was linked to a reduced risk of cervical cancer in a Chinese case\u2011control series [19482343] and to a decreased overall cancer risk in an Asian\u2011focused meta\u2011analysis [28427168]. Conversely, the variant was associated with increased susceptibility to gastric cancer in a Chinese Han population [25266802], to esophageal squamous cell carcinoma in two Chinese cohorts [23749772], to endometrial cancer in a Polish case\u2011control study [31938277], and to poorer progression\u2011free survival in triple\u2011negative breast cancer patients, especially after radiotherapy [28744749]. A pathway\u2011based analysis also identified the SNP as a candidate glioblastoma susceptibility marker [18559551].\nFunctional investigations provide mechanistic support for a possible pathogenic role. The rs799917 C allele disrupts a predicted miR\u2011638 binding site, leading to lower BRCA1 mRNA and protein levels in gastric and esophageal tissues, and the allele\u2011specific effect on miRNA regulation was confirmed in vitro and in vivo [25266802, 23749772]. Additional bioinformatic and experimental work showed that the variant can alter miRNA\u2011mediated regulation of BRCA1, influencing gene expression and potentially cancer susceptibility [20332227].\nPopulation\u2011level data show that the P871Leu allele is common worldwide, with frequencies varying by ethnicity (e.g., higher in African\u2011American versus Caucasian groups) and strong linkage disequilibrium with a nearby promoter polymorphism used for deletion screening [23964347, 10070866]. Founder\u2011mutation surveys in Iran and other regions list the variant among recurrent BRCA1 changes but do not attribute pathogenic significance [26109977, 25735359].\nOverall, the preponderance of large epidemiologic studies and meta\u2011analyses supports a classification of BRCA1 P871Leu as a common polymorphism with no clear high\u2011penetrance pathogenic effect. However, functional data demonstrating reduced BRCA1 expression and several cancer\u2011type\u2011specific association studies suggest that the variant may modestly modify risk in certain contexts. At present, the evidence does not justify labeling the variant as pathogenic, and its clinical relevance remains uncertain, warranting further investigation in well\u2011powered, cancer\u2011type\u2011specific cohorts.\n",
+    "structured_summary": {
+        "overall_pathogenicity": "uncertain",
+        "pathogenicity_counts": {
+            "supports benignity": 16,
+            "supports pathogenicity": 6,
+            "uncertain": 2
+        },
+        "conflicting_evidence": true
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "The polymorphic variants of BRCA1, which lead to amino acid substitutions, have a known pathogenic role in breast cancer. The present study investigated in North Indian breast cancer patients the association of risk with four reported pathogenic variants of BRCA1: c.190T>C (p.Cys64Arg), 1307delT, g.5331G>A (p.G1738R) and **c.2612C>T** (**p.Pro871Leu**). Genotyping was done by PCR-RFLP method in 255 clinically confirmed breast cancer patients and 255 age and gender matched healthy individuals. For c.190T>C, 1307delT and g.5331G>A, all the patients and controls had the wild-type genotype indicating no association with breast cancer risk. For **c.2612C>T** polymorphism, the frequency of the CC, CT, and TT genotypes was 14.5 vs 15.7%, 59.6 vs 53.7% and 25.9 vs 30.6% in breast cancer patients and controls respectively. The frequency of heterozygotes (CT genotype) was higher in cases than controls but the difference was not statistically significant. Genetic model analysis showed no association of the four analyzed BRCA1 variants with breast cancer risk with any model. The studied variants were not associated with the risk of breast cancer in Punjab, North west India, suggesting a need for further screening of other BRCA1 variants. It is the first reported study on these 4 variants from India.",
+                    "mention_type": "population",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The BRCA1 p.Pro871Leu (c.2612C>T) variant showed comparable frequencies in breast cancer patients and healthy controls with no significant association, suggesting it is likely benign in this North Indian cohort.",
+            "uncertainties_or_limitations": null,
+            "article_id": "32453341",
+            "title": "Screening of BRCA1 variants c.190T>C, 1307delT, g.5331G>A and c.2612C>T in breast cancer patients from North India.",
+            "relevance_score": 1.0,
+            "pub_year": 2020,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "PURPOSE: BRCA1/BRCA2 germline mutations appear to enhance the platinum-sensitivity, but little is known about the prognostic relevance of polymorphisms in BRCA1/BRCA2 in epithelial ovarian cancer (EOC). This study evaluated whether common variants of BRCA1/BRCA2 are associated with progression-free survival (PFS) and overall survival (OS) in patients with advanced stage sporadic EOC. EXPERIMENTAL DESIGN: The allelic frequency of BRCA1 (**2612C > T**, P871L-rs799917) and BRCA2 (114A > C, N372H-rs144848) were determined in normal blood DNA from women in Gynecologic Oncology Group protocol #172 phase III trial with optimally resected stage III EOC treated with intraperitoneal or intravenous cisplatin and paclitaxel (C + P). Associations between polymorphisms and PFS or OS were assessed. RESULTS: Two hundred and thirty-two women were included for analyses. African Americans (AA) had different distributions for the two polymorphisms from Caucasians and others. For non-AA patients, the genotype for BRCA1 **P871L** was distributed as 38% for CC, 49% for CT, and 13% for TT. Median PFS was estimated to be 31, 21, and 21 months, respectively. After adjusting for cell type, residual disease, and chemotherapy regimen, CT/TT genotypes were associated with a 1.40-fold increased risk of disease progression [95% confidence interval (CI) = 1.00-1.95, p = 0.049]. After removing seven patients with known BRCA1 germline mutations, the hazard ratio (HR) was 1.36 (95% CI = 0.97-1.91, p = 0.073). The association between BRCA1 **P871L** and OS was not significant (HR = 1.25, 95% CI = 0.88-1.76, p = 0.212). Genotype distribution of BRCA2 N372H among non-AA patients was 50, 44, and 6% for AA, AC, and CC, respectively and there is no evidence that this BRCA2 polymorphism was related to PFS or OS. CONCLUSION: Polymorphisms in BRCA1 **P871L** or in BRCA2 N372H were not associated with either PFS or OS in women with optimally resected, stage III EOC treated with cisplatin and paclitaxel.",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study found no significant association between the BRCA1 P871L polymorphism and progression-free or overall survival in advanced-stage ovarian cancer patients treated with cisplatin and paclitaxel.",
+            "uncertainties_or_limitations": null,
+            "article_id": "23964347",
+            "title": "Assessment of the Prognostic Value of Two Common Variants of BRCA1 and BRCA2 Genes in Ovarian Cancer Patients Treated with Cisplatin and Paclitaxel: A Gynecologic Oncology Group Study.",
+            "relevance_score": 0.78,
+            "pub_year": 2013,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Germ line deleterious mutations of BRCA1 gene are not the unique factor that could inactivate BRCA1 protein which leads to familial breast cancer onset with distant metastases' occurrence. The present research explores the role that could be assigned to BRCA1 SNPs to inactivate BRCA1 protein and therefore to the occurrence of familial breast cancer with an increased risk of distant metastases' occurrence. The presence or the absence of BRCA1 protein was first analyzed by applying the immunohistochemistry technique to the tumors with sporadic and familial breast cancer. Then, a case-control study was conducted including 40 patients with familial breast cancer, 46 ones with sporadic breast cancer and 34 healthy controls based on the genotyping of nine BRCA1 SNPs (c.442.58delT, c.2082C>T, c.2311T>C, **c.2612C>T**, c.3113A>G, c.3119G>A, c.3548A>G, c.4308T>C and 4837A>G) via direct sequencing. Finally, the functional role that could be assigned to these SNPs was focused upon. miRbase site was used as a bioinformatics tool to predict potential micro-RNAs (miRs) targeting SNPs that are associated with familial breast cancer according to the results of this research. These predicted miRs were confirmed by Q-PCR analysis and correlated with BRCA1 protein expression among patients along with potential distant metastases. Clinical outcome showed that distant metastasis concerned 45 % of familial breast cancer patients and 19.5 % with sporadic breast cancer. Analysis of BRCA1 protein expression revealed a negative staining among 46.6 % of familial breast cancer patients and only 16.6 % within sporadic breast cancer ones. The association of four variants was identified within BRCA1 gene (c.442.58 delT, c.2311T>C, **c.2612C>T** and c.4308T>C) to familial breast cancer across their wild genotypes. miR-1179 was selected as potential miR that targets the region of BRCA1 mRNA containing the c.2311T>C variant within the TT genotype. The expression of miR-1179 was significantly associated with familial breast cancer patients without BRCA1 deleterious mutations compared to those with sporadic breast cancer according to TT genotype along with BRCA1 negative staining and according to the occurrence of distant metastases. Combination between TT genotype of c.2311T>C and miR-1179 over-expression could generate a lack of BRCA1 protein leading to a high risk of familial breast cancer with distant metastases.",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The study examined several BRCA1 SNPs, including c.2612C>T (P871L), and reported an association of its wild genotype with increased risk of familial breast cancer and distant metastasis.",
+            "uncertainties_or_limitations": null,
+            "article_id": "25273865",
+            "title": "Wild-type genotypes of BRCA1 gene SNPs combined with micro-RNA over-expression in mammary tissue leading to familial breast cancer with an increased risk of distant metastases' occurrence.",
+            "relevance_score": 0.78,
+            "pub_year": 2014,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Specific patterns of the hereditary breast and ovarian cancer (HBOC) syndrome are related to mutations in the BRCA1 gene. One hundred unrelated breast cancer patients were interviewed to obtain clinical symptoms and signs, pedigree and familial history of HBOC syndrome related cancer. Subsequently, data were calculated using the Breast and Ovarian Analysis of Disease Incidence and Carrier Estimation Algorithm (BOADICEA) risk prediction model. Patients with high score of BOADICEA were offered genetic testing. Eleven patients with high score of BOADICEA, 2 patients with low score of BOADICEA, 2 patient's family members and 15 controls underwent BRCA1 genetic testing. Mutation screening using PCR-HRM was carried out in 22 exons (41 amplicons) of BRCA1 gene. Sanger sequencing was subjected in all samples with aberrant graph. This study identified 10 variants in the BRCA1 gene, consisting of 6 missense mutations (c.1480C>A, **c.2612C>T**, c.2566T>C, c.3113A>G, c.3548 A>G, c.4837 A>G), 3 synonymous mutations (c.2082 C> T, c.2311 T> C and c.4308T>C) and one intronic mutation (c.134+35 G>T). All variants tend to be polymorphisms and unclassified variants. However, no known pathogenic mutations were found.",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The Indonesian screening study identified the BRCA1 P871L (c.2612C>T) variant among ten BRCA1 changes and classified it as a likely polymorphism/unclassified, with no known pathogenic mutations detected.",
+            "uncertainties_or_limitations": null,
+            "article_id": "27039803",
+            "title": "BRCA1 Gene Mutation Screening for the Hereditary Breast and/or Ovarian Cancer Syndrome in Breast Cancer Cases: a First High Resolution DNA Melting Analysis in Indonesia.",
+            "relevance_score": 0.73,
+            "pub_year": 2016,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "BACKGROUND: BRCA1/2 genes mutation prevalence varies among ethnic groups and may be influenced by founder mutations. Understanding BRCA1/2 genes mutations is important for reducing breast cancer (BC) incidence, accurate risk assessment and counseling. This systematic review of the literature was conducted to addressing BRCA1/2 mutations in Iranian BC patients. MATERIALS AND METHODS: A search for relevant articles was run on before January 2014 using MedLine, PubMed, Science Iranian Database, Google, and Web sites related to the study topic. The key words included: BC and Iran with Genes, BRCA Genes, BRCA1 and BRCA2; \"Cancer Genes,\" and \"Iran.\" RESULTS: Thirteen articles retrieved from this search strategy were eligible for this review. The overall BRCA1 mutation rate for Iranian female BC patients was detected 31.8% (377/1183). Although this gene mutation rate for male patients is <0.01%. Eight BRCA1 mutations (c. 4837A > G, c. 3419G > A, c. 3119G > A, c. **2612C > T**, c. 3113A > G, c. 2311T > C, c. 4301T > C and c. 4308T > C in BRCA1, and one BRCA2 mutation (c. 6494G > C) were found in multiple case subjects and represent candidate founder mutations. CONCLUSION: According to these studies, there is heterogeneity in BRCA mutations in Iranian BC patients.",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The systematic review identifies several BRCA1 mutations, including the P871L (c.2612C>T) variant, among Iranian breast cancer patients, highlighting mutation heterogeneity in this population.",
+            "uncertainties_or_limitations": null,
+            "article_id": "26109977",
+            "title": "BRCA1 and BRCA2 mutations in Iranian breast cancer patients: A systematic review.",
+            "relevance_score": 0.72,
+            "pub_year": 2015,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "BACKGROUND: To date several common mutations in BRCA1 and BRCA2 associated with breast cancer have been reported in different populations. However, the common BRCA1 and BRCA2 mutations among breast cancer patients in Iran have not been described in detail. MATERIALS AND METHODS: To comprehensively assess the frequency and distribution of the most common BRCA1 and BRCA2 mutations in Iranian breast cancer patients, we conducted this meta-analysis on 13 relevant published studies indentified in a literature search on PubMed and SID. RESULTS: A total of 11 BRCA1 and BRCA2 distinct common mutations were identified, reported twice or more in the articles, of which 10 (c.2311T>C, c.3113A>G, c.4308T>C, c.4837A>G, **c.2612C>T**, c.3119G>A, c.3548A>G, c.5213G>A c.IVS16-92A/G, and c.IVS16-68A/G) mutations were in BRCA1, and 1 (c.4770A>G) was in BRCA2. The mutations were in exon 11, exon 13, intron 16, and exon 20 of BRCA1 and exon 11 of BRCA2. All have been previously reported in different populations. CONCLUSIONS: These meta analysis results should be helpful in understanding the possibility of any first true founder mutation of BRCA1/BRCA2 in the Iranian population. In addition, they will be of significance for diagnostic testing, genetic counseling and for epidemiological studies.",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The meta\u2011analysis identifies c.2612C>T (p.Pro871Leu) as one of several recurrent BRCA1 mutations reported in Iranian breast\u2011cancer patients, but provides no interpretation of its clinical impact.",
+            "uncertainties_or_limitations": null,
+            "article_id": "25735359",
+            "title": "BRCA1 and BRCA2 common mutations in iranian breast cancer patients: a meta analysis.",
+            "relevance_score": 0.7,
+            "pub_year": 2015,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "BACKGROUND: Identification of specific mutations in cancer patients may lead to the discovery of genes, which can affect susceptibility and/or prognosis. It has previously been reported that mutations in BRCA1 and BRCA2 genes are linked to breast cancer. Here, we evaluated the use of the High Resolution Melting (HRM) approach to screen for mutations in exon 11 of BRCA1 gene in Moroccan patients. METHODS: HRM analysis was used to screen exon 11 from 71 breast cancer patients in order to detect different variants. Conventional Sanger sequencing was used to confirm the presence of possible mutations. Distribution of different SNPs was determined by SNaPshot analysis software. RESULTS: In order to assess the efficacy of the HRM approach to screen for mutations, especially in diagnosis, we first used two samples with previously known mutations, \"2924delA and 3398delC\". Indeed, these previously known sequence variants were detected by the HRM approach and yielded melting curves with atypical shape relative to wild-type control sequences. We then analyzed, 69 samples from breast cancer patients using the HRM method, and were able to detect two samples with atypical curves. Sequencing of the two samples, using the conventional Sanger approach, confirmed the presence of the same SNP (c.**2612C > T**) in both samples. CONCLUSIONS: Our results strongly suggest that the HRM approach represents a reliable and highly sensitive method for mutation scanning, especially in diagnosis.",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study demonstrates that high\u2011resolution melting analysis can identify the BRCA1 exon\u201111 c.2612C>T (P871L) variant in Moroccan breast\u2011cancer patients, confirming the variant by Sanger sequencing.",
+            "uncertainties_or_limitations": null,
+            "article_id": "25885115",
+            "title": "Screening of exon 11 of BRCA1 gene using the high resolution melting approach for diagnosis in Moroccan breast cancer patients.",
+            "relevance_score": 0.68,
+            "pub_year": 2015,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "BACKGROUND: BRCA1 and BRCA2 germline mutations predispose heterozygous carriers to hereditary breast/ovarian cancer. However, unclassified variants (UVs) (variants with unknown clinical significance) and missense polymorphisms in BRCA1 and BRCA2 genes pose a problem in genetic counseling, as their impact on risk of breast and ovarian cancer is still unclear. The objective of our study was to identify UVs and missense polymorphisms in Algerian breast/ovarian cancer patients and relatives tested previously for BRCA1 and BRCA2 genes germline mutations analysis. METHODS: We analyzed 101 DNA samples from 79 breast/ovarian cancer families. The approach used is based on BRCA1 and BRCA2 sequence variants screening by SSCP or High-Resolution Melting (HRM) curve analysis followed by direct sequencing. In silico analyses have been performed using different bioinformatics programs to individualize genetics variations that can disrupt the BRCA1 and BRCA2 genes function. RESULTS: Among 80 UVs and polymorphisms detected in BRCA1/2 genes (33 BRCA1 and 47 BRCA2), 31 were new UVs (10 BRCA1 and 21 BRCA2), 7 were rare UVs (4 BRCA1 and 3 BRCA2) and 42 were polymorphic variants (19 BRCA1 and 23 BRCA2). Moreover, 8 new missense UVs identified in this study: two BRCA1 (c.4066C>A/p.Gln1356Lys, c.4901G>T/p.Arg1634Met) located respectively in exons 11 and 16, and six BRCA2 (c.1099G>A/p.Asp367Asn, c.2636C>A/p.Ser879Tyr, c.3868T>A/p.Cys1290Ser, c.5428G>T/p.Val1810Phe, c.6346C>G/p.His2116Asp and c.9256G>A/p.Gly3086Arg) located respectively in exons 10, 11 and 24, show a damaging PSIC score yielded by PolyPhen2 program and could be pathogenic. In addition, 5 new BRCA} missense UVs out of six that were found to be damaging by PolyPhen2 program, also were deleterious according to SIFT program. The rare BRCA1 UV c.5332G>A/p.Asp1778Asn was found here for the first time in co-occurrence in trans with the deleterious BRCA1 mutation c.798_799delTT/p.Ser267LysfsX19 in young breast cancer patient. Moreover, 10 new identified intronic variants with unknown clinical significance (3 BRCA1 and 7 BRCA2) in the present study, could be considered as benign, because GeneSplicer, SpliceSiteFinder and MaxEntScan prediction programs show no splice site alteration for these variants. Several missense polymorphisms of BRCA1 **c.2612C>T**/**p.Pro871Leu**, c.3548A>G/p.Lys1183Arg, c.4837A>G/p.Ser1613Gly and BRCA2 c.865A>C/p.Asn289His, c.1114A>C/p.Asn372His, c.2971A>G/p.Asn991Asp, c.7150C>A/p.Gly2384Lys have been identified with high frequency in patients who were tested negative for BRCA1 and BRCA2 mutations. These missense polymorphisms could have a role as susceptibility breast cancer markers in Algerian breast/ovarian cancer families where pathological BRCA1 and BRCA2 mutations were not present. CONCLUSIONS: For the first time, UVs and missense polymorphisms in BRCA1 and BRCA2 genes have been identified in Algerian breast/ovarian cancer families. Evaluation of breast/ovarian cancer risk induced by the eight new missense UVs and common polymorphisms detected in our present work is on going in a larger study.",
+                    "mention_type": "population",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The study screened Algerian breast/ovarian cancer families, identified the BRCA1 p.Pro871Leu polymorphism among others, and proposed it might contribute to breast cancer susceptibility despite being a common variant in mutation\u2011negative patients.",
+            "uncertainties_or_limitations": null,
+            "article_id": "22684231",
+            "title": "BRCA1 and BRCA2 unclassified variants and missense polymorphisms in Algerian breast/ovarian cancer families.",
+            "relevance_score": 0.54,
+            "pub_year": 2012,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Breast cancer 1 (BRCA1) gene makes great contributions to the repair of DNA. The association between BRCA1 **P871L** polymorphism and cancer risk has been investigated in a growing number of studies, but the conclusions are not conclusive. To obtain a comprehensive conclusion, we performed a meta-analysis of 24 studies with 13762 cases and 22388 controls. The pooled results indicated that BRCA1 gene **P871L** variant decreased risk of overall cancer (homozygous model: odds ratio (OR) = 0.89, 95%confidence interval (CI) = 0.79-1.00; recessive model: OR = 0.89, 95% CI = 0.80-0.99). The stratified analysis observed decreased risk associated with BRCA1 **P871L** in subgroups among Asians and high score studies, but not Caucasians or low score studies. In conclusion, despite several limitations, this meta-analysis suggested that BRCA1 **P871L** genetic variation may be associated with decreased susceptibility to cancer.",
+                    "mention_type": "population",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The meta\u2011analysis of 24 studies indicates that the BRCA1 P871L variant is modestly associated with reduced overall cancer risk, especially in Asian populations and higher\u2011quality studies.",
+            "uncertainties_or_limitations": null,
+            "article_id": "28427168",
+            "title": "Association between BRCA1 P871L polymorphism and cancer risk: evidence from a meta-analysis.",
+            "relevance_score": 0.3,
+            "pub_year": 2017,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Reduced expression of BRCA1 has been implicated in sporadic breast cancer, although the mechanisms underlying this phenomenon remain unclear. To determine whether regulatory mutations could account for the reduced expression, we screened the promoter region by sequencing in 20 patients with sporadic disease. No mutations were detected; however, a new polymorphism consisting of a C-to-G base change within the beta-promoter was identified, with the frequency of the G allele being 0.34. Close to complete linkage disequilibrium was found between this marker and the **Pro871 Leu** polymorphism, situated in exon 11, which has previously been shown not to be associated with breast or ovarian cancer. This indicates that the C/G polymorphism is also unlikely to play a role in either disease. However, the strength of linkage disequilibrium between these markers permitted their use for rapid screening for genomic deletions within BRCA1. A series of 214 cases with familial breast cancer were analysed using this approach; 88/214 were heterozygous for the promoter polymorphism, thereby excluding a deletion in this region. Among the remaining patients, one hemizygous case reflecting a promoter deletion was successfully identified. Therefore, this study indicates that deletions within the beta-promoter region of BRCA1 are an uncommon event in familial breast cancer. Furthermore, it suggests that mutations within the BRCA1 promoter are unlikely to account for the reported decreased expression of BRCA1 in sporadic disease.",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study identified a promoter C>G polymorphism tightly linked to the BRCA1 Pro871Leu variant, demonstrated that neither the promoter variant nor Pro871Leu is associated with breast/ovarian cancer, and used the marker to efficiently screen for rare beta\u2011promoter deletions in familial breast cancer cases.",
+            "uncertainties_or_limitations": null,
+            "article_id": "10070866",
+            "title": "Identification of a C/G polymorphism in the promoter region of the BRCA1 gene and its use as a marker for rapid detection of promoter deletions.",
+            "relevance_score": 0.27,
+            "pub_year": 1999,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "PURPOSE: Because inherited BRCA1 or BRCA2 mutations strikingly increase ovarian cancer risk, polymorphisms in these genes could represent low penetrance susceptibility alleles. Previous studies of the BRCA2 N372H polymorphism suggested that HH homozygotes have a modestly increased risk of both breast and ovarian cancer. We have examined whether BRCA2 N372H or common amino acid-changing polymorphisms in BRCA1 predispose to ovarian cancer. EXPERIMENTAL DESIGN: A population-based, case control study of ovarian cancer was performed in North Carolina. Cases included 312 women with ovarian cancer (76% invasive and 24% borderline) and 401 age- and race-matched controls. Blood DNA from subjects was genotyped for BRCA2 N372H and BRCA1 Q356R and **P871L**. RESULTS: There was no association between BRCA2 N372H and risk of borderline or invasive epithelial ovarian cancer. The overall odds ratio (OR) for HH homozygotes was 0.8 [95% confidence interval (CI) = 0.4-1.5] and was similar in all subsets, including invasive serous cases. In addition, neither the BRCA1 Q356R (OR = 0.9, 95% CI 0.5-1.4) nor **P871L** (OR = 0.9, 95% CI 0.6-1.9) polymorphisms were associated with ovarian cancer risk. There was a significant racial difference in allele frequencies of the **P871L** polymorphism (P = 0.64 in Caucasians, L = 0.76 in African-Americans, P < 0.0001). CONCLUSIONS: In this population-based, case control study, common amino acid changing BRCA1 and 2 polymorphisms were not found to affect the risk of developing ovarian cancer.",
+                    "mention_type": "population",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study found that the BRCA1 P871L polymorphism is not associated with ovarian cancer risk in the examined population.",
+            "uncertainties_or_limitations": null,
+            "article_id": "14555511",
+            "title": "Polymorphisms in BRCA1 and BRCA2 and risk of epithelial ovarian cancer.",
+            "relevance_score": 0.27,
+            "pub_year": 2003,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "OBJECTIVE: Accumulating studies indicate that HPV E6/E7 oncoproteins interacting genes, TP53, BRCA1 and BARD1, play a critical role in cervical carcinogenesis. We hypothesized that potentially functional polymorphisms in TP53, BRCA1 and BRAD1 may individually and/or jointly contribute to cervical cancer risk. METHODS: We genotyped 4 single nucleotide polymorphisms (SNPs) with amino acid changes, TP53 Pro72Arg (rs1042522), BRCA1 **Pro871Leu** (**rs799917**), BARD1 Pro24Ser (rs1048108) and Arg378Ser (rs2229571), in a case-control study of 404 cervical cancer cases and 404 cancer-free controls in Chinese women. RESULTS: Logistic regression analysis showed that the BRCA1 variant **rs799917** TT genotype was associated with a significantly decreased risk of cervical cancer in a recessive genetic model (adjusted OR=0.62, 95% CI=0.40-0.95), compared with the genotypes CT/CC. However, no significant associations with cervical cancer were observed for other 3 SNPs (adjusted OR=1.01, 95% CI=0.68-1.50 for rs1048108 TT vs CT/CC; adjusted OR=1.04, 95% CI=0.67-1.64 for rs2229571 CC vs GG/GC; adjusted OR=0.84, 95% CI=0.59-1.20 for rs1042522 CC vs GG/GC). CONCLUSION: These findings indicate that BRCA1 **rs799917** polymorphism may contribute to the risk of cervical cancer in this Chinese population, and further validation in other populations are warranted.",
+                    "mention_type": "population",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The BRCA1 Pro871Leu (rs799917) TT genotype is associated with a reduced risk of cervical cancer in a Chinese case\u2011control cohort.",
+            "uncertainties_or_limitations": null,
+            "article_id": "19482343",
+            "title": "Polymorphisms in HPV E6/E7 protein interacted genes and risk of cervical cancer in Chinese women: a case-control analysis.",
+            "relevance_score": 0.24,
+            "pub_year": 2009,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Single nucleotide polymorphisms (SNPs) may modify the risk of cancer. They may be then regarded as potential markers of carcinogenesis. The aim of this study was to analyze the frequency of genotypes and alleles of SNPs in DNA repair genes and to investigate the influence this genetic variation exerts on breast cancer in Polish females. The test group comprised 600 females with breast cancer and 600 healthy controls. Genomic DNA was isolated and the SNPs in DNA repair genes were determined by High-Resolution Melter (HRM) technique. Following polymorphisms were analysed: Arg399Gln (rs25487) of the XRCC1, Gly322Asp (rs4987188) of the hMSH2, Lys751Gln (rs13181) of the XPD, Arg188His (rs3218536) of the XRCC2, **P871L** (**rs799917**) of the BRCA1 and N372H (rs144848) of the BRCA2 gene. Odds ratios (ORs) and 95% confidence intervals (CIs) were calculated for each genotype and allele. Statistically significant correlations were identified between 4 single nucleotide polymorphisms and the breast cancer risk: rs25487 rs4987188 rs13181 and **rs799917**. The alleles XRCC1-Gln (OR 5.11; 95% CI 5.68-11.64, p < .0001), hMSH2-Asp (OR 4.66; 95% CI 3.90-5.56, p < .0001), XPD-Gln (OR 2.65; 95% CI 2.24-3.14, p < .0001) and BRCA1-L (OR 1.45; 95% CI 1.24-1.71, p < .0001) genes were strongly correlated with this malignancy. No correlation was found between the studied SNPs and tumor grading nor the lymph node status. Further research on larger groups is warranted to determine the influence of above-mentioned genetic variants on breast cancer risk.",
+                    "mention_type": "population",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study reports that the BRCA1 P871L (rs799917) variant is significantly associated with higher breast cancer risk in Polish women (OR 1.45, p<0.0001).', ",
+            "uncertainties_or_limitations": null,
+            "article_id": "29209986",
+            "title": "Data on Single Nucleotide Polymorphism of DNA Repair Genes and Breast Cancer Risk from Poland.",
+            "relevance_score": 0.24,
+            "pub_year": 2019,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Thirty patients with early onset breast cancer or familial breast cancer from Malaysia were analysed for germline mutation in the early onset breast cancer I gene (BRCA1). Direct sequencing of the entire coding region of BRCA1 identified a frameshift mutation, c.5447-5448insC (insC5447) (codon 1776 of exon 21) in a patient aged 32 of the Malay ethnic origin, who had no family history of breast and/or ovarian cancer. Eight polymorphisms (2201C > T, 2430T > C, **P871L**, E1038G, K1183R, 4427T > C, S1613G and IVS8-57delT) were identified in the samples tested.",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study screened 30 Malaysian breast cancer patients and reported the BRCA1 P871L variant among several polymorphisms, without offering any interpretation of its significance.",
+            "uncertainties_or_limitations": null,
+            "article_id": "12188064",
+            "title": "Mutation analysis of the BRCA1 gene in Malaysian breast cancer patients.",
+            "relevance_score": 0.24,
+            "pub_year": 2002,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Gas station workers are exposed to chemicals known to be carcinogenic, especially benzene. The objective was to analyze the health problems of female gas station workers by means of sociodemographic and clinical questionnaires, and laboratorial exams. We performed the genotyping of the polymorphisms BRCA1/**P871L** and BRCA1/Q356R by Polymerase Chain Reaction-Restriction Fragment Length Polymorphism, and of variant allele BRCA2/N372H through direct sequencing. The female workers showed a higher concentration of monocytes (P = 0.039); a greater number of spontaneous abortions (P = 0.025, OR = 4.977, 95% CI = 1.135-30.669); higher tobacco consumption (P = 0.013); and higher alcohol consumption (P = 0.05). The statistical analysis of the polymorphisms associated with the variables monocyte concentration and miscarriage number did not reveal a significant relationship, and smoking and spontaneous abortion were not statistically associated either. Environ. Mol. Mutagen. 58:730-734, 2017. 2017 Wiley Periodicals, Inc.",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study genotyped BRCA1 P871L in female gas station workers and observed no significant association between this variant and monocyte concentration, miscarriage, smoking, or abortion outcomes.",
+            "uncertainties_or_limitations": null,
+            "article_id": "28862356",
+            "title": "Health survey and assessment of the polymorphisms BRCA1/P871L, BRCA1/Q356R, and BRCA2/N372H in female gas station workers in Rio de Janeiro.",
+            "relevance_score": 0.22,
+            "pub_year": 2017,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Germline mutations in BRCA1 gene account for varying proportions of breast/ovarian cancer families, and demonstrate considerable variation in mutational spectra coincident with ethnic and geographical diversity. We have screened for mutations the entire coding sequence of BRCA1 in 30 breast/ovarian cancer women with family history of two or more cases of breast cancer under age 50 and/or ovarian cancer at any age. Genomic DNA from patient was initially analyzed for truncating mutations in exon 11 with PTT followed by DNA sequencing. In the cases where no frameshift mutation was observed in exon 11, all other exons were screened with direct sequencing. Two novel (3099delT, 3277insG) and three already described (3741insA, 1623del5-TTAAA, 5382insC-twice) truncating mutations were identified. In addition, 6 point mutations (L771L, **P871L**, E1038G, K1183R, S1436S, S1613G) which are already classified as polymorphisms were identified. Three unclassified intronic variants (IVS16-68 G>A, IVS16-92 G>A, IVS18+65G>A) were also detected. These results show that BRCA1 deleterious mutations are present in a fraction (20%) of Greek breast/ovarian cancer families similar to other European countries. Mutations were detected in high- (>/=3 members) as well as in moderate-risk (2 members) families. This is the first report of BRCA1 mutation analysis in Greece.",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study screened Greek breast/ovarian cancer families and reported the P871L BRCA1 variant as a known polymorphism (benign).', ",
+            "uncertainties_or_limitations": null,
+            "article_id": "10980541",
+            "title": "BRCA1 mutation analysis in breast/ovarian cancer families from Greece.",
+            "relevance_score": 0.21,
+            "pub_year": 2000,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "BRCA1 is a crucial tumor suppressor which plays an essential role in maintaining genomic stability and integrity. Accumulated evidences demonstrated that there is frequent chromosome loss of BRCA1 or significant BRCA1 down-regulation via hypermethylation of its promoter in human gastric cancer specimens, highlighting the tumor-suppressing function of BRCA1 in gastric carcinogenesis. There is an **rs799917** T>C single nucleotide polymorphism (SNP) located in the BRCA1 coding sequence (CDS). This SNP can disturb the interaction between BRCA1 mRNA and miR-638 and result in significantly decreased BRCA1 expression among carriers of rs799917C allele. In this study, we investigated the association between **rs799917** and gastric cancer risk in a Chinese Han population using a case-control design. A total of 660 gastric cancer patients and 800 controls were enrolled and genotyped. Odds ratios (ORs) and 95 % confidence intervals (CIs) were calculated by logistic regression. We found that individuals with the **rs799917** CT genotype was significantly associated with gastric cancer risk (OR = 1.81, 95 % CI = 1.28-2.56; P = 0.001). Individuals having the **rs799917** CC genotype had an OR of 1.40 (95 % CI = 1.17-1.68; P = 2.2 x 10(-4)) for developing gastric cancer, compared with individual having the **rs799917** TT genotype. However, stratified analyses did not find any evident gene-covariates interaction. Our results for the first time indicate that the functional BRCA1 **rs799917** polymorphism contributes to gastric cancer susceptibility.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The BRCA1 P871L (rs799917) variant decreases BRCA1 expression and is significantly associated with higher gastric cancer susceptibility in a Chinese Han case\u2011control cohort.",
+            "uncertainties_or_limitations": null,
+            "article_id": "25266802",
+            "title": "The functional BRCA1 rs799917 genetic polymorphism is associated with gastric cancer risk in a Chinese Han population.",
+            "relevance_score": 0.2,
+            "pub_year": 2015,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "INTRODUCTION: Hereditary breast cancer has been partly attributed to germline mutations in the BRCA1 gene that are deleterious for BRCA1 protein activity. This paper analyzes the incidence and characteristics of detectable BRCA1 mutations and polymorphisms in a hospital-based consecutive series of breast cancer patients from southern Italy to investigate the incidence and the association of these molecular alterations with breast cancer biology and family history. METHODS: One hundred cases with familial characteristics were selected from a consecutive series of 511 patients with a first diagnosis of breast cancer. DNA from peripheral blood was screened for whole BRCA1 gene mutations utilizing dHPLC as a pre-screening analysis and automatic DNA sequencing for the identification of specific alterations. RESULTS: In the overall series of 511 patients, 100 had a family history of breast cancer and were investigated for BRCA1 mutations. Two types of BRCA1 mutations were identified, 5382insC in six cases and 4566delA in one case. The 5382insC mutation was present in two out of six cases with ovarian cancer while 4566delA in one case of male cancer. The most frequent missense polymorphisms were E1038G, **P871L**, K1183R in exon 11, S1613G, M1652I in exon 16 and D1778G in exon 22. Confirming what found in previous studies, patients in whom pathological BRCA1 mutations were detected had early-onset breast cancer (p=0.05), positive nodal status (p=0.05), lower ER (p=0.02) and PgR (p=0.01) content. Interestingly, the K1183R polymorphism and, less strongly, S1613G polymorphism were associated to mutational risk (K1183R: OR 0.1 p=0.03; S1613G: OR 2.7 p=0.08). CONCLUSION: Mutations in the BRCA1 gene are frequent also in our consecutive series of patients from southern Italy. An association between two detected single nucleotide polymorphisms (SNPs) and BRCA1 mutational risk was ascertained. Finally, we confirm the fact that peculiar clinical-pathological features seem to characterize patients with a family history of breast cancer and BRCA1 alterations.",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study screened 511 southern Italian breast cancer patients, identified BRCA1 pathogenic mutations and several common missense polymorphisms (including P871L), and reported that two SNPs (K1183R and S1613G) were associated with BRCA1 mutational risk.",
+            "uncertainties_or_limitations": null,
+            "article_id": "16026807",
+            "title": "BRCA1 mutations and polymorphisms in a hospital-based consecutive series of breast cancer patients from Apulia, Italy.",
+            "relevance_score": 0.2,
+            "pub_year": 2005,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "As a tumor suppressor, breast cancer susceptibility gene 1 (BRCA1) plays a pivotal role in maintaining genomic stability. A functional **rs799917** T>C polymorphism located in the BRCA1 coding sequence could influence miR-638-mediated regulation of BRCA1 expression. Therefore, we examined the association between this polymorphism and esophageal squamous cell carcinoma (ESCC) risk as well as its biological function. Genotypes were determined in two independent case-control studies consisted of 1128 ESCC patients and 1150 controls. Odds ratios (ORs) and 95% confidence intervals (CIs) were estimated by logistic regression. The allele-specific regulation on BRCA1 expression by the polymorphism was investigated in vitro and in vivo. We found that the BRCA1 **rs799917** CC genotype was significantly associated with increased ESCC risk compared with the TT genotype in both studies (Jinan population: OR = 1.28, 95% CI = 1.04-1.58, P = 0.020; Huaian population: OR = 1.46, 95% CI = 1.17-1.83, P = 0.001). Stratified analyses with pooled data indicated that a multiplicative interaction between **rs799917** and smoking or drinking in intensifying ESCC risk was evident (gene-smoking: P interactio n = 5.8 x 10(-5); gene-drinking: P interaction = 7.1 x 10(-7)). In vitro experiments indicate that miR-638 could negatively regulate BRCA1 expression and enhance proliferation of ESCC cells. In vivo BRCA1 messenger RNA expression analyses showed that the **rs799917** C allele carriers had significantly decreased BRCA1 expression in both normal and cancerous esophagus tissues compared with T allele carriers, suggesting that lower BRCA1 expression may lead to higher risk for malignant transformation of esophagus cells. These results suggest that BRCA1 functional **rs799917** polymorphism is involved in susceptibility to developing ESCC, alone and in a gene-environment interaction manner.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The BRCA1 P871L (rs799917) variant is linked to higher esophageal squamous cell carcinoma risk and decreased BRCA1 expression, suggesting a pathogenic effect.",
+            "uncertainties_or_limitations": null,
+            "article_id": "23749772",
+            "title": "A functional BRCA1 coding sequence genetic variant contributes to risk of esophageal squamous cell carcinoma.",
+            "relevance_score": 0.2,
+            "pub_year": 2013,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Breast cancer is the top cause of cancer mortality among women in the world and the second in Africa. The aims of this study were to: i) identify women with breast nodules suspected of having breast cancer ii) sequence the BRCA1 and BRCA2 genes and iii) screen mutations. From 2015 to 2016, 112 women aged from 35 to 44 years, who had come for consultation in the gynecology/obstetrics and the oncology department of the University Hospital Yalgado Ouedraogo, voluntarily agreed to participate to this study. Whole blood was collected from those with mammary nodules. The genomic DNA was extracted using Qiagen kit. FAST KAPA was used for genomic DNA amplification and the purified PCR products were analyzed by direct sequencing using Big Dye v1.1 and ABI 3730 automated sequencer. Nucleotides substitutions were determined. We identified BRCA1 SNPs rs1799966, **rs799917**, rs16942, rs16941, rs2227945, and BRCA2 SNPs rs169547, rs4986860. These identified variants are found mostly in cases of benign tumors of breast or ovarian cancer with familial history of breast cancer. This study in Burkina-Faso, is the basis for improved and more specific genetic testing, and suggests that additional genes contributing to an increased risk of breast cancer should be analyzed.",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study screened BRCA1/2 in young Burkinabe women with breast nodules and reported detection of several variants, including p.Pro871Leu, without assessing their pathogenicity or clinical impact.",
+            "uncertainties_or_limitations": null,
+            "article_id": "31203256",
+            "title": "Identification of BRCA1/2 p.Ser1613Gly, p.Pro871Leu, p.Lys1183Arg, p.Glu1038Gly, p.Ser1140Gly, p.Ala2466Val, p.His2440Arg variants in women under 45 years old with breast nodules suspected of having breast cancer in Burkina Faso.",
+            "relevance_score": 0.18,
+            "pub_year": 2019,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Studies investigating the association between the BRCA1 **rs799917** polymorphism and breast cancer risk have reported controversial results. In order to derive a more precise estimation of the relationship, we performed a comprehensive meta-analysis. A total of 8 articles comprising 19,878 subjects were included in this meta-analysis. Odds ratios (ORs) and corresponding 95% confidence intervals (CIs) were calculated by Stata 11 software. Heterogeneity tests were conducted by Q test with I(2) value, and publication bias assessment was performed by Begg's funnel plot and Egger's test. The pooled results did not show any sufficient evidence approving the association between the BRCA1 **rs799917** polymorphism and breast cancer risk in total population (T vs C: OR=1.01, 95% CI=0.97-1.06; TT vs CC: OR=1.03, 95% CI=0.93-1.13; CT vs CC: OR=1.04, 95% CI=0.92-1.16; TT+CT vs CC: OR=1.04, 95% CI=0.94-1.15; TT vs CT+CC: OR=1.03, 95% CI=0.94-1.12). In the further subgroup analyses, no significant associations were found in any comparison models according to ethnicity and source of controls. No publication bias was observed in this meta-analysis. In summary, based on the overall results, this meta-analysis strongly suggests that the BRCA1 **rs799917** polymorphism is not associated with breast cancer risk.",
+                    "mention_type": "population",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The meta-analysis of 8 studies (19,878 subjects) found no significant association between the BRCA1 P871L (rs799917) variant and breast cancer risk, suggesting it is not a pathogenic risk factor.",
+            "uncertainties_or_limitations": null,
+            "article_id": "25194442",
+            "title": "Association between BRCA1 rs799917 polymorphism and breast cancer risk: A meta-analysis of 19,878 subjects.",
+            "relevance_score": 0.18,
+            "pub_year": 2014,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "DNA repair gene polymorphisms and mutations are known to influence cancer risk. We studied whether polymorphisms in DNA double strand break (DSB) repair genes are associated with epithelial ovarian cancer (EOC) risk. Up to 1,600 cases and 4,241 controls from 4 separate genetic association studies from 3 countries were genotyped for 13 single nucleotide polymorphisms (SNP) in 6 genes (BRCA1, NBS1, RAD51, RAD52, XRCC2 and XRCC3) involved in homologous recombination of DNA double strand breaks. Genotype specific risks were estimated as odds ratios (OR) by unconditional logistic regression. No association was detected between EOC risk and BRCA1 Q356R, BRCA1 **P871L**, RAD51 g135c, RAD51 g172t, RAD52 c2259t, NBS1 L34L, NBS1 E185Q, NBS1 A399A, NBS1 P672P, XRCC2 g4324c, XRCC2 c41657t and XRCC3 T241M. The XRCC2 R188H polymorphism was associated with a modest reduction in EOC risk: OR for heterozygotes was 0.8 (95% confidence interval [CI] = 0.7-1.0) and for rare homozygotes 0.3 (0.1-0.9). The XRCC3 a4541g polymorphism, situated in the 5'UTR, and the intronic XRCC3 a17893g polymorphism were not associated with EOC risk in general, but when the serous EOC subset only was analysed, the OR for heterozygotes for a4541g was 1.0 (0.9-1.2) and for the rare homozygotes 0.5 (0.3-0.9). For the XRCC3 a17893g polymorphism, the OR for the heterozygotes and the rare homozygotes were 0.8 (0.7-0.9) and 0.9 (0.7-1.2), respectively. In our study, some polymorphisms in XRCC2 and XRCC3 genes were associated with EOC risk. Further research on the role of these genes on epithelial ovarian cancer is warranted.",
+                    "mention_type": "population",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study found no association between the BRCA1 P871L polymorphism and epithelial ovarian cancer risk.",
+            "uncertainties_or_limitations": null,
+            "article_id": "15924337",
+            "title": "Polymorphisms in DNA repair genes and epithelial ovarian cancer risk.",
+            "relevance_score": 0.18,
+            "pub_year": 2005,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "OBJECTIVE: To determine the role of variants in BRCA1 gene in breast cancer development, women of Pakistani origin, diagnosed with breast cancer, were screened for variants in the BRCA1. METHODS: The present study involved screening of 5000 women for breast cancer. 302 women were diagnosed with breast cancer. Using Sanger sequencing, DNA extracted from peripheral blood of 100 patients was screened for disease causing variants in the BRCA1. RESULTS: Analysis of sequenced data revealed two frame shift (Gly312Trpfs*8, Ala322Glyfs*4), six missense (p.Glu362Lys, p.Lys651Arg, p.Asp693Asn, **p.Pro871Leu**, p.Glu1134Lys, p.Lys1183Arg), four synonymous (p.Thr327Thr, p.Ser694Ser, p.His771His, p.Gln1135Gln), and two intronic variants (g.75407T>C, g.75401_75401delT) in the patients. CONCLUSION: The present investigation showed that variations in BRCA1 made substantial contribution in causing hereditary/early-onset breast cancer in Pakistani women.",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study screened Pakistani breast cancer patients and identified the BRCA1 p.Pro871Leu missense variant among others, without providing interpretation of its clinical significance.",
+            "uncertainties_or_limitations": null,
+            "article_id": "32063924",
+            "title": "Screening, diagnosis and genetic study of breast cancer patients in Pakistan.",
+            "relevance_score": 0.17,
+            "pub_year": 2020,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Women diagnosed with breast cancer before the age of 40 years who have a strong family history of breast and/or ovarian cancer were selected from an Australian population-based case-control-family study for large deletion screening within the BRCA1 promoter. Deletions within the BRCA1 promoter region are usually not detected by the methods applied in routine clinical mutation detection strategies. Fifty-one of the 66 women (77%) who met our inclusion criteria were tested for promoter deletions using linkage disequilibrium analysis of two BRCA1 polymorphic sites (C/G1802 and **Pro871Leu**) and multiplex ligation-dependent probe amplification. Two cases of BRCA1 promoter deletion involving exons 1A-2 and exons 1A-23 were detected. The morphology of the breast cancers arising in these women with BRCA1 promoter deletions was consistent with the morphology associated with other germline BRCA1 mutations. Large genomic deletions that involve the promoter regions of BRCA1 make up 20% (2/10) of all known BRCA1 mutations in this group of young women with a strong family history of breast and ovarian cancer. Our data support the inclusion of testing for large genomic alterations in the BRCA1 promoter region in routine clinical mutation detection within BRCA1.",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study identified BRCA1 promoter deletions in young women with strong family histories, using LD analysis of polymorphic sites including Pro871Leu, but does not assess the variant itself.",
+            "uncertainties_or_limitations": null,
+            "article_id": "17317153",
+            "title": "BRCA1 promoter deletions in young women with breast cancer and a strong family history: a population-based study.",
+            "relevance_score": 0.17,
+            "pub_year": 2007,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "PURPOSE: As a subtype of breast cancer, triple-negative breast cancer (TNBC) shows poor prognosis and high heterogeneity. Precise identification of TNBC subgroups relevant to clinical prognosis is crucial in the design and administration of individualized treatments. This study aimed to evaluate the prognostic value of the functional BRCA1 **rs799917** genetic variant in TNBC. METHODS: Associations between the **rs799917** polymorphism and progression risk were investigated after genotyping 370 TNBC patients. Hazard ratios (HRs) and 95% confidence intervals (CIs) were estimated by Cox regression. RESULTS: We found that the rs799917T allele was associated with a significantly increased risk of disease progression and shortened progression-free survival time (PFS) (P = 0.001 for log-rank test). Notably, TNBC patients with the **rs799917** CC genotype showed about 22 months prolonged PFS compared to the TT genotype after radiotherapy (HR 4.44, 95% CI 1.98-9.93; P = 2.9 x 10-4). Additionally, in overweight patients, the mean PFS of the rs799917TT genotype was 10 months shorter than that of the CC genotype (HR 3.57, 95% CI 1.46-8.73, P = 0.005). CONCLUSIONS: Our findings demonstrate that the functional BRCA1 genetic variant contributes to prognosis of TNBC. Our study also highlights the clinical potential of this polymorphism in the screening of high-risk TNBC patients for recurrence and the possibility of patient-tailored decisions especially during radiotherapy.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study reports that the BRCA1 P871L (rs799917) T allele is linked to higher progression risk and reduced progression\u2011free survival in triple\u2011negative breast cancer, particularly after radiotherapy, suggesting a deleterious prognostic impact.",
+            "uncertainties_or_limitations": null,
+            "article_id": "28744749",
+            "title": "A functional BRCA1 coding sequence genetic variant contributes to prognosis of triple-negative breast cancer, especially after radiotherapy.",
+            "relevance_score": 0.17,
+            "pub_year": 2017,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Eight different single-nucleotide polymorphisms (SNPs) in six different genes were investigated for possible association with breast cancer. We used a case-control study design in two Caucasian populations, one from Tyrol, Austria, and the other from Prague, Czech Republic. Two SNPs showed an association with breast cancer: R72P inTP53 and P187S in NQO1. Six SNPs, Q356R and **P871L** in BRCA1, N372H in BRCA2, C112R (E4) and R158C (E2) in ApoE and C825T in GNB3, did not show any sign of association. The P187S polymorphism in NQO1 was associated with breast cancer in both populations from Tyrol and Prague with a higher risk for carriers of the 187S allele. Combining the results of the two populations, we observed a highly significant difference (P=0.0004) of genotype and allele frequencies (odds ratio (OR)=1.46; 95% confidence interval (CI) 1.16-1.85; P=0.001) and of the homozygote ratio (OR=3.8; 95% CI 1.73-8.34; P=0.0001). Combining the two 'candidate' SNPs (P187S and R72P) revealed an increased risk for breast cancer of double heterozygotes (P187S/R72P) of the NQO1 and TP53 genes (OR=1.88; 95% CI 1.13-3.15; P=0.011), suggesting a possible interaction of these two loci.",
+                    "mention_type": "population",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The case\u2011control study found no association between the BRCA1 P871L variant and breast cancer risk in the examined Austrian and Czech cohorts.",
+            "uncertainties_or_limitations": null,
+            "article_id": "15138483",
+            "title": "Association of NQO1 polymorphism with spontaneous breast cancer in two independent populations.",
+            "relevance_score": 0.17,
+            "pub_year": 2004,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Aim: The aim of this study was to analyse the frequencies of genotypes and alleles of Single Nucleotide Polymorphisms (SNPs) of six DNA repair genes (XRCC1-rs25487, XPD-rs13181, hMSH2-rs4987188, XRCC2-rs3218536, BRCA1-rs799917 and BRCA2-rs144848 SNPs) and attempt to evaluate the effect this DNA marker on endometrial cancer (EC). Material and methods: The patients were recruited to the study at the Department of Operative Gynaecology of the Institute of the Polish Mother's Memorial Hospital in Lodz. The study comprised 510 patients treated for EC. 510 disease-free individuals were used as controls. SNPs were analysed by the high resolutionmelting technique (HRM). Results: Statistically significant correlations were identified between four SNPs and endometrial cancer risk: rs25487, rs4987188, rs13181 and **rs799917**. The alleles XRCC1-Gln (OR 2.89; 95% CI 2.39-3.49, P<0.0001), hMSH2-Asp (OR 1.65; 95% CI 1.38-1.96, P<0.0001), XPD-Gln (OR 3.24; 95% CI 2.69-3.91, P<0.0001) and BRCA1-L (OR 1.56; 95% CI 1.31-1.85, P<0.0001) genes were strongly correlated with this malignancy. No relationship was found between the studied polymorphisms of XRCC2 and BRCA2 and the incidence of endometrial cancer. There was also not any association between polymorphisms of XRCC1, hMSH2, XPD, XRCC2, BRCA1, BRCA2, i.e., the polymorphisms of the analysed repair genes, and the cancer stage progression acc. to FIGO, the body mass index, the number of pregnancies in history, replacement therapy, diabetes mellitus and hypertension. Conclusions: The results indicate that rs25487, rs4987188, rs13181, and **rs799917** SNPs may be associated with the incidence of endometrial cancer.",
+                    "mention_type": "population",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study found that the BRCA1 P871L (rs799917) Leu allele is significantly associated with higher risk of endometrial cancer in a Polish case\u2011control cohort.",
+            "uncertainties_or_limitations": null,
+            "article_id": "31938277",
+            "title": "Association between single nucleotide polymorphism of DNA repair genes and endometrial cancer: a case-control study.",
+            "relevance_score": 0.16,
+            "pub_year": 2018,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "We have evaluated the use of allele-specific PCR (AS PCR) on DNA pools as a tool for screening inherited genetic variants that may be associated with risk of adult acute myeloid leukemia (AML). Two DNA pools were constructed, one of 444 AML cases, and another of 823 matched controls. The pools were validated using individual genotyping data for GSTP1 and LTalpha variants. Allele frequencies for variants in GSTP1 and LTalpha were estimated using quantitative AS PCR, and when compared to individual genotyping data, a high degree of concordance was seen. AS primer pairs were designed for nine candidate genetic variants in DNA repair and cell cycle/apoptotic regulatory genes, including Cyclin D1 A>G)]; BRCA1, **P871L**; ERCC2, K751Q; FAS -1377 (G>A); hMLH1 -93 (G>A) and V219I; p21, S31R; and the XRCC1 R194W and R399Q variants. For six of these assays, there was at least 95% concordance between AS PCR genotyping and an alternative approach carried out on individual samples. Furthermore, these six AS PCR assays all accurately estimated allele frequencies in the pools that had been calculated using individual genotyping data. A significant disease association was seen with AML for the -1377 variant in FAS (odds ratio 1.76, 95% confidence interval 1.26-2.44). These data suggest that quantitative AS PCR can be used as an efficient screening technique for disease associations of genetic variants in DNA pools made from case-control studies.",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study screened multiple candidate variants, including BRCA1 P871L, for association with acute myeloid leukemia using allele\u2011specific PCR on DNA pools, but reports a significant association only for the FAS -1377 variant, offering no specific findings for BRCA1 P871L.",
+            "uncertainties_or_limitations": null,
+            "article_id": "15159312",
+            "title": "High-throughput association testing on DNA pools to identify genetic variants that confer susceptibility to acute myeloid leukemia.",
+            "relevance_score": 0.16,
+            "pub_year": 2004,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "BACKGROUND: BRCA1 codes for a tumor suppressor protein involved in DNA repair. Based on the role of single nucleotide polymorphisms (SNPs) in the modification of gene expression and function and the existence of certain SNPs within 3-untranslated region of BRCA1 with the ability to change binding sites for mirRNAs, several association studies have been designed to explore the significance of SNPs within BRCA1 gene in conferring breast cancer (BC) risk. This study aims to assess the relationship between BRCA1 SNPs and BC using meta-analysis. AIM: To conduct a meta-analysis for retrieving case-control studies on the associations between the rs11655505, rs1799966, rs3737559, rs1799950, **rs799917** and rs16941 BRCA1 polymorphisms and BC. The pooled odds ratios and its 95% confidence intervals were measured using fixed and random model to define the association between these polymorphisms and BC risk. CONCLUSION: No significant association was found for any of these polymorphisms and BC risk in the allelic, homozygote, dominant or recessive models. Overall, our study implies that the mentioned polymorphisms are not associated with BC risk. However, our study did not exclude the possible contribution of other SNPs within this gene in BC nor substantial contribution of multiple variants within this gene in conferring BC risk. Key words: BRCA1 - breast cancer - meta-analysis.",
+                    "mention_type": "population",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The meta\u2011analysis found no significant association between the BRCA1 P871L (rs799917) polymorphism and breast cancer risk.",
+            "uncertainties_or_limitations": null,
+            "article_id": "30541318",
+            "title": "Meta-Analysis of BRCA1 Polymorphisms and Breast Cancer Susceptibility.",
+            "relevance_score": 0.16,
+            "pub_year": 2018,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Most multiple case families of young onset breast cancer and ovarian cancer are thought to be due to highly penetrant mutations in the predisposing genes BRCA1 and BRCA2. However, these mutations are uncommon in the population and they probably account for only a few percent of all breast cancer incidence. A much larger fraction of breast cancer might, in principle, be due to common variants which confer more modest individual risks. There are several common polymorphisms in the BRCA1 gene which generate amino acid substitutions. We have examined the frequency of four of these polymorphisms: Gln356Arg, **Pro871Leu**, Glu1038Gly and Ser1613Gly in large series of breast and ovarian cancer cases and matched controls. Due to strong linkage disequilibrium, these four sites generate only three haplotypes with a frequency > 1.3%. The most common haplotypes, defined by the alleles Gln356Pro871Glu1038Ser1613 and Gln356Leu871Gly1038Gly1613, have frequencies of 0.57 and 0.32 respectively, and these frequencies do not differ significantly between patient and control groups. Thus the most common polymorphisms of the BRCA1 gene do not make a significant contribution to breast or ovarian cancer risk. However, our data suggest that the Arg356 allele may have a different genotype distribution in breast cancer patients from that in controls (Arg356 homozygotes are more frequent in the control groups, P = 0.01), indicating that it may be protective against breast cancer. If this finding can be confirmed, it may provide an insight into the structural features of the BRCA1 protein that are important for its function.",
+                    "mention_type": "population",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The BRCA1 Pro871Leu variant is common but shows no significant association with breast or ovarian cancer risk, suggesting it does not increase susceptibility.",
+            "uncertainties_or_limitations": null,
+            "article_id": "9063749",
+            "title": "Common BRCA1 variants and susceptibility to breast and ovarian cancer in the general population.",
+            "relevance_score": 0.15,
+            "pub_year": 1997,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "PURPOSE: BRCA1 and BRCA2 are key tumor suppressors with a role in cellular DNA repair, genomic stability, and checkpoint control. Mutations in BRCA1 and BRCA2 often cause hereditary breast and ovarian cancer; however, missense polymorphisms in these genes pose a problem in genetic counseling, as their impact on risk of breast and ovarian cancer is unclear. EXPERIMENTAL DESIGN: We resequenced BRCA1 and BRCA2 in 194 women with a familial history of breast and/or ovarian cancer and identified nine possibly biologically relevant polymorphisms (BRCA1 Gln356Arg, **Pro871Leu**, Glu1038Gly, Ser1613Gly, and Met1652Ile. BRCA2 Asn289His, Asn372His, Asp1420Tyr, and Thr1915Met). [corrected] We evaluated risk of breast and/or ovarian cancer by these polymorphisms in a prospective study of 5,743 women from the general population followed for 39 years and in a case-control study of 1,201 breast cancer cases and 4,120 controls. RESULTS: We found no association between heterozygosity or homozygosity for any of the nine polymorphisms and risk of breast and/or ovarian cancer in either study. We had 80% power to exclude hazard/odds ratios for heterozygotes and/or homozygotes for all nine missense polymorphisms above 1.3 to 3.3 in the prospective study, and above 1.2 to 3.2 in the case-control study. CONCLUSIONS: Heterozygosity and homozygosity of any of the examined nine BRCA1 and BRCA2 missense polymorphisms cannot explain the increased risk of breast and/or ovarian cancer observed in families with hereditary breast and/or ovarian cancer. Therefore, genetic counseling of such families safely can disregard findings of these missense polymorphisms.",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study found that the BRCA1 Pro871Leu (P871L) missense polymorphism does not increase breast or ovarian cancer risk, suggesting it is likely benign.",
+            "uncertainties_or_limitations": null,
+            "article_id": "19661094",
+            "title": "Missense polymorphisms in BRCA1 and BRCA2 and risk of breast and ovarian cancer.",
+            "relevance_score": 0.15,
+            "pub_year": 2009,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "RecQ helicases play a central role in maintaining genome stability and may interact with some important cancer-related proteins such as BRCA1. Mutations of the human RecQ helicase genes WRN and BLM lead to rare autosomal recessive disorders, Werner and Bloom syndromes, which are associated with premature aging and cancer predisposition, including breast cancer. In this case-control study of 1,004 breast cancer cases and 1,008 controls, we tested the hypothesis that non-conservative amino acid exchanges in WRN (leu1074Phe), BLM (Met298Thr) and BRCA1 (**Pro871Leu**) are independently or jointly associated with the risk of breast cancer in Chinese women. We found that the variant genotype of WRN Leu1074Phe was associated with a 1.36-fold significantly increased risk of breast cancer (OR = 1.36, 95% CI = 1.06-1.74). Moreover, a significant gene-environment interaction was evident between WRN leu1074Phe and age at menarche (P (int) = 0.02). Subjects carrying Phe/Phe genotype and with earlier age at menarche had 3.58-fold increased risk of breast cancer (OR = 3.58, 95% CI = 2.54-5.05). However, we did not find the significant main effect of polymorphisms in BLM and BRCA1 and also no locus-locus interactions were identified between WRN, BLM and BRCA1. These findings indicate that WRN leu1074Phe variant may contribute to the susceptibility of breast cancer in Chinese women.",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The case\u2011control study identified an increased breast cancer risk for the WRN Leu1074Phe variant but found no significant association for the BRCA1 Pro871Leu variant, suggesting the latter does not contribute to susceptibility in this Chinese cohort.",
+            "uncertainties_or_limitations": null,
+            "article_id": "19205873",
+            "title": "A polymorphism in Werner syndrome gene is associated with breast cancer susceptibility in Chinese women.",
+            "relevance_score": 0.15,
+            "pub_year": 2009,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "INTRODUCTION: Among the Jordanian population, brain tumors are the tenth most common type of cancers in both males and females, comprising 2.8% of all newly diagnosed neoplasms. Diffuse gliomas are the most prevalent and the most aggressive primary brain tumors in adults. The incidence of diffuse gliomas varies among different populations; this variation is partially linked to genetic polymorphisms. The purpose of the study is to examine the association between (BRCA1 rs799917G>A, rs1799966T>C, EXO1 rs1047840G>A, EME1 rs12450550T>C, ERCC2 rs13181T>G, rs1799793C>T, and XRCC1 rs1799782G>A) DNA repair gene polymorphisms and glioblastoma multiforme (GBM) susceptibility, and survival in the Jordanian Arab population. METHODS: Eighty-four patients diagnosed with glioblastoma multiforme at the King Abdullah University Hospital (KAUH) between 2013 and 2018 and 225 healthy cancer-free control subjects with similar geographic and ethnic backgrounds to the patients were included in the study. Genomic DNA was extracted from the formalin-fixed paraffin-embedded tissues of the subjects. The Sequenom MassARRAY sequencer system (iPLEX GOLD) was used. The analyses included assessments of population variability and survival. RESULTS: This study is the first to address the relationship between BRCA1 rs1799966 and **rs799917** SNP, and the risk of GBM among the Arab Jordanian population. The findings of the study show that BRCA1 **rs799917** is associated with decreased risk of GBM in the recessive model (AA vs G/G-A/G: OR, 0.46, 95% CI, 0.26-0.82, p=0.01) and the same SNP is associated with increased risk of GBM in the overdominant model (AG vs G/G-A/A: OR, 1.72, 95% CI, 1.02-2.89, p=0.04).",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The case\u2011control study identified an association between BRCA1 rs799917 and glioblastoma risk, while it did not report a specific risk association for the P871L (rs1799966) variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "32606887",
+            "title": "The Impact of the Genetic Polymorphism in DNA Repair Pathways on Increased Risk of Glioblastoma Multiforme in the Arab Jordanian Population: A Case-Control Study.",
+            "relevance_score": 0.15,
+            "pub_year": 2020,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Incidence of breast cancer shows geographical variation, even within areas of ethnic homogeneity. Saudi Arabia has witnessed an increase in occurrence of breast cancer in its unexplored ethnic populations over the past few years. We aimed at determining whether any association exists between single nucleotide polymorphisms in breast cancer associated gene 1 (BRCA1) and breast cancer associated gene 2 (BRCA2) and the risk of breast cancer. TaqMan based Real Time Polymerase chain reaction genotyping assays were used to determine the frequency of single nucleotide polymorphisms in BRCA1 (**rs799917**) and BRCA2 (rs144848) in a group of 100 breast cancer patients and unaffected age matched controls of Saudi Arabian origin. The present data revealed that neither BRCA1 nor the BRCA2 studied variant show any significant association with the disease. This study failed to find any role of the concerned variants in breast cancer either as risk or as prognostic factors. The small number of patients registered was one of the limitations of this study. In summary, comparison of mutation profile with other ethnic populations and regions reflected both differences and similarities indicating co-exposure to a unique set of risk factors. The differences could be due to exposure to particular environmental carcinogens; different lifestyle, reproductive pattern; dietary or cultural practices of Saudi Arabian women that need further investigations.",
+                    "mention_type": "population",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study found no significant association between BRCA1 P871L (rs799917) and breast cancer risk in a Saudi Arabian cohort.",
+            "uncertainties_or_limitations": null,
+            "article_id": "24289560",
+            "title": "Lack of association of BRCA1 and BRCA2 variants with breast cancer in an ethnic population of Saudi Arabia, an emerging high-risk area.",
+            "relevance_score": 0.14,
+            "pub_year": 2013,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Glioma is a complex disease that is unlikely to result from the effect of a single gene. Genetic analysis at the pathway level involving multiple genes may be more likely to capture gene-disease associations than analyzing genes one at a time. The current pilot study included 112 Caucasians with glioblastoma multiforme and 112 Caucasian healthy controls frequency matched to cases by age and gender. Subjects were genotyped using a commercially available (ParAllele/Affymetrix) assay panel of 10,177 nonsynonymous coding single-nucleotide polymorphisms (SNP) spanning the genome known at the time the panel was constructed. For this analysis, we selected 10 pathways potentially involved in gliomagenesis that had SNPs represented on the panel. We performed random forests (RF) analyses of SNPs within each pathway group and logistic regression to assess interaction among genes in the one pathway for which the RF prediction error was better than chance and the permutation P < 0.10. Only the DNA repair pathway had a better than chance classification of case-control status with a prediction error of 45.5% and P = 0.09. Three SNPs (rs1047840 of EXO1, rs12450550 of EME1, and **rs799917** of BRCA1) of the DNA repair pathway were identified as promising candidates for further replication. In addition, statistically significant interactions (P < 0.05) between rs1047840 of EXO1 and **rs799917** or rs1799966 of BRCA1 were observed. Despite less than complete inclusion of genes and SNPs relevant to glioma and a small sample size, RF analysis identified one important biological pathway and several SNPs potentially associated with the development of glioblastoma.",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study identified the BRCA1 rs799917 (P871L) variant as a potential glioblastoma susceptibility SNP within the DNA repair pathway, warranting further replication.",
+            "uncertainties_or_limitations": null,
+            "article_id": "18559551",
+            "title": "Pathway analysis of single-nucleotide polymorphisms potentially associated with glioblastoma multiforme susceptibility using random forests.",
+            "relevance_score": 0.14,
+            "pub_year": 2008,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "PURPOSE: Several single nucleotide polymorphisms (SNPs) have been reported to be associated with clinicopathological profiles in sporadic breast cancer based on studies conducted on major population groups. The knowledge of the effects of these common genetic variants in South Asian populations remains limited. The present study aimed to investigate the association between a selected set of SNPs and the clinicopathological profiles in sporadic breast cancer in Sri Lankan women. METHODS: A total of 350 postmenopausal women with histologically confirmed invasive breast cancer were genotyped for 58 SNPs located in 36 breast cancer related genes. The clinicopathological factors that were investigated included age of onset, tumor histologic grade, and lymph node involvement, as well as estrogen receptor (ER), progesterone receptor, and human epidermal growth factor receptor 2 (HER2) status. Association testing was performed using logistic regression models adjusted for confounding factors. RESULTS: Seven SNPs showed significant associations with clinicopathological profiles in breast cancer. The G allele of BRCA1:**rs799917** (p=0.047; beta [standard error; SE]=-1.069 [0.537]) and the G allele of NQO2:rs17136117 (p=0.040, beta [SE]=1.901 [0.923]) were found to be associated with age of onset between 50 and 59 years. The C allele of CDH1:rs13689 (odds ratio [OR], 2.121; p=0.033) was found to be associated with ER-positive breast cancer. The A allele of AKT1:rs1130214 (OR, 2.095; p=0.011) and the C allele of NQO2:rs2071002 (OR, 1.632; p=0.045) were associated with HER2-positive breast cancer. The C allele of BRCA2:rs15869 (OR, 1.600; p=0.041) and the C allele of CCND1:rs7177 (OR, 1.555; p=0.041) were associated with high tumor histologic grade. CONCLUSION: The common genetic variants identified in the AKT1, BRCA1, BRCA2, CCND1, CDH1, and NQO2 genes could serve as potential clinical and prognostic biomarkers in sporadic breast cancer patients. Further studies are required to validate our current findings in other populations.",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study found that the BRCA1 P871L (rs799917) G allele is significantly associated with age of onset between 50 and 59 years in Sri Lankan women with sporadic breast cancer.",
+            "uncertainties_or_limitations": null,
+            "article_id": "29963112",
+            "title": "Genetic Variants Associated with Clinicopathological Profiles in Sporadic Breast Cancer in Sri Lankan Women.",
+            "relevance_score": 0.11,
+            "pub_year": 2018,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Single-nucleotide polymorphisms (SNP) associated with polygenetic disorders, such as breast cancer (BC), can create, destroy, or modify microRNA (miRNA) binding sites; however, the extent to which SNPs interfere with miRNA gene regulation and affect cancer susceptibility remains largely unknown. We hypothesize that disruption of miRNA target binding by SNPs is a widespread mechanism relevant to cancer susceptibility. To test this, we analyzed SNPs known to be associated with BC risk, in silico and in vitro, for their ability to modify miRNA binding sites and miRNA gene regulation and referred to these as target SNPs. We identified rs1982073-TGFB1 and rs1799782-XRCC1 as target SNPs, whose alleles could modulate gene expression by differential interaction with miR-187 and miR-138, respectively. Genome-wide bioinformatics analysis predicted approximately 64% of transcribed SNPs as target SNPs that can modify (increase/decrease) the binding energy of putative miRNA::mRNA duplexes by >90%. To assess whether target SNPs are implicated in BC susceptibility, we conducted a case-control population study and observed that germline occurrence of rs799917-BRCA1 and rs334348-TGFR1 significantly varies among populations with different risks of developing BC. Luciferase activity of target SNPs, allelic variants, and protein levels in cancer cell lines with different genotypes showed differential regulation of target genes following overexpression of the two interacting miRNAs (miR-638 and miR-628-5p). Therefore, we propose that transcribed target SNPs alter miRNA gene regulation and, consequently, protein expression, contributing to the likelihood of cancer susceptibility, by a novel mechanism of subtle gene regulation.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study reports that the BRCA1 P871L (rs799917) variant alters miRNA binding, leading to differential gene regulation and is associated with varying breast cancer risk across populations, implying a pathogenic role.",
+            "uncertainties_or_limitations": null,
+            "article_id": "20332227",
+            "title": "Single-nucleotide polymorphisms inside microRNA target sites influence tumor susceptibility.",
+            "relevance_score": 0.1,
+            "pub_year": 2010,
+            "data_sources": [
+                "medline"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 1783,
+            "output": 529
+        },
+        {
+            "input": 2088,
+            "output": 746
+        },
+        {
+            "input": 2124,
+            "output": 991
+        },
+        {
+            "input": 1751,
+            "output": 664
+        },
+        {
+            "input": 1790,
+            "output": 710
+        },
+        {
+            "input": 1802,
+            "output": 549
+        },
+        {
+            "input": 1690,
+            "output": 492
+        },
+        {
+            "input": 1872,
+            "output": 172
+        },
+        {
+            "input": 2533,
+            "output": 686
+        },
+        {
+            "input": 1622,
+            "output": 555
+        },
+        {
+            "input": 1706,
+            "output": 519
+        },
+        {
+            "input": 1847,
+            "output": 519
+        },
+        {
+            "input": 1828,
+            "output": 558
+        },
+        {
+            "input": 1901,
+            "output": 488
+        },
+        {
+            "input": 1559,
+            "output": 634
+        },
+        {
+            "input": 1660,
+            "output": 654
+        },
+        {
+            "input": 1764,
+            "output": 429
+        },
+        {
+            "input": 1793,
+            "output": 672
+        },
+        {
+            "input": 1873,
+            "output": 99
+        },
+        {
+            "input": 1961,
+            "output": 529
+        },
+        {
+            "input": 1890,
+            "output": 695
+        },
+        {
+            "input": 1917,
+            "output": 342
+        },
+        {
+            "input": 1790,
+            "output": 562
+        },
+        {
+            "input": 1900,
+            "output": 222
+        },
+        {
+            "input": 1730,
+            "output": 520
+        },
+        {
+            "input": 1991,
+            "output": 590
+        },
+        {
+            "input": 1664,
+            "output": 569
+        },
+        {
+            "input": 1663,
+            "output": 875
+        },
+        {
+            "input": 1767,
+            "output": 116
+        },
+        {
+            "input": 1753,
+            "output": 619
+        },
+        {
+            "input": 1805,
+            "output": 494
+        },
+        {
+            "input": 1975,
+            "output": 470
+        },
+        {
+            "input": 1857,
+            "output": 84
+        },
+        {
+            "input": 1821,
+            "output": 733
+        },
+        {
+            "input": 1732,
+            "output": 719
+        },
+        {
+            "input": 1754,
+            "output": 408
+        },
+        {
+            "input": 1846,
+            "output": 514
+        },
+        {
+            "input": 1830,
+            "output": 318
+        },
+        {
+            "input": 1738,
+            "output": 365
+        },
+        {
+            "input": 1778,
+            "output": 565
+        },
+        {
+            "input": 1736,
+            "output": 108
+        },
+        {
+            "input": 1951,
+            "output": 743
+        },
+        {
+            "input": 1669,
+            "output": 605
+        },
+        {
+            "input": 1788,
+            "output": 516
+        },
+        {
+            "input": 1670,
+            "output": 106
+        },
+        {
+            "input": 2075,
+            "output": 97
+        },
+        {
+            "input": 1962,
+            "output": 586
+        },
+        {
+            "input": 1817,
+            "output": 323
+        },
+        {
+            "input": 1766,
+            "output": 701
+        },
+        {
+            "input": 1847,
+            "output": 143
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 19814,
+        "output": 1796
+    },
+    "total_time": 141.45
+}

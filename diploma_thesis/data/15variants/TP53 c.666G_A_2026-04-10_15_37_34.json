@@ -1,0 +1,762 @@
+{
+    "before_pruning": {
+        "articles_in_total": 22,
+        "only_medline_count": 0,
+        "only_pmc_count": 8,
+        "only_suppl_count": 14,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 22,
+        "only_medline_count": 0,
+        "only_pmc_count": 8,
+        "only_suppl_count": 14,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "variant": "TP53 c.666G>A",
+    "time_to_process_articles": 2.49,
+    "context_length": 65065,
+    "after_removal": {
+        "articles_in_total": 22,
+        "only_medline_count": 0,
+        "only_pmc_count": 8,
+        "only_suppl_count": 14,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "",
+            "pmcid": "PMC6061986",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 99,
+            "abstract_length": 2404,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                946
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5303590",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 59,
+            "abstract_length": 1317,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                901
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10798708",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 157,
+            "abstract_length": 1918,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "41 38 15 46 88 2 28 57 73 g666a 9 31 03 8 25 00 1 14 29 79 t843c 4 13 79 5 15 63 1 14 29 99 t760c 2 10 53 2 6 25 0 99 3 4 hpv16 e6 e7 gene mutations showed no association"
+            ],
+            "number_of_paragraphs": 3,
+            "paragraphs_lengths": [
+                1662,
+                394,
+                200
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10537582",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 87,
+            "abstract_length": 1574,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                791,
+                388
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8233793",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 104,
+            "abstract_length": 1330,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                1128,
+                1713
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9741891",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 92,
+            "abstract_length": 1888,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1162
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8254333",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 100,
+            "abstract_length": 1945,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                971
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9368912",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 101,
+            "abstract_length": 1596,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1989
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10248931",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 99,
+            "abstract_length": 1495,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    761
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6672031",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 105,
+            "abstract_length": 1928,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    489
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6172276",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 101,
+            "abstract_length": 1375,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    377
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7899856",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 62,
+            "abstract_length": 1649,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    770
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6032922",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 199,
+            "abstract_length": 1727,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    228
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11137316",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 90,
+            "abstract_length": 1685,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    238
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10471768",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 67,
+            "abstract_length": 905,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    903
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5638846",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 41,
+            "abstract_length": 990,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    139
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5490007",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 105,
+            "abstract_length": 1336,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    134
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5055158",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 87,
+            "abstract_length": 1706,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    767
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7780398",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 177,
+            "abstract_length": 1495,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    309
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7722843",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 164,
+            "abstract_length": 1417,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    779
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5890063",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 125,
+            "abstract_length": 1665,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    603
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6581088",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 162,
+            "abstract_length": 1262,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    3240
+                ]
+            ]
+        }
+    ],
+    "narrative_summary": "The TP53 c.666G>A (p.Pro222=) variant is a synonymous change in the DNA\u2011binding domain of the tumor\u2011suppressor gene TP53. It has been reported in the context of Li\u2011Fraumeni syndrome, breast\u2011cancer predisposition, lung cancer, and sporadic tumors such as chordoma and osteosarcoma.\nClinical data consistently describe the alteration as non\u2011pathogenic. In an Iranian lung\u2011cancer cohort the variant was classified as a novel benign change and its minor\u2011allele frequency was 6.7\u202f\u00d7\u202f10\u207b\u2075 [PMC6061986]. A ClinVar submission lists the variant as \u201clikely benign\u201d based on multiple submitters and provided criteria [PMC6672031]. A large Japanese case\u2011control study of breast\u2011cancer patients also records the variant as benign in its variant table [PMC6172276]. Additional reports of the variant in Lynch\u2011syndrome patients and in a colorectal\u2011lesion predictor cohort note its presence but do not assign pathogenicity [PMC5303590; PMC7899856].\nFunctional evidence is limited. One supplementary analysis of termination\u2011codon evolution notes that the c.666G>A change would generate a premature TGA stop codon (p.W222*), but this observation is presented as a bioinformatic illustration rather than an experimentally validated functional effect [PMC10471768]. No experimental assays demonstrating loss of TP53 function have been reported.\nPopulation data are sparse but consistent with a rare, likely neutral allele. The Iranian study reports a low allele frequency (\u22486.7\u202f\u00d7\u202f10\u207b\u2075) and the Japanese cohort classifies the variant as benign without providing a specific frequency, supporting its rarity in the general population.\nOverall, the preponderance of clinical classifications (benign or likely benign) and the absence of functional data indicating deleterious impact lead to the conclusion that TP53 c.666G>A is a benign synonymous variant. The isolated bioinformatic claim of a stop\u2011codon creation does not outweigh the weight of clinical evidence, and the variant is best interpreted as non\u2011pathogenic in the contexts examined.",
+    "structured_summary": {
+        "overall_pathogenicity": "benign",
+        "pathogenicity_counts": {
+            "uncertain": 0,
+            "supports pathogenicity": 0,
+            "supports benignity": 3
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Transcript ID RefSeq Gene Gene role Variant HGVS38 (Chromosomal variant) HGVS38 (transcripts variant) MAF db SNP ID/ COSMIC ID ENST00000311936.7 NM_004985 KRAS OG G12C NC_000012.12:g.25245351C>T NM_004985.4:c.34G>A 1.976e-05 rs121913530 ENST00000367922.7 NM_001014796 DDR2 OG Q808H NC_000001.11:g.162778720A>C NM_001014796.1:c.2424A>C 0.0002393 rs765660823 ENST00000269305.8 NM_000546 TP53 TSG D186G NC_000017.11:g.7675055T>C NM_000546.5:c.557A>G NM. COSM46287 H193R NC_000017.11:g.7674953T>C NM_000546.5:c.578A>G NM. rs786201838 P222P NC_000017.11:g.7674865C>T NM_000546.5:**c.666G>A** 6.748e-05 rs72661118 Q167Q NC_000017.11:g.7675111C>T NM_000546.5:c.501G>A NM. COSM44299 V157F NC_000017.11:g.7675143C>A NM_000546.5:c.469G>T 0.00006/7 rs121912654 F212L NC_000017.11:g.7674897A>G NM_000546.5:c.634T>C NM. COSM45477 V147A NC_000017.11:g.7675172A>G NM_000546.5:c.440T>C NM. COSM45819 T211T NC_000017.11:g.7674898A>G NM_000546.5:c.633T>C NM. COSM46211",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study screened TP53 exons in Iranian lung cancer patients, finding many mutations and classifying the synonymous TP53 c.666G>A (P222P) variant as a novel benign variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6061986",
+            "title": "Distribution of KRAS, DDR2, and TP53 gene mutations in lung cancer: An analysis of Iranian patients",
+            "relevance_score": 1.0,
+            "pub_year": 2018,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Patients MSH6 PMS2 MLH3 MSH3 Phenotype 9525 ex4c.2633 T>C (Val>Ala) ex14c.2324 A>G (Asn>Ser) ex1c.2530 C>T (Pro>Ser) c.2533 T>C (Ser>Pro) IVS7 -9 T>C Amsterdam + 013 ex6c.665G>C (Ser>Thr) IVS6 +16A>G ex1c.2533 T>C (Ser>Pro) No Amsterdam MSI-H 103 ex5c.3261_62insC (Phe>stop) ex1c.2533 T>C (Ser>Pro) ex12c.1860G>A (Asp>Asn) No Amsterdam later onset MSI-H 423 IVS12-4G>A ex1c.2530 C>T (Pro>Ser)c.2533 T>C (Ser>Pro) Amsterdam + later onset MSI-L 015 ex5c.3295_97delTT (Ile>stop) ex1c.**666 G>A** (Lys)c.2191 G>T (Val>Phe)c.2533A>G (Ser>Gly) Amsterdam + MSI-H 210 ex4c.2941 A>G (Ile>Val) IVS6+16A>Gex13c.2324 T>C (Phe) ex1c.2530 C>T (Pro>Ser) IVS6-64 C>T Amsterdam + MSI not detected 211 ex4c.2941 A>G (Ile>Val) IVS12-4 G>A IVS6-64 C>T Amsterdam + MSI not detected 416 ex11c.1714C>A (Thr>Lys) ex 1c.2027G>A (Arg>Lys) IVS6-64 C>T Amsterdam +MSI-H 504* ex4c.693G>A (Pro)ex20c.2732 T>G (Leu>Trp) Amsterdam +MSI-H",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article reviews variants of unknown significance in Lynch syndrome and proposes a novel inheritance model, noting the occurrence of TP53 c.666G>A in LS patients without assigning a pathogenicity classification.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5303590",
+            "title": "Novel Implications in Molecular Diagnosis of Lynch Syndrome",
+            "relevance_score": 0.48,
+            "pub_year": 2017,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Supplemental Table 1a. TP53 variants reported in ClinVar as of 02/17/2019\nColumn names:\nName|Gene(s)|Condition(s)|Clinical significance (Last reviewed)|Review status|GRCh37Chromosome|GRCh37Location|GRCh38Chromosome|GRCh38Location|VariationID|AlleleID(s)\nRows:\nNM_000546.5(TP53):**c.666G>A** (p.Pro222=)|TP53|Li-Fraumeni syndrome|not specified|Hereditary cancer-predisposing syndrome|Likely benign(Last reviewed: Aug 24, 2017)|criteria provided, multiple submitters, no conflicts||||||",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The article includes a supplemental ClinVar entry classifying TP53 c.666G>A as likely benign, without additional functional or clinical analysis of this variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6672031",
+            "title": "From uncertainty to pathogenicity: clinical and functional interrogation of a rare TP53 in-frame deletion",
+            "relevance_score": 0.9,
+            "pub_year": 2019,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Supplementary Data 2: A list of all 1,270 variants and its clinical significance in men\nColumn names:\nChr|Pos|Ref|Alt|snp147|Gene|Effect|HGVS.c|All HGVS.c|HGVS.p|All HGVS.p|Carrier frequency|Carrier frequency|P value|OR|(95% CI)|Final clinical significance\nRows:\n||C|T|rs72661118|TP53|synonymous_variant|**c.666G>A**|**c.666G>A**|p.Pro222Pro|p.Pro222Pro|||||(0.0-359.8)|Benign",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The large Japanese case\u2011control study identifies TP53 as a major hereditary breast\u2011cancer gene, but the specific TP53 c.666G>A variant is classified as benign in the authors' variant table.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6172276",
+            "title": "Germline pathogenic variants of 11 breast cancer genes in 7,051 Japanese patients and 11,241 controls",
+            "relevance_score": 0.64,
+            "pub_year": 2018,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nID KRAS_Mutation KRAS_VAF APC_Mutation APC_VAF NRAS_Mutacion NRAS_VAF BRAF_Mutation BRAF_VAF TP53_Mutation TP53_ VAF SMAD4_Mutation SMAD4_VAF CTNNB1_Mutation CTNNB1_VAF FBXW7_Mutation FBXW7_VAF MLHi CDX2 Queratin 7 Queratin 20 Ki-67\nRows:\n0 c.3645delT p.(Ser1215ArgfsTer50) 24.59 Wild type 0 Wild type 0 Wild type 0 Wild type 0 Wild type 0 Wild type 0 No data No data No data No data Nuclear expression No 97816 Wild type 0 c.3935delG p.(Gly1312GlufsTer9) 63.32 Wild type 0 Wild type 1.65 **c.666G>A** p.(Pro222Pro) 2.11 c.1595C>T p.(Ala532Val) 3.32 Wild type 0 Wild type 0 No data No data No data No data No data Yes 101871 c.38G>A p.(Gly13Asp) 3.62 c.3991A>T p.(Arg1331Ter) 23.1 Wild type 0 Wild type 0 Wild type 0 Wild type 0 Wild type 0 c.1436G>T",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study identifies clinical predictors of metachronous high\u2011risk colorectal lesions and reports somatic mutation frequencies, including the synonymous TP53 c.666G>A, without interpreting its pathogenicity.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7899856",
+            "title": "Predictors of Metachronous Risk Polyps After Index Colonoscopy",
+            "relevance_score": 0.54,
+            "pub_year": 2021,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nSupplementary file 1. ,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Unnamed: 8,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18,Unnamed:\nRows:\np.222,W,c664_666,tgg,**666G>A**,p.W222*,TGA,1,,p.157,E,c.469_471,gag,469G>T,p.E157*,TAG,1,,p.412,Q,c.1234_1236,CAG,1234C>T,p. Q\nA,3,,p.66,Q,c.196_198,cag,196C>T,p.Q66*,TAG,3,,p.540,Q,c.1617_1620,cag,1618C>T,p.Q540*,TAG,2,,p.134,Q,c.400_402,cag,400C>T,p.Q134*,TAG,3,,p.444,S,c.1330_1332,tca,1331C>G,p.S444*,TGA,1,,p.129,K,c.385_387,aaa,385A>T,p.K129*,TAA,1,,p.222,W,c.664_666,tgg,**666G>A**,p.W222*,TGA,1,,p.165,K,c.493_495,aag,493A>T,p.K165*,TAG,3,,p.80,W,c.238_240,tgg,239G>A,p.W80*,TAG,3,,p.120,K,c.358_360,aag,358A>T,p.K120*,TAG,2,,p.312,Q,c.934_936,cag,934C>T,p.Q312*,TAG,2,,p.467,K,c.1399_1401,aag,1399A>T,p.K467*,TAG,1,,p.409,E,c.122",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article notes that the TP53 c.666G>A mutation creates a premature TGA stop codon, illustrating the higher frequency of CGA-to\u2011TGA conversions in human mutation data.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10471768",
+            "title": "Evolution of termination codons of proteins and the TAG-TGA paradox",
+            "relevance_score": 0.32,
+            "pub_year": 2023,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: 1|1|Supplementary Data 3: Coding mutation in 37 chordomas (11 genomes and 26 exomes).\nColumn names:\n3|3|Start\nRows:\n754|8|**c.666G>A**",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article reports TP53 c.666G>A as one of the coding somatic mutations detected in sporadic chordoma cases.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5638846",
+            "title": "The driver landscape of sporadic chordoma",
+            "relevance_score": 0.28,
+            "pub_year": 2017,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: 1|1|Supplementary Data 2. Coding indels and substitutions in 112 osteosarcoma.\nColumn names:\n3|3|Position\nRows:\n47|9|**c.666G>A**",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study lists TP53 c.666G>A among the coding variants detected in osteosarcoma samples but does not provide any interpretation of its pathogenicity or clinical relevance.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5490007",
+            "title": "Recurrent mutation of IGF signalling genes and distinct patterns of genomic rearrangement in osteosarcoma",
+            "relevance_score": 0.27,
+            "pub_year": 2017,
+            "data_sources": [
+                "suppl"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 2785,
+            "output": 560
+        },
+        {
+            "input": 2161,
+            "output": 753
+        },
+        {
+            "input": 2786,
+            "output": 220
+        },
+        {
+            "input": 2716,
+            "output": 181
+        },
+        {
+            "input": 2842,
+            "output": 195
+        },
+        {
+            "input": 2323,
+            "output": 231
+        },
+        {
+            "input": 2575,
+            "output": 383
+        },
+        {
+            "input": 2407,
+            "output": 269
+        },
+        {
+            "input": 2172,
+            "output": 291
+        },
+        {
+            "input": 2027,
+            "output": 632
+        },
+        {
+            "input": 1897,
+            "output": 522
+        },
+        {
+            "input": 2182,
+            "output": 631
+        },
+        {
+            "input": 1898,
+            "output": 421
+        },
+        {
+            "input": 1888,
+            "output": 511
+        },
+        {
+            "input": 2106,
+            "output": 846
+        },
+        {
+            "input": 1768,
+            "output": 614
+        },
+        {
+            "input": 1817,
+            "output": 497
+        },
+        {
+            "input": 2154,
+            "output": 424
+        },
+        {
+            "input": 1948,
+            "output": 386
+        },
+        {
+            "input": 2224,
+            "output": 385
+        },
+        {
+            "input": 2336,
+            "output": 295
+        },
+        {
+            "input": 3337,
+            "output": 222
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 3675,
+        "output": 985
+    },
+    "total_time": 30.72
+}

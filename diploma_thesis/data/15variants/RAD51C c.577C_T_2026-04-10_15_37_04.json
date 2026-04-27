@@ -1,0 +1,1737 @@
+{
+    "before_pruning": {
+        "articles_in_total": 45,
+        "only_medline_count": 0,
+        "only_pmc_count": 9,
+        "only_suppl_count": 35,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 45,
+        "only_medline_count": 0,
+        "only_pmc_count": 9,
+        "only_suppl_count": 35,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "variant": "RAD51C c.577C>T",
+    "time_to_process_articles": 3.13,
+    "context_length": 129284,
+    "after_removal": {
+        "articles_in_total": 45,
+        "only_medline_count": 0,
+        "only_pmc_count": 9,
+        "only_suppl_count": 35,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "",
+            "pmcid": "PMC5612362",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 155,
+            "abstract_length": 1415,
+            "number_of_unmatched_snippets": 10,
+            "unmatched_snippets": [
+                "shortened isoform has been implicated as a potential mechanism of parpi and platinum resistance 28 in case 5 with a germline rad51c mutation c 577c t p r193 a postprogression biopsy of an",
+                "rad51c mutation c 577c t none of these lesions progressed during rucaparib treatment after 11 months of rucaparib treatment the patient developed a new enlarged groin lymph node which was",
+                "biopsied b serum ca 125 levels monitored during the ariel2 part 1 trial in the patient with the germline rad51c mutation c 577c t c ct scans prior to baseline during cycles 7 and 9 and",
+                "following cycle 11 treatment of the patient with the germline rad51c mutation c 577c t d diagram of the predicted rad51c protein sequence changes caused by the primary c 577c t and the secondary",
+                "mutations c 577 579delinstgg c 577c a c 574 577delinsggcg and c 577 578delinstt detected in the progressing groin lymph node biopsy from the patient with the germline rad51c mutation c 577c t examination",
+                "the patient identified to have a germline rad51c mutation c 577c t none of these lesions progressed during rucaparib treatment after 11 months of rucaparib treatment the patient developed a new",
+                "enlarged groin lymph node which was biopsied b serum ca 125 levels monitored during the ariel2 part 1 trial in the patient with the germline rad51c mutation c 577c t c ct scans prior to baseline",
+                "during cycles 7 and 9 and following cycle 11 treatment of the patient with the germline rad51c mutation c 577c t d diagram of the predicted rad51c protein sequence changes caused by the",
+                "primary c 577c t and the secondary mutations c 577 579delinstgg c 577c a c 574 577delinsggcg and c 577 578delinstt detected in the progressing groin lymph node biopsy from the patient with the",
+                "germline rad51c mutation c 577c t examination of the parental ovcar8 ovcar8 rad51c ko clone 2 130 and ovcar8 rad51c ko clone 2 130 transduced with wild type wt primary mutant or secondary mutant"
+            ],
+            "number_of_paragraphs": 10,
+            "paragraphs_lengths": [
+                195,
+                193,
+                196,
+                202,
+                211,
+                198,
+                202,
+                197,
+                199,
+                203
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6389551",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 116,
+            "abstract_length": 0,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1214
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7921976",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 99,
+            "abstract_length": 2176,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                1362,
+                988
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7196220",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 185,
+            "abstract_length": 1708,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                1501,
+                2058
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    718
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8633452",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 108,
+            "abstract_length": 1122,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1022
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8139251",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 101,
+            "abstract_length": 1391,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                1137,
+                406
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8935754",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 118,
+            "abstract_length": 1418,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1002
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5663067",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 89,
+            "abstract_length": 1930,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                373
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11592649",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 129,
+            "abstract_length": 1372,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                409
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10488022",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 223,
+            "abstract_length": 1241,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "nm 058216 3 c 577c t rs200293302 13 p 1 lp pathogenic overview of mutations detected within module ii gene mutation dbsnp number clinvar submissions internal classification number of patients apc"
+            ],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                201
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7821123",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 123,
+            "abstract_length": 1103,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    1132
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11036141",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 202,
+            "abstract_length": 591,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    713
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6717355",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 129,
+            "abstract_length": 2095,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    679
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10165146",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 123,
+            "abstract_length": 1866,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    663
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11211533",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 112,
+            "abstract_length": 1982,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    367
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8660783",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 117,
+            "abstract_length": 1348,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    769
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7735771",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 88,
+            "abstract_length": 1879,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    657
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10391307",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 178,
+            "abstract_length": 3826,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    715
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6020441",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 68,
+            "abstract_length": 1873,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    494
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10413543",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 122,
+            "abstract_length": 2346,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    710
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4985612",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 133,
+            "abstract_length": 1424,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    771
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8045191",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 67,
+            "abstract_length": 2307,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    2460
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8369411",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 145,
+            "abstract_length": 1665,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    535
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7935793",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 109,
+            "abstract_length": 2312,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    29
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8748217",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 107,
+            "abstract_length": 1983,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    1156
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5289469",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 98,
+            "abstract_length": 2044,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    244
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7801677",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 82,
+            "abstract_length": 1458,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    243
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8248503",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 110,
+            "abstract_length": 1973,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    261
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11168656",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 89,
+            "abstract_length": 1563,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    596
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10897416",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 92,
+            "abstract_length": 1701,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    1575
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9302303",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 214,
+            "abstract_length": 2660,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    156
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7782482",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 74,
+            "abstract_length": 1440,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    155
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7603305",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 112,
+            "abstract_length": 1860,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    145
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6735385",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 139,
+            "abstract_length": 2461,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    1170
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9068765",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 99,
+            "abstract_length": 1491,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    255
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6824257",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 94,
+            "abstract_length": 1727,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    29
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8217828",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 97,
+            "abstract_length": 2002,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    411
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7978308",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 70,
+            "abstract_length": 1991,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    748
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9716259",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 85,
+            "abstract_length": 1597,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    446
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7437939",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 165,
+            "abstract_length": 1570,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    465
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7022190",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 104,
+            "abstract_length": 2618,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    179
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6777496",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 99,
+            "abstract_length": 1390,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    29
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7427325",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 54,
+            "abstract_length": 1535,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    282
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6074008",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 117,
+            "abstract_length": 1684,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    1144
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6581088",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 162,
+            "abstract_length": 1262,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    780
+                ]
+            ]
+        }
+    ],
+    "narrative_summary": "The RAD51C c.577C>T (p.Arg193*) variant is a nonsense change that creates a premature stop codon in the fourth exon of the RAD51C gene, a key component of the homologous recombination DNA\u2011repair pathway. It has been reported in individuals with hereditary breast and ovarian cancer syndromes and in other malignancies such as paraganglioma and mycosis fungoides, indicating a broad cancer predisposition phenotype [PMC6389551][PMC8139251].\nClinical observations consistently identify the variant in cancer-affected individuals and classify it as pathogenic. In a Polish ovarian\u2011cancer cohort the variant was present in 0.48% of cases and absent in controls, conferring an odds ratio of 6.28 for disease risk [PMC7921976]. A pooled analysis of ~30,000 ovarian\u2011cancer cases found the same truncating allele in 0.0378% of cases versus 0.0068% of controls, with an OR of 5.60, and highlighted it as one of the most recurrent RAD51C mutations [PMC7196220]. The variant accounts for 46% of RAD51C pathogenic alleles in a Hispanic breast\u2011cancer series [PMC8633452] and was identified as a pathogenic stop\u2011gain in Chinese hereditary breast\u2011cancer patients (6 of 13 RAD51C pathogenic variants) [PMC5663067]. Additional reports from Southern Italian, Swedish, and extended\u2011panel studies also list c.577C>T as a pathogenic mutation contributing to the diagnostic yield of multigene testing for hereditary breast/ovarian cancer [PMC11592649][PMC10413543][PMC7821123].\nFunctional data demonstrate that the truncating allele abolishes RAD51C function, leading to homologous\u2011recombination deficiency and sensitivity to the PARP inhibitor rucaparib. In a high\u2011grade ovarian carcinoma model, germline c.577C>T conferred drug sensitivity, while secondary somatic mutations that restore the open reading frame emerged during treatment and mediated acquired resistance, confirming the variant\u2019s impact on protein function and therapeutic response [PMC5612362]. Complementary cell\u2011based assays using RAD51C\u2011knockout clones transduced with the primary mutant showed loss of function compared with wild\u2011type rescue, further supporting pathogenicity [PMC5612362].\nPopulation databases show the allele is extremely rare in the general population (gnomAD allele frequency \u22481.2\u202f\u00d7\u202f10\u207b\u2075) and is virtually absent in control cohorts, reinforcing its likely deleterious nature [PMC11211533][PMC7735771]. Computational annotation predicts a loss\u2011of\u2011function consequence (nonsense, stop\u2011gain) and the variant is listed as pathogenic in ClinVar (multiple submissions) [PMC8139251][PMC10488022].\nAcross the available evidence there is no report of benign or neutral classification; all studies either directly label the variant as pathogenic or provide quantitative risk estimates that are significantly elevated. The convergence of rare population frequency, strong statistical association with ovarian and breast cancer, functional loss of homologous\u2011recombination activity, and consistent clinical classification supports a definitive pathogenic interpretation of RAD51C c.577C>T for hereditary cancer susceptibility.",
+    "structured_summary": {
+        "overall_pathogenicity": "pathogenic",
+        "pathogenicity_counts": {
+            "uncertain": 0,
+            "supports pathogenicity": 20,
+            "supports benignity": 0
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "shortened isoform has been implicated as a potential mechanism of PARPi and platinum resistance (28). In case 5 with a germline RAD51C mutation (**c.577C>T**, p.R193*), a postprogression biopsy of an",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "RAD51C mutation (**c.577C>T**). None of these lesions progressed during rucaparib treatment. After 11 months of rucaparib treatment, the patient developed a new enlarged groin lymph node, which was",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "biopsied. B, Serum CA-125 levels monitored during the ARIEL2 Part 1 trial in the patient with the germline RAD51C mutation (**c.577C>T**). C, CT scans prior to (Baseline), during (Cycles 7 and 9), and",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "following (Cycle 11) treatment of the patient with the germline RAD51C mutation (**c.577C>T**). D, Diagram of the predicted RAD51C protein sequence changes caused by the primary (**c.577C>T**) and the secondary",
+                    "mention_type": "computational",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "mutations (c.577_579delinsTGG, c.577C>A, c.574_577delinsGGCG, and c.577_578delinsTT) detected in the progressing groin lymph node biopsy from the patient with the germline RAD51C mutation (**c.577C>T**). Examination",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "the patient identified to have a germline RAD51C mutation (**c.577C>T**). None of these lesions progressed during rucaparib treatment. After 11 months of rucaparib treatment, the patient developed a new",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "enlarged groin lymph node, which was biopsied. B, Serum CA-125 levels monitored during the ARIEL2 Part 1 trial in the patient with the germline RAD51C mutation (**c.577C>T**). C, CT scans prior to (Baseline",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "), during (Cycles 7 and 9), and following (Cycle 11) treatment of the patient with the germline RAD51C mutation (**c.577C>T**). D, Diagram of the predicted RAD51C protein sequence changes caused by the",
+                    "mention_type": "computational",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "primary (**c.577C>T**) and the secondary mutations (c.577_579delinsTGG, c.577C>A, c.574_577delinsGGCG, and c.577_578delinsTT) detected in the progressing groin lymph node biopsy from the patient with the",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "germline RAD51C mutation (**c.577C>T**). Examination of the parental OVCAR8, OVCAR8 RAD51C KO clone 2-130, and OVCAR8 RAD51C KO clone 2-130 transduced with wild-type (WT), primary mutant, or secondary mutant",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study shows that the germline RAD51C c.577C>T truncating mutation confers sensitivity to the PARP inhibitor rucaparib, but secondary mutations that restore the open reading frame can arise and drive acquired resistance, demonstrating the variant\u2019s functional impact on homologous\u2011recombination repair and therapy response.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5612362",
+            "title": "Secondary Somatic Mutations Restoring RAD51C and RAD51D Associated with Acquired Resistance to the PARP Inhibitor Rucaparib in High-Grade Ovarian Carcinoma",
+            "relevance_score": 1.0,
+            "pub_year": 2017,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Peripheral blood flow cytometry found a population of CD5+ lambda-monotypic B cells (6%), consistent with the immunophenotype of chronic lymphocytic leukemia/small lymphocytic lymphoma. Based on a white blood cell count of 7.5 x 109 cells/per milliliter, low-count monoclonal B-cell lymphocytosis was favored. Computed tomography of the chest, abdomen, and pelvis found right-sided abdominal/retroperitoneal enhancing masses: one 5.5- x 4.9-cm invading the caudate lobe of the liver and effacing the portal vein, and one 5.2- x 4.2-cm mass anterior to the inferior vena cava, consistent with enlargement of her known malignant multifocal paragangliomas. The patient opted to treat her intraabdominal paragangliomas and her monoclonal B-cell lymphocytosis with observation. Given the diagnosis with 2 malignancies and a monoclonal B-cell lymphocytosis, as well as a family history of ovarian and colon cancer, genetic testing was performed via the CustomNext (PGLNext and OvaNext) panel (Ambry Genetics). She was found to be positive for the RAD51C **c.577C>T** (p.R193*) mutation.",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "A patient with multifocal paraganglioma, mycosis fungoides, and monoclonal B\u2011cell lymphocytosis was found to carry the RAD51C c.577C>T (p.R193*) mutation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6389551",
+            "title": "Multifocal paraganglioma, mycosis fungoides, and monoclonal B-cell lymphocytosis in association with RAD51C mutation",
+            "relevance_score": 0.86,
+            "pub_year": 2019,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Mutation Cases, n = 2095 (%) Controls, n = 1743 (%) BRCA1 5382insC (c.5266dupC) 124 (5.92) 3 (0.17) 300T>G (c.181T>G) 48 (2.29) 1 (0.06) 4153delA (c.4035delA) 10 (0.48) 0 (0.00) 1806C>T (c.1687C>T) 6 (0.29) 0 (0.00) 185delAG (c.68_69delAG) 8 (0.38) 0 (0.00) 3819del5 (c.3700_3704del5) 14 (0.69) 1 (0.06) 3875del4 (c.3756_3759delGTCT) 3 (0.14) 0 (0.00) 5370C>T (c.5251C>T) 1 (0.05) 0 (0.00) 794delT (c.794_795delCT) 6 (0.29) 0 (0.00) Any BRCA1 mutation 220 (10.50) 5 (0.29) OR 40.79 (95% CI: 18.67-114.78), p = 0.29 x 10-15 BRCA2 4075delGT (c.3847_3848delGT) 3 (0.14) 0 (0.00) 8138del5 (c.7913_7917delTTCCT) 3 (0.14) 0 (0.00) 886delGT (c.658_659del) 4 (0.19) 0 (0.00) 6174delT (c.5946delT) 5 (0.24) 0 (0.00) Any BRCA2 mutation 15 (0.72) 0 (0.00) OR 25.98 (95% CI: 1.55-434.8), p = 0.001 RAD51C c.905-2_905-1delAG 2 (0.10) 2 (0.11) **c.577C>T** 10 (0.48) 0 (0.00) c.502A>T 3 (0.14) 0 (0.00) Any RAD51C mutation 15 (0.72) 2 (0.11) OR 6.28 (95% CI: 1.77-39.87), p = 0.02 PALB2 c.172_175delTTGT 4 (0.19) 2 (0.11) c.509_510delGA 8 (0.38) 1 (0.06) Any PALB2 mutation 12 (0.57) 3 (0.17) OR 3.34 (95% CI: 1.06-14.68), p = 0.06 CHEK2 c.1100delC 6 (0.29) 4 (0.23) c.444+1G>A 11 (0.53) 6 (0.34) Both protein truncating CHEK2 mutation 17 (0.81) 10 (0.57) OR 1.42 (95% CI: 0.66-3.22), p = 0.38 missense mutation, c.470 T>C 90 (4.30) 97 (5.57) OR 0.76 (95% CI: 0.57-1.02), p = 0.07",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "Gene cDNA Protein Change Molecular Consequence BRCA1 5382insC (c.5266dupC) p.Gln1756fs frameshift 300T>G (c.181T>G) p.Cys61Gly missense 4153delA (c.4035delA) p.Glu1346fs frameshift 1806C>T (c.1687C>T) p.Gln563Ter nonsense 185delAG (c.68_69delAG) p.Glu23fs frameshift 3819del5 (c.3700_3704del5) p.Val1234fs frameshift 3875del4 (c.3756_3759delGTCT) p.Ser1253fs frameshift 5370C>T (c.5251C>T) p.Arg1751Ter nonsense 794delT (c.794_795delCT) p.Ser265Cysfs frameshift BRCA2 4075delGT (c.3847_3848delGT) p.Val1283fs frameshift 8138del5 (c.7913_7917delTTCCT) p.Ala2637_Phe2638insTer nonsense 886delGT (c.658_659del) p.Val220fs frameshift 6174delT (c.5946delT) p.Ser1982fs frameshift RAD51C c.905-2_905-1delAG p.Glu303TrpfsX41 skipping of exon 7 **c.577C>T** p.Arg193Ter nonsense c.502A>T p.Arg168Ter nonsense PALB2 c.172_175delTTGT p.Gln60fs frameshift c.509_510delGA p.Arg170fs frameshift CHEK2 c.1100delC p.Thr367fs frameshift c.444+1G>A p.E149IfsX6 skipping of exon 2 c.470T>C p.Ile157Thr missense",
+                    "mention_type": "computational",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article reports that the RAD51C c.577C>T nonsense variant occurs in 0.48% of Polish ovarian\u2011cancer patients, is absent in controls, and is associated with an odds ratio of 6.28, suggesting it contributes to disease risk.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7921976",
+            "title": "Recurrent Mutations in BRCA1, BRCA2, RAD51C, PALB2 and CHEK2 in Polish Patients with Ovarian Cancer",
+            "relevance_score": 0.84,
+            "pub_year": 2021,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Mutation ID (nt level) Mutation ID (AA level) M/ALL OC (%) M/ALL CTR (%) OR; 95%CIs; p BRIP1 c.394dupA (p.Thr132Asnfs) 6/22494 (0.0267) 2/118234 (0.0017) 15.77; 3.18-78.15; 0.0007 c.1236delA (p.Val413Phefs) 5/22494 (0.0222) 2/133990 (0.0015) 14.89; 2.89-76.78; 0.0012 c.1871C > A (p.Ser624Ter) 5/22494 (0.0222) 5/134109 (0.0037) 5.96; 1.73-20.60; 0.0048 c.2010dupT (p.Glu671Terfs) 6/22494 (0.0267) 2/118387 (0.0017) 15.79; 3.19-78.25; 0.0007 c.2108_2109insCC (p.Lys703Asnfs) 6/22494 (0.0267) 6/133895 (0.0045) 5.95; 1.92-18.46; 0.0020 c.2255_2256delAA (p.Lys752Argfs) 7/22494 (0.0311) 2/118257 (0.0017) 18.41; 3.82-88.61; 0.0003 c.2392C > T (p.Arg798Ter) 14/22494 (0.0622) 37/131983 (0.0280) 2.22; 1.20-4.11; 0.0110 c.2400C > G (p.Tyr800Ter) 5/22494 (0.0222) 5/117211 (0.0043) 5.21; 1.51-18.00; 0.0091 RAD51C c.224dupA (p.Tyr75Terfs) 7/23802 (0.0294) 2/118461 (0.0017) 17.42; 3.62-83.88; 0.0004 c.**577C > T** (p.Arg193Ter) 9/23802 (0.0378) 8/118351 (0.0068) 5.60; 2.16-14.50; 0.0004 c.706-2A > G 11/23802 (0.0462) 6/134110 (0.0045) 10.33; 3.82-27.95; < 0.0001 c.955C > T (p.Arg319Ter) 6/23802 (0.0252) 2/118382 (0.0017) 14.92; 3.01-73.95; 0.0009 RAD51D c.270_271dupTA (p.Lys91Ilefs) 7/22584 (0.0310) 14/118455 (0.0118) 2.62; 1.06-6.50; 0.0373 c.556C > T (p.Arg186Ter) 6/22584 (0.0266) 9/133163 (0.0068) 3.93; 1.40-11.05; 0.0094 c.694C > T (p.Arg232Ter) 11/22584 (0.0487) 4/131873 (0.0030) 16.07; 5.12-50.46; < 0.0001 c.748delC (p.His250Thrfs) 6/22584 (0.0266) 1/118275 (0.0008) 31.43; 3.78-261.09; 0.0014",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "As shown in TableS3, in the 53 selected studies cumulatively encompassing 23,802 OC cases, we identified 149 RAD51C mutations (46 distinct mutations). Among the studies, most (35, ncases = 22,862) were of Caucasian individuals, 11 (ncases = 725) were of East Asian individuals, and 7 (ncases = 215) were of individuals from other populations. The prevalence of RAD51C mutations was significantly higher in OC patients (0.63%) than in population controls (0.11%), giving a cumulative OR = 5.59 (95%CIs:4.42-7.07; p < 0.0001) and ORadj = 5.04 (95%CIs:3.85-6.59; p < 0.0001). Limiting the analysis only to the NGS studies did not significantly affect the risk estimates (OR = 5.43; 95%CIs:4.26-6.91; p < 0.0001). As shown in Fig. 1b, the distribution of mutations along the coding sequence of RAD51C is rather even, however, there was a higher concentration in the middle of the gene. The contribution of different types of mutations is also even, i.e., 31% are frameshift mutations, including 12% duplications and 18% deletions; 31% are nonsense mutations; and 27% are splicing mutations, which proportion in RAD51C is significantly enriched in comparison to BRIP1 (Fisher's exact test, p < 0.05) and RAD51D (p < 0.05). Fourteen of the mutations were detected in three or more cases, with c.706-2A > G, c.**577C > T** (p.Arg193Ter), c.224dupA (p.Tyr75Terfs), and c.955C > T (p.Arg319Ter) mutations being the most frequent, reported in 11, 9, 7, and 6 cases, respectively. As in BRIP1, the most frequent mutations were exclusively reported in Caucasian studies (or in predominantly Caucasian studies). For 4 recurring mutations also reported in controls, we calculated mutation-specific ORs. The analysis confirmed that all of them, including the most frequent splicing mutation (c.706-2A > G), are associated with a high mutation-specific risk (ORs > 5).",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "Column names:\nFigure Figure S1. The flow diagram indicating the strategy and criteria used for the selection of articles for the analysis. Tables Table S1. Characteristics of the studies eligible for meta-analysis. Study, Year Country/Predominant\nRows:\nHarter c.525dupC (p.Cys176Leufs) FSDUP rs768793789 1/23802 (0.0042) 1/118465 (0.0008) Harter c.572-1G>C S rs1413872299 1/23802 (0.0042) 0/- (nd) Lilyquist c.572-1G>T S - 1/23802 (0.0042) 1/118359 (0.0008) Song **c.577C>T** (p.Arg193Ter) N rs200293302 9/23802 (0.0378) 8/118351 (0.0068) 5.60; 2.16-14.50; 0.0004 Lilyquist, Carter, Song, Norquist, Susswein, Loveday, [Lu], Dicks, [Pennington], Coulet c.597_603delCACTCTT (p.Phe199Leufs) FSDEL - 2/23802 (0.0084)",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The article provides epidemiologic evidence that the RAD51C c.577C>T (p.Arg193Ter) truncating variant is recurrent in ovarian\u2011cancer cases and confers a markedly increased risk (OR \u22485.6), supporting its classification as pathogenic for ovarian cancer susceptibility.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7196220",
+            "title": "BRIP1, RAD51C, and RAD51D mutations are associated with high susceptibility to ovarian cancer: mutation prevalence and precise risk estimates based on a pooled analysis of ~30,000 cases",
+            "relevance_score": 0.76,
+            "pub_year": 2020,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Compared with NHW, BRCA1 PVs were statistically significantly (P < .05) enriched in Ashkenazi-Jewish and Hispanic women, and PALB2 PVs were enriched in Hispanic and Asian women, whereas CHEK2 PVs were statistically significantly less frequent (<1%) among Black, Hispanic, and Asian women (Table 1). The c.1100delC PV accounted for the majority of CHEK2 PVs in NHWs, Ashkenazi-Jews, and Blacks but was only observed in 3 Hispanics and not in Asians. Among self-reported Ashkenazi-Jews, 92 of the 111 (82.8%) BRCA1 and BRCA2 PVs were due to founder PVs. In Hispanics, c.2167_2168delAT accounted for 8 of the 37 (21.6%) PALB2 PVs, and **c.577C>T** accounted for 6 of the 13 (46.1%) RAD51C PVs. Frequencies of PVs in other candidate breast cancer predisposition genes are shown in Supplementary Table 4 (available online).",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study reports that the RAD51C c.577C>T variant represents 46% of RAD51C pathogenic variants in Hispanic breast cancer patients, illustrating ethnic differences in variant prevalence.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8633452",
+            "title": "Racial and Ethnic Differences in Multigene Hereditary Cancer Panel Test Results for Women With Breast Cancer",
+            "relevance_score": 0.72,
+            "pub_year": 2020,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Patient ID Gene Transcript (hg19) Location(Exon/Intron) Variant (HGVS) Protein(HGVS) MAF (gnomAD%) dpSNP ClinVar Classification CADD MaxEntScan Reference 1959/20 ATM NM_000051.3 9 c.1102C>T p.(Gln368*) NR NR NR NA NA NR 977/20 BRIP1 NM_032043.2 17 c.2392C>T p.(Arg798*) 0.015 rs137852986 Pathogenic NA NA Wang et al. 2688/20 CDH1 NM_004360.5 6 c.781G>T p.(Glu261*) 0.0012 rs121964873 Likely pathogenic NA NA Berx et al. 434/20 PALB2 NM_024675.3 5 c.2257C>T p.(Arg753*) 0.0024 rs180177110 Pathogenic NA NA Vagena et al. 589/20 PALB2 NM_024675.3 5 c.2336C>G p.(Ser779*) 0.0012 rs764509489 Pathogenic NA NA NR 942/20 PTEN NM_000314.7 5 c.277C>T p.(His93Tyr) NR rs786204927 Likely pathogenic 25.9 NA Ngeow et al. 2761/19 PTEN NM_000314.7 5 c.334C>G p.(Leu112Val) NR NR NR 29.7 NA Reifenberger et al. 2834/20 RAD51C NM_058216.1 4 **c.577C>T** p.(Arg193*) 0.004 rs200293302 Pathogenic NA NA Song et al. 2070/20 TP53 NM_000546.4 5 c.560-1G>A NA 0.003 rs1202793339 Pathogenic NA Decrease the recognition of the splice acceptor site Dutta et al. 1165/20 TP53 NM_000546.4 8 c.841G>A p.(Asp281Asn) 0.0004 rs764146326 Pathogenic 31 NA De Andreade et al.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "...1G). At the age of 55 years, the patient underwent left partial glossectomy for microinvasive carcinoma of the left lingual edge (Figure 1G). The patient (II-1) with the (**c.577C>T**; p. (Arg193*)) nonsense variant in RAD51C had BC at 55 years (Figure 1H). Two paternal cousins were affected by BC at the age of 45 (II-3) and 35...",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study identifies the RAD51C c.577C>T (p.Arg193*) nonsense variant as a pathogenic mutation in a breast\u2011cancer patient and reports it as pathogenic in ClinVar, contributing to the diagnostic yield for HBOC families.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8139251",
+            "title": "Exome Sequencing in BRCA1-2 Candidate Familias: The Contribution of Other Cancer Susceptibility Genes",
+            "relevance_score": 0.72,
+            "pub_year": 2021,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Gene cDNA Protein change Molecular consequence BRCA1 5382insC (c.5266dupC) p.Gln1756fs Frameshift 300T>G (c.181T>G) p.Cys61Gly Missense 4153delA (c.4035delA) p.Glu1346fs Frameshift 1806C>T (c.1687C>T) p.Gln563Ter Nonsense 185delAG (c.68_69delAG) p.Glu23fs Frameshift 3819del5 (c.3700_3704del5) p.Val1234fs Frameshift 3875del4 (c.3756_3759delGTCT) p.Ser1253fs Frameshift 5370C>T (c.5251C>T) p.Arg1751Ter Nonsense 794delT (c.794_795delCT) p.Ser265Cysfs Frameshift BRCA2 4075delGT (c.3847_3848delGT) p.Val1283fs Frameshift 8138del5 (c.7913_7917delTTCCT) p.Ala2637_Phe2638insTer Nonsense 886delGT (c.658_659del) p.Val220fs Frameshift 6174delT (c.5946delT) p.Ser1982fs Frameshift RAD51C c.905-2_905-1delAG p.Glu303TrpfsX41 Skipping of exon 7 **c.577C>T** p.Arg193Ter Nonsense c.502A>T p.Arg168Ter Nonsense PALB2 c.172_175delTTGT p.Gln60fs Frameshift c.509_510delG>A p.Arg170fs Frameshift CHEK2PTTMissense c.1100delC* p.Thr367fs Frameshift c.444+1G>A* p.E149IfsX6 Skipping of exon 2 c.470T>C p.Ile157Thr Missense",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study screened recurrent mutations in several DNA\u2011repair genes, including RAD51C c.577C>T, but only reported risk associations for CHEK2 and BRCA1/PALB2, offering no specific interpretation for this RAD51C variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8935754",
+            "title": "Association of recurrent mutations in BRCA1, BRCA2, RAD51C, PALB2, and CHEK2 with the risk of borderline ovarian tumor",
+            "relevance_score": 0.65,
+            "pub_year": 2022,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "NO. Year with drawn Year with affected BC Gene Function area Nucleotide change AA change Hom/Het 1000G_ALL Variant Annotation ACMG evidence SZ007 60 55 RAD51C CDS4 c.**577C > T** p.R193X Het 0 nonsense mutation pathogenic PVS1,PM2, PP5 SZ009 43 39 ATM CDS30 c.4630_4633delTACT p.Y1544*fsX1 Het 0 frameshift deletion likely pathogenic PVS1, PM2 15B0028780 66 64 BRCA2 intron9...",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study reports a pathogenic RAD51C c.577C>T (p.R193X) nonsense variant among Chinese hereditary breast cancer patients, indicating its contribution to disease risk in this cohort.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5663067",
+            "title": "Clinical and genetic characterization of hereditary breast cancer in a Chinese population",
+            "relevance_score": 0.61,
+            "pub_year": 2017,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...PALB2 Chr16:g.23646416A>Tc.1451T>A (p.Leu484Ter) rs786203714 non-sense Pathogenic 26 PALB2 Chr16:g.23641107C>Tc.2368C>T (p.Gln790Ter) rs886039480 non-sense Pathogenic 27 RAD51C Chr17:g.56780562C>Tc.**577C>T** (p.Arg193Ter) rs200293302 non-sense Pathogenic 28 TP53 Chr17:g.7578555C>Tc.376-1G>A rs868137297 splice-site Pathogenic 29 TP53 Chr17:g.7578479G>Cc.451C>G (p.Pro151Ala) rs28934874 missense Pathogenic...",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study identified RAD51C c.577C>T as a pathogenic non\u2011sense variant within the germline variant spectrum of Southern Italian high\u2011risk hereditary breast cancer patients.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC11592649",
+            "title": "Germline Variant Spectrum in Southern Italian High-Risk Hereditary Breast Cancer Patients: Insights from Multi-Gene Panel Testing",
+            "relevance_score": 0.6,
+            "pub_year": 2024,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "NM_058216.3:**c.577C>T** rs200293302 13 (P), 1 (LP) Pathogenic Overview of mutations detected within Module II. Gene Mutation dbSNP Number ClinVar Submissions Internal Classification Number of Patients APC",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The program identified the RAD51C c.577C>T variant among screened individuals and classified it as pathogenic, highlighting its contribution to hereditary cancer risk assessment.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10488022",
+            "title": "Report on the Effect of the Implementation of an Early Detection and Prevention of Cancer Program on Families at High Hereditary Risk:Concentrating on Patients Undergoing Genetic Diagnostics and Counseling in Central Poland",
+            "relevance_score": 0.59,
+            "pub_year": 2023,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nSupplemental File 1 : Variants identified in hereditary breast and ovarian cancer syndrome indication VARIANTS IDENTIFIED IN HBOC INDICATION USING EXTENDED PANEL Gene Variant Class Indication ATM c.(8584+1_8585-1)_(*1_?)del CL5 HBOC\nRows:\nCL5 HBOC PMS2 c.137G>T CL5 HBOC PTEN c.209+6T>G CL5 HBOC RAD51C c.709C>T CL5 HBOC RAD51C c.1026+5_1026+7delGTA CL5 HBOC RAD51C c.1026+5_1026+7delGTA CL5 HBOC RAD51C c.1026+5_1026+7delGTA CL5 HBOC RAD51C **c.577C>T** CL5 HBOC RAD51C c.(?_-43)_(571+1_572-1)del CL5 HBOC RAD51C **c.577C>T** CL5 HBOC RAD51D c.898C>T CL5 HBOC RAD51D c.529C>T CL5 HBOC RAD51D c.129delT CL5 HBOC RAD51D c.1A>T CL4 HBOC RET c.2410G>A CL5 HBOC TMEM127\nCL5 HBOC RAD51C c.709C>T CL5 HBOC RAD51C c.1026+5_1026+7delGTA CL5 HBOC RAD51C c.1026+5_1026+7delGTA CL5 HBOC RAD51C c.1026+5_1026+7delGTA CL5 HBOC RAD51C **c.577C>T** CL5 HBOC RAD51C c.(?_-43)_(571+1_572-1)del CL5 HBOC RAD51C **c.577C>T** CL5 HBOC RAD51D c.898C>T CL5 HBOC RAD51D c.529C>T CL5 HBOC RAD51D c.129delT CL5 HBOC RAD51D c.1A>T CL4 HBOC RET c.2410G>A CL5 HBOC TMEM127 c.(?_-306)_(*6_?)del CL5 HBOC TP53 c.269_294del CL5 HBOC VARIANTS IDENTIFIED",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study identified RAD51C c.577C>T in hereditary breast and ovarian cancer patients and classified it as pathogenic (CL5), illustrating the added diagnostic yield of extended gene panels.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7821123",
+            "title": "Feedback of extended panel sequencing in 1530 patients referred for suspicion of hereditary predisposition to adult cancers",
+            "relevance_score": 1.0,
+            "pub_year": 2020,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\n\u00a9 20 24 Torres -Esquius S et al. JAMA Network Open. Supplementary Online Content Torres -Esquius S, Llop-Guevara A, Guti\u00e9rrez -Enr\u00edquez S, et al . Prevalence of homologous recombination deficiency among patients with germline RAD51C/D\nRows:\nn (%) c.1026+5_1026+7del p.? / (p.Arg322Serfs*22)a 11 (20) c.709C>T p.(Arg237*) 9 (16) c.965+5G>A p.(Glu303Trpfs*41) 5 (9) Deletion exons 4 to 5 p.? 4 (7) c.404G>A p.(Cys135Tyr) / p.? 4 (7) c.358dupA p.(Thr120fs) 2 (4) **c.577C>T** p.(Arg193*) 2 (4) c.656T>C p.(Leu219Ser) 2 (4) c.705+1G>A p.? 2 (4) c.706 -2A>G p.? / p.(Arg237_Val280del) a 2 (4) c.904+5G>T p.? / p(Val280Glyfs*11)b 2 (4) c.934C>T p.(Arg312Trp) 2 (4) Deletion exons 4 to 9 p.? 2 (4) c.",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study reports that homologous recombination deficiency is present in less than 70% of tumors from germline RAD51C/D carriers and is absent in estrogen\u2011receptor\u2011positive breast cancers, emphasizing the importance of HRD testing for therapeutic decisions.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC11036141",
+            "title": "Prevalence of Homologous Recombination Deficiency Among Patients With Germline RAD51C/D Breast or Ovarian Cancer Homologous Recombination Deficiency Among Patients With RAD51C/D Breast or Ovarian Cancer",
+            "relevance_score": 0.85,
+            "pub_year": 2024,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Table S2. DDR PVs from east Asian and non-Finnish European populations*\nColumn names:\nHGVSg|HGVSc|HGVSp|dbSNP|Func.refGene|Gene.refGene|ExonicFunc.refGene|AC_nfEuropean|AN_nfEuropean|AF_nfEuropean|AC_eastAsian|AN_eastAsian|AF_eastAsian\nRows:\nchr17:g.58703201C>T|**c.577C>T**|p.Arg193Ter|rs200293302|exonic|RAD51C|stopgain|2|167192|1.19622948466434e-05|0|121235|0",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study reports that most DNA\u2011damage\u2011repair pathogenic variants, including the rare stop\u2011gain RAD51C c.577C>T, arose after the latest out\u2011of\u2011Africa migration of modern humans.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC11211533",
+            "title": "Pathogenic variants in human DNA damage repair genes mostly arose after the latest human out-of-Africa migration",
+            "relevance_score": 0.65,
+            "pub_year": 2024,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nSupplementary Table 1 Pathogenic1 variants carriers identified by gene-panel testing in affected cases participating in the Australian Breast Cancer Family Study (ABCFS). Gene impact HGVSc HGVSp Number of carriers ATM frameshift_variant\nRows:\n1 RAD51C splice_region_variant NM_058216.2:c.1026+5_1026+7del . 1 RAD51C stop_gained NM_058216.2:c.397C>T NP_478123.1:p.Gln133Ter 1 RAD51C frameshift_variant NM_058216.2:c.557_558dup NP_478123.1:p.His187Asnfs*53 1 RAD51C stop_gained NM_058216.2:**c.577C>T** NP_478123.1:p.Arg193Ter 1 RAD51C frameshift_variant NM_058216.2:c.732del NP_478123.1:p.Ile244Metfs*9 1 RAD51C missense_variant NM_058216.2:c.773G>A NP_478123.1:p.Arg258His 1 RAD51C frameshift_variant NM_058216.2:c.774del NP_478123.1:p.Thr259Leufs*4",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study reports that RAD51C c.577C>T was observed as a pathogenic stop\u2011gain variant in breast\u2011cancer cases, contributing to the population\u2011based risk estimates for carriers of pathogenic gene\u2011panel variants.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8660783",
+            "title": "Population-based estimates of breast cancer risk for carriers of pathogenic variants identified by gene-panel testing",
+            "relevance_score": 0.41,
+            "pub_year": 2021,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\n1 Supplementary Material Methods Variant f requencie s We estimated the RAD51C and RAD51D pathogenic variant frequencies in the population using the UK Biobank exome sequencing dataset ( http://www.ukbiobank.ac.uk ).\nRows:\nsplicing site variant 3 c.706 - 2A>G intron splicing site variant 14 c.837+1G>A intron splicing site variant 2 c.905 - 2del intron splicing site variant 3 c.397C>T nonsense variant 3 c.502A>T nonsense variant 2 **c.577C>T** nonsense variant 6 c.664C>T nonsense variant 1 c.701C>G nonsense variant 2 c.955C>T nonsense variant 7 c.97C>T nonsense variant 4 c.994C>T nonsense variant 1 13 Supplementary Table 6 List of",
+                    "mention_type": "population",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study quantifies elevated ovarian and breast cancer risks for carriers of pathogenic RAD51C and RAD51D variants, reporting relative risks up to ~2\u2011fold for breast cancer and ~7\u2011fold for tubo\u2011ovarian cancer.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7735771",
+            "title": "Ovarian and Breast Cancer Risks Associated With Pathogenic Variants in RAD51C and RAD51D",
+            "relevance_score": 0.4,
+            "pub_year": 2020,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\n\u00a9 2023 Wen H et al. JAMA Network Open . Supplementa l Online Content Wen H, Xu Q, Sheng X, Li H, Wang X, Wu X . Prevalence and landscape of pathogenic or likely pathogenic germline variants and their association with somatic phenotype in\nRows:\nc.216+1G>T c.216+1G>T 45.70% LP P221 56 EC ATM stop_gained p.R23* p.Arg23* c.67C>T 45.72% P P231 EC MSH6 frameshift_variant p.R1172fs p.Arg1172fs c.3514dup 48.14% P P236 52 EC RAD51C stop_gained p.R193* p.Arg193* **c.577C>T** 44.85% P P242 58 EC BRCA1 stop_gained p.E732* p.Glu732* c.2194G>T 50.60% P P249 48 EC MSH2 frameshift_variant p.L556fs p.Leu556fs c.1667del 44.37% P \u00a9 2023 Wen H et al. JAMA Network Open . P253 60 EC RAD51D frameshift_variant",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study reports RAD51C c.577C>T as a pathogenic germline variant within the broader landscape of HRR gene alterations in Chinese women with gynecologic cancers.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10391307",
+            "title": "Prevalence and Landscape of Pathogenic or Likely Pathogenic Germline Variants and Their Association With Somatic Phenotype in Unselected Chinese Patients With Gynecologic Cancers",
+            "relevance_score": 0.33,
+            "pub_year": 2023,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Table S3. Proportion of carriers of pathogenic variants or VUS with elevated levels of pathogenicityPathogenic variantsPathogenic variants & HiP-VUS\nColumn names:\nGene Category|Study|T+SJV|Pathogenic Missense|VUS|No. of carriers (weighted)|Total Individuals|Carrier Frequency in %|95%-CI|Overall test statstics|Carrier Frequency in %|95%-CI|Overall test statstics|Cancer|Weight|Ambry Pancnext Panel\nRows:\nRAD51C|NM_058216|**c.577C>T**|p.(R193*)|Stopgain|4.136X10-5||-|-||-||Pathogenic|OC||",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study identifies RAD51C c.577C>T among pancreatic cancer cases and reports it as a pathogenic variant in the context of hereditary cancer predisposition screening.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6020441",
+            "title": "Pancreatic cancer as a sentinel for hereditary cancer predisposition",
+            "relevance_score": 0.28,
+            "pub_year": 2018,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\n\"Table S1: Unique pathogenic/likely pathogenic variants detected in the Swedish cohort Splice\u2020 = non-canonical splice variant, see details in Additional file 2: Table S2. Concordant* = discrepant classifications exist in ClinVar, but multiple\nRows:\ngained,,Pathogenic,Concordant,142534,SCV002589008,1 RAD51C,NM_058216.2:c.230del,NP_478123.1:p.(Gly77Valfs*24),NC_000017.10:g.56772376del,Frameshift,,Pathogenic,Concordant,31557,SCV002589009,1 RAD51C,NM_058216.2:**c.577C>T**,NP_478123.1:p.(Arg193*),NC_000017.10:g.56780562C>T,Stop gained,,Pathogenic,Concordant,140849,SCV002589011,1 RAD51C,NM_058216.2:c.705+2108_*7850del,NP_478123.1:p.?,NC_000017.10:g.56782798_56819433del,Structural variant",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "In a Swedish cohort of 4622 women with suspected hereditary breast/ovarian cancer, RAD51C c.577C>T was identified as a pathogenic stop\u2011gain variant, contributing to the overall diagnostic yield of the 13\u2011gene panel.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10413543",
+            "title": "Extended genetic analysis and tumor characteristics in over 4600 women with suspected hereditary breast and ovarian cancer",
+            "relevance_score": 0.27,
+            "pub_year": 2023,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nb\"\\r\\nGene |Coding DNAa |Protein |Classification |Molecular Effectb |Clinical\\r\\nHistoryc |Observations |Met CDH1 or TP53 Criteria?d | |APC\\r\\n|c.1192_1193delAA |p.Lys398GlufsX5 |Pathogenic |Frameshift |Polyposis |1 |\\r\\n| |APC |c.1213C>T\nRows:\n|Breast |1 | | |RAD51C |c.394dupA |p.Thr132AsnfsX23 |Pathogenic\\r\\n|Frameshift |Breast |1 | | |RAD51C |c.404+2T>C |na |Pathogenic |Splicing\\r\\n|Ovarian |1 | | |RAD51C |c.502A>T |p.Arg168Ter |Pathogenic |Nonsense\\r\\n|Breast |1 | | |RAD51C |**c.577C>T** |p.Arg193Ter |Pathogenic |Nonsense\\r\\n|Ovarian |1 | | |RAD51C |c.706-2A>G |na |Pathogenic |Splicing |Breast,\\r\\nFallopian tube, Melanoma |4 | | |RAD51C |c.837+4_837+7delAGTA |na |Expected\\r\\nPathogenic |Splicing |Breast |1 | | |RAD51C",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study reports RAD51C c.577C>T as a pathogenic nonsense variant identified in their multigene panel cohort of cancer patients.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC4985612",
+            "title": "Pathogenic and likely pathogenic variant prevalence among the first 10,000 patients referred for next-generation cancer panel testing",
+            "relevance_score": 0.26,
+            "pub_year": 2015,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nS3 Table. Pathogenic variant position coverage for 100 WES samples\nRows:\nRAD51C|NM_058216|**c.577C>T**|p.R193*|CDS 4 (c.572_705)||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article reports that the RAD51C c.577C>T pathogenic variant is included in its analysis of exome sequencing coverage, suggesting it is generally detectable by WES across samples.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5289469",
+            "title": "Exome sequencing covers >98% of mutations identified on targeted next generation sequencing panels",
+            "relevance_score": 0.16,
+            "pub_year": 2017,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nORDER_ID|GENE|CHR|CHR_START|CHR_END|REFERENCE_ALLELE|VARIANT_ALLELE|DNA_CHANGE|AA_CHANGE|VAF|COVERAGE|VAR_TYPE_SX|GERMLINE|REFERENCE INFORMATION\nRows:\n|RAD51C|chr17|||C|T|**c.577C>T**|p.R193*|||Truncation|germline|NM_058216",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study performed comprehensive genomic profiling of 65 Chinese ovarian cancer patients, identifying frequent somatic mutations (e.g., TP53) and reporting germline alterations such as a truncating RAD51C c.577C>T variant as part of the broader mutation landscape.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7801677",
+            "title": "A comprehensive analysis of somatic alterations in Chinese ovarian cancer patients",
+            "relevance_score": 0.14,
+            "pub_year": 2021,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Rows:\nC457c,C457a,C8G,ENSG00000176919,p.Gln193*,**c.577C>T**,stop_gained,HIGH,protein_coding,transcript,ENST00000224181,0.819,0.0,94,67,\"17,77\",\"67,0\",.,.,.,.,.,.,.,.,.,0.601161721454432,1,0,true,9,139841123,9:139841123_C/T,C,T,PASS,.",
+                    "mention_type": "computational",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study presents an integrative proteogenomic analysis of hepatocellular carcinoma across multiple etiologies and stages, highlighting dysregulated pathways and candidate driver alterations.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9068765",
+            "title": "Integrative proteogenomic characterization of hepatocellular carcinoma across etiologies and stages",
+            "relevance_score": 0.08,
+            "pub_year": 2022,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Supplementary Table 3A: Coding mutations detected in the IBD cohort.\nColumn names:\nsampleID|chr|pos|ref|mut|geneind|gene|ref_cod|mut_cod|strand|ref3_cod|mut3_cod|aachange|ntchange|impact|pid\nRows:\npatient12_21|||C|T||RAD51C|C|T||CCG|CTG|R193*|**C577T**|Nonsense|ENSP00000336701",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study identifies a somatic RAD51C c.577C>T nonsense mutation among coding alterations in IBD-affected colonic crypts, indicating its presence as a somatic event in the diseased tissue.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7427325",
+            "title": "Somatic Evolution in Non-neoplastic IBD-Affected Colon",
+            "relevance_score": 0.01,
+            "pub_year": 2020,
+            "data_sources": [
+                "suppl"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 2474,
+            "output": 2437
+        },
+        {
+            "input": 1797,
+            "output": 458
+        },
+        {
+            "input": 3528,
+            "output": 695
+        },
+        {
+            "input": 3827,
+            "output": 773
+        },
+        {
+            "input": 2114,
+            "output": 599
+        },
+        {
+            "input": 2523,
+            "output": 590
+        },
+        {
+            "input": 2377,
+            "output": 609
+        },
+        {
+            "input": 2127,
+            "output": 702
+        },
+        {
+            "input": 1933,
+            "output": 446
+        },
+        {
+            "input": 1784,
+            "output": 472
+        },
+        {
+            "input": 2182,
+            "output": 540
+        },
+        {
+            "input": 1967,
+            "output": 584
+        },
+        {
+            "input": 2321,
+            "output": 223
+        },
+        {
+            "input": 2291,
+            "output": 374
+        },
+        {
+            "input": 2069,
+            "output": 451
+        },
+        {
+            "input": 2055,
+            "output": 633
+        },
+        {
+            "input": 2322,
+            "output": 716
+        },
+        {
+            "input": 2647,
+            "output": 713
+        },
+        {
+            "input": 2004,
+            "output": 552
+        },
+        {
+            "input": 2338,
+            "output": 458
+        },
+        {
+            "input": 2134,
+            "output": 442
+        },
+        {
+            "input": 3037,
+            "output": 214
+        },
+        {
+            "input": 2039,
+            "output": 349
+        },
+        {
+            "input": 1914,
+            "output": 217
+        },
+        {
+            "input": 2375,
+            "output": 325
+        },
+        {
+            "input": 1972,
+            "output": 743
+        },
+        {
+            "input": 1937,
+            "output": 587
+        },
+        {
+            "input": 2076,
+            "output": 351
+        },
+        {
+            "input": 2117,
+            "output": 278
+        },
+        {
+            "input": 2606,
+            "output": 477
+        },
+        {
+            "input": 2324,
+            "output": 235
+        },
+        {
+            "input": 1850,
+            "output": 338
+        },
+        {
+            "input": 2006,
+            "output": 235
+        },
+        {
+            "input": 2694,
+            "output": 256
+        },
+        {
+            "input": 1943,
+            "output": 457
+        },
+        {
+            "input": 1902,
+            "output": 309
+        },
+        {
+            "input": 2276,
+            "output": 242
+        },
+        {
+            "input": 2237,
+            "output": 250
+        },
+        {
+            "input": 2042,
+            "output": 236
+        },
+        {
+            "input": 2060,
+            "output": 284
+        },
+        {
+            "input": 2079,
+            "output": 444
+        },
+        {
+            "input": 1807,
+            "output": 243
+        },
+        {
+            "input": 1918,
+            "output": 661
+        },
+        {
+            "input": 2424,
+            "output": 240
+        },
+        {
+            "input": 2123,
+            "output": 318
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 12595,
+        "output": 1295
+    },
+    "total_time": 66.53
+}

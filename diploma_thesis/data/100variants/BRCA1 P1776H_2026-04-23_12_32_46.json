@@ -1,0 +1,184 @@
+{
+    "before_pruning": {
+        "articles_in_total": 19,
+        "only_medline_count": 0,
+        "only_pmc_count": 4,
+        "only_suppl_count": 15,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 19,
+        "only_medline_count": 0,
+        "only_pmc_count": 4,
+        "only_suppl_count": 15,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "variant": "BRCA1 P1776H",
+    "time_to_process_articles": 10.91,
+    "context_length": 11459,
+    "after_removal": {
+        "articles_in_total": 4,
+        "only_medline_count": 0,
+        "only_pmc_count": 3,
+        "only_suppl_count": 1,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "",
+            "pmcid": "PMC3242438",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 131,
+            "abstract_length": 1266,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8999655",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 110,
+            "abstract_length": 1382,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                1101,
+                348
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9753114",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 160,
+            "abstract_length": 2147,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1445
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4894565",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 91,
+            "abstract_length": 2450,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        }
+    ],
+    "narrative_summary": "The BRCA1 missense change p.P1776H occurs in the C\u2011terminal BRCT domain of the gene, a region frequently examined for variants that may influence hereditary breast and ovarian cancer risk. The variant has been the subject of functional and in silico investigations but lacks reported clinical case or segregation data.\n\nFunctional assays using yeast\u2011based homologous recombination systems identified p.P1776H as a false\u2011positive result in intra\u2011chromosomal HR testing, indicating that the variant behaves like a benign allele rather than a pathogenic one [PMC8999655]. The same study\u2019s performance metrics list p.P1776H among variants that were incorrectly flagged as pathogenic, reinforcing the benign interpretation of its functional impact.\n\nComputational and structural analyses of BRCT\u2011domain variants reported that p.P1776H, together with many other residues, shows only modest alterations in protein folding relative to wild\u2011type, and the authors did not assign a pathogenic classification to this change [PMC9753114]. This suggests that in silico predictions do not support a deleterious effect.\n\nTaken together, the available experimental evidence points toward a benign functional profile for BRCA1 p.P1776H, and computational modeling does not indicate a significant impact on protein stability. In the absence of clinical or population data suggesting disease association, the current body of evidence supports classifying p.P1776H as likely benign.",
+    "structured_summary": {
+        "overall_pathogenicity": "benign",
+        "pathogenicity_counts": {
+            "supports benignity": 2,
+            "supports pathogenicity": 0,
+            "uncertain": 0
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "By intra-chromosomal HR of the selected variants, we observed one false negative for pathogenic variants (p.R71K) and five false positives for benign variants (p.R1347G, p.I1275V, **p.P1776H** p.S1512I, and p.Y179C) (Figure 3A). By inter-chromosomal HR of selected variants, we observed three false negative (p.R1699W, p.A1708E, and p.R71K) pathogenic variants and two false positive benign variants (p.I1275V and p.Y179C) (Figure 3B). As far as GR assay is concerned, two pathogenic variants (p.R71K and p.R1495M) were identified as false negative, and three benign (p.I1275V, p.N132K, and p.T1675I) as false positive (Figure 3C). Remarkably, the variants p.R71K and p.I1275V were identified respectively as false negative and false positive in all three assays.",
+                    "mention_type": "functional",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "Assay Sensitivity Specificity Accuracy AUROC YI Best Cut-off FP FN Intra-HR 0.957 0.783 0.87 0.914 0.739 1.535 Y179C I1275V R1347G S1512I **P1776H** R71K Inter-HR 0.87 0.913 0.891 0.929 0.783 1.32 Y179C I1275V R71K R1699W A1708E GR 0.913 0.87 0.891 0.867 0.783 1.077 N132K I1275V T1675I R71K R1495M SCP 1.00 0.913 0.957 0.951 0.913 25.833 I1275V S1512I",
+                    "mention_type": "functional",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "Yeast\u2011based functional assays were validated and showed that BRCA1 p.P1776H is a benign variant that was incorrectly flagged as pathogenic (false positive) in intra\u2011chromosomal homologous recombination assays.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8999655",
+            "title": "Validation and Data-Integration of Yeast-Based Assays for Functional Classification of BRCA1 Missense Variants",
+            "relevance_score": 0.48,
+            "pub_year": 2022,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "name of residue position no. of residue in BRCA1 known mutants for BRCA1 BRCTb position no. in BARD1 known mutants for BARD1 BRCTb S 1655 F (Mohammadi et al.,), P, and A 575 G G 1656 D 576 R and V L 1657 577 E 1660 Q and A 580 K A 1669 T, S, and V 589 T and V T 1685 605 H 1686 Q (Giannini et al., ), P, R, and L 606 D and N V 1687 I and A 607 I and D V 1688 L, I, G, and F 608 G D 1692 E, V, G, A, Y, H (BRCA exchange), and N (CBIOPORTAL) 612 V (LOVD3) A 1693 V, G, D, S, P, and T 613 T 1700 A and I 617 I L 1701 R, P, Q, V, M 618 K 1702 N 619 L 1705 P 622 F G 1706 E (Osorio et al.,), R, and A (Phelan et al.,) 623 W and E I 1707 M, S, T, N, F, V, and L 624 V G 1710 R 627 R W 1712 C, L, S, G, and R 629 S and C W 1718 C (Mirkovic et al.,), R, G, and S 635 L and R V 1719 A 636 I E 1731 D, V, G, Q,and K 648 E 1735 K 652 G 1748 V, A, D, C, R, and S 656 P 1749 A and R 657 L and S R 1751 Q 659 R 1753 T 661 G K 1759 E and R 670 E F 1761 S 672 G 1763 674 G 1770 V (Tudini et al.,) and W 681 F 1772 C 683 **P 1776 H** and L 687 S D 1778 689 L 1780 P 691 F V 1784 G, A, E, L, and I 695 I and D G 1788 V (Easton et al.,), D, C, and S 699 E V 1809 F (Phelan et al.,) and A 720 A D 1818 G 729 H and Y F 1821 L, C, S, Y, V, and I 732 L, S, and V E 1829 D, V, G, A, Q, and K 740 W 1837 L, R, G, and C 762 F and R D 1840 E, V, G, A, Y, H, and N 765 G V 1842 G, A, E, L, and I 767 A, M, and L L 1850 R, P, Q, V, and M 775 P D 1851 E, V, G, A, Y, H, and N 776",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article evaluates BRCT domain variants of BRCA1 and BARD1 using in silico predictions and molecular dynamics, noting that most variants, including P1776H, exhibit only modest changes in folding compared to wild\u2011type, without assigning a pathogenicity classification.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9753114",
+            "title": "In Silico and Structure-Based Assessment of Similar Variants Discovered in Tandem Repeats of BRCT Domains of BRCA1 and BARD1 To Characterize the Folding Pattern",
+            "relevance_score": 0.28,
+            "pub_year": 2022,
+            "data_sources": [
+                "pmc"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 1791,
+            "output": 201
+        },
+        {
+            "input": 2294,
+            "output": 681
+        },
+        {
+            "input": 2798,
+            "output": 709
+        },
+        {
+            "input": 1886,
+            "output": 191
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 2019,
+        "output": 753
+    },
+    "total_time": 22.62
+}

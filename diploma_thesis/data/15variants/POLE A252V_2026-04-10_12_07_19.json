@@ -1,0 +1,981 @@
+{
+    "before_pruning": {
+        "articles_in_total": 26,
+        "only_medline_count": 0,
+        "only_pmc_count": 4,
+        "only_suppl_count": 21,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 26,
+        "only_medline_count": 0,
+        "only_pmc_count": 4,
+        "only_suppl_count": 21,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "variant": "POLE A252V",
+    "time_to_process_articles": 19.25,
+    "context_length": 65286,
+    "after_removal": {
+        "articles_in_total": 24,
+        "only_medline_count": 0,
+        "only_pmc_count": 4,
+        "only_suppl_count": 19,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "",
+            "pmcid": "PMC4310866",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 165,
+            "abstract_length": 1514,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1595
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11366758",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 128,
+            "abstract_length": 1519,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                729
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    751
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC2993855",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 35,
+            "abstract_length": 335,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                755
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7706212",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 161,
+            "abstract_length": 2308,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "t g \u2713 p ala252val c 755c t \u2713 \u2713 p asn1396ser c 4187a g \u2713 \u2713 \u2713 p pro286arg c 857c g \u2713 \u2713 \u2713\u2713 \u2713 pathogenic variants 5 0 0 unknown significance in functional domains 3 0 0 unknown significance"
+            ],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                193
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4204770",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 127,
+            "abstract_length": 1974,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                407
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6171902",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 65,
+            "abstract_length": 1900,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    2874
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11097509",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 162,
+            "abstract_length": 1987,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    393
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5482622",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 79,
+            "abstract_length": 1459,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    793
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8787147",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 123,
+            "abstract_length": 2280,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    490
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5940669",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 159,
+            "abstract_length": 1389,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    266
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7176734",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 75,
+            "abstract_length": 1728,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    1058
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10170410",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 112,
+            "abstract_length": 1303,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    153
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10844626",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 126,
+            "abstract_length": 1207,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    788
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6439399",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 127,
+            "abstract_length": 1696,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    519
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7858122",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 117,
+            "abstract_length": 2434,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    459
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11184281",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 133,
+            "abstract_length": 0,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    187
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11312386",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 164,
+            "abstract_length": 1876,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    695
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4826231",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 74,
+            "abstract_length": 1315,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    485
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3118809",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 89,
+            "abstract_length": 1937,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    281
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8638096",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 116,
+            "abstract_length": 2307,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    355
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6378102",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 96,
+            "abstract_length": 2278,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    761
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7463012",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 109,
+            "abstract_length": 1543,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    163
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8024717",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 79,
+            "abstract_length": 2611,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    785
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5055158",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 87,
+            "abstract_length": 1706,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    760
+                ]
+            ]
+        }
+    ],
+    "narrative_summary": "The POLE p.Ala252Val (A252V) missense change is a recurrent non\u2011synonymous variant that has been reported across several tumor types, including colorectal, endometrial, lung, breast, gastric and non\u2011small\u2011cell lung cancers. It is found both as a germline allele and in somatic tumor sequencing panels, but its clinical significance remains uncertain.\nIn clinical cohorts the variant has been described as a common polymorphism with a frequency comparable to that of the general population in colorectal cancer patients, suggesting it does not act as a driver mutation in that setting [PMC4310866]. A phase\u2011II trial of toripalimab identified a single germline A252V case among POLE\u2011mutated solid tumours but did not link the variant to treatment response or prognosis [PMC11366758]. Conversely, an analysis of cancer\u2011related SNPs reported that A252V was associated with reduced overall survival in lung cancer patients, implying a possible adverse effect [PMC2993855]. Studies of breast cancer risk found no significant association with the variant and a Chinese cohort classified it as benign based on clinical annotation [PMC4204770][PMC6439399]. A gastric\u2011cancer polymorphism study listed the variant without reporting any risk association [PMC5482622].\nFunctional investigations provide mixed signals. The original POLE exonuclease\u2011domain study noted that A252V occurs at a population\u2011expected frequency and therefore likely represents a benign polymorphism rather than a mutator allele [PMC4310866]. In human induced\u2011pluripotent stem\u2011cell lines the variant was present among many cancer\u2011related mutations but did not correlate with tumorigenicity in transplantation assays [PMC6171902]. In the NCI\u201160 cell line panel the A252V missense change was significantly associated with altered sensitivity to a set of natural product compounds, indicating a measurable cellular effect, although the direction of impact on oncogenic behavior was not defined [PMC7858122].\nPopulation data reinforce the view that A252V is a relatively common allele: its prevalence in colorectal and NSCLC cohorts mirrors that of reference databases, and it appears in multiple germline sequencing reports without enrichment in cancer cases [PMC4310866][PMC8787147]. In silico predictions are discordant: one annotation classified the variant as benign, while another reported deleterious SIFT and probably damaging PolyPhen\u20112 scores, and a MutationAssessor rating of low impact [PMC6439399][PMC11312386].\nTaken together, the evidence is conflicting. Several studies and population analyses support a benign, common polymorphic nature, whereas isolated clinical observations and computational predictions suggest a potential pathogenic role, particularly in lung cancer survival and drug response phenotypes. The balance of data currently leans toward A252V being a likely benign variant with uncertain or limited oncogenic impact, pending further functional validation and larger epidemiologic studies.",
+    "structured_summary": {
+        "overall_pathogenicity": "uncertain",
+        "pathogenicity_counts": {
+            "supports pathogenicity": 3,
+            "uncertain": 0,
+            "supports benignity": 2
+        },
+        "conflicting_evidence": true
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Inspired by the association of Pol\u03b5 exonuclease domain mutations with intestinal cancer in mice (2) and humans (5, 8, 9), we began this study by analyzing this region of Pol\u03b5 in 52 sporadic CRC patients treated at UNMC. The age distribution of the patients and the anatomical site of the tumor are listed in Table 1. Ten of the 52 tumors carried a common variant allele producing an **Ala252Val** change in Pol\u03b5 (nine in heterozygous and one in homozygous state; Table 1). The variant allele frequency did not differ significantly (p=0.11; Chi-square) from that reported for the general population (16). One tumor carried an Arg259His variant, also observed previously in the general population (allele frequency 0.5-1%). Remarkably, one tumor (T-04-364) had a heterozygous mutation leading to a P286R substitution in the ExoI motif (Table 1; Fig. 1). This change was not present in the publicly available databases of common polymorphisms, but was reported previously as a somatic mutation in 16 other sporadic cancer cases (6, 7, 9) and as a potential cancer-specific variant in a colon carcinoma cell line HCC2998 (10). Other mutations affecting Pro286 in Pol\u03b5 or a homologous Pro327 in Pol\u03b4 were also observed in CRC patients (5, 8). The P286R change found in tumor T-04-364 was not present in normal cells of the patient (Fig. 1A), indicating that it was a somatic mutation. The recurrent emergence of Pro286 alterations is in sharp contrast to the apparently random incidence in tumors of other changes in the exonuclease domain of Pol\u03b5, most of which were only observed once (5-7, 9).",
+                    "mention_type": "population",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The article reports that the POLE A252V variant occurs at a frequency comparable to the general population in colorectal tumors, suggesting it is likely a benign polymorphism rather than a cancer\u2011driving mutation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC4310866",
+            "title": "A common cancer-associated DNA polymerase \u03b5 mutation causes an exceptionally strong mutator phenotype, indicating fidelity defects distinct from loss of proofreading",
+            "relevance_score": 1.0,
+            "pub_year": 2014,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "POLE/POLD1 variants are detailed in Table 2 and Fig. 3. Of all 15 patients, ten had POLE mutation (one **A252V** variant was germline), four had POLD1 mutation (one R682Q variant was germline), and one had malignant peripheral nerve sheath tumor with both POLE and POLD1 mutations. Most patients had one POLE or POLD1 mutation, while three had more than one mutation: one with S297F and S1906Y POLE mutations, one with P286R and F1907L POLE mutations, one with L523-L526del POLD1 mutation, I2070-K2072del and T2273-E2275del POLE mutations. Among three patients with more than one mutation, two had an objective response, and one did not undergo a CT scan after one dose of toripalimab.",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Column names:\n\u00bb +50% g 50% Change from baseline (RECIST v1.1) = 2ggce Beggs 22328 SEES 5 c Cancer Type Mutation Colorectal cancer POLE V533M POLD1 R6820 Renal cancer POPs Colorectal cancer ot Sranay Colorectal cancer POLE T1104M Colorectal cancer Bot\nRows:\n50% Change from baseline (RECIST v1.1) = 2ggce Beggs 22328 SEES 5 c Cancer Type Mutation Colorectal cancer POLE V533M POLD1 R6820 Renal cancer POPs Colorectal cancer ot Sranay Colorectal cancer POLE T1104M Colorectal cancer Bot Fear POLE **A252V** Endometrial canoer POLE A252 Colorectal cancer POLE V411L Functional Mutation Cervical cancer POLD1 S1034F Colorectal cancer POLE O520P Colorectal cancer POLD1 T238M Colorectal cancer POLE 11739V Hepatocellular cancer POLE H1440T Colorectal",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The phase II trial shows overall responses to toripalimab in POLE/POLD1\u2011mutated solid tumours, but provides no specific efficacy or pathogenicity interpretation for the POLE A252V variant, which was observed in a single germline case only.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC11366758",
+            "title": "A phase II clinical trial of toripalimab in advanced solid tumors with polymerase epsilon/polymerase delta (POLE/POLD1) mutation",
+            "relevance_score": 0.82,
+            "pub_year": 2024,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "There are relatively few studies examining the cancer risk associated with non-synonymous SNPS in POLD1 or POLE. POLE E2140K has been associated with an increased risk of breast cancer [207], but not cervical cancer [208]; **A252V** is associated with decreased overall survival in lung cancer patients [209]; and N1396S is not associated with meningioma risk [210]. The POLD1 R119H SNP has been reported in multiple genome-wide SNP studies, and no association was detected with meningioma, bladder or breast cancer risk [210\u2013213]. Surprisingly, most studies looking for associations with increased cancer risk have studied POLD1 or POLE intronic or synonymous coding SNPs that are unlikely to affect polymerase expression or fidelity.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The article reports that the POLE A252V variant is associated with reduced overall survival in lung cancer, implying a potentially pathogenic role.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC2993855",
+            "title": "DNA Replication Fidelity and Cancer",
+            "relevance_score": 0.59,
+            "pub_year": 2010,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "T > G \u2713 **p.Ala252Val** c.755C > T \u2713 \u2713 p.Asn1396Ser c.4187A > G \u2713 \u2713 \u2713 p.Pro286Arg c.857C > G \u2713 \u2713 \u2713\u2713 \u2713 Pathogenic variants 5 0 0 Unknown significance in functional domains 3 0 0 Unknown significance",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "Targeted sequencing can infer the presence of POLE mutations from high tumor mutational burden but does not fully assign endometrial cancers to TCGA molecular subgroups; the article lists POLE A252V among detected variants without specific interpretation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7706212",
+            "title": "Utility of a custom designed next generation DNA sequencing gene panel to molecularly classify endometrial cancers according to The Cancer Genome Atlas subgroups",
+            "relevance_score": 0.46,
+            "pub_year": 2020,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...(0.96, 1.03) 0.75 0.97 (0.94, 1.01) 0.18 0.99 (0.97, 1.01) 0.18 0.10 23.7 rs4986790 (D299G) TLR4 AG 0.06 0.41 0.98 (0.94, 1.02) 0.38 0.96 (0.77, 1.20) 0.73 0.98 (0.94, 1.02) 0.35 0.40 4.12 rs5744751 (**A252V**) POLE GA 0.11 0.29 1.01 (0.98, 1.04) 0.57 1.02 (0.91, 1.15) 0.75 1.01 (0.98, 1.04) 0.52 0.87 0 rs6032538 (H36D) WFDC3 rs399672, r2 = 1.0 AG 0.28 0.11 1.00 (0.97, 1.03) 0.82 0.98 (0.93, 1.03) 0.49...",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study reports no significant association between the POLE A252V variant and breast cancer risk.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC4204770",
+            "title": "Common non-synonymous SNPs associated with breast cancer susceptibility: findings from the Breast Cancer Association Consortium",
+            "relevance_score": 0.34,
+            "pub_year": 2014,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Table S6 Mutations assessed as a high or moderate impact and confirmed in the COSMIC cancer database\nColumn names:\nhiPSC lines|Mutations (types of mutation, amino acid change, gene name)|Number of mutations\nRows:\nHiPS-RIKEN-12A|2488153A>G (MISSENSE, K17R, TNFRSF14); 120611964G>C (MISSENSE, C19W, NOTCH2); 120612002CGG>C (FRAME_SHIFT, P6, NOTCH2); 29416366G>C (MISSENSE, D1529E, ALK); 29416481T>C (MISSENSE, K1491R, ALK); 10088406TAGTA>T (FRAME_SHIFT, L426, FANCD2); 128204951C>T (MISSENSE, A164T, GATA2); 142178144C>T (MISSENSE, R2425Q, ATR); 142281612A>G (MISSENSE, M211T, ATR); 149238595C>CTTAA (FRAME_SHIFT, L400L, WWTR1); 55972974T>A (MISSENSE, Q472H, KDR); 87690998A>G (MISSENSE, I1527M, PTPN13); 106155185C>G (MISSENSE, P29R, TET2); 126241335C>G (MISSENSE, Q1257E, FAT4); 126372742G>A (MISSENSE, G3524D, FAT4); 187525020A>C (MISSENSE, S3554A, FAT1); 187531022A>G (MISSENSE, V3334A, FAT1); 187538942T>G (MISSENSE, Q2933P, FAT1); 187542755T>C (MISSENSE, N1662S, FAT1); 187629538C>T (MISSENSE, V482I, FAT1); 35861068T>C (MISSENSE, I66T, IL7R); 35871190G>A (MISSENSE, V138I, IL7R); 112176756T>A (MISSENSE, V1822D, APC); 29912028AG>A (FRAME_SHIFT, Q250, HLA-A); 44232920A>G (MISSENSE, V194A, NFKBIE); 44232977G>A (MISSENSE, P175L, NFKBIE); 55229255G>A (MISSENSE, R521K, EGFR); 137612913CTGG>C (CODON_CHANGE_PLUS_CODON_DELETION, TS100S, CREB3L2); 151945007C>T (MISSENSE, G838S, KMT2C); 151945204G>A (MISSENSE, S772L, KMT2C); 151970856T>A (MISSENSE, T316S, KMT2C); 151970931G>A (MISSENSE, L291F, KMT2C); 98209594G>A (MISSENSE, P1315L, PTCH1); 43606856G>A (MISSENSE, D489N, RET); 76781905GGAA>G (CODON_DELETION, E1097, KAT6B); 114925369C>A (MISSENSE, P477T, TCF7L2); 46342259A>AG (FRAME_SHIFT, R508R, CREB3L1); 64572018T>C (MISSENSE, T541A, MEN1); 95825374TTGCTGCTGC>T (CODON_CHANGE_PLUS_CODON_DELETION, QQQQ604Q, MAML2); 108183167A>G (MISSENSE, N1983S, ATM); 128782012C>G (MISSENSE, Q282E, KCNJ5); 6777069TTGC>T (CODON_CHANGE_PLUS_CODON_DELETION, QQ453Q, ZNF384); 48367976C>T (MISSENSE, G1336S, COL2A1); 111884608T>C (MISSENSE, W262R, SH2B3); 121435427G>A (MISSENSE, S487N, HNF1A); 121437382A>G (MISSENSE, S574G, HNF1A); 124824721C>CGCCGCTGCT (CODON_INSERTION, G1829GSSG, NCOR2); 124887058G>GGCT (CODON_INSERTION, P510QP, NCOR2); 133253995G>A (MISSENSE, **A252V**, POLE); 28624294G>A (MISSENSE, T227M, FLT3); 32906480A>C (MISSENSE, N289H, BRCA2); 32911463A>G (MISSENSE, N991D, BRCA2); 103528002G>C (MISSENSE, D1104H, ERCC5); 38061742C>T (MISSENSE, A83T, FOXA1); 62207557C>T (MISSENSE, P582S, HIF1A); 62207575G>A (MISSENSE, A588T, HIF1A); 72991715A>G (MISSENSE, V777A, ZFHX3); 72992667C>G (MISSENSE, E460Q, ZFHX3); 72993831A>C (MISSENSE, S72A, ZFHX3); 7579472G>C (MISSENSE, P72R, TP53); 56492800T>C (MISSENSE, I47V, RNF43); 63554591G>A (MISSENSE, P50S, AXIN2); 1223125C>G (MISSENSE, F354L, STK11); 1619350C>T (MISSENSE, G431S, TCF3); 76937963G>C (MISSENSE, Q929E, ATRX)|",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study identified the POLE A252V missense variant among many cancer\u2011related mutations in hiPSC lines, but observed that its presence did not correlate with malignant tumor formation in the transplanted cells.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6171902",
+            "title": "Tumorigenicity-associated characteristics of human iPS cell lines",
+            "relevance_score": 0.49,
+            "pub_year": 2018,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nSample_ID|Sample Type|NCBI_Build|Hugo_Symbol|Variant_Classification|HGVSp_Short|ANNOTATED|GENE_IN_ONCOKB|VARIANT_IN_ONCOKB|MUTATION_EFFECT|MUTATION_EFFECT_CITATIONS|ONCOGENIC|LEVEL_1|LEVEL_2|LEVEL_3A|LEVEL_3B|LEVEL_4|LEVEL_R1|LEVEL_R2|HIGHEST_LEVEL|HIGHEST_SENSITIVE_LEVEL\nRows:\nGE22|ctDNA|GRCh37|POLE|nonsynonymous SNV|**p.A252V**|True|True|False|Unknown||Unknown|||||||||",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study detected a POLE p.A252V nonsynonymous SNV in circulating tumor DNA but did not provide any interpretation of its clinical relevance.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC11097509",
+            "title": "Combining germline, tissue and liquid biopsy analysis by comprehensive genomic profiling to improve the yield of actionable variants in a real-world cancer cohort",
+            "relevance_score": 0.41,
+            "pub_year": 2024,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nb'\\r\\nSupplementary Table 12: Characteristics of candidate SNPs analyzed in the\\r\\nstudy.\\r\\n SNPa |Pathwayb |Gene |Chr |Positionc |SNP Type |Allelesd |MAF |HWEe |Total\\r\\n N (%) | |rs3219489 |MMR |MUTYH |1 |45331833 |Q324H |G/C |0.27 |0.542\nRows:\n|0.34 |0.926 |1203 (99.8) | |rs1059262\\r\\n|DR |ALKBH2 |12 |109087930 |3\\xef\\xbf\\xbd UTR |T/G |0.18 |0.789 |1203 (99.8) |\\r\\n |rs5744934 |NER |POLE |12 |132643940 |S1396N |A/G |0.17 |1.000 |1200 (99.5)\\r\\n | |rs5744751 |NER |POLE |12 |132677409 |**A252V** |C/T |NA |NA |- | |rs144848\\r\\n|HR |BRCA2 |13 |32332592 |N372H |T/G |0.29 |0.154 |1201 (99.6) | |rs1801406\\r\\n|HR |BRCA2 |13 |32337751 |K1132K |A/G |0.30 |0.634 |1202 (99.7) |\\r\\n |rs1799955 |HR |BRCA2 |13 |32355095 |S2414S |A/G |0.22 |0.484 |1205",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study examined DNA\u2011repair gene polymorphisms and gastric\u2011cancer risk, reporting several significant associations, while the POLE A252V variant was only listed in a supplementary table with no reported association or interpretation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5482622",
+            "title": "Relevance of DNA repair gene polymorphisms to gastric cancer risk and phenotype",
+            "relevance_score": 0.37,
+            "pub_year": 2017,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nSupplementary Table 1 summary of common mutants and subtypes in NSCLC patients with PALB2 mutations,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4 GENE ,gmut_freq,gmut_mutation,smut_freq,smut_mutation\nRows:\nAKT1,0.1125,,0.011764706,\"p.E341K,p.E341D\" POLE,0.10625,\"p.I238F,p.S2176I,p.K210R,**p.A252V**,**p.A252V**,**p.A252V**,p.V2025M,**p.A252V**,**p.A252V**,p.G1535S,p.R1679C,**p.A252V**,**p.A252V**,p.V888A,**p.A252V**,p.V1760M,**p.A252V**,**p.A252V**\",0.058823529,\"p.R685W,p.F1030L,p.M829I,p.G854G,p.Q1341L\"",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study lists POLE A252V among multiple POLE alterations detected in PALB2\u2011mutated NSCLC patients, noting a ~10.6% germline frequency in that subgroup without assigning pathogenic or benign significance.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8787147",
+            "title": "Investigation of PALB2 Mutation and Correlation With Immunotherapy Biomarker in Chinese Non-Small Cell Lung Cancer Patients",
+            "relevance_score": 0.34,
+            "pub_year": 2022,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Supplementary Table S3: List of mutations found in 66 intrahepatic cholangiocarcinomas by high coverage targeted sequencing.\nColumn names:\nSample|Gene|chr|Position|Allele|var_freq|HGVSp|CLIN_SIG\nRows:\n|POLE||133253994-133253995|AA||NP_006222.2:**p.Ala252Val**|-",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study identifies TP53 and ARID1A mutations as independent predictors of poor prognosis in intrahepatic cholangiocarcinoma, while the POLE A252V variant is merely reported without further interpretation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5940669",
+            "title": "Genetic alterations analysis in prognostic stratified groups identified TP53 and ARID1A as poor clinical performance markers in intrahepatic cholangiocarcinoma",
+            "relevance_score": 0.29,
+            "pub_year": 2018,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\n1 Establishment and characterization of 18 hum an colorectal cancer cell lines Soon -Chan Kim1,2,3\u2020, Hyun -Soo Kim1,2\u2020, Jae Hyeon Kim1,2, Nahyun Jeong1,2, Young - Kyoung Shin1,2, Min J ung Kim2,4,5, Ji Won Park2,4,5, Seung -Yong Jeong2,4,5,\nRows:\n(p.Lys541Glu) 1408 c.1408C>T (p.Pro470Ser) CELL LINE POLD1 POLE nt Nt change Effects Nt Nt change Effects (a.a change) (a.a change) SNU -1566 356 c.356G>A 755 c.755C>T (p.Arg119His) (**p.Ala252Val**) 16 SNU -1983 1036 c.1036delG 6149_6151 c.6149_6151delTCT (p.Glu346fs) (p.Phe2050del) SNU -2172 356 c.356G>A Wt (p.Arg119His) SNU -2297 356 c.356G>A Wt (p.Arg119His) SNU -2303 wt 674 c.674C>T\nSNU -2303 wt 674 c.674C>T (p.Ala225Val) SNU -2353B Wt Wt SNU -2359 Wt Wt SNU -2373B Wt Wt SNU -2407 Wt Wt SNU -2423 356 c.356G>A Wt (p.Arg119His) SNU -2431 Wt Wt SNU -2465 Wt 755 c.755C>T (**p.Ala252Val**) SNU -2493 Wt Wt SNU -2536C 356 c.356G>A Wt (p.Arg119His) SNU -2621B 665 c.665C>T Wt (p.Pro222Leu) 2856 c.2856delG (p.Thr953fs) 17 SNU -NCC -61 Wt Wt SNU -NCC -81 356 c.356G>A WT (p.Arg119His) SNU",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study reports the presence of the POLE A252V variant in two colorectal cancer cell lines without offering any interpretation of its pathogenicity or functional impact.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7176734",
+            "title": "Establishment and characterization of 18 human colorectal cancer cell lines",
+            "relevance_score": 0.27,
+            "pub_year": 2020,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\n#CHROM,POS,ID,REF,ALT,QUAL,FILTER,INFO_1,INFO_2,Allele (or ALT),Annotation,Putative_impact,Gene Name,Gene ID,Feature type,Feature ID,Transcript biotype,Rank / total,HGVS.c,HGVS.p,cDNA_position / cDNA_len,CDS_position / CDS_len,Protein_position /\nRows:\n2;BaseQRankSum=2.14;DB;DP=28;ExcessHet=3.0103;FS=0.000;MLEAC=1;MLEAF=0.500;MQ=60.00;MQRankSum=0.00;QD=16.41;ReadPosRankSum=0.389;SOR=0.551;ANN=A,missense_variant,MODERATE,POLE,ENSG00000177084,transcript,ENST00000320574.9,protein_coding,18111,c.755C>T,**p.Ala252Val**,799/7840,755/6861,252/2286,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,",
+                    "mention_type": "computational",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study generated urine\u2011derived bladder cancer organoids and reported the presence of a POLE A252V missense variant among the genomic alterations identified in the samples.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10844626",
+            "title": "Urine-derived bladder cancer organoids (urinoids) as a tool for cancer longitudinal response monitoring and therapy adaptation",
+            "relevance_score": 0.19,
+            "pub_year": 2023,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nGene|Chrom|Pos|rsID|Ref|Alt|HGVS|Function|CLINSIG|CLNDBN|SIFT_score|SIFT_pred|Polyphen2_HDIV_score|Polyphen2_HDIV_pred|Polyphen2_HVAR_score|Polyphen2_HVAR_pred|MutationTaster_score|MutationTaster_pred|gnomAD_genome_ALL|gnomAD_genome_AFR|gnomAD_genome_AMR|gnomAD_genome_ASJ|gnomAD_genome_EAS|gnomAD_genome_FIN|gnomAD_genome_NFE|gnomAD_genome_OTH\nRows:\nPOLE|chr12||rs5744751|G|A|NM_006231.3:c.755C>T(**p.Ala252Val**)|nonsynonymous_SNV|benign|Hereditary_cancer-predisposing_syndrome||T||B||B||P||||||||",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The article includes a supplementary entry that classifies the POLE A252V variant as benign.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6439399",
+            "title": "Deleterious Mutations in DNA Repair Gene FANCC Exist in BRCA1/2-Negative Chinese Familial Breast and/or Ovarian Cancer Patients",
+            "relevance_score": 0.17,
+            "pub_year": 2019,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Table S8. Additional protein-changing SNVs in OncoKB genes which were significantly associated with differences in the NCI-60 cell line response to the natural products\nColumn names:\nGene|Variant|NSC|FDR adjusted p|Number of cell lines with variant|Number of cell lines without variant|t-statistic|mean log(GI50) with variant|mean log(GI50) without variant|Variant type|1000 genomes|Natural product or compound name\nRows:\nPOLE|**A252V**||||||||Missense||",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article reports that the POLE A252V missense variant is significantly associated with altered response of NCI-60 cancer cell lines to various natural product compounds.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7858122",
+            "title": "Molecular genomic features associated with in vitro response of the NCI-60 cancer cell line panel to natural products",
+            "relevance_score": 0.15,
+            "pub_year": 2020,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nStudy of Origin,Sample ID,Cancer Type,Cancer Type Detailed,Protein Change,Annotation,Functional Impact,Mutation Type,Variant Type,Copy #,COSMIC,MS,VS,Center,Chromosome,Start Pos,End Pos,Ref,Var,HGVSg,HGVSc,Allele Freq (T),Allele Freq (N),Variant\nRows:\nof North Carolina,EY,Uterus,Endometrioid Endometrial Adenocarcinoma,69.0, \"Uterine Corpus Endometrial Carcinoma (TCGA, PanCancer Atlas)\",TCGA-EY-A1GI-01,Endometrial Cancer,Uterine Endometrioid Carcinoma,**A252V**,OncoKB: NA;CIViC: NA;MyCancerGenome: not present;CancerHotspot: no;3DHotspot: no,\"MutationAssessor: impact: low, score: 1.825;SIFT: impact: deleterious, score: 0.01;Polyphen-2: impact: probably_damaging, score:",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study identifies DCHS1 as a novel prognostic and diagnostic biomarker associated with immune infiltration, EMT, and therapeutic response in endometrial cancer.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC11312386",
+            "title": "Dachsous cadherin related 1 (DCHS1) is a novel biomarker for immune infiltration and epithelial-mesenchymal transition in endometrial cancer via pan-cancer analysis",
+            "relevance_score": 0.06,
+            "pub_year": 2024,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: 0|0|Currently favored sampling practices for tumor sequencing can produce optimal results in the clinical setting\nRows:\n194|10|**p.Ala252Val**;",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The paper compares single, local, and multi\u2011regional tumor sampling strategies and recommends high\u2011coverage sequencing of a single run as the most practical clinical approach, without providing specific insights on the POLE A252V variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7463012",
+            "title": "Currently favored sampling practices for tumor sequencing can produce optimal results in the clinical setting",
+            "relevance_score": 0.03,
+            "pub_year": 2020,
+            "data_sources": [
+                "suppl"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 2151,
+            "output": 793
+        },
+        {
+            "input": 2335,
+            "output": 882
+        },
+        {
+            "input": 1671,
+            "output": 494
+        },
+        {
+            "input": 2115,
+            "output": 739
+        },
+        {
+            "input": 2340,
+            "output": 597
+        },
+        {
+            "input": 3191,
+            "output": 778
+        },
+        {
+            "input": 2046,
+            "output": 544
+        },
+        {
+            "input": 2361,
+            "output": 471
+        },
+        {
+            "input": 2418,
+            "output": 819
+        },
+        {
+            "input": 1937,
+            "output": 375
+        },
+        {
+            "input": 2466,
+            "output": 640
+        },
+        {
+            "input": 1792,
+            "output": 276
+        },
+        {
+            "input": 2003,
+            "output": 590
+        },
+        {
+            "input": 2271,
+            "output": 545
+        },
+        {
+            "input": 2034,
+            "output": 704
+        },
+        {
+            "input": 1544,
+            "output": 368
+        },
+        {
+            "input": 2209,
+            "output": 638
+        },
+        {
+            "input": 1987,
+            "output": 235
+        },
+        {
+            "input": 1999,
+            "output": 377
+        },
+        {
+            "input": 2050,
+            "output": 315
+        },
+        {
+            "input": 2316,
+            "output": 329
+        },
+        {
+            "input": 1767,
+            "output": 464
+        },
+        {
+            "input": 2574,
+            "output": 234
+        },
+        {
+            "input": 2150,
+            "output": 263
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 7819,
+        "output": 1477
+    },
+    "total_time": 70.85
+}

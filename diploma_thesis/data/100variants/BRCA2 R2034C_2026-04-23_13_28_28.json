@@ -1,0 +1,1732 @@
+{
+    "before_pruning": {
+        "articles_in_total": 92,
+        "only_medline_count": 2,
+        "only_pmc_count": 29,
+        "only_suppl_count": 60,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 50,
+        "only_medline_count": 2,
+        "only_pmc_count": 26,
+        "only_suppl_count": 21,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "variant": "BRCA2 R2034C",
+    "time_to_process_articles": 25.35,
+    "context_length": 139571,
+    "after_removal": {
+        "articles_in_total": 42,
+        "only_medline_count": 2,
+        "only_pmc_count": 18,
+        "only_suppl_count": 21,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "12215251",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 52,
+            "abstract_length": 1434,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "37020472",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 107,
+            "abstract_length": 1321,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3245050",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 142,
+            "abstract_length": 1241,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "determined because algorithms only predict the impact of missense mutations brca2 variant cdna level c 6100c t c 7008 62a g c 9257 16t c variant protein level p arg2034cys \u2013 \u2013 reported in umd brca1"
+            ],
+            "number_of_paragraphs": 5,
+            "paragraphs_lengths": [
+                609,
+                1104,
+                752,
+                943,
+                202
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10039042",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 128,
+            "abstract_length": 1736,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    2976
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4504066",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 91,
+            "abstract_length": 2478,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 3,
+            "paragraphs_lengths": [
+                433,
+                1618,
+                890
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9319682",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 140,
+            "abstract_length": 1510,
+            "number_of_unmatched_snippets": 2,
+            "unmatched_snippets": [
+                "c 451c g and c 376 1g a atm c 6100c t and chek2 c 846 1g c three of seventeen 17 6 identified lp p pathogenic variants were missense four nonsense 23 5 variants three frameshift",
+                "risk for bc including palb2 c 1451t g tp53 c 451c g and c 376 1g a atm c 6100c t and chek2 c 846 1g c in addition to brca1 2 palb2 is the most important gene involved in bc"
+            ],
+            "number_of_paragraphs": 3,
+            "paragraphs_lengths": [
+                1982,
+                193,
+                185
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7491540",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 100,
+            "abstract_length": 2148,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1714
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11211533",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 112,
+            "abstract_length": 1982,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    386
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3662577",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 118,
+            "abstract_length": 2035,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1057
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5485501",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 149,
+            "abstract_length": 1501,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1900
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10628129",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 107,
+            "abstract_length": 1480,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    718
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11592649",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 129,
+            "abstract_length": 1372,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                319
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7962399",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 125,
+            "abstract_length": 1832,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                480
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8325425",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 132,
+            "abstract_length": 1803,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    646
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8893798",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 87,
+            "abstract_length": 1605,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1397
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5819082",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 88,
+            "abstract_length": 1891,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                416
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7011249",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 156,
+            "abstract_length": 2265,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                431
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8160182",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 102,
+            "abstract_length": 1422,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    1177
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10067552",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 106,
+            "abstract_length": 1277,
+            "number_of_unmatched_snippets": 2,
+            "unmatched_snippets": [
+                "p arg2034cys 0 32 0 07 0 019 p thr2250ala 0 012 p ala2351pro 0 36 0 01 0 02 0 1 0 23 0 09 0 03 the homology modeling scores as predicted by the swiss model server are summarized in table 4 and static",
+                "3 21 14 9 73 52 0 7 gly1771asp 3 21 14 9 73 52 0 7 arg2034cys 1 98 0 81 63 0 51 thr2250ala 1 98 0 81 63 0 51 ala2351pro 3 21 14 9 73 52 0 7 static images of 3d models built using swiss model server no"
+            ],
+            "number_of_paragraphs": 5,
+            "paragraphs_lengths": [
+                936,
+                541,
+                810,
+                199,
+                201
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6631909",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 112,
+            "abstract_length": 1788,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    702
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11372371",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 101,
+            "abstract_length": 253,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    241
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7838394",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 118,
+            "abstract_length": 1322,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    1114
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8256441",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 79,
+            "abstract_length": 2133,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    520
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6327376",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 134,
+            "abstract_length": 2203,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                2
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    5287,
+                    29
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9633799",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 136,
+            "abstract_length": 1408,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    713
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6079068",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 109,
+            "abstract_length": 1367,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    227
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10772761",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 139,
+            "abstract_length": 1606,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                803,
+                1143
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11442673",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 120,
+            "abstract_length": 871,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    529
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC2771044",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 139,
+            "abstract_length": 1212,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1940
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6659802",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 74,
+            "abstract_length": 1306,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    561
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9971806",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 85,
+            "abstract_length": 2011,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    697
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7973372",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 146,
+            "abstract_length": 2773,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    29
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5140019",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 102,
+            "abstract_length": 1367,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                419
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9048643",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 81,
+            "abstract_length": 1393,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    581
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC2724545",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 104,
+            "abstract_length": 1755,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                2031
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC2570488",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 63,
+            "abstract_length": 1950,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    652
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4985612",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 133,
+            "abstract_length": 1424,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    769
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6943158",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 134,
+            "abstract_length": 2430,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1210
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC2824809",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 155,
+            "abstract_length": 3229,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    607
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8191791",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 121,
+            "abstract_length": 1379,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    765
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6180441",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 78,
+            "abstract_length": 1849,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                2084,
+                1769
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    277
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8472524",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 107,
+            "abstract_length": 1438,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                825
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        }
+    ],
+    "narrative_summary": "The BRCA2 missense change c.6100C>T (p.Arg2034Cys, R2034C) is a rare variant located in exon 11 of the DNA\u2011repair gene BRCA2, a locus implicated in hereditary breast and ovarian cancer. Early epidemiological work reported that the variant was not observed in a control cohort and was judged non\u2011deleterious on the basis of population prevalence, co\u2011segregation and biochemical considerations [12215251]. Subsequent clinical databases and cohort studies have repeatedly classified R2034C as a neutral or likely benign polymorphism. The French UMD\u2011BRCA2 database described it as a neutral variant based on co\u2011occurrence with pathogenic mutations [PMC3245050]; Brazilian population\u2011based analyses listed it as benign or likely benign in multiple panels [PMC7011249, PMC8256441, PMC9633799]; and a Mexican cohort similarly recorded a benign ClinVar annotation (rs1799954) with supporting expert\u2011panel review [PMC6327376].\n\nIn contrast, a Tunisian series of breast/ovarian cancer patients reported the variant as pathogenic, and an oncologist\u2011focused guideline placed R2034C in a level\u20111/2 sensitivity category for PARP\u2011inhibitor therapy, implying clinical actionability [PMC7962399, PMC6659802]. A Sardinian familial\u2011cancer study labeled the variant of uncertain significance, reflecting limited segregation data [PMC2724545].\n\nNo direct functional assays of the R2034C protein have been published; the available evidence consists of in silico modeling and protein\u2011property predictions. Studies of somatic BRCA2 variants in malignant mesothelioma reported SIFT scores \u22650.03 and PolyPhen scores \u22640.899, interpreting the change as tolerated or benign, and noted only modest effects on predicted intrinsic disorder [PMC10067552]. An independent in silico survey classified the variant as benign by most tools but noted a PolyPhen\u20112 score of 0.876 that could be interpreted as possibly damaging, and a low MutPred2 score (\u22640.180) [PMC8160182]. Conversely, a Bulgarian high\u2011risk cohort applied multiple algorithms and concluded that all predictive programs indicated a deleterious effect for R2034C [PMC4504066].\n\nPopulation data confirm that the allele is rare but present in diverse ancestries. The variant appears at a minor allele frequency of ~0.003 in gnomAD and in Brazilian and Mexican cohorts [PMC11372371, PMC9633799]; it is reported at low frequency in Kazakh and Taiwanese datasets and was omitted from further analysis due to its rarity [PMC10772761, PMC8256441].\n\nOverall, the preponderance of clinical and population evidence supports a benign or likely benign interpretation for BRCA2 R2034C, with multiple independent databases and cohort studies classifying it as neutral. Computational predictions are mixed, and isolated reports from specific populations describe pathogenicity, but these are not corroborated by segregation or functional data. Consequently, the variant is best regarded as a non\u2011deleterious polymorphism, though limited contradictory reports underscore residual uncertainty that may warrant re\u2011evaluation as additional data become available.",
+    "structured_summary": {
+        "overall_pathogenicity": "benign",
+        "pathogenicity_counts": {
+            "supports benignity": 12,
+            "supports pathogenicity": 4,
+            "uncertain": 2
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Many missense variants identified in BRCA1 and BRCA2, two genes responsible for the majority of hereditary breast and ovarian cancer, are of unclear clinical significance. Characterizing the significance of such variants is important for medical management of patients in whom they are identified. The aim of this study was to characterize eight of the most common reported missense mutations in BRCA1 and BRCA2 occurring in patients tested for hereditary risk of breast and ovarian cancers. The prevalence of each variant in a control population, co-segregation of the variant with cancer within families, location of the variant within the gene, the nature of the amino acid substitution and conservation of the wild-type amino acid among species were considered. In a control population, the BRCA1 variants M1652I, R1347G, and S1512I, were each observed at a frequency of 4.08%, 2.04%, and 2.04%, respectively, and the BRCA2 variants A2951T, V2728I, and D1420Y, were seen at 1.02%, 0.68%, and 0.34%, respectively. Although the BRCA2 variants T598A and **R2034C** were not seen in this group of controls, other clinical and published observations indicate that these variants are not deleterious. Based on epidemiological and biological criteria, we therefore conclude that the BRCA1 missense mutations R1347G, S1512I and M1652I, and the BRCA2 missense mutations T598A, D1420Y, **R2034C**, V2728I, and A2951T, are not deleterious mutations.",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study concludes that the BRCA2 R2034C missense variant is not deleterious (benign).', ",
+            "uncertainties_or_limitations": null,
+            "article_id": "12215251",
+            "title": "Characterization of common BRCA1 and BRCA2 variants.",
+            "relevance_score": 1.0,
+            "pub_year": 2002,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Objectives: The aim of this study is to analyze the prevalence of somatic mutations in BRCA1 and BRCA2 in malignant mesothelioma and their putative impact on protein properties. Methods: Eighteen cases of malignant mesothelioma were retrieved from the archives and for next generation sequencing analysis of BRCA1 and BRCA2 genes. Variants were analyzed using Ensembl VEP17, Polyphen 2.0 software, SIFT software, MutpredV2, and SWISS-MODEL homology-modeling pipeline server. Results: BRCA2 variants were found in significantly higher percentage (22%) of cases (p=0.02). Five missense variants were identified. These were p.A2351P, p.T2250A, p.A895V, pG1771D, and **p.R2034C**. The SIFT scores of all except one were >= 0.03. The Polyphen scores of these four alterations were <=0.899. In case of p.A2315, the SIFT score was 0.01, while the Polyphen 2 score was 0.921. MutPred2 scores were <=0.180 for all. Loss of intrinsic disorder was predicted (Pr=0.32, p=0.07) for **p.R2034C**, while gain of intrinsic disorder was predicted for p.A2351P (Pr=0.36, p=0.01) and p.G1771D (Pr=0.34, p=0.02). Conclusions: BRCA2 somatic variants were identified in 22% cases of malignant mesotheliomas in this study. The variants localize more frequently to the disordered regions of the protein and are predicted to affect the level of disorder.",
+                    "mention_type": "computational",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study found somatic BRCA2 variants in 22% of malignant mesothelioma cases, including R2034C, and reported computational predictions suggesting possible effects on protein disorder but without definitive pathogenicity interpretation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "37020472",
+            "title": "A study of somatic BRCA variants and their putative effect on protein properties in malignant mesothelioma.",
+            "relevance_score": 0.68,
+            "pub_year": 2023,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Most UVs were observed only once (517/704 in BRCA1 and 738/1092 in BRCA2) (Table 1), while some were recurrent, including BRCA1 c.5075-53C>T (IVS17-53C>T, SNP rs8176258) with 66 entries, c.5277+48_59dup (IVS20+48_59dup, 47 entries) and BRCA2 c.7008-62A>G (IVS13-62A>G, 69 entries), c.9257-16T>C (IVS24-16T>C, SNP rs11571818, 50 entries) and **c.6100C>T** (**p.Arg2034Cys**, exon 11, SNP **rs1799954**, 85 entries).",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "...UVs to be classified as neutral and polymorphism (Table 4). These BRCA2 UVs, described in the BIC database, were reported in our databases as co-occurring with causal mutations: **c.6100C>T** **p.Arg2034Cys**, exon 11, 137 records, 16 in trans (9 distinct causal mutations)], c.7008-62A>G (IVS13-62A>G, 106 records, 6 distinct causal mutations in trans), and c.9257-16T>C IVS24-16T>C, 55 records, 8 in trans (4 distinct causal mutations)]. This suggests that these variants do not sufficiently alter BRCA2 function to predispose to cancer. The status of the BRCA2 **c.6100C>T** variant differed between the algorithms: it was predicted to be pathogenic by the UMD-Predictor tool and neutral by SIFT, Align-GVGD, PolyPhen and co-occurrence analysis. Moreover, **c.6100C>T** has been described as a polymorphism in a Spanish population of cancer families and patients. We classified this variant as a neutral variant. Our classification is reported in the UMD-[Gene:...",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "As in other populations, some variants are recurrent in the French population. Sixteen recurrent causal mutations in BRCA1 and BRCA2 were reported more than eight times each. Some UVs were also recurrent. Three were most frequent in BRCA2, namely c.7008-62A>G (106 families), c.9257-16T>C (55 families) and **c.6100C>T** (137 families). These three variants could be geographic polymorphisms, or specific to the French population. Detection of c.7008-62A>G and c.9257-16T>C could also be variable according to the positions of the primers used to amplify the region and the frequency differs from one database to another due to the selection of PCR primers.",
+                    "mention_type": "population",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "We used co-occurrence data and predictive algorithms to classify three BRCA2 variants (Table 4). The French consortium uses these data to classify UVs in the UMD-BRCA1/BRCA2 databases. For example, like Goldgar et al., we classified the BRCA2 **c.6100C>T** (**p.Arg2034Cys**) variant as a neutral variant. In our database, this **c.6100C>T** variant was associated with eight distinct causal mutations strongly suggesting that it is not causal. However, the status of the BRCA2 **c.6100C>T** variant differed between the algorithms: SIFT score was 0.07, corresponding to borderline pathogenicity (0.05). The UMD Predictor tool contained the score SIFT but also other scores. The final conclusion of neutrality was based on a combination of prediction programs with co-occurrence data. We discuss the contribution of the 3D structure in Supplementary Data.",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "determined because algorithms only predict the impact of missense mutations. BRCA2 Variant (cDNA level) **c.6100C>T** c.7008-62A>G c.9257-16T>C Variant (protein level) **p.Arg2034Cys** \u2013 \u2013 Reported in UMD-BRCA1",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article provides multiple lines of evidence (co\u2011occurrence, population frequency, and computational predictions) and concludes that the BRCA2 p.Arg2034Cys (R2034C) variant is a neutral/benign variant rather than a pathogenic mutation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC3245050",
+            "title": "Description and analysis of genetic variants in French hereditary breast and ovarian cancer families recorded in the UMD-BRCA1/BRCA2 databases",
+            "relevance_score": 1.0,
+            "pub_year": 2011,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nSupplemental Figure 1. SBS3 exposures with the threshold of 0.05 (dashed line) (A) and microhomology deletions (B) in thoracic patients with and without smoking signature, SBS4. SBS3 exposures (C) and HRD score (D) in tumours with previous platinum\nRows:\ncohort gene position HGVS- cDNA HGVS- protein dbsnp GI BRCA2 32911557 c.3065A>G p.His1022Arg GI BRCA2 32914509 c.6017G>C p.Ser2006Thr rs144784912 C) cohort gene position HGVS- cDNA HGVS- protein dbsnp GI BRCA2 32914592 **c.6100C>T** **p.R2034C** **rs1799954** GI BRCA2 32930598 c.7469T>C p.Ile2490Thr rs11571707 GI BRCA2 32972884 c.10234A>G p.Ile3412Val rs1801426 GI BRCA2 32972884 c.10234A>G p.Ile3412Val rs1801426 GI BRCA2 32930663 c.7534C>T p.Leu2512Phe\nposition HGVS- cDNA HGVS- protein dbsnp GI BRCA2 32911557 c.3065A>G p.His1022Arg GI BRCA2 32914509 c.6017G>C p.Ser2006Thr rs144784912 C) cohort gene position HGVS- cDNA HGVS- protein dbsnp GI BRCA2 32914592 **c.6100C>T** **p.R2034C** **rs1799954** GI BRCA2 32930598 c.7469T>C p.Ile2490Thr rs11571707 GI BRCA2 32972884 c.10234A>G p.Ile3412Val rs1801426 GI BRCA2 32972884 c.10234A>G p.Ile3412Val rs1801426 GI BRCA2 32930663 c.7534C>T p.Leu2512Phe rs80358980 GI\nHGVS- cDNA HGVS- protein dbsnp GI BRCA2 32911557 c.3065A>G p.His1022Arg GI BRCA2 32914509 c.6017G>C p.Ser2006Thr rs144784912 C) cohort gene position HGVS- cDNA HGVS- protein dbsnp GI BRCA2 32914592 **c.6100C>T** **p.R2034C** **rs1799954** GI BRCA2 32930598 c.7469T>C p.Ile2490Thr rs11571707 GI BRCA2 32972884 c.10234A>G p.Ile3412Val rs1801426 GI BRCA2 32972884 c.10234A>G p.Ile3412Val rs1801426 GI BRCA2 32930663 c.7534C>T p.Leu2512Phe rs80358980 GI BRCA2\nBRCA2 32930598 c.7469T>C p.Ile2490Thr rs11571707 GI BRCA2 32972884 c.10234A>G p.Ile3412Val rs1801426 GI BRCA2 32972884 c.10234A>G p.Ile3412Val rs1801426 GI BRCA2 32930663 c.7534C>T p.Leu2512Phe rs80358980 GI BRCA2 32914592 **c.6100C>T** **p.Arg2034Cys** **rs1799954** GI BRCA2 32912684 c.4192G>C p.Ala1398Pro GI BRCA2 32913070 c.4578A>G p.Thr1526= rs202022822 GI BRCA2 32893344 c.198G>A p.Gln66= rs28897700 GI BRCA1 41246130 c.1418A>T p.Asn473Ile rs80357057 GI\nc.7469T>C p.Ile2490Thr rs11571707 GI BRCA2 32972884 c.10234A>G p.Ile3412Val rs1801426 GI BRCA2 32972884 c.10234A>G p.Ile3412Val rs1801426 GI BRCA2 32930663 c.7534C>T p.Leu2512Phe rs80358980 GI BRCA2 32914592 **c.6100C>T** **p.Arg2034Cys** **rs1799954** GI BRCA2 32912684 c.4192G>C p.Ala1398Pro GI BRCA2 32913070 c.4578A>G p.Thr1526= rs202022822 GI BRCA2 32893344 c.198G>A p.Gln66= rs28897700 GI BRCA1 41246130 c.1418A>T p.Asn473Ile rs80357057 GI BRCA2 32914236\np.Ile2490Thr rs11571707 GI BRCA2 32972884 c.10234A>G p.Ile3412Val rs1801426 GI BRCA2 32972884 c.10234A>G p.Ile3412Val rs1801426 GI BRCA2 32930663 c.7534C>T p.Leu2512Phe rs80358980 GI BRCA2 32914592 **c.6100C>T** **p.Arg2034Cys** **rs1799954** GI BRCA2 32912684 c.4192G>C p.Ala1398Pro GI BRCA2 32913070 c.4578A>G p.Thr1526= rs202022822 GI BRCA2 32893344 c.198G>A p.Gln66= rs28897700 GI BRCA1 41246130 c.1418A>T p.Asn473Ile rs80357057 GI BRCA2 32914236 c.5744C>T",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article investigates HRD signatures in GI and thoracic cancers and reports BRCA2 R2034C as one of the germline variants identified, without providing specific pathogenicity or clinical interpretation for this variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10039042",
+            "title": "Homologous recombination deficiency signatures in gastrointestinal and thoracic cancers correlate with platinum therapy duration",
+            "relevance_score": 1.0,
+            "pub_year": 2023,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...> G N991D p.Asn991Asp - missense 0.050 185 - - 0.031 11 c.3515C > T S1172L p.Ser1172Leu - missense 0.002 185 0.00 96 0.001 11 c.5744C > T T1915M p.Thr1915Met - missense 0.017 200 0.016 96 0.032 11 c.**6100C > T** **R2034C** **p.Arg2034Cys** - missense 0.002 200 - - 0.018 11 c.6322C > T R2108C p.Arg2108Cys - missense 0.002 200 - - 0.001 15 c.7469 T > C I2490T p.Ile2490Thr Helical Domain missense 0.002 185 - - 0.000 23 c.9104A > C Y3035S...",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Exon HGVS nomenclature BIC nomenclature BIC UMD POLYPHEN2 SIFT PROVEAN BRCA1 5 c.139 T > G C47G unknown - probably damaging damaging neutral 8 c.536A > G Y179C unknown neutral damaging tolerated neutral 11 c.736 T > G L246V unknown neutral probably damaging tolerated neutral 11 c. 1067A > G Q356R unknown neutral probably damaging damaging deleterious 11 c.1456 T > C F486L unknown neutral benign tolerated neutral 11 c.1648A > C N550H unknown neutral probably damaging damaging deleterious 11 c.2077G > A D693H no neutral benign tolerated deleterious 11 c.2612C > T P871L no neutral benign tolerated neutral 11 c.3113A > G E1038G no neutral possibly damaging damaging neutral 11 c.3119G > A S1040N unknown neutral probably damaging damaging neutral 11 c.3548A > G K1183R no neutral benign tolerated neutral 11 c. 3999 T > C V1333A - - possibly damaging tolerated neutral 16 c.4837A > G S1613C no neutral benign damaging neutral 16 c.4956G > A M1652I unknown neutral benign tolerated neutral BRCA2 10 c.865A > C N289H no neutral benign tolerated neutral 10 c.978C > A S326R no neutral benign tolerated neutral 10 c.1114A > C H372N no neutral benign tolerated neutral 11 c.2971A > G N991D no polymorphism benign tolerated neutral 11 c.3515C > T S1172L unknown likely neutral probably damaging damaging deleterious 11 c.5744C > T T1915M no neutral benign tolerated neutral 11 c.**6100C > T** **R2034C** unknown neutral probably damaging tolerated deleterious 11 c.6322C > T R2108C unknown UV benign tolerated neutral 15 c.7469 T > C I2490T no UV benign tolerated neutral 23 c.9104A > C Y3035S unknown UV benign damaging Neutral",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "We have identified in total 50 VUSs in both genes: 24 in BRCA1 and 26 in BRCA2, of which 24 were missense variants (Table 5). The in silico analysis suggested a possible deleterious effect of only five missense variants with all prediction programs (c.1067A > G, c.1648A > C and c.3113A > G in BRCA1 and 3515C > T and c.**6100C > T** in BRCA2) (Table 6). Another two: 139 T > G and c.536A > G in BRCA1 appeared to be clinically important according to POLYPHEN 2 and SIFT only (Table 6). One new BRCA1 missense variant c.3999 T > C was observed in a patient BC20 with BBC and early onset in the absence of other pathogenic mutations, but the in silico analysis did not predict a possible pathogenic effect (Table 6).",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The article reports the BRCA2 R2034C missense variant as a rare finding in the Bulgarian cohort and notes computational predictions that it may be deleterious, but provides no clinical or functional classification.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC4504066",
+            "title": "Spectrum and frequencies of BRCA1/2 mutations in Bulgarian high risk breast cancer patients",
+            "relevance_score": 0.74,
+            "pub_year": 2015,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Gene Exon BIC nomenclature HGVS nomenclature Predicted effect No families Reference BRCA1 3 234T>A c.115T>A p.Cys39Ser 1 BIC, LOVD 5 318G>T c.199G>T p.Asp67Tyr 2 BIC, LOVD 6 c.287A>C p.Asp96Ala 1 Novel 10 c.656A>T p.Asp219Val 1 Novel 11 1186A>G c.1067A>G p.Gln356Arg 1 BIC, LOVD 11 4158A>G c.4039A>G p.Arg1347Gly 1 BIC, LOVD 15 4654G>T c.4535G>T p.Ser1512Ile 1 BIC, LOVD 16 5075A>A c.4956G>A p.Met1652Ile 2 BIC, LOVD 17 5173C>T c.5054C>T p.Thr1685Ile 1 BIC, LOVD 19 5273G>T c.5154G>T p.Trp1718Cys 2 BIC, LOVD 21 IVS20-6_IVS20-4del c.5278-6_5278-4del No effect 1 Campos et al. 22 IVS21-8C>T c.5333-8C>T Unkown 1 BIC BRCA2 3 IVS2-T7>A) c.68-7T>A p.Asp23_Leu105del 2 BIC, LOVD 10 c.1714G>A p.Val572Ile 1 UMD-BRCA2 11 6110G>A c.5882G>A p.Ser1961Asn 1 BIC 11 6328C>T **c.6100C>T** **p.Arg2034Cys** 2 BIC, LOVD 11 6976A>G c.6748A>G p.Thr2250Ala 1 BIC, LOVD 11 c.6847C>A p.Pro2283Thr 1 Novel 18 c.8023A>G p.Ile2675Val 1 UMD-BRCA2, LOVD 20 8731T>C c.8503T>C p.Ser2835Pro 2 BIC, LOVD 22 9078G>T c.8850G>T p.Lys2950Asn 1 BIC, LOVD 27 10204A>T c.9976A>T p.Lys3326* 2 BIC, LOVD",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study characterizes the BRCA1/2 mutation spectrum in high\u2011risk families from Asturias, identifying several novel pathogenic mutations and describing their geographic distribution.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC3662577",
+            "title": "Mutational analysis of BRCA1 and BRCA2 in hereditary breast and ovarian cancer families from Asturias (Northern Spain)",
+            "relevance_score": 0.54,
+            "pub_year": 2013,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Gene HGVSc (hg19) HGVSp BRCA2 NM_000059.3:c.-26G>A - NM_000059.3:c.425+67A>C - NM_000059.3:c.681+56C>T - NM_000059.3:c.865A>C NP_000050.2:p.Asn289His NM_000059.3:c.1365A>G NM_000059.3:c.1365A>G(p.Ser455=) NM_000059.3:c.1910-74T>C - NM_000059.3:c.1910-51G>T - NM_000059.3:c.2229T>C NM_000059.3:c.2229T>C(p.His743=) NM_000059.3:c.2971A>G NP_000050.2:p.Asn991Asp NM_000059.3:c.3396A>G NM_000059.3:c.3396A>G(p.Lys1132=) NM_000059.3:c.3807T>C NM_000059.3:c.3807T>C(p.Val1269=) NM_000059.3:c.4563A>G NM_000059.3:c.4563a>G(p.Leu1521=) NM_000059.3:c.4585G>A NP_000050.2:p.Gly1529Arg NM_000059.3:c.5744C>T NP_000050.2:p.Thr1915Met NM_000059.3:**c.6100C>T** NP_000050.2:**p.Arg2034Cys** NM_000059.3:c.6322C>T NP_000050.2:p.Arg2108Cys NM_000059.3:c.6513G>C NM_000059.3:c.6513G>C(p.Val2171=) *NM_000059.3:c.6988A>G NP_000050.2:p.Ile2330Val NM_000059.3:c.7008-62A>G - NM_000059.3:c.7242A>G NM_000059.3:c.7242A>G(p.Ser2414=) NM_000059.3:c.7397T>C NP_000050.2:p.Val2466Ala NM_000059.3:c.7806-14T>C - NM_000059.3:c.8482A>G NP_000050.2:p.Ile2828Val NM_000059.3:c.8518A>G NP_000050.2:p.Ile2840Val NM_000059.3:c.8755-66T>C - BRCA1 NM_007294.3:c.5266dupC NP_009225.1:p.Gln1756ProfsTer74 NM_007294.3:c.5095C>T NP_009225.1:p.Arg1699Trp NM_007294.3:c.4837A>G NP_009225.1:p.Ser1613Gly NM_007294.3:c.4535G>T NP_009225.1:p.Ser1512Ile NM_007294.3:c.4308T>C NM_007294.3:c.4308T>C(p.Ser1436) NM_007294.3:c.3916_3917delTT NP_009225.1:p.Leu1306AspfsTer23 NM_007294.3:c.3548A>G NP_009225.1:p.Lys1183Arg NM_007294.3:c.3119G>A NP_009225.1:p.Ser1040Asn NM_007294.3:c.3113A>G NP_009225.1:p.Glu1038Gly NM_007294.3:c.2612C>T NP_009225.1:p.Pro871Leu NM_007294.3:c.2311T>C NM_007294.3:c.2311T>C(p.Leu771) NM_007294.3:c.2082C>T NM_007294.3:c.2082C>T(p.Ser694) NM_007294.3:c.2077G>A NP_009225.1:p.Asp693Asn NM_007294.3:c.1067A>G NP_009225.1:p.Gln356Arg NM_007294.3:c.736T>G NP_009225.1:p.Leu246Val NM_007294.3:c.442-34C>T - NM_007294.3:c.-19-115T>C -",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The paper reports a validated Ion Torrent\u2011based workflow for detecting BRCA1/2 mutations, showing high sensitivity and concordance with reference testing.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5485501",
+            "title": "Development and validation of a variant detection workflow for BRCA1 and BRCA2 genes and its clinical application based on the Ion Torrent technology",
+            "relevance_score": 0.54,
+            "pub_year": 2017,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Variants Gene Exon AA change Clinical importance (BIC) Functional prediction PolyPhen SIFT Mutation taster c.293G > C BRCA1 5 G98A Unknown PD Del DC c.397 C > T // 6 R 133C // PD Del DC c.536A > G // 7 Y179C // PD Del DC c.1067A > G // 11 Q356R // PD D Pol c.1648A > C // 11 N550H NA PD D Pol c.5117G > C // 17 G1706A // B Del DC c.**6100 C > T** BRCA2 11 **R2034C** // PD D Pol c.7397T > C // 14 V2466A No PD D Pol c.7712A > G // 16 E2571G // PD D DC c.9976A > T // 27 K3326* LB NA NA DC",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study reports the BRCA2 R2034C germline variant as pathogenic in Tunisian breast/ovarian cancer patients.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7962399",
+            "title": "Novel and recurrent BRCA1/BRCA2 germline mutations in patients with breast/ovarian cancer: a series from the south of Tunisia",
+            "relevance_score": 0.46,
+            "pub_year": 2021,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nb'\\r\\n Supplemental Materials\\r\\n\\r\\n Table S1 Primer sequences used in the qPCR experiments\\r\\n|Target gene |Primer sequences (from 5\\xef\\xbf\\xbd to |Product |\\r\\n|\nRows:\nMissense variant\\r\\n\\r\\n Missense variant\\r\\n\\r\\n Missense variant\\r\\n\\r\\nMissense variant |PTCH1:NM_000264.3:p.Pro1315Leu/c.3944C>T\\r\\nBRCA2:NM_000059.3:**p.Arg2034Cys**/**c.6100C>T**\\r\\nBLM:NM_000057.3:p.Pro868Leu/c.2603C>T\\r\\nERCC4:NM_005236.2:p.Arg415Gln/c.1244G>A\\r\\nBRCA1:NM_007300.3:p.Ser1634Gly/c.4900A>G\\r\\nBRCA1:NM_007300.3:p.Glu1038Gly/c.3113A>G\\r\\nSETBP1:NM_001130110.1:p.Ala222Thr/c.664G>A |Nevoid basal cell",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article reports that PCB153 exposure causes large chromosomal deletions and impairs homologous\u2011recombination repair in HEK293T cells, and notes the detection of a BRCA2 p.Arg2034Cys missense variant among other tumor\u2011susceptibility gene mutations.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8325425",
+            "title": "Large chromosomal deletions and impaired homologous recombination repairing in HEK293T cells exposed to polychlorinated biphenyl 153",
+            "relevance_score": 0.46,
+            "pub_year": 2021,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...rs144848, rs169547, rs4986764, rs1805107, rs506504, rs1126497, rs702689, rs832582, rs5868032, rs1799977, rs1044009, rs2228006, rs1805321, rs1802683, rs1042522 26 23,910 na BRCA2 NM_000059: c.**6100C > T**, **p.R2034C** (**rs1799954**) MSH2 NM_000251: c.965G > A, p.G322D (rs4987188) MSH6 NM_000179: c.2633 T > C, p.V878A (rs2020912) PALB2 NM_024675: c.2794G > A, p.V932 M (rs45624036) PMS2 NM_000535: c.1454C > A, p.T485 K...",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study screened 44 cancer\u2011susceptibility genes in high\u2011risk colorectal cancer families and reported several VUS, including a BRCA2 p.R2034C variant that is mentioned only as a listed variant without interpretation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5819082",
+            "title": "Identification of genetic variants for clinical management of familial colorectal tumors",
+            "relevance_score": 0.45,
+            "pub_year": 2018,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...Class C65 Probably pathogenic Tolerated Benign Polymorphism 3662 c.4258G > T p.Asp1420Tyr rs28897727 missense Likely Benign Benign 15.81 Class C65 Polymorphism Damaging Benign Polymorphism 3649 c.**6100C > T** **p.Arg2034Cys** **rs1799954** missense Likely Benign Benign 20.4 Class C65 Polymorphism Damaging Possibly damaging Polymorphism 3441; 3617; 4279 c.8149G > T p.Ala2717Ser rs28897747 missense Likely Benign Benign 15.38 Class C65...",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The Brazilian HBOC cohort study screened 21 DNA repair genes and classified the BRCA2 R2034C variant as likely benign among other identified variants.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7011249",
+            "title": "Germline variants in DNA repair genes associated with hereditary breast and ovarian cancer syndrome: analysis of a 21 gene panel in the Brazilian population",
+            "relevance_score": 0.43,
+            "pub_year": 2020,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nSupplementary Table 2 Prediction results from PolyPhen-2 (HumDiV), PolyPhen-2 (HumVar) and SIFT on BRCA2 missense variants with known clinical significance. Nucleotide change (NM_007294.4) Protein change (NP_009225.1) ClinVar classification\nRows:\n0.616 c.5753A>G p.His1918Arg Benign Benign 0.001 Benign 0.001 Tolerated 0.292 c.5768A>C p.Asp1923Ala Benign Benign 0.144 Benign 0.035 Damaging 0.025 c.5785A>G p.Ile1929Val Benign Benign 0.004 Benign 0.003 Tolerated 0.307 **c.6100C>T** **p.Arg2034Cys** Benign Possibly damaging 0.876 Benign 0.118 Damaging 0.016 c.6143A>T p.Asn2048Ile Benign Probably damaging 0.983 Possibly damaging 0.725 Damaging 0.002 c.6220C>A p.His2074Asn Benign Benign 0.001 Benign 0.004\np.His1918Arg Benign Benign 0.001 Benign 0.001 Tolerated 0.292 c.5768A>C p.Asp1923Ala Benign Benign 0.144 Benign 0.035 Damaging 0.025 c.5785A>G p.Ile1929Val Benign Benign 0.004 Benign 0.003 Tolerated 0.307 **c.6100C>T** **p.Arg2034Cys** Benign Possibly damaging 0.876 Benign 0.118 Damaging 0.016 c.6143A>T p.Asn2048Ile Benign Probably damaging 0.983 Possibly damaging 0.725 Damaging 0.002 c.6220C>A p.His2074Asn Benign Benign 0.001 Benign 0.004 Tolerated 0.195",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The article reports that BRCA2 R2034C is classified as benign in ClinVar, while in silico tools give mixed predictions, illustrating the limited clinical utility of computational assessments alone.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8160182",
+            "title": "In silico analysis of BRCA1 and BRCA2 missense variants and the relevance in molecular genetic testing",
+            "relevance_score": 0.43,
+            "pub_year": 2021,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "On the other hand, BRCA2 variants were found in 4 cases (22%) which was significantly higher than the frequency of BRCA1 variants (p=0.02). A total of six variants which were identified, at variant allele frequency ranging from 4.9 to 76.9%, all of which led to missense proteins. The resulting substitutions were p.A2351P, p.T2250A, p.A895V, pG1771D and **p.R2034C**. Only **p.R2034C** was seen in two cases. The SIFT scores of all except the first substitution were >=0.03 reflecting a tolerated nature. Similarly, the Polyphen scores in these four alterations were <=0.899 reflecting benignancy. In case of p.A2315, the SIFT score was 0.01, while the Polyphen 2 score was 0.921, both indicating a deleterious and probably damaging nature. Variant data along with allele frequency, Polyphen 2 and SIFT scores summarized in Table 2.",
+                    "mention_type": "computational",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "Chr13 position Ref allele Variant allele Zygosity Variant frequency Aminoacid change Populaiton frequency GenomAD RS identifier SIFT score Polyphen score 32,911,176 C T Het 4.9 p.Ala895Val NA NA 0.12 0.209 32,913,804 G A Het 37.1 p.Gly1771Asp 0.000335 rs80358755 0.65 0.072 32,914,592 C T Het 76.9 **p.Arg2034Cys** 0.003126 **rs1799954** 0.03 0.54 32,914,592 C T Het 60.2 **p.Arg2034Cys** 0.003126 **rs1799954** 0.03 0.54 32,915,240 A G Het 27.8 p.Thr2250Ala 0.000111 rs80358899 0.06 0.019 32,929,041 G C Het 52.9 p.Ala2351Pro 0.000008 rs80358930 0.01 0.921",
+                    "mention_type": "computational",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "However, the MutPred2 scores were <=0.180 for all. None of the predicted ELM or PROSITE motif alterations met the threshold for statistical significance. Loss of intrinsic disorder was predicted (Pr=0.32, p=0.07) for **p.R2034C**, while gain of intrinsic disorder was predicted for p.A2351P (Pr=0.36, p=0.01) and p.G1771D (Pr=0.34, p=0.02). In addition, an alteration of coiled coil was predicted for p.A2351P (Pr=0.02, p=0.10) and p.G1771D (Pr=0.04, p=0.07). A gain of B-factor was also predicted for p.A2351P (Pr=0.23, p=0.09). None of the other protein properties included in the MutPred algorithm met the threshold for statistical significance. The Mutpred2 predictions are summarized in Table 3.",
+                    "mention_type": "computational",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "**p.Arg2034Cys** 0.32 0.07 0.019 p.Thr2250Ala 0.012 p.Ala2351Pro 0.36 0.01 0.02 0.1 0.23 0.09 0.03 The homology modeling scores as predicted by the SWISS-MODEL server are summarized in Table 4 and static",
+                    "mention_type": "computational",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "3.21 14.9 73.52 0.7 Gly1771Asp 3.21 14.9 73.52 0.7 **Arg2034Cys** 1.98 0 81.63 0.51 Thr2250Ala 1.98 0 81.63 0.51 Ala2351Pro 3.21 14.9 73.52 0.7 Static images of 3D models built using SWISS-MODEL server. No",
+                    "mention_type": "computational",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article reports that somatic BRCA2 p.Arg2034Cys occurs in two of 18 malignant mesothelioma cases and provides several in\u2011silico predictions (SIFT, PolyPhen, MutPred2, homology modeling) that generally suggest a tolerated or benign effect, without functional or clinical validation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10067552",
+            "title": "A study of somatic BRCA variants and their putative effect on protein properties in malignant mesothelioma",
+            "relevance_score": 0.4,
+            "pub_year": 2023,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nChrom|Position|Ref_Base|Alt_Base|Variant_AF|Gene|Transcript|Sequence_Ontology|cDNA_change|Protein_Change|Samples\nRows:\nchr13|**32340455|C|T**|0.374292643|BRCA2|ENST00000380152.7|missense_variant|**c.6100C>T**|**p.Arg2034Cys**|A20",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article reports a supplementary table entry for the BRCA2 R2034C variant with its allele frequency but offers no functional, clinical, or pathogenicity interpretation of this variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC11372371",
+            "title": "A Functional Survey of the Regulatory Landscape of Estrogen Receptor\u2013Positive Breast Cancer Evolution",
+            "relevance_score": 0.35,
+            "pub_year": 2024,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nSupplementary data Next-generation sequencing for identification of actionable gene mutations in intestinal-type sinonasal adenocarcinoma Paula S\u00e1nchez-Fern\u00e1ndez1#, Cristina Riobello2#, Mar\u00eda Costales1, Blanca Vivanco3, Virginia N. Cabal2,\nRows:\np.P2359A NO_SYN 0,517 HETZ LRP1B c.6428-49A>C - INTRONIC 0,529 HETZ LRP1B c.3128C>G p.T1043S NO_SYN 0,491 HETZ MDM2 c.1492delT p.*498del FRAMESHIFT 0,403 HETZ ALK c.661G>C p.G221R NO_SYN 0,518 HETZ BRCA2 **c.6100C>T** **p.R2034C** NO_SYN 0,496 HETZ 27 LRP1B c.2152C>A p.H718N NO_SYN 0,297 HETZ LRP1B c.10844G>C p.G6315A NO_SYN 0,786 HOMZ_ALT [\"LOH\"] ERBB3 c.217G>A p.D73N NO_SYN 0,328 HETZ ATM c.5558A>T p.D1853V NO_SYN 0,245 HETZ\nNO_SYN 0,517 HETZ LRP1B c.6428-49A>C - INTRONIC 0,529 HETZ LRP1B c.3128C>G p.T1043S NO_SYN 0,491 HETZ MDM2 c.1492delT p.*498del FRAMESHIFT 0,403 HETZ ALK c.661G>C p.G221R NO_SYN 0,518 HETZ BRCA2 **c.6100C>T** **p.R2034C** NO_SYN 0,496 HETZ 27 LRP1B c.2152C>A p.H718N NO_SYN 0,297 HETZ LRP1B c.10844G>C p.G6315A NO_SYN 0,786 HOMZ_ALT [\"LOH\"] ERBB3 c.217G>A p.D73N NO_SYN 0,328 HETZ ATM c.5558A>T p.D1853V NO_SYN 0,245 HETZ TSC2",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study identified the BRCA2 p.R2034C variant among numerous mutations in intestinal-type sinonasal adenocarcinoma but did not assess its pathogenicity or clinical relevance.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7838394",
+            "title": "Next-generation sequencing for identification of actionable gene mutations in intestinal-type sinonasal adenocarcinoma",
+            "relevance_score": 0.35,
+            "pub_year": 2021,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Supplementary table 3. List of BRCA2 variants identified in Taiwanese population\nColumn names:\nVariant ID|Exon|HGVS|Genome (hg19)|Detection Method*|Reported**|dbSNP150|MAF|Mutation Type|Variant impact***|Prior Probability of Pathogenicity|Posterior Probablity of Pathogenicity|Cases tested|Carrier number|Carrier Rate|Variant in original source|Original References****\nRows:\n|exon11|**c.6100C>T**|**p.Arg2034Cys**|g.**32914592C>T**|NGS|BED|Clinvar|BMD|BIC|LOVD|**rs1799954**||-||nonsynonymous SNV|Benign|||||||g.**32914592C>T**|TWB",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The article\u2019s supplementary data classify the BRCA2 R2034C variant as benign in the Taiwanese cohort.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8256441",
+            "title": " BRCA1 and BRCA2 Variation in Taiwanese General Population and the Cancer Cohort",
+            "relevance_score": 0.34,
+            "pub_year": 2021,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Mexican populationEXACClinVarBRCA Exchange\nColumn names:\nVariant ID|CHR|Position|ReferenceAllele|AlternateAllele|Allele Frequency Mexicans|Number of Chromosomes|Consequence|Transcript Consequence|Protein Consequence|Filter|Annotation|Flags|Allele Count|Allele Number|Number of Homozygotes|Allele Frequency|Allele Count African|Allele Number African|Homozygote Count African|Allele Frequency African|Allele Count East Asian|Allele Number East Asian|Homozygote Count East Asian|Allele Frequency East Asian|Allele Count European (Non-Finnish)|Allele Number European (Non-Finnish)|Homozygote Count European (Non-Finnish)|Allele Frequency Finish|Allele Count Finnish|Allele Number Finnish|Homozygote Count Finnish|Allele Frequency Finnish|Allele Count Latino|Allele Number Latino|Homozygote Count Latino|Allele Frequency Latino|Allele Count Other|Allele Number Other|Homozygote Count Other|Allele frequency Other|Allele Count South Asian|Allele Number South Asian|Homozygote Count South Asian|Allele frequency South Asian|AlleleID|Type|Name|GeneID|GeneSymbol|HGNC_ID|ClinicalSignificance|ClinSigSimple|LastEvaluated|nsv/esv (dbVar)|RCVaccession|PhenotypeIDS|PhenotypeList|Origin|OriginSimple|Assembly|ChromosomeAccession|ReferenceAllele|AlternateAllele|Cytogenetic|ReviewStatus|NumberSubmitters|Guidelines|TestedInGTR|OtherIDs|SubmitterCategories|id|Hg37_Start|Variant_in_ENIGMA|Variant_in_ClinVar|Variant_in_1000_Genomes|Variant_in_ExAC|Variant_in_LOVD|Variant_in_BIC|Variant_in_ESP|Variant_in_exLOVD|Source|URL_ENIGMA|Condition_ID_type_ENIGMA|Condition_ID_value_ENIGMA|Condition_category_ENIGMA|Clinical_significance_ENIGMA|Date_last_evaluated_ENIGMA|Assertion_method_ENIGMA|Assertion_method_citation_ENIGMA|Clinical_significance_citations_ENIGMA|Comment_on_clinical_significance_ENIGMA|Collection_method_ENIGMA|Allele_origin_ENIGMA|ClinVarAccession_ENIGMA|Clinical_Significance_ClinVar|Date_Last_Updated_ClinVar|Submitter_ClinVar|SCV_ClinVar|Allele_Origin_ClinVar|Method_ClinVar\nRows:\n**rs1799954**|||G|A|||**p.Arg2034Cys**|**c.6100C>T**|**p.Arg2034Cys**|PASS|missense|||||||||||||||||||||||||||||||||||single nucleotide variant|NM_000059.3(BRCA2):**c.6100C>T** (**p.Arg2034Cys**)||BRCA2|HGNC:1101|Benign||Aug 17, 2017|-|RCV000113532;RCV000461415;RCV000044844;RCV000162509;RCV000034452;RCV000120331|MedGen:C2675520,OMIM:612555;MedGen:C0346153,OMIM:114480,Orphanet:ORPHA227535,SNOMED CT:254843006;MedGen:C0677776,Orphanet:ORPHA145;MedGen:C0027672,SNOMED CT:699346009;MedGen:CN517202;MedGen:CN169374|Breast-ovarian cancer, familial 2;Familial cancer of breast;Hereditary breast and ovarian cancer syndrome;Hereditary cancer-predisposing syndrome;not provided;not specified|germline;somatic;unknown|germline/somatic|GRCh37|NC_000013.10|C|T|13q13|reviewed by expert panel||ACMG2013,ACMG2016|N|-||||t|t|t|t|t|t|t|t|ENIGMA,ClinVar,LOVD,ESP,1000_Genomes,ExAC,BIC,exLOVD|http://hci-exlovd.hci.utah.edu/variants.php?select_db=BRCA2&action=search_all&search_Variant%2FDNA=**c.6100C>T**|OMIM|BREAST-OVARIAN CANCER, FAMILIAL, SUSCEPTIBILITY TO, 2; BROVCA2 (612555)|Disease|Benign|2011-10-07 00:00:00|ENIGMA BRCA1/2 Classification Criteria (2015)|https://enigmaconsortium.org/library/general-documents/|PMID:21990134|IARC class based on posterior probability from multifactorial likelihood analysis, thresholds for class as per Plon et al. 2008 (PMID: 18951446). Class 1 based on posterior probability = 0.00000571|Curation|Germline|SCV000244462|Benign,not_provided,no_known_pathogenicity,Likely_benign,Uncertain_significance|2017-02-14,2011-03-10,2017-04-20,2016-06-27,2015-12-01,2012-06-27,2013-10-09,2012-07-13,2002-05-29,2015-08-10,2016-05-01,2014-11-19,2013-09-19,2017-08-17,2017-02-23,2017-03-16,2017-06-30,2016-06-14,2017-04-18,2014-02-14,2015-06-05,2014-11-03,2014-08-18,2014-07-24|Illumina,Laboratory_Corporation_of_America,_L.L.C.,Eurofins_Clinical_Diagnostics,Illumina_Clinical_Services_Laboratory,Children's_Hospital_of_Eastern_Ontario,Evidence-based_Network_for_the_Interpretation_of_Germline_Mutant_Alleles_(ENIGMA),Sharing_Clinical_Reports_Project_(SCRP),Biesecker_Lab/Human_Development_Section,Cancer_Genetics_and_Genomics_Laboratory,Queen's_University,University_of_Michigan,Ambry_Genetics,British_Columbia_Cancer_Agency,Pathway_Genomics,_University_of_Chicago,Medical_Diagnostic_Laboratories,Children's_Mercy_Hospital_and_Clinics,Breast_Cancer_Information_Core_(BIC)_(BRCA2),EGL_Genetic_Diagnostics,Genetic_Services_Laboratory,Invitae,Baylor_Miraca_Genetics_Laboratories,Department_of_Pathology_and_Molecular_Medicine,Department_of_Pathology_and_Laboratory_Medicine,CHEO_Genetics_Diagnostic_Laboratory,Center_for_Pediatric_Genomic_Medicine,ARUP_Laboratories,Michigan_Medical_Genetics_Laboratories,ITMI,University_Hospital_of_North_Norway,Institute_for_Biomarker_Research,GeneDx,Praxis_fuer_Humangenetik_Tuebingen,Sinai_Health_System,National_Institutes_of_Health,Department_of_Medical_Genetics,_Molecular_Genetics_and_Genomics|SCV000195996,SCV000301450,SCV000219374,SCV000146768,SCV000084483,SCV000244462,SCV000511453,SCV000189312,SCV000592030,SCV000588107,SCV000602767,SCV000072857,SCV000541060,SCV000167377,SCV000586965,SCV000043219,SCV000608682,SCV000383731,SCV000189907,SCV000593721,SCV000212900,SCV000225165,SCV000576435,SCV000494335|germline|curation,clinical_testing,research,reference_population",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study surveys BRCA1/2 variation in a large Mexican cohort and notes that the BRCA2 p.Arg2034Cys (R2034C) variant is classified as benign in public databases such as ClinVar and ENIGMA.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6327376",
+            "title": "Population and breast cancer patients' analysis reveals the diversity of genomic variation of the BRCA genes in the Mexican population",
+            "relevance_score": 0.32,
+            "pub_year": 2019,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\n\"Supplementary Table S2. List of all variants detected in BRCA1, BRCA2 and TP53 genes, including variant annotation, ACMG/AMP criteria, gnomAD allele frequencies (non-cancer database v2.1.1), ClinVar classification, prediction scores, and\nRows:\ninterpretations of pathogenicity,Benign(3);Likely benign(5);Uncertain significance(1),2020-11-25 00:00:00,\"criteria provided, conflicting interpretations\",51982,0.563,-,2.25,missense,-14.86,-0.802,0,PP3 BRCA2,**c.6100C>T**,**p.Arg2034Cys**,**R2034C**,Likely benign (LBV),BS1 BP4 BP6 ,-,3,missense,chr13,32914592,exon 11,**rs1799954**,0.00300154557197362,0.004901877639635666,2,2,Benign,-,2015-08-10 00:00:00,reviewed by expert panel,41558,0.181,-,0.3,-,-,-,-,-",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The article\u2019s supplementary data classify the BRCA2 R2034C (c.6100C>T) variant as likely benign (LBV).', ",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9633799",
+            "title": "Familial history and prevalence of BRCA1, BRCA2 and TP53 pathogenic variants in HBOC Brazilian patients from a public healthcare service",
+            "relevance_score": 0.27,
+            "pub_year": 2022,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "A total of 14 of the 25 polymorphisms associated with the development of breast cancer are localised in the BRCA genes: 5 - in BRCA1 - rs1799950 (Q356R), rs4986850 (D693N), rs2227945 (S1140G), rs16942 (K1183R), rs1799966 (S1613G); 9 SNP in the gene BRCA2 - rs766173 (N289H), rs144848 (N372H), rs4987117 (T1915M), **rs1799954** (**R2034C**), rs11571746 (S2835P), rs11571747 (E2856A), rs4987047 (I2944F), rs11571833 (K3326), rs1801426 (I3412V).",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Analysis of minor allele frequencies of 14 polymorphisms in BRCA1 and BRCA2 genes in the Kazakh population according to the genomic database of the \"Miras\" DNA Biobank found low (less than 0.01) MAF for rs2227945 polymorphisms in the BRCA1 gene, and for 5 polymorphisms in the BRCA2 gene - **rs1799954**, rs11571746, rs11571747, rs4987047 and rs11571833. This prevented these six SNPs from being included in further analysis. Additionally included are rs1800709 (R841W), rs4986852 (S1040N), rs1799949 (S694S) and rs799917 (P871L) polymorphisms in the BRCA1 gene, which have been shown to have significant associations with breast cancer risk in different ethnic populations according to GWAS. Table 1 shows the genetic characteristics of 12 polymorphisms of BRCA1 and BRCA2 genes, indicating the SNP Identifier, the location of the polymorphism on the chromosome, the physical distance at the paired ends (base-pair position - bp) and gene name.",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study notes that the BRCA2 R2034C (rs1799954) variant has a low frequency in the Kazakh population and was omitted from further analysis, offering no functional or clinical interpretation of its significance.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10772761",
+            "title": "Frequencies of Diagnostically Significant Polymorphisms of Hereditary Breast Cancer Forms in BRCA1 and BRCA2 Genes in the Kazakh Population",
+            "relevance_score": 0.24,
+            "pub_year": 2023,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nTest No.|Source|Validity|Gene|ENST|Gene Code|ENST.1|Chasm No.|Gene Name|Mutation|Type|FATHMM|FATHMM Prediction|CHASM|CHASM Prediction|CHASM FDR|Corrected CHASM (FDR)|CHASM P|Corrected CHASM (p)|siftTransfic|siftTransficLabel|pph2Transfic|pph2TransficLabel|maTransfic|maTransficLabel\nRows:\nTRAIN0206|GnomAD|Valid|BRCA2|ENST00000544455.1|P51587|ENST00000544455|GNOM278|BRCA2_HUMAN|**R2034C**|Passenger|5.73|Passenger|0.64|Driver|0.64|Driver|0.617216|Driver|0.116|medium_impact|-0.35|low_impact|-0.426|low_impact",
+                    "mention_type": "computational",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The paper introduces DriverDetect, a machine learning framework that combines multiple prediction tools to more accurately identify deleterious cancer mutations, and includes computational predictions for the BRCA2 R2034C variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC11442673",
+            "title": "Machine learning optimized DriverDetect software for high precision prediction of deleterious mutations in human cancers",
+            "relevance_score": 0.23,
+            "pub_year": 2024,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "ID pts Age at diagnosis DNA Mutation effect Grade ER (score) PR (score) HER2 ^ BRCAPRO BRCA1 ^ BRCAPRO BRCA2 ^ BRCAPRO total BC, CBC and BBC cases OC cases BRCA1 uv BR417 30 1186A>G Q356R 2 + (3) - (0) 3+ 0.015 0.040 0.055 1 (46) / BR427 48 4274A>G L1385L 2 + (7) + (7) 1+ 0.000 0.010 0.011 1 (44) / BR437 50 2351T>G A744A 1 + (5) + (3) 1+ 0.000 0.014 0.015 3 (50, 55, 59) / BR523 48 BBC IVS20+60ins12 2 + (6) + (7) 1+ 0.018 0.245 0.263 3 (50,50, 52) / BR570 47 5221T>C L1701P 3 - (0) + (3) 3+ 0.094 0.169 0.264 2 (49+52 CBC, 56) / BR647 49 1186A>G Q356R 3 + (8) + (7) 1+ 0.005 0.010 0.015 3 (65, 67, 70) / BR658 43 1186A>G Q356R 3 + (6) + (6) 2+ 0.001 0.069 0.070 3 (50+63 CBC, 57, 60*) / BR665 65 BBC 655A>G Y179C 2 + (5) + (5) - 0.001 0.004 0.004 3 (60, 80, 80) / 1575T>C F486L 1767A>G N550H BRCA2 uv BR376 55 IVS2-7T>A 2 + (6) + (3) 1+ 0.000 0.008 0.008 2 (45, 90) / BR390 51 OC+54 BBC 6328C>T **R2034C** 2 + (5) + (8) - 0.130 0.648 0.777 3 (34, 39, 40) / BR458 44+49 CBC 5972T>C T1952I 2 + (7) + (5) - 0.025 0.433 0.459 2 (50 BBC, 70) / BR486 56 2457T>C/ 9329A>G H743H/R3034Q 3 + (5) + (8) - 0.000 0.000 0.000 4 (57, 71, 75, 90) / BR505 67 6751C>G Q2175E 1 + (7) + (7) - 0.018 0.426 0.444 4 (40 BBC, 50 BBC, 53 BBC, 58) / BR538 62 4236G>A L1356L 2 + (7) + (7) - 0.001 0.025 0.026 2 (50 BBC, 56) / BR587 38+60 CBC IVS24-113T>G 3 - (0) - (0) 1+ 0.922 0.063 0.984 2 (40, 43) 1 (60) BRCA1/2 uv BR514 57 3238G>A S1040N 1 + (7) + (8) - 0.001 0.061 0.062 4 (42, 45, 49, 55) / IVS4+67A>C1613A>G E462G BR552 70 4158A>G R1347G 3 + (5) + (3) 3+ 0.000 0.012 0.012 3 (40, 47, 65) / 6328C>T **R2034C** BR567 50 IVS4+67A>C 3 + (6) + (7) - 0.009 0.215 0.225 3 (37 BBC, 50 BBC, 50) 1 (59) 2457T>C H743H BR571 31 IVS9-34T>C 2 + (3) + (6) 3+ 0.001 0.037 0.038 3 (50, 50, 61) / 5972C>T T1951M BR580 43 3238G>A S1040N 3 + (7) + (5) 1+ 0.001 0.030 0.031 2 (46, 68) / 1409A>G E394A BR640 30 855T>G L246V 3 + (7) - (0) 1+ 0.117 0.261 0.378 2 (30, 40) / 4296G>A L1356L",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article shows that immunohistochemical criteria improve selection of patients for BRCA1 testing, and only incidentally reports the BRCA2 R2034C variant in a patient data table without any pathogenicity interpretation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC2771044",
+            "title": "Selecting for BRCA1 testing using a combination of homogeneous selection criteria and immunohistochemical characteristics of breast cancers",
+            "relevance_score": 0.22,
+            "pub_year": 2009,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Supplementary Table 2: CGP guidance and targeted therapy decisions by evidence group and treatment history status: Tests with variants supported by level 1 or level 2 evidence (n = 176), and tests with level 3 variants resulting in targeted therapy given off-label or in a clinical trial (n = 24)\nColumn names:\nTest Number|Evidence Group|Treatment History Status|Variant|CGP Recommended Therapy(ies)|Prior Targeted Therapy(ies)|ReceivedTherapy(ies)\nRows:\n|Level 1 and 2 Sensitivity Variants|Active Treatment|BRCA2 **c.6100C>T** (**R2034C**)|olaparib||rucaparib",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The article indicates that BRCA2 R2034C is classified as a level\u202f1/2 sensitivity (pathogenic) variant and that oncologists were advised to treat patients with this mutation using PARP inhibitors such as olaparib or rucaparib.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6659802",
+            "title": "Oncologist uptake of comprehensive genomic profile guided targeted therapy",
+            "relevance_score": 0.22,
+            "pub_year": 2019,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...0.024 0.98 Benign Neutral BRCA2-7 N372H rs144848 T/G 0.320 0.286 0.23 0.329 0.298 0.60 Benign Disease BRCA2-8 S384F rs41293475 C/T 0.000 0.003 0.38 0.000 0.000 n/a Possibly damaging Disease BRCA2-27 **R2034C** **rs1799954** C/T 0.004 0.004 0.90 0.000 0.012 0.12 Benign Disease BRCA2-35 D2665G rs28897745 A/G 0.003 0.000 0.22 0.005 0.000 0.53 Probably damaging Disease BRCA2-37 V2728I rs28897749 G/A 0.014 0.003 0.02 0.019...",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study investigates rare variants in colorectal cancer and multiple adenomatous polyposis, reporting that while several rare variants show increased frequency in cases, the BRCA2 R2034C variant is classified as benign.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5140019",
+            "title": "Role of rare variants in undetermined multiple adenomatous polyposis and early-onset colorectal cancer",
+            "relevance_score": 0.2,
+            "pub_year": 2012,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Gene Exon Nucleotide Codon Intron Base change Mutation type Nomenclature BIC citation/Clinical importance BRCA1 561-34 7 T > C IVS7-34 T>C YES/no 667-57 8 delT IVS8-57 delT YES/no 11 2196 693 G > A missense D693N YES/no 11 2731 871 C > T missense P871L YES/no 11 3232 1038 A > G missense E1038G YES/no 11 3667 1183 A > G missense K1183R YES/no 15 4654 1512 G > T missense S1512I YES/no 16 4956 1613 A > G missense S1613G YES/no 16 A > G IVS16-68 A>G YES/no 16 A > G IVS16-92 A>G YES/no 11 1186 356 A > G missense Q356R YES/unknown 11 1822 568 C > T missense P568L YES/unknown 11 2596 826 C > A missense T826K YES/unknown 11 4158 1347 A > G missense R1347G YES/unknown 11 4173 1352 G > A missense E1352K YES/unknown 16 5075 1652 G > A missense M1652I YES/unknown 17 C > T IVS17-53 C>T YES/unknown 18 G > A IVS18+65 G>A YES/unknown 5 287 56 A > T missense K56N NO/unknown 5 288 57 G > A missense G57R NO/unknown 17 G > T IVS17-53 G>T NO/unknown 20 T > C IVS20+34 T>C NO/unknown 22 5469 1784 G > A missense W1784I NO/unknown BRCA2 5'UTR 203 G > A missense 203G>A YES/no 10 1379 384 C > T missense S384F YES/no 10 1093 289 A > C missense N289H YES/no 11 3199 991 A > G missense N991D YES/no 11 4469 1414 C > T missense T1414M YES/no 11 4486 1420 G > T missense D1420Y YES/no 16 T > C IVS16-14 T>C YES/no 20 8731 2835 T > C missense S2835P YES/no 22 21 T > C IVS21-66 T>C YES/no 27 10204 3326 A > T nonsense K3326X YES/no 1 353 42 C > T missense Y42C YES/unknown 10 1409 394 A > C missense E394A YES/unknown 11 3623 1132 A > G missense K1132R YES/unknown 11 6328 2034 C > T missense **R2034C** YES/unknown 11 6359 2044 G > C missense G2044A YES/unknown 25 24 T > C IVS24-16 T>C YES/unknown 10 1343 372 A > C missense W372N NO/unknown 2 G > A IVS2+65 G>A NO/unknown 4 A > C IVS4+67 A>C NO/unknown 1042 272 A > T missense N272I NO/unknown 11 5967 1910 A > T missense N1910I NO/unknown 14 C > T IVS14+53 C>T NO/unknown 14 7863 2546 T > C missense S2546P NO/unknown 16 7975 2583 G > A missense D2583N NO/unknown 16 T > A IVS16-32 T>A NO/unknown",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The Sardinian cohort study identifies BRCA2 R2034C as a missense variant of uncertain clinical significance among the BRCA2 mutations detected.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC2724545",
+            "title": "A role of BRCA1 and BRCA2 germline mutations in breast cancer susceptibility within Sardinian population",
+            "relevance_score": 0.19,
+            "pub_year": 2009,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Table S3. Concurrent variations of hereditary cancer syndrom-related genes\nColumn names:\nrs number|Reference allele|Variant allele|Reference residue|Variant residue|Amino acid position|Codon position|Gene|Phenotype|Contig position|Heterozy-gosity|Contig model|mRNA model|Protein model|Reference allele|Variant allele|Reference residue|Variant residue|Amino acid position|Codon position|Gene|Phenotype|Reference paper\nRows:\n**rs1799954**|C|T|Arg|Cys|||BRCA2|nonsynonymous|||NT_024524|NM_000059|NP_000050|C|T|Arg|Cys|||BRCA2|Breast and/or ovarian cancer ?|www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&list_uids=9971877&dopt=Abstract",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study catalogs coding sequence variants across major databases and compares prediction tools, noting many overlapping variants but offering no specific interpretation for BRCA2 R2034C.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC2570488",
+            "title": "Cataloging Coding Sequence Variations in Human Genome Databases",
+            "relevance_score": 0.19,
+            "pub_year": 2008,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Pt Tissue DNAseq IHC Clinical test results No of coding SNV No of unique SNV Oncogene CHIP mutation PD-L1 (E1L3N)TPS (%) PD-L1 (28-8) TPS (%) CD8 Ki67 CD31 1 Left lung 14 1 KRAS G12V 14% JAK2 E558N 47% 55 85 High Low 43.3 Not evaluated Right lung 21 1 KRAS G12V 41% JAK2 E558N 55% 40 40 Med Low 27.3 Mediastinal lymph node 21 1 KRAS G12V 19% JAK2 E558N 46% 70 90 Mod Low 27.3 Liver 20 0 KRAS G12V 51% JAK2 E558N 48% 70 95 Med Low 34.0 3 Lung right lower lobe 12 1 KRAS G12V 55% TET2 P1723S 57% 0 0 High Med 29.7 Not evaluated Lung right upper lobe 14 2 KRAS G12V 49% TET2 P1723S 41% 0 0 Med Low 91.7 4 Right lung 16 2 KEAP1 E441* 87%, TP53 N239D 80% 0 0 Low high 34.7 Not evaluated Pericardial lymph node 13 0 TP53 N239D 79% 10 0 Med high 52.3 Liver 15 2 KEAP1 E441* 45%, TP53 N239D 41% 0 0 Low High 24.7 6 Lung left lower lobe 7 1 BRCA2 **R2034C** 50%, KRAS G12D 3% 95 95 High Med 34.7 KRAS-G12D positive, EML4-ALK negative, EGFR negative Lymph node 20 14 BRCA2 **R2034C** 44%, KRAS G12D 10% 40 70 High Low 32.7 7 Lung left hilar 10 1 SMARCA4 R1135Q 13%, EML4-ALK 2.8% 40 60 High Low 27.3 EML4-ALK positive, EGFR negative, PD-L1 positive Mediastinal lymph node 9 0 SMARCA4 R1135Q 6%, EML4-ALK 2.7% 70 90 High Med 14.7",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study presents a community\u2011based rapid tissue donation protocol that yields high\u2011quality post\u2011mortem lung cancer specimens, enabling proteogenomic analyses that identified multiple genomic alterations including BRCA2 R2034C.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6943158",
+            "title": "A community-based lung cancer rapid tissue donation protocol provides high-quality drug-resistant specimens for proteogenomic analyses",
+            "relevance_score": 0.18,
+            "pub_year": 2019,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nb'\\r\\nTable S12\\r\\n\\r\\nDetails of mutations carried by each LCL used in the study and pool\\r\\nassignment.\\r\\n\\r\\n|SAMPLE |MUTATION |MUTATION |Pool |\\r\\n|NUMBER |CLASS |\nRows:\n| |\\r\\n|36 |Healthy |No known mutation |3 |\\r\\n| |Control | | |\\r\\n\\r\\n\\r\\n* also carries a BRCA2 unclassified variant, BRCA2 6328 C>T (**R2034C**).\\r\\n** Negative for pathogenic mutations in BRCA1 and BRCA2 after complete\\r\\nsequencing, and multiplex-ligation-dependent probe amplification gene\\r\\ndosage assay (MLPA) for detection of large genmoic rearrangements of BRCA1\\r\\nand",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The study uses RNA\u2011pooling and expression profiling to differentiate BRCA1/2 mutation carriers, and notes that one cell line carries the BRCA2 R2034C variant classified as unclassified (VUS) without further functional or clinical analysis.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC2824809",
+            "title": "Use of DNA-Damaging Agents and RNA Pooling to Assess Expression Profiles Associated with BRCA1 and BRCA2 Mutation Status in Familial Breast Cancer Patients",
+            "relevance_score": 0.18,
+            "pub_year": 2010,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nCancer - causing BRCA2 missense mutations disrupt an intracellular protein assembly mechanism to disable genome maintenance Miyoung Lee, David Shorthouse, Robert Mahen, Benjamin A. Hall and Ashok R. Venkitaraman Supplementary Data Supplementary\nRows:\nreviewed: Aug 10, 2015) G1771D Benign(Last reviewed: Aug 10, 2015) P1819S Benign(Last reviewed: Aug 10, 2015) L1904V Benign(Last reviewed: Aug 10, 2015) H1918Y Benign(Last reviewed: Aug 10, 2015) I1929V Benign(Last reviewed: Aug 10, 2015) **R2034C** Benign(Last reviewed: Aug 10, 2015) N2048I Benign(Last reviewed: Aug 10, 2015) H2074N Benign(Last reviewed: Aug 10, 2015) R2108H Benign(Last reviewed: Aug 10, 2015) N2113S Benign(Last reviewed: Aug 10, 2015) T2250A Benign(Last reviewed: Aug 10,",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study shows that pathogenic BRCA2 DBD missense mutations disrupt DSS1 binding and homologous recombination, whereas the R2034C variant is reported as a benign polymorphism in the supplementary data.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8191791",
+            "title": "Cancer-causing BRCA2 missense mutations disrupt an intracellular protein assembly mechanism to disable genome maintenance",
+            "relevance_score": 0.18,
+            "pub_year": 2021,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "To address whether these mutations could be common alterations within the human population, we annotated the variants with observed allele-frequencies in European populations from the 1000 Genomes Project and the NHLBI GO Exome Sequencing Project. We filtered the missense mutations to identify those that have a reported allele frequency < 0.1. Four mutations, BRCA1 (D693N), BRCA2 (**R2034C**), PARP-1 (P377S), and PARP-1 (V762A) in the RWPE1 cell line passed the threshold. Three mutations in the VCaP cell line, ATM (F858 L), ATM (P1054R), and DNA-PK (R2899C) had lower frequencies than 0.1 while only PARP-1 (S383Y) was found to have a lower allelic frequency than 0.1 in the PC3-AR cell line. In our analysis, the LNCaP cell line contained the most missense and frameshift mutations including ATR (K297 N), ATR (K1482R), CHEK2 (E239*), CHEK2 (T387 N), DNA-PK (N2669 V), DNA-PK (A3417T), ERCC3 (A740T), ERCC3 (R391W), FANCA (L684P), HDAC2 (A62V), MLH3 (K274I), MLH3 (I541V), NBS1 (D95N), PARP-1 (E547G), RAD50 (K608 N), and RAD50 (L719 fs*15). A literature and COSMIC search revealed that several of these mutations have been detected in other model systems and other cancer subtypes, e.g. PARP-1 (V377S), ATR (K297 N), FANCA (G809 N), and MLH3 (I541V) (Additional file 1: Table S1).",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "To determine whether the variants are expressed, we performed RNA-seq on the respective prostate cancer lines. We aligned the RNA-seq reads using STAR aligner, removed the putative PCR duplicates, used the SplitNCigarReads tool to partition the reads into smaller sequences representing segments beside/between splicing events, and then used the GATK Haplotyper to identify SNVs validating the DNA variant calls (Additional file 2: Table S2, \"RNA-seq SNV detected\"). Of note, the RNA-seq reads are limited by the expression of the gene and the location within the exon. In particular, reads that fall on the 3' and 5' ends of the exon will not be detected by this approach. We determined whether the SNV was detected by RNA-seq and if the corresponding exon/intron was expressed by RNA-seq (Additional file 2: Table S2, \"SNV expressed\" and \"Exon/Intron expressed\", respectively). Using these criteria, we confirmed the following missense mutations are encoded at the mRNA level: (1) BRCA1 (D693N), BRCA2 (**R2034C**), PARP-1 (P377S), and PARP-1 (V762A) in RWPE-1 cells; (2) ATM (F858 L), ATM (P1054R), and DNA-PK (R2899C) in VCaP cells; (3) PARP-1 (S383Y) in PC3-AR cells; (4) ATR (K297 N), CHEK2 (T387 N), ERCC3 (A740T), ERCC3 (R391W), HDAC2 (A62V), MLH3 (I541V), and NBS1 (D95N) in LNCaP cells.",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Table title: Table S1: DNA damage response gene variants in prostate cell lines\nColumn names:\nSNV location (hg19)|Alteration|Protein change|allele freq (1000 gen)|allele freq (Exome Seq)|COSMIC|Prostate Cancer|Studied (PMID)\nRows:\nBRCA2|chr13:32914592|Missense|**Arg2034Cys**|||-|none|",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article identifies the BRCA2 R2034C missense variant as a rare mutation present and transcribed in the RWPE\u20111 prostate cancer cell line, but provides no functional or clinical interpretation of its pathogenicity.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6180441",
+            "title": "Genomic analysis of DNA repair genes and androgen signaling in prostate cancer",
+            "relevance_score": 0.16,
+            "pub_year": 2018,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Gene Mutation Drug Effect BRCA1 E1609 *, L702Wfs * 5, N1745Tfs * 20, Q1273 *, V370I Rucaparib (PARP inhibitor)Olaparib (PARP inhibitor) Responsive BRCA2 A2603S, D1796Mfs * 9, K3327Nfs * 13, L1114V, splice_acceptor_variant, T2783Afs * 13, T2790I, I1364M, L398P, D635G, **R2034C** KRAS A146V, Q61H G12A, G12D, G12V, L19F, Q25 * fs * 1 Panitumumab(EGFR mAb inhibitor)Cetuximab (EGFR mAb inhibitor) Resistant NRAS G12C, Q61R Panitumumab(EGFR mAb inhibitor) Cetuximab (EGFR mAb inhibitor) Resistant PIK3CA H1047R, E545A, E545K, E542K, R88Q, N345S, E579K Alpesilib + Fulvestrant Responsive PTCH1 R441H, D717N, H1240R, P725S, V580A, T677A, N871D Vismodegib (SHH inhibitor) Responsive TSC1 K375Sfs * 30, L826Q, L827Q, T582S Everolimus (MTOR inhibitor) Responsive TSC2 R1729C, S1530L, K533delK, A460T, A950T, D1084G, P1771L, S1096C, T154I",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article validates a 25\u2011gene NGS panel that accurately detects actionable mutations, including BRCA2 variants, in Latin American tumor samples.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8472524",
+            "title": "Validation of an NGS Panel Designed for Detection of Actionable Mutations in Tumors Common in Latin America",
+            "relevance_score": 0.15,
+            "pub_year": 2021,
+            "data_sources": [
+                "pmc"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 1805,
+            "output": 512
+        },
+        {
+            "input": 1799,
+            "output": 456
+        },
+        {
+            "input": 2888,
+            "output": 1279
+        },
+        {
+            "input": 3294,
+            "output": 551
+        },
+        {
+            "input": 3315,
+            "output": 663
+        },
+        {
+            "input": 2796,
+            "output": 434
+        },
+        {
+            "input": 2695,
+            "output": 228
+        },
+        {
+            "input": 2077,
+            "output": 390
+        },
+        {
+            "input": 2673,
+            "output": 700
+        },
+        {
+            "input": 2804,
+            "output": 583
+        },
+        {
+            "input": 2098,
+            "output": 668
+        },
+        {
+            "input": 1888,
+            "output": 239
+        },
+        {
+            "input": 2276,
+            "output": 795
+        },
+        {
+            "input": 2225,
+            "output": 722
+        },
+        {
+            "input": 2611,
+            "output": 328
+        },
+        {
+            "input": 2095,
+            "output": 652
+        },
+        {
+            "input": 2337,
+            "output": 574
+        },
+        {
+            "input": 2289,
+            "output": 669
+        },
+        {
+            "input": 2883,
+            "output": 1224
+        },
+        {
+            "input": 2253,
+            "output": 210
+        },
+        {
+            "input": 1594,
+            "output": 544
+        },
+        {
+            "input": 2314,
+            "output": 756
+        },
+        {
+            "input": 2129,
+            "output": 462
+        },
+        {
+            "input": 3726,
+            "output": 494
+        },
+        {
+            "input": 2070,
+            "output": 584
+        },
+        {
+            "input": 1821,
+            "output": 433
+        },
+        {
+            "input": 2494,
+            "output": 536
+        },
+        {
+            "input": 1811,
+            "output": 643
+        },
+        {
+            "input": 2953,
+            "output": 833
+        },
+        {
+            "input": 1853,
+            "output": 557
+        },
+        {
+            "input": 2119,
+            "output": 284
+        },
+        {
+            "input": 2057,
+            "output": 234
+        },
+        {
+            "input": 2040,
+            "output": 659
+        },
+        {
+            "input": 1906,
+            "output": 368
+        },
+        {
+            "input": 2766,
+            "output": 763
+        },
+        {
+            "input": 2069,
+            "output": 542
+        },
+        {
+            "input": 2127,
+            "output": 254
+        },
+        {
+            "input": 2589,
+            "output": 497
+        },
+        {
+            "input": 2444,
+            "output": 523
+        },
+        {
+            "input": 2054,
+            "output": 428
+        },
+        {
+            "input": 3088,
+            "output": 756
+        },
+        {
+            "input": 2141,
+            "output": 681
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 21197,
+        "output": 1963
+    },
+    "total_time": 129.62
+}

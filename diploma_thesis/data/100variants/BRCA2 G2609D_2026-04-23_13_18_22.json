@@ -1,0 +1,454 @@
+{
+    "before_pruning": {
+        "articles_in_total": 19,
+        "only_medline_count": 1,
+        "only_pmc_count": 6,
+        "only_suppl_count": 9,
+        "both_pmc_and_suppl_count": 3,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 19,
+        "only_medline_count": 1,
+        "only_pmc_count": 6,
+        "only_suppl_count": 9,
+        "both_pmc_and_suppl_count": 3,
+        "all_three_count": 0
+    },
+    "variant": "BRCA2 G2609D",
+    "time_to_process_articles": 12.96,
+    "context_length": 31713,
+    "after_removal": {
+        "articles_in_total": 10,
+        "only_medline_count": 1,
+        "only_pmc_count": 6,
+        "only_suppl_count": 0,
+        "both_pmc_and_suppl_count": 3,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "29988080",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 69,
+            "abstract_length": 1295,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6406614",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 165,
+            "abstract_length": 1367,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "7826g a p gly2609asp dbd hd c65 4 \u2212 \u2212 nd \u2212 c 7878g c p trp2626cys dbd hd c65 5 \u2212 \u2212 nd \u2212 nd c 7879a t p ile2627phe dbd hd c15 5 \u2212 \u2212 \u2212 \u2212 nd c 7940t c p leu2647pro dbd hd c65 4 \u2212 \u2212 \u2212 nd nd c 7958t c"
+            ],
+            "number_of_paragraphs": 3,
+            "paragraphs_lengths": [
+                1192,
+                1275,
+                198
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6752316",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 68,
+            "abstract_length": 1253,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "obtained for class 4 variant p gly2609asp among the 23 vus identified by genetic screening in the netherlands two variants p arg2625ser and p lys2750del did not rescue loss of brca2 mediated cell"
+            ],
+            "number_of_paragraphs": 7,
+            "paragraphs_lengths": [
+                1390,
+                778,
+                1111,
+                1327,
+                994,
+                1099,
+                200
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6287763",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 134,
+            "abstract_length": 1358,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                411
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9407588",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 99,
+            "abstract_length": 1500,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                404
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8813959",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 92,
+            "abstract_length": 2012,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                400
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3242438",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 131,
+            "abstract_length": 1266,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3995136",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 77,
+            "abstract_length": 1185,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3537884",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 112,
+            "abstract_length": 1547,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1027
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10046845",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 88,
+            "abstract_length": 2683,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "both single strand and double strand dna this mutation could be responsible for abnormal dna repair as described for the g2609d mutation 34 the two mutations of notch1 identified in brain"
+            ],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                192
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        }
+    ],
+    "narrative_summary": "The BRCA2 missense variant p.Gly2609Asp (c.7826G>A) lies in the DNA\u2011binding domain of the protein and has been investigated in the context of hereditary breast\u2011ovarian cancer risk.  Clinical segregation analyses have classified this substitution as a likely pathogenic (Class\u202f4) allele, with family\u2011based posterior probabilities exceeding the pathogenicity threshold and supporting its role in disease predisposition [PMC3537884].  A meta\u2011analysis of breast\u2011cancer brain metastases also reported an association of the G2609D change with metastatic disease, further suggesting a deleterious effect [PMC10046845].\nFunctional studies consistently demonstrate a severe loss of BRCA2 tumor\u2011suppressor activity.  In a mouse embryonic stem\u2011cell complementation assay, the variant failed to rescue the lethal phenotype of Brca2 loss, and the few surviving clones exhibited markedly reduced homology\u2011directed repair (HDR) activity, only about 28\u202f% of wild\u2011type levels, placing it in the pathogenic range (Class\u202f4/5) [29988080][PMC6752316].  The same variant showed a pronounced increase in cisplatin sensitivity, another indicator of compromised DNA\u2011repair function [PMC6752316].  Additional functional screens using GFP\u2011fragment reassembly reported assay read\u2011outs for G2609D but did not assign a definitive clinical classification, and a separate computational\u2011prediction study presented functional data without an explicit pathogenicity claim [PMC6406614][PMC6287763].\nNo population\u2011frequency data or detailed in\u2011silico prediction scores were provided in the extracted evidence, and therefore a population\u2011based assessment of rarity cannot be made from the available sources.\nTaken together, the preponderance of clinical segregation data, the consistent functional impairment observed across multiple experimental platforms, and the lack of any benign or neutral classification converge on a conclusion that the BRCA2 p.Gly2609Asp variant is most appropriately regarded as likely pathogenic, supporting its inclusion in risk\u2011assessment and management strategies for carriers.",
+    "structured_summary": {
+        "overall_pathogenicity": "pathogenic",
+        "pathogenicity_counts": {
+            "supports benignity": 0,
+            "supports pathogenicity": 9,
+            "uncertain": 0
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "PURPOSE: Genetic testing has uncovered large numbers of variants in the BRCA2 gene for which the clinical significance is unclear. Cancer risk prediction of these variants of uncertain significance (VUS) can be improved by reliable assessment of the extent of impairment of the tumor suppressor function(s) of BRCA2. METHODS: Here, we evaluated the performance of the mouse embryonic stem cell (mESC)-based functional assay on an extensive set of BRCA2 missense variants. RESULTS: Whereas all 20 nonpathogenic (class 1/2) variants were able to complement the cell lethal phenotype induced by loss of endogenous mouse Brca2, only 1 out of 15 pathogenic (class 4/5) variants (**p.Gly2609Asp**) was able to do so. However, in this variant the major tumor suppressive activity of BRCA2, i.e., homology directed repair (HDR), was severely abrogated. Among 43 evaluated VUS (class 3), 7 were unable to complement the lethal phenotype of mouse Brca2 loss while 7 other variants displayed a more severe reduction of HDR activity than observed for class 1/ 2 variants. CONCLUSION: The mESC-based BRCA2 functional assay can reliably determine the functional impact of VUS, distinguish between pathogenic and nonpathogenic variants, and may contribute to improved cancer risk estimation for BRCA2 VUS carriers.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The mESC\u2011based functional assay demonstrates that the BRCA2 G2609D variant severely impairs HDR activity, consistent with a pathogenic effect.",
+            "uncertainties_or_limitations": null,
+            "article_id": "29988080",
+            "title": "The functional impact of variants of uncertain significance in BRCA2.",
+            "relevance_score": 1.0,
+            "pub_year": 2019,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Gene DNA Change Protein Change Domain Motif IARC Class a References/Criterion BRCA1 c.53T>C p.Met18Thr RING finger Helical bundle N 4 c.65T>C p.Leu22Ser RING finger Helical bundle N 5 c.110C>A p.Thr37Lys RING finger beta-Sheet 5 c.115T>C p.Cys39Arg RING finger Zn2+/SiteII 5 c.116G>A p.Cys39Tyr RING finger Zn2+/SiteII 5 c.122A>G p.His41Arg RING finger Zn2+/SiteII 5 c.130T>A p.Cys44Ser RING finger Zn2+/SiteI 5 c.131G>T p.Cys44Phe RING finger Zn2+/SiteI 5 c.131G>A p.Cys44Tyr RING finger Zn2+/SiteI 5 c.133A>C p.Lys45Gln RING finger 1 c.181T>G p.Cys61Gly RING finger Zn2+/SiteII 5 c.191G>A p.Cys64Tyr RING finger Zn2+/SiteII 5 c.199G>T p.Asp67Tyr RING finger 1 BRCA2 c.7469T>C p.Ile2490Thr DBD HD 1 Frequency >1% in outbred populations c.7544C>T p.Thr2515Ile DBD HD 1 **c.7826G>A** **p.Gly2609Asp** DBD HD 4 c.7878G>C p.Trp2626Cys DBD HD 5 c.7879A>T p.Ile2627Phe DBD HD 5 c.7940T>C p.Leu2647Pro DBD HD 4 c.7958T>C p.Leu2653Pro DBD HD 5 c.8063T>C p.Leu2688Pro DBD OB1 4 c.8149G>T p.Ala2717Ser DBD OB1 1 c.8165C>G p.Thr2722Arg DBD OB1 5 c.8167G>C p.Asp2723His DBD OB1 5 c.8168A>G p.Asp2723Gly DBD OB1 5 c.8187G>T p.Lys2729Asn DBD OB1 1 c.8243G>A p.Gly2748Asp DBD OB1 5 c.8324T>G p.Met2775Arg DBD OB1 2",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Variants Group DNA Change Protein Change Domain Motif Align-GVGD a IARC Class b BRCA2/DSS1 Binding c HDR d Centrosome Amplification e mESCs-Based Cell-Viability f,g mESCs-Based HDR g Validation panel c.7469T>C p.Ile2490Thr DBD HD C0 1 + ND ND + ND c.7544C>T p.Thr2515Ile DBD HD C0 1 + +/- +/- + + **c.7826G>A** **p.Gly2609Asp** DBD HD C65 4 - - ND + - c.7878G>C p.Trp2626Cys DBD HD C65 5 - - ND - ND c.7879A>T p.Ile2627Phe DBD HD C15 5 - - - - ND c.7940T>C p.Leu2647Pro DBD HD C65 4 - - - ND ND c.7958T>C p.Leu2653Pro DBD HD C65 5 - - - ND ND c.8063T>C p.Leu2688Pro DBD OB1 C65 4 - - ND - ND c.8149G>T p.Ala2717Ser DBD OB1 C0 1 + ND ND + + c.8165C>G p.Thr2722Arg DBD OB1 C65 5 - - - - ND c.8167G>C p.Asp2723His DBD OB1 C65 5 - - - - ND c.8168A>G p.Asp2723Gly DBD OB1 C65 5 - - - - ND c.8187G>T p.Lys2729Asn DBD OB1 C0 1 + + + + + c.8243G>A p.Gly2748Asp DBD OB1 C65 5 - - - - ND c.8324T>G p.Met2775Arg DBD OB1 C0 2 + ND ND ND ND VUS c.7505G>A p.Arg2502His DBD HD C0 NA + ND ND ND ND c.7628A>G p.Tyr2543Cys DBD HD C15 NA + ND ND ND ND c.7636T>C p.Ser2546Pro DBD HD C0 NA + ND ND ND ND c.7649T>C p.Ile2550Thr DBD HD C25 NA + ND ND ND ND c.7684T>C p.Phe2562Leu DBD HD C15 NA - - ND ND ND c.7698T>G p.Asp2566Glu DBD HD C0 NA + ND ND ND ND c.7930A>G p.Asn2644Asp DBD HD C0 NA + ND ND ND ND",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": ".**7826G>A** **p.Gly2609Asp** DBD HD C65 4 \u2212 \u2212 ND + \u2212 c.7878G>C p.Trp2626Cys DBD HD C65 5 \u2212 \u2212 ND \u2212 ND c.7879A>T p.Ile2627Phe DBD HD C15 5 \u2212 \u2212 \u2212 \u2212 ND c.7940T>C p.Leu2647Pro DBD HD C65 4 \u2212 \u2212 \u2212 ND ND c.7958T>C",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study evaluated the BRCA2 G2609D (c.7826G>A) variant using GFP\u2011reassembly interaction assays and reported assay read\u2011outs, but did not provide a definitive pathogenic or benign classification for the variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6406614",
+            "title": "GFP-Fragment Reassembly Screens for the Functional Characterization of Variants of Uncertain Significance in Protein Interaction Domains of the BRCA1 and BRCA2 Genes",
+            "relevance_score": 1.0,
+            "pub_year": 2019,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Exon Nucleotidea Amino acid Complementationb HDR capacity (%)c Cisplatin sensitivity (%)d Class 1/2BRCA2missense variants 2 c.53G>A p.Arg18His Yes 95 68 3 c.125A>G p.Tyr42Cys Yes 72 59 6 c.502C>A p.Pro168Thr Yes 115 108 10 c.1114A>C p.Asn372His Yes 79 150 12 c.6853A>G p.Ile2285Val Yes 60 122 14 c.7057G>C p.Gly2353Arg Yes 82 108 15 c.7544C>T p.Thr2515Ile Yes 78 70 16 c.7766C>A p.Pro2589His Yes 52 127 18 c.8149G>T p.Ala2717Ser Yes 85 57 18 c.8187G>T p.Lys2729Asn Yes 70 53 19 c.8360G>A p.Arg2787His Yes 94 114 20 c.8567A>C p.Glu2856Ala Yes 82 63 21 c.8662C>T p.Arg2888Cys Yes 52 92 22 c.8851G>A p.Ala2951Thr Yes 72 80 22 c.8917C>T p.Arg2973Cys Yes 69 51 24 c.9155G>A p.Arg3052Gln Yes 50 105 24 c.9235G>A p.Val3079Ile Yes 97 48 25 c.9292T>C p.Tyr3098His Yes 86 54 26 c.9509A>G p.Asp3170Gly Yes 71 105 27 c.10045A>G p.Thr3349Ala Yes 102 65 Class 4/5BRCA2missense variants 2 c.3G>A p.Met1Ile No NA NA 17 **c.7826G>A** **p.Gly2609Asp** Yes 28 35 17 c.7878G>C p.Trp2626Cys No NA NA 17 c.7879A>T p.Ile2627Phe No NA NA 17 c.7940T>C p.Leu2647Pro No NA NA 17 c.7958T>C p.Leu2653Pro No NA NA 18 c.8057T>C p.Leu2686Pro No NA NA 18 c.8063T>C p.Leu2688Pro No NA NA 18 c.8165C>G p.Thr2722Arg No NA NA 18 c.8167G>C p.Asp2723His No NA NA 18 c.8168A>G p.Asp2723Gly No NA NA 18 c.8243G>A p.Gly2748Asp No NA NA 24 c.9154C>T p.Arg3052Trp No NA NA 25 c.9285C>G p.Asp3095Glu No NA NA 25 c.9371A>T p.Asn3124Ile No NA NA",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "Functional BRCA2 is essential for cell survival and normal embryonic development in mice. We first tested the ability of 15 class 4/5 variants to rescue the lethal cell phenotype of loss of Brca2 function after Cre-mediated removal of the conditional Brca2 allele. Fourteen of these variants were unable to form HAT-resistant clones in the absence of functional Brca2 (Table 1, Fig. 2), indicating that BRCA2 function was severely affected. Only the class 4 variant **p.Gly2609Asp** allowed outgrowth of a reduced number of HAT-resistant clones compared with WT BRCA2-expressing cells (Fig. 2). In contrast, all 20 class 1/2 variants were able to fully complement loss of endogenous Brca2 (Table 1, Fig. 2).",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "Next, we assessed the capacity of surviving variants (i.e., all class 1/2 variants and class 4 variant **p.Gly2609Asp**) to use HDR for the repair of an I-Sce1-induced DSB in a DR-GFP reporter construct integrated at the Pim1 locus. HDR activity of class 1/2 variants relative to WT BRCA2 ranged between 50 and 120% (Fig. 3a), with the strongest reduction observed for variants p.Pro2589His, p.Arg2888Cys, and p.Arg3052Gln. In contrast, the class 4 variant **p.Gly2609Asp** displayed a more severe functional impairment of BRCA2 function with an HDR reduction of 72%. Based on the results obtained with the validation set, variants with an HDR level higher than 50% can be classified as class 1/2, whereas class 4/5 variants either are unable to rescue the lethal cell phenotype of Brca2 loss or display an HDR level below 30% of WT BRCA2. Accordingly, both the sensitivity and specificity of the assay were estimated at 100% (95% confidence interval 78-100 and 83-100% respectively).",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "Due to the pivotal role of BRCA2 in the repair of DSBs, the absence of functional BRCA2 protein will render cells vulnerable to compounds that introduce toxic DNA lesions that impede cellular processes such as transcription and replication. The crosslinking agent cisplatin, a clinically relevant chemotherapeutic for BRCA1/2-related tumors, was used for cell survival measurements in all variants. Analogous to the wide range of HDR activity detected, half-maximal inhibitory concentrations (IC50) of cisplatin varied considerably among class 1/2 variants (Fig. S7a, Table 1). Although IC50 values in eight class1/2 variants were lower than in WT BRCA2-expressing cells, class 4 variant **p.Gly2609Asp** displayed the largest increase in cisplatin sensitivity with a more than twofold reduced IC50 value. The low IC50 values calculated for variants p.Trp31Cys, p.Gly2508Ser, p.Val2652Met, p.Ser2704Phe, p.Arg2784Gln, p.Arg2842Leu, p.Pro3039Arg, p.Tyr3092Ser, and p.Lys3326Ter indicate hypersensitivity toward cisplatin treatment (Fig. S7b, Table 2).",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "The therapeutic strategy of PARP inhibition is a relatively novel approach to exploit the absence of efficient HDR. Clinical trials have revealed promising results for the use of PARP inhibitors in BRCA-associated breast and ovarian cancers. It is, however, unclear to what extent partial impairment of HDR activity sensitizes cells to inhibition of PARP. We treated cells expressing BRCA2 variants with different concentrations of a PARP inhibitor (KU-0058948) for 48 h and measured cell survival by flow cytometry. Neither the class 1/2 variants nor the class 4 variant **p.Gly2609Asp** displayed increased sensitivity towards PARP inhibitor treatment (Fig. S9). Apart from p.Trp31Cys and p.Arg2784Gln, none of the VUS, including variants with severely compromised HDR activity (>55% reduction), displayed increased sensitivity towards PARP inhibitor treatment (Fig. S9).",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "In this study, we determined the sensitivity and specificity of the BRCA2 mESC-based assay using a validation panel of classified BRCA2 missense variants. The functional impact of variants associated with a high posterior probability (class 4/5) was distinctly different from that of variants with a low posterior probability (class 1/2) of pathogenicity. All class 1/2 variants (n = 20) complemented the lethal phenotype of Brca2 deficient mESC and displayed capacities to repair an I-Sce1 induced DSB via HDR between 50 and 120% of WT BRCA2 activity. In contrast, 14 of 15 class 4/5 variants were unable to rescue Brca2 loss-induced cell lethality. Although class 4 variant **p.Gly2609Asp** was able to complement loss of Brca2 this variant displayed a severe reduction in HDR activity (28% of WT). Variant classification on the basis of complementation phenotype and level of HDR activity allows a clear separation of class 1/2 (HDR >50%) and class 4/5 (no complementation or HDR <30%) variants with 100% sensitivity and specificity.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "obtained for class 4 variant **p.Gly2609Asp**. Among the 23 VUS identified by genetic screening in the Netherlands, two variants (p.Arg2625Ser and p.Lys2750del,) did not rescue loss-of-Brca2-mediated cell",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The article provides multiple functional assays showing that BRCA2 p.Gly2609Asp (G2609D) has impaired complementation, markedly reduced HDR activity, increased cisplatin sensitivity, and is classified as a pathogenic (class 4/5) variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6752316",
+            "title": "The functional impact of variants of uncertain significance in BRCA2",
+            "relevance_score": 0.96,
+            "pub_year": 2018,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...C65 1.28 +- 0.10 1.00 1.73E-05 Guidugli et al., 2017 G2585R c.7753G>A C65 1.30 +- 0.10 1.00 2.47E-05 Guidugli et al., 2017 G3003E c.9008G>A C65 1.33 +- 0.08 1.00 4.59E-05 Guidugli et al., 2017 **G2609D** **c.7826G>A** C65 Class 4 1.35 +- 0.07 1.00 6.19E-05 Guidugli et al., 2013 W2725L c.8174G>T C55 1.35 +- 0.10 1.00 6.73E-05 Guidugli et al., 2017 K2498E c.7492A>G C55 1.36 +- 0.10 1.00 7.98E-05 Guidugli et al.,...",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article includes functional assay data for the BRCA2 G2609D variant but does not provide an explicit interpretation of its pathogenicity or benignity.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6287763",
+            "title": "Comprehensive annotation of BRCA1 and BRCA2 missense variants by functionally validated sequence-based computational prediction models",
+            "relevance_score": 0.96,
+            "pub_year": 2018,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Collection of family information for BRCA2 DBD Class 3 VUS with posterior probabilities of pathogenicity approaching Class 2 (<0.05) or Class 4 (>0.95) thresholds yielded 18 pedigrees that were informative for segregation analysis. Re-estimation of the posterior probability of pathogenicity for the associated variants resulted in classification of three variants (S3020C, S2414L and T3013I) as Class 2 (likely non-pathogenic) and three (**G2609D**, L2688P and N3124I) as Class 4 (likely pathogenic). When these Class 4 missense substitutions were combined with all known Class 4 and Class 5 missense mutations (18, 23), a total of 13 known pathogenic missense mutations from the BRCA2 DBD were available for further study (Table 1). Of these, eight were Class 5 and five were Class 4. In addition, we selected the three new Class 2 variants, 13 previously classified Class 1 and Class 2 variants (23) and the polymorphisms A2466V (24) and A2951T (25, 26) as non-pathogenic standards for our HDR studies (Table 1).",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The article classifies the BRCA2 G2609D missense variant as likely pathogenic, supported by family segregation data and HDR functional assay results.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC3537884",
+            "title": "A classification model for BRCA2 DNA binding domain missense variants based on homology directed repair activity",
+            "relevance_score": 0.39,
+            "pub_year": 2012,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "both single-strand and double-strand DNA. This mutation could be responsible for abnormal DNA repair, as described for the **G2609D** mutation [34]. The two mutations of NOTCH1 identified in brain",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The meta\u2011analysis reports that BRCA2 mutations, including G2609D, are more prevalent in brain metastases, implying a possible role in metastatic spread to the brain.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10046845",
+            "title": "Genomics of Breast Cancer Brain Metastases: A Meta-Analysis and Therapeutic Implications",
+            "relevance_score": 0.27,
+            "pub_year": 2023,
+            "data_sources": [
+                "pmc"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 1643,
+            "output": 456
+        },
+        {
+            "input": 3128,
+            "output": 890
+        },
+        {
+            "input": 3929,
+            "output": 1255
+        },
+        {
+            "input": 2154,
+            "output": 544
+        },
+        {
+            "input": 2092,
+            "output": 507
+        },
+        {
+            "input": 2285,
+            "output": 304
+        },
+        {
+            "input": 1791,
+            "output": 226
+        },
+        {
+            "input": 1718,
+            "output": 159
+        },
+        {
+            "input": 2088,
+            "output": 741
+        },
+        {
+            "input": 2142,
+            "output": 558
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 5595,
+        "output": 963
+    },
+    "total_time": 1180.32
+}

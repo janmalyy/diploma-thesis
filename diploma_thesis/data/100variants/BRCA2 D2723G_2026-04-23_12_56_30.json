@@ -1,0 +1,1574 @@
+{
+    "before_pruning": {
+        "articles_in_total": 56,
+        "only_medline_count": 3,
+        "only_pmc_count": 22,
+        "only_suppl_count": 22,
+        "both_pmc_and_suppl_count": 9,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 50,
+        "only_medline_count": 3,
+        "only_pmc_count": 22,
+        "only_suppl_count": 16,
+        "both_pmc_and_suppl_count": 9,
+        "all_three_count": 0
+    },
+    "variant": "BRCA2 D2723G",
+    "time_to_process_articles": 29.86,
+    "context_length": 142612,
+    "after_removal": {
+        "articles_in_total": 33,
+        "only_medline_count": 3,
+        "only_pmc_count": 20,
+        "only_suppl_count": 1,
+        "both_pmc_and_suppl_count": 9,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "20513136",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 156,
+            "abstract_length": 1688,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "27886673",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 155,
+            "abstract_length": 1306,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "29416916",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 91,
+            "abstract_length": 2173,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6327376",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 134,
+            "abstract_length": 2203,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1321
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3021973",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 155,
+            "abstract_length": 1688,
+            "number_of_unmatched_snippets": 4,
+            "unmatched_snippets": [
+                "represent the brca2 c 8168a g p asp2723gly carrier e brca2 c 7988a t p glu2663val lanes 1 and 2 represent the variant carrier alternative isoforms representing \u03b4exon 17 18 and \u03b4exon 18 are",
+                "figure s2 variant and wildtype full length transcript expression in brca1 c 4868c g brca2 c 7988a t and brca2 c 8168a g carriers based on the splicing aberrations observed these three variants might",
+                "substitutions displaying splicing aberrations the functional consequences of the brca2 missense substitutions p glu2663val and p asp2723gly were assessed using results from homologous recombination and",
+                "lanes 3 and 4 represent the brca2 c 8168a g p asp2723gly carrier e brca2 c 7988a t p glu2663val lanes 1 and 2 represent the variant carrier alternative isoforms representing \u03b4exon 17 18 and \u03b4exon"
+            ],
+            "number_of_paragraphs": 11,
+            "paragraphs_lengths": [
+                1720,
+                1885,
+                1747,
+                1340,
+                1005,
+                1655,
+                1920,
+                197,
+                205,
+                201,
+                206
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5384790",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 130,
+            "abstract_length": 4108,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 4,
+            "paragraphs_lengths": [
+                513,
+                1671,
+                408,
+                1756
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6406614",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 165,
+            "abstract_length": 1367,
+            "number_of_unmatched_snippets": 2,
+            "unmatched_snippets": [
+                "p leu2653pro dbd hd 5 6 46 c 8063t c p leu2688pro dbd ob1 4 47 c 8149g t p ala2717ser dbd ob1 1 55 c 8165c g p thr2722arg dbd ob1 5 6 46 c 8167g c p asp2723his dbd ob1 5 5 8 c 8168a g p asp2723gly",
+                "p asp2723his dbd ob1 c65 5 \u2212 \u2212 \u2212 \u2212 nd c 8168a g p asp2723gly dbd ob1 c65 5 \u2212 \u2212 \u2212 \u2212 nd c 8187g t p lys2729asn dbd ob1 c0 1 c 8243g a p gly2748asp dbd ob1 c65 5 \u2212 \u2212 \u2212 \u2212 nd c 8324t g p met2775arg dbd"
+            ],
+            "number_of_paragraphs": 3,
+            "paragraphs_lengths": [
+                1740,
+                206,
+                206
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7174002",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 182,
+            "abstract_length": 1796,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                855
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9433957",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 152,
+            "abstract_length": 1704,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5650336",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 119,
+            "abstract_length": 1331,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                1587,
+                1569
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8997148",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 75,
+            "abstract_length": 2226,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                698
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6931216",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 74,
+            "abstract_length": 1874,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "mexican founder mutation which was found in 28 11 39 of cases among brca2 mutations c 8168 a g was the most prevalent in 25 5 20 of cases table 2 brca status of ovarian cancer patients"
+            ],
+            "number_of_paragraphs": 3,
+            "paragraphs_lengths": [
+                946,
+                667,
+                200
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9591025",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 82,
+            "abstract_length": 1653,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1447
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6287763",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 134,
+            "abstract_length": 1358,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                414
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6826418",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 170,
+            "abstract_length": 2044,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 5,
+            "paragraphs_lengths": [
+                1287,
+                1020,
+                922,
+                1696,
+                1895
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4567983",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 138,
+            "abstract_length": 1847,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                2088
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9207274",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 103,
+            "abstract_length": 1488,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "19 3 c 5616 5620delagtaa p lys1872asnfs occr brca2 15 c 5631delc p asn1877lysfs 19 c 6352 6353delgt p val2118lysfs bccr 12 c 8168a g p asp2723gly olaparib maintenance therapy patient"
+            ],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                197
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6752316",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 68,
+            "abstract_length": 1253,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1390
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6706860",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 115,
+            "abstract_length": 1390,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1106
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3446350",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 96,
+            "abstract_length": 1893,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                312
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10092710",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 117,
+            "abstract_length": 971,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                422
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10512642",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 62,
+            "abstract_length": 2236,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                621
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10529611",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 151,
+            "abstract_length": 3144,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                436
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6546720",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 83,
+            "abstract_length": 2321,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                408
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9434626",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 115,
+            "abstract_length": 2178,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "that can modify the structure function and expression of the brca2 gene to complement this finding four out of 27 nssnps g2728d rs80359071 d2723g rs41293513 t2722r rs80359062 and d3095e"
+            ],
+            "number_of_paragraphs": 5,
+            "paragraphs_lengths": [
+                893,
+                1500,
+                1760,
+                1444,
+                198
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8191791",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 121,
+            "abstract_length": 1379,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 7,
+            "paragraphs_lengths": [
+                1329,
+                1521,
+                1093,
+                851,
+                982,
+                1637,
+                644
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3776670",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 69,
+            "abstract_length": 1345,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "d2723g c 8167g c 18 asp his dna binding domain m specific primer extension products data for most common mutations in the brca genes n d not done no mutation nucleotide change snapshot result n"
+            ],
+            "number_of_paragraphs": 3,
+            "paragraphs_lengths": [
+                1682,
+                370,
+                199
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3537884",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 112,
+            "abstract_length": 1547,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                855,
+                399
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC2587343",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 89,
+            "abstract_length": 2580,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                753
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10170303",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 160,
+            "abstract_length": 1366,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "glu2663val c 8165c g p thr2722arg c 8168g a p asp2723gly c 8243g a p gly2748asp c 9004g a p glu3002lys c 9227g a p gly3076glu breast cancer ovarian cancer variant group informative"
+            ],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                1099,
+                204
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10504444",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 163,
+            "abstract_length": 1728,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1667
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8008494",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 123,
+            "abstract_length": 1307,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "\u2013 \u2013 \u2013 \u2013 \u2013 \u2013 n o n o p asp2723ala 0 99 1 15 ps3 pm1 pm5 pp1 \u2013 pp3 pm2 supp lp p p asp2723gly 0 94 1 10 ps3 \u2013 pm5 \u2013 \u2013 pp3 pm2 supp vus p p asp2723his 1 00 1 07 ps3 \u2013 \u2013 \u2013 \u2013 pp3 pm2 supp vus p"
+            ],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                194
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9024354",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 153,
+            "abstract_length": 2173,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                396
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        }
+    ],
+    "narrative_summary": "The BRCA2 c.8168A>G (p.Asp2723Gly, also noted as D2723G) is a missense change located in the DNA\u2011binding domain of BRCA2 that has been investigated in the context of hereditary breast\u2011ovarian cancer syndromes and, more recently, in biliary\u2011tract and ovarian cancers. Early functional work identified this variant as creating an aberrant splice product while still allowing expression of full\u2011length transcript, and subsequent protein\u2011function assays demonstrated loss of homologous\u2011recombination activity and increased centrosome amplification, findings that are consistent with a deleterious effect on BRCA2 tumor\u2011suppressor function [20513136][PMC3021973].\n\nClinical reports have repeatedly classified the variant as pathogenic. Multifactorial likelihood analysis in several cohorts gave a posterior probability >0.99, supporting a Class\u202f5 pathogenic designation [20513136][PMC3021973]. Population\u2011based screening in Mexican breast\u2011cancer patients identified the variant among the most frequent BRCA2 alterations and reported it as pathogenic in a large Mexican cohort [PMC6327376]. A Chilean hereditary\u2011breast\u2011cancer series also listed p.Asp2723Gly as pathogenic after functional validation showed impaired DNA repair [PMC5650336]. An analysis of breast\u2011cancer risk in carriers of missense BRCA2 variants similarly concluded that Asp2723Gly confers elevated cancer risk compared with truncating mutations [PMC10170303]. In contrast, a German consortium guideline interpreted the splicing data as not leading to complete loss of full\u2011length protein and therefore suggested the variant is likely benign [PMC7174002]; public databases such as BIC/ClinVar continue to list it as a variant of uncertain significance [PMC4567983].\n\nFunctional investigations provide extensive evidence of pathogenic impact. Patient\u2011derived RNA studies demonstrated a splice\u2011site creation that deletes 163\u202fbp of exon\u202f18, producing a frameshift transcript, while full\u2011length mRNA still contains the variant allele [20513136][PMC3021973]. In vitro assays of the missense protein showed markedly reduced homologous\u2011recombination (\u22481.6\u202f% of wild\u2011type) and increased centrosome amplification (\u224829\u202f%) [PMC3021973]. Minigene splicing assays reproduced the exon\u201118 deletion and classified the variant as likely pathogenic [PMC5384790]. GFP\u2011fragment reassembly and DNA\u2011damage repair assays showed that cells expressing the D2723G construct failed to repair \u03b3\u2011H2AX lesions, mirroring the phenotype of known pathogenic controls [PMC6406614][PMC6826418]. Mouse embryonic stem\u2011cell complementation experiments demonstrated that D2723G could not rescue lethality of Brca2\u2011deficient cells, unlike benign controls [PMC6706860]. Additional studies reported loss of DSS1 binding, destabilization of the OB1 fold, and failure to restore nuclear localisation, all hallmarks of pathogenic BRCA2 missense mutations [PMC8191791].\n\nPopulation data indicate that the variant is not a common polymorphism. In the Mexican cohort it accounted for 25\u202f% of BRCA2 mutations among ovarian\u2011cancer patients, but its overall allele frequency in unselected populations remains low and it was not observed at frequencies expected for germline pathogenic alleles in a biliary\u2011tract cancer series [29416916][PMC6931216]. Computational predictions uniformly label the change as deleterious: multiple in\u2011silico tools (e.g., PredictSNP, Protein Likelihood Ratio) assign high pathogenicity scores, and saturation\u2011genome\u2011editing studies classify D2723G as a deleterious allele based on functional read\u2011outs [PMC9434626][PMC2587343][PMC10529611].\n\nOverall, the preponderance of evidence\u2014high\u2011confidence functional impairment, consistent pathogenic classification in multifactorial and population studies, and deleterious computational predictions\u2014supports the interpretation of BRCA2 c.8168A>G (p.Asp2723Gly) as a pathogenic variant. The few reports suggesting benignity or VUS status reflect differing weighting of the partial splice\u2011aberration data, but do not outweigh the extensive functional and clinical data indicating loss of BRCA2 tumor\u2011suppressor activity.",
+    "structured_summary": {
+        "overall_pathogenicity": "pathogenic",
+        "pathogenicity_counts": {
+            "supports benignity": 1,
+            "supports pathogenicity": 37,
+            "uncertain": 2
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Missense substitutions in high-risk cancer susceptibility genes create clinical uncertainty in the genetic counseling process. Multifactorial likelihood classification approaches and in vitro assays are useful for the classification of exonic sequence variants in BRCA1 and BRCA2, but these currently rely on the assumption that changes in protein function are the major biological mechanism of pathogenicity. This study investigates the potentially pathogenic role of aberrant splicing for exonic variants predicted to encode missense substitutions using patient-derived RNA. No splicing aberrations were identified for BRCA1c.5054C>T and BRCA2c.7336A>G, c.8839G>A, and c.9154C>T. However, RT-PCR analysis identified a major splicing aberration for BRCA1c.4868C>G(p.Ala1623Gly), a variant encoding a missense substitution considered likely to be neutral. Splicing aberrations were also observed for BRCA2c.7988A>T(p.Glu2663Val) and **c.8168A>G**(**p.Asp2723Gly**), but both variant and wildtype alleles were shown to be present in full-length mRNA transcripts, suggesting that variant protein may be translated. BRCA2 protein function assays indicated that BRCA2p.Glu2663Val, **p.Asp2723Gly** and p.Arg3052Trp missense proteins have abrogated function consistent with pathogenicity. Multifactorial likelihood analysis provided evidence for pathogenicity for BRCA1 c.5054C>T(p.Thr1685Ile) and BRCA2c.7988A>T(p.Glu2663Val), **c.8168A>G**(**p.Asp2723Gly**) and c.9154C>T(p.Arg3052Trp), supporting experimentally derived evidence. These findings highlight the need for improved bioinformatic prediction of splicing aberrations and to refine multifactorial likelihood models used to assess clinical significance.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study reports that the BRCA2 p.Asp2723Gly variant exhibits splicing abnormalities but produces full-length transcripts, and functional assays demonstrate loss of protein function, with multifactorial analysis supporting its pathogenic classification.",
+            "uncertainties_or_limitations": null,
+            "article_id": "20513136",
+            "title": "Detection of splicing aberrations caused by BRCA1 and BRCA2 sequence variants encoding missense substitutions: implications for prediction of pathogenicity.",
+            "relevance_score": 1.0,
+            "pub_year": 2010,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Ascertaining the clinical consequences of BRCA1 and BRCA2 variants of uncertain significance (VUS) is currently indispensable for providing effective genetic counseling and preventive actions for families with hereditary breast and ovarian cancer (HBOC). To this end, we conducted a combination of in silico prediction and cDNA splicing analyses of 13 BRCA1 and 10 BRCA2 VUS identified in our cohort as well as a case-control analysis in a population-based sample of 10 recurrent VUS. We observed consistent results between the in silico predictions and sequencing analyses for all analyzed VUS. An abnormal cDNA pattern was observed for variants c.212+1G>A and c.5278-1G>A in BRCA1 and c.516+2T>A and **c.8168A>G** in BRCA2 according to in silico splicing prediction. A case-control study of VUS confirmed the polymorphisms of the c.67+62A>G, c.7008-62A>G and c.8851G>A BRCA2 variants previously published. c.4068G>A in the BRCA2 gene can also be considered a polymorphism due to its occurrence at a frequency greater than 1% in our population. Our study shows that employing population-based analysis and a combination of several in silico methods yields highly accurate information, resulting in a reliable tool for selecting variants for cDNA sequencing analysis in routine cancer genetic counseling units.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study combined in silico predictions and cDNA splicing analysis, finding an abnormal splicing pattern for the BRCA2 c.8168A>G (D2723G) variant, suggesting a functional impact consistent with pathogenicity.",
+            "uncertainties_or_limitations": null,
+            "article_id": "27886673",
+            "title": "In silico, in vitro and case-control analyses as an effective combination for analyzing BRCA1 and BRCA2 unclassified variants in a population-based sample.",
+            "relevance_score": 0.71,
+            "pub_year": 2016,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Biliary tract cancer (BTC) represents a heterogeneous disease with dismal outcome. Herein, we examined genotype and angiogenesis features in BTC. We applied genotyping (Sanger, qPCR, 101-gene panel NGS), mRNA relative quantification methods, and beta-catenin immunohistochemistry in 84 FFPE BTC (55 gallbladder [GBC], 14 intrahepatic [ICC], 15 extrahepatic [ECC carcinomas]). We identified 541 mutations in 68 (81%) tumors. Top mutated genes were CTNNB1 (36%); PTEN (33%); TP53 (31%); PIK3R1 (29%); PIK3CA (13%); BRCA2 and KRAS (12%); BRCA1 (11%). Six GBCs were hypermutated [hm] displaying a distinct mutational pattern. Mutations in TP53 and PI3K, Wnt and RAS components were prevalent among non-hypermutated tumors. All hmGBCs carried mutations in BRCA2 and other homologous recombination repair (HRR) genes, in PD1, but not in CTNNB1 and KRAS. None of the pathogenic BRCA2 **p.D2723G** and BRCA1 p.Q563* and c.5266dupC was present at frequencies expected for germline mutations. We observed copy gains (>6 copies) in EGFR (9% of informative tumors), PRKAR1A (7%), PIK3CA (6%), ERBB2 (5%) and MET (4%). TP53 mutations were prevalent in GBC (P<0.001) and PRKAR1A copy gains in ICC (P=0.007). PTEN was frequently co-mutated with CTNNB1 (P<0.001). Unrelated to CTNNB1 mutations, nuclear beta-catenin was detected in 45% of tumors, among them in 5/6 hmGBC. We observed strong mRNA expression correlation of the two neuropilins (NRP1 and NRP2) with each other (Spearman's rho 0.59) and with the endothelin receptor (NRP2 rho 0.66; NRP2 rho 0.51), and between VEGFA and its receptors (FLT1 rho 0.49; KDR rho 0.45). All PIK3CA mutated tumors expressed endothelin 1 mRNA (P=0.010). Most tumors expressing nuclear beta-catenin were negative for VEGFC (P=0.009) and FLT4 (P=0.002) mRNA expression. In conclusion, we confirmed the presence of known genomic aberrations in BTC and different genotypes between BTC subsets. Novel findings are the coexistence of PI3K and WNT pathway gene alterations in BTC, their association with angiogenesis, and the hypermutated GBCs with HRR gene mutations, all of which may be considered for new treatment options in this difficult to treat disease.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study reports BRCA2 p.D2723G as a pathogenic mutation found in biliary tract cancers, though it was not observed at germline\u2011expected frequencies.",
+            "uncertainties_or_limitations": null,
+            "article_id": "29416916",
+            "title": "Genotyping and mRNA profiling reveal actionable molecular targets in biliary tract cancers.",
+            "relevance_score": 0.12,
+            "pub_year": 2018,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Sample ID RS GENE POS REF ALT Clinical_significance_ENIGMA HGVS_cDNA REFERENCE FUCAM29 rs80357520 BRCA1 41243787 TTA T Pathogenic c.3759_3760delTA Villareal-Garza 2015 FUCAM50 rs41293455 BRCA1 41234451 G A Pathogenic c.4327C>T McKean-Cowdin 2005 FUCAM53 rs80357382 BRCA1 41258474 T C Pathogenic c.211A>G Rebbek 2016 FUCAM56 rs80357780 BRCA1 41245250 ACT A Pathogenic c.2296_2297delAG Weitzel 2005 FUCAM65 rs80357902 BRCA1 41243899 A AT Pathogenic c.3648dupA Lecarpentier 2012 FUCAM75 rs80357842 rs80357889 BRCA1 41243686 CCTCA C Pathogenic c.3858_3861delTGAG Kwong 2016 FUCAM77 rs80357914 BRCA1 41276044 A ACT Pathogenic c.68_69delAG Bolton 2012 FUCAM1 rs777107618 rs80359380 BRCA2 32911755 C CT Pathogenic c.3264dupT Susswein 2016 FUCAM36 **rs41293513** BRCA2 **32937507 A G** Pathogenic **c.8168A>G** Guidugli 2013 FUCAM40 rs80359660 BRCA2 32930683 G GC Pathogenic c.7556dupC Borg 2010 FUCAM48 rs80359082 BRCA2 32944584 G A Pathogenic c.8377G>A Guidugli 2013 FUCAM310 rs80359082 BRCA2 32944584 G A Pathogenic c.8377G>A Guidugli 2013 MLPA FUCAM33 BRCA1 Ex9-12del FUCAM11 BRCA1 Ex9-11del FUCAM30 BRCA1 Ex12del FUCAM84 BRCA2 Ex1del FUCAM85 BRCA2 Ex23del FUCAM98 BRCA2 Ex1del FUCAM100 BRCA2 Ex17del FUCAM102 BRCA2 Ex23del FUCAM9 BRCA2 Ex22-24del FUCAM10 BRCA2 Ex22-24del FUCAM25 BRCA2 Ex11del FUCAM41 BRCA2 Ex26del FUCAM47 BRCA2 Ex1del",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study surveys BRCA1/2 variation in a large Mexican cohort, reporting frequencies of pathogenic mutations\u2014including the D2723G (c.8168A>G) variant classified as pathogenic\u2014to improve interpretation of these genes in this population.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6327376",
+            "title": "Population and breast cancer patients' analysis reveals the diversity of genomic variation of the BRCA genes in the Mexican population",
+            "relevance_score": 1.0,
+            "pub_year": 2019,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Missense substitutions in high-risk cancer susceptibility genes create clinical uncertainty in the genetic counseling process. Multifactorial likelihood classification approaches and in vitro assays are useful for the classification of exonic sequence variants in BRCA1 and BRCA2, but these currently rely on the assumption that changes in protein function are the major biological mechanism of pathogenicity. This study investigates the potentially pathogenic role of aberrant splicing for exonic variants predicted to encode missense substitutions using patient-derived RNA. No splicing aberrations were identified for BRCA1c.5054C>T and BRCA2c.7336A>G, c.8839G>A, and c.9154C>T. However, RT-PCR analysis identified a major splicing aberration for BRCA1c.4868C>G(p.Ala1623Gly), a variant encoding a missense substitution considered likely to be neutral. Splicing aberrations were also observed for BRCA2c.7988A>T(p.Glu2663Val) and **c.8168A>G**(**p.Asp2723Gly**), but both variant and wildtype alleles were shown to be present in full-length mRNA transcripts, suggesting that variant protein may be translated. BRCA2 protein function assays indicated that BRCA2p.Glu2663Val, **p.Asp2723Gly** and p.Arg3052Trp missense proteins have abrogated function consistent with pathogenicity. Multifactorial likelihood analysis provided evidence for pathogenicity for BRCA1 c.5054C>T(p.Thr1685Ile) and BRCA2c.7988A>T(p.Glu2663Val), **c.8168A>G**(**p.Asp2723Gly**) and c.9154C>T(p.Arg3052Trp), supporting experimentally derived evidence. These findings highlight the need for improved bioinformatic prediction of splicing aberrations and to refine multifactorial likelihood models used to assess clinical significance.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "All variants were screened for potential splicing aberrations using Human Splicing Finder version 2.4 (www.umd.be/HSF, summarised in Table 1), and also assessed using in vitro splicing assays shown in Figure 2. Two of three variants predicted to create a de novo splice donor showed aberrant splicing consistent with bioinformatic predictions. BRCA1 c.4868C>G (p.Ala1623Gly) with MaxEnt scores of 6.29 for the variant splice site ctgGTGGGT, compared with 5.91 for the nearest donor consensus sequence, tttGTGAGT, resulted in a 119bp deletion from exon 16 (Figure 2A). The same findings were observed for BRCA1 c.4868C>G (p.Ala1623Gly) from the UK variant carriers (data not shown). BRCA2 **c.8168A>G** (**p.Asp2723Gly**) with MaxEnt scores of 8.56 for the variant site acaGTTGGG and 8.88 for the nearest donor consensus sequence, aagGTAAAT, and resulted in a deletion of 163 bp from exon 18 (Figure 2D). Both variants represent instances where splice sites otherwise unrecognizable by the splice machinery were elevated to a comparable or more likely splice point relative to the nearest site. Both deletions result in loss of the open-reading frame and creation of a stop codon, and were not seen in controls. Each of the seven variants was predicted to create or disrupt an ESE by one or more bioinformatic splice prediction tools, but a role for ESEs was indicated for only BRCA2 c.7988A>T (p.Glu2663Val). This substitution within exon 18 is predicted to disrupt an SRp55 site, and was associated with an elevated level of the two naturally occurring splice isoforms predicted to create a loss of the open reading frame; \u0394exon 18 (as previously reported by (Farrugia, et al., 2008)), and \u0394exon 17&18 (Figure 2E).",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "Based on the splicing aberrations observed, these three variants might be interpreted to be pathogenic: BRCA1 c.4868C>G (p.Ala1623Gly) and BRCA2 **c.8168A>G** (**p.Asp2723Gly**) create an aberrant splice product encoding a truncated protein, and BRCA2 c.7988A>T (p.Glu2663Val) results in elevated levels of an alternative mRNA isoform encoding a truncated protein. However, we further investigated if both variant and wildtype alleles were expressed in the full-length isoform, to determine if a full-length missense protein could be encoded by variant carriers. Sequencing of the full-length band revealed the presence of both wild-type and variant allele for BRCA1 c.4868C>G (p.Ala1623Gly). Similarly, sequencing of the upper band in Figure 2D identified both alleles for **c.8168A>G** (**p.Asp2723Gly**) in the full-length transcript. Sequencing of the 895bp full-length band in Figure 2E also showed evidence that both alleles for c.7988A>T (p.Glu2663Val) were present in the full-length transcript, indicating that both variant and wildtype alleles are expressed and suggesting that both missense and normal BRCA2 protein are likely to be translated in vivo. This is consistent with the fact that full-length transcript was within the normal range in LCLs for carriers of BRCA2 c.7988A>T (p.Glu2663Val).",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "Results are summarized in Supp. Table S3, and include results from assays conducted as part of this study (for p.Glu2663Val), and assay results previously reported by some of the authors (Farrugia, et al., 2008). Full-length **p.Asp2723Gly** showed increased centrosome amplification (29% vs 10% for wildtype) and reduced homologous recombination (HR) activity (1.6% vs 6.1% for widltype). These results were similar to those obtained using the known pathogenic p.Asp2723His variant shown in Supp. Table S3 (Farrugia, et al., 2008; Wu, et al., 2005). Full-length p.Arg3052Trp showed reduced HR activity (1.6%) but did not induce significant centrosome amplification (13%). The p.Glu2663Val substitution showed increased centrosome amplification (29%) and reduced homologous repair (HR) activity (1.8%) relative to wildtype BRCA2. The results indicate that these missense substitutions both have the capacity to inactivate BRCA2 and predispose to cancer in the absence of dysregulated splicing.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "The results from multifactorial likelihood analysis of the variants under study are shown in Table 2. It should be noted that the prior probability of pathogenicity chosen for multifactorial analysis of all these variants was based on the A-GVGD class, which currently does not incorporate the potential for exonic variants to cause splicing aberrations. BRCA1 c.5054C>T (p.Thr1685Ile) and BRCA2 c.7988A>T (p.Glu2663Val), **c.8168A>G** (**p.Asp2723Gly**) and c.9154C>T (p.Arg3052Trp) reached a posterior probability of pathogenicity greater than 0.99 and would thus be considered Class 5 pathogenic according to the classification system for sequence variants proposed by the 2008 IARC working group on unclassified genetic variants (Plon, et al., 2008). The pathogenic BRCA2 variants arise within the DNA-binding domain, occur at highly conserved amino acid residues and/or are predicted to create severe physico-chemical changes in this position. The low prior probability (0.01) for BRCA1 c.4868C>G (p.Ala1623Gly) reflects that this variant results in a minor physico-chemical change to the protein. The posterior probability for this variant reached 0.80 considered Class 3, (uncertain clinical significance). It is of interest to note that this variant would almost certainly be considered a Class 5 variant, on the basis of the observed splicing aberration (Spurdle, et al., 2008a) : it produces a major transcript carrying a premature stop codon. BRCA2 c.7336A>G (p.Lys2446Glu) and c.8839G>A (p.Glu2947Lys) were classified as Class 2 (likely not pathogenic), with a posterior probability between 0.001\u20130.049.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "This detailed study of exonic BRCA1 and BRCA2 missense variants has demonstrated that thorough laboratory investigation is required to assess the mechanism of pathogenicity for the subset of evolutionarily conserved exonic variants observed to cause aberrant splicing. A combination of quantitative isoform-specific real-time PCR, cDNA sequencing, quantitative allele-specific PCR, and protein functional assays were required to show that the BRCA2 c.7988A>T (p.Glu2663Val) variant, predicted to disrupt an ESE, is associated with increased expression of at least one commonly occurring isoform but also expresses normal levels of full-length isoform encoding both wildtype and proven functionally abrogated variant protein. Similarly, RT- PCR, cDNA sequencing, and protein functional assays together allowed us to infer that the BRCA2 **c.8168A>G** (**p.Asp2723Gly**) variant is associated with minor levels of aberrantly spliced transcript encoding a truncated protein, with the majority of the variant allele transcribed as full length transcript encoding a missense protein previously reported to have reduced function (Farrugia, et al., 2008). Despite the complexity of functional aberrations associated with these two variants, all lines of evidence indicate that they are pathogenic. The aberrant splicing results in transcripts considered pathogenic, and the encoded missense alteration disrupts BRCA2 function. In addition, multifactorial likelihood analysis classifies both variants as class 5 pathogenic (posterior probability >0.99), even assuming a lower prior probability of 0.81 for a C65 missense substitution (Tavtigian, et al., 2008) rather than an assumed prior of 0.96 for variants likely to cause splicing defects, based on the midpoint of estimates (CI 91% to 100%) for +\u22121/2 variants highly likely to disrupt splicing (Easton, et al., 2007; Spurdle, et al., 2008a).",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": ". Figure S2). Variant and wildtype full-length transcript expression in BRCA1 c.4868C>G, BRCA2 c.7988A>T, and BRCA2 **c.8168A>G** carriers Based on the splicing aberrations observed, these three variants might",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "substitutions displaying splicing aberrations The functional consequences of the BRCA2 missense substitutions p.Glu2663Val and **p.Asp2723Gly** were assessed using results from homologous recombination and",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study provides extensive functional, splicing, and multifactorial likelihood evidence that the BRCA2 Asp2723Gly (D2723G) variant is pathogenic.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC3021973",
+            "title": "Detection of Splicing Aberrations Caused by BRCA1 and BRCA2 Sequence Variants Encoding Missense Substitutions: Implications for Prediction of Pathogenicity",
+            "relevance_score": 0.9,
+            "pub_year": 2010,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...Ex18-del298 (93.6%); 878-nt transcript (4%); CT: 2.4% r.[8034_8331del,?] p.[D2679Ffs*43;?] c.8072C>T [-]ESE/[+-]ESS CT (94.9%); ex18 skipping (5.1%) r.[8072c>u,7977_8331del] p.[S2691F;Y2660Ffs*43] **c.8168A>G** [+]5'SS CT (69.6%); Ex18-del164 (25.9%) /Ex18 skipping (4.5%) r.[**8168a>g**,8168_8331del,7977_8331del] p.[**D2723G**;G2724Ffs*3; Y2660Ffs*43] c.8249_8250del [-]ESE/[-]ESS CT (93.0%); ex18 skipping (7.0%) r.[8249_8250del,7977_8331del] p.[K2750Asnfs*13; Y2660Ffs*43] c.8331G>A [-] 5'SS Ex18 skipping (52%); CT...",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "...c.7976G>C] (total exon 17 skipping), c.7988A>T (partial exon 18 skipping), c.7992A>T (partial exon 18 skipping), c.8023A>G (ex18-del309) and **c.8168A>G** (partial ex18-del163) displayed the same splicing patterns in patient RNA and minigene MGBR2_ex14-20, lending further support to the reproducibility of minigene results. Furthermore, a recent...",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "On the other hand, two variants with weaker splicing alterations, **c.8168A>G**/ **p.Asp2723Gly** (30%) and c.8249_8250del (7%), were previously classified as likely pathogenic (protein function and truncation, respectively), so their pathogenicity may probably be due to a double mechanism: protein inactivation and splicing disruption, like BRCA1 c.5123C>A (p.A1708E). Likewise, c.8009C>A was previously classified as causal because of its predicted nonsense change (p.Ser2670X), but it actually induces 96% of aberrant transcripts so it should be reclassified as a spliceogenic variant. Reclassification of missense and protein truncation variants as splicing alterations might also have an effect in their penetrance and expressivity. Taken together, 8 spliceogenic variants remain classified as VUS since relevant proportions of the full-length transcript were detected (c.7975A>G, c.7977-6T>G, c.7988A>T, c.7992T>A, c.8007A>G, c.8009C>T, c.8009C>G and c.8072C>T) (Table 1; S3 and S4 Tables). It is complex to interpret the role of variants with partial splicing anomalies in HBOC under the clinical perspective as they will require more studies to elucidate it. Nevertheless, we can speculate that they represent low BC risk alleles that might interact with other susceptibility and protector alleles to modify the overall BC risk. The incorporation of all these data into a single integrated model of BC risk would improve disease prediction and prevention.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study uses BRCA2 exon 17\u201118 minigene splicing assays to evaluate variants, finding that the D2723G (c.8168A>G) variant disrupts splicing and is classified as likely pathogenic, supporting its disease relevance.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5384790",
+            "title": "Functional classification of DNA variants by hybrid minigenes: Identification of 30 spliceogenic variants of BRCA2 exons 17 and 18",
+            "relevance_score": 0.78,
+            "pub_year": 2017,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Two issues need to be considered when evaluating the performance of the GFP-fragment reassembly assay. First, since the assays described are based on an artificial experimental model, where functional domains of human proteins are expressed in prokaryotic cells, the behavior of mutant constructs that we observed might not reflect the properties of full-length BRCA proteins expressed in their 'natural' context. However, it must be considered that, although our observations might actually provide clues for the molecular mechanisms mediating the tumor suppressor activity of BRCA proteins (see below), the aim of this study was essentially to collect evidence for the clinical relevance of BRCA VUS by the use of functional assays that efficiently dichotomize variants into pathogenic or non-pathogenic. Second, some exonic non-synonymous changes can affect gene functionality by altering mRNA splicing. In a few cases, i.e., when the spliceogenic allele retains the ability to produce a full-length protein, this occurrence may co-exist with a pathogenic effect of the missense substitution such as in the case of the BRCA2 **c.8168A>G** (**p.Asp2723Gly**). Previous data and in silico analyses revealed for two of the BRCA1 VUS we tested, an actual (c.190T>G) or potential (c.115T>G) spliceogenic effect. Based on the outcomes of the BRCA/UbcH5a interaction assay, all the above variants were predicted to be pathogenic. However, no data are presently available to ascertain if full-length proteins carrying such variants are actually expressed, and, therefore, no data are present to hypothesize dual mRNA/protein defects.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "p.Leu2653Pro DBD HD 5 [6,46] c.8063T>C p.Leu2688Pro DBD OB1 4 [47] c.8149G>T p.Ala2717Ser DBD OB1 1 [55] c.8165C>G p.Thr2722Arg DBD OB1 5 [6,46] c.8167G>C p.Asp2723His DBD OB1 5 [5,8] **c.8168A>G** **p.Asp2723Gly**",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "p.Asp2723His DBD OB1 C65 5 \u2212 \u2212 \u2212 \u2212 ND **c.8168A>G** **p.Asp2723Gly** DBD OB1 C65 5 \u2212 \u2212 \u2212 \u2212 ND c.8187G>T p.Lys2729Asn DBD OB1 C0 1 + + + + + c.8243G>A p.Gly2748Asp DBD OB1 C65 5 \u2212 \u2212 \u2212 \u2212 ND c.8324T>G p.Met2775Arg DBD",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study uses a GFP\u2011fragment reassembly functional assay and predicts the BRCA2 D2723G (p.Asp2723Gly) variant to be pathogenic, while acknowledging the need for further validation in full\u2011length protein contexts.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6406614",
+            "title": "GFP-Fragment Reassembly Screens for the Functional Characterization of Variants of Uncertain Significance in Protein Interaction Domains of the BRCA1 and BRCA2 Genes",
+            "relevance_score": 0.65,
+            "pub_year": 2019,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...DBD (DNA/DSS1 binding domain - helical, OB1, OB2, OB3) 2481 3186 W2626C (c.7878G>C [p.Trp2626Cys])I2627F (c.7879A>T [p.Ile2627Phe])E2663V (c.7988A>T [p.Glu2663Val])T2722R (c.8165C>G [p.Thr2722Arg])**D2723G** (**c.8168A>G** [**p.Asp2723Gly**])D2723H (c.8167G>C [p.Asp2723His])G2748D (c.8243G>A [p.Gly2748Asp])I2778_Q2829del (c.8332_8487del [p.Ile2778_Gln2829del])R3052W (c.9154C>T [p.Arg3052Trp]) Class5 if at least one clinically relevant... ...transcript that encodes a discrete in-frame deletion considered informative to definition of clinically important domains. (Splicing aberrations are reported for BRCA2 c.7988A>T [p.Glu2663Val] and **c.8168A>G** [**p.Asp2723Gly**] (Walker et al., 2010), but these did not lead to complete loss of function of the full length transcript), and missense alterations showed abrogation of functional activity using multiple assays...",
+                    "mention_type": "functional",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The article presents classification criteria and reports that the BRCA2 D2723G variant shows splicing changes without complete loss of function, suggesting it is likely not pathogenic.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7174002",
+            "title": "Criteria of the German Consortium for Hereditary Breast and Ovarian Cancer for the Classification of Germline Sequence Variants in Risk Genes for Hereditary Breast and Ovarian Cancer",
+            "relevance_score": 0.63,
+            "pub_year": 2020,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "We identified 25 different mutations (pathogenic variants, class 5), of which 6 are novel and 19 have been previously reported (Table 1). These mutations are present in 71 index patients, of which 32 carried a mutation in BRCA1 (7.06%) and 39 (8.61%) in BRCA2 leading to a combined mutation prevalence of 15.7% (71/453). It is noteworthy that considering only cases with family history this percentage is higher, being 17.9 %. Nine of the 25 mutations described in this work have been found exclusively in Chilean patients (and this study), two of them being recurrent in our samples (c.1504_1507delTTAA and c.3817C>T, both in BRCA1) (Table 1). We have to remark that mutation **p.Asp2723Gly** has been previously described (BIC) as a variant of uncertain significance in several populations and in 2008, a functional analysis made by Farrugia et al. defined that this aminoacid change was detrimental for BRCA2 function in DNA repair and centrosome duplication. Since then this mutation has been defined as pathogenic. Mutation c.211A>G in BRCA1 (previously named as R71G) is located in the before last nucleotide of exon 5, eliminating the donor splice site in this exon and revealing a cryptic splice site 22 nucleotides upstream. The deletion of 22 nucleotides in the mRNA creates a stop codon in position 64. We corrected the protein nomination for this mutation from the previous p.Arg71Gly to p.Cys64Ter.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "Gene Number of families Exon Systematic nomenclature (HGVS) Previously named as Population(s) Reported cDNA Protein cDNA Protein BRCA1 1 2 c.68_69delAG p.Glu23Valfs*17 185delAG Stop 39 Ashkenazi-Jewish 1 5 c.181T>G p.Cys61Gly 300T>G C61G Europe 1 5 c.187_188insA p.Leu63Tyrfs*3 308insA Stop 65 Chile1 1 5 c.211A>G p.Cys64Ter 330A>G R71G Global 1 7 c.303T>A p.Tyr101Ter - - NO 2 11 c.1504_1507delTTAA p.Leu502Serfs*29 - - NO 1 11 c.2486_2487delTT p.Phe829Ter 2605_2606delTT F829X Chile2 9 11 c.3331_3334delCAAG p.Gln1111Asnfs*5 3450del4 Stop1115 Global 7 11 c.3759dupT p.Lys1254Ter 3878insT Stop 1254 Global 4 11 c.3817C>T p.Gln1273Ter 3936C>T Q1273X Chile1 1 11 c.3858_3861delTGAG p.Ser1286Argfs*20 3977del4 Stop 1305 China, Chile2 1 11 c.3968_3971delAAAT p. Gln1323Argfs*11 - - NO 1 11 c.4065_4068delTCAA p. Asn1355Lysfs*10 4184del4 Stop 1364 Global 1 20 c.5266dupC p.Gln1756Profs*74 5382insC Stop 1829 Ashkenazi-Jewish BRCA2 5 3 c.145G>T p.Glu49Ter 373G>T E49X Globally 10 11 c.4740_4742dupTG p.Glu1581Valfs*37 4970insTG Stop 1617 Chile1,2 Argentina3 9 11 c.5146_5149delTATG p.Tyr1716Lysfs*8 5373delGTAT Stop 1724 Spain and Chile1,2 1 11 c.5946delT p.Ser1982Argfs*22 6174delT Stop 2003 Ashkenazi-Jewish 1 11 c.6629_6630delAA p.Glu2210Glyfs*14 6857delAA Stop 2223 Spain and Chile1 1 14 c.7397dupC p.Ala2466Alafs*8 - - NO 1 18 **c.8168A>G** **p.Asp2723Gly** 8396A>G **D2723G** Global 1 18 c.8223_8224dup11 p.Asn2742Leufs* - - NO 1 22 c.8941G>T p.Glu2981Ter - - NO 6 23 c.8987T>A p.Leu2996Ter - - Once in ClinVar origin not provided 3 25 c.9382C>T p.Arg3128Ter 9610C>T R3128X Global",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article reports that BRCA2 p.Asp2723Gly (D2723G) has been functionally shown to impair DNA repair and is classified as pathogenic, and also includes it in a catalog of global BRCA2 variants without further interpretation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5650336",
+            "title": "BRCA1 and BRCA2 founder mutations account for 78% of germline carriers among hereditary breast cancer families in Chile",
+            "relevance_score": 0.6,
+            "pub_year": 2017,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Chr Position Ref * Alt * Depths Gene LA + Type AA Chg Pat pLI AF Lat ProtSize 11 108175579 G A 21,19 ATM Splice E1892_E37 H4 0 1 x 10-4 3056 15 91341429 A AG 15,25 BLM Frameshift T1074fs D8 0 - 1417 17 41258472 C A 54,35 BRCA1 Splice R71_E4 G8 0 3 x 10-5 1863 13 32914033 CA C 18,20 BRCA2 Frameshift S1848fs E0 0 3 x 10-5 3418 13 32914122 AC A 52,30 BRCA2 Frameshift N1877fs J2 0 3 x 10-5 3418 13 32930653 C CA 15,17 BRCA2 Frameshift S2509fs B2 0 - 3418 13 **32937507 A G** 44,30 BRCA2 Missense **D2723G** G2 0 A:C 0 3418 13 32954260 CG C 23,17 BRCA2 Frameshift V3079fs K5 0 2 x 10-4 3418 22 29091718 TA T 29,23 CHEK2 Frameshift L413fs J6 0 - 543 22 29115401 A ATGAT 28,16 CHEK2 Frameshift M222fs F5 0 1...",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study sequenced germline exomes of 115 young Mexican breast\u2011cancer patients and reported the BRCA2 missense variant D2723G among many other variants, but did not provide an interpretation of its clinical significance.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8997148",
+            "title": "Germline Variants in Cancer Genes from Young Breast Cancer Mexican Patients",
+            "relevance_score": 0.58,
+            "pub_year": 2022,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "BRCA status % (N) Wild-type 67 (120/179) Mutated 33 (59/179) BRCA1 66.1 (39/59) BRCA2 33.9 (20/59) Mutation % (N) Location BRCA1 1) ex9-12del (Mexican Founder Mutation) 28.2 (11/39) OCCR 2) c.2806-2809 del GATA 5.1 (2/39) 3) c.1860 del T 5.1 (2/39) 4) c.1723 dup G 2.6 (1/39) 5) c.1961 del A 2.6 (1/39) 6) c.2101 A > T 2.6 (1/39) 7) c.2551 G > T 2.6 (1/39) 8) c.3598 C > T 2.6 (1/39) 9) c.3648 dup A 2.6 (1/39) 10) c.3858-3861 del TGAG 2.6 (1/39) 11) c.4868 C > G 5.1 (2/39) BCCR 12) c.211 A > G 2.6 (1/39) 13) c.5353 C > T 2.6 (1/39) 14) exon 18-19 del 5.1 (2/39) 15) c.4327 C > T 7.7 (3/39) NRR 16) c.798-799 del TT 5.1 (2/39) 17) c.4976 del C 2.6 (1/39) 18) c.68-69 del AG 2.6 (1/39) BRCA2 19) c.4325 C > A 10 (2/20) OCCR 20) c.5116-5119 del AATA 10 (2/20) 21) c.4749-4750 del AG 5 (1/20) 22) c.5542 del A 5 (1/20) 23) c.5616-5620 del AGTAA 5 (1/20) 24) c.5631 del C 5 (1/20) 25) c.**8168 A > G** 25 (5/20) BCCR 26) c.1796-1800 del CTTAT 10 (2/20)",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Variable N Median 95% Confidence interval P Lower bound Upper bound RFS (months) 179 47.7 40.4 55.0 BRCA status 0.949 WT 120 49.2 41.59 56.8 Mutated 59 43.7 34.8 52.6 Type of BRCA mut 0.030 BRCA1 39 37.6 29.0 46.2 BRCA2 20 72.77 38.37 107.17 BRCA location 0.080 OCCR 30 41.8 19.5 64.0 BCCR 16 72.8 27.5 118.1 NRR 13 40.1 19.4 60.7 Type of BRCA1 mut 0.033 Endemic (exon 9-12 del) 11 86.1 37.2 135.1 Other 28 34.5 20.7 48.2 Type of BRCA2 mut 0.442 c.**8168 A > G** 5 72.8 51.9 93.6 Other 15 62.3 19.2 105.3 BRCA1 location 0.584 OCCR 22 27.4 4.4 50.5 BCCR 9 79.5 39.1 119.9 NRR 8 40.1 25.7 54.4 BRCA2 location 0.013 OCCR 8 NR NR NR BCCR 7 72.8 39.0 106.6 NRR 5 25.8 8.3 43.2",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "(Mexican founder mutation), which was found in 28% (11/39) of cases. Among BRCA2 mutations, c.**8168 A > G** was the most prevalent in 25% (5/20) of cases (Table 2). BRCA Status of Ovarian Cancer Patients",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study reports that the BRCA2 D2723G (c.8168 A>G) variant is the most common BRCA2 mutation in Mexican ovarian cancer patients (25% of BRCA2 cases) and that carriers show relatively favorable recurrence\u2011free survival compared with other BRCA2 mutations.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6931216",
+            "title": "Clinical Evaluation of BRCA1/2 Mutation in Mexican Ovarian Cancer Patients",
+            "relevance_score": 0.57,
+            "pub_year": 2019,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...c.7522G>C C65 1.09 +- 0.15 1.00 2.92E-07 Current study S2691F c.8072C>T C0 1.10 +- 0.06 1.00 4.09E-07 Guidugli et al., 2017 E3002K c.9004G>A C55 1.10 +- 0.08 1.00 4.35E-07 Guidugli et al., 2017 **D2723G** **c.8168A>G** C65 Class 5 1.11 +- 0.12 1.00 5.19E-07 Lindor et al., 2012 W2626R c.7876T>C C65 1.12 +- 0.01 1.00 6.04E-07 Current study G2596E c.7787G>A C65 1.12 +- 0.09 1.00 5.77E-07 Guidugli et al., 2017 Q2561P...",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study presents large\u2011scale computational predictions and includes functional assay data for the BRCA2 D2723G variant, but does not provide an explicit pathogenicity interpretation for this variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6287763",
+            "title": "Comprehensive annotation of BRCA1 and BRCA2 missense variants by functionally validated sequence-based computational prediction models",
+            "relevance_score": 0.53,
+            "pub_year": 2018,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "First, we generated the BRCA2-CT minigene that encodes the FLAG-tagged CT region of the wild-type BRCA2 protein, which ranges from amino acid 2634 to amino acid 3418. Then, we used this construct as a template for two site-directed mutagenesis reactions to reproduce the p.Pro2767Ser mutant DBD (BRCA2-CT P2767S) and the mutant Thr2766AsnFs (BRCA2-CT T2766NFs) (Figure 3A) that is reported in ClinVar as pathogenic (c.8297delC, rs80359705) and used it as a positive control. Indeed, this deletion gives rise to a premature stop codon that results in the loss of about 900 amino acids at the CT domain of the BRCA2 protein (Figure 3A,B). Both mutagenesis reactions were confirmed by Sanger sequencing (Figure S2). Moreover, we site-directed mutagenized 7 missense variants chosen by Guidugli et al. as a validation set: BRCA2-CT L2688P, BRCA2-CT T2722R, BRCA2-CT D2723H, BRCA2-CT **D2723G**, and BRCA2-CT G2748D as pathogenic controls; BRCA2-CT A2717S and BRCA2-CT K2729N as benign controls.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "Interestingly, the DNA of the cells transfected with the BRCA2-CT wt minigene and the BRCA2-CT benign controls (BRCA2-CT A2717S and BRCA2-CT K2729N) was not repaired (> 98% of the nuclei were phospho-H2AX-positive for BRCA2-CT WT; 95% and 93% positive nuclei for BRCA2-CT A2717S and BRCA2-CT K2729N, respectively). On the contrary, the decrease of gamma-H2AX-positive signals in the cells transfected with BRCA2-CT P2767S and all the BRCA2-CT pathogenic controls minigenes (BRCA2-CT L2688P, BRCA2-CT T2722R, BRCA2-CT D2723H, BRCA2-CT **D2723G**, and BRCA2-CT G2748D) were similar to the mock-transfected cells, although the speed of repair varied slightly between the different BRCA2-CT control samples (Figure 8).",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "In detail, at 36 h post-IR, the percentage of gamma-H2AX was significantly higher in BRCA2-CT wt (90.6%, p <= 0.0001) than in BRCA2-CT P2767S (27.76%, p <= 0.0001), BRCA2-CT L2688P (17.14%), BRCA2-CT T2722R (11.43%), BRCA2-CT D2723H (10.81%), BRCA2-CT **D2723G** (12%), BRCA2-CT G2748D (totally repaired, 0%), and the mock-transfected cells (8.47%). All these data demonstrate that mutagenized proteins interfere differently with the repair pathway and that both the BRCA2-CT wt and the BRCA2-CT benign controls prevent repair mechanisms. Indeed, the BRCA2-CT A2717S and BRCA2-CT K2729N-transfected cells showed high levels of gamma-H2AX positive cells (87.50% and 85.11%, p <= 0.0001).",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "The cDNA fragment encoding the C-terminal region of BRCA2 (BRCA2-CT), which contains the DNA binding sites, the nuclear localization sequence and the RAD51 binding regions in the C-terminus encoded by exon 27, was amplified by PCR from the pcDNA3 236HSC WT expression vector (Addgene, Cambridge, MA, USA) using oligonucleotides a and b, as shown in Table S1, and cloned in the NotI-BamHI sites of the p3XFLAG-CMV vector (Sigma-Aldrich, Saint Louis, MO, USA). The c.8299C > T nucleotide change and the c.8297delC deletion were obtained by the in vitro mutagenesis of p3XFLAG-CMV-BRCA2 cDNA using the QuikChange II XL Site-Directed Mutagenesis Kit (Agilent Technologies, Santa Clara, CA, USA), according to the manufacturer's instructions. Sanger sequencing was performed to verify all of the mutagenized DNA constructs. Seven missense variants, falling in the OB1 DBD of BRCA2, were used to validate the method: 5 variants were classified as pathogenic, namely: (1) p.Leu2688Pro c.8063T > C, rs80359045; (2) p.Thr2722Arg c.8165C > G, rs80359062; (3) p.Asp2723His c.8167G > C, rs41293511; (4) **p.Asp2723Gly** c.**8168A > G**, **rs41293513**; and (5) p.Gly2748Asp c.8243G > A, rs80359071; and 2 variants were classified as being benign/likely benign, namely: (6) p.Ala2717Ser c.8149G > T, rs28897747 and (7) p.Lys2729Asn c.8187G > T, rs80359065.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "The DNA damage recovery assay performed on the entire variants validation set. The percentage of gamma-H2AX positive cells, before 5Ggamma irradiation, showed a basal level of H2AX phosphorylation for all samples. Thirty minutes after IR, each sample showed high levels of gamma-H2AX that started to decrease, at different rates, until 36 h. With respect to BRCA2-CT P2767S, the DNA of the cells transfected with the BRCA2-CT WT minigene (90.6%, **** = 2.34 x 10-17, p <= 0.0001) and the BRCA2-CT benign controls (BRCA2-CT A2717S, **** = 9.8 x 10-33, p <= 0.0001, and BRCA2-CT K2729N, **** = 2.4 x 10-32, p <= 0.0001) after 36 h post-IR, was not repaired, unlike in BRCA2-CT P2767S (27.76%, p <= 0.0001), BRCA2-CT L2688P (17.14%, **** = 1.4 x 10-16, p <= 0.0001), BRCA2-CT T2722R (11.43%, **** = 2.74 x 10-16, p <= 0.0001), BRCA2-CT D2723H (10,81%, **** = 6.25 x 10-16, p <= 0.0001), BRCA2-CT **D2723G** (12%, **** = 1.4 x 10-17, p <= 0.0001), BRCA2-CT G2748D (totally repaired, 0%, **** = 8.9 x 10-16, p <= 0.0001), and the mock-transfected cells (8.47%, **** = 16.9 x 10-17, p <= 0.0001). Instead, the decrease of gamma-H2AX-positive signals in the cells transfected with BRCA2-CT P2767S and all the BRCA2-CT pathogenic controls minigenes (BRCA2-CT L2688P, BRCA2-CT T2722R, BRCA2-CT D2723H, BRCA2-CT **D2723G**, and BRCA2-CT G2748D) were similar to the mock-transfected cells, and differences regarding these samples were not statistically significant.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study provides functional and classification evidence that the BRCA2 D2723G variant impairs DNA\u2011damage repair and should be considered pathogenic for hereditary breast\u2011ovarian cancer risk.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6826418",
+            "title": "A Functional Analysis of the Unclassified Pro2767Ser BRCA2 Variant Reveals Its Potential Pathogenicity that Acts by Hampering DNA Binding and Homology-Mediated DNA Repair",
+            "relevance_score": 0.53,
+            "pub_year": 2019,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "BIC ClinVar LOVD UMD BRCA1c.2351C>Tp.Ser784Leu VUS BenignData: noneaInsufficient PathogenicData: literatureInsufficient VUS BRCA1c.3082C>Tp.Arg1028Cys VUS BenignData: noneaInsufficient PathogenicData: literatureInsufficient VUS BRCA1c.4484G>Tp.Arg1495Met PathogenicData: noneInsufficient PathogenicData: noneaInsufficientb PathogenicData: literaturecSufficient PathogenicData: literaturedSufficient BRCA1c.4868C>Gp.Ala1623Gly VUS PathogenicData: noneaInsufficiente PathogenicData: literatureSufficient PathogenicData: literaturedSufficient BRCA1c.5072C>Tp.Thr1691Ile VUS VUS PathogenicData: literatureInsufficient VUS BRCA1c.4986+6T>C(IVS16+6T>C) PathogenicData: noneInsufficient PathogenicData: noneaInsufficiente VUS PathogenicData: literaturedSufficient BRCA1c.5074G>Cp.Asp1692His PathogenicData: noneInsufficient PathogenicData: noneaInsufficiente VUS PathogenicData: literaturedInsufficient BRCA1c.5408G>Cp.Gly1803Ala VUS VUS BenignData: literatureInsufficient PathogenicfData: literaturedInsufficientf BRCA2c.6290C>Tp.Thr2097Met VUS PathogenicData: nonea,gInsufficiente VUS VUS BRCA2c.6322C>Tp.Arg2108Cys VUS VUS PathogenicData: literatureInsufficient VUS BRCA2c.7007G>Ap.Arg2336His PathogenicData: noneInsufficient PathogenicData: noneaInsufficientb PathogenicData: literatureSufficient PathogenicData: literaturedSufficient BRCA2c.7565C>Tp.Ser2522Phe VUS VUS PathogenicData: LiteratureInsufficient VUS BRCA2c.7868A>Gp.His2623Arg VUS PathogenicData: noneaInsufficientb PathogenicData: literatureInsufficient VUS BRCA2c.7878G>Cp.Trp2626Cys VUS VUS PathogenicData: literatureSufficient VUS BRCA2c.8168A>Gp.**Asp2723Gly** VUS VUS PathogenicData: literatureSufficient PathogenicData: literaturedSufficient BRCA2c.9104A>Cp.Tyr3035Ser VUS VUS PathogenicData: literatureInsufficient VUS BRCA2c.9235G>Ap.Val3079Ile VUS PathogenicData: noneagInsufficiente BenignData: literatureInsufficient VUS BRCA2c.9371A>Tp.Asn3124Ile VUS PathogenicData: noneaInsufficientb PathogenicData: literatureSufficient VUS Share of pathogenic classifications with sufficient evidence 0/40 % 0/110 % 6/1540 % 5/771 %",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The study shows considerable inconsistency among public BRCA2 variant databases, with the D2723G (p.Asp2723Gly) variant reported as a VUS despite literature support.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC4567983",
+            "title": "Comparison of locus-specific databases for BRCA1 and BRCA2 variants reveals disparity in variant classification within and among databases",
+            "relevance_score": 0.5,
+            "pub_year": 2015,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "-19 3 c.5616_5620delAGTAA (p. Lys1872Asnfs) OCCR BRCA2 15 c.5631delC (p. Asn1877Lysfs) 19 c.6352_6353delGT (p. Val2118Lysfs) BCCR 12 c.**8168A > G** (p. **Asp2723Gly**) Olaparib Maintenance Therapy Patient",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study shows that olaparib significantly extends progression\u2011free survival in Mexican ovarian cancer patients with the BRCA1 founder deletion, and it lists several BRCA2 variants\u2014including D2723G\u2014without interpreting their clinical relevance.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9207274",
+            "title": "Clinical Benefits of Olaparib in Mexican Ovarian Cancer Patients With Founder Mutation BRCA1-Del ex9-12",
+            "relevance_score": 0.5,
+            "pub_year": 2022,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Exon Nucleotidea Amino acid Complementationb HDR capacity (%)c Cisplatin sensitivity (%)d Class 1/2BRCA2missense variants 2 c.53G>A p.Arg18His Yes 95 68 3 c.125A>G p.Tyr42Cys Yes 72 59 6 c.502C>A p.Pro168Thr Yes 115 108 10 c.1114A>C p.Asn372His Yes 79 150 12 c.6853A>G p.Ile2285Val Yes 60 122 14 c.7057G>C p.Gly2353Arg Yes 82 108 15 c.7544C>T p.Thr2515Ile Yes 78 70 16 c.7766C>A p.Pro2589His Yes 52 127 18 c.8149G>T p.Ala2717Ser Yes 85 57 18 c.8187G>T p.Lys2729Asn Yes 70 53 19 c.8360G>A p.Arg2787His Yes 94 114 20 c.8567A>C p.Glu2856Ala Yes 82 63 21 c.8662C>T p.Arg2888Cys Yes 52 92 22 c.8851G>A p.Ala2951Thr Yes 72 80 22 c.8917C>T p.Arg2973Cys Yes 69 51 24 c.9155G>A p.Arg3052Gln Yes 50 105 24 c.9235G>A p.Val3079Ile Yes 97 48 25 c.9292T>C p.Tyr3098His Yes 86 54 26 c.9509A>G p.Asp3170Gly Yes 71 105 27 c.10045A>G p.Thr3349Ala Yes 102 65 Class 4/5BRCA2missense variants 2 c.3G>A p.Met1Ile No NA NA 17 c.7826G>A p.Gly2609Asp Yes 28 35 17 c.7878G>C p.Trp2626Cys No NA NA 17 c.7879A>T p.Ile2627Phe No NA NA 17 c.7940T>C p.Leu2647Pro No NA NA 17 c.7958T>C p.Leu2653Pro No NA NA 18 c.8057T>C p.Leu2686Pro No NA NA 18 c.8063T>C p.Leu2688Pro No NA NA 18 c.8165C>G p.Thr2722Arg No NA NA 18 c.8167G>C p.Asp2723His No NA NA 18 **c.8168A>G** **p.Asp2723Gly** No NA NA 18 c.8243G>A p.Gly2748Asp No NA NA 24 c.9154C>T p.Arg3052Trp No NA NA 25 c.9285C>G p.Asp3095Glu No NA NA 25 c.9371A>T p.Asn3124Ile No NA NA",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study found that the BRCA2 D2723G variant does not complement BRCA2 loss in mouse embryonic stem cells, suggesting functional impairment and supporting a pathogenic classification.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6752316",
+            "title": "The functional impact of variants of uncertain significance in BRCA2",
+            "relevance_score": 0.49,
+            "pub_year": 2018,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "The functionality of generated hBRCA2 variants was determined by assessing their ability to complement mBrca2 deficiency. The conditional mBrca2 allele of mBRCA2\u2212/loxP conditional knockout mES cells was excised from the genome by transient expression of the Cre recombinase. This excision concurrently leads to the restoration of an HPRT minigene, allowing cells to grow in the presence of HAT (Supp. Figure S1) (Kuznetsov et al. 2008). In agreement with their established functional impairment, none of the pathogenic hBRCA2 variants (p.Trp2626Cys, p.Ile2627Phe, p.Thr2722Arg, p.Asp2723His; **p.Asp2723Gly**, p.Gly2748Asp and p.Arg3052Trp, c.7617+2T>G, c.8754+5G>A) could complement the lethality of mBrca2-deficient mES cells, as shown by the absence of HATr clones or only low numbers of small, non-viable clones (Figure 4A; Table 1). In contrast, expression of a non-pathogenic variants (p.Lys2729Asn and p.Ala2770Thr) or a variant for which an effect on protein function is unlikely (c.68\u20137T>A) resulted in numbers of HAT resistant clones similar to those of wild type hBRCA2 expressing mES cells.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The article describes a BAC\u2011based pipeline for generating BRCA2 variants and demonstrates that the D2723G (p.Asp2723Gly) variant fails to rescue BRCA2\u2011deficient mouse embryonic stem cells, supporting its pathogenic classification.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6706860",
+            "title": "An efficient pipeline for the generation and functional analysis of human BRCA2 variants of uncertain significance.",
+            "relevance_score": 0.48,
+            "pub_year": 2014,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...truncation (p.G3086X) and splicing disruption (three aberrant isoforms; Table 1). Other variants, such as BRCA1 c.5123C > A and BRCA2 c.**8168A > G** (both missense changes), had already been shown to alter protein function and pre-mRNA processing.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study systematically evaluated splicing effects of numerous BRCA2 variants, demonstrating that many cause splicing disruptions and highlighting RNA analysis as a useful tool for assessing variant pathogenicity, including functional evidence for the D2723G (c.8168A>G) variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC3446350",
+            "title": "Comprehensive splicing functional analysis of DNA variants of the BRCA2 gene by hybrid minigenes",
+            "relevance_score": 0.43,
+            "pub_year": 2012,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...et al. UTSW subset BRCA2 c.8377G>A (p.Gly2793Arg) VUS LP Breast cancer 39 yo Prostate, breast, and colorectal cancer and abdominal cancer Unilateral mastectomy None No Mersch et al. UTSW subset BRCA2 **c.8168A>G** (**p.Asp2723Gly**) VUS LP Unilateral breast cancer 28 yo Endometrial cancer Bilateral mastectomy TAHBSO** No Mersch et al. UTSW subset CDH1 c.1137+1G>A VUS LP None Ovarian cancer None None No Mersch et al. UTSW...",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The paper argues for a compensation program to address harms caused by non\u2011negligent reclassification of genetic variants, emphasizing ethical and legal considerations rather than variant\u2011specific evidence.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10092710",
+            "title": "How should we address the inevitable harms from non-negligent variant reclassification in predictive genetic testing?",
+            "relevance_score": 0.4,
+            "pub_year": 2022,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Patients No. Gene Mutation Type Nucleotide Change AA Change #1 BRCA2 nonsynonymous c.**8168 A > G** **p.Asp2723Gly** #2 BARD1 frameshift-insertion c.1350_1351insT p.Gly451fs #3 MLH1 splice c.677 + 1G > A c.677 + 1G > A #4 MSH2 stopgain c.1216 C > T p.Arg406Ter RAD50 frameshift-deletion c.80_83delTCTT p.Phe27fs #5 MSH6 frameshift-insertion c.3261dupC p.Phe1088fs #6 MLH1 nonsynonymous c.350 C > T p.Thr117Met #7 MLH1 frameshift-deletion c.274_283delGCCAGTATTT p.Ala92fs #8 STK11 frameshift-insertion c.842dupC p.Leu282fs #9 MLH1 frameshift-deletion c.526delA p.Ile176fs #10 BRCA2 frameshift-deletion c.5164_5165delAG p.Ser1722fs",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study characterizes the genomic landscape of Chinese endometrial carcinoma patients, reporting both somatic and germline alterations, including the BRCA2 Asp2723Gly variant among the identified germline mutations.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10512642",
+            "title": "Genomic profile of Chinese patients with endometrial carcinoma",
+            "relevance_score": 0.39,
+            "pub_year": 2023,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...categorization based on a multifactorial likelihood model. Variants that change Asp at 2723 to Asn, Tyr, Ala, Gly, and Val are considered to be pathogenic. The **p.Asp2723Gly**(**c.8168A>G**) affects splicing leading to exon 18 skipping, making this variant deleterious. Our PIF-based functional categorization also revealed the deleteriousness of variants with Asn, Tyr, Ala, Gly, and...",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study reports that the BRCA2 Asp2723Gly (c.8168A>G) variant disrupts splicing and is classified as deleterious/pathogenic based on functional assays and a multifactorial likelihood model.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10529611",
+            "title": "Saturation genome editing of 11 codons and exon 13 of BRCA2 coupled with chemotherapeutic drug response accurately determines pathogenicity of variants",
+            "relevance_score": 0.37,
+            "pub_year": 2023,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Six of the most effective tools for predicting how a mutation would affect protein function are combined in the PredictSNP 1.0 web service to create a consensus classifier (see, Table S9, ESI-1). Among the analyzed 21 rsIDs and its corresponding 27 mutated positions, 14 rsIDs constituting 19 nsSNPs were identified to be deleterious with a better confidence level. The nsSNPs with rsIDs rs80359062, **rs41293513**, rs41293511, rs80359071, rs28897751, rs80359082, rs45580035, rs80359187, rs80359198, rs28897758, and rs28897759 were shown to be highly deleterious in all of the tools, whereas the other nsSNPs represented to be a combination of deleterious and neutral. These 19 deleterious mutations were used for converting the native BRCA2 into mutated BRCA2 protein at concerning amino acid positions.",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "Furthermore, the SNPs such as L2792P (rs28897751), L3101R (rs28897758), N3124I (rs28897759), D2723H (rs41293511), D2723A (**rs41293513**), K2950N (rs28897754), and T3013I (rs28897755) were reported to be deleterious by Rajasekaran et al. Karchin et al. used the Protein Likelihood Ratio and Medical genetics method for computational validation and identification of the deleterious effect of the variants like **D2723G** (**rs41293513**), K2729N (rs80359065), G2748D (rs80359071), K2950N (rs28897754), D2723H (rs41293511), V2728I (rs28897749), and E2856A (rs11571747) in BRCA2. Among all, **D2723G**, G2748D, and D2723H were reported to be deleterious. Guidugli et al. had reported over 13 pathogenic mutations from BRCA2 through homology-directed DNA break repair (HDR) functional assay. These studies of Karchin et al. and Guidugli et al. were well aligned with our findings. Moreover, we analyzed the effect of these 19 deleterious nsSNPs through molecular docking studies of TIP006136 and Tamoxifen against mutated positions followed by MD simulations",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "A total of 5284 compounds from TIPdb were virtually screened against BRCA2 using PyRx Python prescription 0.8 software. For the molecular docking study, AutoDock 4.2 was used, which is widely distributed public domain molecular docking software. The TIPdb compound as well as Tamoxifen were docked with the native type and 19 deleterious mutated positions (T2722R, D2723A, **D2723G**, D2723H, D2723V, G2748D, L2792P, G2793R, K2950N, T3013I, G3076E, D3095E, I3103M, L3101P, L3101Q, L3101R, N3124I, N3124S, and R3052W) of BRCA2. Space provided for docking was as follows: x-centering: 24.818, y-centering: 85.335, and z-centering: 11.816, based on grid dimensions. The resulting docked poses were chosen after giving due consideration to binding energy, ligand efficiency, and the intermolecular H-bond. The BIOVIA DS 20.1 Visualizer was used to evaluate ligand-protein interactions. Significant binding interactions with TIPdb compound against both native and mutant BRCA2 protein were explored for further analysis.",
+                    "mention_type": "computational",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "that can modify the structure, function, and expression of the BRCA2 gene to complement this finding. Four out of 27 nsSNPs, G2728D (rs80359071), **D2723G** (**rs41293513**), T2722R (rs80359062), and D3095E",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article uses a suite of in\u2011silico methods to predict that the BRCA2 D2723G missense change is deleterious and may contribute to male breast cancer, but it provides no experimental or clinical validation for this specific variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9434626",
+            "title": "Computational Biology of BRCA2 in Male Breast Cancer, through Prediction of Probable nsSNPs, and Hit Identification",
+            "relevance_score": 0.29,
+            "pub_year": 2022,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Remarkably, 12 of these 13 pathogenic missense mutations cluster within the DBD. By contrast, the remaining missense mutations are distributed across whole length of the BRCA2 protein (Figure 1B and Supplementary Table S2). Moreover, 10/12 pathogenic mutations in the DBD affect the HD and OB1 fold, implicated in DSS1 binding, whilst a singleton mutation (R3052W) affects the OB2/OB3 junction, and another singleton (N3124I) falls in OB3 (Figure 1C). We report below mechanistic analyses of 9 pathogenic mutants (W2626C, I2627F, R2659T, E2663V, T2722R, D2723H, **D2723G**, G2748D and R3052W), which are collectively representative of pathogenic BRCA2 DBD mutations, and compare them to 2 benign variants (T2515I, K2729N), as well as wild-type BRCA2. Of note, the pathogenic mutant R2659T has been reported to alter BRCA2 splicing, leading to the in-frame deletion of 57 amino acids encoded in exon 17, and the absence of mutant protein; it may not therefore represent a biologically significant BRCA2 mis-sense mutant.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "In contrast, GFP-BRCA2CT bearing pathogenic mutations exhibited reduced or undetectable binding to Myc-DSS1. Notably, different pathogenic mutants were differentially affected, with the following order of DSS1 binding - D2723H, **D2723G** (lowest DSS1 binding) < T2722R << I2627F < R2659T < G2748D << E2663V < W2626C (highest DSS1 binding). The pathogenic W2626C and E2663V mutants were least affected. The remaining pathogenic mutants all showed a marked decrease, with undetectable DSS1 binding in the D2723H and **D2723G** mutants, which affect a key Asp residue in the OB1-fold, as well as T2722R. All of these residues are evolutionarily conserved, and either in direct contact with DSS1 (R2659 and G2748), or adjacent to DSS1 contacts (W2626, I2627, E2663, T2722, and D2723) in the BRCA2 DBD/DSS1/ssDNA structure. In particular, D2723 is involved in hydrogen bonding with other residues in OB1 (S2670, I2672 and W2725), to stabilize the HD / OB1 interface. Our observations therefore provide direct evidence that residues in the DBD affected by these pathogenic mutations are important for DSS1 binding.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "To investigate the effect of BRCA2 DBD mutations on protein folding, we computationally modelled their consequences upon incorporation into the three available crystal structures (PDB reference 1MIU, 1MJE, 1IYJ) of rodent Brca2 DBD/Dss1 complexes. We exclusively studied pathogenic mutations affecting evolutionarily conserved residues (W2626C, I2627F, R2659T, E2663V, T2722R, D2723H, **D2723G**, G2748D and R3052W), since the amino acid sequence of rodent Brca2 DBD is 56% homologous to the human. We compared them to benign variants (K2729N, R2842H, R2888C, V2969M, R2973C, V3079I, D3170G) also affecting conserved amino acids. Our analyses (see Materials and Methods) point to two major effects that distinguish pathogenic DBD mutations from benign variants.",
+                    "mention_type": "computational",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "First, we calculated the change in Gibbs free energy (DeltaDeltaG) upon mutation in all three crystal structures. A positive DeltaDeltaG marks a destabilizing mutation, with a DeltaDeltaG >=2.5 kcal/mol considered highly likely to destabilize the protein structure. We infer from these analyses that the D2723H mutation induces a positive DeltaDeltaG >=10 kcal/mol in all three crystal structures (Supplementary Figure S1A), predicting that it destabilizes DBD folding. In addition, six other pathogenic mutations (W2626C, I2627F, T2722R, **D2723G**, G2748G and R3052W) are predicted to induce a DeltaDeltaG >=2.5 kcal/mol in at least two of the three crystal structures, suggesting that they also destabilize DBD folding.",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "Accordingly, we co-expressed the wildtype or different mutant forms of GFP-BRCA2CT with Myc-DSS1, and compared their nuclear / cytoplasmic distribution by microscopy (Figure 6A and B). Myc-DSS1 expression modestly increased the nuclear/cytoplasmic ratio of wildtype GFP-BRCA2CT by 1.7-fold. Myc-DSS1 expression had a similar effect on the distribution of the mutant proteins but to varying degrees. Whereas the nuclear / cytoplasmic ratio of W2626C and E2663V mutants increased by 3.5- to 5-fold, and that of the I2627F, R2659T and G2748D mutants by 1.8- to 2.4-fold, the T2722R, D2723H and **D2723G** mutants showed little change in nuclear localization. Thus, our findings collectively speak to the idea that DSS1 antagonizes the self-oligomerization of BRCA2 DBD to promote its nuclear localization.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "DSS1 expression restores the nuclear localization and HDR function of hypomorphic BRCA2 pathogenic mutants. (A and B) Nucleocytoplasmic distribution of the DBD mutants with DSS1 overexpression. HeLa cells expressing GFP-BRCA2CT forms without (vector only) or with Myc-DSS1 were fixed with PFA and analysed by microscopy. Representative images are shown. Scale bar, 10mum. The graph (B) shows GFP intensity ratio (nuclear/cytoplasmic, mean +- s.e.) measured from the images. Myc-DSS1 expression increases the nuclear/cytoplasmic ratio of GFP-BRCA2CT fragments to varying degrees: WT by 1.7 fold; W2626C and E2663V mutants by 3.5- to 5-fold; I2627F, R2659T, and G2748D mutants by 1.8- to 2.4-fold; T2722R, D2723H, and **D2723G** mutants, little change. More than 100 cells per sample were analysed. Statistical significance was assessed by one-way ANOVA test, followed by Bonferroni's multiple comparison test. A representative result from three independent experiments is shown. (C) mClover Lamin A HDR assay. HeLa cells harbouring BRCA2 mutations (Figure 4) were transfected with vector or Myc-DSS1 plasmids in addition to mClover Lamin A HDR assay plasmids. Mean of HDR positive cells (%) +- s.e. from two repeats is shown. More than 100 cells per sample were analysed in each repeat. Statistical significance was assessed by one-way ANOVA test, followed by Bonferroni's multiple comparison test.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "Notably, the rank order in which DSS1 expression restored the nuclear localization of different BRCA2 DBD mutant proteins was similar to the rank order of DSS1 binding by the mutant proteins (Figure 2C), but did not follow a simple linear relationship. Nevertheless, the nuclear localization of mutants that retain residual DSS1-binding was corrected by DSS1 overexpression, whereas the D2723H and **D2723G** mutants which severely lack DSS1 binding was not. One possibility raised by these findings is that a critical threshold of DSS1 binding may be required for BRCA2 transport and function.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "Multiple functional and computational experiments show that the BRCA2 D2723G missense variant disrupts DSS1 binding, destabilizes the DBD, prevents nuclear localization and HDR rescue, supporting its classification as a pathogenic mutation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8191791",
+            "title": "Cancer-causing BRCA2 missense mutations disrupt an intracellular protein assembly mechanism to disable genome maintenance",
+            "relevance_score": 0.23,
+            "pub_year": 2021,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "The DNA was isolated from peripheral EDTA blood samples using standard proteinase K/SDS digestion followed by phenol chloroform extraction. All patients were screened for six mutations in the BRCA1 gene (185delAG, C61G, E368X, 4154delA, 4184del4 and 5382insC) and four in the BRCA2 gene (**D2723G**, 3034del4, 5950delCT and 9326insA) by a single nucleotide primer extension assay utilizing the ABI PRISM SNaPshot Multiplex Kit (Life Technologies, Carlsbad, CA, USA) following the manufacturer's instructions (manuscript in preparation). Patients from the first group and patients younger than 40 years from the second group (n = 30) were screened for mutations in all coding sequences of the BRCA1 and BRCA2 genes by direct sequencing using the ABI PRISM Big Dye Terminator v.1.1 Kit (Life Technologies). Multiplex ligation probe amplification (MLPA) was used for the detection of large rearrangements in these genes using commercially available kits from MRC Holland, Amsterdam, The Netherlands. For the case-control association study of seven common variants in BRCA1 rs1799949 (S694S), rs799917 (P871L), rs16941 (E1038G), rs16942 (E1138G), rs8176267, rs8176166 and rs3737559) and one in BRCA2 (rs144848 (H372N)] with breast cancer risk, we also used single nucleotide primer extension.",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "No. Mutation Nucleotide Change SNaPshot Result (N/M) SNaPshot Fragment Size N (bp) SNaPshot Fragment Size M (bp) 1 5382insC A/C A/C 25 24 2 4184del4 T/G T/G 29 n.d. 3 4154delA A/G A/G 32 n.d. 4 C61G T/G T/G 33.5 32 5 **D2723G** A/G A/G 38 37 6 5950delC C/A C/A 39 n.d. 7 185delAG A/T A/T 43 n.d. 8 9326insA C/A C/A 44.5 n.d. 9 E368X G/T G/T 47 48 10 3034del4 A/G A/G 54 n.d.",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "**D2723G** c.8167G>C 18 Asp\u2192His DNA binding domain M Specific primer extension products data for most common mutations in the BRCA genes. n.d.: not done. No. Mutation Nucleotide Change SNaPshot Result (N",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study screened Macedonian breast\u2011cancer patients for BRCA1/2 mutations, including D2723G, but did not report any pathogenicity assessment or association of D2723G with disease risk.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC3776670",
+            "title": "Genetic Variation of the Brca1 and Brca2 Genes in Macedonian Patients",
+            "relevance_score": 0.22,
+            "pub_year": 2012,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "We also evaluated possible influences of the VUS on mRNA splicing. Here we calculated consensus values of potential splice sites using the MaxEnt (27) algorithm and Human Splicing Finder (9, 28). The c.8035G>T mutation (p.D2679Y) had an HSF score of 87.91 (wild type 61.07) and a MaxEnt score of 9.11 (wild type 1.46) and a moderate probability in favor of a de novo donor site. Aberrant in vivo splicing was not assessed due to lack of specimens. In addition, the **D2723G** variant was previously shown to cause aberrant splicing (deletion of 163 bp from exon 18) of a small proportion of the mutant allele (9). In contrast, we found low probabilities of de novo splice acceptor or donor formation for all other VUS in this study. This suggested that the variants evaluated in this study likely do not influence breast cancer risk through aberrant splicing.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "...mutation (human T2722R) in OB1 potentially leads to a steric clash with W2547 in the helical domain. Furthermore, OB1 residue D2644 (human D2723) associated with the human D2723H, **D2723G** and D2723A mutations, is hydrogen bonded to the OB1 residues S2591 (human S2670), the L2593 (human I2672) and the W2646 (human W2725), suggesting that these mutations may disrupt the...",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The article reports functional splicing disruption and computational structural disruption for the BRCA2 D2723G variant, providing evidence that supports its pathogenicity.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC3537884",
+            "title": "A classification model for BRCA2 DNA binding domain missense variants based on homology directed repair activity",
+            "relevance_score": 0.22,
+            "pub_year": 2012,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Predicted classes from four computational biology methods Variant Class Validation source PLR SIFT POLYPHEN PMUT AGVGD I2627F D ILR D D D D D E2663K D ILR D D D D D D2665G N ILR N D D D D **D2723G** D ILR D D D D D K2729N N ILR X N D D D G2748D D ILR D D D D D R2842H N ILR X D D D D R2888C N ILR N N N D N V2908G N ILR X D D D D K2950N N ILR N D N N D R2973C N ILR D D D D X R3052Q N ILR X D D D D V3079I N ILR N N N N N Y3092C N ILR D D D D D Y3098H N ILR/Myriad X N N N N D3170G N ILR X N N D N I2490T N Myriad N D D N D T2515I N Myriad N D D D N D2665G N Myriad N D D D D A2717S N Myriad N N N N N D2723H D Myriad D D D D D V2728I N Myriad N N N N N S2835P N Myriad N N N N N E2856A N Myriad N N D D N I2944F N Myriad N D D D D T3013I N Myriad N N N D N",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study presents a computational likelihood\u2011ratio approach and reports that the BRCA2 D2723G variant is predicted deleterious by several in\u2011silico methods, suggesting possible pathogenicity.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC2587343",
+            "title": "Classifying Variants of Undetermined Significance in BRCA2 with Protein Likelihood Ratios",
+            "relevance_score": 0.16,
+            "pub_year": 2008,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Pedigrees in which the index individual had 1 of 58 selected missense variants were contributed to the study. Of these, 18 variants were excluded from the analysis because they were determined at the time of analysis to not meet the specified criteria either because they were found to be acting primarily through disruption of normal splicing and/or other evidence that cast doubt on their classification as pathogenic missense variant. The remaining 40 variants consisted of 11 variants in the BRCA1 RING domain, 17 in the BRCA1 BRCT domain, and 12 in the BRCA2 DBD. Supplemental Table 1 provides detailed genetic and functional information regarding the 40 included variants. One BRCA1 missense variant (p.[Cys64Gly]) and 2 BRCA2 missense variants (p.[Glu2663Val] and p.[**Asp2723Gly**]) show experimental and bioinformatics evidence of pathogenicity through both protein effects and potential splicing effects. Because these variants showed strong deleterious effects in functional assays and only partial splicing defects, they were included in our analyses.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": ".[Glu2663Val]; c.8165C>G, p.[Thr2722Arg]; c.8168G>A, p.[**Asp2723Gly**]; c.8243G>A, p.[Gly2748Asp]; c.9004G>A, p.[Glu3002Lys]; c.9227G>A, p.[Gly3076Glu]. Breast Cancer Ovarian Cancer Variant/Group Informative",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study includes BRCA2 p.Asp2723Gly as a missense pathogenic variant based on functional and bioinformatic evidence and incorporates it in risk analyses showing missense variants confer elevated but lower breast cancer risk compared with truncating variants.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10170303",
+            "title": "Risks of breast and ovarian cancer for women harboring pathogenic missense variants in BRCA1 and BRCA2 compared with those harboring protein truncating variants",
+            "relevance_score": 0.14,
+            "pub_year": 2021,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "\u2013 \u2013 \u2013 \u2013 \u2013 \u2013 N/O N/O p.Asp2723Ala 0.99 (1.15) PS3 PM1 PM5 PP1 \u2013 PP3 PM2_supp LP P **p.Asp2723Gly** 0.94 (1.10) PS3 \u2013 PM5 \u2013 \u2013 PP3 PM2_supp VUS P p.Asp2723His 1.00 (1.07) PS3 \u2013 \u2013 \u2013 \u2013 PP3 PM2_supp VUS P",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article reports functional HDR assay data for BRCA2 DNA\u2011binding\u2011domain missense VUSs, demonstrating that many such variants\u2014including D2723G\u2014can be re\u2011classified when functional results are incorporated into ACMG\u2011based classification frameworks.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8008494",
+            "title": "Strong functional data for pathogenicity or neutrality classify BRCA2 DNA-binding-domain variants of uncertain significance",
+            "relevance_score": 0.12,
+            "pub_year": 2021,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 1894,
+            "output": 631
+        },
+        {
+            "input": 1757,
+            "output": 768
+        },
+        {
+            "input": 2200,
+            "output": 512
+        },
+        {
+            "input": 2495,
+            "output": 702
+        },
+        {
+            "input": 5081,
+            "output": 1466
+        },
+        {
+            "input": 4287,
+            "output": 1394
+        },
+        {
+            "input": 2491,
+            "output": 624
+        },
+        {
+            "input": 2162,
+            "output": 576
+        },
+        {
+            "input": 1858,
+            "output": 326
+        },
+        {
+            "input": 2991,
+            "output": 713
+        },
+        {
+            "input": 2322,
+            "output": 476
+        },
+        {
+            "input": 3072,
+            "output": 1230
+        },
+        {
+            "input": 2328,
+            "output": 272
+        },
+        {
+            "input": 2152,
+            "output": 454
+        },
+        {
+            "input": 4336,
+            "output": 864
+        },
+        {
+            "input": 2505,
+            "output": 649
+        },
+        {
+            "input": 2053,
+            "output": 736
+        },
+        {
+            "input": 2505,
+            "output": 723
+        },
+        {
+            "input": 2043,
+            "output": 641
+        },
+        {
+            "input": 2040,
+            "output": 704
+        },
+        {
+            "input": 1769,
+            "output": 717
+        },
+        {
+            "input": 2256,
+            "output": 446
+        },
+        {
+            "input": 2305,
+            "output": 493
+        },
+        {
+            "input": 2354,
+            "output": 359
+        },
+        {
+            "input": 3633,
+            "output": 1512
+        },
+        {
+            "input": 3971,
+            "output": 1179
+        },
+        {
+            "input": 2547,
+            "output": 813
+        },
+        {
+            "input": 2207,
+            "output": 606
+        },
+        {
+            "input": 2327,
+            "output": 816
+        },
+        {
+            "input": 2312,
+            "output": 682
+        },
+        {
+            "input": 2784,
+            "output": 309
+        },
+        {
+            "input": 1887,
+            "output": 852
+        },
+        {
+            "input": 2193,
+            "output": 468
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 22509,
+        "output": 1557
+    },
+    "total_time": 97.58
+}

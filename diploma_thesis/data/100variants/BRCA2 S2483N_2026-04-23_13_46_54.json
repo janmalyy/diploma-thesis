@@ -1,0 +1,193 @@
+{
+    "before_pruning": {
+        "articles_in_total": 9,
+        "only_medline_count": 0,
+        "only_pmc_count": 2,
+        "only_suppl_count": 6,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 9,
+        "only_medline_count": 0,
+        "only_pmc_count": 2,
+        "only_suppl_count": 6,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "variant": "BRCA2 S2483N",
+    "time_to_process_articles": 6.76,
+    "context_length": 9453,
+    "after_removal": {
+        "articles_in_total": 3,
+        "only_medline_count": 0,
+        "only_pmc_count": 2,
+        "only_suppl_count": 0,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "",
+            "pmcid": "PMC5348334",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 150,
+            "abstract_length": 1702,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "alteration c 7448g a brca2 was identified in a patient carrying the brca1 mutation c 1687c t p gln563ter variants of unknown significance according to 7 databases an 5 in silico prediction programs"
+            ],
+            "number_of_paragraphs": 3,
+            "paragraphs_lengths": [
+                412,
+                1937,
+                201
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7722754",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 114,
+            "abstract_length": 1641,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                402
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9433957",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 152,
+            "abstract_length": 1704,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                417
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        }
+    ],
+    "narrative_summary": "The BRCA2 c.7448G>A (p.Ser2483Asn, S2483N) missense change occurs in the DNA\u2011damage repair gene BRCA2 and has been evaluated in the context of hereditary breast and ovarian cancer risk.  \nIn a Brazilian hereditary\u2011breast\u2011cancer cohort the variant was detected in a single index case and was reported as a variant of uncertain significance, with no segregation data or definitive pathogenic or benign classification; it was also noted to co\u2011occur with a pathogenic BRCA1 truncating mutation and to be listed as VUS in multiple databases and by several in\u2011silico tools [PMC5348334].  \nFunctional assessment using mouse embryonic stem\u2011cell\u2013based assays demonstrated that the S2483N protein retained normal activity, and a computational model of these assays classified the variant as functional (benign) with a low allele frequency (0.0038) and a functional (F) prediction score [PMC7722754].  \nAn independent study that incorporated homology\u2011directed\u2011repair functional data into an ACMG/AMP framework re\u2011evaluated the same variant and assigned it a likely\u2011benign (LBEN) classification, citing supporting criteria such as BP2, BP4, and BS3 [PMC9433957].  \nCollectively, the limited clinical observations label the change as uncertain, but the experimental data consistently indicate normal protein function and the ACMG\u2011based reanalysis supports a likely\u2011benign interpretation.  Accordingly, the preponderance of evidence favors classification of BRCA2 S2483N as likely benign, although definitive clinical certainty remains limited by the paucity of segregation and epidemiologic data.",
+    "structured_summary": {
+        "overall_pathogenicity": "uncertain",
+        "pathogenicity_counts": {
+            "supports benignity": 2,
+            "supports pathogenicity": 0,
+            "uncertain": 2
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...N/R N/R N/R N/R N/R N/R N/R benign Predict Tolerated C0 Not tolerated NC c.7017G>C p.Lys2339Asn VUS no N/R N/R conflicting data N/R Likely neutral benign Predict Tolerated C0 Not tolerated NC **c.7448G>A** **p.Ser2483Asn** N/R VUS probably neutral N/R conflicting data N/R VUS benign Predict Tolerated C0 Tolerated Low risk c.7469T>C p.Ile2490Thr VUS no probably neutral N/R conflicting data N/R VUS benign Predict...",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                },
+                {
+                    "quoted_text": "NOF Co-segregation Tumors in index patient, age at onset* Number of BC cases in relatives* Number of OC cases in relatives* BRCA1 c.190T>C; p.Cys64Arg 1 no Breast, 30 2 0 c.811G>A; p.Val271Met 1 yes Ovarian, 59 3 1 c.1601A>G; p.Gln534Arg 1 no Breast, 51 5 0 c.1648A>C p.Asn550His 1 no Breast, 49 4 0 c.3823A>G p.Ile1275Val 1 no Breast, 43 1 0 c.4484G>A p.Arg1495Lys 1 no Breast, 26 3 0 c.5062_5064delGTT; p.Val1688del 1 no Breast, 33 2 0 c.5096G>A p.Arg1699Gln 1 no Ovarian, 44 0 1 c.5153-2A>C 1 no Breast, 28 1 0 c.5425_5430delGTTGTG 1 no Breast, 36 7 0 c.5509T>C; p.Trp1837Arg 1 no Breast, 28 0 0 BRCA2 c.223G>C p.Ala75Pro 2 no Breast, 20; Breast, 54 1;3 0;0 c.1798T>C p.Tyr600His 1 no Ovarian, 46 0 0 c.2274 T > G p.Ser758Arg 1 no Breast, 35 2 0 c.2350A>G p.Met784His 1 no Breast, 55 3 0 c.2503C>T p.Pro835Ser 2 no Breast, 54 2 0 c.4585G>A p.Gly1529Arg 1 no Breast, 27 2 0 c.4681C>A p.His1561Asn 1 no Breast, 28 1 0 c.4928T>C p.V1643A 1 no Breast, 40 2 0 c.5096A>G p.Asp1699Gly 1 no Breast, 24 1 0 c.5640T>G p.Asn1880Lys 2 no Breast, 27; Breast, 36 1;2 0;0 c.6347A>G p.His2116Arg 3 no Breast, 38; Breast, 26; Breast, 44 4;1;4 0;0;? c.6412G>T p.Val2138Phe 1 no Breast, 49 2 0 c.6554C>T p.Ala2185Val 1 no Breast, 31 2 0 c.6935A>T p.Asp2312Val 1 no Breast, 28 1 0 c.6988A>G p.Ile2330Val 1 no Breast, 24 2 0 c.7017G>C p.Lys2339Asn 2 no Ovarian, 33; Breast, 74 2;1 1;0 **c.7448G>A** **p.Ser2483Asn** 1 yes Breast, 29 4 0 c.7469T>C p.Ile2490Thr 10 yes Breast, 29; Breast, 39; Breast, 29; Breast, 38; Breast, 43; Breast, 40; Breast, 37; Breast, 41; Bresat, 61; Breast, 29; 1;3;1;1;4;2;6;1;3;1 0;0;0;0;0;0;0;0;0;0 c.7507G>A p.Val2503Ile 1 no Breast, 37 2 0 c.7994A>G p.Asp2665Gly 1 no Breast, 60 2 1 c.8187G>T P.Lys2729Asn 1 yes Ovarian, 59 3 0 c.8351G>A p.Arg2784Gln 2 yes Breast, 41; Breast, 40 1;2 0;0 c.8755G>T p.Gly2919Cys 1 no Breast, 32 0 0 c.9235G>A p.Val3079Ile 1 no Breast, 55 2 0 c.9730G>A p.Val3244Ile 2 no Ovarian, 33; Breast, 74 2;1 1;0",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "alteration **c.7448G>A** (BRCA2) was identified in a patient carrying the BRCA1 mutation c.1687C>T(p.Gln563Ter). Variants of unknown significance according to 7 databases an 5 in silico prediction programs",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The study identifies BRCA2 p.Ser2483Asn (c.7448G>A) in a Brazilian HBOC cohort and classifies it as a variant of uncertain significance with no conclusive pathogenic or benign evidence.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5348334",
+            "title": "Prevalence of BRCA1/BRCA2 mutations in a Brazilian population sample at-risk for hereditary breast cancer and characterization of its genetic ancestry",
+            "relevance_score": 1.0,
+            "pub_year": 2016,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...0.0566 0 (F) R2336P 0.9684 0.9770 0.9990 (NF) D3064Y 0.0100 0.0688 0 (F) K2411T 0.0058 0.1364 0.0002 (F) F3065L 0.0236 0.0448 0.0006 (F) S2483G 0.0440 0.1100 0 (F) Q3066E 0.0152 0.0336 0.0004 (F) **S2483N** 0.0038 0.1072 0 (F) C3069X 1 0.9924 1 (NF) R2488Rfs 1 NA 1 (NF) D3073 G 0.8888 0.9996 0.9966 (NF) R2488K 0.0096 0.2200 0.0048 (F) Y3225Ifs 1 NA 1 (NF) R2488S 0.0022 0.0590 0 (F) C3233Wfs 0.9996...",
+                    "mention_type": "functional",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The article provides functional assay and computational evidence that the BRCA2 S2483N variant behaves as a functional (likely benign) protein in mouse embryonic stem cells, supporting a benign classification.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7722754",
+            "title": "A computational model for classification of BRCA2 variants using mouse embryonic stem cell-based functional assays",
+            "relevance_score": 0.2,
+            "pub_year": 2020,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...BP4 PM2 - - BS3 VUS LBEN p.Ala2756Gly 5.18 PM1 - - - BP4 PM2 - - BS3 VUS LBEN p.Ser3070Phe 5.00 PM1 - - - BP4 PM2 - - BS3 VUS LBEN p.Arg2502Cys 5.04 PM1 - - BP2 BP4 BS1_Supporting BP5 - BS3 LBEN LBEN **p.Ser2483Asn** 5.09 PM1 - - BP2 BP4 PM2 - - BS3 LBEN LBEN p.Asp2965His 5.33 PM1 - - - BP4 PM2 - - BS3-published^ LBEN LBEN p.Asp2712Asn 5.19 PM1 - - - BP4 PM2 - - BS3 VUS LBEN p.Gln2858Lys 5.23 PM1 - - - BP4 PM2 -...",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study incorporated HDR functional assay data into ACMG/AMP classification and reclassified BRCA2 S2483N as likely benign (LBEN).', ",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9433957",
+            "title": "Classification of BRCA2 variants of uncertain significance (VUS) using an ACMG/AMP model incorporating a homology directed repair (HDR) functional assay",
+            "relevance_score": 0.16,
+            "pub_year": 2022,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 3216,
+            "output": 834
+        },
+        {
+            "input": 2079,
+            "output": 613
+        },
+        {
+            "input": 2122,
+            "output": 769
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 2741,
+        "output": 760
+    },
+    "total_time": 27.33
+}

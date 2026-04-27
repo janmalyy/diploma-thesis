@@ -1,0 +1,600 @@
+{
+    "before_pruning": {
+        "articles_in_total": 14,
+        "only_medline_count": 1,
+        "only_pmc_count": 5,
+        "only_suppl_count": 7,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 14,
+        "only_medline_count": 1,
+        "only_pmc_count": 5,
+        "only_suppl_count": 7,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "variant": "MSH6 p.D180D",
+    "time_to_process_articles": 14.1,
+    "context_length": 43127,
+    "after_removal": {
+        "articles_in_total": 13,
+        "only_medline_count": 1,
+        "only_pmc_count": 5,
+        "only_suppl_count": 6,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "24755277",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 84,
+            "abstract_length": 1673,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3765450",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 112,
+            "abstract_length": 1514,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 3,
+            "paragraphs_lengths": [
+                953,
+                709,
+                860
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    656
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC2830553",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 99,
+            "abstract_length": 1759,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1996
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7432688",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 59,
+            "abstract_length": 1661,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                405,
+                404
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC2976752",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 117,
+            "abstract_length": 1783,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                700
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6806584",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 116,
+            "abstract_length": 1568,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                405
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9818763",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 162,
+            "abstract_length": 2664,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1709
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5945525",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 192,
+            "abstract_length": 958,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    3420
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10170410",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 112,
+            "abstract_length": 1303,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    153
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5482622",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 79,
+            "abstract_length": 1459,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    780
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9633288",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 91,
+            "abstract_length": 2079,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    602
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5429528",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 180,
+            "abstract_length": 1778,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    383
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5055158",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 87,
+            "abstract_length": 1706,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    768
+                ]
+            ]
+        }
+    ],
+    "narrative_summary": "The MSH6 p.D180D (rs1800935) variant is a synonymous change in exon 3 of the MSH6 gene that has been investigated primarily in colorectal cancer (CRC) cohorts and other malignancies. Clinical investigations in CRC patients reported that carriers of the C/C genotype of rs1800935 who did not receive 5\u2011fluorouracil\u2011based chemotherapy experienced fewer recurrences, suggesting a protective prognostic effect, and heterozygous carriers showed a higher risk of relapse in one analysis [24755277]. A later study of sporadic solid tumours confirmed the association of the C/C genotype with a decreased risk of cancer recurrence, again implying a benign or protective role for the variant [PMC7432688]. In contrast, studies of glioma patients undergoing temozolomide therapy found the D180D change among several silent polymorphisms but reported no impact on treatment resistance or disease outcome, providing no evidence of pathogenicity [PMC2830553]. Screening of suspected Lynch syndrome families identified the variant in four families without assigning any clinical significance, and a Pakistani CRC cohort listed the variant among other silent changes without pathogenic interpretation [PMC2976752][PMC6806584].\n\nPopulation\u2011level analyses have repeatedly shown that rs1800935 is a common polymorphism with minor allele frequencies ranging from ~0.10 to 0.30 across diverse ethnic groups. A meta\u2011analysis of eight case\u2011control studies encompassing over 8,000 CRC cases and 7,000 controls found no significant association between the variant and CRC risk, reporting non\u2011significant odds ratios in multiple cohorts [PMC3765450]. Similar investigations in gastric cancer, papillary thyroid carcinoma, and other solid tumours also failed to detect any risk association for the D180D allele [PMC5482622][PMC5429528]. Large next\u2011generation sequencing panels and somatic mutation surveys routinely detect the synonymous change but do not attribute functional consequence, further indicating its neutral status in tumor genomics [PMC5945525][PMC5055158].\n\nThe evidence therefore presents a mixed picture: while two CRC\u2011focused clinical studies suggest a modest protective effect of the homozygous C/C genotype on recurrence, the majority of population and disease\u2011association studies across multiple cancer types report no significant risk or functional impact. No experimental functional data demonstrate a deleterious effect of the synonymous substitution, and computational annotations uniformly label it as a silent change without pathogenic prediction.\n\nOverall, the accumulated data support a classification of MSH6 p.D180D as a likely benign polymorphism. The variant does not appear to confer increased cancer susceptibility, and any observed protective association in specific CRC sub\u2011analyses remains modest and unconfirmed by broader genetic or functional investigations.",
+    "structured_summary": {
+        "overall_pathogenicity": "benign",
+        "pathogenicity_counts": {
+            "supports pathogenicity": 0,
+            "uncertain": 0,
+            "supports benignity": 2
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "DNA mismatch repair (MMR) deficiency is one of the best understood forms of genetic instability in colorectal cancer (CRC). CRC is routinely cured by 5-fluorouracil (5-FU)-based chemotherapy, with a prognostic effect and resistance to such therapy conferred by MMR status. In this study, we aimed to analyse the effect of genetic variants in classical coding regions or in less-explored predicted microRNA (miRNA)-binding sites in the 3' untranslated region (3'UTR) of MMR genes on the risk of CRC, prognosis and the efficacy of 5-FU therapy. Four single nucleotide polymorphisms (SNPs) in MMR genes were initially tested for susceptibility to CRC in a case-control study (1095 cases and 1469 healthy controls). Subsequently, the same SNPs were analysed for their role in survival on a subset of patients with complete follow-up. Two SNPs in MLH3 and MSH6 were associated with clinical outcome. Among cases with colon and sigmoideum cancer, carriers of the CC genotype of rs108621 in the 3'UTR of MLH3 showed a significantly increased survival compared to those with the CT + TT genotype (log-rank test, P = 0.05). Moreover, this polymorphism was also associated with an increased risk of relapse or metastasis in patients with heterozygous genotype (log-rank test, P = 0.03). Patients carrying the CC genotype for MSH6 rs1800935 (**D180D**) and not undergoing 5-FU-based chemotherapy showed a decreased number of recurrences (log-rank test, P = 0.03). No association with CRC risk was observed. We provide the first evidence that variations in potential miRNA target-binding sites in the 3'UTR of MMR genes may contribute to modulate CRC prognosis and predictivity of therapy.",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study reports that carriers of the MSH6 rs1800935 (D180D) variant have fewer recurrences when not treated with 5\u2011FU, indicating a potential protective prognostic effect in colorectal cancer.",
+            "uncertainties_or_limitations": null,
+            "article_id": "24755277",
+            "title": "Variations in mismatch repair genes and colorectal cancer risk and clinical outcome.",
+            "relevance_score": 1.0,
+            "pub_year": 2014,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Six SNPs in four different CRC genes were included in the analysis: rs459552:T>A (APC D1822V), rs1799977:A>G (MLH1 I219V), rs1800932:A>G (MSH6 P92P), rs1800935:T>C (MSH6 **D180D**), rs3219484:G>A (MUTYH V22M) and rs3219489:G>C (MUTYH Q338H). MUTYH Q338H corresponds to Q324H in our first study. The SNP nomenclature was modified to meet the Human Genome Variation Society's (HGVS) guidelines, which recommends the use of a reference sequence representing the largest theoretically known transcript. For MUTYH this corresponds to NM_001128425.1 and NP_001121897.1 for mRNA and protein, respectively.",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Details regarding the number of cases and controls in all fourteen studies are summarized in Table S1. One SNP, rs459552 (APC D1822V), was genotyped in seven studies, for a total of 8654 cases and 7731 controls. Four SNPs, rs1799977 (MLH1 I219V), rs1800932 (MSH6 P92P), rs1800935 (MSH6 **D180D**) and rs3219484 (MUTYH V22M) were genotyped in 8 studies for a total of 8308 cases and 7434 controls. The SNP with rs number 3219489 (MUTYH Q338H) was genotyped in 13 cohorts for a total of 12902 cases and 14602 controls.",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "In the present investigation we performed a case-control association study for six out of eight previously investigated SNPs. For five of them, rs459552 (APC D1822V), rs1799977 (MLH1 I219V), rs1800932 (MSH6 P92P), rs1800935 (MSH6 **D180D**) and rs3219484 (MUTYH V22M) samples were retrieved from eight additional studies totaling 8308 cases and 7434 controls. For the sixth SNP, rs3219489 (MUTYH Q338H), which was selected based on promising results from two samples of Swedish origin (study 8 in the present manuscript and reference), we set up an even larger replication dataset comprising 14 different studies with a total of 12232 cases and 13380 controls.",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Column names:\nb'\\r\\n\\r\\nTable S2\\r\\n\\r\\n Study |Tot.\\r\\n cases |Case genotypes |Tot.\\r\\n controls |Control genotypes |MAF\\r\\n cases |MAF\\r\\n controls\nRows:\ngenotypes |MAF\\r\\n cases |MAF\\r\\n controls |Dominant |Additive |Recessive | | | |TT |TA |AA | |TT |TA |AA |\\r\\n | |OR |95% CI |POR |PHet |OR |95% CI |POR |PHet |OR |95% CI |POR |PHet | |\\r\\n rs1800935:T>C (MSH6 **D180D**) | | | | | | | | | | | | | | | | | | | | | | | |1\\r\\n |Australia |333 |147 |151 |35 |352 |168 |164 |20 |0.668 |0.710 |0.51 |0.29-\\r\\n 0.92 | | |0.82 |0.65-1.04 | | |0.87 |0.64-1.18 | | | |2 |Czech Republic\\r\\n |985 |454 |440 |91 |672 |328 |281",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The meta\u2011analysis includes the synonymous MSH6 p.D180D variant in its case\u2011control datasets but does not present any explicit pathogenicity interpretation, only reporting genotype frequencies and non\u2011significant odds ratios.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC3765450",
+            "title": "Meta-Analysis of Mismatch Repair Polymorphisms within the Cogent Consortium for Colorectal Cancer Susceptibility",
+            "relevance_score": 1.0,
+            "pub_year": 2013,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Recent literature suggests that prolonged exposure to alkylating agents may select for inactivating mutation of the MSH6 gene, resulting in a MMR defect that promotes tumor progression (9, 10). Although the MSI assay used herein should detect MMR defects, it has been shown that destabilizing mutations of MSH6 result in increased hMutSh\u03b2 (MSH2/MSH3) complex formation. This complex may compensate for destabilized hMutS\u03b1 and perform base/base and insertion/deletion loop repair (16, 18). These mutants would seem to have functional MMR and no presence of MSI. Therefore, all 10 exons of the MSH6 gene from patients who had failed XRT plus temozolomide therapy, plus the indicated additional interval therapy from time of initial resection, were analyzed by direct sequencing (Table 3). Fourteen of 27 (52%) samples contained one or more variations from the canonical DNA sequence, resulting in amino acid changes in MSH6. Two matched samples had detectable variations; however, these were present in both the pretreatment and posttreatment analyses (Table 3; bracketed samples). An additional three matched samples were determined to have the wild-type gene (analysis sample prior to therapy; data not shown). Multiple single nucleotide polymorphisms caused synonymous (silent) variations in the following amino acids: R62R, P92P, **D180D**, and E546E (data not shown). Previously uncharacterized silent mutations were observed in samples 32 and 43: T1189T and Y214Y, respectively. The homozygous variant G39E observed in many samples (ID: 26, 27, 32, 40, 42, 45, 24/24A, and 8/8A) is a previously characterized polymorphism (19). Sample 40 was shown to contain a heterozygous lysine-to-isoleucine mutation (K247I) at residue 247. Recent studies demonstrating MMR proficiency of a protease-resistant fragment of MSH6 (lacking the first 340 amino acids; ref. 20) suggest that this mutation may have little effect on the function of MMR.",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study finds that mismatch repair deficiency, including MSH6 alterations, does not appear to mediate temozolomide resistance in adult malignant glioma.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC2830553",
+            "title": "Mismatch Repair Deficiency Does Not Mediate Clinical Resistance to Temozolomide in Malignant Glioma",
+            "relevance_score": 0.75,
+            "pub_year": 2008,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...C/T] or T/T genotype (p = 0.05). Moreover, heterozygous carriers had a higher risk of relapse (p = 0.03). Patients carrying the C/C genotype for MSH6 rs1800935 (**Asp180Asp**) and not undergoing 5-FU-based chemotherapy showed a decreased risk of recurrences (p = 0.03). In another study, the same authors investigated the epigenetic mechanisms and the expression of MMR...",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "...B 37% rs3131379 - G-A C intron c.813-45G>A P 7% rs707939 - C-A G intron c.1326+36C>A A 37% MSH6 rs1800937 Tyr214* C-A C Exon 4 c.642C>A P 10% rs1042821 Gly39Ala G-A C Exon 1 c.116G>A A 18% rs1800935 **Asp180Asp** T-C T Exon 2 c.540T>C B 29% rs3136228 - T-G G intron c.-152-405T>G P 65% rs1800932 Pro92Pro A-G A Exon 1 c.276A>G P 18% PMS1 rs5742933 - G-C G intron c.-24G>C D 20% rs5742938 - G-A G intron...",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article notes that the synonymous MSH6 p.D180D (rs1800935) C/C genotype is associated with a reduced risk of cancer recurrence, suggesting a protective/benign effect, and also reports its population frequency without interpretation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7432688",
+            "title": "DNA Mismatch Repair Gene Variants in Sporadic Solid Cancers",
+            "relevance_score": 0.57,
+            "pub_year": 2020,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Gene Location Nucleotide change Protein effect Families with the variant MLH1 Intron 6 c.545+72T > A N.A 2 Exon 8 c.655A > G p.Ile219Val 12* Intron 14 c.1668-19A > G N.A 6* MSH2 Intron 1 c.211+8G > C N.A 2 Intron 1 c.211+9C > G N.A 4 Intron 3 c.646-46delC N.A 1 Exon 6 c.965G > A p.Gly322Asp 6 Intron 10 c.1661+12G > A N.A 14* Intron 12 c.2006-6T > C N.A 9* MSH6 Intron 1 c.261-36 A > G N.A. 2 Exon 1 c.116 G > A p.Gly39Glu 2 Exon 1 c.186 C > A p. Arg62Arg 2* Exon 2 c.276 A > G p.Pro92Pro 4* Exon 3 c.540 T > C **p.Asp180Asp** 4* Intron 4 c.3173-101 C > G N.A. 1 Exon 5 c.3438+14 A > T N.A. 8* Intron 7 c.3646+29_3646+32delCTAT N.A. 3* Intron 8 c.3802-40 C > G N.A. 8* Exon 8 c.3678 A > G p.Ala1226Ala 1",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The Greek cohort screening identified multiple pathogenic MMR mutations and reported the synonymous MSH6 p.Asp180Asp variant in four families without assigning a clinical significance.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC2976752",
+            "title": "Screening of the DNA mismatch repair genes MLH1, MSH2 and MSH6 in a Greek cohort of Lynch syndrome suspected families",
+            "relevance_score": 0.55,
+            "pub_year": 2010,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...rs3732183 B 13 (44.8) - - Yes Intron 12 c.2006-6 T > C - Intronic rs2303428 B 1 (3.4) 37 (20.2) - Yes Intron 12 c.2006-36_2006-33dup - Intronic rs587779126 Bc 0 5 (2.7) - Yes MSH6 Exon 3 c.540 T > C **p.D180D** Silent rs1800935 B 1 (3.4) - - Yes Exon 4A c.642C > T p.Y214Y Silent rs1800937 B 1 (3.4) - - Yes Exon 4G c.3151G > A p.V1051I Missense - Bc 1 (3.4) - - Yes Exon 5 c.3306 T > A p.T1102 T Silent...",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study screened Pakistani colorectal cancer patients and found no pathogenic MSH6 variants, including the silent p.D180D variant listed in the data table.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6806584",
+            "title": "Prevalence and spectrum of MLH1, MSH2, and MSH6 pathogenic germline variants in Pakistani colorectal cancer patients",
+            "relevance_score": 0.55,
+            "pub_year": 2019,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nSupplemental Table 2: Results of Accuracy Study for Somatic Mutation Detection for TumorNext-Lynch-MMR Sample ID Mutation Previous Mutation Frequency Accuracy Mutation Frequency Comments BR-11-49-396-4T BRAF NM_004333 c.1799T>A p.V600E\nRows:\nc.1635G>A p.A545A 100% 97 100.00% 453 TP53 NM_000546 c.215C>G p.P72R 45.76% 236 48.95% 239 APC NM_000038 c.4479G>A p.T1493T 100% 142 100.00% 336 CDH1 NM_004360 c.88C>A p.P30T 52.38% 253 51.30% 347 MSH6 NM_000179 c.540T>C **p.D180D** 52.38% 169 47.38% 439 APC NM_000038 c.5268T>G p.S1756S 100% 157 100.00% 334 APC NM_000038 c.5880G>A p.P1960P 100% 132 100.00% 337 APC NM_000038 c.4326T>A p.P1442P 57.07% 208 52.08% 288 MSH6 NM_000179 c.186C>A p.R62R\np.T1052T 99.72% 357 100.00% 619 APC NM_000038 c.1635G>A p.A545A 46.34% 123 46.96% 658 APC NM_000038 c.4479G>A p.T1493T 48.78% 288 53.30% 469 POLE NM_006231 c.4187A>G p.N1396S 43.93% 323 45.83% 611 MSH6 NM_000179 c.540T>C **p.D180D** 44.96% 282 45.64% 642 APC NM_000038 c.5268T>G p.S1756S 48.4% 219 46.48% 426 APC NM_000038 c.5880G>A p.P1960P 48.71% 232 50.21% 468 MSH6 NM_000179 c.186C>A p.R62R 44.91% 335 49.47% 566 PMS2 NM_000535 c.780C>G p.S260S\nc.1014G>C p.Q338H 46.31% 203 44.11% 331 APC NM_000038 c.1635G>A p.A545A 100% 76 99.50% 398 TP53 NM_000546 c.215C>G p.P72R 100% 214 100.00% 376 APC NM_000038 c.4479G>A p.T1493T 100% 197 100.00% 368 MSH6 NM_000179 c.540T>C **p.D180D** 45.13% 196 47.83% 460 APC NM_000038 c.5268T>G p.S1756S 100% 177 100.00% 354 MLH1 NM_000249 c.655A>G p.I219V 44.67% 150 50.57% 437 MSH6 NM_000179 c.642C>T p.Y214Y 43.43% 176 48.01% 402 APC NM_000038 c.5880G>A p.P1960P\n48.35% 246 47.1% 155 BR-13-162-05-01T PMS2 NM_000535 c.1621A>G p.E541E 39.29% 196 39% 302 43.28% 134 BR-13-162-05-01T APC NM_000038 c.2322C>T p.D774D 40.53% 228 47.44% 215 46.27% 134 BR-13-162-05-01T MSH6 NM_000179 c.540T>C **p.D180D** 44.39% 197 48.28% 145 47.96% 98 BR-13-162-05-01T APC NM_000038 c.5268T>G p.S1756S 54.22% 225 45.23% 243 54.26% 129 BR-13-162-05-01T APC NM_000038 c.5880G>A p.P1960P 40.14% 279 44.04% 277 45.61% 171 BR-13-162-05-01T MSH6\nc.4479G>A p.T1493T 49.11% 507 42.41% 582 47.32% 561 RD_009 PMS2 NM_000535 c.1621A>G p.E541E 100% 428 100% 578 100% 462 RD_009 PMS2 NM_000535 c.2570G>C p.G857A 51.81% 83 57.14% 21 32.65% 49 RD_009 MSH6 NM_000179 c.540T>C **p.D180D** 49.79% 471 47.67% 453 45.27% 402 RD_009 APC NM_000038 c.5268T>G p.S1756S 42.24% 490 44.14% 666 46.98% 562 RD_009 PMS2 NM_000535 c.2466T>C p.L822L 45.45% 33 48.44% 64 45% 60 RD_009 APC NM_000038 c.5880G>A p.P1960P 46.85% 508\n100% 280 100% 862 100% 565 BR-13-116-05-01T PMS2 NM_000535 c.2570G>C p.G857A 100% 38 100% 24 100% 51 BR-13-116-05-01T MSH2 NM_000251 c.2006-6T>C 44.19% 353 47.05% 661 45.01% 535 BR-13-116-05-01T MSH6 NM_000179 c.540T>C **p.D180D** 49.35% 384 47.06% 904 41.07% 600 BR-13-116-05-01T APC NM_000038 c.5268T>G p.S1756S 44.38% 338 44.92% 1073 49.79% 729 BR-13-116-05-01T PMS2 NM_000535 c.2466T>C p.L822L 34.62% 26 40.16% 122 53.62% 69 BR-13-116-05-01T MLH1\n99.87% 782 100% 595 BR-14-239-05-01-T POLE NM_006231 c.91G>T p.A31S 44.31% 601 46.41% 656 48.23% 479 BR-14-239-05-01-T PMS2 NM_000535 c.1621A>G p.E541E 43.61% 629 46.13% 904 49.2% 626 BR-14-239-05-01-T MSH6 NM_000179 c.540T>C **p.D180D** 44.67% 699 46.02% 628 49.21% 504 BR-14-239-05-01-T APC NM_000038 c.5268T>G p.S1756S 100% 520 99.87% 769 100% 650 BR-14-239-05-01-T APC NM_000038 c.5880G>A p.P1960P 99.85% 657 100% 849 100% 718 BR-14-239-05-01-T MSH6",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article validates the TumorNext\u2011Lynch\u2011MMR NGS panel and reports detection of the synonymous MSH6 p.D180D variant, but does not interpret its pathogenicity.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5945525",
+            "title": "TumorNext-Lynch-MMR: a comprehensive next generation sequencing assay for the detection of germline and somatic mutations in genes associated with mismatch repair deficiency and Lynch syndrome",
+            "relevance_score": 1.0,
+            "pub_year": 2018,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Supplementary Matherial and Methods\nColumn names:\n(Lucigen -Biosearch Technologies| Middleton| WI| USA) and quantified on the\nRows:\nMSH6 (**D180D**)",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study demonstrates that decellularized peritoneal extracellular matrix scaffolds support the growth of patient\u2011derived colorectal cancer organoids, offering a novel ex\u2011vivo platform for investigating peritoneal metastasis and testing personalized therapies.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10170410",
+            "title": "Decellularized extracellular matrix as scaffold for cancer organoid cultures of colorectal peritoneal metastases",
+            "relevance_score": 0.85,
+            "pub_year": 2022,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nb'\\r\\nSupplementary Table 12: Characteristics of candidate SNPs analyzed in the\\r\\nstudy.\\r\\n SNPa |Pathwayb |Gene |Chr |Positionc |SNP Type |Allelesd |MAF |HWEe |Total\\r\\n N (%) | |rs3219489 |MMR |MUTYH |1 |45331833 |Q324H |G/C |0.27 |0.542\nRows:\n|T/C |0.10 |0.153 |1204\\r\\n (99.8) | |rs3136228 |MMR |MSH6 |2 |47782677 |Upstream |T/G |0.35 |0.717\\r\\n |1197 (99.3) | |rs2348244 |MMR |MSH6 |2 |47792346 |Intronic |T/C |0.13\\r\\n |1.000 |1205 (99.9) | |rs1800935 |MMR |MSH6 |2 |47795976 |**D180D** |T/C |0.29\\r\\n |0.682 |1197 (99.3) | |rs2020911 |MMR |MSH6 |2 |47803699 |Intronic |A/T\\r\\n |0.35 |0.533 |1204 (99.8) | |rs4150474 |NER |ERCC3 |2 |127275751 |Intronic\\r\\n |T/G |0.24 |0.199 |1203 (99.8) | |rs4150441 |NER |ERCC3 |2 |127283339\\r\\n",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study screened 123 DNA\u2011repair gene SNPs, including MSH6 p.D180D, in a Spanish cohort and found no significant association of this variant with gastric cancer risk or phenotype.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5482622",
+            "title": "Relevance of DNA repair gene polymorphisms to gastric cancer risk and phenotype",
+            "relevance_score": 0.77,
+            "pub_year": 2017,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Supplemental Table S1. Annotation of the 1,421 SNPs present on the Illumina SNP Cancer Panel array.\nColumn names:\nSNP|Chromosome|Coordinate|Genome build|MAF (CEU)|MAF (CHB+JPT)|MAF (YRI)|Gene|Reference transcript|Location relative to gene|Variant type|Amino acid change|ACSN DNA repair module\nRows:\nrs1800935|||||||MSH6|NM_000179|coding|Synonymous|**D180D** (NP_000170)|BER, MMR",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article screens DNA\u2011repair SNPs in Belarusian children with papillary thyroid carcinoma and identifies MGMT as a novel susceptibility gene, while the MSH6 p.D180D variant is only reported as a synonymous annotation without any pathogenicity assessment.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5429528",
+            "title": "Investigation of DNA repair-related SNPs underlying susceptibility to papillary thyroid carcinoma reveals MGMT as a novel candidate gene in Belarusian children exposed to radiation",
+            "relevance_score": 0.12,
+            "pub_year": 2017,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nSupporting Information: Table S2. Mutation Data. (Lindley et al, 2015) Sample Gene Transcript AA Mutation CDS Mutation Validated 5'codon Mutation 3'Codon MC WT MUT TCGA-13-0913 AADACL4 ENST00000376221 p.K175Q Unverified CTG AAG GCC 1 A C\nRows:\np.L2158S c.6473T>C Verified ATA TTG ACT 2 T C TCGA-10-0930 CEP290 ENST00000552810 p.L2158S c.6473T>C Verified ATA TTG ACT 2 T C TCGA-23-1022 CEP290 ENST00000552810 p.D1972D c.5916T>C Verified GTT GAT CAG 3 T C TCGA-25-2391 CEPT1 ENST00000357172 **p.D180D** c.540T>C Unverified CCT GAT TGG 3 T C TCGA-04-1638 CFH ENST00000367429 p.Y271H c.811T>C Unverified cct tat att 1 T C TCGA-13-0760 CGB5 ENST00000301408 p.S101P c.301T>C Unverified GTC TCC TAC 1 T C TCGA-09-1674 CHD4 ENST00000357008 p.D282D c.846T>C",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article lists MSH6 p.D180D as an unverified synonymous mutation in a supplementary table without any interpretation of its clinical or functional significance.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5055158",
+            "title": "Association between targeted somatic mutation (TSM) signatures and HGS-OvCa progression",
+            "relevance_score": 0.03,
+            "pub_year": 2016,
+            "data_sources": [
+                "suppl"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 1820,
+            "output": 833
+        },
+        {
+            "input": 2949,
+            "output": 932
+        },
+        {
+            "input": 2359,
+            "output": 571
+        },
+        {
+            "input": 2154,
+            "output": 693
+        },
+        {
+            "input": 2221,
+            "output": 627
+        },
+        {
+            "input": 2243,
+            "output": 642
+        },
+        {
+            "input": 2692,
+            "output": 467
+        },
+        {
+            "input": 3524,
+            "output": 739
+        },
+        {
+            "input": 1795,
+            "output": 540
+        },
+        {
+            "input": 2356,
+            "output": 517
+        },
+        {
+            "input": 2265,
+            "output": 589
+        },
+        {
+            "input": 2063,
+            "output": 621
+        },
+        {
+            "input": 2153,
+            "output": 568
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 7487,
+        "output": 1224
+    },
+    "total_time": 43.62
+}

@@ -1,0 +1,1103 @@
+{
+    "before_pruning": {
+        "articles_in_total": 38,
+        "only_medline_count": 0,
+        "only_pmc_count": 3,
+        "only_suppl_count": 34,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 38,
+        "only_medline_count": 0,
+        "only_pmc_count": 3,
+        "only_suppl_count": 34,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "variant": "APC c.487C>T",
+    "time_to_process_articles": 2.47,
+    "context_length": 95970,
+    "after_removal": {
+        "articles_in_total": 38,
+        "only_medline_count": 0,
+        "only_pmc_count": 3,
+        "only_suppl_count": 34,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "",
+            "pmcid": "PMC11370095",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 80,
+            "abstract_length": 1813,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8567654",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 116,
+            "abstract_length": 782,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                638
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8902761",
+            "data_sources": [
+                "pmc",
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 90,
+            "abstract_length": 2196,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                401,
+                1555
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    727
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7705408",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 87,
+            "abstract_length": 0,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                583
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10461021",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 86,
+            "abstract_length": 1761,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    755
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8296534",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 141,
+            "abstract_length": 2198,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    675
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5652672",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 78,
+            "abstract_length": 1397,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    658
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9915828",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 72,
+            "abstract_length": 1066,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    353
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9059084",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 141,
+            "abstract_length": 2063,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    116
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6076228",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 109,
+            "abstract_length": 1267,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    1607
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9899438",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 106,
+            "abstract_length": 2037,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    601
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9302303",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 214,
+            "abstract_length": 2660,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    159
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9685809",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 148,
+            "abstract_length": 934,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    773
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7226542",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 67,
+            "abstract_length": 1350,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    614
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11417107",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 102,
+            "abstract_length": 1810,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    324
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11184281",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 133,
+            "abstract_length": 0,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    192
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7603305",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 112,
+            "abstract_length": 1860,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    145
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8629245",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 116,
+            "abstract_length": 1742,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    644
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5894988",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 147,
+            "abstract_length": 2702,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    371
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10483046",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 116,
+            "abstract_length": 1413,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    415
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7414214",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 133,
+            "abstract_length": 1360,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    716
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4927697",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 86,
+            "abstract_length": 1048,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    747
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10010437",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 107,
+            "abstract_length": 2592,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    351
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10471768",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 67,
+            "abstract_length": 905,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    1296
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6092430",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 70,
+            "abstract_length": 1351,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    778
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7978308",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 70,
+            "abstract_length": 1991,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    762
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7061455",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 90,
+            "abstract_length": 1120,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    285
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9938029",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 136,
+            "abstract_length": 1530,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    721
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10299728",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 122,
+            "abstract_length": 1268,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    409
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7933761",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 120,
+            "abstract_length": 2063,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    714
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7377867",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 86,
+            "abstract_length": 1327,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    135
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7865061",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 87,
+            "abstract_length": 1386,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    376
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6898788",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 117,
+            "abstract_length": 1520,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    275
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11264515",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 131,
+            "abstract_length": 2253,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    775
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6599263",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 74,
+            "abstract_length": 1740,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    143
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7820010",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 97,
+            "abstract_length": 1478,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    29
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5055158",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 87,
+            "abstract_length": 1706,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    775
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7462278",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 89,
+            "abstract_length": 1901,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    2501
+                ]
+            ]
+        }
+    ],
+    "narrative_summary": "The APC c.487C>T substitution creates a nonsense change (p.Gln163*) that introduces a premature TAG stop codon in the APC tumor\u2011suppressor gene, a gene frequently altered in colorectal cancer [PMC10471768][PMC11264515]. No clinical case reports, segregation data, or formal pathogenicity classifications for this specific variant are provided in the cited literature; the articles merely list the variant in supplementary tables without interpretation [PMC10471768][PMC11264515]. Likewise, there are no functional assays or experimental studies reported that assess the impact of the truncation on APC protein function; the first article discusses the TAG\u2011TGA termination codon paradox but does not present functional data for c.487C>T [PMC10471768]. Population frequency data or in\u2011silico predictive scores are also absent from the extracted evidence. In the absence of direct clinical or functional evidence, the variant\u2019s pathogenicity cannot be definitively established. While the creation of a premature stop codon in a key tumor\u2011suppressor gene is biologically suggestive of loss\u2011of\u2011function, the current literature does not provide sufficient data to classify APC c.487C>T as pathogenic, likely pathogenic, or benign, leaving its clinical significance uncertain.",
+    "structured_summary": {
+        "overall_pathogenicity": "uncertain",
+        "overall_confidence": "low",
+        "pathogenicity_counts": {
+            "supports pathogenicity": 0,
+            "uncertain": 0,
+            "supports benignity": 0
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nSupplementary file 7,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Unnamed: 8,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18,Unnamed: 19,Unnamed:\nRows:\nly101*,TGA,,p.Tyr2254,Y,c.6760_6762,tac,c.6762C>A,p.Tyr2254*,TAA,,p.Glu371,Glu,c.1111_1113,gaa,c.1111G>T,p.Glu371*,TAA,,p.Gln1043,Q,c.3127_3129,caa,c.3127C>T,p.Gln1043*,TAA,,p.Gln432,Q,c.1294_1296,caa,c.1294C>T,p.Gln432*,TAA,,p.Gln163,Q,c.487_489,cag,**c.487C>T**,p.Gln163*,TAG,,p.Arg2386,R,c.7156_7158,cga,c.7156C>T,p.Arg2386*,TGA,,p.Glu71,Glu,c.211_213,gag,c.211G>T,p.Glu71*,TAG,,p.Trp80,W,c.238_240,tgg,c.239G>A,p.Trp80*,TAG,,p.Gln267,Q,c.799_801,cag,c.799C>T,p.Gln267*,TAG,,p.Gln1371,Q,c.4111_4113,cag,c.4111C\nc.970C>T,p.Gln324*,TAA,,,,,,,,,,p.Gln167,Gln,c.499_501,cag,c.499C>T,p.Gln167*,TAG,,,,,,,,,,p.Lys238,Lys,c.712_714,aag,c.712A>T,p.Lys238*,TAG,,p.Gly144,Gly,c.430_432,gga, c.430G>T,p.Gly144*,TGA,,,,,,,, ,,,,,,,,,,,,,,,,p.Gln163, Q ,c.1459_1461,CAG,**c.487C>T**,p.Gln163*,TAG,,p.Ser645,S,c.1933_1935,tca,c.1934C>A,p.Ser645*,TAA,,p.Gln621,Gln,c.1861_1863,cag,c.1861C>T,p.Gln621*,TAG,,p.Arg1677,R,c.5029_5031,cga,c.5029C>T,p.Arg1677*,TGA,,p.Gln529,Q,c.1585_1587,cag,c.1585C>T,p.Gln529*,TAG,,p.Glu277,E,c.829_831,g",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article investigates the TAG\u2011TGA termination codon paradox and notes that the APC c.487C>T change introduces a premature TAG stop codon, without further functional or clinical interpretation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10471768",
+            "title": "Evolution of termination codons of proteins and the TAG-TGA paradox",
+            "relevance_score": 0.12,
+            "pub_year": 2023,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nAdditional File 2 - Supplementary Tables Targeted panel sequencing of pharmacogenes and oncodrivers in colorectal cancer patients reveals genes with prognostic significance Lucie Heczko 1, V\u00e1clav Li\u0161ka1,4, Ond\u0159ej Vy\u010d\u00edtal 1,4, Ond\u0159ej Fiala 1,5,\nRows:\n0 0 0 0 16 4 19278400 187 1 0.53 897 73 8.14 2 0.39 no C479T 0 0 5 0 5 0 0 9 9 14 2.75 65 61 0 12 0 11 1 21661300 188 0 0 882 91 10.32 5 0.98 no C485T 40 14 4 2 60 1 0 122 123 183 35.88 7 2 0 1 0 5 1 993673 192 83 43.23 894 182 20.36 158 30.98 yes **C487T** 0 0 0 0 0 0 0 0 0 0 0 11 0 0 0 0 5 0 3369950 184 1 0.54 1114 93 8.35 0 0.00 no C495T 5 19 1 5 30 0 0 56 56 86 16.86 20 18 0 2 0 9 1 13321800 191 28 14.66 721 60 8.32 59 11.57 no C500T 0 0 0 0 0 0 0 0 0 0 0 7 25 0 7 0 5 1 10851800 192 1 0.52 896 79",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study notes APC as a commonly mutated gene in colorectal cancer but does not provide any specific pathogenicity or clinical interpretation for the c.487C>T variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC11264515",
+            "title": "Targeted panel sequencing of pharmacogenes and oncodrivers in colorectal cancer patients reveals genes with prognostic significance",
+            "relevance_score": 0.04,
+            "pub_year": 2024,
+            "data_sources": [
+                "suppl"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 1888,
+            "output": 203
+        },
+        {
+            "input": 2030,
+            "output": 358
+        },
+        {
+            "input": 2792,
+            "output": 264
+        },
+        {
+            "input": 1601,
+            "output": 240
+        },
+        {
+            "input": 2231,
+            "output": 492
+        },
+        {
+            "input": 2307,
+            "output": 349
+        },
+        {
+            "input": 2196,
+            "output": 267
+        },
+        {
+            "input": 1807,
+            "output": 324
+        },
+        {
+            "input": 2240,
+            "output": 247
+        },
+        {
+            "input": 2453,
+            "output": 301
+        },
+        {
+            "input": 2278,
+            "output": 487
+        },
+        {
+            "input": 2324,
+            "output": 364
+        },
+        {
+            "input": 1942,
+            "output": 258
+        },
+        {
+            "input": 2145,
+            "output": 307
+        },
+        {
+            "input": 1937,
+            "output": 366
+        },
+        {
+            "input": 1548,
+            "output": 336
+        },
+        {
+            "input": 2005,
+            "output": 446
+        },
+        {
+            "input": 2265,
+            "output": 292
+        },
+        {
+            "input": 2203,
+            "output": 301
+        },
+        {
+            "input": 1940,
+            "output": 224
+        },
+        {
+            "input": 2139,
+            "output": 298
+        },
+        {
+            "input": 1976,
+            "output": 290
+        },
+        {
+            "input": 2212,
+            "output": 396
+        },
+        {
+            "input": 2283,
+            "output": 478
+        },
+        {
+            "input": 2083,
+            "output": 351
+        },
+        {
+            "input": 2241,
+            "output": 330
+        },
+        {
+            "input": 1787,
+            "output": 374
+        },
+        {
+            "input": 2141,
+            "output": 313
+        },
+        {
+            "input": 1998,
+            "output": 374
+        },
+        {
+            "input": 2273,
+            "output": 281
+        },
+        {
+            "input": 1846,
+            "output": 263
+        },
+        {
+            "input": 1886,
+            "output": 235
+        },
+        {
+            "input": 1876,
+            "output": 310
+        },
+        {
+            "input": 2538,
+            "output": 537
+        },
+        {
+            "input": 1861,
+            "output": 262
+        },
+        {
+            "input": 1873,
+            "output": 286
+        },
+        {
+            "input": 2151,
+            "output": 370
+        },
+        {
+            "input": 2940,
+            "output": 251
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 1919,
+        "output": 702
+    },
+    "total_time": 44.58
+}

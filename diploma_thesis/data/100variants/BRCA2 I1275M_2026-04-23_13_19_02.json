@@ -1,0 +1,150 @@
+{
+    "before_pruning": {
+        "articles_in_total": 3,
+        "only_medline_count": 0,
+        "only_pmc_count": 0,
+        "only_suppl_count": 3,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 3,
+        "only_medline_count": 0,
+        "only_pmc_count": 0,
+        "only_suppl_count": 3,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "variant": "BRCA2 I1275M",
+    "time_to_process_articles": 9.49,
+    "context_length": 7521,
+    "after_removal": {
+        "articles_in_total": 3,
+        "only_medline_count": 0,
+        "only_pmc_count": 0,
+        "only_suppl_count": 3,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "",
+            "pmcid": "PMC7945310",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 115,
+            "abstract_length": 1687,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    191
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6617753",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 136,
+            "abstract_length": 2590,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    161
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7712010",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 113,
+            "abstract_length": 1201,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    779
+                ]
+            ]
+        }
+    ],
+    "narrative_summary": "The BRCA2 missense change I1275M (c.3825A>G) is a reported germline variant that has been catalogued in multiple BRCA variant repositories, as noted in a large Chinese hereditary breast and ovarian cancer cohort study that compiled data from databases such as BED, BIC, BMD, ClinVar, LOVD and ENIGMA [PMC6617753]. The study highlighted extensive ethnic\u2011specific differences in BRCA1/2 variant spectra but did not provide any clinical classification, functional assay results, segregation data, or computational predictions for this particular substitution; the variant is simply listed among the total BRCA2 alterations identified. Because no direct evidence of pathogenicity or benign impact is presented, the current literature does not allow a definitive interpretation of I1275M. In the absence of supporting clinical or functional data, the variant remains of uncertain significance pending further investigation.",
+    "structured_summary": {
+        "overall_pathogenicity": "uncertain",
+        "overall_confidence": "low",
+        "pathogenicity_counts": {
+            "supports benignity": 0,
+            "supports pathogenicity": 0,
+            "uncertain": 0
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nSupplementary table 6A. Total BRCA1/2 variants in current BRCA databases (BED, BIC, BMD, clinvar, LOVD, ENIGMA)\nRows:\nc.3192T>C|**c.3825A>G**",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study demonstrates substantial ethnic-specific differences in BRCA1/2 germline variants between Chinese and non\u2011Chinese populations, arguing for ethnicity\u2011based reference standards.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6617753",
+            "title": "Germline variation in BRCA1/2 is highly ethnic-specific: Evidence from over 30,000 Chinese hereditary breast and ovarian cancer patients",
+            "relevance_score": 0.47,
+            "pub_year": 2019,
+            "data_sources": [
+                "suppl"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 1856,
+            "output": 339
+        },
+        {
+            "input": 2095,
+            "output": 589
+        },
+        {
+            "input": 2129,
+            "output": 342
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 766,
+        "output": 398
+    },
+    "total_time": 17.61
+}

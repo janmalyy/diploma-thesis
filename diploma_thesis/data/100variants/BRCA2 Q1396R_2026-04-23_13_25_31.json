@@ -1,0 +1,233 @@
+{
+    "before_pruning": {
+        "articles_in_total": 27,
+        "only_medline_count": 0,
+        "only_pmc_count": 3,
+        "only_suppl_count": 24,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 27,
+        "only_medline_count": 0,
+        "only_pmc_count": 3,
+        "only_suppl_count": 24,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "variant": "BRCA2 Q1396R",
+    "time_to_process_articles": 10.27,
+    "context_length": 13497,
+    "after_removal": {
+        "articles_in_total": 7,
+        "only_medline_count": 0,
+        "only_pmc_count": 3,
+        "only_suppl_count": 4,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "",
+            "pmcid": "PMC9301826",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 67,
+            "abstract_length": 963,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1897
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3242438",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 131,
+            "abstract_length": 1266,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3995136",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 77,
+            "abstract_length": 1185,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7288470",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 129,
+            "abstract_length": 1374,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9116026",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 91,
+            "abstract_length": 1882,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9361024",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 151,
+            "abstract_length": 1632,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8160182",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 102,
+            "abstract_length": 1422,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        }
+    ],
+    "narrative_summary": "The BRCA2 missense variant Q1396R (p.Gln1396Arg) is a single\u2011nucleotide change (c.4187A>G) located in exon 11 of the BRCA2 gene. It has been evaluated in the context of hereditary breast cancer risk.\n\nIn a cohort of Mauritanian breast\u2011cancer patients, the Q1396R allele was identified in one individual and was classified as benign by the authors, who reported it among a list of other BRCA2 variants also deemed non\u2011pathogenic [PMC9301826].\n\nNo functional assays, segregation analyses, or computational predictions were provided in the extracted evidence, and no population frequency data were presented beyond the single carrier reported in this study.\n\nTaken together, the only available evidence classifies BRCA2 Q1396R as a benign variant, and there are no conflicting reports of pathogenicity in the supplied literature.",
+    "structured_summary": {
+        "overall_pathogenicity": "benign",
+        "pathogenicity_counts": {
+            "supports benignity": 1,
+            "supports pathogenicity": 0,
+            "uncertain": 0
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Gene Chromosome position Mutation type Database ID Gene location nucleotide change protein change Clinicalsignificance Number of carriers BRCA2 chr13:32893271-32,893,271 Missense rs4987046 Exon 3 c.125A > G p.Tyr42Cys benign 1 BRCA2 chr13:32972897-32,972,897 Missense Unreported Exon 3 c.10247A > G p.Lys3416Arg benign 1 BRCA1 chr17:41246481-41,246,481 Missense rs1799950 Exon 9 c.1067A > G p.Gln356Arg benign 1 BRCA1 chr17:41246411-41,246,411 Missense rs56128296 Exon 9 c.1137 T > G p.Ile379Met benign 1 BRCA1 chr17:41245471-41,245,471 Missense rs4986850 Exon 9 c.2077G > A p.Asp693Asn benign 5 BRCA1 chr17:41256155-41,256,155 Missense rs55971303 Exon 10 c.425C > A p.Pro142His benign 1 BRCA2 chr13:32906480-32,906,480 Missense rs766173 Exon 10 c.865A > C p.Asn289His benign 1 BRCA1 chr17:41245090-41,245,090 Missense rs56082113 Exon 10 c.2458A > G p.Lys820Glu benign 2 BRCA1 chr17:41244429-41,244,429 Missense rs4986852 Exon 10 c.3119G > A p.Ser1040Asn benign 2 BRCA1 chr17:41244936-41,244,936 Missense rs799917 Exon11 c.2612C > T p.Pro871Leu benign 70 BRCA2 chr13:32911278-32,911,278 Missense rs2227943 Exon 11 c.2786 T > C p.Leu929Ser benign 1 BRCA2 chr13:32912679-32,912,679 Missense **rs55969723** Exon 11 c.**4187A > G** **p.Gln1396Arg** benign 1 BRCA2 chr13:32914132-32,914,132 Missense rs11571657 Exon 11 c.5640 T > G p.Asn1880Lys benign 1 BRCA2 chr13:32914196-32,914,196 Missense rs4987048 Exon 11 c.5704G > A p.Asp1902Asn benign 1 BRCA2 chr13:32914712-32,914,712 Missense rs34309943 Exon 11 c.6220C > A p.His2074Asn benign 1 BRCA1 chr17:41226423-41,226,423 Missense rs55815649 Exon 13 c.4600G > A p.Val1534Met benign 1 BRCA2 chr13:32929309-32,929,309 Missense rs4986860 Exon 14 c.7319A > G p.His2440Arg benign 1 BRCA2 chr13:32953529-32,953,529 Missense rs4987047 Exon 22 c.8830A > T p.Ile2944Phe benign 1 BRCA2 chr13:32972884-32,972,884 Missense rs1801426 Exon 27 c.10234A > G p.Ile3412Val benign 3",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study screened Mauritanian breast cancer patients and reported the BRCA2 Q1396R (p.Gln1396Arg) variant as benign in their cohort data.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9301826",
+            "title": "Screening of BRCA1/2 variants in Mauritanian breast cancer patients",
+            "relevance_score": 1.0,
+            "pub_year": 2022,
+            "data_sources": [
+                "pmc"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 2492,
+            "output": 455
+        },
+        {
+            "input": 1791,
+            "output": 188
+        },
+        {
+            "input": 1718,
+            "output": 153
+        },
+        {
+            "input": 1780,
+            "output": 205
+        },
+        {
+            "input": 1951,
+            "output": 339
+        },
+        {
+            "input": 1927,
+            "output": 309
+        },
+        {
+            "input": 1823,
+            "output": 234
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 1484,
+        "output": 426
+    },
+    "total_time": 18.49
+}

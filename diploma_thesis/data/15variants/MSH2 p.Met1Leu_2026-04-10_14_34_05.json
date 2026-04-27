@@ -1,0 +1,1435 @@
+{
+    "before_pruning": {
+        "articles_in_total": 55,
+        "only_medline_count": 0,
+        "only_pmc_count": 16,
+        "only_suppl_count": 39,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 50,
+        "only_medline_count": 0,
+        "only_pmc_count": 16,
+        "only_suppl_count": 34,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "variant": "MSH2 p.Met1Leu",
+    "time_to_process_articles": 3.96,
+    "context_length": 122832,
+    "after_removal": {
+        "articles_in_total": 43,
+        "only_medline_count": 0,
+        "only_pmc_count": 12,
+        "only_suppl_count": 31,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "",
+            "pmcid": "PMC9864156",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 104,
+            "abstract_length": 1331,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 9,
+            "paragraphs_lengths": [
+                472,
+                1149,
+                1406,
+                1441,
+                1080,
+                427,
+                714,
+                107,
+                540
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11211533",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 112,
+            "abstract_length": 1982,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    355
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4980656",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 127,
+            "abstract_length": 1766,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5951856",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 99,
+            "abstract_length": 1404,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    290
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6577308",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 98,
+            "abstract_length": 1769,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6328345",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 97,
+            "abstract_length": 1927,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1988
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10589993",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 87,
+            "abstract_length": 1315,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    626
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8997875",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 161,
+            "abstract_length": 1980,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                398
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6355179",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 80,
+            "abstract_length": 1394,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                409
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8864140",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 125,
+            "abstract_length": 1384,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                931
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5635618",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 33,
+            "abstract_length": 1647,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3493867",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 104,
+            "abstract_length": 1431,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                406
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7693219",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 107,
+            "abstract_length": 2416,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    707
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7294662",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 65,
+            "abstract_length": 1625,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6324998",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 98,
+            "abstract_length": 1432,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10866978",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 94,
+            "abstract_length": 1536,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                296
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11442673",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 120,
+            "abstract_length": 871,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    467
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8629245",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 116,
+            "abstract_length": 1742,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1826
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5289469",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 98,
+            "abstract_length": 2044,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    235
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10010347",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 166,
+            "abstract_length": 2707,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    1250
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9545740",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 83,
+            "abstract_length": 1781,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    130
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9988940",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 101,
+            "abstract_length": 2163,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    339
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3903472",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 85,
+            "abstract_length": 1870,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                808
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5977207",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 133,
+            "abstract_length": 1393,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    669
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11523993",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 129,
+            "abstract_length": 1524,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    263
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7212885",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 87,
+            "abstract_length": 1690,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    180
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8265357",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 148,
+            "abstract_length": 3041,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    767
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7820803",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 94,
+            "abstract_length": 1099,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    741
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7880998",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 83,
+            "abstract_length": 1294,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    785
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6054746",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 104,
+            "abstract_length": 2040,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    699
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4444225",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 88,
+            "abstract_length": 1821,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    749
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7200683",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 99,
+            "abstract_length": 1372,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    2098
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5172551",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 122,
+            "abstract_length": 6583,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    352
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9200814",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 90,
+            "abstract_length": 1575,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    245
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7395971",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 104,
+            "abstract_length": 2255,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    158
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10035379",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 167,
+            "abstract_length": 2027,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    573
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4698284",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 107,
+            "abstract_length": 0,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    399
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5587710",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 104,
+            "abstract_length": 1443,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    283
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5107176",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 103,
+            "abstract_length": 1232,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    29
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7469806",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 241,
+            "abstract_length": 1927,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    29
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5890063",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 125,
+            "abstract_length": 1665,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    596
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7728249",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 136,
+            "abstract_length": 2959,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    242
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9325712",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 96,
+            "abstract_length": 1341,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    740
+                ]
+            ]
+        }
+    ],
+    "narrative_summary": "The MSH2 c.1A>T (p.Met1Leu) variant alters the initiator methionine of the mismatch\u2011repair gene and has been reported in the context of Lynch syndrome. It is listed in ClinVar as a pathogenic allele in at least one study of colorectal cancer patients [PMC8864140] and has been identified in a Lynch\u2011syndrome case that did not meet Amsterdam\u202fII or Bethesda criteria [PMC10589993]. However, other clinical reports have downgraded the same change to a variant of uncertain significance (VUS) or noted an uncertain classification: a re\u2011classification analysis described it as likely pathogenic to VUS [PMC6355179]; a pediatric therapy\u2011related myeloid neoplasm case assigned it VUS status based on ACMG criteria [PMC7880998]; and a Nigerian prostate\u2011cancer cohort recorded it as uncertain significance in ClinVar [PMC10010347]. The variant also appears in a sebaceous carcinoma sample without any interpretive comment [PMC5951856].\nFunctional interrogation provides a contrasting view. A massively parallel functional assay of MSH2 missense variants classified p.Met1Leu as functionally neutral, supporting a benign effect [PMC7820803]. An independent lung\u2011cancer metabolomics dataset listed the change as predicted neutral (benign) [PMC9325712]. No direct experimental assays of protein truncation or loss of function were reported.\nPopulation\u2011level allele frequency data for this start\u2011codon change in MSH2 were not presented in the extracted sources, and computational predictions beyond the functional screens were not detailed.\nTaken together, the evidence is discordant: clinical databases and some case reports have labeled the variant as pathogenic, whereas functional assays and predictive analyses consistently indicate a neutral impact. The preponderance of recent functional data and the lack of robust segregation or phenotypic correlation argue that the variant should be considered of uncertain significance, leaning toward a likely benign interpretation, pending further segregation or functional validation.",
+    "structured_summary": {
+        "overall_pathogenicity": "uncertain",
+        "pathogenicity_counts": {
+            "supports pathogenicity": 3,
+            "uncertain": 3,
+            "supports benignity": 7
+        },
+        "conflicting_evidence": true
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "The heterozygous germline variant in PMS2 NM_000535.7:c.1A > T, (**p.Met1Leu**) (ClinVar accession CVC000142777.15; rs587779333) was reported and classified as pathogenic in ClinVar ( accessed on 20 December 2022). The variant was corroborated by capillary sequencing from PCR amplification of the region of interest using specific primers. The sequence was compared with the PMS2 reference mentioned above (Figure 2a).",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "Based on the personal and family history of cancer, together with the identification of the pathogenic variant in PMS2, the patient was considered to have LS. The molecular testing set was extended to six family members (five siblings and one son of the proband) to determine if they carried the variant c.1A > T, (**p.Met1Leu**) in PMS2. Interestingly, this variant was detected in all six family members examined, among which, a chromatogram of a single family member is exemplified as a representative (Figure 2b). In detail, the molecular testing results of the proband and the family members are shown (Table 1 and Supplementary S2). Because each family member tested harbored the variant in a disease-free status, we examined the presence of the variant in seven healthy volunteers unrelated to the study family; that is, not diagnosed with cancer. The presence of the variant was found in 7/7 of the samples evaluated. A representative chromatogram of an unrelated individual is shown (Figure 2c) and all individuals are detailed (Table 1 and Supplementary S2).",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "The variant c.1A > T, (**p.Met1Leu**) in PMS2 affects the methionine involved in translation initiation of this gene. Functional assays for this variant have not been reported; however, the nucleotide change is predicted to generate a non-functional truncated protein. The immunohistochemistry (IHC) analysis correlates 75% of the loss of PMS2 expression with a pathogenic variant in the same gene. IHC showed the nuclear expression of the PMS2 protein (Supplementary S3). This variant has been informed only in an individual with suspected LS and another individual with a second pathogenic variant of PMS2 and a personal history consistent with MMR deficiency syndrome. The rs587779333 variant has reported the alleles T > A; T > C; and T > G. The reference allele in the Latino population is 100% and 0% for the alternate alleles T and G, respectively, according to the Allele Frequency Aggregator (ALFA) database ( accessed on 20 December 2022). In the gnomAD database, the frequency is the same, but there are no data for the alternative \"T\" allele. Notably, the Latino population is underrepresented compared with the European, African, and African American populations in both databases ( accessed on 1 August 2022; National Center for Biotechnology Information).",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "We found a frequency of 100% of the variant in the analyzed individuals, relatives and non-relatives alike, within the study sample. In accordance with these results, we raise the possibility that the c.1A > T, (**p.Met1Leu**) variant in PMS2 reported as pathogenic is, in fact, a change of sequence in one of the PMS2 pseudogenes. Multiple sequence alignment analysis (MUSCLE, accessed on 8 July 2022) showed homology to 5 pseudogenes: PMS2P1, P2, P4, P5, and P7 (Table 2, Figure 3a). Subsequently, we determined whether the PCR-amplified region (g. -21 to g. 175, PMS2 NG_008466) was common to these five pseudogenes using the Basic Local Alignment Search Tool (BLAST, accessed on 8 July 2022) alignment algorithm. We found that PMS2P1 is the only pseudogene to share the region of interest with PMS2, with 89% identity. In the region of PMS2 corresponding to the ATG at the start of transcription, PMS2P1 contains the TTG nucleotides (Figure 3b). Finally, we estimated the degree of complementarity of the previously used primers with the sequence of the PMS2P1 pseudogene. Results demonstrated 100% and 80% of complementarity with the forward and reverse primers, respectively, allowing simultaneous amplification of the exon one sequence, which corresponds to the homologous region between PMS2 and PMS2P1 (Figure 3c).",
+                    "mention_type": "computational",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "The biological significance of genetic variants and their implications for cancer risk render an essential role in medical diagnosis and treatment. In circumstances where a genetic variant is a matter of controversy or has doubt regarding its clinical consequences, it will be crucial to raise the concern in the appropriate outcome report. In the case we presented, the patient had a history of a partial oophorectomy, so during the initial post-test genetic counseling and in contemplating a molecular result related to LS, the possibility of performing a contralateral-oophorectomy was evaluated according to management guidelines. In addition, the impact influences treatment decisions, with the current evidence of the use of immune checkpoint therapy for tumors associated with LS. For these reasons, we propose further investigating the reported variant c.1A > T, (**p.Met1Leu**) in PMS2 and evaluating its reclassification to allow appropriate clinical and surgical management for the patient and family members.",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "Molecular diagnosis of the variant c.1A > T, (**p.Met1Leu**) in PMS2. Up sequence reference NG_008466.1. Sequencing chromatograms for (a) index patient; (b) family extension; and (c) healthy volunteer. Arrow indicates c.1A > T, (**p.Met1Leu**) in PMS2; the red rectangle marks the change region c.1A > T, (**p.Met1Leu**).",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "A schematic diagram of the genomic structure of PMS2 and the pseudogenes. (a) The blue boxes show the 15 exons of the PMS2 gene, whose position is representative. The black boxes show the pseudogenes that match exon 1 and exon 5. (b) Multiple sequence alignment of exon 1; red box denotes c.1A > T, (**p.Met1Leu**) in PMS2; asterisk (*) denotes conserved nucleotide in all sequences. (c) Alignment of the PCR amplicon with the reference sequence of the pseudogene PMS2P1. The yellow boxes indicate the complementarity of the forward and reverse primers. The red box indicates the site of change c.1A > T, (p. **Met1Leu**).",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Prevalence in family tracts and unrelated healthy individuals of the variant c.1A > T, (**p.Met1Leu**) in PMS2.",
+                    "mention_type": "population",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "ID Gender Age (Years) Diagnosis Relationship Sample PMS2 c.1A > T, (**p.Met1Leu**) 1 F 44 Breast cancer Proband PB positive 2 M 19 healthy son PB positive 3 M 37 healthy brother PB positive 4 M 40 healthy brother PB positive 5 M 42 healthy brother PB positive 6 F 49 healthy sister PB positive 7 F 52 healthy sister PB positive C1 M 29 healthy UC PB positive C2 M 30 healthy UC PB positive C3 M 36 healthy UC PB positive C4 M 37 healthy UC PB positive C5 F 35 healthy UC PB positive C6 F 47 healthy UC PB positive C7 F 55 healthy UC PB positive",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The article presents multiple lines of clinical, population and computational evidence that the PMS2 c.1A>T (p.Met1Leu) variant is likely a benign pseudogene artifact and should be re\u2011classified away from pathogenicity.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9864156",
+            "title": "A Pathogenic Variant Reclassified to the Pseudogene PMS2P1 in a Patient with Suspected Hereditary Cancer",
+            "relevance_score": 1.0,
+            "pub_year": 2023,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nSample #|Age|Location|Histopathology|Other stains|Solar Elastosis|Circumscription|Mutations|Muts/Mb|Mutational class|SSNV|Indel|Mismatch repair|ZNF750|HRAS|KRAS\nRows:\n||left cheek|Mod-diff with med grade atypia and intrepidermal CA|N.A.|severe|INFILT|||UV||||**p.M1L**||",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study classifies sebaceous carcinomas into three mutational subclasses, linking UV\u2011damage and microsatellite instability signatures to distinct clinical and histopathologic features, and reports the presence of an MSH2 p.Met1Leu mutation in a UV\u2011damage tumor sample without further interpretation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5951856",
+            "title": "Cell of origin and mutation pattern define three clinically distinct classes of sebaceous carcinoma",
+            "relevance_score": 0.76,
+            "pub_year": 2018,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nTable 1. Variants in patients with Lynch Syndrome who do not meet Amsterdam II and/or revised Bethesda criteria. Country/authors Patients with LS Cancer type Molecular findings Norway [1] 514 Colorectal cancer MSH2 c.229_230delAG;\nRows:\nc.2131C>T; p.Arg711X c.1077-?_1276+? del; Arg359_Gly426> ArgfsX17 MSH6 c.3477C>A; p.Tyr1159X MLH1 c.1668-1G>A; p.Ser556ArgfsX14 Scotland [8] 38 Colorectal cancer MSH2 EX1_6del c.1A>C; **p.Met1Leu** c.754C>T; p.Q252X c.942+3A>T c.1320_1321insA; p.L440fsX442 c.1786_1788delAAT; p.N596del c.2634+5G>C MSH6 c.3261_3262insC; p.F1088fsX1092 c.3516_3527del12; p.V1173_R1176del",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article reports that the MSH2 p.Met1Leu variant was found in a Lynch syndrome patient lacking the Amsterdam II or Bethesda criteria, illustrating cases missed by clinical screening criteria.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10589993",
+            "title": "Diagnosis of patients with Lynch syndrome lacking the Amsterdam II or Bethesda criteria",
+            "relevance_score": 0.7,
+            "pub_year": 2023,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...Irish/Scandinavian/Spanish - European Br (68)Colon Polyps (68) LP-->VUS 9 4 5 5 MLH1 dup exons 16-19 Exonal duplication(s) F 54 White Armenian/Syrian - Armenian Unaffected LP*-->VUS 8 7 1 6 MSH2 **p.Met1Leu** Missense F 63 White Unknown - Unknown (West European) Unaffected LP-->P-->VUS 6 4 2 7 MSH2 dup exons 1-4 Exonal duplication(s) F 81 Asian Taiwanese - Taiwanese CRC (66)Ut (71)Lung (76) LP-->VUS 11 6...",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The article reviews how germline variant reclassifications, such as MSH2 p.Met1Leu being downgraded from likely pathogenic to VUS, can affect cancer risk management and counseling.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6355179",
+            "title": "The effects of genomic germline variant reclassification on clinical cancer care",
+            "relevance_score": 0.65,
+            "pub_year": 2019,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Gene Nucleotide change HGVS nomenclature Amino acid change Variant type ClinVar classification VarSome No. patients MLH1 c.454-_?545+?del - FS PV - 1 c.208-3C>G - IVS LPV LPV 2 c.1852_1854delAAG p.Lys618del FS PV PV 1 c.(1558 + 1_1559-1)_(*193_)?del(p)? (del ex14-19) - LGR - - 1 c.1975C>T p.Arg659Ter NS PV PV 2 c.1195dup p.Arg399fs FS - PV 1 c.199G>C p.Gly67Arg M PV PV 3 MSH2 c.212-1G>A - IVS PV PV 2 c.2459dup p.Gly820LysfsTer117 FS - PV 1 c.976_977del p.Leu326GlyfsTer6 FS - PV 1 c.(1076 + 1_1077-1)_(1276 + 1_1277-1)del (del ex7) p.Leu360Lysfs*16 LGR PV - 1 c.942+344_1076+7988del9655 (del ex6) - LGR - - 1 c.484G>A p.Gly162Arg M PV PV 2 c.2740del p.Glu914LysfsTer2 FS LPV PV 3 MSH6 c.3261dup p.Phe1088LeufsTer5 FS PV PV 1 c.3G>C p.Met1Ile M PV PV 1 PMS2 c.137G>T p.Ser46Ile M LPV PV 3 c.1A>T **p.Met1Leu** M PV PV 1 c.2182_2184delinsG p.Thr728AlafsTer7 FS CIP PV 1 c.2T>C p.Met1Thr M LPV/LP PV 1 c.1927C>T p.Gln643Ter NS PV PV 2",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study screened colorectal cancer patients for Lynch syndrome and reported several pathogenic germline variants, including MSH2 p.Met1Leu classified as pathogenic.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8864140",
+            "title": "Impact of Different Selection Approaches for Identifying Lynch Syndrome-Related Colorectal Cancer Patients: Unity Is Strength",
+            "relevance_score": 0.65,
+            "pub_year": 2022,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...D 1 1 18 MLH1 c.1852_1853delAAinsGC p.Lys618Ala M PP Class C65 PrD D 0 24 19 MLH1 c.1870G>C p.Asp624His M PP Class C0 PrD D 0 1 20 MLH1 c.1937A>G p.Tyr646Cys M PP Class C65 PrD D 0 1 21 MSH2 c.1A>C **p.Met1Leu** M PP Class C0 PrD D 0 1 22 MSH2 c.138C>G p.His46Gln M PP Class C15 PrD D 3 1 23 MSH2 c.166G>A p.Glu56Lys M PP Class C55 PrD T 0 1 24 MSH2 c.1044G>C p.Gln348His M PP Class C15 PrD D 0 1 25 MSH2...",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The population\u2011based study reports that fewer than 1% of ovarian\u2011cancer patients carry germline mismatch\u2011repair gene mutations, and the MSH2 start\u2011codon variant p.Met1Leu is among the variants identified, though its clinical significance is not explicitly described.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC3493867",
+            "title": "Frequency of mutations in mismatch repair genes in a population-based study of women with ovarian cancer",
+            "relevance_score": 0.64,
+            "pub_year": 2012,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nCNCR_33144_e.Supporting Information CNCR_33144_e.Supporting Information_Methods. Description of immunohistochemistry methods, MSI methods, and germline testing methods Immunohistochemistry (IHC) methods From the formalin-fixed,\nRows:\np.Asn368Ser MSH6 c.3852G>A c.1223C>G c.2615T>C c.884A>G p.Thr1284= p.Pro408Arg p.Ile872Thr p.Lys295Arg MSH2 c.913G>A c.942+28_942+29delAA c.1729A>G c.A>C c.942+29delA c.942+28_942+29delAA p.Ala305Thr p.Ile577Val **p.Met1Leu** EPCAM c.833C>T c.*41T>G p.Ala278Val CNCR_33144_e.Supporting Information_TABLE 4. Subgroup analysis of performance characteristics of tumor testing strategies excluding one case (Study ID#8) with non-Lynch associated tumor Tumor",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study compares screening methods for Lynch syndrome in ovarian cancer and concludes that sequential IHC with ML1 promoter methylation analysis followed by MSI offers the highest sensitivity and specificity.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7693219",
+            "title": "Performance characteristics of screening strategies to identify Lynch syndrome in women with ovarian cancer",
+            "relevance_score": 0.64,
+            "pub_year": 2020,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nName,Gene(s),Protein change,Condition(s),CLNSIG,Last_Reviewed,Review status,Accession,GRCh37Chromosome,GRCh37Location,GRCh38Chromosome,GRCh38Location,VariationID,AlleleID(s),dbSNP ID,Canonical SPDI NM_001048171.1(MUTYH):c.1442G>A\nRows:\ncancer-predisposing syndrome,Uncertain significance,\"Last reviewed: Feb 18, 2021\",\"criteria provided, multiple submitters, no conflicts\",VCV000127624,2,47630328,2,47403189,127624,133081,rs587779960,NC_000002.12:47403188:G:C NM_000251.2(MSH2):c.1A>T (**p.Met1Leu**),MSH2,**M1L**,Lynch syndrome|Hereditary nonpolyposis colorectal neoplasms,Uncertain significance,\"Last reviewed: Jun 21, 2019\",reviewed by expert panel,VCV000090834,2,47630331,2,47403192,90834,96309,rs267607911,NC_000002.12:47403191:A:T\nnonpolyposis colorectal neoplasms|Lynch syndrome I,Uncertain significance,\"Last reviewed: Jun 21, 2019\",reviewed by expert panel,VCV000090833,2,47630331,2,47403192,90833,96308,rs267607911,NC_000002.12:47403191:A:G NM_000251.2(MSH2):c.1A>C (**p.Met1Leu**),MSH2,**M1L**,not provided|Hereditary nonpolyposis colorectal neoplasms|Lynch syndrome|not specified|Malignant tumor of breast|Hereditary cancer-predisposing syndrome|Lynch syndrome I,Uncertain significance,\"Last reviewed: Jun 21, 2019\",reviewed by",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The study characterizes DNA repair gene variants in Nigerian prostate cancer, reporting several germline and somatic alterations and noting the MSH2 p.Met1Leu variant as of uncertain significance in ClinVar.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10010347",
+            "title": "Whole-exome Sequencing of Nigerian Prostate Tumors from the Prostate Cancer Transatlantic Consortium (CaPTC) Reveals DNA Repair Genes Associated with African Ancestry",
+            "relevance_score": 0.44,
+            "pub_year": 2022,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Supplemental material\nColumn names:\nMouse MEQTEGVSTECAKAIKPIDGKSVHQICSGQVVLSLSTAVKELIENSVDAGATTIDLRLKD|60\nRows:\n**p.Met1Leu**",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article presents a functional assay for classifying PMS2 variants in Lynch syndrome but provides no specific data or interpretation for the MSH2 p.Met1Leu variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9545740",
+            "title": "Predictive functional assay-based classification of PMS2 variants in Lynch syndrome",
+            "relevance_score": 0.42,
+            "pub_year": 2022,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nGenes 2018 , 9 , 2 67 ; doi: 10.3390/genes9050267 www.mdpi.com/journal/ genes Article Validation of Ion Torrent TM Inherited Disease Panel with the PGM TM Sequencing Platform for Rapid and Comprehensive Mutation Detection Abeer\nRows:\nregion SGP20 1 3 - 0091 BCK DHB NM_00 0056 6 80838 889 80838 892 c.286_288delGAA TCAGTAATATTTGGTGAA GATGTTGCCTTTG 9x N N poor coverage SGP201 3 - 0092 BCK DHB NM_00 0056 6 80816 411 80816 411 c.1A>T **p.M1L** CGGTGGTGAGCGGGGAT GGCGGTTGTAGCGG 2x Y Y poor coverage, presence in homoploymer and GC - rich region SGP201 3 - 0043 CFT R NM_00 0492 7 11719 9543 11719 9543 c.1418_14 18delG p.G473 Efs*54 TAATGGTGATTATGGGAG",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The validation study shows high overall sensitivity of the Ion Torrent Inherited Disease Panel, yet the MSH2 p.Met1Leu variant was reported with poor sequencing coverage, indicating a detection limitation for this specific change.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5977207",
+            "title": "Validation of Ion TorrentTM Inherited Disease Panel with the PGMTM Sequencing Platform for Rapid and Comprehensive Mutation Detection",
+            "relevance_score": 0.26,
+            "pub_year": 2018,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nVariant|Position|LOF score|FoldX|PON_MMR|PolyPhen2|MAPP_MMR|CADD (min)|CADD (mean)|CADD (max)|REVEL (min)|REVEL (mean)|REVEL (max)|spliceAI deltaMax score|Clinical classification|Clinical classication source|gnomAD allele count|gnomAD allele fraction|gnomAD homozygotes|References|Refs (grouped)|Literature classification|Conflicts among previous reports?|Consensus classifiaction|Known splice disruptive variant?|Splice references\nRows:\n**M1L**|TCGGCCGCGCTCTCCAAnnnCAGCGTCTCCTTCGGCTGCACCGCC|R_tile_5|GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCTCAACCGGTTGAGGTCCTGAT|||||VC0021_MSHU3_F|CACCgggccgcgtctgcttatgat|||||insight_class_3|insight||||Drost2012,Gammie2007,Houlleberghs2016,Rath2019|Neutral,Neutral,Neutral,Neutral||Neutral|||",
+                    "mention_type": "functional",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study generated a comprehensive functional map of MSH2 missense variants, showing that the majority, including p.Met1Leu, are functionally neutral and can be used to reclassify VUSs.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7820803",
+            "title": "Massively parallel functional testing of MSH2 missense variants conferring Lynch syndrome risk",
+            "relevance_score": 0.18,
+            "pub_year": 2020,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nPatient|Gene Name|Chr|Position HG19|Type|Coverage|VAF|Sequence Surrounding Mutation|Reference Allele Count|Alternative Allele Count|dbSNP|Exon|Mutation Class|Amino Acid Change|cDNA|Isoform|Reference Allele|Mutant Allele|NHLBI frequency|SIFT_pred|Polyphen2_HDIV_pred|Polyphen2_HVAR_pred|LRT_pred|MutationAssessor_pred|MutationTaster_pred|FATHMM_pred|CADD_phred|DANN Rankscore|GERP++_RS Rankscore|REVEL Score|Thousand Genome Frequency|GSB Class|ExAC_AF|Committee Call|Gene Classification (Zhang, J. et al.; 2015)|Sequencing Cohort|ACMG criteria met|PubMed PMID\nRows:\nSJ016519|MSH2|chr2||SNP|||GGAGGTGAGGAGGTTTCGAC[A/C]TGGCGGTGCAGCCGAAGGAG|||rs267607911|exon1|missense|**M1L**|c.A1C|NM_000251|A|C||D|P|P|D||D|D||||||Silver||VUS|Aut Dom|Tumor/Normal|PVS1_Moderate, PM2|",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The study reports an MSH2 p.Met1Leu (Met1Leu) variant in a pediatric therapy\u2011related myeloid neoplasm case and classifies it as a variant of uncertain significance based on ACMG criteria and in\u2011silico predictions.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7880998",
+            "title": "The acquisition of molecular drivers in pediatric therapy-related myeloid neoplasms",
+            "relevance_score": 0.17,
+            "pub_year": 2021,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nGene,A549,H157,H460,H292,H1264,H2122,H1993,H522,H661,H1395,H596,H290,H838,Calu-3 TP53,,[CAG to TAG (stop)](NCI-Navy),WT,WT,[CAG to TAG(stop)](NCI-Navy),\"[c.131G>T; p.C44F; MS; possibly som](COSMIC-V73), [c.248G>T; p.C83F; MS; possibly\nRows:\nPATE2,,,,,,,,,,,,,, ZNHIT2,,,,,,,,,,,,,, RELL1,,,,,,,,,,,,,, HIST1H3C,,,,,,,,,,,,,, KRTAP11-1,,,,,,,,,,,,,, TAS2R3,,,,,,,,,,,,,, ZBTB25,,,,,,,,,,,,,, OR4A13P,,,,,,,,,,,,,, TMEM14C,,,,,,,,,,,,,, TTC19,,,,,,,,,,,,,, MTX1,,,,,,,,[c.1A>T; **p.M1L**; MS; het; pred neutral; som](COSMIC-V73),,,,,, EIF3K,,,,,,,,,,,,,, PITHD1,,,,,,,,,,,,,, ETFB,,,,,,,,,,,,,, NDUFB10,,,,,,,,,,,,,, TMEM109,,,,,,,,,,,,,, ZNF414,,,,,,,,,,,,,, COX5A,,,,,,,,,,,,,WT, ITM2B,,,,,,,,,,,,,, SEC61G,,,,,,,,,,,,,,",
+                    "mention_type": "computational",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The article primarily investigates KRAS\u2011mutant lung cancer metabolism and only mentions the MSH2 p.Met1Leu variant in a supplementary table with a predicted neutral (benign) classification, offering no functional or clinical data on the variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9325712",
+            "title": "Targeting de novo lipogenesis and the Lands cycle induces ferroptosis in KRAS-mutant lung cancer",
+            "relevance_score": 0.05,
+            "pub_year": 2022,
+            "data_sources": [
+                "suppl"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 3702,
+            "output": 1385
+        },
+        {
+            "input": 2067,
+            "output": 352
+        },
+        {
+            "input": 2013,
+            "output": 238
+        },
+        {
+            "input": 1910,
+            "output": 651
+        },
+        {
+            "input": 1978,
+            "output": 318
+        },
+        {
+            "input": 2731,
+            "output": 497
+        },
+        {
+            "input": 1982,
+            "output": 502
+        },
+        {
+            "input": 2276,
+            "output": 546
+        },
+        {
+            "input": 1846,
+            "output": 729
+        },
+        {
+            "input": 2232,
+            "output": 766
+        },
+        {
+            "input": 1887,
+            "output": 181
+        },
+        {
+            "input": 1990,
+            "output": 1044
+        },
+        {
+            "input": 2355,
+            "output": 503
+        },
+        {
+            "input": 1792,
+            "output": 205
+        },
+        {
+            "input": 1784,
+            "output": 181
+        },
+        {
+            "input": 1934,
+            "output": 444
+        },
+        {
+            "input": 1778,
+            "output": 412
+        },
+        {
+            "input": 2819,
+            "output": 266
+        },
+        {
+            "input": 1973,
+            "output": 301
+        },
+        {
+            "input": 2621,
+            "output": 527
+        },
+        {
+            "input": 1911,
+            "output": 848
+        },
+        {
+            "input": 2178,
+            "output": 362
+        },
+        {
+            "input": 2436,
+            "output": 267
+        },
+        {
+            "input": 2017,
+            "output": 786
+        },
+        {
+            "input": 1863,
+            "output": 313
+        },
+        {
+            "input": 1905,
+            "output": 360
+        },
+        {
+            "input": 2524,
+            "output": 326
+        },
+        {
+            "input": 1946,
+            "output": 790
+        },
+        {
+            "input": 2081,
+            "output": 718
+        },
+        {
+            "input": 2344,
+            "output": 269
+        },
+        {
+            "input": 2063,
+            "output": 262
+        },
+        {
+            "input": 2541,
+            "output": 333
+        },
+        {
+            "input": 3379,
+            "output": 246
+        },
+        {
+            "input": 1883,
+            "output": 398
+        },
+        {
+            "input": 2087,
+            "output": 461
+        },
+        {
+            "input": 2061,
+            "output": 317
+        },
+        {
+            "input": 1614,
+            "output": 345
+        },
+        {
+            "input": 1971,
+            "output": 346
+        },
+        {
+            "input": 1806,
+            "output": 251
+        },
+        {
+            "input": 1918,
+            "output": 327
+        },
+        {
+            "input": 2336,
+            "output": 354
+        },
+        {
+            "input": 2275,
+            "output": 398
+        },
+        {
+            "input": 2184,
+            "output": 891
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 7247,
+        "output": 1255
+    },
+    "total_time": 80.61
+}

@@ -1,0 +1,1626 @@
+{
+    "before_pruning": {
+        "articles_in_total": 95,
+        "only_medline_count": 3,
+        "only_pmc_count": 32,
+        "only_suppl_count": 50,
+        "both_pmc_and_suppl_count": 10,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 50,
+        "only_medline_count": 3,
+        "only_pmc_count": 25,
+        "only_suppl_count": 16,
+        "both_pmc_and_suppl_count": 6,
+        "all_three_count": 0
+    },
+    "variant": "BRCA2 I3412V",
+    "time_to_process_articles": 28.17,
+    "context_length": 117281,
+    "after_removal": {
+        "articles_in_total": 34,
+        "only_medline_count": 3,
+        "only_pmc_count": 25,
+        "only_suppl_count": 0,
+        "both_pmc_and_suppl_count": 6,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "19473207",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 120,
+            "abstract_length": 1812,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "28222693",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 110,
+            "abstract_length": 1682,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "12453858",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 117,
+            "abstract_length": 1500,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5927761",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 89,
+            "abstract_length": 1677,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "42 8 controls s1436s was found in 76 49 0 cases and 54 48 2 controls in brca2 gene missense mutations c 865a c n289h c 10234a g i3412v were detected with higher frequency in 15 2 and"
+            ],
+            "number_of_paragraphs": 3,
+            "paragraphs_lengths": [
+                1338,
+                657,
+                200
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8798914",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 62,
+            "abstract_length": 1629,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "mutations c 10234a g and c 1114a c were detected in control group 5 brca1 somatic mutations involving pathogenic mutation c 2398 2401delaaat detected in one patient and four benign mutations c 2612c t c"
+            ],
+            "number_of_paragraphs": 4,
+            "paragraphs_lengths": [
+                1331,
+                672,
+                1610,
+                207
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10772761",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 139,
+            "abstract_length": 1606,
+            "number_of_unmatched_snippets": 5,
+            "unmatched_snippets": [
+                "and three synonymous polymorphisms detected in the brca1 gene in brca2 missense mutations of the c 865a c n289h c 10234a g i3412v gene were detected with a higher frequency in 15 2 and 30 8",
+                "i3412v genetic characteristics of 12 polymorphisms in brca1 and brca2 genes associated with the development of breast cancer rs polymorphism identifier snp identifier no name of the gene",
+                "1758 43 0 rs1801426 0 0399 1 801 a g 1660 138 3 dendrogram of genetic distances of kazakh and global populations by frequency of snps and gwas associated with breast cancer the correspondence of",
+                "0 02388 0 02359 1 rs1801426 1 801 1660 138 3 0 07662 0 07676 0 7616 comparative analysis of allelic frequencies of 12 polymorphisms of brca1 and brca2 genes associated with breast cancer in global",
+                "associations between the rs144848 polymorphism and breast cancer risk in all genetic models as shown in table 4 minor g allele population frequency of rs1801426 polymorphism of the brca2 gene in"
+            ],
+            "number_of_paragraphs": 12,
+            "paragraphs_lengths": [
+                292,
+                803,
+                425,
+                1778,
+                1778,
+                1381,
+                1032,
+                197,
+                194,
+                194,
+                196,
+                196
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10954728",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 99,
+            "abstract_length": 1397,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 3,
+            "paragraphs_lengths": [
+                802,
+                1373,
+                1212
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4367084",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 103,
+            "abstract_length": 1158,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "10234a g polymorphism brca2 germline mutations in unaffected individuals to determine whether unaffected relatives carry the same deleterious mutations as the probands we enrolled two unaffected"
+            ],
+            "number_of_paragraphs": 3,
+            "paragraphs_lengths": [
+                991,
+                1557,
+                196
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11137316",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 90,
+            "abstract_length": 1685,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                1255,
+                1249
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10911770",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 68,
+            "abstract_length": 1666,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "p asn577his brca1 c2082c t c2612c t c3113a g c3548a g c 4900a g brca2 c 7397 t c c 5785a g c 10234a g palb2 gene mutation associated with recql gene exo dna alteration protein"
+            ],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                1658,
+                198
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5081504",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 166,
+            "abstract_length": 1234,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1617
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5416916",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 153,
+            "abstract_length": 1345,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                785
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7675892",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 147,
+            "abstract_length": 1677,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                431
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9301826",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 67,
+            "abstract_length": 963,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "\u201332 972 884 missense rs1801426 exon 27 c 10234a g p ile3412val benign 3 twelve of the 42 tnbc patients carried pathogenic variants 7 in brca1 and 5 in brca2 nineteen non pathogenic variants 8 in brca1"
+            ],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                205
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6501405",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 127,
+            "abstract_length": 1581,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                374,
+                269
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5320733",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 109,
+            "abstract_length": 1775,
+            "number_of_unmatched_snippets": 4,
+            "unmatched_snippets": [
+                "individual variant with breast cancer risk was analyzed using logistic regression model adjusted for ethnicity age and family history results our study confirmed brca2 p ile3412val is presented in 2 of",
+                "duplicated samples was 98 7 153 155 we identified brca2 p ile3412val with variant frequency 2 in unaffected women and an additional four variants brca2 p cys315ser p ile1929val p arg2108cys and",
+                "larger groups are necessary to confirm these findings conclusions our data suggests that brca2 p ile3412val is likely to be benign and brca1 p arg762ser is likely to be associated with breast cancer",
+                "risk or 7 4 95 ci 0 9\u201362 3 p 0 06 conclusions our study shows that brca2 p ile3412val and p ala1996thr are likely benign and highlights the need for population specific studies to determine"
+            ],
+            "number_of_paragraphs": 6,
+            "paragraphs_lengths": [
+                426,
+                1414,
+                205,
+                202,
+                199,
+                200
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8270444",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 117,
+            "abstract_length": 1197,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                250
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10640758",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 109,
+            "abstract_length": 1726,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                438
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7593220",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 120,
+            "abstract_length": 1564,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                424
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9939169",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 150,
+            "abstract_length": 2902,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "benign rs1801426 2 brca2 c 105a c \u2014 27 snv 3 utr benign rs15869 1 copy number variation mlpa assay was applied to confirm the cnv results obtained after ngs analysis it was confirmed that none of"
+            ],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                303,
+                198
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6827033",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 144,
+            "abstract_length": 1168,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                1001,
+                2070
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9498575",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 112,
+            "abstract_length": 1292,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                421
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10454606",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 152,
+            "abstract_length": 1959,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "in breast tumors note vus\u2014variants of uncertain significance \u2116 mutation rs class type 1 c 10076a g p glu3359gly rs80358389 non synonymous snv vus 2 c 10234a g p ile3412val rs1801426 non"
+            ],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                192
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4910552",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 170,
+            "abstract_length": 1296,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "sequencing exon 26 c 9581c a p p3194q vus vus conf data 7 c0 1 hrm sequencing exon 27 c 10234a g p i3412v neutral no conf data 8 c0 2 hrm sequencing pedigree of a family with p e3002k mutation in"
+            ],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                208
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3025939",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 87,
+            "abstract_length": 1527,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1670
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7908826",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 195,
+            "abstract_length": 2537,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                300,
+                1194
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8893798",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 87,
+            "abstract_length": 1605,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1397
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8922037",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 144,
+            "abstract_length": 1672,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "del pathogenic iv other 64 0 0 9 exon 27 c 10234a g snv likely benign iv type 1 45 0 0 2 discussion ovarian cancer is one of the most common malignant tumors that threaten women\u2019s health and quality of"
+            ],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                201
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8266163",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 71,
+            "abstract_length": 1996,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                464
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11221979",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 137,
+            "abstract_length": 1283,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                406
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3725882",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 178,
+            "abstract_length": 2144,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                253,
+                1389
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC2409651",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 100,
+            "abstract_length": 1673,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "i3412v y 1 f brca only n n n n n uv p not segregating with the disease in the family when feasible we investigated multiple affected family members in order to exclude the presence of a phenocopy"
+            ],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                199
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7739861",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 116,
+            "abstract_length": 944,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                343
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC2575532",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 153,
+            "abstract_length": 2344,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                336
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        }
+    ],
+    "narrative_summary": "The BRCA2 c.10234A>G (p.Ile3412Val, I3412V) missense change has been reported in a range of cancer\u2011related studies.  An early investigation of esophageal squamous cell carcinoma (ESCC) in a high\u2011risk region of India identified the variant in three of twenty patients with familial ESCC, whereas it was absent in 80 non\u2011familial ESCC cases and in 100 healthy controls, leading the authors to propose a possible contribution to familial ESCC risk [19473207].  Subsequent clinical surveys in other populations have generally not linked the variant to disease.  In a Sardinian breast\u2011cancer family cohort the variant was noted but its functional significance remained unknown [12453858].  Large case\u2011control studies in multi\u2011ethnic Asian cohorts found the allele in more than 2\u202f% of unaffected women and classified it as likely benign [28222693].  A Kazakh breast\u2011cancer series reported the variant in 30.8\u202f% of cases and 18.7\u202f% of controls, yet the authors described it as a benign polymorphism rather than a disease\u2011causing mutation [PMC10772761].  Chinese ovarian\u2011cancer sequencing identified I3412V among the most frequent BRCA2 missense changes but explicitly stated it is not currently considered deleterious [PMC11137316]; a separate Chinese ovarian\u2011cancer report noted a high frequency in African and American populations but again emphasized its non\u2011deleterious status [PMC10954728].  Numerous other clinical datasets\u2014including breast\u2011cancer cohorts from Malaysia, Pakistan, Morocco, Mauritania, Tanzania, Latin America, and Belgium\u2014have recorded the variant as benign or of uncertain significance, with several studies re\u2011classifying it as likely benign based on ACMG criteria [PMC5320733; PMC7593220; PMC2409651; PMC9939169; PMC10640758; PMC8270444; PMC9301826; PMC6827033].  A few investigations have listed I3412V as a variant of uncertain significance (VUS) in breast\u2011cancer NGS panels [PMC5416916] or in neoadjuvant\u2011chemotherapy response studies [PMC10454606], reflecting residual uncertainty in specific clinical contexts.\n\nFunctional assays directly testing the impact of I3412V on BRCA2 protein activity have not been reported in the extracted literature, so no experimental evidence of altered DNA\u2011repair function is available.\n\nPopulation\u2011frequency data consistently show that I3412V is a relatively common polymorphism.  It appears in >2\u202f% of Asian women [28222693], reaches frequencies of 4\u202f% in Kazakh individuals and is even more prevalent in African and American groups (up to >10\u202f% in some datasets) [PMC10772761; PMC10954728].  Database annotations (BIC, ClinVar, ENIGMA) uniformly assign the variant to class\u202f1 (benign) or label it as neutral/benign, and in silico assessments have been superseded by these population\u2011based classifications [PMC5320733; PMC8266163].\n\nThe evidence therefore presents a clear conflict: a small Indian familial ESCC series suggests a possible pathogenic role, whereas the overwhelming majority of larger, ethnically diverse studies describe I3412V as a benign polymorphism with high allele frequency and no demonstrable disease association.  The presence of VUS designations in a few recent NGS panels underscores lingering uncertainty in limited clinical settings, but does not outweigh the weight of population and classification data.\n\nOverall, the preponderance of data supports BRCA2 I3412V as a benign or likely benign variant in most populations, with only isolated reports hinting at a potential low\u2011penetrance effect in specific familial ESCC contexts.  Consequently, the variant is best interpreted as non\u2011pathogenic for breast, ovarian, and most other cancers, although further functional studies would be required to definitively exclude any modest, population\u2011specific risk.",
+    "structured_summary": {
+        "overall_pathogenicity": "benign",
+        "pathogenicity_counts": {
+            "supports benignity": 25,
+            "supports pathogenicity": 3,
+            "uncertain": 6
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "The incidence of esophageal squamous cell carcinoma (ESCC) is very high in the northeast region of India. An earlier study from China and Iran suggested that mutations in BRCA2 gene may play a role in the etiology of familial ESCC. However, the frequency of BRCA2 gene germ line mutations and its contribution to risk of familial aggregation of ESCC in high-risk region of India are not known. In the current study of 317 cases of esophageal cancer, 92 (29%) cases had a family history of esophageal and/or other cancers. Of these 92 patients, 45 (49%) patients had a family history of esophageal cancer. The risk of developing esophageal cancer was higher in cases where family history showed occurrence of cancers in first-degree relatives (odds ratio [OR]: 3.1; confidence interval [CI]: 1.9-5.3) than in second-degree relatives (OR: 1.3; CI: 0.25-3.2). Moreover, the risk of developing esophageal cancer was higher in subjects whose predegree suffered from esophageal cancer (OR: 2.4; CI: 1.1-4.1) than from any other cancers (OR: 1.1; CI: 0.32-3.3). The subjects with family history of cancer were more likely to develop ESCC if they were tobacco chewers (OR: 4.2; CI: 2.1-5.8) and betel quid users (OR: 3.6; CI: 1.8-4.6). Screening for mutations of the BRCA2 gene in the germ line DNA was carried out for 20 familial and 80 nonfamilial ESCC patients. One hundred unrelated healthy controls from the same population were included in this study. Nonsynonymous variants in exon 18 (K2729N) and exon 27 (**I3412V**) of BRCA2 gene were found in 3 of 20 patients with familial ESCC. No sequence alterations were found in 80 nonfamilial ESCC cases (P=0.01) and 100 healthy controls (P=0.0037), suggesting that germ line BRCA2 gene mutation may play a role in familial aggregation of ESCC in high-risk region of India.",
+                    "mention_type": "population",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The BRCA2 I3412V variant was identified in a subset of familial esophageal cancer patients but not in non\u2011familial cases or controls, suggesting it may contribute to familial ESCC risk in this Indian population.",
+            "uncertainties_or_limitations": null,
+            "article_id": "19473207",
+            "title": "Contribution of germ line BRCA2 sequence alterations to risk of familial esophageal cancer in a high-risk area of India.",
+            "relevance_score": 1.0,
+            "pub_year": 2010,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "BACKGROUND: Genetic testing for BRCA1 and BRCA2 has led to the accurate identification of individuals at higher risk of cancer and the development of new therapies. Approximately 10-20% of the genetic testing for BRCA1 and BRCA2 leads to the identification of variants of uncertain significance (VUS), with higher proportions in Asians. We investigated the functional significance of 7 BRCA1 and 25 BRCA2 variants in a multi-ethnic Asian cohort using a case-control approach. METHODS: The MassARRAY genotyping was conducted in 1,394 Chinese, 406 Malay and 310 Indian breast cancer cases and 1,071 Chinese, 167 Malay and 255 Indian healthy controls. The association of individual variant with breast cancer risk was analyzed using logistic regression model adjusted for ethnicity, age and family history. RESULTS: Our study confirmed BRCA2 **p.Ile3412Val** is presented in >2% of unaffected women and is likely benign, and BRCA2 p.Ala1996Thr which is predicted to be likely pathogenic by in-silico models is presented in 2% of healthy Indian women suggesting that it may not be associated with breast cancer risk. Single-variant analysis suggests that BRCA1 p.Arg762Ser may be associated with breast cancer risk (OR = 7.4; 95% CI, 0.9-62.3; p = 0.06). CONCLUSIONS: Our study shows that BRCA2 **p.Ile3412Val** and p.Ala1996Thr are likely benign and highlights the need for population-specific studies to determine the likely functional significance of population-specific variants. Our study also suggests that BRCA1 p.Arg762Ser may be associated with increased risk of breast cancer but other methods or larger studies are required to determine a more precise estimate of breast cancer risk.",
+                    "mention_type": "population",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study reports that BRCA2 p.Ile3412Val is found in over 2% of healthy Asian women and is likely benign.",
+            "uncertainties_or_limitations": null,
+            "article_id": "28222693",
+            "title": "Characterization of BRCA1 and BRCA2 variants in multi-ethnic Asian cohort from a Malaysian case-control study.",
+            "relevance_score": 0.91,
+            "pub_year": 2017,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "BACKGROUND: The Sardinian population is genetically homogeneous and could be useful in understanding better the genetics of a complex disease like breast cancer (BC). PATIENTS AND METHODS: Using a screening assay based on a combination of single-strand conformation polymorphism, denaturing high-performance liquid chromatography and sequence analysis, 47 Sardinian families with three or more BC cases were screened for germline mutations in BRCA1 and BRCA2 genes. RESULTS: Three BRCA1/2 germline sequence variants were identified. While BRCA2-Ile3412Val is a missense variant with unknown functional significance, BRCA2-8765delAG and BRCA1-Lys505ter are two deleterious mutations (due to their predicted effects on protein truncation), which were found in seven families (15%). BRCA2-8765delAG was found in six of eight (75%) BRCA1/2-positive families and seven of 501 (1.4%) unselected and consecutively collected BC patients. Prevalence of BRCA1/2 mutations in BC families was significantly correlated with the total number of female BCs (P <0.01) and increased by the presence of (i) at least one case of ovarian or male BC, or (ii) three generations affected, or (iii) bilateral BC. CONCLUSIONS: Identification of such features should address BC patients and their families to genetic counseling and BRCA1/2 mutational analysis. In addition, this is the first report of a detailed BRCA1/2 mutation screening in Sardinia, having immediate implications for the clinical management of BC families.",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The study screened Sardinian breast cancer families, identified three BRCA1/2 germline variants, and reported that the BRCA2 Ile3412Val missense variant has unknown functional significance.",
+            "uncertainties_or_limitations": null,
+            "article_id": "12453858",
+            "title": "BRCA1 and BRCA2 germline mutations in Sardinian breast cancer families and their implications for genetic counseling.",
+            "relevance_score": 0.78,
+            "pub_year": 2002,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Exon Sequence variant Amino acid variant Frequency in the breast cancer group (n=156), abs (%) Frequency in the control group (n=112), abs (%) BIC entry Total Caucasian/Asian Total Caucasian/Asian Missense mutations 10 c.865(A>C) (1093A>C) p.Asn289His (N289H) 24(15.2)* 13(54.2)/ 11(45.8) 11(10.1) 7(63.6)/ 4(36.4) Yes 10 c.2127(T>C) (2235T>C) p.Asn709Arg (N709R) 65(41.6)* 36(55.4)/ 29(44.6)#- 52(46.4) 29(55.8)/ 23(44.2) Yes 11 c.2350(A>G) (2578A>G) p.Met784Val (M784V) 26(17.0) 16(61.5)/ 10(38.5)#- 24(21.4) 13(54.2)/ 11(45.8) Yes 11 c.2410(G>A) (2638G>A) p.Asp804Asn (D804N) 54(34.7) 33(61.1)/ 21(38.9)# 38 (33.9) 16(42.1)/ 22(57.9) Yes 11 c.3422(T>C) (3650T>C) p.Ile1141Thr (I1141T) 39(24.9) 15(38.5)/ 14(35.9) 26 (23.2) 16(61.5)/ 10(38.5)# Yes 11 c.3572(C>T) (3800C>T) p.Ser1191Phe (S1191F) 34(21.8) 15(44.1)/ 19(55.9)# 23 (20.5) 10(43.5)/ 13(56.5) Yes 27 c.10234(A>G) (10462A>G) **p.Ile3412Val** (**I3412V**) 48 (30.8)* 29(60.4)/ 19(39.6) # 21 (18.7) 10(47.6)/ 11(52.4) Yes Polymorphisms 10 c.1365(A>G) (1593A>G) Synonymous Ser455Ser (S455S) 81(52.2*) 48(59.2)/ 33(40.7)# 48(42.8) 19(39.6)/ 29(60.4)# Yes 11 c.2229(T>C) (2457T>C) Synonymous His473His (H473H) 81(52.2)* 48(59.2)/ 33(40.7)# 48(42.8) 19(39.6)/ 29(60.4)# Yes 14 c.7242(A>G) (7470A>G) Synonymous Ser2414Ser (S2414S) 61(39.0)* 35(57.3)/ 26(42.6)# 36(32.1) 16(44.4)/ 20(55.5) Yes",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "It seems likely that five mutations in BRCA1 (c.95G>T, c.254 A>G, c.2612C>T, c.3113A>G, c.3348A>G) and three mutations in BRCA2 (c.2127T>C, c.2410G>A, **c.10234A>G**) are neutral polymorphisms, in view of the relatively high allele frequencies (>30%) of these variants. Because of the unavailability of a functional BRCA protein assay system, the disease associations of other mutations remain uncertain. However, the possibility cannot be ruled out that some of these unverified variants are pathogenically relevant.",
+                    "mention_type": "population",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "(42.8%) controls. S1436S was found in 76 (49.0%) cases and 54 (48.2%) controls. In BRCA2, gene missense mutations c.865A>C (N289H), **c.10234A>G** (**I3412V**) were detected with higher frequency in 15.2% and",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study found the BRCA2 I3412V missense variant at relatively high frequencies in both sporadic breast cancer patients and controls and interpreted it as likely a neutral polymorphism (benign).', ",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5927761",
+            "title": "BRCA1 and BRCA2 Gene Mutations Screening In Sporadic Breast Cancer Patients In Kazakhstan",
+            "relevance_score": 1.0,
+            "pub_year": 2013,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Groups Exon Type Consequence cDNA_change Pro_change Germline mutation (n) Somatic mutation (n) Study group BRCA2 27/27 SNP Missense_variant **c.10234A>G** **p.Ile3412Val** 0 1 BRCA2 25/27 Indel Frameshift_variant c.9401delG p.Gly3134AlafsTer29 1 0 BRCA2 18/27 SNP Missense_variant c.8187G>T p.Lys2729Asn 1 0 BRCA2 11/27 SNP Missense_variant c.5852G>A p.Ser1951Asn 1 0 BRCA2 11/27 SNP Missense_variant c.5785A>G p.Ile1929Val 1 0 BRCA2 11/27 SNP Missense_variant c.2971A>G p.Asn991Asp 6 0 BRCA2 10/27 SNP Missense_variant c.1462A>G p.Ile488Val 1 0 BRCA2 10/27 SNP Stop_gained c.1399A>T p.Lys467Ter 1 0 BRCA2 10/27 SNP Missense_variant c.1114A>C p.Asn372His 13 1 BRCA2 10/27 SNP Missense_variant c.865A>C p.Asn289His 6 0 BRCA2 5/27 SNP Missense_variant c.461A>G p.Gln154Arg 1 0 Control group BRCA2 27/27 SNP Missense_variant **c.10234A>G** **p.Ile3412Val** 3 0 BRCA2 27/27 SNP Missense_variant c.10150C>G p.Arg3384Gly 1 0 BRCA2 25/27 SNP Stop_gained c.9294C>G p.Tyr3098Ter 1 0 BRCA2 14/27 Indel Frameshift_variant c.7414_7415delAA p.Lys2472ValfsTer2 0 1 BRCA2 11/27 SNP Missense_variant c.5785A>G p.Ile1929Val 1 0 BRCA2 11/27 SNP Missense_variant c.3445A>G p.Met1149Val 1 0 BRCA2 11/27 SNP Missense_variant c.2971A>G p.Asn991Asp 7 2 BRCA2 10/27 SNP Missense_variant c.1114A>C p.Asn372His 11 6 BRCA2 10/27 SNP Missense_variant c.865A>C p.Asn289His 7 2",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "As for BRCA2, 10 germline mutations were detected involving 2 5-pathogenic, 3 3-uncertain, 5 1-benign in accordance with the data found in ClinVar (Tables S1,S2). c.5852G>A identified as a novel site found in a patient diagnosed as breast cancer at the age of 28 (Figure S1B). Among all, 1 mutation **c.10234A>G** was found to be class 1 in BIC database, 2 mutations were found to be pending, while the rest were not found in BIC. According to the Leiden Open Variation Database, 1 mutation was definitely indicated to affect function. In COSMIC database, 4 mutations were found to be neutral, and 1 referring to be pathogenic.",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "Variations Clinical significance BIC database clinically importance/clinical classification LOVD COSMIC ClinVar Study group c.9401delG 5-pathogenic Not found Not found Not found Pathogenic c.8187G>T 1-benign Pending Does not affect function Pathogenic Benign c.5852G>A 3-uncertain Not found Not found Not found Not found c.1462A>G 3-uncertain Not found Not found Not found Conflicting interpretations of pathogenicity c.1399A>T 5-pathogenic Not found Affects function Not found Pathogenic c.461A>G 3-uncertain Not found Not found Not found Uncertain significance **c.10234A>G** 1-benign Class 1 Does not affect function Neutral Benign c.5785A>G 1-benign Pending Does not affect function; Effect unknown Not found Benign c.2971A>G 1-benign Not found Does not affect function Neutral Benign c.1114A>C 1-benign Not found Does not affect function Neutral Benign c.865A>C 1-benign Not found Does not affect function Neutral Benign Control group c.10150C>G 3-uncertain Not found Not found Not found Uncertain significance c.9294C>G 5-pathogenic Class 5 Affects function Not found Pathogenic c.7414_7415delAA 5-pathogenic Not found Not found Not found Pathogenic c.3445A>G 3-uncertain Pending Effect unknown Not found Conflicting interpretations of pathogenicity **c.10234A>G** 1-benign Class 1 Does not affect function Neutral Benign c.5785A>G 1-benign Pending Does not affect function; Effect unknown Not found Benign c.2971A>G 1-benign Not found Does not affect function Neutral Benign c.1114A>C 1-benign Not found Does not affect function Neutral Benign c.865A>C 1-benign Not found Does not affect function Neutral Benign",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "mutations **c.10234A>G** and c.1114A>C were detected. In control group, 5 BRCA1 somatic mutations involving pathogenic mutation c .2398_2401delAAAT detected in one patient, and four benign mutations c.2612C>T, c",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study detected the BRCA2 p.Ile3412Val (c.10234A>G) variant in both early\u2011onset and control Chinese breast\u2011cancer patients and, based on database entries, classifies it as a benign (class\u202f1/neutral) variant with no reported pathogenic effect.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8798914",
+            "title": "BRCA1/2 mutation spectrum in Chinese early-onset breast cancer",
+            "relevance_score": 0.8,
+            "pub_year": 2019,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "A total of 14 of the 25 polymorphisms associated with the development of breast cancer are localised in the BRCA genes: 5 - in BRCA1 - rs1799950 (Q356R), rs4986850 (D693N), rs2227945 (S1140G), rs16942 (K1183R), rs1799966 (S1613G); 9 SNP in the gene BRCA2 - rs766173 (N289H), rs144848 (N372H), rs4987117 (T1915M), rs1799954 (R2034C), rs11571746 (S2835P), rs11571747 (E2856A), rs4987047 (I2944F), rs11571833 (K3326), **rs1801426** (**I3412V**).",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "No. Name of the gene Chromosome rs Position BRCA1 1 BRCA1 Breast And Ovarian Cancer Susceptibility Protein 1 17 rs4986850 43093454 2 rs1799950 43094464 3 rs16942 43091983 4 rs1799966 43071077 5 rs1800709 43093010 6 rs4986852 43092412 7 rs1799949 43093449 8 rs799917 43092919 BRCA2 9 BRCA2 Breast And Ovarian Cancer Susceptibility Protein 2 13 rs766173 32332343 10 rs144848 32332592 11 rs4987117 32340099 12 **rs1801426** 32398747",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Population N MAF chi2 p BRCA1 BRCA1/rs4986850 Kazakhstan 1,801 0.02721 Europe* 503 0.083 32.842 <0.001** East Asia* 504 0 14.010 <0.001** South Asia* 489 0.030 0.170 0.680 BRCA1/rs1799950 Kazakhstan 1,800 0.02417 Europe* 503 0.060 15.661 <0.001** East Asia* 504 0 12.560 <0.001** South Asia* 489 0.013 2.668 0.103 BRCA1/rs16942 Kazakhstan 1,799 0.3077 Europe* 503 0.355 4.159 0.042** East Asia* 504 0.371 7.179 0.008** South Asia* 489 0.498 61.774 <0.001** BRCA1/rs1799966 Kazakhstan 1,801 0.3104 Europe* 503 0.360 4.411 0.036** East Asia* 504 0.372 6.617 0.011** South Asia* 489 0.498 60.074 <0.001** BRCA1/rs1800709 Kazakhstan 1,801 0.001388 Europe* 503 0.005 2.797 0.095 East Asia* 504 0 0.841 0.360 South Asia* 489 0.002 0.032 0.859 BRCA1/rs4986852 Kazakhstan 1,801 0.006941 Europe* 503 0.029 16.732 <0.001** East Asia* 504 0 3.659 0.056 South Asia* 489 0.003 1.694 0.194 BRCA1/rs1799949 Kazakhstan 1,797 0.2869 Europe* 503 0.300 0.325 0.569 East Asia* 504 0.371 13.054 <0.001** South Asia* 489 0.497 76.280 <0.001** BRCA1/rs799917 Kazakhstan 1,800 0.3111 Europe* 503 0.363 4.997 0.026** East Asia* 504 0.371 6.453 0.012** South Asia* 489 0.530 79.927 <0.001** BRCA2 BRCA2/rs766173 Kazakhstan 1,800 0.1214 Europe* 503 0.035 31.409 <0.001** East Asia* 504 0.096 2.684 0.102 South Asia* 489 0.133 0.448 0.504 BRCA2/rs144848 Kazakhstan 1,800 0.2489 Europe* 503 0.295 4.214 0.041** Population N MAF chi2 p BRCA2/rs144848 East Asia* 504 0.285 2.797 0.095 South Asia* 489 0.354 21.401 <0.001** BRCA2/rs4987117 Kazakhstan 1,801 0.01194 Europe* 503 0.025 4.882 0.028** East Asia* 504 0 6.216 0.013** South Asia* 489 0.004 4.001 0.046** BRCA2/**rs1801426** Kazakhstan 1,801 0.0399 Europe* 503 0.003 16.394 <0.001** East Asia* 504 0.021 3.738 0.050** South Asia* 489 0.002 17.931 <0.001**",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "As shown in Table 4, minor G allele population frequency of **rs1801426** polymorphism of the BRCA2 gene in Kazakhs was 4.0% and was the highest compared with populations of Europe - 0.3%, South Asia - 0.2% (p<0.001) and East Asia - 0% (p<0.05). Most researchers classify SNPs of **rs1801426** polymorphism as a benign polymorphism not significantly associated with cancer risk. The researchers Gonzalez et al., (2021) studied 39 Nicaraguan women with histopathological diagnosis of breast cancer and genotyping mutations in BRCA1, BRCA2, Tp53, PALB2, CDH1, PTEN and CHEK2 genes in 10.2% of patients and found abnormal mutations in the BRCA2 gene. A total of 13 BRCA2 mutations were diagnosed, of which 1% were benign (N372H - rs144848, N289H - rs766173, N991D - rs1799944, I2490T, A2951T, I2944F and **I3412V** - **rs1801426**), 10.3% with pathogenicity conflict (Y3417H, D156G and L2512F), 3.4% were indeterminate (Y600F), 3.4% were unreported (V2446A) and another 3.4% were pathogenic (c.2808_2811del4 (p. Ala938Profs). Using automated direct sequencing the researchers assessed the frequency and spectrum of mutations in BRCA1 and BRCA2 genes in 156 Kazakh women with sporadic breast cancer and 112 control patients of the same age. The authors identified twenty-two different polymorphisms with nine missense mutations and three synonymous polymorphisms detected in the BRCA1 gene.",
+                    "mention_type": "population",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "In BRCA2, missense mutations of the c.865A>C (N289H), **c.10234A>G** (**I3412V**) gene were detected with a higher frequency in 15.2% and 30.8% of breast cancer cases compared to controls (10.1%, 18.7%, respectively). It was observed that the frequency of almost all detected polymorphisms including **c.10234A>G** in the BRCA2 gene was significantly higher in the European vs. the Asian breast cancer patients (p<0.05). The BRCA2 gene mutations (c.2127T>C, c.2410G>A) have been classified as neutral polymorphisms due to high population frequencies of their minor alleles (>30%), while possible pathogenicity of these polymorphisms in certain ethnic populations cannot be excluded (Akilzhanova et al., 2013; Suleymanov et al., 2022). The results of this study of the frequency and spectrum of mutations in BRCA1 and BRCA2 genes in the Kazakh population have a number of limitations for extrapolation to the entire Kazakh population. This is primarily due to insufficient sample size and lack of ethnic stratification as only race, not nationality, was taken into account. Consequently, the frequency and spectrum of mutations in BRCA1 and BRCA2 genes in the Kazakh population remain unstudied to date (Nuruev et al., 2023).",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "The SNPs with a minimum population frequency in the Kazakh population (MAF) of less than 0.01 and with significant deviations from Hardy-Weinberg equilibrium (P<0.05) were excluded from the study. Twelve single-nucleotide polymorphisms made selection for further comparative analysisof population frequencies: In the BRCA1 gene - rs1799950, rs4986850, rs16942, rs1800709, rs4986852, rs1799966, rs1799949, rs799917, in the BRCA2 gene - rs766173, rs144848, rs4987117 and **rs1801426**. The results of comparative analysis of population frequencies of alleles and genotypes for 12 polymorphisms of BRCA1 and BRCA2 genes associated with the risk of breast cancer indicate high genetic heterogeneity of studied polymorphisms. This reflects the specifics of the Kazakh population structure formed by complex evolutionary and migration processes as well as the median geographic location between populations of Asia and Europe.",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "and three synonymous polymorphisms detected in the BRCA1 gene. In BRCA2, missense mutations of the c.865A>C (N289H), **c.10234A>G** (**I3412V**) gene were detected with a higher frequency in 15.2% and 30.8",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "(**I3412V**). Genetic Characteristics of 12 Polymorphisms in BRCA1 and BRCA2 Genes Associated with the Development of Breast Cancer rs, polymorphism identifier (SNP Identifier). No. Name of the gene",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "1758/43/0 **rs1801426** 0.0399 1,801 A G 1660/138/3 Dendrogram of Genetic Distances of Kazakh and Global Populations by Frequency of SNPs and GWAS Associated with Breast Cancer The Correspondence of",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "0.02388 0.02359 1 **rs1801426** 1,801 1660/138/3 0.07662 0.07676 0.7616 Comparative Analysis of Allelic Frequencies of 12 Polymorphisms of BRCA1 and BRCA2 Genes Associated with Breast Cancer in Global",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "associations between the rs144848 polymorphism and breast cancer risk in all genetic models. As shown in Table 4, minor G allele population frequency of **rs1801426** polymorphism of the BRCA2 gene in",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study characterises the population frequency of BRCA2 rs1801426 (I3412V) in Kazakh individuals, noting it is more common than in European, South Asian and East Asian groups and is generally regarded as a benign polymorphism, although some case\u2011control data show a higher occurrence in breast\u2011cancer patients.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10772761",
+            "title": "Frequencies of Diagnostically Significant Polymorphisms of Hereditary Breast Cancer Forms in BRCA1 and BRCA2 Genes in the Kazakh Population",
+            "relevance_score": 0.76,
+            "pub_year": 2023,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "BRCA1/2 founder mutations in in different population. (A) Frequency of BRCA1 c.2566 T > C in different population. (B) Frequency of BRCA1 c.2566 T > C in Chinese ovarian cancer patients and normal people. (C) Frequency of BRCA2 c.8187G > T in different population. (D) Frequency of BRCA2 c.8187G > T in Chinese ovarian cancer patients and normal people. (E) Frequency of BRCA2 c.**10234A > G** in different population. (F) Frequency of BRCA2 c.**10234A > G** in Chinese ovarian cancer patients and normal people. AFR African/African American, AMR Latino/Admixed American, ASJ Ashkenazi Jewish, EAS East Asian, FIN European (Finnish), NFE European (non-Finnish), OTH Other.",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "After comprehensively analyzing the mutation sites of BRCA1 and BRCA2, we found that the incidence of BRCA1 c.2566 T > C was significantly higher than that of other mutations, converting tyrosine at 856 site to histidine (Fig. 2A). And when analyzed in population mutation frequency database, BRCA1 c.2566 T > C was significantly enriched in Asian population (Fig. 3A). In the Chinese population, BRCA1 c.2566 T > C was more frequent in ovarian cancer patients than healthy controls (Fig. 3B). Meanwhile, BRCA2 c.8187G > T and c.**10234A > G** had remarkably higher frequency than other mutated sites, converting lysine at 2729 site to asparagine and isoleucine at 3412 site to valine (Fig. 2B). The frequency of BRCA2 c.8187G > T was specifically higher in Asian population than other mutated sites and moderately higher in Chinese ovarian cancer patients than healthy people (Fig. 3C,D). BRCA2 c.**10234A > G** was a high-frequency mutation in African and American populations (Fig. 3E). The frequency of BRCA2 c.**10234A > G** observed in Chinese ovarian cancer patients was 1.64 times higher than that of in normal people (Fig. 3F).",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "When analyzing specific mutation sites in BRCA1 and BRCA2, we identified high frequency mutation sites, BRCA1 c.2566 T > C, BRCA2 c.8187G > T and BRCA2 c.**10234A > G**. They were missense mutations and were not currently considered as deleterious mutations. BRCA1 c.2566 T > C converted tyrosine to histidine. Tyrosine was a non-essential amino acid and required energy to synthesize, while histidine was an essential amino acid mainly acquired from food. Therefore, the BRCA1 mutation, c.2566 T > C, reduced the energy consumption of cancer cells and promoted to proliferation. We identified three novel BRCA1/2 mutations in ten patients, each of which was observed in at least two unrelated patients. Taking into account software prediction, effects on protein function and family history, BRCA1 p.K1622* and BRCA2 p.L2987P may be germline deleterious mutations. Further detailed studies are needed to clarify the impact of these mutations on carriers and ovarian cancer patients.",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study reports that the BRCA2 I3412V (c.10234A>G) missense variant is a relatively common, non\u2011deleterious mutation with higher frequency in certain populations and in Chinese ovarian cancer patients compared with controls, and it is not currently classified as pathogenic.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10954728",
+            "title": "Characteristics of germline DNA damage response gene mutations in ovarian cancer in Southwest China",
+            "relevance_score": 0.75,
+            "pub_year": 2024,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Gene Designation Case Freq (n = 135) BIC ClinVar dbSNP 1000 genome MAF (%) 5000 exomes HGVD exome (%) BRCA1 p.P871L 78 (57%) NCS Benign rs799917 48.3 AMAF = 20% EMAF = 33.59% GMAF = 49.32% 33.4 BRCA1 p.E1038G 78 (57%) NCS Benign rs16941 30.3 AMAF = 18.84% EMAF = 32.55% GMAF = 27.90% 33.2 BRCA1 p.K1183R 78 (57%) NCS Benign rs16942 32.4 AMAF = 23.83% EMAF = 32.44% GMAF = 29.52% 33.3 BRCA1 p.S1613G 78 (57%) NCS Benign rs1799966 32.7 AMAF = 24.26% EMAF = 32.66% GMAF = 29.82% 33.4 BRCA2 p.N289H 31 (23%) NCS Benign rs766173 5.8 AMAF = 2.02% EMAF = 3.68% GMAF = 3.12% 13.7 BRCA2 p.N372H 46 (34%) NCS Conflicting data rs144848 24.0 AMAF = 12.89% EMAF = 28.59% GMAF = 23.32% 22.3 BRCA2 p.N991D 30 (22%) Unknown Benign rs1799944 6.2 AMAF = 3.86% EMAF = 3.66% GMAF = 3.73% 13.5 BRCA2 p.V2466A 135 (100%) Unknown Uncertain Significance rs169547 2.2 AMAF = 6.47% EMAF = 0.06% GMAF = 2.23% 99.9 BRCA2 **p.I3412V** 3 (2.2%) Unknown Conflicting data **rs1801426** 4.3 AMAF = 10.64% EMAF = 0.19% GMAF = 3.73% 2",
+                    "mention_type": "population",
+                    "claim": "uncertain"
+                },
+                {
+                    "quoted_text": "NGS data from our laboratory FALCO biosystems Gene Designation Coding Designation Coding Interpretation BRCA1 p.L63X c.188T>A p.L63X c.188T>A Deleterious BRCA1 p.K652fs c.1952_1953insG p.K652fs c.1952_1953insG Deleterious BRCA1 p.Q934X c.2800C>T p.Q934X c.2800C>T Deleterious BRCA1 p.Q934X c.2800C>T p.Q934X c.2800C>T Deleterious BRCA1 p.E1257fs c.3770_3771delAG p.E1257fs c.3770_3771del Deleterious BRCA2 p.Q850fs c.2547_2548insCC p.Q850fs c.2547_2548insCC Deleterious BRCA2 p.S1882X c.5645C>A p.S1882X c.5645C>A Deleterious BRCA2 p.N2135fs c.6402_6406delTAACT p.N2135fs c.6402_6406delTAACT Deleterious BRCA2 p.R2318X c.6952C>T p.R2318X c.6952C>T Deleterious BRCA2 p.I2675V c.8023A>G p.I2675V c.8023A>G Suspected deleterious BRCA1 p.L52F c.154C>T p.L52F c.154C>T Uncertain BRCA1 p.V271M c.811G>A p.V271M c.811G>A Polymorphism BRCA1 p.N1018S c.3053A>G p.N1018S c.3053A>G Uncertain BRCA1 p.N1236S c.3707A>G p.N1236S c.3707A>G Uncertain BRCA1 p.M1628T c.4883T>C p.M1628T c.4883T>C Polymorphism BRCA1 p.V1653L c.4957G>T p.V1653L c.4957G>T Uncertain BRCA2 p.K322Q c.964A>C p.K322Q c.964A>C Polymorphism BRCA2 p.M784V c.2350A>G p.M784V c.2350A>G Polymorphism BRCA2 p.I1929V c.5785A>G p.I1929V c.5785A>G Polymorphism BRCA2 p.D1990A c.5969A>C p.D1990A c.5969A>C Uncertain BRCA2 p.G2044V c.6131G>T p.G2044V c.6131G>T Polymorphism BRCA2 p.V2109I c.6325G>A p.V2109I c.6325G>A Polymorphism BRCA2 p.V2503I c.7507G>A p.V2503I c.7507G>A Favor Polymorphism BRCA2 p.K2729N c.8187G>T p.K2729N c.8187G>T Polymorphism BRCA2 **p.I3412V** **c.10234A>G** **p.I3412V** **c.10234A>G** Polymorphism",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": ".**10234A>G** Polymorphism BRCA2 germline mutations in unaffected individuals To determine whether unaffected relatives carry the same deleterious mutations as the probands, we enrolled two unaffected",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article reports BRCA2 I3412V as a polymorphic variant with low frequency in the Japanese cohort and classifies it as of uncertain significance or benign, suggesting it is likely not pathogenic.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC4367084",
+            "title": "Detection of BRCA1 and BRCA2 germline mutations in Japanese population using next-generation sequencing",
+            "relevance_score": 0.7,
+            "pub_year": 2014,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Mutations were detected in each of the 171 genes within the assay ( Supplementary Table S4 ). The most common gene, PRKDC, was detected in 612 patients (approximately 52%), and the least common gene, MAX, was detected in only 1 patient. Genes with a high prevalence of mutations in more than 10% of the cohort were selected, and a total of 30 genes were obtained ( Figure 1 ). The top 10 genes with high incidence were PRKDC, BRCA2, BRCA1, FANCI, ERCC5, SLX4, PTCH1, MC1R, BARD1, and RET. The 30 genes were significantly enriched in the fanconi anemia pathway (P value 2.55e-13, FDR 5.15e-11) and mismatch repair (P value 2.40e-10, FDR 2.42e-8) ( Supplementary Figure S2B ). An exploration of the distribution of mutation sites within genes showed single or multiple hotspot mutations in high-incidence mutated genes ( Figure 2 ), such as BRCA1: c.2566T>C (p.Y856H), BRCA2: **c.10234A>G** (**p.I3412V**), ERCC5: c.1586G>C (p.C529S), FANCI: c.2011A>G (p.I671V), PRKDC: c.10681T>A (p.L3561M), and BARD1: c.1075_1095del (p.L359_P365del), suggesting that these sites were associated with ovarian cancer occurrence in China.",
+                    "mention_type": "population",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "A total of 190 BRCA1 mutations and 169 BRCA2 mutations were detected in the enrolled ovarian cancer population. Among the high-frequency BRCA1 and BRCA2 mutations, except for BRCA1:c.5470_5477delATTGGGCA (5.85% of all BRCA1 mutations, 20/342), which was a pathogenic mutation, the others were all missense mutations annotated as benign. Further analysis revealed that BRCA1: c.2566T>C (p.Y856H) accounted for 12.87% of all BRCA1 mutations ( Supplementary Figures S5A, B ), and BRCA2: c.8187G>T (p.K2729N) constituted 9.36% of all BRCA2 mutations ( Supplementary Figures S5C, D ), were significantly higher in the East Asian population than in other populations, and were geographically characteristic BRCA1/2 mutation in the Chinese ovarian cancer population. However, BRCA2:**c.10234A>G** (p. **I3412V**) comprised 23.15% of all BRCA2 mutations ( Supplementary Figures S5E, F ), with a frequency of 2.40% in East Asian populations and 8.03% in this ovarian cancer cohort. Notably, its prevalence exceeds 10% in normal populations in the Americas and Africa, displaying that it was not a geographically characteristic mutation in the Chinese population.",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study identifies BRCA2 p.I3412V as a relatively frequent mutation among Chinese ovarian cancer patients, yet it does not assign a definitive pathogenic or benign classification, noting its prevalence also in other populations.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC11137316",
+            "title": "Mutation characteristics of cancer susceptibility genes in Chinese ovarian cancer patients",
+            "relevance_score": 0.67,
+            "pub_year": 2024,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "1601074003Saliva 1601074003Blood 1601074003Blood reference lab 1601074004Saliva 1601074004Blood 1601074004Blood reference lab Nucleotide Zygosity Nucleotide Zygosity Nucleotide Zygosity Nucleotide Zygosity Nucleotide Zygosity Nucleotide Zygosity c.-26G>A Hetero c.-26G>A Hetero : : c.1114A>C Hetero c.1114A>C Hetero c.1114A>C Hetero c.3396A>G Hetero c.3396A>G Hetero c.3396A>G Hetero c.3396A>G Hetero c.3396A>G Hetero c.3396A>G Hetero c.3807T>C Hetero c.3807T>C Hetero c.3807T>C Hetero c.4563A>G Homo c.4563A>G Homo c.4563A>G Homo c.4563A>G Homo c.4563A>G Homo c.4563A>G Homo c.6513G>C Homo c.6513G>C Homo c.6513G>C Homo c.6513G>C Homo c.6513G>C Homo c.6513G>C Homo c.7242A>G Hetero c.7242A>G Hetero c.7242A>G Hetero c.7242A>G Hetero c.7242A>G Hetero c.7242A>G Hetero c.7397C>T Homo c.7397C>T Homo c.7397C>T Homo c.7397C>T Homo c.7397C>T Homo c.7397C>T Homo c.7806-14T>C Hetero c.7806-14T>C Hetero c.7806-14T>C Hetero c.7806-14T>C Hetero c.7806-14T>C Hetero c.7806-14T>C Hetero c.8755-66T>C Hetero c.8755-66T>C Hetero : : c.8755-66T>C Hetero c.8755-66T>C Hetero : : c.8830A>T Hetero c.8830A>T Hetero c.8830A>T Hetero c.9257-83G>A Hetero c.9257-83G>A Hetero : : c.*36C>G Hetero c.*36C>G Hetero : : **c.10234A>G** Hetero **c.10234A>G** Hetero **c.10234A>G** Hetero c.4837A>G Hetero c.4837A>G Hetero c.4837A>G Hetero None detected None detected None detected c.3548A>G Hetero c.3548A>G Hetero c.3548A>G Hetero c.2612C>T Hetero c.2612C>T Hetero c.2612C>T Hetero c.2458A>G Hetero c.2458A>G Hetero c.2458A>G Hetero c.2082C>T Hetero c.2082C>T Hetero c.2082C>T Hetero c.212+23T>A Hetero c.212+23T>A Hetero : : c.-19-115T>C Hetero : : : :",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study demonstrates that saliva-derived DNA yields NGS results for BRCA1/2 mutation detection that are highly concordant with blood-derived DNA, supporting saliva as an alternative specimen source.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5081504",
+            "title": "Performance Characterization and Validation of Saliva as an Alternative Specimen Source for Detecting Hereditary Breast Cancer Mutations by Next Generation Sequencing",
+            "relevance_score": 0.63,
+            "pub_year": 2016,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Sanger sequencing identified 2 patients with BRCA1 VUS and 3 patients with BRCA2 VUS, although NGS reported only 1 patient with BRCA1 VUS. The reported VUS from Sanger sequencing were c.5590G>A, c.4883T>C, **c.10234A>G**, **c.10234A>G**, c.671-8A>G, and c.811G>A. The reported VUS from NGS were c.671-8A>G and c.811G>A in a patient less than 40 years old with metastatic breast cancer, which were also detected in this patient by Sanger sequencing. Differences in BRCA1/2 variants identification between the two sequencing methods were not statistically different (BRCA1, P=1.00; BRCA2, P=0.21) (Table 2).",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The study shows that rapid NGS reliably detects BRCA1/2 variants, and the BRCA2 c.10234A>G (I3412V) variant is reported as a VUS in the cohort.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5416916",
+            "title": "Next-generation sequencing of BRCA1/2 in breast cancer patients: potential effects on clinical decision-making using rapid, high-accuracy genetic results",
+            "relevance_score": 0.6,
+            "pub_year": 2017,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...BRCA1 rs1799966 c.4837A>G p.S1613G Nonsynonymous Heterozygous Benign BRCA2 - c.1670T>A p.L557X Nonsense Heterozygous Pathogenic BRCA2 rs169547 c.7397T>C p.V2466A Nonsynonymous Homozygous Benign BRCA2 **rs1801426** **c.10234A>G** **p.I3412V** Nonsynonymous Heterozygous Benign BRIP1 rs4986764 c.2755T>C p.S919P Nonsynonymous Homozygous Benign CDH1 rs3743674 c.48+6C>T N/A Intron Heterozygous Benign EPCAM rs150307203 c.859-6A>G N/A Intron...",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The paper demonstrates that olaparib can induce a partial response in a urothelial carcinoma patient with a pathogenic BRCA2 truncating germline mutation, and notes that the BRCA2 I3412V variant is reported as benign in the supplementary data.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7675892",
+            "title": "Olaparib is effective for recurrent urothelial carcinoma with BRCA2 pathogenic germline mutation: first report on olaparib response in recurrent UC",
+            "relevance_score": 0.59,
+            "pub_year": 2020,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "\u201332,972,884 Missense **rs1801426** Exon 27 c.**10234A > G** **p.Ile3412Val** benign 3 Twelve of the 42 TNBC patients carried pathogenic variants: 7 in BRCA1 and 5 in BRCA2. Nineteen non pathogenic variants (8 in BRCA1",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study screened Mauritanian breast cancer patients, identified numerous pathogenic BRCA1/2 variants, and reported the BRCA2 I3412V variant as benign.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9301826",
+            "title": "Screening of BRCA1/2 variants in Mauritanian breast cancer patients",
+            "relevance_score": 0.59,
+            "pub_year": 2022,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Variant (HGVS nomenclature) Effect protein level c.-26G > A p.? c.425 + 67A > C p.? c.865A > C p.(Asn289His) c.1365A > G p.(Ser455=) c.1910-51G > T p.? c.2229 T > C p.(His743=) c.2971A > G p.(Asn991Asp) c.3396A > G p.(Lys1132=) c.4563A > G p.(Leu1521=) c.6513G > C p.(Val2171=) c.7806-14 T > C p.? c.8460A > C p.(Val2820=) c.9843A > G p.(Pro3281=) c.**10234A > G** p.(**Ile3412Val**",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article reports a novel BRCA2 nonsense pathogenic variant (c.5219T>G p.Leu1740Ter) in a Senegalese family and only lists I3412V among many variants without any interpretation for this specific variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6501405",
+            "title": "Novel BRCA2 pathogenic variant c.5219 T > G; p.(Leu1740Ter) in a consanguineous Senegalese family with hereditary breast cancer",
+            "relevance_score": 0.58,
+            "pub_year": 2019,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...> G p.Tyr3035Cys 3 C55 Probably damaging Damaging 0.06 0.07 2/1213 1/1454 2.34 0.21-26.02 0.489 c.9538C > T p.Leu3180Phe 1 C0 Probably damaging Damaging 0.04 0.14 1/2089 2/1448 0.34 0.03-3.81 0.382 c.**10234A > G** **p.Ile3412Val** 114 C0 Benign Tolerated 1.42 2.53 40/1217 37/1464 1.29 0.81-2.04 0.280 c.68-7 T > A - 3 Not applicableh 0.07 0.07 4/2076 1/1458 3.10 0.34-28.31 0.316 c.516 + 18 T > C - 1 Not applicableh 0.29 0.49...",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "The variant frequency suggested that one of the 63 tested variants has a minor allelic frequency of >2% in unaffected women and is likely to be benign. Four variants that had more than 1% of variant frequency in unaffected women could be potentially benign. Of these variants, three (BRCA2 p.Ile1929Val, p.Lys2729Asn and **p.Ile3412Val**) have been classified as Class 1 (not pathogenic) and one (BRCA2 p.Arg2108Cys) has been classified as Class 2 (likely not pathogenic) in either Breast Cancer Information Core Database (http://research.nhgri.nih.gov/bic/) or DatabaseARUP Laboratories BRCA Mutation Database (http://arup.utah.edu/database/BRCA/) using different approaches. Moreover, BRCA2 **p.Ile3412Val** was also reported by ENIGMA (http://enigmaconsortium.org/) as benign variant to occur in non-founder African control reference group at an allele frequency >=1%. Although BRCA2 p.Lys2729Asn was predicted to have damaging effect by PolyPhen-2 and SIFT, the prediction models may have limitation to predict the actual consequences of missense mutation accurately therefore the population frequency supersedes the prediction models. These findings are in accordance with the results of our study which concluded that these variants are benign variants or polymorphisms.",
+                    "mention_type": "population",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "individual variant with breast cancer risk was analyzed using logistic regression model adjusted for ethnicity, age and family history. Results Our study confirmed BRCA2 **p.Ile3412Val** is presented in >2% of",
+                    "mention_type": "population",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "duplicated samples was 98.7% (153/155). We identified BRCA2 **p.Ile3412Val** with variant frequency >2% in unaffected women and an additional four variants (BRCA2 p.Cys315Ser, p.Ile1929Val, p.Arg2108Cys and",
+                    "mention_type": "population",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "larger groups are necessary to confirm these findings. Conclusions Our data suggests that BRCA2 **p.Ile3412Val** is likely to be benign and BRCA1 p.Arg762Ser is likely to be associated with breast cancer",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                },
+                {
+                    "quoted_text": "risk (OR = 7.4; 95% CI, 0.9\u201362.3; p = 0.06). Conclusions Our study shows that BRCA2 **p.Ile3412Val** and p.Ala1996Thr are likely benign and highlights the need for population-specific studies to determine",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study reports that BRCA2 p.Ile3412Val occurs at >2% frequency in unaffected Asian women and is classified as a likely benign variant based on population data and database annotations.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5320733",
+            "title": "Characterization of BRCA1 and BRCA2 variants in multi-ethnic Asian cohort from a Malaysian case-control study",
+            "relevance_score": 0.53,
+            "pub_year": 2017,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...p.? Intron Variant 18 0.48723 c Benign Yes c.8830A>T p.Ile2944Phe Missense 01 0.00295 b Benign No c.9364G>A p.Ala3122Thr Missense 01 0.00010 b Conflicting interpretations of pathogenicity Yes **c.10234A>G** **p.Ile3412Val** Missense 05 0.02331 b Benign No",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study identified pathogenic BRCA2 mutations in Moroccan prostate cancer patients, while the specific BRCA2 I3412V variant is reported in the supplementary data as a benign polymorphism with a modest allele frequency.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8270444",
+            "title": "Next-generation sequencing of BRCA1 and BRCA2 genes in Moroccan prostate cancer patients with positive family history",
+            "relevance_score": 0.51,
+            "pub_year": 2021,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...- Novel Exon 19 c.8421G > A (p.Ser2807Ser) rs371278843 Silent 1 (0.67) - 0.333 0.2711 ClinVar, LOVD Exon 22 c.8851G > A (p.Ala2951Thr) rs11571769 Missense 3 (2.0) - 1.0 1.417 ClinVar, LOVD Exon 27 c.**10234A > G** (**p.Ile3412Val**) **rs1801426** Missense 2 (1.33) - 0.667 0.219 ClinVar, LOVD Benign/likely benign variants - non-coding 3' UTR c.1-26G > A rs1799943 5' UTR 1 (0.67) - 0.333 28.47 ClinVar, LOVD Intron 4 c.653 + 67A > C rs11571610...",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study found a low prevalence of pathogenic BRCA1/2 variants in Pakistani pancreatic cancer patients and classified the BRCA2 p.Ile3412Val variant as benign/likely benign based on database annotations.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10640758",
+            "title": "Prevalence of BRCA1 and BRCA2 germline variants in an unselected pancreatic cancer patient cohort in Pakistan",
+            "relevance_score": 0.49,
+            "pub_year": 2023,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...- - - - - PM2 VUS 26 c.9617A>G p.Gln3206Arg 1 (0.12) - - - - - PM2 VUS 27 c.10131A>C p.Glu3377Asp 1 (0.12) - - - VUS - PM2, BP4 VUS 27 c.10150C>G p.Arg3384Gly 1 (0.12) - - - VUS - PM2, BP4 VUS 27 **c.10234A>G** **p.Ile3412Val** 6 (0.74) 0.021 - - B - BS1, BP4, BP6 LB IVS1 c.-26G>A - 1 (0.12) 0.20927 0.3805 0.209 B - BA1, BP6, BP7 B IVS5 c.476-24A>G - 1 (0.12) - - - - - PM2, BP7 VUS IVS10 c.1909+12delT - 1 (0.12) OV - - CIP...",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study reclassified the BRCA2 I3412V variant as likely benign based on ACMG criteria during their VUS reclassification effort in Korean ovarian cancer patients.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7593220",
+            "title": "Reclassification of BRCA1 and BRCA2 variants found in ovarian epithelial, fallopian tube, and primary peritoneal cancers",
+            "relevance_score": 0.46,
+            "pub_year": 2020,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...14 SNV Missense Benign rs169547 87 BRCA2 c.7435 + 53C>T : 14 SNV : Benign rs11147489 1 BRCA2 c.7806-14 T>C : 15 SNV : Benign rs9534262 1 BRCA2 c.8755-66 T>C : 20 SNV : Benign rs4942486 1 BRCA2 **c.10234A>G** **p.Ile3412Val** 27 SNV Missense Benign **rs1801426** 2 BRCA2 c.*105A>C : 27 SNV 3' UTR Benign rs15869 1",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study reports the BRCA2 I3412V (c.10234A>G) missense variant as benign in the Tanzanian breast cancer cohort.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9939169",
+            "title": "Breast cancer in East Africa: Prevalence and spectrum of germline SNV/indel and CNVs in  BRCA1  and  BRCA2  genes among breast cancer patients in Tanzania",
+            "relevance_score": 0.46,
+            "pub_year": 2022,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Patient ID Gene 1 Gene 2 Age Onset Country Family History Subtype Reference NA BRCA1: c.1674del (pathogenic) MSH6: c.2419G>A (uncertain significance) NA Colombia YES NA NA BRCA1:c.1674del (pathogenic) PMS2:c.2395C>T (uncertain significance); RAD51C: c.492T>G (uncertain significance) NA Colombia YES NA 15 PALB2: c.1240C>T (pathogenic) PMS2:c.241G>A (uncertain significance) 36 Colombia YES ER+, HER2-, invasive ductal carcinoma 8 BRCA2:c.5616-5620del (not reported) SMAD4:c.677C>T (conflicting interpretations) 35 Colombia YES HR+, HER2- invasive ductal carcinoma NA BRCA1: c.4357+1G>T (pathogenic) BRCA2: c.6405_6409delCTTAA (pathogenic) 38 Brazil NA ipsilateral BC NA BRCA1: LGR (deletion of exons 4-6) BRCA2: c.9004G>A (conflicting interpretation) 43 Brazil NA NA NA BRCA2: c.8878C>T (pathogenic), c.9699_9702delTATG (pathogenic) 52 Brazil NA NA CM001 BRCA1: c.1129_1135insA (not reported), c.4063_4065delAAT (conflicting interpretations) 37 Venezuela YES ER+, PR+ CM055 BRCA1: c.1129_1135insA (not reported), c.4063_4065delAAT (conflicting interpretations) 48 Venezuela YES ER-, PR- CM031 BRCA2: c.1282T>C (not reported), c.3479G>A (conflicting interpretations) 49 Venezuela YES NA 5 BRCA2: c.865A>C (benign), c.2971A>G(benign), c.8851G>A (benign) 33 Mexico NA ductal 12 BRCA1: c.2245G>T (uncertain significance) BRCA2: **p.Ile3412Val** (benign) 34 Mexico NA ductal 7 BRCA1:c.442-34C>T (benign) BRCA2: c.865A>C (benign), c.2971A>G (benign) 34 Mexico NA ductal 17 BRCA1: c.3548A>G (benign), c.442-34C>T (benign) 30 Mexico YES ER+, PR+, HER2- A11 BRCA1: c.4308T>C (benign), c.442-34C (not reported), c.5152+66G>A (benign), c.548-58delT (benign) BRCA2: c.426+67A>C (not reported), c.426-89T>C (benign), c.7435+53C>T (benign) 12 Argentina YES TNBC, Secretory carcinoma A17 BRCA1:c.4308T>C (benign), c.5152+66G>A (benign), c.548-58delT (benign) 25 Argentina NO PR+, ER+, HER2+, infiltrating ductal carcinoma A18 BRCA1:c.442-34T>C (not reported) BRCA2:c.7469T>C (benign), c.681+56C>T (benign), c.7242A>G (benign) 21 Argentina NO ER+, PR+ HER2-, infiltrating lobular carcinoma",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The review of Latin American germline DNA\u2011repair gene mutations reports that the BRCA2 p.Ile3412Val (I3412V) variant is classified as benign in a Mexican cohort.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6827033",
+            "title": "Landscape of Germline Mutations in DNA Repair Genes for Breast Cancer in Latin America: Opportunities for PARP-Like Inhibitors and Immunotherapy",
+            "relevance_score": 0.45,
+            "pub_year": 2019,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...missense_variant 6 - c.2875A>G p.Arg959Gly missense_variant - 8 c.5314C>T p.Arg1772* stop_gained 7 - 5 BRCA2 c.8187G>T p.Lys2729Asn missense_variant 1 1 c.4585G>A p.Gly1529Arg missense_variant 2 - **c.10234A>G** **p.Ile3412Val** missense_variant 3 3 c.1012G>A p.Ala338Thr missense_variant 6 - c.9836T>C p.Leu3279Ser missense_variant 7 - c.9139C>T p.Gln3047* stop_gained - 5 6 DAXX c.1111C>T p.Arg371Trp missense_variant 2 2...",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study of primary and metastatic pancreatic neuroendocrine tumors identifies BRCA2 copy\u2011number alterations as associated with better prognosis and catalogs the I3412V missense variant among other BRCA2 mutations, but provides no functional or clinical interpretation for this variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9498575",
+            "title": "Evolutionary Trajectories of Primary and Metastatic Pancreatic Neuroendocrine Tumors Based on Genomic Variations",
+            "relevance_score": 0.45,
+            "pub_year": 2022,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "in breast tumors. Note: VUS\u2014variants of uncertain significance. \u2116 Mutation rs Class Type 1 c.10076A>G (p.Glu3359Gly) rs80358389 Non-synonymous SNV VUS 2 **c.10234A>G** (**p.Ile3412Val**) **rs1801426** Non",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The study identified multiple BRCA2 mutations in breast tumors, including the I3412V variant, which was classified as a variant of uncertain significance, and reported limited associations between specific mutations and chemotherapy response or prognosis.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10454606",
+            "title": "Mutations of BRCA1, BRCA2, and PALB2 Genes in Breast Tumor Tissue: Relationship with the Effectiveness of Neoadjuvant Chemotherapy and Disease Prognosis",
+            "relevance_score": 0.44,
+            "pub_year": 2023,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "+Sequencing Exon 26 c.9581C > A (p.P3194Q) VUS VUS Conf. data**7 C0 1 HRM+Sequencing Exon 27 c.**10234A > G** (**p.I3412V**) Neutral No Conf. data**8 C0 2 HRM+Sequencing Pedigree of a family with p.E3002K mutation in",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study screened high\u2011risk families for hereditary breast cancer genes and reported the BRCA2 p.I3412V variant as a neutral (benign) finding, with no pathogenic role identified in this cohort.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC4910552",
+            "title": "Screening for germline BRCA1, BRCA2, TP53 and CHEK2 mutations in families at-risk for hereditary breast cancer identified in a population-based study from Southern Brazil",
+            "relevance_score": 0.43,
+            "pub_year": 2016,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "BIC nomenclature* HGVS nomenclature** Protein change Allele No. of alleles/all alleles of tested probands (allele frequencies) No. of alleles/all alleles of tested healthy individuals (allele frequencies) Described in BIC database Clinical importance entered in BIC database Missense changes 2032G > A c.1804G > A G602R A 1/208 (0.005) 0/80 (0.000) yes unknown 3747C > T c.3519C > T S1152L T 1/208 (0.005) 0/80 (0.000) no 5078G > A c.4850G > A S1617N A 1/208 (0.005) 0/80 (0.000) no 5972C > T c.5744C > T T1915M T 14/208 (0,067) 3/80 (0.038) yes unknown 8107A > T c.7879A > T I2627F T 1/380 (0.003) 0/80 (0.000) yes unknown 8482A > T c.8254A > T I2752F T 1/208 (0.005) 0/80 (0.000) yes unknown 8579G > A c.8351G > A R2784Q A 2/380 (0.005) 0/80 (0.000) yes unknown 9133G > A c.8905G > A V2969M A 2/380 (0.005) 0/80 (0.000) yes unknown 9599A > T c.9371A > T N3124I AT 1/380 (0.003) 0/80 (0.000) yes unknown 10462A > G **10234A > G** **I3412V** G 1/208 (0.005) 0/80 (0.000) yes unknown Frameshift changes 4091delTAA c.3863delTAA del288N del 2/208 (0.010) 0/80 (0.000) no 9512dupl12 c.9284_9295dup12 dup 1/380 (0.003) 0/80 (0.000) no Intron changes IVS2-7A > T c.68-7A > T intron T 1/208 (0.005) 1/80 (0.013) yes unknown Synonymous changes 1395G > A c.1167G > A P389P A 1/208 (0.005) 0/80 (0.000) no 1977G > A c.1749G > A L583L A 1/208 (0.005) 0/80 (0.000) no 4296G > A c.4068G > A L1356L A 3/208 (0.014) 0/80 (0.000) yes unknown 5013G > A c.4785G > A Q1595Q A 1/208 (0.005) 0/80 (0.000) no 5985G > A c.5757G > A L1919L G 0/208 (0.000) 1/80 (0.013) no 10338G > A 10110G > A R3370R A 2/380 (0.005) 0/80 (0.000) yes unknown 10431G > A 10203G > A T3401T A 1/208 (0.005) 0/80 (0.000) no",
+                    "mention_type": "population",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The study screened 521 individuals from Slovenian cancer families for BRCA1/2 mutations and reported the missense variant BRCA2 I3412V in 1 of 208 probands, absent in controls, with no established clinical significance.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC3025939",
+            "title": "The occurrence of germline BRCA1 and BRCA2 sequence alterations in Slovenian population",
+            "relevance_score": 0.41,
+            "pub_year": 2011,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...c.8830A>T chr13:32953529 0.001 0.036 African: 0.030 European: 0.000 South Asian: 0.000 SNP35 rs56121817 27: c.9875C>T chr13:32972525 0 0.008 African: 0.000 European: 0.000 South Asian: 0.000 SNP36 **rs1801426** 27: **c.10234A>G** chr13:32972885 0.007 0.06 African: 0.088 European: 0.001 South Asian: 0.000",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article reports allele frequency data for the BRCA2 I3412V (c.10234A>G) variant in multiple populations but does not interpret its clinical significance.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7908826",
+            "title": "Globally Rare BRCA2 Variants With Founder Haplotypes in the South African Population: Implications for Point-of-Care Testing Based on a Single-Institution BRCA1/2 Next-Generation Sequencing Study",
+            "relevance_score": 0.41,
+            "pub_year": 2021,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "BRCA1 BRCA2 GeneReader Ion S5 MiSeq GeneReader Ion S5 MiSeq Benign SNPs c.5152+66G>A c.5152+66G>A c.-26G>A c.-26G>A* c.5075-53C>T c.681+56C>T c.681+56C>T c.4956G>A c.865A>C c.865A>C c.4937-68A>G c.4937-68A>G c.1114A>C* c.1114A>C c.1114A>C* c.4837A>G* c.4837A>G c.4837A>G c.1365A>G c.1365A>G c.1365A>G c.4308T>C* c.4308T>C c.4308T>C c.2229T>C c.2229T>C c.2229T>C c.3548A>G c.3548A>G c.3548A>G c.2971A>G c.2971A>G c.2971A>G c.3113A>G c.3113A>G c.3113A>G c.3396A>G c.3396A>G c.3396A>G* c.2612C>T c.2612C>T c.2612C>T c.3807T>C c.3807T>C c.3807T>C c.2311T>C c.2311T>C c.2311T>C c.4563A>G* c.4563A>G c.4563A>G* c.2082C>T c.2082C>T c.2082C>T c.5744C>T c.5744C>T c.2077G>A c.2077G>A c.6513G>C* c.6513G>C c.6513G>C* c.1067A>G* c.7242A>G c.7242A>G c.7242A>G c.442-34C>T c.442-34C>T c.7397T>C* c.7397T>C c.7397T>C* c.7435+53C>T c.7435+53C>T c.7806-14T>C* c.7806-14T>C c.7806-14T>C c.8755-66T>C **c.10234A>G** Benign SNVs c.4987-92A>G c.4987-92A>G c.425+67A>C c.4535G>T c.4535G>T c.4358-2885G>A c.2859T>C c.1395A>C c.1395A>C c.1866G>C c.2913A>G c.1648A>C c.1648A>C c.4068G>A c.4068G>A c.1533C>G c.6100C>T c.1456T>C c.1456T>C c.6297A>G* c.1308T>A* c.7188G>A c.536A>G c.536A>G c.7296A>G c.8851G>A c.8851G>A c.8851G>A c.9976A>T c.10191C>G c.10191C>G* c.*1G>C Benign Indels,Duplications,MNVs c.4185+21_ 4185+22delTG c.68-7dup c.548-58del c.793+63del c.441+18CTT c.1909+11_ 1909+12insT c.441+52_ 441+63del c.1909+22dup",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study evaluates BRCA1/2 variant annotation across different NGS platforms and recommends the Ion S5 with Oncomine Comprehensive Assay v3 for routine diagnostics, highlighting variability in variant classification among platforms and databases.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8893798",
+            "title": "Sequencing of BRCA1/2-alterations using NGS-based technology: annotation as a challenge",
+            "relevance_score": 0.4,
+            "pub_year": 2022,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...0,00147 0,0008 0,00215 0,0014 0,00131 0.000821 - - Neutral - Alteration of an exonic ESE site. Potential alteration of splicing. Benign / Little Clinical Significance ND 1-Neutral Benign Benign 1 27 **c.10234A>G** **p.Ile3412Val** **I3412V** 10462 A>G M 13: 32972884 **rs1801426** 0.04493 (G) 0,02266 0,04493 0,03729 0,0369 0,04054 0.021346 Tolerrated (0.34) Benign (0.002) Neutral Class C0 Alteration of an exonic ESE site. Potential alteration of splicing. Benign / Little...",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study reports that the BRCA2 I3412V (c.10234A>G) variant identified in the cohort is classified as a neutral/benign change with little clinical significance.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8266163",
+            "title": "Germline and Somatic mutations in postmenopausal breast cancer patients",
+            "relevance_score": 0.39,
+            "pub_year": 2021,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...gastric adenomas MLH1 I219V Colon, prostate, skin small intestine, salivary gland, and soft tissue cancers; lymphoid neoplasms; meningiomas; hemangioblastomas; and osteosarcomas BRCA2 N372H V2466A **I3412V** Breast, bladder, peritoneal, pancreatic, thyroid, colon, gastric, prostate, and soft tissue cancers; mesothelioma; thymomas; meningiomas; rhabdomyosarcomas; GISTs; and hemangioblastomas MLH3 N826D...",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The case report describes a mandibular telangiectatic osteosarcoma in an elderly patient and notes the presence of germline BRCA2 I3412V among other DNA repair gene polymorphisms, suggesting a possible contribution to cancer susceptibility.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC11221979",
+            "title": "A Primary Telangiectatic Mandibular Osteosarcoma With Germ-Line Malignancy-Associated DNA Damage Repair Gene Polymorphisms: A Case Report",
+            "relevance_score": 0.16,
+            "pub_year": 2024,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...(39.4) BRCA1/BRCA2# NT C0 rs169547 p. Asn2486Lys c.7919 T > G NR 1(1.1) - T C0 - p. Ile2490Thr c.7469 T > C CU 6 (6.3) - NT C0 rs11571707 p. Asp2723His c.8167 G > C CU 1 (1.1) - NT C65 rs41293511 p. **Ile3412Val** c.10690A > G CU 3 (3.2) - T C0 **rs1801426**",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The study identifies the BRCA2 p.Ile3412Val (I3412V) variant in Argentinean breast/ovarian cancer patients and classifies it as a variant of uncertain significance (CU).', ",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC3725882",
+            "title": "BRCA1 And BRCA2 analysis of Argentinean breast/ovarian cancer patients selected for age and family history highlights a role for novel mutations of putative south-American origin",
+            "relevance_score": 0.16,
+            "pub_year": 2012,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "**I3412V** Y 1 F, brca only N N/N/N/N UV/P (not segregating with the disease in the family) When feasible, we investigated multiple affected family members in order to exclude the presence of a phenocopy",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study surveys BRCA1/2 mutation spectra in Belgian families and reports that the I3412V variant does not segregate with disease, suggesting it is likely benign.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC2409651",
+            "title": "BRCA1 and BRCA2 germline mutation spectrum and frequencies in Belgian breast/ovarian cancer families",
+            "relevance_score": 0.16,
+            "pub_year": 2004,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Gene Reference sequence Nucleotide mutation Amino acid mutation Cover depth Cover depth of mutation Frequency of mutation BRCA2 NM_000059 c.T943A p.C315S 330 160 48% BRCA2 NM_000059 **c.A10234G** **p.I3412V** 241 122 51% PRDM1 NM_182907 c.C998T p.P333L 812 412 51% HEY1 NM_001282851 c.C50T p.T17M 303 175 58% MN1 NM_002430 c.T1682C p.M561T 289 138 48%",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study identified the BRCA2 I3412V variant in a medulloblastoma patient and used a SCID mouse model to evaluate targeted drug screening for tumor driver genes.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7739861",
+            "title": "Production of a SCID mouse model of medulloblastoma to explore the therapeutic value of targeting tumor driver genes",
+            "relevance_score": 0.15,
+            "pub_year": 2020,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...Asian 1 Deleterious? Chinese 26 23 9332 A>G Y3035C Caucasian 1 Deleterious? Chinese 27 23 9334 C>G Q3036E Novel 1 Benign? Chinese 28 27 10135 A>T S3303C Novel 1 Deleterious? Other 29 27 10462 A>G **I3412V** Various 1 Not clinically relevant Chinese 30 IVS 2-7T>A Caucasian 1 Deleterious? Malay 31 IVS 7-10 insT Novel 1 Deleterious? Other",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study reports BRCA1/2 mutation frequencies and risk\u2011model performance in a multi\u2011ethnic Malaysian cohort, noting that the I3412V variant is listed as not clinically relevant, suggesting it is likely benign.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC2575532",
+            "title": "Evaluation of BRCA1 and BRCA2 mutations and risk-prediction models in a typical Asian country (Malaysia) with a relatively low incidence of breast cancer",
+            "relevance_score": 0.15,
+            "pub_year": 2008,
+            "data_sources": [
+                "pmc"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 1910,
+            "output": 580
+        },
+        {
+            "input": 1818,
+            "output": 500
+        },
+        {
+            "input": 1789,
+            "output": 564
+        },
+        {
+            "input": 2906,
+            "output": 829
+        },
+        {
+            "input": 3190,
+            "output": 961
+        },
+        {
+            "input": 4746,
+            "output": 1834
+        },
+        {
+            "input": 2786,
+            "output": 832
+        },
+        {
+            "input": 3128,
+            "output": 1026
+        },
+        {
+            "input": 2601,
+            "output": 702
+        },
+        {
+            "input": 2859,
+            "output": 233
+        },
+        {
+            "input": 2480,
+            "output": 770
+        },
+        {
+            "input": 2038,
+            "output": 654
+        },
+        {
+            "input": 2133,
+            "output": 540
+        },
+        {
+            "input": 1776,
+            "output": 472
+        },
+        {
+            "input": 2161,
+            "output": 525
+        },
+        {
+            "input": 2797,
+            "output": 927
+        },
+        {
+            "input": 1903,
+            "output": 542
+        },
+        {
+            "input": 2107,
+            "output": 509
+        },
+        {
+            "input": 2237,
+            "output": 438
+        },
+        {
+            "input": 2432,
+            "output": 405
+        },
+        {
+            "input": 3214,
+            "output": 427
+        },
+        {
+            "input": 1952,
+            "output": 764
+        },
+        {
+            "input": 2086,
+            "output": 493
+        },
+        {
+            "input": 1935,
+            "output": 527
+        },
+        {
+            "input": 2796,
+            "output": 622
+        },
+        {
+            "input": 2577,
+            "output": 642
+        },
+        {
+            "input": 2611,
+            "output": 632
+        },
+        {
+            "input": 2043,
+            "output": 386
+        },
+        {
+            "input": 2231,
+            "output": 505
+        },
+        {
+            "input": 1885,
+            "output": 596
+        },
+        {
+            "input": 2627,
+            "output": 650
+        },
+        {
+            "input": 1951,
+            "output": 401
+        },
+        {
+            "input": 1794,
+            "output": 521
+        },
+        {
+            "input": 2187,
+            "output": 596
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 21119,
+        "output": 2020
+    },
+    "total_time": 97.72
+}

@@ -1,0 +1,213 @@
+{
+    "before_pruning": {
+        "articles_in_total": 18,
+        "only_medline_count": 0,
+        "only_pmc_count": 2,
+        "only_suppl_count": 15,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 18,
+        "only_medline_count": 0,
+        "only_pmc_count": 2,
+        "only_suppl_count": 15,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "variant": "BRCA2 R2494Q",
+    "time_to_process_articles": 9.28,
+    "context_length": 12034,
+    "after_removal": {
+        "articles_in_total": 5,
+        "only_medline_count": 0,
+        "only_pmc_count": 1,
+        "only_suppl_count": 3,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "",
+            "pmcid": "PMC5522275",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 107,
+            "abstract_length": 1622,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                417
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9433957",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 152,
+            "abstract_length": 1704,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                588
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6287763",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 134,
+            "abstract_length": 1358,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8256441",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 79,
+            "abstract_length": 2133,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9633290",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 95,
+            "abstract_length": 2012,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        }
+    ],
+    "narrative_summary": "The BRCA2 missense change p.Arg2494Gln (R2494Q) is a rare variant that has been reported in the context of cancer predisposition, most notably in mismatch repair\u2011deficient colorectal tumours and, to a lesser extent, in breast cancer cohorts. One study identified the R2494Q alteration among BRCA2 mutations that were enriched in colorectal cancers harbouring MSH2 or MLH1 defects and described the variant as deleterious, suggesting a pathogenic role in that tumour type [PMC5522275].\n\nClinical evidence is limited to the observations from the same report, which interpreted the presence of R2494Q in affected individuals as supporting pathogenicity. In contrast, a later investigation that applied an ACMG/AMP framework incorporating homology\u2011directed repair functional data classified the same variant as a variant of uncertain significance, reflecting insufficient or conflicting clinical and experimental support for a definitive pathogenic interpretation [PMC9433957].\n\nFunctional data from the HDR assay were incorporated into the ACMG/AMP assessment, but the assay results did not meet criteria for a pathogenic or benign classification, leading the authors to retain the variant in the VUS category. No additional functional studies were cited.\n\nOverall, the available evidence presents a discordant picture: one report argues for a deleterious effect in mismatch repair\u2011deficient colorectal cancer, while another, using a structured functional\u2011clinical classification system, concludes that the variant remains of uncertain significance. In the absence of further population frequency data or corroborating functional assays, the current consensus is that BRCA2 p.Arg2494Gln cannot be definitively classified as pathogenic and should be regarded as a VUS pending additional evidence.",
+    "structured_summary": {
+        "overall_pathogenicity": "uncertain",
+        "pathogenicity_counts": {
+            "supports benignity": 0,
+            "supports pathogenicity": 1,
+            "uncertain": 1
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...N/A rectum c.6743A>T p.H2248L N Neutral N/A NS c.7132T>G p.S2378A SAME POSITION Deleterious N/A rectum c.7243C>T p.H2415Y N Deleterious N/A colon X c.7244A>G p.H2415R N Neutral Singleton colon X **c.7481G>A** **p.R2494Q** BREAST Deleterious N/A rectum c.7559G>A p.R2520Q BREAST Deleterious <1/10,000 caecum c.7904A>G p.E2635G N Deleterious N/A colon c.8009C>T p.S2670L BREAST Deleterious N/A rectum c.8032A>G p.R2678G N...",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study reports that BRCA2 mutations, including the deleterious R2494Q variant, are enriched in mismatch repair\u2011deficient colorectal cancers, highlighting potential therapeutic relevance of BRCA2 vulnerabilities in this context.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5522275",
+            "title": "BRCA2, EGFR, and NTRK mutations in mismatch repair-deficient colorectal cancers with MSH2 or MLH1 mutations",
+            "relevance_score": 1.0,
+            "pub_year": 2017,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Variant (p.) HDR Score ACMG codes Classification PM1 PM5 PP1 PM3/BP2 PP3/BP4 (PROVEAN) BA1/BS1/PM2 (Frequency) BP5 PP_Multifac/BP_Multifac PS3/BS3 pre-HDR post-HDR p.Val2908Gly 2.53 PM1 - - - BP4 PM2 - - BS3 LBEN LBEN p.Ser2522Phe 2.85 PM1 - - - BP4 PM2 - - BS3 LBEN LBEN p.Leu2972Trp 2.78 PM1 - - - BP4 - - - BS3 VUS LBEN p.Gly2584Asp 2.79 PM1 - - - BP4 PM2 - - BS3 VUS LBEN **p.Arg2494Gln** 2.79 PM1 - - - BP4 - - - BS3 VUS LBEN p.Arg2488Ser 2.96 PM1 - - - BP4 PM2 - - BS3 VUS LBEN p.Pro2771Leu 2.81 PM1 - - - PP3 PM2 - - BS3 VUS VUS p.Arg2488Gly 2.92 PM1 - - - BP4 PM2 - - BS3 LBEN LBEN...",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The study incorporated HDR functional assay data into an ACMG/AMP framework and classified the BRCA2 p.Arg2494Gln variant as a variant of uncertain significance (VUS).', ",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9433957",
+            "title": "Classification of BRCA2 variants of uncertain significance (VUS) using an ACMG/AMP model incorporating a homology directed repair (HDR) functional assay",
+            "relevance_score": 0.27,
+            "pub_year": 2022,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 2344,
+            "output": 605
+        },
+        {
+            "input": 2196,
+            "output": 445
+        },
+        {
+            "input": 1859,
+            "output": 194
+        },
+        {
+            "input": 1953,
+            "output": 311
+        },
+        {
+            "input": 2025,
+            "output": 187
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 1338,
+        "output": 589
+    },
+    "total_time": 21.25
+}

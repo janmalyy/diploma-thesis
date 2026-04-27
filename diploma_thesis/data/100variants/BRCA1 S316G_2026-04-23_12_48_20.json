@@ -1,0 +1,1257 @@
+{
+    "before_pruning": {
+        "articles_in_total": 30,
+        "only_medline_count": 0,
+        "only_pmc_count": 2,
+        "only_suppl_count": 27,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 30,
+        "only_medline_count": 0,
+        "only_pmc_count": 2,
+        "only_suppl_count": 27,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "variant": "BRCA1 S316G",
+    "time_to_process_articles": 16.05,
+    "context_length": 83846,
+    "after_removal": {
+        "articles_in_total": 29,
+        "only_medline_count": 0,
+        "only_pmc_count": 2,
+        "only_suppl_count": 26,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "",
+            "pmcid": "PMC4694828",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 81,
+            "abstract_length": 1458,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "185delag deleterious r71g \u2212 deleterious c61g \u2212 \u2212 deleterious c64r \u2212 \u2212 vus d67y \u2212 \u2212 vus s316g \u2212 \u2212 \u2212 \u2212 vus q356r \u2212 \u2212 \u2212 \u2212 vus l246v \u2212 \u2212 \u2212 \u2212 \u2212 vus i379m \u2212 \u2212 \u2212 \u2212 \u2212 benign"
+            ],
+            "number_of_paragraphs": 5,
+            "paragraphs_lengths": [
+                1386,
+                1356,
+                1055,
+                2027,
+                205
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    668
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7281099",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 148,
+            "abstract_length": 1233,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                420
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9033786",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 80,
+            "abstract_length": 1407,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                385,
+                799
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4703835",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 85,
+            "abstract_length": 1565,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    1252
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8860097",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 74,
+            "abstract_length": 1214,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    175
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8160182",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 102,
+            "abstract_length": 1422,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    1167
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11052917",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 107,
+            "abstract_length": 1949,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    271
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10993466",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 89,
+            "abstract_length": 2063,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    770
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5989840",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 109,
+            "abstract_length": 1547,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    246
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3660339",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 106,
+            "abstract_length": 2045,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    694
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11442673",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 120,
+            "abstract_length": 871,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    535
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4907813",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 122,
+            "abstract_length": 1436,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    410
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9980257",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 167,
+            "abstract_length": 2353,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    689
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6772163",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 150,
+            "abstract_length": 1557,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    1935
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC2374975",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 183,
+            "abstract_length": 2356,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    804
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6136750",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 66,
+            "abstract_length": 1214,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    29
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10722135",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 111,
+            "abstract_length": 1907,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    690
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6123466",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 72,
+            "abstract_length": 1522,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    1167
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7945310",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 115,
+            "abstract_length": 1687,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    234
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6647062",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 146,
+            "abstract_length": 1826,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    29
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4929150",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 104,
+            "abstract_length": 1705,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    1214
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9988940",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 101,
+            "abstract_length": 2163,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    343
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6359859",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 119,
+            "abstract_length": 1816,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    386
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11137316",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 90,
+            "abstract_length": 1685,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    271
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6235694",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 67,
+            "abstract_length": 2390,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    721
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7066887",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 136,
+            "abstract_length": 2064,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    337
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5691144",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 60,
+            "abstract_length": 1298,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    2660
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4289115",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 91,
+            "abstract_length": 1397,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    29
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5055158",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 87,
+            "abstract_length": 1706,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    761
+                ]
+            ]
+        }
+    ],
+    "narrative_summary": "The BRCA1 p.Ser316G (c.946A>G) missense change has been reported in multiple cancer cohorts and is catalogued as a variant of uncertain significance (VUS) in several studies. It has been identified among germline BRCA1/2 variants in Italian breast/ovarian cancer patients[PMC7281099] and in the GENIE dataset across several tumor types[PMC6359859], but most reports do not provide a definitive clinical interpretation.\nClinical classifications are heterogeneous. Some investigations list S316G as a VUS comparable to wild\u2011type in centrosome\u2011related assays[PMC5989840] and in a study of PLK1\u2011regulated spindle orientation[PMC9033786]. An ENIGMA multifactorial likelihood analysis, which incorporates population frequency and lack of functional impact, classifies the variant as benign[PMC6772163]. Conversely, an early population\u2011based study of young breast\u2011cancer patients assigned S316G to a \u201cpossible deleterious\u201d category using multiple computational and segregation methods[PMC2374975], and a recent machine\u2011learning driver detection framework predicts it as a cancer driver[PMC11442673]. Evolutionary analyses have also described S316G as benign in the literature[PMC8860097].\nFunctional assays provide mixed signals. In an isogenic MCF\u201110A model, cells harboring the S316G allele displayed reduced proliferation and an increased fraction of polyploid cells, suggesting a hypomorphic effect on BRCA1 activity[PMC4694828]. The same study noted that S316G was deficient in only a single functional assay, indicating a partial loss of function[PMC4694828]. Other functional screens that included S316G did not report a clear loss of function, and a splice\u2011reporter assay found no aberrant splicing, supporting a lack of pathogenic impact through splicing mechanisms[PMC4907813].\nPopulation data show the variant is rare (ExAC allele frequency \u22483.8\u202f\u00d7\u202f10\u207b\u2075)[PMC5691144], and its low frequency contributed to the benign classification in the multifactorial likelihood model[PMC6772163]. In silico predictions are discordant: ClinVar records S316G as benign, yet PolyPhen\u20112 scores it as probably damaging[PMC8160182]; FATHMM and other machine\u2011learning scores label it as a potential driver[PMC11442673]; AlphaFold\u2011based stability estimates indicate modest destabilization but are consistent with a benign clinical annotation[PMC9988940].\nOverall, the evidence for BRCA1 S316G is conflicting. Functional experiments suggest a modest impairment of BRCA1\u2011dependent cellular processes, whereas large\u2011scale clinical and population analyses, together with splice assays, support a benign interpretation. Computational tools provide mixed predictions. Given the current data, the variant remains classified as a VUS, with a tendency toward likely benign but insufficient evidence to exclude a modest pathogenic contribution.",
+    "structured_summary": {
+        "overall_pathogenicity": "uncertain",
+        "pathogenicity_counts": {
+            "supports benignity": 6,
+            "supports pathogenicity": 5,
+            "uncertain": 7
+        },
+        "conflicting_evidence": true
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "To perform in vitro modeling of different BRCA1 carrier states, gene targeting experiments were conducted in the human non-tumorigenic breast epithelial cell line, MCF-10A (14). AAV targeting vectors were used to generate at least two independent clones for each mutation/VUS, as described in Methods. The panel members described herein include our previously characterized BRCA1185delAG clones, a pair of newly engineered hemizygous BRCA1 knock-out clones (BRCA1Ex2-3Stop) and eight sets of missense mutations including two deleterious alleles (C61G and R71G), five VUS (C64R, D67Y, L246V, **S316G** and Q356R) and one benign variant (I379M). To control for clonal variation and/or possible effects caused by the gene targeting process, three independent targeted wild-type clones (two for exon 5 and one for exon 11) were established and used in parallel for all assays. Figure 1A lists each of the engineered BRCA1 alleles, their recorded prevalence, and clinical designation. All cell lines were verified to have a single integrated copy of the desired mutation and allelic expression equivalent to the wild type allele using PCR and RT-PCR followed by Sanger sequencing (Figure S1).",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "We initially chose to assess the proliferation rates for each BRCA1 mutation/VUS cell line, since we previously described that cells harboring the BRCA1185delAG allele demonstrated reduced proliferation compared to parental MCF-10A cells. As shown in Figure 2, cells harboring a truncating allele, either BRCA1Ex2-3Stop or BRCA1185delAG cells, showed significantly decreased proliferation compared to parental MCF-10A and control cells. In contrast, cells harboring the deleterious missense mutation BRCA1R71G grew similar to controls, with BRCA1C61G deleterious missense mutant clones exhibiting an intermediate change in proliferation. These results suggest that mutations classified as deleterious, are not functionally identical. Interestingly, our VUS panel also showed varying phenotypes. BRCA1C64R, BRCA1D67Y, BRCA1Q356R cell lines did not appear to have significant changes in proliferation, whereas clones with BRCA1L246Vand **BRCA1S316G** mutations demonstrated decreased cell proliferation, suggesting that the BRCA1L246Vand **BRCA1S316G** VUS may have an adverse effect on normal BRCA1 function. Lastly, the BRCA1I379M benign variant cells grew similar to both parental MCF-10A and its targeted wild-type control.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "When analyzing BRCA1 clones by FISH, we also observed that many of the clones demonstrating CIN appeared to display a small but notable fraction of cells with >4n for one or both gene probes (Figure 5A). These observations prompted us to perform cell cycle analysis for ploidy estimation. Interestingly, the deleterious missense mutants, BRCA1C61G and BRCA1R71G, demonstrated a larger fraction of polyploid cells, compared to control cells, though some mutations did not demonstrate appreciable differences (Figure 5B). Again, these results suggest that not all deleterious mutations are functionally identical. Additionally, two VUS, BRCA1D67Y and **BRCA1S316G**, demonstrated a statistically significant increase in polyploid cell fractions. Collectively, our results suggest that the BRCA1D67Y VUS does abrogate normal BRCA1 function. As expected, the BRCA1I379M clones demonstrated results similar to controls, suggesting this neutral variant has no impact on normal BRCA1 function.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "We used isogenic modeling to evaluate functional differences between nine clinically relevant BRCA1 alleles, including three deleterious, five VUS and one benign variant. Several important conclusions are made from the experiments described. Significantly, our data suggests that distinct deleterious BRCA1 mutations confer varying degrees of functional loss in vitro. Notably, truncating BRCA1 mutations lead to a higher level of sensitivity to ionizing radiation and genomic instability, as compared to other cancer associated BRCA1 missense mutations. Whether these functional differences can truly influence disease penetrance remains to be determined, but we envision that the evidence presented here could be incorporated towards risk assessment in future studies and models. In addition, and of equal importance, our data suggest isogenic cell modeling may be useful for VUS classification. As the most notable example, characterization of the C64R VUS suggests this variant is functionally similar to the C61G deleterious mutation, since cells harboring this mutation were sensitive to ionizing radiation, and demonstrated increased genomic instability and centrosome amplification. Furthermore, functional characterization of the D67Y mutation suggests it may be hypomorphic despite prior work suggesting it is benign. Similarly, cells harboring the **S316G** and Q356R were deficient in only a single functional assay, suggesting both may have hypomorphic properties. Despite the suppressed cell proliferation observed for cells harboring the L246V VUS, this variant did not demonstrate an appreciable difference from controls in the other assays, suggesting this variant may be benign. Nonetheless, further work is needed to determine if our in vitro model accurately reflects in vivo assays, and ultimately relative disease risk.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "185delAG + + + + + Deleterious R71G + \u2212 + + + Deleterious C61G + \u2212 + + \u2212 Deleterious C64R + \u2212 + \u2212 + VUS D67Y \u2212 \u2212 + + + VUS **S316G** \u2212 \u2212 \u2212 + \u2212 VUS Q356R + \u2212 \u2212 \u2212 \u2212 VUS L246V \u2212 \u2212 \u2212 \u2212 \u2212 VUS I379M \u2212 \u2212 \u2212 \u2212 \u2212 Benign",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "Column names:\nFunctional isogenic modeling of BRCA1 alleles reveals distinct carrier phenotypes Supplementry Material Table S1 : Homology Arm Cloning Primers Locus Homology Arm Forward/Reverse Exon 2 (3Stop) - TCGTATTCTGAGAGGCTGCTGCT -\nRows:\nD67Y - TATGTAAGAATtATATAACCAAAAGGT - ACCTTTTGGTTATATaATTCTTACATA R71G - GATATAACCAAAgGGTATATAATTTGG - CCAAATTATATACCcTTTGGTTATATC L246V - CAGTAATAATGATgTGAACACCACTGAG - CTCAGTGGTGTTCAcATCATTATTACTG **S316G** - CTTAGCAAGGgGCCAACATAAC - GTTATGTTGGCcCCTTGCTAAG Q356R - GAATGGAATAAGCgGAAACTGCCATGCTC - GAGCATGGCAGTTTCcGCTTATTCCATTC I379M - CTAAATAGCAGCATgCAGAAAGTTAATGAG - CTCATTAACTTTCTGcATGCTGCTATTTAG Table S3 : Pre - Cre",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "Functional assays in isogenic BRCA1\u2011S316G cells show reduced proliferation and increased polyploidy, suggesting a hypomorphic, potentially pathogenic effect of this VUS.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC4694828",
+            "title": "Functional isogenic modeling of BRCA1 alleles reveals distinct carrier phenotypes",
+            "relevance_score": 1.0,
+            "pub_year": 2015,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...no rs 3 F 5 11 c.815_824dupAGCCATGTGG p.(Thr276AlafsTer14) rs387906563 1 F 5 11 c.843_846delCTCA p.(Ser282TyrfsTer15) rs80357919 1 F 5 11 c.850C>T p.(Gln284Ter) rs397509330 3 NS 5 11 **c.946A>G** p.(**Ser316Gly**) **rs55874646** 1 M 1 11 c.981_982delAT p.(Cys328Ter) rs80357772 1 F 5 11 c.997A>G p.(Thr333Ala) rs786201634 1 M 1 11 c.1016_1017insC p.(Lys339AsnfsTer7) rs1555592653 1 F 5 11 c.1063A>C p.(Lys355Gln) no rs 1 M VUS...",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study surveys germline BRCA1/2 variants in 2351 Italian breast/ovarian cancer patients, reporting the S316G (c.946A>G) variant among many others but without providing specific interpretation for it.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7281099",
+            "title": "Spectrum of Germline BRCA1 and BRCA2 Variants Identified in 2351 Ovarian and Breast Cancer Patients Referring to a Reference Cancer Hospital of Rome",
+            "relevance_score": 0.97,
+            "pub_year": 2020,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...four benign variants (D67Y/+;L246V/+; Q356R/+;I379M/+), and one variant of uncertain significance (VUS) (**S316G**/+). We also generated 4 additional MCF10A cell lines encoding variants in the C-terminal BRCT domains of BRCA1 (A1780E/+;[DNAMutation:...",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The article lists the BRCA1 S316G variant as a variant of uncertain significance, without presenting functional or clinical evidence for its impact.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9033786",
+            "title": "Pathogenic BRCA1 variants disrupt PLK1-regulation of mitotic spindle orientation",
+            "relevance_score": 0.36,
+            "pub_year": 2022,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\n02550 751000255075100% CodingRegion with >=30X Coverage (TCGA)% CodingRegion with >=30X Coverage (WHI)Coverage Comparison TCGA vs WHI (624 Cancer Genes)Supplementary Figure 1. Comparison of Coverage between the Caucasian TCGA cohort and WHISP\nRows:\nR866C D1152N P1238L Y179C 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 BRCA1 Tubulin BRCA1 Tubulin BRCA1 Tubulin pcDNA3 WT S1180G M1783L T1561I D214G **S316G** S36Y M1783T E149A S186Y V191I E143K 47 48 49 50 51 52 53 54 55 56 57 58 pcDNA3 WT R296G C328R V1534M M1628T K1690Q D1778G R1835Q G1788V R1699W Q1779fs BRCA1 Tubulin 60 61 62 63 64 65 66 67 68 69 70 71 pcDNA3 WT E1346K E445Q G462R Y856H\n(lane 114); S36Y (lane 54); C61G (lane 83); C64G (lane 84); D67Y (lane 115); E85D (lane 116); E143K (lane 56); E149A (lane 57); Y179C (lane 46); S186Y (lane 58); V191I (lane 59); D214G (lane 52); L246V (lane 106); T293S (lane 42); R296G (lane 62); **S316G** (lane 53); A322P (lanes 96, 108); C328R (lane 63); I379M (lane 104); E445Q (lane 75); G462R (lane 76); F486L (lane 98); L512V (lanes 95, 109); N550H (lane 101); L574P (lane 41); I591T (lane 40); R612G (lane 36); L668F (lanes 20, 117); D695N (lane",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article evaluated numerous rare BRCA1 missense variants, including S316G, using a homology\u2011directed repair functional assay, but does not provide a specific result for S316G.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC4703835",
+            "title": "Patterns and functional implications of rare germline variants across 12 cancer types",
+            "relevance_score": 1.0,
+            "pub_year": 2015,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Supplementary Table 1. Human BRCA variants used in previous evolution studies\nColumn names:\nB. List of BRCA variants\nRows:\n**c.946A>G** |**p.S316G**|Benign|Burk-Herrick et al",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The article argues that most BRCA pathogenic variants arose recently, and specifically notes that the S316G (c.946A>G) variant is classified as benign in the literature.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8860097",
+            "title": "Human BRCA pathogenic variants were originated during recent human history",
+            "relevance_score": 0.91,
+            "pub_year": 2022,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nSupplementary Table 1 Prediction results from PolyPhen-2 (HumDiV), PolyPhen-2 (HumVar) and SIFT on BRCA1 missense variants with known clinical significance. Nucleotide change (NM_007294.4) Protein change (NP_009225.1) ClinVar classification\nRows:\nProbably damaging 0.978 Possibly damaging 0.844 Tolerated 0.09 c.839C>G p.Ala280Gly Benign Probably damaging 0.989 Possibly damaging 0.831 Damaging 0.04 c.891G>A p.Met297Ile Benign Benign 0.074 Benign 0.06 Tolerated 0.13 **c.946A>G** **p.Ser316Gly** Benign Probably damaging 1 Probably damaging 0.991 Damaging 0 c.997A>G p.Thr333Ala Benign Benign 0.009 Benign 0.019 Tolerated 0.14 c.1001C>T p.Pro334Leu Benign Possibly damaging 0.584 Benign 0.263 Tolerated\ndamaging 0.978 Possibly damaging 0.844 Tolerated 0.09 c.839C>G p.Ala280Gly Benign Probably damaging 0.989 Possibly damaging 0.831 Damaging 0.04 c.891G>A p.Met297Ile Benign Benign 0.074 Benign 0.06 Tolerated 0.13 **c.946A>G** **p.Ser316Gly** Benign Probably damaging 1 Probably damaging 0.991 Damaging 0 c.997A>G p.Thr333Ala Benign Benign 0.009 Benign 0.019 Tolerated 0.14 c.1001C>T p.Pro334Leu Benign Possibly damaging 0.584 Benign 0.263 Tolerated 0.06",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The article shows that BRCA1 S316G is classified as benign in ClinVar despite computational tools (PolyPhen-2, SIFT) predicting it as damaging, highlighting discordance between in silico predictions and clinical classification for this variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8160182",
+            "title": "In silico analysis of BRCA1 and BRCA2 missense variants and the relevance in molecular genetic testing",
+            "relevance_score": 0.64,
+            "pub_year": 2021,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Table S2\uff1a297 reported BRCA1 mutations of breast cancer in COSMIC and cBioPortal databases\nColumn names:\nPrimary Tissue|Sample Name|Position|CDS Mutation|Amino Acid Mutation|Mutation type\nRows:\nBreast|H_KU-757-757_A_core|316|**c.946A>G**|**p.S316G**|Missense substitution",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The paper demonstrates that PARP inhibitors suppress tumors by inducing senescence through disruption of centrosome error correction, independent of DNA\u2011damage repair, and notes that many BRCA1 mutations\u2014including S316G\u2014are situated in non\u2011essential regions of the gene.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC11052917",
+            "title": "PARP inhibitors suppress tumours via centrosome error-induced senescence independent of DNA damage response",
+            "relevance_score": 0.51,
+            "pub_year": 2024,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nSupplementary Table 1. Summay of previous evolutionary studies in DDR gene variation,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4 Gene,HGVS cDNA,HGVS Protein,Reference,Classification (ClinVar) BRCA1,c.68_69del,p.E23fs,\"Burk-Herrick A, Scally M,\nRows:\nselection and mammalian BRCA1 sequences: elucidating functionally important sites relevant to breast cancer susceptibility in humans. Mamm Genome. 2006 Mar;17(3):257-70. doi: 10.1007/s00335-005-0067-2. Epub 2006 Mar 3. PMID: 16518707.\",Benign BRCA1,**c.946A>G** ,**p.S316G**,\"Burk-Herrick A, Scally M, Amrine-Madsen H, Stanhope MJ, Springer MS. Natural selection and mammalian BRCA1 sequences: elucidating functionally important sites relevant to breast cancer susceptibility in humans. Mamm Genome. 2006",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study investigates the evolutionary timing of DNA\u2011damage\u2011repair gene pathogenic variants and notes that the BRCA1 S316G variant is classified as benign in ClinVar.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10993466",
+            "title": "Pathogenic variants in human DNA damage repair genes mostly arose in recent human history",
+            "relevance_score": 0.39,
+            "pub_year": 2024,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Table S2. Summary of relationship with BRCA1functions, DNA repair and controlling centrosome dupulication, for each BRCA mutation.\nColumn names:\nI21V|VUS|As wild-type|Intermediate|moderate\nRows:\n**S316G**|VUS||As wild-type|||As wild-type|yes",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The article presents gamma\u2011tubulin immunofluorescence as a functional test for BRCA status and classifies the BRCA1 S316G variant as a variant of uncertain significance, indicating it is considered comparable to wild\u2011type in the context examined.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5989840",
+            "title": "Increased centrosome number in BRCA-related breast cancer specimens determined by immunofluorescence analysis",
+            "relevance_score": 0.36,
+            "pub_year": 2018,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nSupporting Information Legends to Supplementary Tables Table S1: Summary of the BRCA1 phosphorylation motifs studied. A list of all BRCA1 phosphorylation sites studied. Bolded phosphorylation site represents in vivo phosphorylated residues.\nRows:\n(within 10 nt of motif) NetworKIN 2.0 Beta WT Output (Score>5) S114 Biologically uncharacterized Y105C, E111A, I124V S114 - CDK2 - 11.9354 S308 Cell Cycle STK6 Biologically characterized E300D, K309T, R315G, **S316G** *S308 - STK6 - 4.1318 S395 Biologically uncharacterized S403F S395 - CSNK2A2 - 18.6883 S395 - CK2A1 - 18.6883 S398 Biologically uncharacterized S403F, K408E S398 - CSNK2A2 - 11.7459 S398 - CK2A1 - 11.7459 S398",
+                    "mention_type": "computational",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study computationally screened BRCA1 missense VUS, including S316G, for potential disruption of phosphorylation motifs but did not provide a pathogenicity interpretation for this variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC3660339",
+            "title": "Missense Variants of Uncertain Significance (VUS) Altering the Phosphorylation Patterns of BRCA1 and BRCA2",
+            "relevance_score": 0.26,
+            "pub_year": 2013,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nTest No.|Source|Validity|Gene|ENST|Gene Code|ENST.1|Chasm No.|Gene Name|Mutation|Type|FATHMM|FATHMM Prediction|CHASM|CHASM Prediction|CHASM FDR|Corrected CHASM (FDR)|CHASM P|Corrected CHASM (p)|siftTransfic|siftTransficLabel|pph2Transfic|pph2TransficLabel|maTransfic|maTransficLabel\nRows:\nTRAIN0895|GnomAD|Invalid|BRCA1|ENST00000471181.2|P38398|ENST00000471181|GNOM178|BRCA1_HUMAN|**S316G**|Passenger|-0.9|Driver|0.792|Driver|0.792|Driver|0.7908912|Driver|1.734|medium_impact|0.512|medium_impact|2.749|medium_impact",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The article describes the DriverDetect machine\u2011learning framework and reports that, based on combined computational scores, the BRCA1 S316G variant is predicted to be a cancer driver mutation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC11442673",
+            "title": "Machine learning optimized DriverDetect software for high precision prediction of deleterious mutations in human cancers",
+            "relevance_score": 0.24,
+            "pub_year": 2024,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Supp. Table S1. BRCA1 and BRCA2 sequence variants tested for spliceogenicity\nColumn names:\nGene|Exon|Sequence variant designation:|Acceptor Class|Donor Class|De novo Donor Class|Splice Assay Result|Prior Probability of Pathogenicity|First Author|PMID\nRows:\nBRCA1|exon11|**c.946A>G**|**p.S316G**|NA-2|NA-3|Weak/Null & Low|no aberration|||Anczukow||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||",
+                    "mention_type": "functional",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The article incorporates splice\u2011prediction into BRCA variant assessment and reports that the S316G (c.946A>G) variant shows no splice aberration, suggesting it is unlikely to be pathogenic via splicing.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC4907813",
+            "title": "Adding In Silico Assessment of Potential Splice Aberration to the Integrated Evaluation of BRCA Gene Unclassified Variants",
+            "relevance_score": 0.24,
+            "pub_year": 2016,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nGene|HGVS Nucleotide|HGVS Protein|Legacy Description Nucleotide|Legacy Description Protein|Segregation LR|Pathology LR|Co-occurrence LR|Family History LR|Case-Control LR|Combined LR (Odds for Causality)|Prior Probability of Pathogenicity|Posterior Probability|IARC Class|Comment regarding class assignment|Suggested frequency rule strength derived from this study|Frequency Category Assigned for LR derivation|gnomAD Highest Minor Allele Frequency|gnomAD Population with Highest Minor Allele Frequency|Single Observation in gnomAD|Functional Paper/s|Functional Category Assigned|Findlay_Function|Findlay_RNAscore|Findlay_RNAclass|Starita Depleted|Mesman_Complementation|Mesman_HDR|Mesman_Cisplatin|Mesman_Class|Bouwman_Selection|Bouwman_FxnClass|Fernandes2019_fClass|Fernandes2019_fCategory|Petitalot2019_ControlGroup|Petitalot2019_Class|Hart2018_Functional Class|Hart2018_HDR ratio|Predicted Variant Consequence|Allele-Specific Splicing Result Summary|Coded Splicing Effect|Splicing Paper/s (First author)|Splicing Assay Method/s|Splicing Result/s|Splicing Reference/s|Allele Specific Assay|ClinVar Class Summary|ClinVar Class Details by Submitter|ClinVar Date|Allele Count (All Populations)|Allele Count African|Allele Number African|MAF_African|Allele Count Latino|Allele Number Latino|MAF_Latino|Allele Count East Asian|Allele Number East Asian|MAF_EastAsian|Allele Count European (non-Finnish)|Allele Number European (non-Finnish)|MAF_NFE|Allele Count South Asian|Allele Number South Asian|MAF_SouthAsian\nRows:\nBRCA1|**c.946A>G**|p.(**Ser316Gly**)|1065A>G|**S316G**|||||||||Benign|Multifac new calc||\u22650.0001 & <0.01||European (Non-Finnish)||||||||||||||||||||missense_variant|No aberration||Anczukow|minigene|no aberration||N|Conflicting_interpretations_of_pathogenicity|benign|uncertain_significance|likely_benign|2009-03-18|2002-05-29|2017-06-28|2015-08-10|2016-06-14|2015-07-29|2017-11-27|2014-04-23||||||||||||||||",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study\u2019s multifactorial likelihood framework classifies the BRCA1 p.Ser316Gly (S316G) variant as benign based on combined evidence including population frequency and lack of functional impact.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6772163",
+            "title": "Large scale multifactorial likelihood quantitative analysis of BRCA1 and BRCA2 variants: An ENIGMA resource to support clinical variant classification",
+            "relevance_score": 0.21,
+            "pub_year": 2019,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nb'\\r\\nSupplemental Table 2. Classification of significance of BRCA1/2 variants\\r\\nidentified among early onset breast cancer patients in Los Angeles and\\r\\ncomparison with classification according to BIC (Version updated April 05,\\r\\n2007).\\r\\n\\r\\n\nRows:\n|0;\\r\\n 0; 0.0035 |DDCV |Frameshift | | | | | | |Frameshift |Yes | |T276R |0.0005;\\r\\n 0; 0 |UV | |LFUV |Probable |71 |0 |Deleterious | |UV |Unknown | |1100A/G\\r\\n|0.0023; 0.0023; 0 |Polymorphism |Synonymous | | | | | | |Polymorphism\\r\\n|Unknown | |**S316G** |0.0005; 0; 0 |UV | |LFUV |Possible |56 |0 |Deleterious |\\r\\n|UV |Unknown | |W321X |0.0005; 0; 0 |DDCV |Nonsense | | | | | | |Nonsense\\r\\n |Yes | |Q356R |0.0682; 0.0251; 0.0106 |Polymorphism |(2-5) | |Possible |43\\r\\n|2 |Unknown | |Polymorphism",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study classifies BRCA1 unclassified variants, including S316G, as possibly deleterious using multiple computational and population\u2011based methods, indicating it may be a high\u2011risk variant associated with family history of breast/ovarian cancer.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC2374975",
+            "title": "Evaluation of unclassified variants in the breast cancer susceptibility genes BRCA1 and BRCA2 using five methods: results from a population-based study of young breast cancer patients",
+            "relevance_score": 0.21,
+            "pub_year": 2008,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nSupplementary Table S4. Details of DDR gene mutations identified in bladder TMT cohort,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Unnamed: 8,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed:\nRows:\nBL193,UF,locoregional nodal progression,ATR,Missense_Mutation,,,545,3,142281610,142281610,SNP,C,C,G,p.V212L,VUS BL198,F,,BRCA1,Missense_Mutation,,,672,17,41246602,41246602,SNP,T,T,C,**p.S316G**,VUS BL201,UF,cystectomy for persistent invasive disease,ATR,Missense_Mutation,X,,545,3,142275315,142275315,SNP,G,G,C,p.S663C,VUS BL201,,,ATM,Missense_Mutation,,,472,11,108173601,108173601,SNP,G,G,C,p.D1781H,VUS BL203,UF,distant",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The study identifies ERCC2 mutations as biomarkers of favorable response to bladder-sparing chemoradiation, and reports the BRCA1 S316G variant as a VUS without clear clinical impact.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10722135",
+            "title": "Genomic Tumor Correlates of Clinical Outcomes Following Organ-Sparing Chemoradiation Therapy for Bladder Cancer",
+            "relevance_score": 0.21,
+            "pub_year": 2023,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Supplementary Data 9. BRCA and ATM pathogenicity analysis\nColumn names:\nchromosome_name|start|stop|reference|variant|type|gene_name|transcript_name|transcript_species|transcript_source|transcript_version|strand|transcript_status|trv_type|c_position|c_position_fixed|amino_acid_change|ucsc_cons|domain|all_domains|deletion_substructures|transcript_error|default_gene_name|gene_name_source|ensembl_gene_id|Sample|total_coverage|Tumor_ref_count|Tumor_var_count|Tumor_VAF|FilterCall|Prob|LLR|ExAC_adj_AF|Source|HGVS|c.change|Pathogenic_status|ClinVar Review Status (max=5)|Number of Submissions|Submission Distribution|hgvs|LOVD|LOVD Effect (Classification)|Pathogenic_status|Pathogenic_status|Consensus|Consensus_source\nRows:\n|||T|C|SNP|BRCA1|ENST00000471181|human|ensembl|||known|missense|c.946||**p.S316G**||pirsf_BRCA1|pirsf_BRCA1,pfam_BRCT_dom,pfam_Znf_C3HC4_RING-type,superfamily_BRCT_dom,smart_Znf_RING,smart_BRCT_dom,prints_BRCA1,pfscan_BRCT_dom,pfscan_Znf_RING|-|no_errors|BRCA1|HGNC|ENSG00000012048|H_KU-757-757_A_core|||||Somatic||||MA12|NC_000011.9:g.**41246602T>C**|c.946T>C||||||||No data|Assumed Uncertain_significance|Uncertain Significance|BRCA Exchange",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The study examined somatic mutations in ER\u2011positive breast cancer and, in supplementary analysis, classified the BRCA1 S316G variant as a variant of uncertain significance without linking it to prognosis.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6123466",
+            "title": "The prognostic effects of somatic mutations in ER-positive breast cancer",
+            "relevance_score": 0.19,
+            "pub_year": 2018,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Table S6. Classifications of variants for BRCA1/2 screens.\nColumn names:\n#Gene:|Gene name\nRows:\nBRCA1|**p.S316G**|nonsynonymous SNV|||||Other|Conflicting_interpretations_of_pathogenicity|exon10|BRCA1_T_41246602_NGG|BRCA1-AT-NGG|.",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The study employs base\u2011editing screens with efficiency correction to identify loss\u2011of\u2011function BRCA1/2 variants, noting that p.S316G is classified with conflicting interpretations of pathogenicity, highlighting the need for re\u2011evaluation of its clinical significance.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7945310",
+            "title": "Identification of pathogenic variants in cancer genes using base editing screens with editing efficiency correction",
+            "relevance_score": 0.18,
+            "pub_year": 2021,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Suppl. Table 3Sanger sample ID|PD18919a|PD18920a|PD18921a|PD18922a|PD18923a|PD18924a|PD18925a|PD18926a|PD18927a|PD18928a|PD18929a|PD18930a|PD18931a|PD18932a|PD18933a|PD18934a|PD18935a|PD18936a|PD18937a|PD18938a|PD18939a|PD18940a|PD18941a|PD18942a|PD18943a|PD18944a|PD18945a|PD18946a|PD18947a|PD18948a|PD18949a|PD18950a|PD18951a|PD18952a|PD18953a|PD18954a|PD18955a|PD18956a|PD18957a|PD18958a|PD18959a|PD18960a|PD18962a|PD18964a|PD18965a|PD18966a|PD18967a\nColumn names:\nClinical|post-vemurafenib|post-vemurafenib|post-vemurafenib|post-vemurafenib|post-TIL|post-TIL|post-TIL|post-TIL|post-TIL|post-vemurafenib|post-vemurafenib|pre-treatment|post MEK162|pre-treatment|WT|pre-treatment|pre-treatment|post-vemurafenib|post-vemurafenib|post-vemurafenib|pre-treatment|post-vemurafenib|pre-treatment|pre-treatment|post-vemurafenib|pre-treatment|post-vemurafenib|pre-treatment|WT|post-vemurafenib|post-vemurafenib|pre-combi|post-vemurafenib|post-vemurafenib|post-vemurafenib|post-vemurafenib|pre-treatment|pre-treatment|pre-treatment|pre-treatment|pre-treatment|intrinsic resistant|pre-treatment|pre-treatment|post-vemurafenib|pre-combi|pre-combi\nRows:\n||BRCA1 **p.S316G**|||||||||||||||||||||||||||||||||||||||||||||||",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article investigates BRAFV600E kinase domain duplication as a resistance mechanism in melanoma patient\u2011derived xenografts, and only mentions BRCA1 p.S316G in a supplementary table without further analysis or interpretation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC4929150",
+            "title": "BRAFV600E Kinase Domain Duplication Identified in Therapy-Refractory Melanoma Patient-Derived Xenografts",
+            "relevance_score": 0.17,
+            "pub_year": 2016,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nindex|Source|Gene name|Uniprot_ID|ClinVar/ACMG|ClinVar/ACMG_2classes|mutation_type|Mutation|maestro|mCSM|saafec-seq|MUpro|CUPSAT|secondary_structure|rASA|plddt|FASTA_url\nRows:\n285|clinvar|BRCA1|P38398|B|0|missense|**S316G**|0.244|-0.532|-0.49|-1.5936887|-1.69|sheet|0.5|27.06|https://rest.uniprot.org/uniprotkb/P38398.fasta",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The article reports AlphaFold\u2011based protein stability predictions for the BRCA1 S316G variant, which is classified as benign in ClinVar and shows modest destabilizing scores across several predictors.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9988940",
+            "title": "Evaluation of AlphaFold structure-based protein stability prediction on missense variations in cancer",
+            "relevance_score": 0.14,
+            "pub_year": 2023,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\n#gene|mut_type|AA_mut|CDS_mut|GENIE|COSMIC|ExAC_AC_adj|ExAC_AN_adj|NUM_samples|GERM_filter|Samples|Cancer_types\nRows:\nBRCA1|missense_variant|**p.S316G**|**c.946A>G**|||||||GENIE-DFCI-003461;GENIE-DFCI-007583;GENIE-DFCI-008964;GENIE-DFCI-009313;GENIE-VICC-662976|Mesothelioma(1);Endometrial Cancer(1);Non-Small Cell Lung Cancer(1);Leukemia(1);Cancer of Unknown Primary(1)",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article reports the BRCA1 S316G missense variant as a recurrent observation across several cancer patients in the GENIE dataset, emphasizing its classification as a variant of unknown significance awaiting further study.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6359859",
+            "title": "Analysis on GENIE reveals novel recurrent variants that affect molecular diagnosis of sizable number of cancer patients",
+            "relevance_score": 0.13,
+            "pub_year": 2019,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nSupplementary Tables Supplementary Table 1. Thresholds for categorization of IHC expression levels. Protein Negative Threshold Positive Threshold AR 0 or <10% \u22651+ and \u226510% ER (non-Breast) 0 or <10% \u22651+ and \u226510% ER (Breast) 0 or =0%\nRows:\n14 Variant of Unknown Significance BRCA1 R1589H 9 Variant of Unknown Significance BRCA1 R504L 14 Variant of Unknown Significance BRCA1 R7L 22 Variant of Unknown Significance BRCA1 S1286N 14 Variant of Unknown Significance BRCA1 **S316G** 14 Variant of Unknown Significance BRCA1 V487F 14 Variant of Unknown Significance BRCA2 A1012V Variant of Unknown Significance BRCA2 C1960Y 11 Variant of Unknown Significance BRCA2 D1360N Variant of Unknown Significance BRCA2",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The study profiles brain metastases from lung, breast, and melanoma, noting overexpression of DNA repair enzymes, and includes a supplementary table that classifies BRCA1 S316G as a variant of unknown significance (VUS).', ",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6235694",
+            "title": "Profiles of brain metastases: Prioritization of therapeutic targets",
+            "relevance_score": 0.12,
+            "pub_year": 2018,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nSJ ID|MDS group|MDS subtype|GeneName|AAChange|Chr|WU_HG19_Pos|ReferenceAllele|MutantAllele|Class|mRNA_acc|Germline Reporting Group|ACMG Classification|X.Mutant_In_Normal|X.Total_In_Normal|X.Normal VAF|X.Mutant_In_Tumor|X.Total_In_Tumor|X.Tumor VAF|V.mut_N|V.ref_N|V.Normal VAF|V.mut_T|V.ref_T|V.Tumor VAF|annovar_region|annovar_region_gene|annovar_exonic_function|annovar_exonic_function_gene|annovar_sj_gene|annovar_sj_gi|annovar_sj_class|annovar_sj_aachange|annovar_sj_cdna|annovar_sj_exception|annovar_sj_note|annovar_sj_filter_isoform|annovar_sj_filter_isoform_preferred|GeneName2|mRNA_acc2|Class2|AAChange2|dbSNP|NHLBI_frequency|Interpro_domain|UniSNP_ids|SIFT_pred|SIFT_score|SIFT_score_converted|Polyphen2_HDIV_pred|Polyphen2_HDIV_score|Polyphen2_HVAR_pred|Polyphen2_HVAR_score|LRT_Omega|LRT_pred|LRT_score|LRT_score_converted|MutationAssessor_pred|MutationAssessor_score|MutationAssessor_score_converted|MutationTaster_pred|MutationTaster_score|MutationTaster_score_converted|FATHMM_pred|FATHMM_score|FATHMM_score_converted|thousand_genomes_frequency|ExAC_AF|CADD_raw|CADD_raw_rankscore|CADD_phred|DANN_score|DANN_rankscore|Eigen-raw|Eigen-phred|Eigen-raw_rankscore|Eigen-PC-raw|Eigen-PC-raw_rankscore|phastCons100way_vertebrate|phastCons100way_vertebrate_rankscore|phastCons20way_mammalian|phastCons20way_mammalian_rankscore|phyloP100way_vertebrate|phyloP100way_vertebrate_rankscore|phyloP20way_mammalian|phyloP20way_mammalian_rankscore|SiPhy_29way_pi|SiPhy_29way_logOdds|SiPhy_29way_logOdds_rankscore|GERP++_NR|GERP++_RS|GERP++_RS_rankscore|Reason|Evidence\nRows:\nSJ018200|Primary MDS|RCC|BRCA1|**S316G**|chr17||T|C|missense|NM_007294|Classify|VUS|||||||n.d|n.d|n.d|n.d|n.d|n.d|exonic|BRCA1|nonsynonymous SNV|BRCA1:NM_007294:exon10:**c.A946G**:**p.S316G**,BRCA1:NM_007297:exon9:c.A805G:p.S269G,BRCA1:NM_007300:exon10:**c.A946G**:**p.S316G**,|BRCA1||missense|**S316G**|**c.A946G**|||NM_007294||BRCA1|NM_007294|missense|**S316G**|**rs55874646**|||**rs55874646**|D|||D||D|||D|||H|||D|||D|||||||||||||||||||||||0.0:0.0827:0.1641:0.7532||||||ExAC_AF=3.766e-05;ExAC_AC=4;ExAC_AN=106210;ExAC_AC_Adj=4;ExAC_AN_Adj=106204;ExAC_pop=AFR:1:9064:1.103e-04,AMR:0:11214:0,EAS:0:7866:0,FIN:0:6614:0,NFE:3:54346:5.520e-05,SAS:0:16406:0,OTH:0:694:0;NHGRI_BRCA1;NHGRI_BRCA1_patients=6;NHGRI_BRCA1_Clinically_Important=unknown;NHGRI_BRCA1_Depositor=Myriad;NHGRI_BRCA1_Ethnicity=Western European;UMD;UMD_significance=U;ExAC_cvg_mean=96.41;ExAC_cvg_median=100.00;ExAC_cvg_1=1.0000;ExAC_cvg_5=1.0000;ExAC_cvg_10=1.0000;ExAC_cvg_15=1.0000;ExAC_cvg_20=0.9998;ExAC_cvg_25=0.9992;ExAC_cvg_30=0.9980;ExAC_cvg_50=0.9879;ExAC_cvg_100=0.8047;rare_known_predicted_deleterious;needs_committee_review|",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The study identifies a BRCA1 S316G germline variant in a pediatric MDS patient, classified as a variant of uncertain significance with computational predictions of deleteriousness but no definitive pathogenicity evidence.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5691144",
+            "title": "The genomic landscape of pediatric myelodysplastic syndromes",
+            "relevance_score": 0.06,
+            "pub_year": 2017,
+            "data_sources": [
+                "suppl"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 3581,
+            "output": 1108
+        },
+        {
+            "input": 2005,
+            "output": 596
+        },
+        {
+            "input": 2203,
+            "output": 572
+        },
+        {
+            "input": 2398,
+            "output": 587
+        },
+        {
+            "input": 1823,
+            "output": 422
+        },
+        {
+            "input": 2249,
+            "output": 860
+        },
+        {
+            "input": 1995,
+            "output": 541
+        },
+        {
+            "input": 2138,
+            "output": 459
+        },
+        {
+            "input": 2041,
+            "output": 509
+        },
+        {
+            "input": 2226,
+            "output": 764
+        },
+        {
+            "input": 1810,
+            "output": 789
+        },
+        {
+            "input": 1914,
+            "output": 727
+        },
+        {
+            "input": 2274,
+            "output": 447
+        },
+        {
+            "input": 2336,
+            "output": 613
+        },
+        {
+            "input": 2396,
+            "output": 580
+        },
+        {
+            "input": 1683,
+            "output": 185
+        },
+        {
+            "input": 2159,
+            "output": 471
+        },
+        {
+            "input": 2230,
+            "output": 562
+        },
+        {
+            "input": 1864,
+            "output": 541
+        },
+        {
+            "input": 1923,
+            "output": 170
+        },
+        {
+            "input": 2437,
+            "output": 511
+        },
+        {
+            "input": 2174,
+            "output": 776
+        },
+        {
+            "input": 2008,
+            "output": 620
+        },
+        {
+            "input": 1905,
+            "output": 295
+        },
+        {
+            "input": 2230,
+            "output": 545
+        },
+        {
+            "input": 2230,
+            "output": 226
+        },
+        {
+            "input": 2935,
+            "output": 522
+        },
+        {
+            "input": 1871,
+            "output": 385
+        },
+        {
+            "input": 2155,
+            "output": 244
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 11566,
+        "output": 1478
+    },
+    "total_time": 78.98
+}

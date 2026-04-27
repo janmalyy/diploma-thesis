@@ -1,0 +1,429 @@
+{
+    "before_pruning": {
+        "articles_in_total": 32,
+        "only_medline_count": 0,
+        "only_pmc_count": 8,
+        "only_suppl_count": 21,
+        "both_pmc_and_suppl_count": 3,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 32,
+        "only_medline_count": 0,
+        "only_pmc_count": 8,
+        "only_suppl_count": 21,
+        "both_pmc_and_suppl_count": 3,
+        "all_three_count": 0
+    },
+    "variant": "BRCA2 K1690N",
+    "time_to_process_articles": 15.69,
+    "context_length": 23208,
+    "after_removal": {
+        "articles_in_total": 11,
+        "only_medline_count": 0,
+        "only_pmc_count": 7,
+        "only_suppl_count": 1,
+        "both_pmc_and_suppl_count": 3,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "",
+            "pmcid": "PMC7600438",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 51,
+            "abstract_length": 2292,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1096
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7379412",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 118,
+            "abstract_length": 1111,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1781
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3904950",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 139,
+            "abstract_length": 1373,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "4609g a p glu1537lys c0 0 01 0 004 \u2013 \u2013 \u2013 0 004 4 24\u00d710\u22125 class 1 \u2013 c 5070a c p lys1690asn c0 0 01 0 48 \u2013 0 30 3 23\u00d710\u22125 4 55\u00d710\u22126 4 59\u00d710\u22128 class 1 \u2013 c 5278t g p ser1760ala c0 0 01 1 38 0 14"
+            ],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                197
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9444938",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 75,
+            "abstract_length": 1281,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3242438",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 131,
+            "abstract_length": 1266,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10558443",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 115,
+            "abstract_length": 1136,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                301
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3995136",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 77,
+            "abstract_length": 1185,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4429836",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 125,
+            "abstract_length": 1799,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1067
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4017260",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 92,
+            "abstract_length": 1383,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                348
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9647139",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 72,
+            "abstract_length": 966,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "nonsense p g715 26 missense p i1173f 26 nonsense p c1200 26 missense p e1593d 26 missense p k1690n 26 missense p e2301g 26 missense p t2337i 26 missense p s2522f 26 missense p n2706s 26"
+            ],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                206
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4867663",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 107,
+            "abstract_length": 1677,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        }
+    ],
+    "narrative_summary": "The BRCA2 missense change K1690N (c.5070A>C, p.Lys1690Asn) has been detected in a variety of cancer\u2011related sequencing efforts but has not been definitively linked to a hereditary cancer syndrome. It appears in colorectal cancer screening cohorts, breast cancer tumor panels, and a myeloproliferative neoplasm case, yet no consistent disease association has been established.\nIn clinical reports the variant has received conflicting interpretations. A multifactorial likelihood assessment classified K1690N as Class\u202f1, indicating a benign effect [PMC3904950]. Conversely, tumor\u2011only sequencing of an advanced breast cancer patient described the alteration as a variant of uncertain significance (VUS) [PMC10558443], and a targeted exome study of myeloproliferative neoplasms listed it as a somatic mutation in a single patient without assigning pathogenicity [PMC4017260].\nNo functional assays addressing the impact of K1690N on BRCA2 protein activity or DNA repair have been reported in the extracted literature.\nPopulation data show the variant was identified among Turkish colorectal cancer patients, but the study did not provide a pathogenicity classification or frequency estimate beyond its presence in the cohort [PMC7379412]. Computational prediction using the Condel meta\u2011score yielded a modest value of 0.536 (below typical thresholds for deleteriousness) and the authors did not draw a specific conclusion about clinical relevance [PMC4429836].\nTaken together, the preponderance of evidence points toward a likely benign interpretation for BRCA2 K1690N, although the designation of uncertain significance in at least one tumor sequencing context reflects residual uncertainty. Additional segregation data, functional studies, or larger population frequency analyses would be needed to resolve this ambiguity.",
+    "structured_summary": {
+        "overall_pathogenicity": "uncertain",
+        "pathogenicity_counts": {
+            "supports benignity": 1,
+            "supports pathogenicity": 0,
+            "uncertain": 1
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Gene Transcript cDNA change dbSNP Consequence n APC NM_000038 c.2438A>G rs201522866 Missense 1 APC NM_000038 c.3920T>A rs1801155 Missense 2 APC NM_000038 c.5609A>G rs1189738231 Missense 1 ATM NM_000051 c.2021A>G rs201762714 Missense 1 ATM NM_000051 c.6869A>C - Missense 1 ATM NM_000051 c.7082T>C rs1169558907 Missense 1 ATM NM_000051 c.3402+16A>G rs63382531 - 1 BARD1 NM_000465 c.586A>G rs376259263 Missense 1 BLM NM_000057 c.11T>C rs144706057 Missense 1 BRCA1 NM_7294 c.3448C>T rs80357272 Missense 1 BRCA1 NM_7294 c.4342A>G rs80357486 Missense 1 BRCA2 NM_000059 **c.5070A>C** **rs56087561** Missense 1 BRCA2 NM_000059 c.5092T>C - Missense 1 BRCA2 NM_000059 c.5495C>A rs138489917 Missense 1 BRIP1 NM_032043 c.1255C>T rs150624408 Missense 1 BRIP1 NM_032043 c.3178G>A rs149016505 Missense 1 BUB1B NM_001211 c.522A>G - Missense 1 CDH1 NM_004360 c.184G>A rs587781898 Missense 1 CDH1 NM_004360 c.2387G>A rs587782549 Missense 1 CDH1 NM_004360 c.2359G>A rs766270336 Missense 1 CDH1 NM_004360 c.2595G>C rs778019174 Missense 1 CHEK2 NM_007194 c.944G>A - Missense 1 CHEK2 NM_007194 c.1556G>T rs587780180 Missense 1 EPCAM NM_002354 c.28G>C rs863224709 Missense 1 MLH1 NM_000249 c.1876T>C rs377241633 Missense 1 MRE11A NM_005591 c.818C>G rs143400546 Missense 1 MSH2 NM_000251 c.-107C>A rs587782649 - 1 MSH2 NM_000251 c.435T>G rs63750124 Missense 2 MSH2 NM_000251 c.2606C>A rs730881772 Missense 1 MUTYH NM_001128425 c.821G>A rs149866955 Missense 1 PALB2 NM_024675 c.3201+4delA - - 1 PMS1 NM_000534 c.2722T>A - Missense 1 PMS2 NM_000535 c.2392T>C - Missense 1 POLD1 NM_001256849 c.455C>T rs41563714 Missense 1 POLD1 NM_001256849 c.2293G>A rs759190487 Missense 1 RAD50 NM_005732 c.2651G>A rs558302979 Missense 1 RET NM_020975 c.224C>T rs142641173 Missense 1 RET NM_020975 c.628G>A rs1060500762 Missense 1",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study screened Turkish colorectal cancer patients and reported the presence of the BRCA2 K1690N (c.5070A>C) missense variant among other variants, without assigning a pathogenicity classification to it.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7379412",
+            "title": "Spectrum of germline cancer susceptibility gene mutations in Turkish colorectal cancer patients: a single center study",
+            "relevance_score": 0.94,
+            "pub_year": 2020,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": ".4609G>A (p.Glu1537Lys) C0 0.01 0.004 \u2013 \u2013 \u2013 0.004 4.24\u00d710\u22125 Class 1 \u2013 **c.5070A>C** (**p.Lys1690Asn**) C0 0.01 0.48 \u2013 0.30 3.23\u00d710\u22125 4.55\u00d710\u22126 4.59\u00d710\u22128 Class 1 \u2013 c.5278T>G (p.Ser1760Ala) C0 0.01 1.38 0.14",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study classified the BRCA2 K1690N (c.5070A>C) variant as Class\u202f1, indicating it is not clinically significant (benign).', ",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC3904950",
+            "title": "Multifactorial Likelihood Assessment of BRCA1 and BRCA2 Missense Variants Confirms That BRCA1:c.122A>G(p.His41Arg) Is a Pathogenic Mutation",
+            "relevance_score": 0.81,
+            "pub_year": 2014,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "dTwo patients without a tBRCA1/2mut had BRCA2 variants of unknown pathogenic significance distinct from their gBRCA2mut: First patient: gBRCA2mut = 9345 G > C (P3039P) with tBRCA2variant = **5070 A > C** (**K1690N**); Second patient: gBRCA2mut = duplicate exons 15-18 with tBRCA2variant = 7052 C > T (A2351V).",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The study notes that the BRCA2 K1690N variant was identified in tumor sequencing of a patient and classified as of unknown pathogenic significance (VUS).', ",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10558443",
+            "title": "Genomic analysis of advanced breast cancer tumors from talazoparib-treated gBRCA1/2mut carriers in the ABRAZO study",
+            "relevance_score": 0.67,
+            "pub_year": 2023,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Variant Gene rs Count Condel count Condel max Condel algorithms Confirmed by other models Q356R BRCA1 rs1799950 72 12 0.70898 4 no S1040N BRCA1 rs4986852 11 7 0.66416 3 no **K1690N** BRCA2 **rs56087561** 10 2 0.536316 2 no N3124I BRCA2 rs28897759 6 2 0.618793 4 yes R1347G BRCA1 rs28897689 6 7 0.540272 2 no Q2858H BRCA2 - 3 2 0.539229 3 novel V2969M BRCA2 rs59004709 2 2 0.644176 3 no D1152N BRCA1 rs80357175 2 7 0.596261 2 no T1011R BRCA2 rs80358548 1 2 0.531615 2 no E2236K BRCA2 rs41293503 1 2 0.591769 2 no S2326C BRCA2 - 1 2 0.599866 2 novel I2627F BRCA2 rs80359014 1 2 0.663608 4 yes L2865F BRCA2 - 1 2 0.593408 3 novel V1791L BRCA1 rs145758886 1 11 0.574356 3 no Y1703C BRCA1 - 1 14 0.622922 4 novel A1669S BRCA1 rs80357087 1 13 0.540083 3 no M1628T BRCA1 rs4986854 1 13 0.526967 1 no E1346K BRCA1 rs80357407 1 7 0.540139 1 no R866H BRCA1 rs80356911 1 7 0.676062 4 no N723D BRCA1 rs4986845 1 7 0.543268 1 no N550H BRCA1 rs56012641 1 9 0.681765 4 no F486L BRCA1 rs55906931 1 9 0.558913 1 no Y179C BRCA1 rs56187033 1 20 0.588385 4 no G602R BRCA1 - 1 14 0.660547 4 novel",
+                    "mention_type": "computational",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study used NGS to discover BRCA2 variants in Polish breast/ovarian cancer patients and reports K1690N in a supplementary table with a Condel score but without an explicit pathogenicity interpretation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC4429836",
+            "title": "New recurrent BRCA1/2 mutations in Polish patients with familial breast/ovarian cancer detected by next generation sequencing",
+            "relevance_score": 0.38,
+            "pub_year": 2015,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Disease_#patient number Number of somatic mutations PMF_1 4 FIP1L1D183G, JAK2V617F, PRPF19L341P, TPRN1790D PMF_2 6 APCR2126G, BRCA1R163G, **BRCA2K1690N**, CTNNA1P735L, GAS8L126P, JAK2V617F PMF_3 7 APLFR510fsX3, BRIP1L456P, DLGAP2R134K, ERBB2L494F, FANCMR756C, MPGR55C, RECQL4P879H PMF_4 5 DNMT3AR693C, IRF4T361A, PLCD1R476C, PTPRFE1245K, ZFHX3K3243R...",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study identified the BRCA2 K1690N variant as a somatic mutation in one myeloproliferative neoplasm patient (PMF_2).', ",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC4017260",
+            "title": "Targeted cancer exome sequencing reveals recurrent mutations in myeloproliferative neoplasms",
+            "relevance_score": 0.25,
+            "pub_year": 2013,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": ") Nonsense p.G715* (26) Missense p.I1173F (26) Nonsense p.C1200* (26) Missense p.E1593D (26) Missense **p.K1690N** (26) Missense p.E2301G (26) Missense p.T2337I (26) Missense p.S2522F (26) Missense p.N2706S (26",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The review discusses chordoma therapeutic strategies and enumerates several BRCA2 variants, including K1690N, but provides no interpretation of its significance.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9647139",
+            "title": "Emerging target discovery and drug repurposing opportunities in chordoma",
+            "relevance_score": 0.17,
+            "pub_year": 2022,
+            "data_sources": [
+                "pmc"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 2437,
+            "output": 366
+        },
+        {
+            "input": 2435,
+            "output": 866
+        },
+        {
+            "input": 2010,
+            "output": 523
+        },
+        {
+            "input": 1812,
+            "output": 207
+        },
+        {
+            "input": 1791,
+            "output": 215
+        },
+        {
+            "input": 1970,
+            "output": 559
+        },
+        {
+            "input": 1718,
+            "output": 176
+        },
+        {
+            "input": 2481,
+            "output": 521
+        },
+        {
+            "input": 2075,
+            "output": 657
+        },
+        {
+            "input": 1728,
+            "output": 649
+        },
+        {
+            "input": 1887,
+            "output": 187
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 3307,
+        "output": 882
+    },
+    "total_time": 34.74
+}

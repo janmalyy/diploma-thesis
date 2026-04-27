@@ -1,0 +1,169 @@
+{
+    "before_pruning": {
+        "articles_in_total": 14,
+        "only_medline_count": 0,
+        "only_pmc_count": 1,
+        "only_suppl_count": 13,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 14,
+        "only_medline_count": 0,
+        "only_pmc_count": 1,
+        "only_suppl_count": 13,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "variant": "BRCA1 S1651F",
+    "time_to_process_articles": 11.0,
+    "context_length": 8675,
+    "after_removal": {
+        "articles_in_total": 4,
+        "only_medline_count": 0,
+        "only_pmc_count": 1,
+        "only_suppl_count": 3,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "",
+            "pmcid": "PMC3040717",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 109,
+            "abstract_length": 1687,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "transcriptional activity strong functional effect moderate functional effect\u2020 uncertain\u2021 low functional effect\u00a7 no functional effect\u2016 t1685i t1685a g1656d s1655f v1653m d1692y m1663l d1692n n1647k s1651f"
+            ],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                205
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10558845",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 73,
+            "abstract_length": 2023,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9519549",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 112,
+            "abstract_length": 1509,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10290920",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 61,
+            "abstract_length": 2422,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        }
+    ],
+    "narrative_summary": "The BRCA1 missense variant p.Ser1651Phe (S1651F) resides in the BRCT domain of the gene, a region frequently implicated in hereditary breast and ovarian cancer risk. The variant has been examined in the context of functional studies aimed at classifying BRCA1 missense changes for cancer risk prediction.\n\nNo clinical case reports, segregation analyses, or formal clinical classifications for S1651F were presented in the extracted evidence, and therefore no clinical evidence can be summarized.\n\nA comprehensive functional analysis of 117 BRCA1 BRCT missense variants, including S1651F, was reported (PMCID: PMC3040717). The study listed S1651F among the variants evaluated but did not assign it a specific functional category (e.g., strong, moderate, low, or no effect) and provided no explicit claim regarding its impact on transcriptional activity or protein function. Consequently, the functional consequence of S1651F remains undetermined based on the available data.\n\nPopulation frequency data and computational predictions for S1651F were not included in the extracted evidence, and thus cannot be addressed.\n\nIn summary, the current evidence set does not provide definitive functional or clinical information for the BRCA1 S1651F variant. Without functional classification or clinical correlation, the pathogenicity of S1651F cannot be established, and its status remains uncertain.",
+    "structured_summary": {
+        "overall_pathogenicity": "uncertain",
+        "overall_confidence": "low",
+        "pathogenicity_counts": {
+            "supports benignity": 0,
+            "supports pathogenicity": 0,
+            "uncertain": 0
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "transcriptional activity. Strong functional effect* Moderate functional effect\u2020 Uncertain\u2021 Low functional effect\u00a7 No functional effect\u2016 T1685I T1685A G1656D S1655F V1653M D1692Y M1663L D1692N N1647K **S1651F**",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study performed structural and cellular functional assays on 117 BRCA1 BRCT missense variants, categorizing them by functional impact to aid cancer risk prediction, and found many variants with clear functional effects correlating with clinical data.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC3040717",
+            "title": "Comprehensive Analysis of Missense Variations in the BRCT Domain of BRCA1 by Structural and Functional Assays",
+            "relevance_score": 1.0,
+            "pub_year": 2010,
+            "data_sources": [
+                "pmc"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 1856,
+            "output": 776
+        },
+        {
+            "input": 1850,
+            "output": 343
+        },
+        {
+            "input": 1774,
+            "output": 244
+        },
+        {
+            "input": 1992,
+            "output": 248
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 784,
+        "output": 621
+    },
+    "total_time": 25.18
+}

@@ -1,0 +1,219 @@
+{
+    "before_pruning": {
+        "articles_in_total": 8,
+        "only_medline_count": 0,
+        "only_pmc_count": 4,
+        "only_suppl_count": 4,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 8,
+        "only_medline_count": 0,
+        "only_pmc_count": 4,
+        "only_suppl_count": 4,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "variant": "BRCA2 K1434I",
+    "time_to_process_articles": 8.82,
+    "context_length": 10177,
+    "after_removal": {
+        "articles_in_total": 5,
+        "only_medline_count": 0,
+        "only_pmc_count": 4,
+        "only_suppl_count": 1,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "",
+            "pmcid": "PMC6752316",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 68,
+            "abstract_length": 1253,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1656
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3242438",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 131,
+            "abstract_length": 1266,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4439391",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 94,
+            "abstract_length": 1344,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1192
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3478957",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 90,
+            "abstract_length": 1352,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                652
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11040411",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 153,
+            "abstract_length": 224,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        }
+    ],
+    "narrative_summary": "The BRCA2 missense change p.Lys1434Ile (c.4301A>T) is a variant of uncertain significance that has been investigated in several studies. Functional testing in a mouse embryonic stem\u2011cell complementation assay demonstrated that the variant restores cell viability and shows near\u2011normal homologous\u2011directed repair activity, findings that are interpreted as evidence for a benign effect [PMC6752316]. A re\u2011evaluation of BRCA2 missense variants placed p.K1434I in IARC Class\u202f2, indicating it is likely not pathogenic, and confirmed earlier neutral categorisation by Spearman et\u202fal. [PMC3478957]. The same amino\u2011acid change was also reported among a list of BRCA2 alterations identified in a familial pancreatic\u2011cancer cohort, but the report did not assign any pathogenicity interpretation to it [PMC4439391]. No population\u2011frequency data or computational predictions were provided in the extracted evidence. Taken together, the available clinical classification and functional assay results consistently support a benign or likely benign classification for BRCA2\u202fK1434I, and there is no contradictory evidence suggesting pathogenicity.",
+    "structured_summary": {
+        "overall_pathogenicity": "benign",
+        "pathogenicity_counts": {
+            "supports benignity": 2,
+            "supports pathogenicity": 0,
+            "uncertain": 0
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Exon Nucleotidea Amino acid Complementationb HDR capacity (%)c Cisplatin sensitivity (%)d 3 c.73G>A p.Gly25Arg Yes 65 66 3 c.93G>T p.Trp31Cys Poor 24 39 3 c.165_167del p.Asn56del Yes 70 84 7 c.599C>T p.Thr200Ile Yes 98 150 10 c.1769T>G p.Phe590Cys Yes 79 106 11 **c.4301A>T** **p.Lys1434Ile** Yes 83 124 11 c.5733_5735del p.Asp1911del Yes 85 110 12 c.6867A>T p.Leu2289Phe Yes 125 123 12 c.6935A>T p.Asp2312Val Yes 78 46 15 c.7484T>C p.Ile2495Thr Yes 58 84 15 c.7522G>A p.Gly2508Ser Yes 50 37 15 c.7547C>G p.Ser2516Cys Yes 87 113 16 c.7751G>A p.Gly2584Asp Yes 70 65 16 c.7753G>A p.Gly2585Arg No NA NA 17 c.7875A>T p.Arg2625Ser No NA NA 17 c.7928C>G p.Ala2643Gly Yes 121 102 17 c.7954G>A p.Val2652Met Poor 45 39 18 c.7978T>G p.Tyr2660Asp No NA NA 18 c.8162T>A p.Leu2721His No NA NA 18 c.8111C>T p.Ser2704Phe Yes 116 45 18 c.8249_8251del p.Lys2750del No NA NA 19 c.8350C>T p.Arg2784Trp Poor 15 51 19 c.8351G>A p.Arg2784Gln Poor 15 36 19 c.8435G>A p.Gly2812Glu Yes 50 61 20 c.8524C>T p.Arg2842Cys Yes 31 107 20 c.8525G>T p.Arg2842Leu Yes 53 43 20 c.8552C>T p.Ala2852Val Yes 65 86 21 c.8738A>G p.Asp2913Gly Yes 46 94 21 c.8739C>G p.Asp2913Glu Yes 80 80 22 c.8897T>C p.Val2966Ala Yes 62 65 23 c.9004G>A p.Glu3002Lys No NA NA 23 c.9104A>C p.Tyr3035Ser Yes 50 52 23 c.9116C>G p.Pro3039Arg Yes 73 43 24 c.9218A>G p.Asp3073Gly No NA NA 25 c.9275A>C p.Tyr3092Ser Yes 39 36 27 c.9838C>T p.Pro3280Ser Yes 125 65 27 c.9839C>G p.Pro3280Arg Yes 86 70 27 c.9871T>G p.Ser3291Ala Yes 66 88 27 c.9872C>G p.Ser3291Cys Yes 81 90 27 c.9925G>T p.Glu3309Ter Yes 75 145 27 c.9945del p.Glu3316Asn-fs*2 Yes 63 61 27 c.9976A>T p.Lys3326Ter Yes 104 44 27 c.10184del p.Glu3395Gly-fs*32 Yes 67 64",
+                    "mention_type": "functional",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The study demonstrates that the mouse embryonic stem cell functional assay can assess BRCA2 VUS, with K1434I showing complementation and near\u2011normal HDR activity, suggesting it is likely benign.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6752316",
+            "title": "The functional impact of variants of uncertain significance in BRCA2",
+            "relevance_score": 1.0,
+            "pub_year": 2018,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Gene Deleterious mutations Variants of uncertain significance Single Nucleotide Polymorphisms BRCA1 187delAG [n=3] C328R (1101T>C) S1217P (3768T>C) 4507ins7 H1860Q (5699C>A) 5385insC R496S (1605C>A) 816delGT BRCA2 10095delT S538N (1841G>A) **K1434I** (4529A>T) 2041insA [n=2] T1586I (4985C>T) R2341C (7249C>T) 3635ins>100bp dup exon 1 T544I (1859C>T) 3972del4 V2652V (8184G>A) 4075delGT 4206ins4 5175delAA [n=2] 5950delCT 6174delT [n=5] 6224insT 6601insA 8765delAG [n=2] 9663delGT E1953X (6085G>T) [n=2] K1323X (4195A>T) Q321X (1189C>T) Y1655X (5193C>G) PALB2 E837X (2509G>T) A712V (2135C>T) IVS6+10A>G R1086X (3256C>T) [n=2] E1018D (3054G>T) IVS7-18C>T [n=2] W1038X (3113G>A) E892K (2674G>A) P864S (2590C>T) [n=5] G881S (2641G>A) S1165S (3495G>A) [n=3] I887S (2660T>G) V932M(2794G>A) [n=4] L939W (2816T>G) [n=6] N241D (721A>G) P1009S (3025C>T) P65L (194C>T) P806L (2417C>T) S578G (1732A>G) Y334D (1000T>G) CDKN2A 131insAA 5'UTR-25C>T none 225del19 5'UTR-33G>C [n=5] 286delG G101R (301G>A) 32ins24 (in-frame ins) L16R (47T>G) [n=3] 5'UTR-34G>T L65P (194T>C) D153Y (457G>T) Q50R (149A>G) G101W (301G>T) T18P (52A>C) M53I (159G>A) M53I (159G>C) Q50X (148C>T) [n=2] R24P (71G>C) V126D (377T>A) [n=2]",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study found that deleterious BRCA2 mutations occur in 3.7% of familial pancreatic cancer probands, indicating BRCA2\u2019s substantial contribution to disease risk.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC4439391",
+            "title": "BRCA1, BRCA2, PALB2, and CDKN2A Mutations in Familial Pancreatic Cancer (FPC): A PACGENE Study",
+            "relevance_score": 0.31,
+            "pub_year": 2014,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "A group of four BRCA2 missense substitutions assessed by Spearman et al. (Spearman et al., 2008) are now classified as Class 2. Two of these, **p.K1434I** and p.A2351G were originally placed in Spearman et al\u2019s \u201cneutral suspected category\u201d; for these, our analysis simply confirms Spearman et al\u2019s. Of the remaining two, p.D1352Y moved into Class 2 because our model excluded LOH data that had provided some evidence in favor of pathogenicity, and p.R2418G moved into Class 2 because our \u201clikely not pathogenic\u201d category extends up to a posterior probability of 0.05 whereas the suspect neutral category used by Spearman et al was more restrictive.",
+                    "mention_type": "clinical",
+                    "claim": "supports benignity"
+                }
+            ],
+            "overall_article_summary": "The article re\u2011evaluates BRCA2 missense variants and confirms that p.K1434I belongs to IARC Class\u202f2, indicating it is likely benign.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC3478957",
+            "title": "Classification of Missense Substitutions in the BRCA Genes: a Database Dedicated to Ex-UVs",
+            "relevance_score": 0.22,
+            "pub_year": 2011,
+            "data_sources": [
+                "pmc"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 2615,
+            "output": 606
+        },
+        {
+            "input": 1791,
+            "output": 208
+        },
+        {
+            "input": 2568,
+            "output": 727
+        },
+        {
+            "input": 1896,
+            "output": 690
+        },
+        {
+            "input": 1522,
+            "output": 233
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 2686,
+        "output": 568
+    },
+    "total_time": 54.03
+}

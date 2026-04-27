@@ -1,0 +1,985 @@
+{
+    "before_pruning": {
+        "articles_in_total": 27,
+        "only_medline_count": 1,
+        "only_pmc_count": 1,
+        "only_suppl_count": 25,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 27,
+        "only_medline_count": 1,
+        "only_pmc_count": 1,
+        "only_suppl_count": 25,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "variant": "ATM c.829G>T",
+    "time_to_process_articles": 2.5,
+    "context_length": 72986,
+    "after_removal": {
+        "articles_in_total": 27,
+        "only_medline_count": 1,
+        "only_pmc_count": 1,
+        "only_suppl_count": 25,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "32962506",
+            "pmcid": "",
+            "data_sources": [
+                "medline"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 78,
+            "abstract_length": 966,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10988936",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 120,
+            "abstract_length": 1675,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1159
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9760934",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 92,
+            "abstract_length": 2093,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    740
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9633290",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 95,
+            "abstract_length": 2012,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    133
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6032922",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 199,
+            "abstract_length": 1727,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    228
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11211533",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 112,
+            "abstract_length": 1982,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    370
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11414036",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 154,
+            "abstract_length": 2533,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    235
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8821084",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 97,
+            "abstract_length": 1469,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    720
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10471768",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 67,
+            "abstract_length": 905,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    2784
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8275599",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 136,
+            "abstract_length": 1279,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    29
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6359859",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 119,
+            "abstract_length": 1816,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    282
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9931534",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 147,
+            "abstract_length": 1838,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    642
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8292343",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 101,
+            "abstract_length": 1530,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    29
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9685809",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 148,
+            "abstract_length": 934,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    771
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8630635",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 125,
+            "abstract_length": 1650,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    295
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4958737",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 137,
+            "abstract_length": 1787,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    617
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7181640",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 109,
+            "abstract_length": 1371,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    927
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7982637",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 63,
+            "abstract_length": 2017,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    310
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8804344",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 118,
+            "abstract_length": 1592,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    135
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11063555",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 89,
+            "abstract_length": 5421,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    606
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7581879",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 131,
+            "abstract_length": 1708,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    247
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7933761",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 120,
+            "abstract_length": 2063,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    716
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7463012",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 109,
+            "abstract_length": 1543,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    169
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7962287",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 174,
+            "abstract_length": 2398,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    298
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11049764",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 83,
+            "abstract_length": 1437,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    546
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7979806",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 128,
+            "abstract_length": 1477,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    742
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5055158",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 87,
+            "abstract_length": 1706,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    758
+                ]
+            ]
+        }
+    ],
+    "narrative_summary": "The ATM c.829G>T (p.Glu277Ter) is a nonsense substitution that creates a premature stop codon in exon 7 of the ATM gene.  It has been reported in patients with the autosomal\u2011recessive disorder ataxia\u2011telangiectasia (A\u2011T) and in several cancer\u2011predisposition cohorts, suggesting a role in both neuro\u2011developmental disease and malignancy.\nClinical reports consistently describe the variant as pathogenic.  A homozygous stop\u2011gain was identified in an Iranian A\u2011T patient and interpreted as disease\u2011causing after targeted NGS and Sanger confirmation [32962506].  The same variant appears among pathogenic alleles in a national registry of early\u2011onset hereditary ataxia in Iran [PMC10988936] and in a cohort of A\u2011T patients with class\u2011switch recombination defects [PMC8821084].  In cancer cohorts, the allele is listed as a germline pathogenic variant associated with increased lymphoma risk in a Japanese study [PMC9633290] and as a pathogenic/likely\u2011pathogenic variant in a pan\u2011African DNA\u2011damage\u2011repair analysis [PMC11211533].  Additional cancer\u2011association studies classify the variant as pathogenic in bladder cancer risk analyses [PMC9931534] and as likely oncogenic in a comprehensive cancer\u2011genome data\u2011mining effort [PMC7979806].\nFunctional evidence is limited but supports loss of ATM function.  Structural modelling of the truncated protein in the Iranian A\u2011T case predicts disruption of the native ATM architecture [32962506].  The variant is also recorded among pathogenic mutations in monogenic combined immune\u2011deficiency surveys, reinforcing its deleterious impact on protein function [PMC9760934].  In silico classification in multiple databases assigns a PVS1 (null variant) consequence and pathogenic/likely\u2011pathogenic status, consistent with a loss\u2011of\u2011function mechanism.\nPopulation data indicate that the allele is rare.  In the Japanese lymphoma cohort the variant frequency was 0.00133, and in the DDR out\u2011of\u2011Africa dataset it was observed in a single carrier among thousands of individuals, both supporting a low population prevalence compatible with a disease\u2011causing mutation [PMC9633290, PMC11211533].  No evidence of a benign or neutral classification was found in the extracted literature.\nOverall, the convergent clinical, functional, and population evidence consistently supports a pathogenic interpretation for ATM c.829G>T (p.Glu277Ter).  The variant is associated with ataxia\u2011telangiectasia and with increased susceptibility to several malignancies, and it fulfills criteria for a loss\u2011of\u2011function pathogenic allele in ATM.",
+    "structured_summary": {
+        "overall_pathogenicity": "pathogenic",
+        "pathogenicity_counts": {
+            "supports pathogenicity": 6,
+            "uncertain": 0,
+            "supports benignity": 0
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "INTRODUCTION: Ataxia telangiectasia (A-T) is a rare autosomal recessive, multisystemic disease. Patients with the A-T syndrome present a broad spectrum of disease phenotypes. The ATM (ataxia telangiectasia mutated) gene, the only causative gene for A-T. METHOD: A patient of Persian origin presenting with typical A-T was referred to our genetics centre for specialized genetic counselling and testing. Targeted next-generation sequencing (NGS) was applied. Sanger sequencing was used to confirm the candidate variant. Modelling was performed using the SWISS-MODEL server. RESULTS: A homozygous stop-gain variant c.**829G > T** (p.E277*) was found in the ATM gene. This variant was confirmed by Sanger sequencing and modelling of native structure, and truncated structure was performed. CONCLUSION: To date, very few pathogenic variants of the ATM gene have been reported from the Iranian population. The finding has implications in molecular diagnostic for A-T in Iran.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "A novel homozygous stop\u2011gain ATM variant c.829G>T (p.E277*) was identified in an Iranian patient with ataxia\u2011telangiectasia and interpreted as pathogenic.",
+            "uncertainties_or_limitations": null,
+            "article_id": "32962506",
+            "title": "Next-generation sequencing reveals a novel pathogenic variant in the ATM gene.",
+            "relevance_score": 1.0,
+            "pub_year": 2022,
+            "data_sources": [
+                "medline"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...G p.Asp2016Gly Reported PMID:9,887,333, 11,826,030, 24,825,865, 11,826,026, 11,826,029 30 30 ATM Chr11:g108279526 NM_000051.4 c.3320T > G p.Leu1107Ter Novel - 31 31 ATM Chr11:g108244954 NM_000051.4 c.**829G > T** p.Glu277Ter Reported PMID:32,962,506, 32,091,409 32 32 ATM Chr11:g108316015 NM_000051.4 c.6100 C > T p.Arg2034Ter Reported PMID:11,505,391, 29,731,985 33 33 ATM Chr11:g108316015 NM_000051.4 c.6100 C > T p.Arg2034Ter Reported PMID:11,505,391, 29,731,985 34 34 ATM Chr11:g108335008 NM_000051.4 c.8050 C > T p.Gln2684Ter Novel - 35 35 ATM Chr11:g108365138 NM_000051.4 c.6100 C > T p.Tyr2969Ter Reported PMID:11,505,391, 29,731,985 ATM Chr11:g108227691 NM_000051.4 c.67 C > T p.Arg23Ter Reported PMID:26,506,520 36 36 ATM Chr11:g108307928 NM_000051.4 c.5712dup p.Ser1905IlefsTer25 Reported PMID:18,321,536 37,38 37 ATM Chr11:g108317432 NM_000051.4 c.6259delG p.Glu2087LysfsTer9 Reported PMID:32,095,276 39 38 ATM Chr11:g108244954 NM_000051.4 c.**829G > T** p.Glu277Ter Reported PMID:32,962,506, 32,091,409 40 39 ATM Chr11:g108315863 NM_000051.4 c.6047 A > G p.Asp2016Gly Reported PMID:9,887,333, 11,826,030, 24,825,865, 11,826,026, 11,826,029 41 40 ATM...",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article reports that the ATM c.829G>T (p.Glu277Ter) nonsense variant was identified among pathogenic variants in Iranian patients with early\u2011onset hereditary ataxia.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10988936",
+            "title": "The genetic basis of early-onset hereditary ataxia in Iran: results of a national registry of a heterogeneous population",
+            "relevance_score": 1.0,
+            "pub_year": 2024,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nSupplementary Data Journal of Frontiers in Immunology Autoimmunity in monogenic combined immune deficiencies with associated or syndromic features Niusha SHARIFINEJAD1, Gholamreza AZIZI1,2*, Zahra CHAVOSHZADEH3, Seyed Alireza MAHDAVIANI4,\nRows:\nc.1159A>C(p.Lys387Gln), c.8741T>A(p.Ile2914Asn), c.5003T>G (p.Leu1668Arg), c.6047A>G (p.Asp2016Gly), c.6452G>C (p.Arg2151Thr), c.6744G>A (p.Lys2248=), c.7788G>A (p.Glu2596=), c.7865C>T (p.Ala2622Val). Point Mutation (Mis) AR (Hom) **c.829G>T**(p.Glu277Ter), c.6658C>T(p.Gln2220Ter), c.1537C>T (p.Gln513Ter), c.8050C>T(p.Gln2684Ter), c.664C>T (p.Gln222Ter), c.6658C>T (p.Gln2220Ter), c.67C>T (p.Arg23Ter), **c.829G>T** (p.Glu277Ter), c.4864G>T (p.Glu1622Ter). Point Mutation (Non)",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study describes that ATM mutations are the most common genetic cause of monogenic syndromic combined immune deficiencies and are linked to a broad spectrum of autoimmune diseases.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9760934",
+            "title": "Autoimmunity in monogenic combined immune deficiencies with associated or syndromic features",
+            "relevance_score": 1.0,
+            "pub_year": 2022,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: 1 Table S3. All germline pathogenic varian ts\nRows:\n11 108|115|681 G T ATM **c.829G>T** p.Glu277* 0.00000 0.00133",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The article reports that the germline ATM c.829G>T (p.Glu277*) variant is classified as pathogenic and contributes to an elevated risk of lymphoma in the studied Japanese cohort.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9633290",
+            "title": "Association between germline pathogenic variants in cancer-predisposing genes and lymphoma risk",
+            "relevance_score": 0.45,
+            "pub_year": 2022,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Table S1. List of 1,060 DDR PVs identified in Africans and non-Africans\nColumn names:\nGene|Pathway*|HGVSg|Func.refGene|RefSeq ID (cDNA)|HGVSc|HGVSp|dbSNP(155)|Variation type|ClinVar classification|No. carriers (p = 0.00712 by T test)\nRows:\nATM|HR|chr11:g.108244954G>T|exonic|NM_000051.4|**c.829G>T**|p.Glu277Ter|rs876660933|stopgain|Pathogenic/Likely_pathogenic|1|-",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The article reports that the ATM c.829G>T stop\u2011gain variant is classified as pathogenic/likely pathogenic and is part of the DDR pathogenic variants that largely arose after the latest out\u2011of\u2011Africa migration.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC11211533",
+            "title": "Pathogenic variants in human DNA damage repair genes mostly arose after the latest human out-of-Africa migration",
+            "relevance_score": 0.37,
+            "pub_year": 2024,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: Supplementary Table 6: Genomic alterations found on the 198 patients with endometrial cancer included in the study.\nColumn names:\nSample|Gene|Nucleotide Change|Protein Change|Frequency (%)\nRows:\n|ATM|**c.829G>T**|p.Glu277Ter|37.24",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study reports ATM c.829G>T as a frequent genomic alteration in endometrial cancer patients and investigates cfDNA/ctDNA for improved risk stratification and disease monitoring.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC11414036",
+            "title": "Role of cfDNA and ctDNA to improve the risk stratification and the disease follow-up in patients with endometrial cancer: towards the clinical application",
+            "relevance_score": 0.29,
+            "pub_year": 2024,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nGenetic Risk Variants for Class Switching Recombination Defects in Ataxia-Telangiectasia Patients Parisa Amirifar1,2, Mahya Mehrmohamadi3, Mohammad Reza Ranjouri2, Seyed Mohammad Akrami1, Nima Rezaei2,4, Ali Saberi5, Reza Yazdani2,4, Hassan\nRows:\nIntron 49 - c.7308-6T>G Homozygous CSR-N4 Pathogenic 108205730 Exon 55 p.I2683Tfs*4 c.8046-8047delTA Homozygous CSR-N5 Pathogenic 108196122 Exon 46 p.Q2220* c.6658C>T Homozygous CSR-N6 Pathogenic 108115681 Exon 7 p.Glu277* **c.829G>T** Homozygous CSR-N7 Pathogenic 108196122 Exon 46 p.Q2220* c.6658C>T Homozygous CSR-N8 Pathogenic 108235800-108236250 Exon 62-63 - Deletion exon 62-63 Homozygous CSR-N9 Pathogenic 108153460-108153461 Exon 25 p.F1201Wfs*3",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study identifies the ATM c.829G>T variant as a pathogenic homozygous mutation in an Ataxia\u2011Telangiectasia patient with normal class\u2011switch recombination, suggesting it may contribute to disease phenotype.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8821084",
+            "title": "Genetic Risk Variants for Class Switching Recombination Defects in Ataxia-Telangiectasia Patients",
+            "relevance_score": 0.22,
+            "pub_year": 2021,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nSupplementary file 1. ,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Unnamed: 8,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18,Unnamed:\nRows:\nGA,2,,p.298,Y,c.892_894,tac,894C>G,p.Y298*,TAG,4,,p.338,Y,c.1012_1014,tac,1014C>A,p.Y338*,TAA,1,,p.141,Q,c.421_423,cag,421C>T,p.Q141*,TAG,6,,p.226,R,c.676_678,cga,676C>T,p.R226*,TGA,3,,p.238,Y,c.712_714,tat,714T>G,p.Y238*,TAG,2,,p.277,E,c.829_831,gaa,**829G>T**,p.E277*,TAA,1,,p.201,K,c.601_603,aaa,601A>T,p.K201*,TAA,1,,p.129,Q,c.385_387,cag,385C>T,p.Q129*,TAG,1,,p.106,E,c.316_318,gaa,316G>T,p.E106*,TAA,1,,p.242,E,c.724_726,gag,724G>T,p.E242*,TAG,1,,p.330,W,c.988_990,tgg,989G>A,p.W330*,TAG,1,,,,,,,,,,,,,,,,\n1,,p.184,Q,c.550_552,caa,550C>T,p.Q184*,TAA,1,,p.225,W,c.673_675,tgg,675G>A,p.W225*,TGA,3,,p.356,Q,c.1066_1068,cag,1066C>T,p.Q356*,TAG,3,,p.431,S,c.1291_1293,tca,1292C>A,p.S431*,TAA,3,,p.232,Y,c.694_696,tac,696C>G,p.Y232*,TAG,1,,p.277,E,c.829_831,gaa,**829G>T**,p.E277*,TAA,3,,p.298,Q,c.892_894,cag,892C>T,p.Q298*,TAG,1,,p.485,Q,c.1453_1455,cag,1453C>T,p.Q485*,TAG,2,,p.350,R,c.1048_1050,cga,1048C>T,p.R350*,TGA,5,,p.178,E,c.532_534,gaa,532G>T,p.E178*,TAA,1,,p.120,L,c.358_360,tta,359T>A,p.L120*,TAA,1,,p.312,C,\nQ 50*,TAA,1,,p.96,Q,c.286_288,cag,286C>T,p.Q96*,TAG,7,,p.652,E,c.1953_1956,gaa,1954G>T,p.E652*,TAA,1,,p.245,E,c.733_735,gaa,733G>T,p.E245*,TAA,2,,p.575,Q,c.1723_1725,caa,1723C>T,p.Q575*,TAA,2,,p.277,E,c.829_831,gaa,**829G>T**,p.E277*,TAA,3,,p.307,K,c.919_921,aaa,919A>T,p.K307*,TAA,1,,p.251,Q,c.751_753,cag,751C>T,p.Q251*,TAG,1,,,,,,,,,,,p.212,E,c.634_636,gag,634G>T,p.E212*,TAG,1,,p.460,K,c.1378_1380,aag,1378A>T,p.K460*,TAG,1,,p.667,Q,c.1999_2001,caa,1999C>T,p.Q667*,TAA,1,\nA,p.S216*,TAG,2,,,,,,,,,,,p.461,S,c.1381_1383,tca,1382C>G,p.S461*,TGA,2,,p.422,W,c.1264_1266,tgg,1265G>A,p.W422*,TAG,1,,p.183,Q,c.547_549,cag,547C>T,p.Q183*,TAG,2,,p.672,E,c.2014_2016,gag,2014G>T,p.E672*,TAG,1,,,,,,,,,,,,,,,,,,,,p.277,E,c.829_831,gag,**829G>T**,p.E277*,TAG,1,,p.352,Q,c.1054_1056,caa,1054C>T,p.Q352*,TAA,1,,p.145,E,c.433_435,gag,433G>T,p.E145*,TAG,2,,p.444,K,c.1330_1332,aaa,1330A>T,p.K444*,TAA,1,,p.737,Q,c.2209_2211,cag,2209C>T,p.Q737*,TAG,2,,p.120,K,c.358_360,aag,358A>T,p.K120*,TAG,4,,,,,,,\n85,tca,884C>A,p.S295*,TAA,1,,,,,,,,,,,p.518,E,c.1552_1554,gag,1552G>T,p.E518*,TAG,1,,,,,,,,,,,p.466,Q,c.1396_1398,cag,1396C>T,p.Q466*,TAG,1,,p.111,W,c.331_333,tgg,332G>A,p.W111*,TAG,2,,p.149,S,c.445_447,tca,446C>G,p.S149*,TGA,1,,p.277,E,c.829_831,gag,**829G>T**,p.E277*,TAG,1,,,,,,,,,,,p.517,E,c.1549_1551,gaa,1549G>T,p.E517*,TAA,1,,p.460,S,c.1378_1380,tca,1379C>A,p.S460*,TAA,2,,p.245,Q,c.733_735,cag,733C>T,p.Q245*,TAG,10,,p.735,E,c.2203_2205,gaa,2203G>T,p.E735*,TAA,1,,,,,,,,,,,,,,,,,,,,p.340,Q,c.1018_1020,c",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article investigates the TAG\u2011TGA termination\u2011codon paradox and includes a supplementary table that records the ATM c.829G>T nonsense variant without any pathogenicity interpretation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10471768",
+            "title": "Evolution of termination codons of proteins and the TAG-TGA paradox",
+            "relevance_score": 0.19,
+            "pub_year": 2023,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nsTable 1. P/LP mutations in the nine reported bladder cancer-risk-associated genes,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Unnamed: 8,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed:\nRows:\n11_108244954_108244954_G_T,11:108244954:G:T,1,,PVS1;PM2;PS1,11,108244954,108244954,G,T,stopgain,ATM,NM_000051,exon7,**c.G829T**,\"p.E277X,\",11q22.3,.,.,.,.,.,.,.,.,.,0,0,0,0,0,0,0,0,0,.,.,.,.,.,.,.,.,.,.,233941,Hereditary_cancer-predisposing_syndrome|not_provided,\"MedGen:C0027672,SNOMED_CT:699346009|MedGen:CN517202\",\"criteria_provided,_multiple_submitters,_no_conflicts\",Patho",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study identifies pathogenic ATM variants, including the stop\u2011gain c.829G>T (p.Glu277*), as contributing to an increased risk of bladder cancer in the UK Biobank cohort.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9931534",
+            "title": "Systematic review of reported association studies of monogenic genes and bladder cancer risk and confirmation analysis in a large population cohort",
+            "relevance_score": 0.14,
+            "pub_year": 2022,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\n#Patient_No=Patient Number #Gene=HGNC Gene Symbol #Chr_start=Start position on the Chromosome. Chromosome:Start #Chr_end=End position on the Chromosome. Chromosome:End #Ref=Reference Allele #Alt=Altered Allele #Variant_Classification=Classification\nRows:\nMISSENSE P14 APC c.4616C>A(p.S1539*) STOP GAINED P14 LHCGR c.459-1G>C SPLICE P14 TP53 c.1024C>T(p.R342*) STOP GAINED P14 TP53 c.734G>T(p.G245V) MISSENSE P14 NRG1 c.1757G>T(p.R586I) MISSENSE P14 SMAD4 c.739G>T(p.G247*) STOP GAINED P14 ATM **c.829G>T**(p.E277*) STOP GAINED P14 SMAD4 Deletion P14 DLL3 c.133G>T(p.A45S) MISSENSE P14 SMAD4 Deletion P14 MEN1 Deletion P15 TP53 c.481G>A(p.A161T) MISSENSE P15 MEN1 c.1012C>G(p.L338V) MISSENSE P15 APC c.637C>T(p.R213*) STOP GAINED P15 LRP1B c.10057+1G>A",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The genomic profiling of 133 colorectal cancer patients identified ATM c.829G>T as a stop\u2011gain (nonsense) mutation among other subgroup\u2011specific alterations.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9685809",
+            "title": "Comprehensive genomic profiling of colorectal cancer patients reveals differences in mutational landscapes among clinical and pathological subgroups",
+            "relevance_score": 0.13,
+            "pub_year": 2022,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Table title: 0|0|Currently favored sampling practices for tumor sequencing can produce optimal results in the clinical setting\nRows:\n802|9|**c.829G>T**;c.*3141C>A",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study compares single, local, and multi\u2011regional tumor sampling for whole\u2011exome sequencing and finds that pooling samples does not increase the total number of detected mutations but may improve detection robustness, recommending high\u2011coverage sequencing of a single run per patient.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7463012",
+            "title": "Currently favored sampling practices for tumor sequencing can produce optimal results in the clinical setting",
+            "relevance_score": 0.04,
+            "pub_year": 2020,
+            "data_sources": [
+                "suppl"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nStudy|Sample ID|Cancer Type|Protein Change|Annotation|Functional Impact|Mutation Type|Variant Type|Copy #|COSMIC|MS|VS|Center|Chromosome|Start Pos|End Pos|Ref|Var|HGVSg|HGVSc|Allele Freq (T)|Allele Freq (N)|Variant Reads|Ref Reads|Variant Reads (Normal)|Ref Reads (Normal)|# Mut in Sample|Exon|gnomAD|ClinVar ID|dbSNP\nRows:\nUterine Corpus Endometrial Carcinoma (TCGA, PanCancer Atlas)|TCGA-QS-A5YQ-01|Uterine Endometrioid Carcinoma|E277*|OncoKB: Likely Oncogenic, level_3b;CIViC: NA;MyCancerGenome: not present;CancerHotspot: no;3DHotspot: no|MutationAssessor: NA;SIFT: NA;Polyphen-2: NA|Nonsense_Mutation|SNP||2|.|.|.|11|108115681|108115681|G|T|11:g.108115681G>T|ENST00000278616.4:**c.829G>T**|0.38||13|21||30|932|7/63|||",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study combines cancer genome data mining and functional analysis to highlight conserved ATM residues, noting that the ATM c.829G>T (p.E277*) variant is classified as likely oncogenic in public databases.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7979806",
+            "title": "Cancer genome datamining and functional genetic analysis implicate mechanisms of ATM/ATR dysfunction underpinning carcinogenesis",
+            "relevance_score": 0.04,
+            "pub_year": 2021,
+            "data_sources": [
+                "suppl"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 1608,
+            "output": 500
+        },
+        {
+            "input": 2368,
+            "output": 652
+        },
+        {
+            "input": 2434,
+            "output": 479
+        },
+        {
+            "input": 2079,
+            "output": 453
+        },
+        {
+            "input": 1895,
+            "output": 281
+        },
+        {
+            "input": 2065,
+            "output": 523
+        },
+        {
+            "input": 1998,
+            "output": 438
+        },
+        {
+            "input": 2113,
+            "output": 781
+        },
+        {
+            "input": 3109,
+            "output": 656
+        },
+        {
+            "input": 1727,
+            "output": 299
+        },
+        {
+            "input": 1969,
+            "output": 306
+        },
+        {
+            "input": 2186,
+            "output": 613
+        },
+        {
+            "input": 1887,
+            "output": 270
+        },
+        {
+            "input": 1925,
+            "output": 595
+        },
+        {
+            "input": 2004,
+            "output": 394
+        },
+        {
+            "input": 2164,
+            "output": 246
+        },
+        {
+            "input": 2085,
+            "output": 353
+        },
+        {
+            "input": 2120,
+            "output": 304
+        },
+        {
+            "input": 1964,
+            "output": 234
+        },
+        {
+            "input": 2849,
+            "output": 529
+        },
+        {
+            "input": 1970,
+            "output": 386
+        },
+        {
+            "input": 2277,
+            "output": 269
+        },
+        {
+            "input": 1773,
+            "output": 583
+        },
+        {
+            "input": 2271,
+            "output": 303
+        },
+        {
+            "input": 2014,
+            "output": 288
+        },
+        {
+            "input": 2079,
+            "output": 611
+        },
+        {
+            "input": 2148,
+            "output": 324
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 6224,
+        "output": 1232
+    },
+    "total_time": 60.57
+}

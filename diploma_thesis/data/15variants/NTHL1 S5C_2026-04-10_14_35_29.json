@@ -1,0 +1,1142 @@
+{
+    "before_pruning": {
+        "articles_in_total": 49,
+        "only_medline_count": 0,
+        "only_pmc_count": 36,
+        "only_suppl_count": 10,
+        "both_pmc_and_suppl_count": 3,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 49,
+        "only_medline_count": 0,
+        "only_pmc_count": 36,
+        "only_suppl_count": 10,
+        "both_pmc_and_suppl_count": 3,
+        "all_three_count": 0
+    },
+    "variant": "NTHL1 S5C",
+    "time_to_process_articles": 2.94,
+    "context_length": 130453,
+    "after_removal": {
+        "articles_in_total": 44,
+        "only_medline_count": 0,
+        "only_pmc_count": 36,
+        "only_suppl_count": 5,
+        "both_pmc_and_suppl_count": 3,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "",
+            "pmcid": "PMC8632062",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 155,
+            "abstract_length": 1400,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1661
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9459088",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 108,
+            "abstract_length": 1797,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1675
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10605129",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 170,
+            "abstract_length": 1914,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "phosphorylated h2ax observed after introducing dri into the treatment scheme figure 3c d and figure s5c d 3 3 pretreatment with dris decreases the efficiency of dna damage repair in ovarian cancer cells"
+            ],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                206
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7604461",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 89,
+            "abstract_length": 2200,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                945
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5606162",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 88,
+            "abstract_length": 1055,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                925
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8441048",
+            "data_sources": [
+                "pmc",
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 131,
+            "abstract_length": 1836,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "neuroprotective effect of nth 1 deficiency n 40 \u2217\u2217p 0 01 one way anova corresponding image in figure s5c e the column scatterplots represent survival of ceps and ades da neurons of by273 and nth 1"
+            ],
+            "number_of_paragraphs": 3,
+            "paragraphs_lengths": [
+                263,
+                1778,
+                208
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    1267
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7124472",
+            "data_sources": [
+                "pmc",
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 91,
+            "abstract_length": 1689,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "inhibition in our data set ypk1 sch9 and pka target sites derived from the literature are listed in supplemental tables s5a\u2013s5c although only 14 to 19 of bona fide kinase target sites were"
+            ],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                928,
+                193
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    179
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3088758",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 94,
+            "abstract_length": 1112,
+            "number_of_unmatched_snippets": 3,
+            "unmatched_snippets": [
+                "sequencing results whereas g to a transitions represent demethylation of the reverse transcribed strand figure s5c detection and quantification of 5hmc and 5hmu by immunoblotting elisa and",
+                "two opposite strands demethylated 5hmcs of the forward untranscribed strand and the reverse transcribed strand are represented by c to t and g to a transitions in bisulfite sequencing figure s5c",
+                "demethylated 5hmcs of the forward untranscribed strand and the reverse transcribed strand are represented by c to t and g to a transitions in bisulfite sequencing figure s5c respectively values represent"
+            ],
+            "number_of_paragraphs": 4,
+            "paragraphs_lengths": [
+                640,
+                195,
+                200,
+                213
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4797279",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 87,
+            "abstract_length": 1455,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                538
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10417181",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 197,
+            "abstract_length": 1793,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                725
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10631464",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 119,
+            "abstract_length": 1610,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1048
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6428691",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 72,
+            "abstract_length": 1462,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1907
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10026500",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 131,
+            "abstract_length": 1442,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1005
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3784990",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 144,
+            "abstract_length": 1061,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1592
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10470009",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 92,
+            "abstract_length": 1222,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1005
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11321631",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 131,
+            "abstract_length": 1879,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                405
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10435378",
+            "data_sources": [
+                "pmc",
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 92,
+            "abstract_length": 1638,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                878
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    773
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7026656",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 81,
+            "abstract_length": 1364,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                401
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9895842",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 98,
+            "abstract_length": 1228,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                557
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9988210",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 67,
+            "abstract_length": 1896,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                276
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8710427",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 131,
+            "abstract_length": 1519,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                407
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8285061",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 131,
+            "abstract_length": 1057,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                698,
+                1251
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10100875",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 119,
+            "abstract_length": 2384,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1049
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10730455",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 81,
+            "abstract_length": 2135,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                828
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11317141",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 103,
+            "abstract_length": 1442,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                984
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7541742",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 122,
+            "abstract_length": 1321,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                398
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6715666",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 85,
+            "abstract_length": 2183,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1050
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6197839",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 69,
+            "abstract_length": 1399,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1782
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11476691",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 110,
+            "abstract_length": 2647,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                877
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5416853",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 99,
+            "abstract_length": 1287,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                690
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4761302",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 97,
+            "abstract_length": 1139,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1585
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4039991",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 115,
+            "abstract_length": 1920,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "treatment figure 5f the inhibition of class switching was independent of cell proliferation at the doses of pregnenolone we administered figure s5c discussion this investigation revealed the"
+            ],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                196
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10011834",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 93,
+            "abstract_length": 1566,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "but not by purified pol \u03b2 or pol \u03bc fig s5c lanes 6 and 7 respectively these results provide evidence of pol \u03b7\u2013mediated rna templated repair in mammalian cell free nes in vitro reconstitution of"
+            ],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                1936,
+                202
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7917787",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 137,
+            "abstract_length": 1373,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1129
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6443246",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 132,
+            "abstract_length": 1903,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1366
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5924698",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 94,
+            "abstract_length": 1026,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1857
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3274044",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 50,
+            "abstract_length": 298,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                369
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3613684",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 85,
+            "abstract_length": 1278,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1825
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10282164",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 88,
+            "abstract_length": 2958,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1045
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9014386",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 56,
+            "abstract_length": 1269,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9922290",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 84,
+            "abstract_length": 1396,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    755
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7394406",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 121,
+            "abstract_length": 2132,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    29
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10394271",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 109,
+            "abstract_length": 1738,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    763
+                ]
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6018746",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 144,
+            "abstract_length": 976,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                1
+            ],
+            "suppl_paragraphs_lengths": [
+                [
+                    1231
+                ]
+            ]
+        }
+    ],
+    "narrative_summary": "The NTHL1 S5C (serine\u2011to\u2011cysteine at codon 5) missense change is listed as a variant of the NTHL1 gene, which is implicated in DNA base\u2011excision repair and has been associated with hereditary cancer predisposition when pathogenic alterations occur. The extracted literature does not provide any clinical case reports, segregation data, or formal classification for this specific substitution.\n\nNo functional studies directly assessing the impact of the S5C change on NTHL1 protein activity, cellular phenotypes, or disease\u2011related pathways were identified. The sole mention of \u201cS5C\u201d occurs in a supplemental figure legend of a study focused on PRMT5 inhibition and the p53\u2011MDM4 axis, and the authors do not make any claim regarding the variant\u2019s effect or relevance to disease [PMC6018746].\n\nPopulation frequency data and computational predictions for the S5C allele are not present in the supplied evidence, and therefore cannot be evaluated.\n\nGiven the absence of clinical, functional, population, and in silico evidence, the pathogenicity of the NTHL1 S5C variant remains uncertain. At present, there is insufficient data to support a classification as pathogenic or benign, and further investigation would be required to determine its clinical significance.",
+    "structured_summary": {
+        "overall_pathogenicity": "uncertain",
+        "overall_confidence": "low",
+        "pathogenicity_counts": {
+            "supports pathogenicity": 0,
+            "uncertain": 0,
+            "supports benignity": 0
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Column names:\nActivation of the p53 - MDM4 regulatory axis defines the anti - tumour response to PRMT5 inhibition through its role in regulating cellular splicing. Sarah Gerhart 1 , Wendy Kellner 1 , Christine Thompson 1 , Melissa Pappalardi 1 , Ping Zhang 1\nRows:\nkDa kDa DMSO DMSO 3d3d7d7d8d8d11d11dp53p21Tubulin SW48 SW48 p53 -/-Full scans to accompany Figure 5E 5Ep21p53Tubulin 361417283849629819836141728384962981982838496298198SeeBlue Plus2 Pre -stained Protein Standard (Invitrogen #LC5925) kDa kDa kDa **S5C** Full Scans to accompany Supplementary Figure **S5C** Z-138 + scrambled shRNA PRMT5 p53p21Actin Z-138Z-138 + p53 shRNA -+-+-+p5314172838496298198SeeBlue Plus2 Pre -stained Protein Standard (Invitrogen #LC5925) p21PRMT5 Actin\nSW48 SW48 p53 -/-Full scans to accompany Figure 5E 5Ep21p53Tubulin 361417283849629819836141728384962981982838496298198SeeBlue Plus2 Pre -stained Protein Standard (Invitrogen #LC5925) kDa kDa kDa **S5C** Full Scans to accompany Supplementary Figure **S5C** Z-138 + scrambled shRNA PRMT5 p53p21Actin Z-138Z-138 + p53 shRNA -+-+-+p5314172838496298198SeeBlue Plus2 Pre -stained Protein Standard (Invitrogen #LC5925) p21PRMT5 Actin 141728384962981981417283849629819814172838496298198 Full scans to",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article focuses on PRMT5 inhibition and the p53\u2011MDM4 regulatory axis and does not provide any interpretive information about the NTHL1 S5C variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6018746",
+            "title": "Activation of the p53-MDM4 regulatory axis defines the anti-tumour response to PRMT5 inhibition through its role in regulating cellular splicing",
+            "relevance_score": 0.1,
+            "pub_year": 2018,
+            "data_sources": [
+                "suppl"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 2184,
+            "output": 276
+        },
+        {
+            "input": 2212,
+            "output": 225
+        },
+        {
+            "input": 2062,
+            "output": 259
+        },
+        {
+            "input": 2344,
+            "output": 327
+        },
+        {
+            "input": 2021,
+            "output": 267
+        },
+        {
+            "input": 2975,
+            "output": 353
+        },
+        {
+            "input": 2316,
+            "output": 414
+        },
+        {
+            "input": 2120,
+            "output": 261
+        },
+        {
+            "input": 2017,
+            "output": 303
+        },
+        {
+            "input": 2158,
+            "output": 270
+        },
+        {
+            "input": 2075,
+            "output": 316
+        },
+        {
+            "input": 2281,
+            "output": 187
+        },
+        {
+            "input": 2093,
+            "output": 201
+        },
+        {
+            "input": 2294,
+            "output": 305
+        },
+        {
+            "input": 2115,
+            "output": 269
+        },
+        {
+            "input": 2142,
+            "output": 243
+        },
+        {
+            "input": 2305,
+            "output": 156
+        },
+        {
+            "input": 1930,
+            "output": 270
+        },
+        {
+            "input": 1818,
+            "output": 376
+        },
+        {
+            "input": 1989,
+            "output": 274
+        },
+        {
+            "input": 1952,
+            "output": 282
+        },
+        {
+            "input": 2286,
+            "output": 244
+        },
+        {
+            "input": 2293,
+            "output": 171
+        },
+        {
+            "input": 2283,
+            "output": 326
+        },
+        {
+            "input": 2059,
+            "output": 314
+        },
+        {
+            "input": 1907,
+            "output": 192
+        },
+        {
+            "input": 2133,
+            "output": 223
+        },
+        {
+            "input": 2175,
+            "output": 285
+        },
+        {
+            "input": 2355,
+            "output": 238
+        },
+        {
+            "input": 1851,
+            "output": 274
+        },
+        {
+            "input": 2211,
+            "output": 337
+        },
+        {
+            "input": 1980,
+            "output": 275
+        },
+        {
+            "input": 2438,
+            "output": 222
+        },
+        {
+            "input": 2091,
+            "output": 336
+        },
+        {
+            "input": 2216,
+            "output": 418
+        },
+        {
+            "input": 2278,
+            "output": 244
+        },
+        {
+            "input": 1610,
+            "output": 213
+        },
+        {
+            "input": 2154,
+            "output": 280
+        },
+        {
+            "input": 2390,
+            "output": 346
+        },
+        {
+            "input": 1785,
+            "output": 213
+        },
+        {
+            "input": 1951,
+            "output": 315
+        },
+        {
+            "input": 1975,
+            "output": 154
+        },
+        {
+            "input": 2048,
+            "output": 371
+        },
+        {
+            "input": 2151,
+            "output": 828
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 1126,
+        "output": 430
+    },
+    "total_time": 43.45
+}

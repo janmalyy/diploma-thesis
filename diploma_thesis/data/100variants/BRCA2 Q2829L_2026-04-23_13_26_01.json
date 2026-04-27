@@ -1,0 +1,251 @@
+{
+    "before_pruning": {
+        "articles_in_total": 9,
+        "only_medline_count": 0,
+        "only_pmc_count": 2,
+        "only_suppl_count": 5,
+        "both_pmc_and_suppl_count": 2,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 9,
+        "only_medline_count": 0,
+        "only_pmc_count": 2,
+        "only_suppl_count": 5,
+        "both_pmc_and_suppl_count": 2,
+        "all_three_count": 0
+    },
+    "variant": "BRCA2 Q2829L",
+    "time_to_process_articles": 7.48,
+    "context_length": 17156,
+    "after_removal": {
+        "articles_in_total": 4,
+        "only_medline_count": 0,
+        "only_pmc_count": 2,
+        "only_suppl_count": 0,
+        "both_pmc_and_suppl_count": 2,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "",
+            "pmcid": "PMC4371643",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 99,
+            "abstract_length": 1358,
+            "number_of_unmatched_snippets": 2,
+            "unmatched_snippets": [
+                "follow the nomenclature guidelines of the human genome variation society dna varianta bioinformatics wt mutant scores b splicing outcome rna effectc protein effectc c 8486a t alteration of the",
+                "bonatti et al 2006 bonnet et al 2008 hansen et al 2008 vreeswijk et al 2009 thomassen et al 2012 also variant c 8486a g in the same position that c 8486a t tested by us table2 was"
+            ],
+            "number_of_paragraphs": 6,
+            "paragraphs_lengths": [
+                939,
+                426,
+                1334,
+                1068,
+                194,
+                202
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3446350",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 96,
+            "abstract_length": 1893,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 4,
+            "paragraphs_lengths": [
+                837,
+                1145,
+                481,
+                698
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4907813",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 122,
+            "abstract_length": 1436,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1272
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7722754",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 114,
+            "abstract_length": 1641,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 3,
+            "paragraphs_lengths": [
+                388,
+                407,
+                399
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        }
+    ],
+    "narrative_summary": "The BRCA2 missense variant c.8486A>T, which results in the amino\u2011acid change p.Gln2829Leu (Q2829L), occurs in a gene whose pathogenic alterations confer a high risk of hereditary breast and ovarian cancer. Functional studies have focused on its impact on pre\u2011mRNA splicing because the nucleotide change lies at the canonical donor site of exon 19.\n\nSplicing assays using a large BRCA2 minigene demonstrated that the Q2829L allele markedly disrupts the donor site, producing exon\u201119 skipping in about 80\u202f% of transcripts and generating a truncated protein (p.Gln2829Leu; p.Ile2778_Gln2829del) that meets criteria for a pathogenic splice\u2011aberrant event [PMC4371643]. A second investigation, which integrated in\u2011silico splice predictions with experimental data, reported that the same variant yields only 17\u201320\u202f% of the canonical transcript, indicating a partial loss of normal splicing but did not assign a definitive clinical classification, noting that the observed splice pattern falls into a category of moderate donor damage with uncertain pathogenicity [PMC4907813]. A third study employing mouse embryonic stem cell\u2011based functional assays observed exon\u201119 skipping for Q2829L, leading to an internal 52\u2011amino\u2011acid deletion, and interpreted the result as supporting a deleterious effect on BRCA2 function [PMC7722754].\n\nIn silico splice\u2011prediction tools applied to the variant reported reduced donor\u2011site scores (e.g., NNS 0.95\u21920.87, HSF 88.86\u219284.11, MaxEnt 9.46\u21926.69) consistent with a weakened splice donor and compatible with the experimental splice defects observed [PMC4371643].\n\nThe functional evidence therefore converges on a splice\u2011disrupting effect, although the magnitude of canonical transcript loss varies between studies (major versus partial). No population frequency data or clinical segregation reports were provided in the extracted evidence. Considering the consistent demonstration of exon\u201119 skipping, the generation of an out\u2011of\u2011frame or in\u2011frame deletion affecting a functional domain, and the alignment with established criteria for splice\u2011derived pathogenicity, the preponderance of data supports classifying BRCA2 Q2829L as a pathogenic variant, albeit with some residual uncertainty regarding the exact severity of its functional impact.",
+    "structured_summary": {
+        "overall_pathogenicity": "pathogenic",
+        "pathogenicity_counts": {
+            "supports benignity": 0,
+            "supports pathogenicity": 3,
+            "uncertain": 0
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "To validate minigene MGBR2_ex19-27 for functional classification of DNA variants, 40 variants were tested, four of which from exons 19, 20, 23, and 24 were previously assayed in pSPL3 (**c.8486A>T**, c.8488-1G>A, c.9117G>A, c.9256+1G>A, minigenes 19-20 and 23-24) [Acedo et al., ]. A total of 166 BIC and UMD variants of exons 21, 22, 25, 26, and 27 were analyzed with Human Splicing Finder and NNSPLICE. Thirty-six out of them were selected according to the following criteria: disruption of canonical acceptor and donor sites (only one variant per splice site was usually selected), creation of new splice sites, ESE elimination or ESS creation (Table2 and Supp. Tables S1 and S2). Fourteen were intronic (mostly surrounding the splice sites) and 22 exonic that comprised 11 predicted missense, 4 frameshift, 3 synonymous and 2 nonsense changes, as well as 2 splice site deletions.",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "DNA varianta Bioinformatics (wt mutant scores)b Splicing outcome RNA effectc Protein Effectc **c.8486A>T** Alteration of the canonical donor site/ESE Disruption Exon 19 skipping (80%) Canonical transcript (20%) r.[ =;8332_8487del] p.[**Gln2829Leu**; p.Ile2778_Gln2829del] NNS: 0.95 0.87/ HSF: 88.86 84.11 / MaxEnt: 9.46 6.69 [-] SF2/ASF (77.23) c.8488-1G>A Alteration of the canonical acceptor site Intron 19 retention (43%) r.[ =;...",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "The NMD process can imbalance the ratio of isoforms that could be essential for the clinical classification of variants. We checked the effect of the NMD inhibitor cycloheximide on the splicing outcome of four variants (**c.8486A>T**, c.8754+4A>G, c.8948_8953+5del, and c.9649-2A>G). With the exception of c.8754+4A>G that produced 100% of the aberrant transcript Ivs21-ins46 in both experimental conditions, we observed remarkable differences in peak areas or band intensity between presence and absence of cycloheximide (data not shown). Figure 3 shows the effect of cycloheximide on the splicing outcome of variant c.8948_8953+5del. Changes in band intensities (transcripts) and the presence of a new one were already visualized in agarose gels (Fig. 3A, left), but these were even more pronounced in CE electropherograms (Fig. 3A, right). Thus, in the absence of cycloheximide c.8948_8953+5del generated four isoforms: intron 22-del11 retention, exon 22del7, exon 22 skipping and exon 22del31, whereas NMD inhibition enabled the detection of a new transcript (exon 22del41) and modified their relative proportions (Fig. 3B).",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "The clinical interpretation of the splicing results of a genetic variant is a particularly complex task. Identification of spliceogenic variants will aid in breast cancer prediction, prevention and surveillance, and will contribute to elucidate the BC predisposition spectrum. It is accepted that a variant would be considered pathogenic when it causes major or total splicing aberrations and generates a PTC or an in-frame deletion of a known functional domain. This matches class C5 of the previously reported five-tiered classification scheme of variants [Spurdle et al., ]. Fifteen variants induced major aberrant transcripts of which 14 fulfilled these criteria of pathogenicity: **c.8486A>T**, c.8488-1G>A, c.8633-24_8634del, c.8754G>A, c.8754+4A>G, c.8754+5G>A, c.8754+5G>T, c.8755-1G>A, c.8948_8953+5del, c.8953+1G>T, c.9117G>A, c.9256+1G>A, and c.9502-2A>C.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "follow the nomenclature guidelines of the Human Genome Variation Society. DNA varianta Bioinformatics (wt\u2192mutant scores)b Splicing outcome RNA effectc Protein Effectc **c.8486A>T** Alteration of the",
+                    "mention_type": "computational",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study uses a large BRCA2 minigene to functionally assess the c.8486A>T (p.Gln2829Leu) variant, demonstrating major exon skipping and classifying it as pathogenic based on splicing disruption criteria.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC4371643",
+            "title": "Functional Classification of BRCA2 DNA Variants by Splicing Assays in a Large Minigene with 9 Exons",
+            "relevance_score": 1.0,
+            "pub_year": 2015,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "The other category with a notably higher rate of spliceogenicity than probability of pathogenicity was moderate donor damage. For this category, the probability of pathogenicity was 0.34 (0.15-0.55) versus a splice aberration rate of 0.87 (0.73-0.96). Examining the published data on moderate donor variants with a splice aberration, 22 could be evaluated for severity as defined above (Supp. Table S3). For 17 of these (77%), the aberration was reported to be severe. However, two of the variants with a severe splice aberration (BRCA1 c.4484G>T and BRCA2 c.316+5G>C) produce at least one transcript isoform with an in-frame deletion that does not alter any domain already proven to harbor pathogenic missense substitutions. In addition, another two of these variants produced 17%-20% of canonical transcript in the semiquantitative assay cited (BRCA1 c.5072C>T and BRCA2 **c.8486A>T**) [Houdayer et al., 2012; Santos et al., 2014]. If these latter four variants are actually not pathogenic, then the rate of severe pathogenic splice aberrations in the category would fall to 13/22 (59%), just slightly above the 95% confidence interval of our estimated probability of pathogenicity.",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article presents an integrated framework for evaluating BRCA variants and reports splice\u2011assay data for BRCA2 Q2829L showing partial loss of canonical transcript, but does not assign a definitive pathogenicity classification to the variant.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC4907813",
+            "title": "Adding In Silico Assessment of Potential Splice Aberration to the Integrated Evaluation of BRCA Gene Unclassified Variants",
+            "relevance_score": 0.48,
+            "pub_year": 2016,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...D2723V], Y2726C, R2784W, A2786P, W2788S, G2793R, Q2829X, **Q2829L**, Q2829R, C3069X, D3073G, and C3233Wfs) were further examined to confirm the expression of BRCA2 by Western blot analysis...",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "...1 NA 1 (NF) H1996Y 0.0024 0.0428 0 (F) W2788S 0.0516 0.9976 0.9444 (I) L2106P 0.0084 0.1610 0 (F) G2793R 1 NA 1 (NF) S2152Y 0.0636 0.2396 0.0272 (F) Q2829X 1 NA 1 (NF) G2281V 0.0150 0.0422 0.0008 (F) **Q2829L** 1 NA 1 (NF) D2312V 0.0010 0.2830 0 (F) Q2829R 1 NA 1 (NF) D2312E 0.0022 0.0374 0.0002 (F) P3063S 0.1998 0.1978 0.1278 (I) R2336L 0.1960 0.7516 0.3642 (I) D3064N 0.0004 0.0566 0 (F) R2336P 0.9684...",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": "...R2659G] variant results in only a minor skipping of exon 17 (Supplementary Figs. 4 and 5). Skipping of exon 19 was observed in the cells expressing Q2829X, **Q2829L** and Q2829R variants, that results in internal deletion of 52 amino acids (Supplementary Figs. 4 and 5). The S2691F variant fails to complement the loss of...",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study functionally evaluates the BRCA2 Q2829L variant, showing it causes exon\u201119 skipping and an internal 52\u2011aa deletion, with assay data suggesting a deleterious effect, but it does not provide a definitive clinical classification.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7722754",
+            "title": "A computational model for classification of BRCA2 variants using mouse embryonic stem cell-based functional assays",
+            "relevance_score": 0.24,
+            "pub_year": 2020,
+            "data_sources": [
+                "pmc"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 3080,
+            "output": 1257
+        },
+        {
+            "input": 3087,
+            "output": 376
+        },
+        {
+            "input": 2157,
+            "output": 808
+        },
+        {
+            "input": 2376,
+            "output": 856
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 2896,
+        "output": 840
+    },
+    "total_time": 30.75
+}

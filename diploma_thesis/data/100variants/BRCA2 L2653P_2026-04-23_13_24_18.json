@@ -1,0 +1,691 @@
+{
+    "before_pruning": {
+        "articles_in_total": 34,
+        "only_medline_count": 0,
+        "only_pmc_count": 10,
+        "only_suppl_count": 17,
+        "both_pmc_and_suppl_count": 7,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 34,
+        "only_medline_count": 0,
+        "only_pmc_count": 10,
+        "only_suppl_count": 17,
+        "both_pmc_and_suppl_count": 7,
+        "all_three_count": 0
+    },
+    "variant": "BRCA2 L2653P",
+    "time_to_process_articles": 15.19,
+    "context_length": 43899,
+    "after_removal": {
+        "articles_in_total": 15,
+        "only_medline_count": 0,
+        "only_pmc_count": 8,
+        "only_suppl_count": 0,
+        "both_pmc_and_suppl_count": 7,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "",
+            "pmcid": "PMC6406614",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 165,
+            "abstract_length": 1367,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "7826g a p gly2609asp dbd hd c65 4 \u2212 \u2212 nd \u2212 c 7878g c p trp2626cys dbd hd c65 5 \u2212 \u2212 nd \u2212 nd c 7879a t p ile2627phe dbd hd c15 5 \u2212 \u2212 \u2212 \u2212 nd c 7940t c p leu2647pro dbd hd c65 4 \u2212 \u2212 \u2212 nd nd c 7958t c p leu2653pro"
+            ],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                1192,
+                211
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6287763",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 134,
+            "abstract_length": 1358,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                442
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7449880",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 155,
+            "abstract_length": 1705,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                423
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6752316",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 68,
+            "abstract_length": 1253,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1390
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10170303",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 160,
+            "abstract_length": 1366,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "met1775lys c 5324t g p met1775arg c 5363g t p gly1788val c 5513t a p val1838glu c c 7879a t p ile2627phe c 7940t c p leu2647pro c 7958t c p leu2653pro c 7988a t p"
+            ],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                190
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5769521",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 78,
+            "abstract_length": 2155,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                429
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3995136",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 77,
+            "abstract_length": 1185,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4828881",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 135,
+            "abstract_length": 2410,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                824,
+                1416
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3242438",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 131,
+            "abstract_length": 1266,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7722754",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 114,
+            "abstract_length": 1641,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1867
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC4869974",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 57,
+            "abstract_length": 1555,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                808
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9433957",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 152,
+            "abstract_length": 1704,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                952,
+                544
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5653668",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 68,
+            "abstract_length": 1378,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1924
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8008494",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 123,
+            "abstract_length": 1307,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "p leu2647pro 1 00 1 13 ps3 \u2013 \u2013 pp1 mod \u2013 pp3 pm2 supp vus p p leu2653pro 0 92 1 07 ps3 \u2013 \u2013 \u2013 \u2013 inc pm2 supp vus lp p leu2656pro 1 12 1 31 ps3 \u2013 \u2013 \u2013 \u2013 \u2013 \u2013 n o n o p leu2686pro 0 86 0 97 ps3 pm1 \u2013 \u2013 pm3 st"
+            ],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                211
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5384790",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 130,
+            "abstract_length": 4108,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                415
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        }
+    ],
+    "narrative_summary": "The BRCA2 missense variant c.7958T>C (p.Leu2653Pro) lies in the DNA\u2011binding domain of the protein and has been reported in individuals with breast and ovarian cancer phenotypes, including early\u2011onset ovarian carcinoma and serous tubal intra\u2011epithelial carcinoma, indicating relevance to hereditary cancer risk [PMC4869974]. Clinical databases and case reports have repeatedly re\u2011classified this change from a variant of uncertain significance to a deleterious allele. Myriad Genetics re\u2011classified it as \u201cfavor deleterious\u201d after observing loss of the wild\u2011type allele in the primary tumor of a carrier, and ClinVar entries list it as likely pathogenic/pathogenic, a classification supported by posterior probability calculations [PMC4828881][PMC7722754]. Additional studies using clinical annotation pipelines also assign it a Class\u202f5 (pathogenic) IARC rating based on functional assay data [PMC6287763].\n\nFunctional investigations consistently demonstrate a loss of BRCA2 activity for p.Leu2653Pro. In a mouse embryonic stem\u2011cell complementation assay the variant failed to restore homologous\u2011recombination function and was categorized as Class\u202f4/5 pathogenic [PMC6752316]. Homology\u2011directed repair (HDR) assays reported a non\u2011functional HDR score (0.92) that meets ACMG/AMP PS3 criteria for pathogenicity, and prime\u2011editing HDR measurements similarly showed a non\u2011functional result (HDR\u202f0.92, 95\u202f%\u202fCI\u202f0.80\u20111.06) [PMC9433957][PMC8008494]. Although a GFP\u2011fragment reassembly screen listed the variant without functional interpretation, the preponderance of independent functional assays indicates a deleterious impact on protein function [PMC6406614].\n\nComputational predictions also support a damaging effect. The variant receives an AGVGD Class\u202fC65 designation and an IARC Class\u202f5 rating, with a high posterior probability of pathogenicity (0.75\u202f\u00b1\u202f0.08) derived from sequence\u2011based models [PMC6287763]. In silico tools uniformly predict a deleterious impact, and the amino\u2011acid stretch encompassing Leu2653 is highly conserved across species, reinforcing the likelihood of functional disruption [PMC4828881][PMC5384790].\n\nAcross the available literature there is no evidence suggesting a benign or neutral role for BRCA2\u202fp.Leu2653Pro; all reported data converge on a pathogenic interpretation. The variant is consistently classified as pathogenic or likely pathogenic in clinical databases, demonstrates loss of function in multiple experimental systems, and is predicted to be damaging by computational analyses. Accordingly, the current body of evidence supports classifying BRCA2\u202fc.7958T>C (p.Leu2653Pro) as a pathogenic missense alteration associated with increased risk of hereditary breast and ovarian cancer.",
+    "structured_summary": {
+        "overall_pathogenicity": "pathogenic",
+        "pathogenicity_counts": {
+            "supports benignity": 0,
+            "supports pathogenicity": 10,
+            "uncertain": 0
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Gene DNA Change Protein Change Domain Motif IARC Class a References/Criterion BRCA1 c.53T>C p.Met18Thr RING finger Helical bundle N 4 c.65T>C p.Leu22Ser RING finger Helical bundle N 5 c.110C>A p.Thr37Lys RING finger beta-Sheet 5 c.115T>C p.Cys39Arg RING finger Zn2+/SiteII 5 c.116G>A p.Cys39Tyr RING finger Zn2+/SiteII 5 c.122A>G p.His41Arg RING finger Zn2+/SiteII 5 c.130T>A p.Cys44Ser RING finger Zn2+/SiteI 5 c.131G>T p.Cys44Phe RING finger Zn2+/SiteI 5 c.131G>A p.Cys44Tyr RING finger Zn2+/SiteI 5 c.133A>C p.Lys45Gln RING finger 1 c.181T>G p.Cys61Gly RING finger Zn2+/SiteII 5 c.191G>A p.Cys64Tyr RING finger Zn2+/SiteII 5 c.199G>T p.Asp67Tyr RING finger 1 BRCA2 c.7469T>C p.Ile2490Thr DBD HD 1 Frequency >1% in outbred populations c.7544C>T p.Thr2515Ile DBD HD 1 c.7826G>A p.Gly2609Asp DBD HD 4 c.7878G>C p.Trp2626Cys DBD HD 5 c.7879A>T p.Ile2627Phe DBD HD 5 c.7940T>C p.Leu2647Pro DBD HD 4 **c.7958T>C** **p.Leu2653Pro** DBD HD 5 c.8063T>C p.Leu2688Pro DBD OB1 4 c.8149G>T p.Ala2717Ser DBD OB1 1 c.8165C>G p.Thr2722Arg DBD OB1 5 c.8167G>C p.Asp2723His DBD OB1 5 c.8168A>G p.Asp2723Gly DBD OB1 5 c.8187G>T p.Lys2729Asn DBD OB1 1 c.8243G>A p.Gly2748Asp DBD OB1 5 c.8324T>G p.Met2775Arg DBD OB1 2",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                },
+                {
+                    "quoted_text": ".7826G>A p.Gly2609Asp DBD HD C65 4 \u2212 \u2212 ND + \u2212 c.7878G>C p.Trp2626Cys DBD HD C65 5 \u2212 \u2212 ND \u2212 ND c.7879A>T p.Ile2627Phe DBD HD C15 5 \u2212 \u2212 \u2212 \u2212 ND c.7940T>C p.Leu2647Pro DBD HD C65 4 \u2212 \u2212 \u2212 ND ND **c.7958T>C** **p.Leu2653Pro**",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article describes a GFP\u2011reassembly functional assay for BRCA2 variants, but for the specific L2653P variant only a tabular listing is provided without functional or clinical interpretation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6406614",
+            "title": "GFP-Fragment Reassembly Screens for the Functional Characterization of Variants of Uncertain Significance in Protein Interaction Domains of the BRCA1 and BRCA2 Genes",
+            "relevance_score": 1.0,
+            "pub_year": 2019,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Variant cDNA AGVGDclass IARCclass FC* SE# p(pathogenicity) p(neutrality) Origin G2748D c.8243G>A C65 Class 5 0.68 +- 0.07 1.00 2.96E-12 Lindor et al., 2012 L2686P c.8057T>C C45 0.72 +- 0.04 1.00 9.50E-12 Guidugli et al., 2017 **L2653P** **c.7958T>C** C65 Class 5 0.75 +- 0.08 1.00 3.40E-11 Lindor et al., 2012 E2663K c.7987G>A C55 0.83 +- 0.01 1.00 4.00E-10 Current study R3052W c.9154C>T C65 Class 5 0.86 +- 0.09 1.00 9.33E-10 Lindor et al., 2012...",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The article reports that BRCA2 L2653P is classified as pathogenic (Class 5) based on functional assay data presented in a supplementary table.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6287763",
+            "title": "Comprehensive annotation of BRCA1 and BRCA2 missense variants by functionally validated sequence-based computational prediction models",
+            "relevance_score": 0.95,
+            "pub_year": 2018,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...(76.3%) BRCA2dup 1105-193* BRCA1:c.3394_3406del, p.(Asn1132Leufs*19) (70%) BRCA1dup 1105-222* BRCA1:c.709G>T, p.(Glu237*) (51.2%) 1105-246* BRCA1:c.5074G>A, p.(Asp1692Asn) (72.8%) 1105-049* BRCA2:**c.7958T>C**, p.(**Leu2653Pro**) (99.4%) 1105-088* BRCA2:c.3170_3174del, p.(Lys1057Thrfs*8) (71.4%) 1105-103* BRCA2:c.6591_6592delTG, p.(Glu2198Asnfs*4) (53.7%) BRCA2:c.9305C>T, p.(Ala3102Val) (43.1%) 1105-104* BRCA2:c.7954delG,...",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "Combined BRCA1/2 sequencing, copy-number analysis, and promoter DNA methylation testing increases the diagnostic yield for ovarian tumors and genome\u2011wide methylation patterns can partially predict BRCAness, though further validation is required.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7449880",
+            "title": "Genetic and epigenetic profiling of BRCA1/2 in ovarian tumors reveals additive diagnostic yield and evidence of a genomic BRCA1/2 DNA methylation signature",
+            "relevance_score": 0.9,
+            "pub_year": 2020,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Exon Nucleotidea Amino acid Complementationb HDR capacity (%)c Cisplatin sensitivity (%)d Class 1/2BRCA2missense variants 2 c.53G>A p.Arg18His Yes 95 68 3 c.125A>G p.Tyr42Cys Yes 72 59 6 c.502C>A p.Pro168Thr Yes 115 108 10 c.1114A>C p.Asn372His Yes 79 150 12 c.6853A>G p.Ile2285Val Yes 60 122 14 c.7057G>C p.Gly2353Arg Yes 82 108 15 c.7544C>T p.Thr2515Ile Yes 78 70 16 c.7766C>A p.Pro2589His Yes 52 127 18 c.8149G>T p.Ala2717Ser Yes 85 57 18 c.8187G>T p.Lys2729Asn Yes 70 53 19 c.8360G>A p.Arg2787His Yes 94 114 20 c.8567A>C p.Glu2856Ala Yes 82 63 21 c.8662C>T p.Arg2888Cys Yes 52 92 22 c.8851G>A p.Ala2951Thr Yes 72 80 22 c.8917C>T p.Arg2973Cys Yes 69 51 24 c.9155G>A p.Arg3052Gln Yes 50 105 24 c.9235G>A p.Val3079Ile Yes 97 48 25 c.9292T>C p.Tyr3098His Yes 86 54 26 c.9509A>G p.Asp3170Gly Yes 71 105 27 c.10045A>G p.Thr3349Ala Yes 102 65 Class 4/5BRCA2missense variants 2 c.3G>A p.Met1Ile No NA NA 17 c.7826G>A p.Gly2609Asp Yes 28 35 17 c.7878G>C p.Trp2626Cys No NA NA 17 c.7879A>T p.Ile2627Phe No NA NA 17 c.7940T>C p.Leu2647Pro No NA NA 17 **c.7958T>C** **p.Leu2653Pro** No NA NA 18 c.8057T>C p.Leu2686Pro No NA NA 18 c.8063T>C p.Leu2688Pro No NA NA 18 c.8165C>G p.Thr2722Arg No NA NA 18 c.8167G>C p.Asp2723His No NA NA 18 c.8168A>G p.Asp2723Gly No NA NA 18 c.8243G>A p.Gly2748Asp No NA NA 24 c.9154C>T p.Arg3052Trp No NA NA 25 c.9285C>G p.Asp3095Glu No NA NA 25 c.9371A>T p.Asn3124Ile No NA NA",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study lists BRCA2 p.Leu2653Pro as a Class 4/5 pathogenic variant that fails to complement in the mouse embryonic stem cell assay, supporting its pathogenicity.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC6752316",
+            "title": "The functional impact of variants of uncertain significance in BRCA2",
+            "relevance_score": 0.88,
+            "pub_year": 2018,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": ".[Met1775Lys]; c.5324T>G, (p.Met1775Arg]; c.5363G>T, p.[Gly1788Val]; c.5513T>A, p.[Val1838Glu]. c c.7879A>T, p.[Ile2627Phe]; c.7940T>C, p.[Leu2647Pro]; **c.7958T>C**, p.[**Leu2653Pro**]; c.7988A>T p",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study finds that women with missense pathogenic BRCA2 variants have a lower breast\u2011cancer risk after age 50 than those with protein\u2011truncating variants, though it does not provide variant\u2011specific data for L2653P.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10170303",
+            "title": "Risks of breast and ovarian cancer for women harboring pathogenic missense variants in BRCA1 and BRCA2 compared with those harboring protein truncating variants",
+            "relevance_score": 0.82,
+            "pub_year": 2021,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...BC (38) Not 10,007,016 UM BRCA2 c.632-1G > A BC (51) Not 10,003,959 UM BRCA2 c.6275_6276delTT (p.Leu2092Profs) BC (55) Not 12,852 UM BRCA2 c.1929delG (p.Arg645Glufs) BC (56) Not 12,001,161 UM BRCA2 c.**7958 T > C** (**p.Leu2653Pro**) BC (67) Not 13,017,067 UM BRCA2 c.755_758delACAG (p.Asp252Valfs) BC (74) Not 688 UM BRCA2 c.1929delG (p.Arg645Glufs) BC (32) Not 40,540 UM BRCA2 c.8535_8538delAGAG p.(Glu2846LysfsTer16) BC (69) Not...",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article reports a panel screening of BRCA2\u2011negative breast cancer cases and includes the L2653P (p.Leu2653Pro) variant in a list of identified BRCA2 alterations without assigning a pathogenicity classification.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5769521",
+            "title": "Genetic variants of prospectively demonstrated phenocopies in BRCA1/2 kindreds",
+            "relevance_score": 0.73,
+            "pub_year": 2018,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "We verified prioritized protein-truncating (N = 7) and splicing (N = 4) variants by Sanger sequencing (Tables 2 and 4, respectively). In addition, two missense variants (BRCA2 c.**7958 T > C** and CHEK2 c.433C > T) were re-sequenced, since they are indicated as likely pathogenic/pathogenic in ClinVar (Additional file 12: Table S9). All protein-truncating variants were confirmed, with one exception (BRCA2 c.7558C > T, no evidence for the variant was present for either strand). Two of the mRNA splicing mutations were confirmed on both strands, while the other two were confirmed on a single strand (ATM c.6347 + 1G > T and ATM c.1066-6 T > G). Both documented pathogenic missense variants were also confirmed.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "Missense coding variants were also assessed using multiple in silico tools and evaluated based on allele frequency, literature references, and gene-specific databases. Of the 27 prioritized missense variants, the previously reported CHEK2 variant c.433G > A (chr22:29121242G > A; rs137853007) stood out, as it was identified in one patient (4-3C.5-4G) and is predicted by all 4 in silico tools to have a damaging effect on protein function. Accordingly, Wu et al. (2001) demonstrated reduced in vitro kinase activity and phosphorylation by ATM kinase compared to the wild-type CHEK2 protein, presumably due to the variant's occurrence within the forkhead homology-associated domain, involved in protein-phosphoprotein interactions. Implicated in Li-Fraumeni syndrome, known to increase the risk of developing several types of cancer including breast, the CHEK2: c.433G > A variant is expected to result in a misfolded protein that would be targeted for degradation via the ubiquitin-proteosome pathway. Another important missense variant is c.**7958 T > C** (chr13:32,936,812 T > C; **rs80359022**; 4-4C) in exon 17 of BRCA2. Although classified as being of unknown clinical importance in both BIC and ClinVar, it has been classified as pathogenic based on posterior probability calculations.",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The article reports that the BRCA2 L2653P (c.7958T>C) variant is classified as likely pathogenic/pathogenic in ClinVar and supported by posterior probability calculations, indicating it as a deleterious change.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC4828881",
+            "title": "A unified analytic framework for prioritization of non-coding variants of uncertain significance in heritable breast and ovarian cancer",
+            "relevance_score": 0.72,
+            "pub_year": 2016,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Varianta Amino acid changeb ClinVar classificationc BRCA exchanged mES-based classificatione c.73G > A p.Gly25Arg (G25R) Uncertain (2) Indeterminate c.91 T > C p.TrpW31Arg (W31R) Uncertain (1) Non-functional c.93 G > T p.Trp31Cys (W31C) Likely Pathogenic (1)/Uncertain (1) Non-functional c.73_118del (delex3-5') p.Gly25_Ala40del (G25_A40del) Non-functional c.119_312del (delex3-3') p.Pro41_Asp104del (P41_D104del) Functional c.317_631del (delex4-7) p.Gly106_Ile210del (G106_I210del) Indeterminate c.581 G > A p.Trp194Stop (W194X) Pathogenic (10) Pathogenic Non-functional c.631 + 2 T > G IVS7 + 2 T > G Pathogenic (2)/Likely Pathogenic (1) Pathogenic Non-functional c.1964C > G p.Pro655Arg (P655R) Benign (22) Benign Functional c.6323 G > A p.Arg2108His (R2108H) Benign (27) Benign Functional c.6853 A > G p.Ile2285Val (I2285V) Benign (18) Benign Functional c.6842_6937del (delex12) p.Gly2281_Asp2312de (G2281_D2312del)l Functional c.7007 G > A p.Arg2336His(R2336H) Pathogenic (23) Pathogenic Functional c.7216_7217TT > GA p.Phe2406Asp (F2406D) Functional c.7218 T > G p.Phe2406Leu (F2406L) Uncertain (1) Functional c.7468 A > G p.Ile2490Thr (I2490T) Uncertain (1) Functional c.7529 T > C p.Leu2510Pro (L2510P) Likely Pathogenic (4) Non-functional c.7878 G > C p.Trp2626Cys(W2626C) Pathogenic (16) Pathogenic Non-functional c.**7958 T > C** **p.Leu2653Pro** (**L2653P**) Pathogenic (4)/Likely Pathogenic (3) Non-functional c.8084 C > T p.Ser2695Leu (S2695L) Likely benign (1)/Uncertain (2) Functional c.8187 G > T p.Lys2729Asn (K2729N) Benign (16) Benign Functional c.8830 A > T p.Iso2944Phe (I2944F) Benign (26) Benign Functional c.9004 G > A p.Glu3002Lys (E3002K) Pathogenic (11)/Likely Pathogenic (4) Nonfunctional c.9285 C > G p.Asp3095Glu (D3095E) Pathogenic (6)/Likely Pathogenic (2) Nonfunctional c.9371 A > T p.Asn3124Iso (N3124I) Pathogenic (20) Pathogenic Nonfunctional",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study reports that the BRCA2 L2653P variant is classified as pathogenic/likely pathogenic and exhibits non\u2011functional behavior in mouse embryonic stem cell assays, supporting its deleterious effect.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7722754",
+            "title": "A computational model for classification of BRCA2 variants using mouse embryonic stem cell-based functional assays",
+            "relevance_score": 0.68,
+            "pub_year": 2020,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "In contrast to the young cases enrolled at diagnosis without previous genetic testing, 8 of the 9 outside referrals had been previously tested for BRCA1 and BRCA2 mutations. No mutations were found in the previously untested patient. Only one BRCA2mutation was found. It had been previously detected in that patient. This mutation (BRCA2 **L2653P**), initially classified as a variant of unknown significance (VUS), was reclassified to \u201cfavor deleterious\u201d by Myriad Genetics at the time of study entry. Loss of the wildtype allele was identified in her primary tumor consistent with the deleterious reclassification. Notably, a reversion to wildtype sequence was identified in her recurrent tumor, at which time she demonstrated progression during treatment with a PARP inhibitor.",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "Among 47 women with early\u2011onset ovarian carcinoma, one BRCA2 L2653P variant was found and reclassified as favor deleterious, with loss of the wild\u2011type allele in the primary tumor and clinical progression on PARP inhibition in the recurrent tumor.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC4869974",
+            "title": "Genetic characterization of early onset ovarian carcinoma",
+            "relevance_score": 0.3,
+            "pub_year": 2015,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Comparisons with the prime editing SGE analysis were less informative because only variants in part of exon 15 (c.7545_7552, residues 2515-2518) and portions of exon 17 ((c.7826_7842, residues 2609-2614); (c.7916_7924, residues 2639-2642), and (c.7930_7960, residues 2644-2654)) of the BRCA2 DBD were evaluated by prime editing. Of 5 variants evaluated by HDR and by prime editing, 4 were non-functional by both methods (p.Gly2609Val (HDR=1.08, 95%CI:0.97-1.22), p.Leu2647Pro (HDR:1.00, 95%CI:0.89-1.12), p.Val2652Gly (HDR:1.14, 95%CI:0.99-1.32), and **p.Leu2653Pro** (HDR:0.92, 95%CI:0.80-1.06)), and one was functional by both methods (p.Cys2646Trp (HDR:3.39, 95%CI:2.95-3.91)) (Supplementary Table 2). This suggests a potentially strong correlation between the two assays, but more variants must be analyzed by both methods for a detailed comparison.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "Variant (p.) HDR Score ACMG codes Classification PM1 PM5 PP1 PM3/BP2 PP3/BP4 (PROVEAN) BA1/BS1/PM2 (Frequency) BP5 PP_Multifac/BP_Multifac PS3/BS3 pre-HDR post-HDR p.His2623Arg 0.83 PM1 - - - BP4 PM2 - - PS3-published* LPATH LPATH p.Leu2686Pro 0.86 PM1 - - PM3 BP4 PM2 - - PS3 LPATH PATH p.Leu3101Pro 0.90 PM1 - - - BP4 PM2 - - PS3 VUS LPATH **p.Leu2653Pro** 0.92 PM1 - - - BP4 PM2 - - PS3-published* PATH PATH p.Asp2723His 1.00 PM1 PM5 - - BP4 PM2 - PP_Multifac PS3-published* PATH PATH p.Gly2748Asp 0.95 PM1 - - - BP4 PM2 - PP_Multifac _Strong...",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The article reclassifies the BRCA2 L2653P variant from a VUS to likely pathogenic based on concordant non\u2011functional HDR assay results and ACMG/AMP classification evidence.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9433957",
+            "title": "Classification of BRCA2 variants of uncertain significance (VUS) using an ACMG/AMP model incorporating a homology directed repair (HDR) functional assay",
+            "relevance_score": 0.23,
+            "pub_year": 2022,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Neoplastic cells observed in the FTs rather than the ovaries removed from carriers of germline mutation of BRCA1 and BRCA2 provided the first indication of the FT as a potential cell of origin of HGSOC. Since < 1.25% of HGSOC are diagnosed with stage I disease, BRCA carriers provide a unique opportunity to analyze genomic alterations in isolated STICs without associated HGSOC. We examined neoplastic samples from three individuals with germline BRCA alterations where STIC lesions were incidentally identified after prophylactic bilateral salpingo-oophorectomy, and one patient where two STICs were identified after resection of a pelvic mass (Supplementary Data 1). We identified BRCA1 or BRCA2 sequence alterations or deletions in the germline of three of these patients (BRCA1 Q1200X, BRCA2 **L2653P**, and a BRCA2 55 kb hemizygous deletion in CGOV65, CGOV64, and CGOV304, respectively), as well as somatic mutations in TP53, and LOH of both chromosome 13 and 17, encompassing the BRCA1, BRCA2, and TP53 loci in all of these cases (Supplementary Figs. 6, 7, 8, and 9). Whole-exome analyses showed that the STIC lesions contained a total of 91, 23, 34, and 46 non-synonymous and synonymous somatic mutations, in CGOV65, CGOV64, CGOV303, and CGOV304, respectively. Overall, these analyses revealed that STICs in isolation in patients with or without germline BRCA changes have a roughly similar number of sequence changes to STICs in patients with sporadic tumors. These observations provide evidence that isolated STICs may act as precursors in the same manner as those identified in patients with sporadic advanced stages HGSOC analyzed in this study.",
+                    "mention_type": "clinical",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article notes the presence of the BRCA2 L2653P germline mutation in a patient with STIC lesions but does not discuss its functional impact or clinical significance.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5653668",
+            "title": "High grade serous ovarian carcinomas originate in the fallopian tube",
+            "relevance_score": 0.23,
+            "pub_year": 2017,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "p.Leu2647Pro 1.00 (1.13) PS3 \u2013 \u2013 PP1_mod \u2013 PP3 PM2_supp VUS P **p.Leu2653Pro** 0.92 (1.07) PS3 \u2013 \u2013 \u2013 \u2013 inc PM2_supp VUS LP p.Leu2656Pro 1.12 (1.31) PS3 \u2013 \u2013 \u2013 \u2013 \u2013 \u2013 N/O N/O p.Leu2686Pro 0.86 (0.97) PS3 PM1 \u2013 \u2013 PM3_st",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study shows that functional assay data can reclassify BRCA2 DNA\u2011binding\u2011domain VUS, such as L2653P, to likely pathogenic, influencing clinical management of carriers.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8008494",
+            "title": "Strong functional data for pathogenicity or neutrality classify BRCA2 DNA-binding-domain variants of uncertain significance",
+            "relevance_score": 0.2,
+            "pub_year": 2021,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...Phe between Tyr2658] and Arg2659. Precisely, amino acids from Val2652 to Asp2661 are conserved from sea urchin, and two missense changes at this protein segment, **p.Leu2653Pro** and p.Arg2659Lys were formerly classified as deleterious. Consequently, transcript ex18-ins6 might have a deleterious impact on BRCA2 function but it is required further...",
+                    "mention_type": "clinical",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The article investigates spliceogenic BRCA2 exon 17\u201118 variants and notes that the missense variant p.Leu2653Pro has previously been classified as deleterious, supporting its pathogenicity despite not being directly functionally tested here.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC5384790",
+            "title": "Functional classification of DNA variants by hybrid minigenes: Identification of 30 spliceogenic variants of BRCA2 exons 17 and 18",
+            "relevance_score": 0.19,
+            "pub_year": 2017,
+            "data_sources": [
+                "pmc"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 2537,
+            "output": 585
+        },
+        {
+            "input": 2145,
+            "output": 686
+        },
+        {
+            "input": 2101,
+            "output": 806
+        },
+        {
+            "input": 2505,
+            "output": 635
+        },
+        {
+            "input": 2021,
+            "output": 519
+        },
+        {
+            "input": 2314,
+            "output": 747
+        },
+        {
+            "input": 1718,
+            "output": 147
+        },
+        {
+            "input": 2611,
+            "output": 841
+        },
+        {
+            "input": 1791,
+            "output": 203
+        },
+        {
+            "input": 2532,
+            "output": 629
+        },
+        {
+            "input": 2074,
+            "output": 704
+        },
+        {
+            "input": 2485,
+            "output": 568
+        },
+        {
+            "input": 2387,
+            "output": 448
+        },
+        {
+            "input": 1897,
+            "output": 765
+        },
+        {
+            "input": 2823,
+            "output": 621
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 7364,
+        "output": 1199
+    },
+    "total_time": 67.16
+}

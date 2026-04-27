@@ -1,0 +1,251 @@
+{
+    "before_pruning": {
+        "articles_in_total": 21,
+        "only_medline_count": 0,
+        "only_pmc_count": 1,
+        "only_suppl_count": 17,
+        "both_pmc_and_suppl_count": 3,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 21,
+        "only_medline_count": 0,
+        "only_pmc_count": 1,
+        "only_suppl_count": 17,
+        "both_pmc_and_suppl_count": 3,
+        "all_three_count": 0
+    },
+    "variant": "BRCA1 A1843P",
+    "time_to_process_articles": 4.67,
+    "context_length": 15962,
+    "after_removal": {
+        "articles_in_total": 5,
+        "only_medline_count": 0,
+        "only_pmc_count": 1,
+        "only_suppl_count": 1,
+        "both_pmc_and_suppl_count": 3,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "",
+            "pmcid": "PMC3519833",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 170,
+            "abstract_length": 1708,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "transcripts carrying the 4304g a q1395q 4794g a e1559k 5193g c d1692h or 5527g c g1803a variants were not detected discussion screening for pathogenic variants in breast and ovarian cancer genes brca1 2"
+            ],
+            "number_of_paragraphs": 4,
+            "paragraphs_lengths": [
+                812,
+                1049,
+                401,
+                207
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC7118020",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 192,
+            "abstract_length": 1320,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1555
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC2888420",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 77,
+            "abstract_length": 1634,
+            "number_of_unmatched_snippets": 1,
+            "unmatched_snippets": [
+                "have the flexibility to accommodate changes in side chain size or changes in charge the majority of the moderately destabilizing group 3 mutants r1699w v1736a m1783t g1788d v1808a and a1843p"
+            ],
+            "number_of_paragraphs": 2,
+            "paragraphs_lengths": [
+                770,
+                199
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC3040717",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 109,
+            "abstract_length": 1687,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                1045
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10098510",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 146,
+            "abstract_length": 2250,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        }
+    ],
+    "narrative_summary": "The BRCA1 missense change c.5527G>C (p.Ala1843Pro) occurs in the BRCT domain of the protein and has been implicated in hereditary breast and ovarian cancer risk [PMC7118020]. Clinical modeling of personal and family cancer histories assigned the variant a very large probability (odds of 21:1) of pathogenicity based on a single proband, and it was classified as a very likely pathogenic (VLP) alteration by a commercial laboratory [PMC7118020]. Functional testing provides supporting evidence: the variant was reported as loss\u2011of\u2011function in two independent high\u2011throughput assays (Woods et\u202fal. and Findlay et\u202fal.) and showed a moderate loss of activity in peptide\u2011binding and transcriptional assays, placing it in a \u201cmoderate functional effect\u201d category [PMC7118020][PMC3040717]. Additional biophysical analysis described Ala1843Pro as a moderately destabilizing mutation that reduces protein stability, further suggesting a deleterious impact [PMC2888420]. Computational predictions are discordant. In the same cohort that generated the clinical odds, the variant was classified by A\u2011GVGD as class\u202fC0 and predicted neutral by in\u2011silico tools, although the multiple\u2011species alignment showed variability at the position [PMC7118020]. Conversely, a separate biophysical study predicted reduced stability and a pathogenic effect based on structural modeling [PMC2888420]. No population frequency data were provided in the extracted sources. Taken together, the preponderance of functional and family\u2011history evidence supports a pathogenic role for BRCA1 p.Ala1843Pro, but the limited number of observed families and the conflicting in\u2011silico predictions introduce uncertainty, indicating that the variant should be considered likely pathogenic pending further clinical segregation or functional validation.",
+    "structured_summary": {
+        "overall_pathogenicity": "pathogenic",
+        "pathogenicity_counts": {
+            "supports benignity": 0,
+            "supports pathogenicity": 4,
+            "uncertain": 0
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "The analyses of groups of variants by bioinformatics predictions shown in Table 4 illustrate a number of important findings. First, our analysis confirms previous indications that missense variants in regions of the gene that are not in functionally important domains of the protein are very unlikely to be pathogenic. In contrast to a previous study in which only 1% of variants predicted to be neutral (A-GVGD class C0) that were in recognized functional domains were estimated to be pathogenic, here we found that a significant fraction (23%, 95% CI 12-37%) of such variants were estimated to be pathogenic. Variants in this group with high odds of pathogenicity should be examined in detail, including detailed functional assays. For example, BRCA1 **c.5527G>C**; **p.Ala1843Pro**, classified by Ambry as VLP, had odds of 21:1 in favor of pathogenicity (though based on only a single proband) and was classified as loss of function in both the assays of Woods et al. and Findlay et al. However in the in silico analysis, this variant was predicted to be neutral, with considerable variation observed in the multiple species sequence alignment with the variant amino acid proline observed. Lastly, the VLP variant BRCA2 c.8188G>C;p.Ala2730Pro also scored as A-GVGD class C0 in the priors database but had odds of 18:1 in favor of pathogenicity based on five families; this variant displayed impaired homology directed repair (HDR) function in Hart et al.",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study presents BRCA1 p.Ala1843Pro as likely pathogenic, supported by a high odds ratio from family\u2011history modeling and loss\u2011of\u2011function experimental data despite neutral in silico predictions.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7118020",
+            "title": "Classification of variants of uncertain significance in BRCA1 and BRCA2 using personal and family history of cancer from individuals in a large hereditary cancer multigene panel testing cohort",
+            "relevance_score": 0.66,
+            "pub_year": 2019,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "A number of the variants recorded in the BIC database, M1663L, M1663K, R1699L, S1715C, D1778N, C1787S, S1841N, and **A1843P**, have not been analyzed in any assays, although in some cases, predictions have been made. Our results suggest that M1663L, M1663K, D1778N, and C1787S will not be deleterious to function, whereas R1699L, S1715C, S1841N, and **A1843P** will confer a susceptibility to breast and ovarian cancer, most of them as a result of reduced protein stability.",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "have the flexibility to accommodate changes in side-chain size or changes in charge. The majority of the moderately destabilizing (group 3) mutants (R1699W, V1736A, M1783T, G1788D, V1808A, and **A1843P**",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The article predicts that the BRCA1 missense variant A1843P is likely pathogenic, primarily because it is expected to reduce protein stability and thus impair function.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC2888420",
+            "title": "Toward Classification of BRCA1 Missense Variants Using a Biophysical Approach",
+            "relevance_score": 0.27,
+            "pub_year": 2010,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "We have also described eight of the variants as of \u201cmoderate functional effect\u201d in which a preponderance of the data points to a loss of function. These include variants with intermediate levels of peptide binding specificity (W1837G and **A1843P**) or transcriptional activity (V1696L, G1706E, and H1746N), and strong defects in all of the other assays. In addition, we have included three additional mutants in this group that show poor agreement between the different assays but are likely to directly affect the peptide-binding surface. S1655F is predicted to impede recognition of the phosphoserine in the bound peptide, whereas G1656D could perturb the structure of the phosphoserine-binding pocket, and the introduction of a negatively charged side chain in this region would be expected to further inhibit phosphopeptide recognition. R1699L would remove a critical determinant for recognition of the phenylalanine residue at the +3 position of the phosphopeptide, and indeed, the similar R1699W variant is pathogenic (IARC class 5; Table 1).",
+                    "mention_type": "functional",
+                    "claim": "supports pathogenicity"
+                }
+            ],
+            "overall_article_summary": "The study functionally characterizes BRCA1 BRCT missense variants, including A1843P, which shows a moderate loss\u2011of\u2011function effect suggesting pathogenic potential.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC3040717",
+            "title": "Comprehensive Analysis of Missense Variations in the BRCT Domain of BRCA1 by Structural and Functional Assays",
+            "relevance_score": 0.25,
+            "pub_year": 2010,
+            "data_sources": [
+                "pmc"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 2691,
+            "output": 361
+        },
+        {
+            "input": 2140,
+            "output": 592
+        },
+        {
+            "input": 2092,
+            "output": 623
+        },
+        {
+            "input": 2017,
+            "output": 458
+        },
+        {
+            "input": 1965,
+            "output": 323
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 1796,
+        "output": 1035
+    },
+    "total_time": 21.11
+}

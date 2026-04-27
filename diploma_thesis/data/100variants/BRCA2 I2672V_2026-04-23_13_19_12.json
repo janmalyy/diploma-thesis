@@ -1,0 +1,191 @@
+{
+    "before_pruning": {
+        "articles_in_total": 6,
+        "only_medline_count": 0,
+        "only_pmc_count": 1,
+        "only_suppl_count": 5,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 6,
+        "only_medline_count": 0,
+        "only_pmc_count": 1,
+        "only_suppl_count": 5,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "variant": "BRCA2 I2672V",
+    "time_to_process_articles": 3.76,
+    "context_length": 11648,
+    "after_removal": {
+        "articles_in_total": 5,
+        "only_medline_count": 0,
+        "only_pmc_count": 1,
+        "only_suppl_count": 4,
+        "both_pmc_and_suppl_count": 0,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "",
+            "pmcid": "PMC7675892",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 147,
+            "abstract_length": 1677,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                2489
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC6287763",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 134,
+            "abstract_length": 1358,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC11442673",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 120,
+            "abstract_length": 871,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC2587343",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 89,
+            "abstract_length": 2580,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC5546431",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 181,
+            "abstract_length": 1148,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        }
+    ],
+    "narrative_summary": "The BRCA2 I2672V missense change is a germline variant that has been reported in the context of a urothelial carcinoma (UC) patient who also carried a pathogenic BRCA2 germline mutation and a somatic BRCA1 mutation. In that case the I2672V allele was detected together with a somatic homozygous deletion of BRCA2, and the authors noted that the pathogenicity of the I2672V variant was not certain, suggesting that the observed response to the PARP inhibitor Olaparib was likely driven by the somatic loss rather than by the I2672V change itself [PMC7675892].\n\nClinical evidence for I2672V is limited to this single case report. The patient\u2019s tumor showed a partial response to Olaparib, but the authors explicitly described the I2672V germline variant as of uncertain significance and did not attribute therapeutic benefit to it. No additional clinical observations, segregation data, or phenotype correlations for this variant are provided in the extracted literature.\n\nNo functional studies, population frequency data, or computational predictions for I2672V are present in the supplied evidence, and therefore no conclusions can be drawn from those domains.\n\nOverall, the available evidence does not support a definitive classification of BRCA2 I2672V as pathogenic or benign. The variant remains of uncertain significance, with the current data insufficient to establish a causal role in disease or drug response.",
+    "structured_summary": {
+        "overall_pathogenicity": "uncertain",
+        "pathogenicity_counts": {
+            "supports benignity": 0,
+            "supports pathogenicity": 0,
+            "uncertain": 1
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "BRCA1 and BRCA2 somatic mutations are not uncommon in high-grade upper urinary tract UC. An interesting finding in this study was that the patient carried both a BRCA2 germline mutation and a BRCA1 somatic mutation, and both of them were pathogenic. Recent studies have shown similar response rates of PARPi therapy in patients with somatic or germline BRCA mutations, suggesting that patients are likely to benefit from PARPi therapy whether germline or somatic BRCA mutations are detected. In this case, the identification of both germline and somatic BRCA mutations ensured the good response to PARPi. BRCA1 and BRCA2 are involved in a series of crucial biological processes, including DNA damage repair, transcription activation and suppression, cell cycle regulation, and maintenance of genome stability. Olaparib has been approved for the treatment of patients with ovarian cancer, fallopian tube cancer, primary peritoneal cancer, and pancreatic cancer carrying BRCA1 and BRCA2 pathogenic mutations. Its efficacy in other cancers is also under investigation. There are few data on PARPi efficacy in UC treatment, but there are a couple of ongoing clinical trials designed to evaluate the safety and efficacy of PARPi in UC as monotherapy or in combination with other drugs. This includes two ongoing phase II clinical trials NCT03448718 and NCT03375307 investigating Olaparib monotherapy in UC patients, but specific efficacy data have not been reported. A comprehensive literature search identified only one reported UC patient with BRCA2 germline mutation who benefited from Olaparib treatment. Somatic homozygous deletion of BRCA2 (BRCA2 loss) and BRCA2 I2672V germline mutation were detected in this report, while the pathogenicity of BRCA2 I2672V was not certain, therefore, drug efficacy in this case may be strongly related to somatic BRCA2 loss. In contrast, our study reported the first case with a confirmed BRCA2 pathogenic germline mutation, with a coexisting somatic BRCA1 mutation. Thus, our report provides strong evidence in support of the application of PRAPi in UC patients with germline and/or somatic BRCA mutations.",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The case report shows a partial response to Olaparib in a urothelial carcinoma patient with a confirmed pathogenic BRCA2 germline mutation, and notes that the co\u2011occurring BRCA2 I2672V variant has uncertain significance.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7675892",
+            "title": "Olaparib is effective for recurrent urothelial carcinoma with BRCA2 pathogenic germline mutation: first report on olaparib response in recurrent UC",
+            "relevance_score": 1.0,
+            "pub_year": 2020,
+            "data_sources": [
+                "pmc"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 2535,
+            "output": 452
+        },
+        {
+            "input": 1859,
+            "output": 244
+        },
+        {
+            "input": 1595,
+            "output": 249
+        },
+        {
+            "input": 1932,
+            "output": 81
+        },
+        {
+            "input": 1776,
+            "output": 203
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 1169,
+        "output": 486
+    },
+    "total_time": 9.69
+}

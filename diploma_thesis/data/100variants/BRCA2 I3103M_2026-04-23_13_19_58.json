@@ -1,0 +1,204 @@
+{
+    "before_pruning": {
+        "articles_in_total": 5,
+        "only_medline_count": 0,
+        "only_pmc_count": 0,
+        "only_suppl_count": 2,
+        "both_pmc_and_suppl_count": 3,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 5,
+        "only_medline_count": 0,
+        "only_pmc_count": 0,
+        "only_suppl_count": 2,
+        "both_pmc_and_suppl_count": 3,
+        "all_three_count": 0
+    },
+    "variant": "BRCA2 I3103M",
+    "time_to_process_articles": 5.79,
+    "context_length": 12684,
+    "after_removal": {
+        "articles_in_total": 3,
+        "only_medline_count": 0,
+        "only_pmc_count": 0,
+        "only_suppl_count": 0,
+        "both_pmc_and_suppl_count": 3,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "",
+            "pmcid": "PMC7755770",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 114,
+            "abstract_length": 1748,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                401
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10694496",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 85,
+            "abstract_length": 2083,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                416
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9434626",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 115,
+            "abstract_length": 2178,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 4,
+            "paragraphs_lengths": [
+                682,
+                1291,
+                1503,
+                1444
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        }
+    ],
+    "narrative_summary": "The BRCA2 missense change I3103M (c.9309A>G) is a single\u2011nucleotide substitution that alters isoleucine at position 3103 to methionine. It has been included in diagnostic sequencing panels for hereditary breast\u2011cancer susceptibility, but no disease association has been formally reported in the literature provided.\n\nNo clinical case reports, segregation analyses, or expert classifications for I3103M are presented in the extracted sources; the variant is simply listed among those detected without an interpretation of pathogenicity.\n\nA multiplexed mouse embryonic stem\u2011cell functional assay evaluated I3103M alongside other BRCA2 variants and generated quantitative assay scores, yet the authors did not assign a pathogenic or benign label to the result, leaving the functional impact experimentally uncharacterized.\n\nThe variant was observed in a single sample during performance testing of an amplicon\u2011based next\u2011generation sequencing panel, indicating it is detectable in the population but without reported allele frequency or recurrence data. In silico analyses using multiple protein\u2011stability predictors (mCSM, SDM, DUET) consistently forecast a destabilizing effect on the BRCA2 protein structure, and the authors interpret these computational results as supporting a deleterious role for I3103M.\n\nTaken together, the available evidence consists of a solitary detection in a sequencing cohort, an uninterpreted functional assay result, and computational predictions that suggest protein destabilization. In the absence of clinical or robust functional validation, the variant cannot be definitively classified as pathogenic; current data lean toward a possible deleterious effect but remain insufficient for a conclusive pathogenicity assignment.\n\n[PMC7755770] [PMC10694496] [PMC9434626]",
+    "structured_summary": {
+        "overall_pathogenicity": "pathogenic",
+        "pathogenicity_counts": {
+            "supports benignity": 0,
+            "supports pathogenicity": 2,
+            "uncertain": 0
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "We analyzed a total of 100 variants, comprising 66 single-nucleotide variants and 34 indel variants. Characteristics of these variants are shown in Figure 2, and all variants are listed in Table S1. Only two variants (BRCA1 c.5496_5506delinsA, BRCA2 c.**9309A > G**) were found in two different samples, and all of the other variants were found in one sample.",
+                    "mention_type": "population",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article evaluates the analytical performance of an amplicon-based NGS panel for BRCA1/2 variant detection, reporting high sensitivity and specificity, and includes the BRCA2 I3103M variant among the tested mutations without providing pathogenicity interpretation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC7755770",
+            "title": "Performance evaluation of an amplicon-based next-generation sequencing panel for BRCA1 and BRCA2 variant detection",
+            "relevance_score": 1.0,
+            "pub_year": 2020,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...1.0000 1.0000 1.0000 1 NF c.9382C>T p.Arg3128Stop 25 P -4.1565 -4.7846 -3.9642 1.0000 1.0000 1.0000 1 NF c.9317G>A p.Trp3106Stop 25 P -2.3918 -2.4653 -2.3196 0.9981 0.9472 0.9138 0.99974674 NF **c.9309A>G** **p.Ile3103Met** 25 US 1.1199 0.2147 0.1092 0.0000 0.0076 0.0020 5.6182E-05 F c.2971A>G p.Asn991Asp 11 B 1.6490 1.5217 2.2475 0.0000 0.0047 0.0010 2.9989E-05 F c.2881C>T p.Gln961Stop 11 P -4.8245 -5.9455 -6.7592...",
+                    "mention_type": "functional",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study presents a multiplexed mouse embryonic stem cell functional assay that evaluates BRCA2 variants, including I3103M, and reports assay scores for this variant without an explicit pathogenicity interpretation.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10694496",
+            "title": "Sequencing-based functional assays for classification of BRCA2 variants in mouse ESCs",
+            "relevance_score": 0.63,
+            "pub_year": 2023,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "The consensus results of mCSM, SDM, and DUET scores in kcal/mol represent the stability and de-stability of the protein structure upon mutation. From the DUET server, the values of 14 nsSNPs (V2728L, K2729N, G2793R, K2950N, A2951T, R3052W, G3076E, D3095E, L3101Q, L3101P, L3101R, **I3103M**, M3118T, and N3124S) could be able to predict the destabilization of the BRCA2 protein structure (see, Table S10, ESI-1).",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "In summary, we have analyzed the most deleterious nsSNPs of BRCA2 to predict the structural and functional changes associated with the mutants hampering the normal protein-protein and protein-ligand interactions, resulting in MBC progression. Among 27 nsSNPs confined to 21 rsIDs pertaining to MBC, the 19 nsSNPs constituting 14 rsIDs were predicted as highly deleterious. Among these, the current investigation explored the four novel mutations (G2793R-rs80359082, G3076E-rs80359187, I3103M-rs80359204) that are neither experimentally nor computationally reported to be deleterious. Further, for the first time, the study validates the experimental reported mutations (R3052W-rs45580035, D3095E-rs80359198, and T2722R-rs80359062) to be deleterious. We believe, these nsSNPs could serve as potential biomarkers for diagnostic and prognostic purposes and could be the pivotal target of MBC drug discovery. Further, the study highlights the exploration of the key nsSNPs (of BRCA2 associated with the MBC) and its applications toward the identification of therapeutic hit TIP006136 among 5284 phytochemicals retrieved from the TIPdb and recommends further in vitro and in vivo investigations to establish its anticancer property and efficacy against MBC.",
+                    "mention_type": "computational",
+                    "claim": "supports pathogenicity"
+                },
+                {
+                    "quoted_text": "A total of 5284 compounds from TIPdb were virtually screened against BRCA2 using PyRx Python prescription 0.8 software. For the molecular docking study, AutoDock 4.2 was used, which is widely distributed public domain molecular docking software. The TIPdb compound as well as Tamoxifen were docked with the native type and 19 deleterious mutated positions (T2722R, D2723A, D2723G, D2723H, D2723V, G2748D, L2792P, G2793R, K2950N, T3013I, G3076E, D3095E, **I3103M**, L3101P, L3101Q, L3101R, N3124I, N3124S, and R3052W) of BRCA2. Space provided for docking was as follows: x-centering: 24.818, y-centering: 85.335, and z-centering: 11.816, based on grid dimensions. The resulting docked poses were chosen after giving due consideration to binding energy, ligand efficiency, and the intermolecular H-bond. The BIOVIA DS 20.1 Visualizer was used to evaluate ligand-protein interactions. Significant binding interactions with TIPdb compound against both native and mutant BRCA2 protein were explored for further analysis.",
+                    "mention_type": "computational",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study uses multiple in\u2011silico approaches to predict that the BRCA2 I3103M variant destabilizes the protein and is likely deleterious, and it evaluates ligand binding to the mutant, but provides no experimental validation of pathogenicity.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9434626",
+            "title": "Computational Biology of BRCA2 in Male Breast Cancer, through Prediction of Probable nsSNPs, and Hit Identification",
+            "relevance_score": 0.45,
+            "pub_year": 2022,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 2058,
+            "output": 559
+        },
+        {
+            "input": 2216,
+            "output": 427
+        },
+        {
+            "input": 3327,
+            "output": 1090
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 2150,
+        "output": 776
+    },
+    "total_time": 45.5
+}

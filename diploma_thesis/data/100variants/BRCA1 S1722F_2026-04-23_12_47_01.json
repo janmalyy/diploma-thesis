@@ -1,0 +1,289 @@
+{
+    "before_pruning": {
+        "articles_in_total": 34,
+        "only_medline_count": 0,
+        "only_pmc_count": 6,
+        "only_suppl_count": 27,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "before_removing": {
+        "articles_in_total": 34,
+        "only_medline_count": 0,
+        "only_pmc_count": 6,
+        "only_suppl_count": 27,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "variant": "BRCA1 S1722F",
+    "time_to_process_articles": 16.94,
+    "context_length": 18675,
+    "after_removal": {
+        "articles_in_total": 7,
+        "only_medline_count": 0,
+        "only_pmc_count": 5,
+        "only_suppl_count": 1,
+        "both_pmc_and_suppl_count": 1,
+        "all_three_count": 0
+    },
+    "articles": [
+        {
+            "pmid": "",
+            "pmcid": "PMC8246613",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 120,
+            "abstract_length": 3177,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                924
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10064975",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pmc",
+            "title_length": 99,
+            "abstract_length": 1800,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC9207274",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 103,
+            "abstract_length": 1488,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                852
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10092710",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 117,
+            "abstract_length": 971,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                612
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC8907244",
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 96,
+            "abstract_length": 1769,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                411
+            ],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC2311318",
+            "data_sources": [
+                "pmc"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 57,
+            "abstract_length": 1831,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 1,
+            "paragraphs_lengths": [
+                579
+            ],
+            "number_of_suppl_files": 0,
+            "suppl_paragraphs_counts_per_file": [],
+            "suppl_paragraphs_lengths": []
+        },
+        {
+            "pmid": "",
+            "pmcid": "PMC10774565",
+            "data_sources": [
+                "suppl"
+            ],
+            "source_of_annotation": "pubtator",
+            "title_length": 151,
+            "abstract_length": 1938,
+            "number_of_unmatched_snippets": 0,
+            "unmatched_snippets": [],
+            "number_of_paragraphs": 0,
+            "paragraphs_lengths": [],
+            "number_of_suppl_files": 1,
+            "suppl_paragraphs_counts_per_file": [
+                0
+            ],
+            "suppl_paragraphs_lengths": [
+                []
+            ]
+        }
+    ],
+    "narrative_summary": "The BRCA1 c.5165C>T (p.Ser1722Phe, S1722F) missense change occurs in the C-terminal region of the BRCA1 protein and has been reported in the context of hereditary breast\u2011ovarian cancer risk. One case report of an active\u2011duty servicewoman described the variant as pathogenic and noted that she underwent risk\u2011reducing surgery based on this classification [PMC8246613]. In contrast, a clinical re\u2011classification study listed the same alteration as a variant of uncertain significance (VUS) in a patient with breast and endometrial cancer, indicating that at the time of reporting it lacked sufficient evidence for definitive pathogenicity [PMC10092710]. Additional surveys of BRCA1 mutation spectra in Mexican ovarian cancer patients and Brazilian breast cancer cohorts included the c.5165C>T change among many other variants but did not provide an explicit interpretation, merely cataloguing it alongside pathogenic and likely\u2011pathogenic alterations [PMC9207274][PMC8907244]. No functional assays or computational predictions were presented in the extracted material, and allele frequency data were not reported. The available clinical evidence therefore is discordant: one source treats the variant as pathogenic, while another classifies it as a VUS, and broader population studies offer no definitive classification. Given the limited and conflicting data, the current evidence does not allow a conclusive determination of pathogenicity for BRCA1 S1722F; the variant remains of uncertain clinical significance pending further functional or segregation studies.",
+    "structured_summary": {
+        "overall_pathogenicity": "uncertain",
+        "pathogenicity_counts": {
+            "supports benignity": 0,
+            "supports pathogenicity": 0,
+            "uncertain": 1
+        },
+        "conflicting_evidence": false
+    },
+    "article_mentions": [
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Patient Mutation Age Ethnicity Military branch RRSa 94b NM_000059.3(BRCA2):c.2808_2811del (p.Ala938Profs) 28 EA Army RRM 146 NM_007294.4(BRCA1):c.5277 + 1G > A 37 EA Army RRSO/RRM 169 NM_000059.3(BRCA2):c.7977-1G > C 29 EA Army RRM 179c NM_000535.7(PMS2):c.248T > G (p.Leu83Ter) 23 AA Army Biopsy only 180 NM_000059.3(BRCA2):c.6644_6647delACTC (p.Tyr2215Serfs) 38 EA Army RRM 205 NM_000059.3(BRCA2):c.956dupA (p.Asn319Lysfs) 35 EA Marine Corps RRSO/RRM 225 NM_007294.4(BRCA1):c.**5165C > T** (**p.Ser1722Phe**) 40 EA Navy RRM 257b NM_007299.4(BRCA1):c.213-11T > G 38 EA Air force RRM 309b NM_000059.3(BRCA2):c.2808_2811del (p.Ala938Profs) 38 AA Air force RRSO/RRM 313 NM_000059.4(BRCA2):c.1800T > G (p.Tyr600Ter)] 20 AA Navy Biopsy only 324 NM_007294.4(BRCA1):c.379del (p.Ser127fs) 29 EA Army RRM 325b NM_007194.3(CHEK2):c.1100delC (p.Thr367Metfs) 26 EA Air Force RRM 334b NM_007294.3(BRCA1):c.815_824dup (p.Thr276fs) 40 HS Army RRM",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The article reports that a high\u2011risk active\u2011duty service woman carried the BRCA1 p.Ser1722Phe (S1722F) pathogenic mutation and underwent risk\u2011reducing surgery.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8246613",
+            "title": "Cancer Previvors in an Active Duty Service Women Population: An Opportunity for Prevention and Increased Force Readiness",
+            "relevance_score": 1.0,
+            "pub_year": 2021,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Patient ID Variant/population(s) reported Cluster region Gene 36 Del ex9-12/(AP: Mexican founder mutation) OCCR BRCA1 30 10 25 17 9 26 23 18 32 c.1960A > T (p. Lys654Ter) 8 1 14 c.1674del (p. Gly559fs) (AP: Colombian founder mutation) 34 c.211A > G (p. Arg71Gly) 21 c.2296_2297del (p.Glu765_Ser766insTer) 2 c.2611+1G > T 7 c.3598 C > T (p. Gin1200*) 28 c.3759_3760del (p. Lys1254fs) 20 c.4327C > T (p. Arg1443Ter) 16 c.5123C > A (p. Ala1708Glu) 33 c.**5165C > T** (p. **Ser1722Phe**) 31 c.5278-1G > C 27 c.4868 C > G (p. ALA1623GLY) BCCR 13 5 22 c.68_69del (p. Glu23fs) 24 (AP: Ashkenazi-Jewish) 29 c.1504_1508del (p. Leu502fs) 35 c.68_69dupAG (p. Cys24Serfs) 11 c.815_824dup (p. Thr276fs) 6 Del ex18-19 3 c.5616_5620delAGTAA (p. Lys1872Asnfs) OCCR BRCA2 15 c.5631delC (p. Asn1877Lysfs) 19 c.6352_6353delGT (p. Val2118Lysfs) BCCR 12 c.8168A > G (p. Asp2723Gly)",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study reports that Mexican ovarian cancer patients carrying the BRCA1 founder deletion (Del ex9\u201112) experience significantly longer progression\u2011free survival when treated with olaparib, compared with patients harboring other BRCA mutations.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC9207274",
+            "title": "Clinical Benefits of Olaparib in Mexican Ovarian Cancer Patients With Founder Mutation BRCA1-Del ex9-12",
+            "relevance_score": 0.9,
+            "pub_year": 2022,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "Gene Variant Change Dx prior to testing Family hx prior to testing Treatment between initial and reclassification Follow up Cancer dx between variant classification Changes to medical management recommendations (Sc- screening, Su surgery) Study BRCA1 c.5453A>G (p.Asp1818Gly) VUS P None Breast cancer BSO* Declined high-risk screening; diagnosed with breast cancer No Mersch et al. UTSW subset BRCA1 **c.5165C>T** (**p.Ser1722Phe**) None VUS P Breast cancer 39 yo Endometrial cancer Lumpectomy Relative developed ovarian cancer prior to reclassification; proband had BSO** No Mersch et al. UTSW subset BRCA1 c.4484G>A...",
+                    "mention_type": "clinical",
+                    "claim": "uncertain"
+                }
+            ],
+            "overall_article_summary": "The article proposes a compensation program to address harms arising from non\u2011negligent reclassification of genetic variants, highlighting policy and ethical considerations.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC10092710",
+            "title": "How should we address the inevitable harms from non-negligent variant reclassification in predictive genetic testing?",
+            "relevance_score": 0.72,
+            "pub_year": 2022,
+            "data_sources": [
+                "pmc"
+            ]
+        },
+        {
+            "mentions": [
+                {
+                    "quoted_text": "...1G>A; c.470_471delCT; c.5030_5033delCTAA; c.5062_5064delGTT; c.5074 + 2T>C (3); c.5096G>A; c.5266dupC (28); c.5444G > A; c.66dupA; c.679G>T; c.68_69delAG (2); Del. ex. 1 c.192T >G; c.3G>A; c.4964C>T; **c.5165C>T**; Del. ex. 1-11 97 BRCA2 c.1813delA; c.1813dupA (3); c.2376C>G; c.2808_2811delACAA (5); c.289G>T; c.2T>G(3); c.3264dupT; c.4380_4381delTT; c.466_467delGA; c.517-1G>A; c.5216dupA; c.5303_5304delTT;...",
+                    "mention_type": "other",
+                    "claim": "no claim"
+                }
+            ],
+            "overall_article_summary": "The study surveyed germline variants in Brazilian breast cancer patients, reporting many pathogenic/likely\u2011pathogenic mutations, but the BRCA1 S1722F variant is only listed among numerous variants without specific interpretation or classification.",
+            "uncertainties_or_limitations": null,
+            "article_id": "PMC8907244",
+            "title": "Detection of germline variants in Brazilian breast cancer patients using multigene panel testing",
+            "relevance_score": 0.7,
+            "pub_year": 2022,
+            "data_sources": [
+                "suppl",
+                "pmc"
+            ]
+        }
+    ],
+    "analysis_token_counts": [
+        {
+            "input": 2605,
+            "output": 646
+        },
+        {
+            "input": 1950,
+            "output": 153
+        },
+        {
+            "input": 2390,
+            "output": 629
+        },
+        {
+            "input": 1781,
+            "output": 654
+        },
+        {
+            "input": 2375,
+            "output": 497
+        },
+        {
+            "input": 2197,
+            "output": 265
+        },
+        {
+            "input": 2034,
+            "output": 292
+        }
+    ],
+    "aggregation_token_count": {
+        "input": 2428,
+        "output": 633
+    },
+    "total_time": 35.34
+}
